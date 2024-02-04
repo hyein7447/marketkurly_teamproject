@@ -1,0 +1,170 @@
+header {max-width: 1280px;}
+/*  최상단 팝업 */
+header .pop_up {display: none;}
+header .pop_up p {}
+header .pop_up p em {}
+header .pop_up .reset_btn {}
+header .pop_up .reset_btn a {}
+/* header 회원가입, 로그인, 고객센터 */
+header .user_page {width: 1050px; margin: 0 auto; display: flex; justify-content: flex-end;}
+header .user_page a {font-size: 0.75rem;} /* 마이페이지 a 공통 */
+header .user_page .join {color: #5F0080;}
+header .user_page .login {}
+header .user_page .login::before,
+header .user_page .login::after {
+    content: ''; width: 1px; height: 13px; background: #d9d9d9;
+    display: inline-block; margin: 0 8px;
+}
+header .user_page .cs {}
+header .user_page .cs img {width: 8px; height: 5px;}
+header .user_page .cs_open {display: none;}
+header .user_page .cs_open a {}
+/* header top */
+header .header_top {
+    width: 1050px; height: 63px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;}
+header .header_top .left {display: flex; align-items: center;}
+header .header_top .left .logo {}
+header .header_top .left .logo img {}
+header .header_top .left .menu {}
+header .header_top .left .menu a {font-size: 1.125rem;}
+header .header_top .left .menu a:first-child {color: #5F0080; margin-left: 20px;}
+header .header_top .left .menu a:last-child {color: #b5b5b5;}
+header .header_top .left .menu a:first-child::after {
+    content: ''; display: inline-block; width: 1px; height: 14px;
+    background: #e2e2e2; margin: 0 7px 0 10px;
+}
+header .header_top .search {
+    border: 1px solid #5F0080; border-radius: 6px;
+    display: flex; justify-content: space-between; width: 400px; height: 48px;
+    background-color: #fff;
+    box-shadow: rgb(247, 247, 247) 0px 0px 0px 1px inset;
+    margin-right: 150px;
+}
+header .header_top .search #user_search {padding-left: 14px;}
+header .header_top .search #search_btn {}
+header .header_top .search #search_btn img {margin: 10px; position: relative; bottom: 6px;}
+header .header_top .user_info {display: flex;}
+header .header_top .user_info .map {}
+header .header_top .user_info .map .map_icon {margin-right: 20px;}
+header .header_top .user_info .map .map_icon img {}
+header .header_top .user_info .map .map_open {display: none;}
+header .header_top .user_info .map .map_open p {}
+header .header_top .user_info .map .map_open p em {}
+header .header_top .user_info .map .map_open .map_btn {}
+header .header_top .user_info .map .map_open .map_btn #map_login_btn {}
+header .header_top .user_info .map .map_open .map_btn #map_search_btn {}
+header .header_top .user_info .wish {margin-right: 20px;}
+header .header_top .user_info .wish img {}
+header .header_top .user_info .cart {}
+header .header_top .user_info .cart img {}
+/* header bottom */
+header .header_btm {max-width: 1280;}
+header .header_btm nav {
+    width: 1050px; height: 56px; display: flex; margin: 0 auto; justify-content: space-between;
+    align-items: center; border-bottom: 1px solid #000; position: relative;
+}
+header .header_btm nav .category {font-weight: 500;}
+header .header_btm nav .category img {width: 16px; height: 14px; margin-right: 10px;}
+/* 카테고리 마우스 오버 시 출력되는 카데고리 */
+header .header_btm nav .gnb_bg {
+    position: absolute; top: 46px; left: 0; background: pink;
+}
+header .header_btm nav .gnb_bg .gnb {
+    padding-top: 10px;
+    display: flex; flex-flow: column nowrap;
+    background-color: aqua;
+    max-height: calc(-55px + 95vh); overflow-y: auto; overflow-x: hidden;
+    min-height: 200px;
+}
+header .header_btm nav .gnb_bg .gnb li {
+    padding: 7px 0 9px 14px; background: yellow; border: 1px solid #000;
+    width: 230px; height: 40px;
+}
+header .header_btm nav .gnb_bg .gnb li a {display: flex; align-items: center; border: 1px solid #000;}
+header .header_btm nav .gnb_bg .gnb li a img {width: 24px; height: 24px;}
+header .header_btm nav .gnb_bg .gnb li a span {padding: 1px 20px 0 10px; font-size: 0.875rem;}
+
+/* lnb 전체 가리기, 선택 보이기 */
+header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb {display: none;}
+header .header_btm nav .gnb_bg .gnb li:nth-child(1) .lnb_bg .lnb_wrap .lnb { display: block;}
+
+/* gnb 마우스 오버시 출력되는 lnb */
+header .header_btm nav .gnb_bg .gnb li .lnb_bg {
+    background: tomato; position: absolute; top: 10px; left: 246px; z-index: 999;
+    height: calc(-55px + 95vh); min-height: 200px;
+}
+header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap {}
+header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb {
+    width: 230px;
+}
+header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb a {
+    font-size: 0.875rem; padding: 11px 20px 11px 18px;
+}
+
+/* 첫번째 lnb */
+header .header_btm nav .gnb_bg .gnb li:first-child .lnb_bg .lnb_wrap .lnb {
+    width: 230px; max-height: calc(-55px + 95vh); overflow-y: auto; overflow-x: hidden;
+    min-height: 200px;
+}
+header .header_btm nav .gnb_bg .gnb li:first-child .lnb_bg .lnb_wrap .lnb a {
+    font-size: 0.875rem; padding: 11px 20px 11px 18px;
+}
+/* lnb 마지막 자식 컬리의 추천 */
+/* lnb 마지막 자식 컬리의 추천 공통 */
+
+header .header_btm nav .gnb_bg .gnb li:last-child .lnb_bg .lnb {
+    display: flex; flex-flow: column nowrap; justify-content: space-between; 
+}
+header .header_btm nav .gnb_bg .gnb li:last-child .lnb_bg .lnb_wrap .lnb a {padding: 0;}
+header .header_btm nav .gnb_bg .gnb li:last-child .lnb_bg .lnb_wrap .lnb > div {
+    display: flex; height: 142px;
+}
+header .header_btm nav .gnb_bg .gnb li:last-child .lnb_bg .lnb_wrap .lnb > div > a {
+    display: flex; flex-flow: column nowrap; align-items: flex-start; margin-right: 10px;
+}
+header .header_btm nav .gnb_bg .gnb li:last-child .lnb_bg .lnb_wrap .lnb > div > a > img {
+    width: 116px; height: 88px; margin-bottom: 8px;
+}
+header .header_btm nav .gnb_bg .gnb li:last-child {}
+header .header_btm nav .gnb_bg .gnb li:last-child .lnb_bg {}
+header .header_btm nav .gnb_bg .gnb li:last-child .lnb_bg .lnb_wrap {height: 100%;}
+header .header_btm nav .gnb_bg .gnb li:last-child .lnb_bg .lnb_wrap .lnb {
+    width: 535px; padding: 20px 0 0 21px; max-height: calc(-55px + 95vh); overflow-y: auto; overflow-x: hidden;
+    min-height: 200px;     display: flex; flex-flow: column nowrap; 
+    background-color: aqua; height: 100%;
+}
+
+header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb .row1 {display: flex;}
+header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb .row1 a {}
+header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb .row1 a img {}
+header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb .row2 {display: flex;}
+header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb .row2 a {}
+header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb .row2 a img {}
+header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb .row3 {display: flex;}
+header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb .row3 a {}
+header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb .row3 a img {}
+header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb .row4 {display: flex;}
+header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb .row4 a {}
+header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb .row4 a img {}
+/* 신상품, 베스트, 알뜰쇼핑, 특가/혜택 */
+header .header_btm nav .theme {display: flex;}
+header .header_btm nav .theme li {width: 150px; text-align: center;}
+header .header_btm nav .theme li a {font-weight: 500;}
+/* 샛별 하루배송 안내 */
+header .header_btm nav .delivery {
+    height: 32px; text-align: center;
+    padding: 6px 16px;
+    border-radius: 18px;
+    border: 1px solid #E7E7E7;
+}
+header .header_btm nav .delivery span {
+    font-size: 0.813rem; line-height: 16px;
+    letter-spacing: -0.32px;
+    font-weight: 500; display: block;
+}
+header .header_btm nav .delivery span em {
+    color: #5F0080; font-size: 0.813rem; line-height: 16px;
+    letter-spacing: -0.32px;
+    font-weight: 500;
+}
