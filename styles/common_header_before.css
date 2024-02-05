@@ -69,21 +69,18 @@ header .header_btm nav .category img {width: 16px; height: 14px; margin-right: 1
 /* 카테고리 마우스 오버 시 출력되는 카데고리 */
 header .header_btm nav .gnb_bg {
     position: absolute; top: 46px; left: 0; background: pink;
-    max-height: calc(-55px + 95vh); overflow-y: auto; overflow-x: hidden;
-    min-height: 200px; width: 517px;  z-index: -100;
 }
 header .header_btm nav .gnb_bg .gnb {
     padding-top: 10px;
     display: flex; flex-flow: column nowrap;
     background-color: aqua;
-    position: relative;
-    z-index: 321; width: 250px;
-    overflow-y: scroll ;
+    max-height: calc(-55px + 95vh); overflow-y: auto; overflow-x: hidden;
+    min-height: 200px;
 }
-
 header .header_btm nav .gnb_bg .gnb li {
     padding: 7px 0 9px 14px; background: yellow; border: 1px solid #000;
-    width: 230px; height: 40px; height: 100%;}
+    width: 230px; height: 40px;
+}
 header .header_btm nav .gnb_bg .gnb li a {display: flex; align-items: center; border: 1px solid #000;}
 header .header_btm nav .gnb_bg .gnb li a img {width: 24px; height: 24px;}
 header .header_btm nav .gnb_bg .gnb li a span {padding: 1px 20px 0 10px; font-size: 0.875rem;}
@@ -96,10 +93,11 @@ header .header_btm nav .gnb_bg .gnb li:last-child .lnb_bg .lnb_wrap .lnb { displ
 /* gnb 마우스 오버시 출력되는 lnb */
 header .header_btm nav .gnb_bg .gnb li .lnb_bg {
     background: tomato; position: absolute; top: 10px; left: 246px; z-index: 999;
-    height: 100%;
+    max-height: calc(100% - 135px)
 }
 header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap {
-
+    max-height: calc(-55px + 95vh); overflow-y: auto; overflow-x: hidden;
+    min-height: 200px;
 }
 header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb {
     width: 230px;
@@ -110,7 +108,8 @@ header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap .lnb a {
 
 /* 첫번째 lnb */
 header .header_btm nav .gnb_bg .gnb li:first-child .lnb_bg .lnb_wrap .lnb {
-    width: 230px;
+    width: 230px; max-height: calc(-55px + 95vh); overflow-y: auto; overflow-x: hidden;
+    min-height: 200px;
 }
 header .header_btm nav .gnb_bg .gnb li:first-child .lnb_bg .lnb_wrap .lnb a {
     font-size: 0.875rem; padding: 11px 20px 11px 18px;
@@ -135,8 +134,8 @@ header .header_btm nav .gnb_bg .gnb li:last-child {}
 header .header_btm nav .gnb_bg .gnb li:last-child .lnb_bg {}
 header .header_btm nav .gnb_bg .gnb li:last-child .lnb_bg .lnb_wrap {height: 100%;}
 header .header_btm nav .gnb_bg .gnb li:last-child .lnb_bg .lnb_wrap .lnb {
-    width: 535px; padding: 20px 0 0 21px; /* max-height: calc(-55px + 95vh); overflow-y: auto; overflow-x: hidden;
-    min-height: 200px;     display: flex; flex-flow: column nowrap;  */
+    width: 535px; padding: 20px 0 0 21px; max-height: calc(-55px + 95vh); overflow-y: auto; overflow-x: hidden;
+    min-height: 200px;     display: flex; flex-flow: column nowrap; 
     background-color: aqua;
 }
 
