@@ -72,6 +72,7 @@ header .header_btm nav .gnb_bg {
     position: absolute; top: 46px; left: 0;
     max-height: calc(-55px + 95vh); overflow-y: hidden; overflow-x: hidden;
     min-height: 200px; display: flex; background: #fff;
+    display: none;
 }
 header .header_btm nav .gnb_bg .gnb_wrap {
     width: 517px; position: relative; z-index: 321; padding-top: 10px;
@@ -91,7 +92,7 @@ header .header_btm nav .gnb_bg .gnb_wrap .gnb li a span {padding: 1px 20px 0 10p
 
 /* lnb 전체 가리기, 선택 보이기 */
 header .header_btm nav .gnb_bg .gnb_wrap .gnb li .lnb_bg .lnb_wrap .lnb {display: none;}
-header .header_btm nav .gnb_bg .gnb_wrap .gnb li:nth-child(1) .lnb_bg .lnb_wrap .lnb { display: block;}
+/* header .header_btm nav .gnb_bg .gnb_wrap .gnb li:nth-child(1) .lnb_bg .lnb_wrap .lnb { display: block;} */
 header .header_btm nav .gnb_bg .gnb_wrap .gnb li:last-child .lnb_bg .lnb_wrap .lnb { display: none !important;}
 
 /* gnb 마우스 오버시 출력되는 lnb */
