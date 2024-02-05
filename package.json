@@ -1,0 +1,16 @@
+{
+  "name": "kurly",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.70.0",
+    "scss": "^0.2.4"
+  },
+  "description": ""
+}
