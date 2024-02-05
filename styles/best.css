@@ -1,0 +1,120 @@
+.fa-question_before {
+    content: "\3f";
+    border: 2px solid #ddd;
+    display: inline-block;
+    padding: 3px 2px 1px;
+    text-align: center;
+    font-size: 13px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    color:#ddd;
+}
+/* 베스트 카테고리 선택자 */
+body, html {scroll-behavior: smooth;}
+main {}
+/* 베스트 타이틀 영역 */
+main .best {}
+main .best .top {}
+main .best .top h1 {}
+main .best .top .cate_list {}
+main .best .top .cate_list a.top_active {}
+main .best .top .cate_list a {}
+/* 왼쪽컨테이너 --- 어사이드 영역 */
+main .best .container {}
+main .best .container .left {}
+main .best .container .left .title {}
+main .best .container .left .title h3 {}
+main .best .container .left .title h3 p {}
+main .best .container .left .title h3 p [class$=right] {}
+main .best .container .left .title h3 p span {}
+/* 어사이드 -- ★공통★ */
+main .best .container .left .list {}
+main .best .container .left .list .list_title {}
+main .best .container .left .list .list_title span {}
+main .best .container .left .list .list_title span em {}
+main .best .container .left .list .list_title span [class$=up] {}
+main .best .container .left .list ul {}
+main .best .container .left .list ul li {}
+main .best .container .left .list ul li a {}
+main .best .container .left .list ul li a button {}
+main .best .container .left .list ul li a button img {}
+main .best .container .left .list ul li a p:nth-child(2) {}
+main .best .container .left .list ul li a p:nth-child(3) {}
+main .best .container .left .list ul li.more_btn {}
+main .best .container .left .list ul li.more_btn a {}
+main .best .container .left .list ul li.more_btn a p {}
+main .best .container .left .list ul li.more_btn a p[class$=right] {}
+/* 어사이드 --- 카테고리 */
+/* 어사이드 --- 브랜드의 상단영역 */
+main .best .container .left .list2 {}
+main .best .container .left .list2 .list_title {}
+main .best .container .left .list2 .list_title span {}
+main .best .container .left .list2 .list_title span em {}
+main .best .container .left .list2 .list_title span [class$=up] {}
+main .best .container .left .list2 .brand {}
+main .best .container .left .list2 .brand a {}
+main .best .container .left .list2 .brand a.name_active {}
+main .best .container .left .list2 .atoz_btn {}
+main .best .container .left .list2 .atoz_btn a {}
+main .best .container .left .list2 .atoz_btn a.atoz_active {}
+main .best .container .left .list2 .box {}
+/* 어사이드 --- 브랜드의 ★공통(lnb)★ */
+main .best .container .left .list2 .box .contents {}
+main .best .container .left .list2 .box .contents li {}
+main .best .container .left .list2 .box .contents li a {}
+main .best .container .left .list2 .box .contents li a .btn_chk {}
+main .best .container .left .list2 .box .contents li a .btn_chk img {}
+main .best .container .left .list2 .box .contents li a .btn_circle {}
+main .best .container .left .list2 .box .contents li a .btn_circle img {}
+main .best .container .left .list2 .box .contents li a p:nth-child(2) {}
+main .best .container .left .list2 .box .contents li a p:nth-child(3) {}
+main .best .container .left .list2 .box .more_btn {}
+main .best .container .left .list2 .box .more_btn li {}
+main .best .container .left .list2 .box .more_btn li a {}
+main .best .container .left .list2 .box .more_btn li a p {}
+main .best .container .left .list2 .box .more_btn li a p[class$=right] {}
+/* 어사이드 --- 가격 */
+/* 어사이드 --- 혜택 */
+/* 어사이드 --- 유형 */
+/* 오른쪽컨테이너 --- 상품 영역 */
+main .best .container .right {}
+main .best .container .right .lnb {}
+/* ◇ --- js 부분(총 몇건) --- ◇ */
+main .best .container .right .lnb .total {}
+main .best .container .right .lnb .total span {}
+/* ◇ --- js 부분(총 몇건) //끝// --- ◇ */
+main .best .container .right .lnb .array {}
+main .best .container .right .lnb .array a {}
+main .best .container .right .lnb .array a [class$=question] {}
+main .best .container .right .lnb .array .quest_box {}
+main .best .container .right .lnb .array .quest_box p {}
+/* ◇ --- js 부분 (브랜드 이름 위치) --- ◇ */
+main .best .container .right .name_result {}
+/* ◇ --- js 부분 (브랜드 이름 위치) //끝// --- ◇ */
+/* 상품리스트 */
+main .best .container .right .product_box {}
+main .best .container .right .product_box .product {}
+main .best .container .right .product_box .product .thumb {}
+main .best .container .right .product_box .product .thumb .icon_cuppon {}
+main .best .container .right .product_box .product .btn_cart {}
+main .best .container .right .product_box .product .btn_cart .btn_c {}
+main .best .container .right .product_box .product .btn_cart .btn_c img {}
+main .best .container .right .product_box .product .btn_cart .btn_c span {}
+/* ◇ --- js 부분 (상품 리스트 DB로 처리) --- ◇ */
+main .best .container .right .product_box .product .info {}
+main .best .container .right .product_box .product .info .p_brand {}
+main .best .container .right .product_box .product .info .p_title {}
+main .best .container .right .product_box .product .info .p_explain {}
+main .best .container .right .product_box .product .info .p_price_del del {}
+main .best .container .right .product_box .product .info .p_price {}
+main .best .container .right .product_box .product .info .p_price em {}
+main .best .container .right .product_box .product .info .p_review {}
+main .best .container .right .product_box .product .info .p_review [class$=dots] {}
+main .best .container .right .product_box .product .info .p_icon_only {}
+/* ◇ --- js 부분 (상품 리스트 DB로 처리) //끝// --- ◇ */
+/* 오른쪽컨테이너 --- 왼쪽,오른쪽 버튼 */
+main .best .container .right .arrow_num {}
+main .best .container .right .arrow_num a {}
+main .best .container .right .arrow_num a img {}
+main .best .container .right .arrow_num a.arr_active {}
