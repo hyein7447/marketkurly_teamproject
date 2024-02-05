@@ -1,3 +1,4 @@
+html,body{height: 500vh;}
 header {max-width: 1280px; margin: 0 auto;}
 /*  최상단 팝업 */
 header .pop_up {display: none;}
@@ -69,21 +70,30 @@ header .header_btm nav .category img {width: 16px; height: 14px; margin-right: 1
 /* 카테고리 마우스 오버 시 출력되는 카데고리 */
 header .header_btm nav .gnb_bg {
     position: absolute; top: 46px; left: 0; background: pink;
-    max-height: calc(-55px + 95vh); overflow-y: auto; overflow-x: hidden;
-    min-height: 200px; width: 517px;  z-index: -100;
+    max-height: calc(-55px + 95vh); 
+    /* overflow-y: scroll; */
+    /* overflow-x: hidden; */
+    min-height: 200px; 
+    /* width: 517px; */
+    z-index: -100;
 }
 header .header_btm nav .gnb_bg .gnb {
     padding-top: 10px;
-    display: flex; flex-flow: column nowrap;
+    display: flex; 
+    flex-flow: column nowrap;
     background-color: aqua;
-    position: relative;
-    z-index: 321; width: 250px;
-    overflow-y: scroll ;
+    /* position: relative; */
+    z-index: 321; 
+    width: max-content;
+    /* overflow-y: scroll ; */
 }
 
 header .header_btm nav .gnb_bg .gnb li {
-    padding: 7px 0 9px 14px; background: yellow; border: 1px solid #000;
-    width: 230px; height: 40px; height: 100%;}
+    padding: 7px 0 9px 14px; 
+    background: yellow; 
+    border: 1px solid #000;
+    width: 230px; height: 40px; height: 100%;
+}
 header .header_btm nav .gnb_bg .gnb li a {display: flex; align-items: center; border: 1px solid #000;}
 header .header_btm nav .gnb_bg .gnb li a img {width: 24px; height: 24px;}
 header .header_btm nav .gnb_bg .gnb li a span {padding: 1px 20px 0 10px; font-size: 0.875rem;}
@@ -95,8 +105,12 @@ header .header_btm nav .gnb_bg .gnb li:last-child .lnb_bg .lnb_wrap .lnb { displ
 
 /* gnb 마우스 오버시 출력되는 lnb */
 header .header_btm nav .gnb_bg .gnb li .lnb_bg {
-    background: tomato; position: absolute; top: 10px; left: 246px; z-index: 999;
+    background: tomato; 
+    position: absolute; 
+    top: 10px; left: 246px; 
+    z-index: 999;
     height: 100%;
+    overflow-y: scroll;
 }
 header .header_btm nav .gnb_bg .gnb li .lnb_bg .lnb_wrap {
 
