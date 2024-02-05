@@ -8,6 +8,45 @@
 </head>
 <body>
     <main>
+        <div class="bottom_option">
+            <button type="button">상품 선택</button>
+            <div class="bottom_purchase">
+                    <div>
+                        <button type="button">상품을 선택해주세요</button>
+                        <!-- svg img -->
+                    </div>
+                    <div class="option">
+                        <a href="#">[픽어베이글] 플레인 베이글 <span>2,900원</span></a>
+                        <a href="#">[픽어베이글] 통밀 베이글 <span>2,900원</span></a>
+                        <a href="#">[픽어베이글] 블루베리 베이글 <span>2,900원</span></a>
+                        <a href="#">[픽어베이글] 시나몬 앤 레이즌 베이글 <span>2,900원</span></a>
+                        <a href="#">[픽어베이글] 에브리띵 베이글 <span>2,900원</span></a>
+                        <a href="#">[픽어베이글] 멀티 그레인 베이글 <span>2,800원</span></a>
+                        <a href="#">[픽어베이글] 세서미 베이글 <span>2,800원</span></a>
+                        <a href="#">[픽어베이글] 다크통밀 베이글 <span>2,900원</span></a>
+                    </div>
+                <div class="select_item">
+                    <p class="item_name"></p>
+                    <div class="num_result">
+                        <button type="button" id="minus">-</button>
+                        <input type="text" id="num" readonly>
+                        <button type="button" id="plus">+</button>
+                    </div>
+                    <p class="each_price"></p>
+                    <a href="#"><img src="./images/main/icon/icon_cancle.svg" alt=""></a>
+                </div>
+                <p class="total"><span>총 상품금액 :</span> <em><!-- 총액 --></em>원</p>
+                <div class="save">
+                    <p class="save_icon">적립</p>
+                    <p>구매 시 0원 적립</p>
+                </div>
+                <div class="wish_notify_cart_btn">
+                    <button type="button"><img src="./images/main/icon/icon_wish_active.svg" alt=""></button><!-- 활성화 시 active_2로 img 변경 -->
+                    <button type="button"><img src="./images/sub/icon_alarm.svg" alt=""></button>
+                    <button type="button">장바구니 담기</button>
+                </div>
+            </div>
+        </div>
         <div class="product_container">
             <!-- 상세페이지 상단 - 이미지 / 가격, 상품명, 정보 -->
             <section class="img_information">
@@ -112,6 +151,17 @@
                                     <a href="#">[픽어베이글] 멀티 그레인 베이글 <span>2,800원</span></a>
                                     <a href="#">[픽어베이글] 세서미 베이글 <span>2,800원</span></a>
                                     <a href="#">[픽어베이글] 다크통밀 베이글 <span>2,900원</span></a>
+                                </div>
+                                <div class="select">
+                                    <div class="select_item">
+                                        <p class="item_name"></p>
+                                    </div>
+                                    <div class="num_result">
+                                        <button type="button" id="minus">-</button>
+                                        <input type="text" id="num" readonly>
+                                        <button type="button" id="plus">+</button>
+                                    </div>
+                                    <a href="#"><img src="./images/main/icon/icon_cancle.svg" alt=""></a>
                                 </div>
                             </dd>
                         </dl>
