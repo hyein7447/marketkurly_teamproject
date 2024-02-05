@@ -10,11 +10,11 @@
 <body>
     <main>
         <div class="bottom_option">
-            <button type="button" id="select_btn">상품 선택</button>
-            <div class="bottom_purchase">
+            <div class="bottom_wrap">
+                <button type="button" id="select_btn">상품 선택<img src="./images/main/icon/icon_arrow_btm.svg" alt=""></button>
+                <div class="bottom_purchase">
                     <div>
-                        <button type="button">상품을 선택해주세요</button>
-                        <!-- svg img -->
+                        <button type="button" class="option_btn">상품을 선택해주세요<img src="./images/main/icon/icon_down_16x10.png" alt=""></button>
                     </div>
                     <div class="option">
                         <a href="#">[픽어베이글] 플레인 베이글 <span>2,900원</span></a>
@@ -26,32 +26,35 @@
                         <a href="#">[픽어베이글] 세서미 베이글 <span>2,800원</span></a>
                         <a href="#">[픽어베이글] 다크통밀 베이글 <span>2,900원</span></a>
                     </div>
-                <div class="select_item">
-                    <p class="item_name"></p>
-                    <div class="num_result">
-                        <button type="button" id="minus">-</button>
-                        <input type="text" id="num" readonly>
-                        <button type="button" id="plus">+</button>
+                    <div class="select_item">
+                        <p class="item_name"></p>
+                        <div class="num_result">
+                            <button type="button" class="minus"><!-- <img src="./images/main/icon/icon_btn_minus.svg" alt=""> --></button>
+                            <input type="text" class="num" readonly value="1">
+                            <button type="button" class="plus"><!-- <img src="./images/main/icon/icon_btn_plus.svg" alt=""> --></button>
+                        </div>
+                        <p class="each_price"></p>
+                        <a href="#"><img src="./images/main/icon/icon_cancle.svg" alt=""></a>
                     </div>
-                    <p class="each_price"></p>
-                    <a href="#"><img src="./images/main/icon/icon_cancle.svg" alt=""></a>
-                </div>
-                <p class="total"><span>총 상품금액 :</span> <em><!-- 총액 --></em>원</p>
-                <div class="save">
-                    <p class="save_icon">적립</p>
-                    <p>구매 시 0원 적립</p>
-                </div>
-                <div class="wish_notify_cart_btn">
-                    <button type="button"><img src="./images/main/icon/icon_wish_active.svg" alt=""></button><!-- 활성화 시 active_2로 img 변경 -->
-                    <button type="button"><img src="./images/sub/icon_alarm.svg" alt=""></button>
-                    <button type="button">장바구니 담기</button>
+                    <div class="total">
+                        <p class="total_price"><span>총 상품금액 :</span> <strong>2,900<!-- 총액 --></strong> 원</p>
+                    </div>
+                    <div class="save">
+                        <p class="save_icon">적립</p>
+                        <p>구매 시 0원 적립</p>
+                    </div>
+                    <div class="wish_notify_cart_btn">
+                        <button type="button" id="wish"><img src="./images/main/icon/icon_wish_on.svg" alt=""></button><!-- 활성화 시 active_2로 img 변경 -->
+                        <button type="button" id="alarm"><img src="./images/sub/icon_alarm.svg" alt=""></button>
+                        <button type="button" id="cart">장바구니 담기</button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="product_container">
             <!-- 상세페이지 상단 - 이미지 / 가격, 상품명, 정보 -->
             <section class="img_information">
-                <div class="img">
+                <div class="img_container">
                     <img src="./images/main/product/p_007.jpeg" alt="">
                 </div>
                 <div class="information">
@@ -64,8 +67,8 @@
                     <p class="price"><em>2,800</em> 원~</p>
                     <p class="origin">원산지: 상품설명/상세정보 참조</p>
                     <div class="coupon">
-                        <p><em>2,000원</em> 적립금+할인 쿠폰 받고 구매하기</p>
-                        <!-- svg img -->
+                        <p class="words"><em>2,000원</em> 적립금+할인 쿠폰 받고 구매하기</p>
+                        <p><img src="./images/main/icon/icon_arrow_right.svg" alt=""></p>
                     </div>
                     <ul>
                         <li>
@@ -140,8 +143,7 @@
                             <dt>상품 선택</dt>
                             <dd>
                                 <div>
-                                    <button type="button">상품을 선택해주세요</button>
-                                    <!-- svg img -->
+                                    <button type="button" class="option_btn">상품을 선택해주세요<img src="./images/main/icon/icon_down_16x10.png" alt=""></button>
                                 </div>
                                 <div class="option">
                                     <a href="#">[픽어베이글] 플레인 베이글 <span>2,900원</span></a>
@@ -155,12 +157,15 @@
                                 </div>
                                 <div class="select">
                                     <div class="select_item">
-                                        <p class="item_name"></p>
+                                        <p class="item_name">플레인 베이글</p>
                                     </div>
-                                    <div class="num_result">
-                                        <button type="button" id="minus">-</button>
-                                        <input type="text" id="num" readonly>
-                                        <button type="button" id="plus">+</button>
+                                    <div class="num_price">
+                                        <div class="num_result">
+                                            <button type="button" class="minus"></button>
+                                            <input type="text" class="num" value="1" readonly>
+                                            <button type="button" class="plus"></button>
+                                        </div>
+                                        <div class="price">2900원<!-- 총액 --></div>
                                     </div>
                                     <a href="#"><img src="./images/main/icon/icon_cancle.svg" alt=""></a>
                                 </div>
@@ -172,7 +177,7 @@
                             <p>구매 시 0원 적립</p>
                         </div>
                         <div class="wish_notify_cart_btn">
-                            <button type="button"><img src="./images/main/icon/icon_wish_active.svg" alt=""></button><!-- 활성화 시 active_2로 img 변경 -->
+                            <button type="button"><img src="./images/main/icon/icon_wish_on.svg" alt=""></button><!-- 활성화 시 active_2로 img 변경 -->
                             <button type="button"><img src="./images/sub/icon_alarm.svg" alt=""></button>
                             <button type="button">장바구니 담기</button>
                         </div>
