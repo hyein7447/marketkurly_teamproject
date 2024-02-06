@@ -14,12 +14,28 @@
 body, html {scroll-behavior: smooth;}
 main {}
 /* 베스트 타이틀 영역 */
-main .best {}
-main .best .top {}
-main .best .top h1 {}
-main .best .top .cate_list {}
+main .best {width:1050px; margin:0 auto;}
+main .best .top {
+    margin-top: 50px;
+}
+main .best .top h1 {
+    font-size: 1.75rem; 
+    text-align: center;
+    font-weight: 500;
+}
+main .best .top .cate_list {
+    width: 100%;
+    display: flex; flex-flow: row wrap;
+    border: 1px solid #ddd;
+    padding:30px 40px;
+    margin-top: 28px;
+}
 main .best .top .cate_list a.top_active {}
-main .best .top .cate_list a {}
+main .best .top .cate_list a {
+    font-size: 0.875rem; line-height: 20px;
+    background-color: aqua;
+    width: 180px; margin-right: 60px; margin-bottom: 16px;
+}
 /* 왼쪽컨테이너 --- 어사이드 영역 */
 main .best .container {}
 main .best .container .left {}
@@ -38,7 +54,7 @@ main .best .container .left .list ul {}
 main .best .container .left .list ul li {}
 main .best .container .left .list ul li a {}
 main .best .container .left .list ul li a button {}
-main .best .container .left .list ul li a button img {}
+main .best .container .left .list ul li a button img {width:18px;}
 main .best .container .left .list ul li a p:nth-child(2) {}
 main .best .container .left .list ul li a p:nth-child(3) {}
 main .best .container .left .list ul li.more_btn {}
@@ -64,7 +80,7 @@ main .best .container .left .list2 .box .contents {}
 main .best .container .left .list2 .box .contents li {}
 main .best .container .left .list2 .box .contents li a {}
 main .best .container .left .list2 .box .contents li a .btn_chk {}
-main .best .container .left .list2 .box .contents li a .btn_chk img {}
+main .best .container .left .list2 .box .contents li a .btn_chk img {width:18px;}
 main .best .container .left .list2 .box .contents li a .btn_circle {}
 main .best .container .left .list2 .box .contents li a .btn_circle img {}
 main .best .container .left .list2 .box .contents li a p:nth-child(2) {}
@@ -77,6 +93,70 @@ main .best .container .left .list2 .box .more_btn li a p[class$=right] {}
 /* 어사이드 --- 가격 */
 /* 어사이드 --- 혜택 */
 /* 어사이드 --- 유형 */
+/* 어사이드 --- 팝업(★공통영역★) */
+main .best .container .left .popup {display: none;}
+main .best .container .left .popup .cate_pop,
+main .best .container .left .popup .brand_pop {}
+main .best .container .left .popup .cate_pop .wrap_top,
+main .best .container .left .popup .brand_pop .wrap_top {}
+main .best .container .left .popup .cate_pop .btn_wrap,
+main .best .container .left .popup .brand_pop .btn_wrap {}
+main .best .container .left .popup .cate_pop .btn_wrap .btn_reset ,
+main .best .container .left .popup .brand_pop .btn_wrap .btn_reset {}
+main .best .container .left .popup .cate_pop .btn_wrap .btn_reset [class$=right] ,
+main .best .container .left .popup .brand_pop .btn_wrap .btn_reset [class$=right]  {}
+main .best .container .left .popup .cate_pop .btn_wrap .btn_reset span,
+main .best .container .left .popup .brand_pop .btn_wrap .btn_reset span  {}
+main .best .container .left .popup .cate_pop .btn_wrap .btn_ok ,
+main .best .container .left .popup .brand_pop .btn_wrap .btn_ok  {}
+main .best .container .left .popup .cate_pop .btn_wrap .btn_ok span ,
+main .best .container .left .popup .brand_pop .btn_wrap .btn_ok span {}
+/* 어사이드 --- 팝업(카테고리) */
+main .best .container .left .popup .cate_pop .list_wrap {}
+main .best .container .left .popup .cate_pop .list_wrap ul {}
+main .best .container .left .popup .cate_pop .list_wrap ul li {}
+main .best .container .left .popup .cate_pop .list_wrap ul li a {}
+main .best .container .left .popup .cate_pop .list_wrap ul li a .btn_chk {}
+main .best .container .left .popup .cate_pop .list_wrap ul li a .btn_chk img {width:18px;}
+main .best .container .left .popup .cate_pop .list_wrap ul li a p {}
+main .best .container .left .popup .cate_pop .list_wrap ul li a p:last-child {}
+/* 어사이드 --- 팝업(브랜드) */
+main .best .container .left .popup .brand_pop {}
+main .best .container .left .popup .brand_pop .wrap_top {}
+main .best .container .left .popup .brand_pop .wrap_top .tap {}
+main .best .container .left .popup .brand_pop .wrap_top .tap h1 {}
+main .best .container .left .popup .brand_pop .wrap_top .tap p {}
+main .best .container .left .popup .brand_pop .wrap_top .tap p:nth-child(1) {}
+main .best .container .left .popup .brand_pop .wrap_top .tap p:nth-child(2) {}
+main .best .container .left .popup .brand_pop .wrap_top a {}
+main .best .container .left .popup .brand_pop .wrap_top a img {}
+main .best .container .left .popup .brand_pop .tap_sub {}
+main .best .container .left .popup .brand_pop .tap_sub a.tap_sub_active {}
+main .best .container .left .popup .brand_pop .tap_sub a {}
+main .best .container .left .popup .brand_pop .list_wrap {}
+/* 어사이드 --- 팝업(브랜드) --- 탭공통 */
+main .best .container .left .popup .brand_pop .list_wrap .list {}
+/* 어사이드 --- 팝업(브랜드) --- 탭1 */
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li{}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .sub_title {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li ul {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .con li {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .con li a {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .con li a .btn_chk {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .con li a .btn_chk img {width:18px;}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .con li a p {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .con li a p:last-child {}
+/* 어사이드 --- 팝업(브랜드) --- 탭2 */
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all li {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all li a {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all li a .btn_chk {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all li a .btn_chk img {width:18px;}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all li a p {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all li a p:last-child {}
 /* 오른쪽컨테이너 --- 상품 영역 */
 main .best .container .right {}
 main .best .container .right .lnb {}
@@ -113,6 +193,36 @@ main .best .container .right .product_box .product .info .p_review {}
 main .best .container .right .product_box .product .info .p_review [class$=dots] {}
 main .best .container .right .product_box .product .info .p_icon_only {}
 /* ◇ --- js 부분 (상품 리스트 DB로 처리) //끝// --- ◇ */
+/* ◇ --- js 부분 (상품 리스트 DB로 처리) (장바구니 담기 팝업) --- ◇ */
+main .best .container .right .cart_popup {display: none;}
+main .best .container .right .cart_popup .thumb_name {}
+main .best .container .right .cart_popup .thumb_name .thumb {}
+main .best .container .right .cart_popup .thumb_name h2.p_top_title {}
+main .best .container .right .cart_popup .info {}
+main .best .container .right .cart_popup .info .p_tap_title {}
+main .best .container .right .cart_popup .info .price_num {}
+main .best .container .right .cart_popup .info .price_num .p_tap_price {}
+main .best .container .right .cart_popup .info .price_num .p_tap_price span {}
+main .best .container .right .cart_popup .info .price_num .p_tap_price span del {}
+main .best .container .right .cart_popup .info .price_num .num {}
+main .best .container .right .cart_popup .info .price_num .num .minus {}
+main .best .container .right .cart_popup .info .price_num .num .minus img {}
+main .best .container .right .cart_popup .info .price_num .num .p_tap_num {}
+main .best .container .right .cart_popup .info .price_num .num .plus {}
+main .best .container .right .cart_popup .info .price_num .num .plus img {}
+main .best .container .right .cart_popup .total {}
+main .best .container .right .cart_popup .total .total_result {}
+main .best .container .right .cart_popup .total .total_result p {}
+main .best .container .right .cart_popup .total .total_result p.p_tap_price {}
+main .best .container .right .cart_popup .total .explain {}
+main .best .container .right .cart_popup .total .explain .icon_save {}
+main .best .container .right .cart_popup .total .explain span:nth-child(2) {}
+main .best .container .right .cart_popup .btn_cart {}
+main .best .container .right .cart_popup .btn_cart .btn_cancel {}
+main .best .container .right .cart_popup .btn_cart .btn_cancel span {}
+main .best .container .right .cart_popup .btn_cart .btn_cart_r {}
+main .best .container .right .cart_popup .btn_cart .btn_cart_r span {}
+/* ◇ --- js 부분 (상품 리스트 DB로 처리) (장바구니 담기 팝업) //끝// --- ◇ */
 /* 오른쪽컨테이너 --- 왼쪽,오른쪽 버튼 */
 main .best .container .right .arrow_num {}
 main .best .container .right .arrow_num a {}
