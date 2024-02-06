@@ -156,7 +156,7 @@
                 margin: 20px 0 60px;
                 gap: 8px;
 
-                #wish, #alarm {
+                .wish, .alarm {
                     width: 56px;
                     // height: 56px;
                     padding: 12px 0 7px;
@@ -165,7 +165,7 @@
                     
                     img {width: 32px;}
                 }
-                #cart {
+                .cart {
                     width: 300px;
                     height: 56px;
                     padding: 0 10px;
@@ -182,14 +182,12 @@
 }
 
 .product_container {
-    background-color: red;
     max-width: 1050px;
     width: 100%;
     margin: 0 auto;
     padding-top: 30px;
 
     .img_information {
-        background-color: aqua;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -358,6 +356,7 @@
                             padding: 11px 12px;
                             border: 1px solid rgb(244, 244, 244);
                             position: relative;
+                            display: none;
 
                             .select_item{
 
@@ -405,6 +404,163 @@
                         }
                     }
                 }
+                .save {
+                    text-align: right;
+
+                    .total {
+                        font-size: 1.25rem;
+                        font-weight: bold;
+
+                        span {
+                            font-size: 0.813rem;
+                        }
+                        em{
+                            font-size: 2rem;
+                            font-weight: bold;
+                            margin-left: 5px;
+                        }
+                    }
+                    .save_btm{
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: right;
+                        align-items: center;
+                        margin-top: 10px;
+
+                        p {
+                            font-size: 0.875rem;
+                            color: #666;
+                        }
+                        .save_icon{
+                            background-color: #ffbf00;
+                            color: #fff;
+                            font-size: 0.688rem;
+                            border-radius: 10px;
+                            padding: 0 7px;
+                            line-height: 20px;
+                            margin-right: 6px;
+                        }
+                    }
+                }
+                .wish_notify_cart_btn {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    justify-content: right;
+                    margin: 20px 0 60px;
+                    gap: 8px;
+    
+                    .wish, .alarm {
+                        width: 56px;
+                        // height: 56px;
+                        padding: 12px 0 7px;
+                        border: 1px solid #ddd;
+                        border-radius: 3px;
+                        
+                        img {width: 32px;}
+                    }
+                    .cart {
+                        width: 300px;
+                        height: 56px;
+                        padding: 0 10px;
+                        background-color: $purple;
+                        color: #fff;
+                        border-radius: 3px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    .product_page_nav{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        li{
+            width: 251px;
+            padding: 20px 0;
+            background-color: #fafafa;
+            border: 1px solid #eee;
+            text-align: center;
+            
+            a{
+                color: #666;
+                font-weight: 500;
+            }
+        }
+    }
+    .description_container{
+        margin-top: 40px;
+        width: 1010px;
+        text-align: center;
+
+        .intro{
+            .main_img{
+                img{width: 100%;}
+                margin-bottom: 60px;
+            }
+            .additional{
+                color: #666;
+                font-size: 1.5rem;
+                margin-bottom: 14px;
+            }
+            h3{
+                color: #666;
+                border-bottom: 1px solid #c1c1c1;
+                font-size: 2.375rem;
+                padding-bottom: 35px;
+            }
+            .description{
+                margin-top: 28px;
+                line-height: 32px;
+                color: #373737;
+                font-size: 1.125rem;
+                margin-bottom: 170px;
+                text-align: left;
+            }
+        }
+        .checkpoint{
+            margin-bottom: 170px;
+
+            h3{
+                margin: 0 auto;
+                position: relative;
+                margin-bottom: 70px;
+                
+                span{
+                    font-size: 3.125rem;
+                    color: #666;
+                    background-color: #fff;
+                    font-weight: 500;
+                    padding: 0 15px;
+                    width: max-content;
+                }
+                &::before{
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background-color: #b9b9b9;
+                    position: absolute;
+                    z-index: -100;
+                    top: 40px;
+                    left: 0;
+                }
+            }
+            .content_img{                
+                margin-top: 170px;
+            }
+            .sub_title{
+                margin-top: 75px;
+                font-size: 1.875rem;
+                text-align: left;
+                font-weight: 500;
+            }
+            .description{
+                margin-top: 14px;
+                text-align: left;
+                line-height: 32px;
+                color: #373737;
             }
         }
     }
