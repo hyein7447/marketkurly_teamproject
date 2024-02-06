@@ -1,0 +1,177 @@
+main {}
+/* 메인배너 */
+main .main_bnr {}
+main .main_bnr {}
+main .main_bnr #main_bnr_slide {}
+main .main_bnr #main_bnr_slide #main_bnr_slide_wrap {}
+/* 메인 배너 slide 공통 */
+main .main_bnr #main_bnr_slide #main_bnr_slide_wrap .slide {
+    display: block; background-size: cover; height: 370px;
+} 
+/* 메인 배너 slide 개별 */
+main .main_bnr #main_bnr_slide #main_bnr_slide_wrap .slide1 {
+    background: url(../images/main/bnr/bnr_001.jpg);
+} 
+main .main_bnr #main_bnr_slide #main_bnr_slide_wrap .slide2 {
+    background: url(../images/main/bnr/bnr_002.jpg);
+} 
+main .main_bnr #main_bnr_slide #main_bnr_slide_wrap .slide3 {
+    background: url(../images/main/bnr/bnr_003.jpg);
+} 
+main .main_bnr #main_bnr_slide #main_bnr_slide_wrap .slide4 {
+    background: url(../images/main/bnr/bnr_004.jpg);
+} 
+main .main_bnr #main_bnr_slide #main_bnr_slide_wrap .slide5 {
+    background: url(../images/main/bnr/bnr_005.jpg);
+} 
+main .main_bnr #main_bnr_slide #main_bnr_slide_wrap .slide6 {
+    background: url(../images/main/bnr/bnr_006.jpg);
+}
+main .main_bnr #main_bnr_slide .swiper-pagination {}
+main .main_bnr #main_bnr_slide .swiper-pagination .current {}
+main .main_bnr #main_bnr_slide .swiper-pagination .total {}
+main .main_bnr #main_bnr_slide #main_prev_btn {}
+main .main_bnr #main_bnr_slide #main_next_btn {}
+/* 설 선물 실시간 특가 */
+main .ranking {}
+main .ranking .title {}
+main .ranking .title h2 {}
+main .ranking .title h2 img {}
+main .ranking .title p {}
+main .ranking .container {}
+main .ranking .container #ranking_slide {}
+main .ranking .container #ranking_slide #ranking_slide_wrap {}
+/* 설 선물 실시간 특가 슬라이드 아이템 공통 */
+main .ranking .container #ranking_slide #ranking_slide_wrap .item {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item a {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item a .img {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item a .img img {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item a .cart_add {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item a .cart_add .cart_btn {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item a .cart_add .cart_btn img {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item a .info {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item a .info h3 {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item a .info .price {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item a .info .price del {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item a .info .price .discount {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item a .info .price .discount .rate {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item a .info .price .discount .discount_price {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item a .info .price .review {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item a .info .price .review img {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item a .info .price .review .review_num {}
+/* 설 선물 실시간 특가 슬라이드 아이템 개별 */
+main .ranking .container #ranking_slide #ranking_slide_wrap .item1 {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item2 {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item3 {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item4 {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item5 {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item6 {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item7 {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item8 {}
+/* 설 선물 실시간 특가 이전, 다음버튼 */
+main .ranking .container #ranking_slide .prev_btn {}
+main .ranking .container #ranking_slide .next_btn {}
+/* 서브 배너 */
+main .sub_bnr {}
+main .sub_bnr a {}
+/* 설 선물 특가 */
+main .special_p {}
+/* 설 선물 특가 left*/
+main .special_p .left {}
+main .special_p .left .title {}
+main .special_p .left .title h2 {}
+main .special_p .left .title p {}
+main .special_p .left .time {}
+main .special_p .left .time .time_icon {}
+main .special_p .left .time .time_icon img {}
+main .special_p .left .time .timer {}
+main .special_p .left p {}
+/* 설 선물 특가 right*/
+main .special_p .right {}
+main .special_p .right .item {}
+main .special_p .right .item a {}
+main .special_p .right .item a .img {}
+main .special_p .right .item a .img img {}
+main .special_p .right .item a .img .badge {}
+main .special_p .right .item a .cart_add {}
+main .special_p .right .item a .cart_add .cart_btn {}
+main .special_p .right .item a .cart_add .cart_btn img {}
+main .special_p .right .item a .info {}
+main .special_p .right .item a .info .desc {}
+main .special_p .right .item a .info h3 {}
+main .special_p .right .item a .info .price {}
+main .special_p .right .item a .info .price del {}
+main .special_p .right .item a .info .price .discount {}
+main .special_p .right .item a .info .price .discoun .rate {}
+main .special_p .right .item a .info .price .discoun .discount_price {}
+main .special_p .right .item a .info .price .review {}
+main .special_p .right .item a .info .price .review img {}
+main .special_p .right .item a .info .price .review .review_num {}
+/* MD 추천 */
+main .md {}
+main .md .title {}
+main .md .title h2 {}
+main .md .title h2 .tag {}
+main .md .title h2 .tag li {}
+main .md .title h2 .tag li a {}
+main .md .title h2 .container {}
+main .md .title h2 .container #md_slide {}
+main .md .title h2 .container #md_slide #md_slide_wrap {}
+/* MD추천 슬라이드 아이템 공통 */
+main .md .title h2 .container #md_slide #md_slide_wrap .item {}
+main .md .title h2 .container #md_slide #md_slide_wrap .item a {}
+main .md .title h2 .container #md_slide #md_slide_wrap .item a .img {}
+main .md .title h2 .container #md_slide #md_slide_wrap .item a .img img {}
+main .md .title h2 .container #md_slide #md_slide_wrap .item a .cart_add {}
+main .md .title h2 .container #md_slide #md_slide_wrap .item a .cart_add .cart_btn {}
+main .md .title h2 .container #md_slide #md_slide_wrap .item a .cart_add .cart_btn img {}
+main .md .title h2 .container #md_slide #md_slide_wrap .item a .info {}
+main .md .title h2 .container #md_slide #md_slide_wrap .item a .info h3 {}
+main .md .title h2 .container #md_slide #md_slide_wrap .item a .info .price {}
+main .md .title h2 .container #md_slide #md_slide_wrap .item a .info .price del {}
+main .md .title h2 .container #md_slide #md_slide_wrap .item a .info .price .discoun {}
+main .md .title h2 .container #md_slide #md_slide_wrap .item a .info .price .discoun .rate {}
+main .md .title h2 .container #md_slide #md_slide_wrap .item a .info .price .discoun .discount_price {}
+main .md .title h2 .container #md_slide #md_slide_wrap .item a .info .price .review {}
+main .md .title h2 .container #md_slide #md_slide_wrap .item a .info .price .review img {}
+main .md .title h2 .container #md_slide #md_slide_wrap .item a .info .price .review .review_num {}
+main .md .title h2 .container #md_slide .prev_btn {}
+main .md .title h2 .container #md_slide .next_btn {}
+main .md .title h2 .all_btn {}
+main .md .title h2 .all_btn a {}
+/* 컬리 only */
+main .kurly_original {}
+main .kurly_original .title {}
+main .kurly_original .title h2 {}
+main .kurly_original .title h2 img {}
+main .kurly_original .title p {}
+main .kurly_original .container {}
+main .kurly_original .container #original_slide {}
+main .kurly_original .container #original_slide #original_slide_wrap {}
+/* 컬리 only 슬라이드 아이템 공통*/
+main .kurly_original .container #original_slide #original_slide_wrap .item {}
+main .kurly_original .container #original_slide #original_slide_wrap .item a {}
+main .kurly_original .container #original_slide #original_slide_wrap .item a .img {}
+main .kurly_original .container #original_slide #original_slide_wrap .item a .img img {}
+main .kurly_original .container #original_slide #original_slide_wrap .item a .info {}
+main .kurly_original .container #original_slide #original_slide_wrap .item a .info h2 {}
+main .kurly_original .container #original_slide #original_slide_wrap .item a .info p {}
+main .kurly_original .container #original_slide .prev_btn {}
+main .kurly_original .container #original_slide .next_btn {}
+/* 컬리 레시피 */
+main .recipe {}
+main .recipe .title {}
+main .recipe .title h2 {}
+main .recipe .title h2 img {}
+main .recipe .container {}
+main .recipe .container #recipe_slide {}
+main .recipe .container #recipe_slide #recipe_slide_wrap {}
+/* 컬리 레시피 슬라이드 아이템 공통 */
+main .recipe .container #recipe_slide #recipe_slide_wrap .item {}
+main .recipe .container #recipe_slide #recipe_slide_wrap .item a {}
+main .recipe .container #recipe_slide #recipe_slide_wrap .item a .img {}
+main .recipe .container #recipe_slide #recipe_slide_wrap .item a .img img {}
+main .recipe .container #recipe_slide #recipe_slide_wrap .item a .text {}
+main .recipe .container #recipe_slide #recipe_slide_wrap .item a .text p {}
+main .recipe .container #recipe_slide .prev_btn {}
+main .recipe .container #recipe_slide .next_btn {}
