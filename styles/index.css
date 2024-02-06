@@ -2,7 +2,9 @@ main {}
 /* 메인배너 */
 main .main_bnr {}
 main .main_bnr {}
-main .main_bnr #main_bnr_slide {}
+main .main_bnr #main_bnr_slide {
+    width: 1920px; margin: 0 auto; 
+}
 main .main_bnr #main_bnr_slide #main_bnr_slide_wrap {}
 /* 메인 배너 slide 공통 */
 main .main_bnr #main_bnr_slide #main_bnr_slide_wrap .slide {
@@ -30,8 +32,16 @@ main .main_bnr #main_bnr_slide #main_bnr_slide_wrap .slide6 {
 main .main_bnr #main_bnr_slide .swiper-pagination {}
 main .main_bnr #main_bnr_slide .swiper-pagination .current {}
 main .main_bnr #main_bnr_slide .swiper-pagination .total {}
-main .main_bnr #main_bnr_slide #main_prev_btn {}
-main .main_bnr #main_bnr_slide #main_next_btn {}
+main .main_bnr #main_bnr_slide #main_prev_btn { transform: scaleX(-1);}
+/* 이전, 다음 버튼 공통 묶음 */
+main .main_bnr #main_bnr_slide #main_prev_btn,
+main .main_bnr #main_bnr_slide #main_next_btn {
+    background: url(../images/main/icon/main_bnr_next_btn.svg) no-repeat center;
+    background-size: cover; width: 52px; height: 52px;
+}
+main .swiper-button-prev::after {display: none;}
+main .swiper-button-next::after {display: none;}
+
 /* 설 선물 실시간 특가 */
 main .ranking {}
 main .ranking .title {}
