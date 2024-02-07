@@ -7,7 +7,7 @@ header .pop_up p em {}
 header .pop_up .reset_btn {}
 header .pop_up .reset_btn a {}
 /* header 회원가입, 로그인, 고객센터 */
-header .user_page {width: 1050px; margin: 0 auto; display: flex; justify-content: flex-end;}
+header .user_page {width: 1050px; margin: 0 auto; display: flex; justify-content: flex-end; height: 32px;align-items: center; position: relative; }
 header .user_page a {font-size: 0.75rem;} /* 마이페이지 a 공통 */
 header .user_page .join {color: #5F0080;}
 header .user_page .login {}
@@ -17,9 +17,18 @@ header .user_page .login::after {
     display: inline-block; margin: 0 8px;
 }
 header .user_page .cs {}
-header .user_page .cs img {width: 8px; height: 5px;}
-header .user_page .cs_open {display: none;}
-header .user_page .cs_open a {}
+header .user_page .cs img {width: 8px; height: 5px; margin-left: 4px;}
+header .user_page .cs_open {
+    display: flex; flex-flow: column nowrap; 
+    position: absolute;
+    right: 0; top: 34px; width: 130px;
+    padding: 3px 9px; border: 1px solid #ddd;
+    background-color: #fff;
+    display: none;
+}
+header .user_page .cs_open a {
+    display: block; height: 24px; line-height: 24px;
+}
 /* header top */
 header .header_top {
     width: 1050px; height: 63px; margin: 0 auto;
@@ -46,15 +55,26 @@ header .header_top .search #user_search {padding-left: 14px;}
 header .header_top .search #search_btn {}
 header .header_top .search #search_btn img {margin: 10px; position: relative; bottom: 6px;}
 header .header_top .user_info {display: flex;}
-header .header_top .user_info .map {}
-header .header_top .user_info .map .map_icon {margin-right: 20px;}
+header .header_top .user_info .map {position: relative;}
+header .header_top .user_info .map .map_icon {margin-right: 20px; }
 header .header_top .user_info .map .map_icon img {}
-header .header_top .user_info .map .map_open {display: none;}
-header .header_top .user_info .map .map_open p {}
-header .header_top .user_info .map .map_open p em {}
+header .header_top .user_info .map .map_open {
+    position: absolute; left: -20px; z-index: 999;
+    bottom: -100px; width: 267px; padding: 18px 17px 17px;
+    border: 1px solid #ddd; background-color: #fff;
+}
+header .header_top .user_info .map .map_open p {
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+header .header_top .user_info .map .map_open p em {color: #5F0080;font-weight: 500; }
 header .header_top .user_info .map .map_open .map_btn {}
-header .header_top .user_info .map .map_open .map_btn #map_login_btn {}
-header .header_top .user_info .map .map_open .map_btn #map_search_btn {}
+header .header_top .user_info .map .map_open .map_btn #map_login_btn {
+    font-size: 0.75rem; font-weight: 500;
+}
+header .header_top .user_info .map .map_open .map_btn #map_search_btn {
+    font-size: 0.75rem; font-weight: 500;
+}
 header .header_top .user_info .wish {margin-right: 20px;}
 header .header_top .user_info .wish img {}
 header .header_top .user_info .cart {}
