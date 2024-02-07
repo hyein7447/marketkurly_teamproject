@@ -563,5 +563,203 @@
                 color: #373737;
             }
         }
+        .kurly_pick{
+
+            h3{
+                margin: 0 auto;
+                position: relative;
+                margin-bottom: 70px;
+                
+                span{
+                    font-size: 3.125rem;
+                    color: #666;
+                    background-color: #fff;
+                    font-weight: 500;
+                    padding: 0 15px;
+                    width: max-content;
+                }
+                &::before{
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background-color: #b9b9b9;
+                    position: absolute;
+                    z-index: -100;
+                    top: 40px;
+                    left: 0;
+                }
+            }
+            ul{
+                text-align: left;
+
+                li{
+                    margin-bottom: 130px;
+
+                    .option{
+                        margin-top: 55px;
+                        font-size: 1.875rem;
+                        color: #373737;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        line-height: 32px;
+                        font-size: 1.125rem;
+                        color: #373737;
+                    }
+                }
+            }
+        }
+        .tip_wrap{
+            text-align: left;
+            margin-bottom: 170px;
+
+            h3{
+                font-size: 2.25rem;
+                padding: 0 10px;
+                background-color: #fff;
+                width: max-content;
+                position: relative;
+                top: 20px;
+                left: 48px;
+                color: #666;
+            }
+            .tip{
+                padding: 60px 62px;
+                border: 1px solid rgb(185, 185, 185);
+
+                .sub_title{
+                    margin-bottom: 10px;
+                    font-size: 1.563rem;
+                    line-height: 38px;
+                }
+                .description{
+                    line-height: 32px;
+                    font-size: 1.125rem;
+                }
+            }
+        }
+        .recipe{
+            text-align: left;
+            margin-bottom: 170px;
+
+            h3{
+                margin: 0 auto;
+                width: max-content;
+                font-size: 3.125rem;
+                color: #666;
+                padding: 30px;
+                border-bottom: 1px solid rgb(177, 177, 177);
+            }
+            .recipe_menu{
+                color: #666;
+                font-size: 2.125rem;
+                margin-top: 30px;
+                margin-bottom: 70px;
+                text-align: center;
+            }
+            .sub_title{
+                margin-top: 55px;
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+                color: #666;
+            }
+            .description{
+                font-size: 1.125rem;
+                line-height: 32px;
+            }
+        }
+        .about_brand{
+            text-align: left;
+            margin-bottom: 270px;
+
+            h3{
+                margin: 0 auto;
+                position: relative;
+                margin-bottom: 70px;
+                text-align: center;
+                
+                span{
+                    font-size: 3.125rem;
+                    color: #666;
+                    background-color: #fff;
+                    font-weight: 500;
+                    padding: 0 15px;
+                    width: max-content;
+                }
+                &::before{
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background-color: #b9b9b9;
+                    position: absolute;
+                    z-index: -100;
+                    top: 40px;
+                    left: 0;
+                }
+            }
+            .description{
+                margin-top: 60px;
+                margin-bottom: 100px;
+                font-size: 1.125rem;
+                line-height: 32px;
+            }
+        }
+    }
+    .detail{
+
+        .detail_img{border-bottom: 1px solid rgb(221, 221, 221);}
+        .detail_contents1{
+            padding: 72px 0;
+            border-bottom: 1px solid rgb(221, 221, 221);
+
+            h3{
+                color: #666;
+                font-size: 1.75rem;
+                text-align: center;
+            }
+            ul{
+                padding: 26px 16px 0;
+                display: flex;
+                flex-flow: wrap;
+                justify-content: center;
+                // align-items: center;
+                gap: 8px;
+
+                li{
+                    text-align: center;
+                    border: 1px solid rgb(238, 238, 238);
+                    padding: 8px 13px;
+                    font-size: 0.813rem;
+                    letter-spacing: -0.5px;
+                    min-width: 70px;
+                    max-width: 214px;
+                    border-radius: 4px;
+                    line-height: 18px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .detail_box{
+                margin-top: 36px;
+
+                dl{
+                    display: flex;
+                    flex-flow: row nowrap;
+
+                    dt,dd{
+                        padding: 0 18px 18px;
+                        font-size: 0.813rem;
+                    }
+                    dt{
+                        background-color: #f7f7f7;
+                        width: 180px;
+                    }
+                    dd{
+                        width: 325px;
+                    }
+                }
+            }
+        }
     }
 }
