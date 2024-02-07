@@ -59,21 +59,42 @@ header .header_top .user_info .map {position: relative;}
 header .header_top .user_info .map .map_icon {margin-right: 20px; }
 header .header_top .user_info .map .map_icon img {}
 header .header_top .user_info .map .map_open {
-    position: absolute; left: -20px; z-index: 999;
-    bottom: -100px; width: 267px; padding: 18px 17px 17px;
+    position: absolute; left: 26%; transform: translateX(-50%); z-index: 999;
+    top: 55px; width: 267px; padding: 18px 17px 17px;
     border: 1px solid #ddd; background-color: #fff;
+    display: none;
+}
+header .header_top .user_info .map .map_open::before {
+    content: ''; display: inline-block; width: 36px; height: 36px;
+    position: absolute; left: 118px; top: -20px;
+}
+header .header_top .user_info .map .map_open::after {
+    background: url(../images/main/icon/map_open_arrow.svg) no-repeat center;
+    height: 11px; width: 18px; content: ''; display: inline-block;
+    position: absolute; top: -11px; left: 127px;
 }
 header .header_top .user_info .map .map_open p {
     line-height: 24px;
-    letter-spacing: 0.32px;
+    letter-spacing: 1px;
 }
-header .header_top .user_info .map .map_open p em {color: #5F0080;font-weight: 500; }
-header .header_top .user_info .map .map_open .map_btn {}
+header .header_top .user_info .map .map_open p em {
+    color: #5F0080;font-weight: 500; line-height: 24px;
+}
+header .header_top .user_info .map .map_open .map_btn {
+    display: flex; justify-content: space-between; padding-top: 11px; 
+}
 header .header_top .user_info .map .map_open .map_btn #map_login_btn {
-    font-size: 0.75rem; font-weight: 500;
+    font-size: 0.75rem; font-weight: 500; padding: 0 10px; text-align: center;
+    width: 80px; height: 36px; border-radius: 3px; color: #5F0080; border: 1px solid #5F0080;
+    background: #fff;
 }
 header .header_top .user_info .map .map_open .map_btn #map_search_btn {
-    font-size: 0.75rem; font-weight: 500;
+    font-size: 0.75rem; font-weight: 500; background: #5F0080; color: #fff;
+    display: flex; align-items: center; width: 145px; border-radius: 3px; justify-content: center;
+    padding: 0px 10px 0 0; height: 36px;
+}
+header .header_top .user_info .map .map_open .map_btn #map_search_btn img {
+    width: 20px; height: 20px;
 }
 header .header_top .user_info .wish {margin-right: 20px;}
 header .header_top .user_info .wish img {}
