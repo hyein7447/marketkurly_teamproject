@@ -761,7 +761,7 @@ main .best .popup .cart_pop .info .price_num .num {
     display: flex; align-items: center;
     padding: 2px 4px 0px;
 }
-main .best .popup .cart_pop .info .price_num .num .minus {background-color: pink;}
+main .best .popup .cart_pop .info .price_num .num .minus {}
 main .best .popup .cart_pop .info .price_num .num .minus img {
     height: 22px;
 }
@@ -771,9 +771,8 @@ main .best .popup .cart_pop .info .price_num .num .p_tap_num {
     line-height: 24px;
     font-weight: 600;
     font-size: 0.875rem;
-    background-color: lightgoldenrodyellow;
 }
-main .best .popup .cart_pop .info .price_num .num .plus {background-color: aqua;}
+main .best .popup .cart_pop .info .price_num .num .plus {}
 main .best .popup .cart_pop .info .price_num .num .plus img {
     height: 22px;
 }
@@ -804,7 +803,7 @@ main .best .popup .cart_pop .total .explain .icon_save {
     height: 18px;
     margin-right: 4px;
     border-radius: 9px;
-    background-color: #bd76ff;
+    background-color: #ffbf00;
     color: #fff;
     font-size: 0.625rem;
     line-height: 18px;
@@ -813,6 +812,7 @@ main .best .popup .cart_pop .total .explain .icon_save {
 main .best .popup .cart_pop .total .explain span:nth-child(2) {
     font-size: 0.75rem;
     line-height: 18px;
+    font-weight: 500;
 }
 main .best .popup .cart_pop .btn_cart {
     bottom:0; left: 0px; width: 100%;
@@ -824,7 +824,7 @@ main .best .popup .cart_pop .btn_cart .btn_cancel {
     height: 56px;
     border:1px solid #ddd;
     background-color: #fff;
-    border-radius: 4px;
+    border-radius: 3px;
     margin-right: 8px;
 }
 main .best .popup .cart_pop .btn_cart .btn_cancel span {
@@ -835,7 +835,7 @@ main .best .popup .cart_pop .btn_cart .btn_cart_r {
     height: 56px;
     border:1px solid #5f0080;
     background-color: #5f0080;
-    border-radius: 4px;
+    border-radius: 3px;
 }
 main .best .popup .cart_pop .btn_cart .btn_cart_r span {
     color: #fff; font-weight: 500;
