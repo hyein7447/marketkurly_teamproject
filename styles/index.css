@@ -50,8 +50,8 @@ main .swiper-button-next::after {display: none;}
 /* 설 선물 실시간 특가 */
 main .ranking {margin: 0 auto; width: 1050px; padding: 40px 0;}
 main .ranking .title {margin-bottom: 27px;}
-main .ranking .title h2 {display: flex; justify-content: center; padding: 8px 0 10px 8px; align-items: center;}
-main .ranking .title h2 img {position: relative; top: 2px;}
+main .ranking .title a {display: flex; justify-content: center; padding: 8px 0 10px 8px; align-items: center;}
+main .ranking .title a img {position: relative; top: 2px;}
 main .ranking .title p {color: #999; text-align: center;}
 main .ranking .container {}
 main .ranking .container #ranking_slide {
@@ -237,6 +237,13 @@ main .md .all_btn a {
     border-radius: 3px; border: 1px solid #e3e3e3;
     padding: 0px 17px; letter-spacing: -0.27px; line-height: 15px;
 }
+/* 서브배너 2 */
+main .sub_bnr2 {width: 1050px; margin: 0 auto; padding: 40px 0;}
+main .sub_bnr2 a {
+    background: url(../images/main/bnr/sub_bnr_002.jpg) no-repeat center;
+    display: block;
+    height: 140px;
+}
 /* 컬리 original */
 main .kurly_original {padding: 40px 0; width: 1050px; margin: 0 auto;}
 main .kurly_original .title {padding-top: 12px; margin-bottom: 27px;}
@@ -275,6 +282,41 @@ main .kurly_original .container #original_slide #original_slide_wrap .item a .in
 main .kurly_original .container #original_slide #original_slide_wrap .item a .info p {opacity: 0.5;}
 main .kurly_original .container #original_slide .prev_btn {}
 main .kurly_original .container #original_slide .next_btn {}
+/* 선물 특가 */
+main .present {margin: 0 auto; width: 1050px; padding: 40px 0;}
+main .present .title {margin-bottom: 27px;}
+main .present .title a {display: flex; justify-content: center; padding: 8px 0 10px 8px; align-items: center;}
+main .present .title a img {position: relative; top: 2px;}
+main .present .title p {color: #999; text-align: center;}
+main .present .container {}
+main .present .container #present_slide {width: 1050px; overflow-x: hidden;}
+main .present .container #present_slide #present_slide_wrap {width: max-content; display: flex;}
+main .present .container #present_slide #present_slide_wrap .item {
+    display: flex; flex-flow: column nowrap;
+    margin-right: 18px; width: 249px;
+}
+main .present .container #present_slide #present_slide_wrap .item:nth-child(4) {margin: 0;}
+main .present .container #present_slide #present_slide_wrap .item:last-child {margin: 0;}
+main .present .container #present_slide #present_slide_wrap .item a {}
+main .present .container #present_slide #present_slide_wrap .item a .img {
+    height: 320px; width: 100%; position: relative;
+}
+main .present .container #present_slide #present_slide_wrap .item a .img img {
+    height: 100%; border-radius: 4px;
+}
+main .present .container #present_slide #present_slide_wrap .item a .cart_add {}
+main .present .container #present_slide #present_slide_wrap .item a .cart_add .cart_btn {}
+main .present .container #present_slide #present_slide_wrap .item a .cart_add .cart_btn img {}
+main .present .container #present_slide #present_slide_wrap .item a .info {}
+main .present .container #present_slide #present_slide_wrap .item a .info h3 {}
+main .present .container #present_slide #present_slide_wrap .item a .info .price {}
+main .present .container #present_slide #present_slide_wrap .item a .info .price del {}
+main .present .container #present_slide #present_slide_wrap .item a .info .price .discoun {}
+main .present .container #present_slide #present_slide_wrap .item a .info .price .discoun .rate {}
+main .present .container #present_slide #present_slide_wrap .item a .info .price .discoun .discount_price {}
+main .present .container #present_slide #present_slide_wrap .item a .info .price .review {}
+main .present .container #present_slide #present_slide_wrap .item a .info .price .review img {}
+main .present .container #present_slide #present_slide_wrap .item a .info .price .review .review_num {}
 /* 컬리 레시피 */
 main .recipe {width: 1050px; margin: 0 auto; padding: 40px 0;}
 main .recipe .title {margin-bottom: 27px;}
@@ -308,6 +350,13 @@ main .recipe .container #recipe_slide #recipe_slide_wrap .item a .text p {
 }
 main .recipe .container #recipe_slide .prev_btn {}
 main .recipe .container #recipe_slide .next_btn {}
+/* 서브배너 3 */
+main .sub_bnr3 {width: 1050px; margin: 0 auto; padding: 40px 0;}
+main .sub_bnr3 a {    
+    background: url(../images/main/bnr/sub_bnr_003.png) no-repeat center;
+    display: block;
+    height: 140px;
+}
 /* 인스타그램 후기 */
 main .instagram {width: 1050px; margin: 0 auto; padding: 40px 0;}
 main .instagram .title {margin-bottom: 27px;}
