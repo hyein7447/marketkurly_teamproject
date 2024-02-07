@@ -1,4 +1,32 @@
+// color
 $purple: #5F0080;
 $orange: #fa622f;
 $badge: #bd76ff;
 $error: #f03f40;
+$error: 1.5rem;
+
+// font size
+$px28: 1.75rem;
+$px24: 1.5rem;
+$px20: 1.25rem;
+$px18: 1.125rem;
+$px17: 1.063rem;
+$px15: 0.938rem;
+$px14: 0.875rem;
+$px13: 0.813rem;
+$px12: 0.75rem;
+$px11: 0.688rem;
+
+// mixin 2개 이상의 스타일 규칙 함수
+@mixin flex-row-btw-ct {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex-col-btw-ct {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
