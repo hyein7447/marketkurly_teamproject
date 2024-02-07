@@ -1,15 +1,3 @@
-.fa-question_before {
-    content: "\3f";
-    border: 2px solid #ddd;
-    display: inline-block;
-    padding: 3px 2px 1px;
-    text-align: center;
-    font-size: 13px;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    color:#ddd;
-}
 /* 베스트 카테고리 선택자 */
 body, html {scroll-behavior: smooth;}
 main {}
@@ -30,69 +18,268 @@ main .best .top .cate_list {
     padding:30px 40px;
     margin-top: 28px;
 }
-main .best .top .cate_list a.top_active {}
+main .best .top .cate_list a.top_active {
+    font-weight: 700; color:#5f0080;
+}
 main .best .top .cate_list a {
     font-size: 0.875rem; line-height: 20px;
-    background-color: aqua;
+    letter-spacing: -0.01rem;
     width: 180px; margin-right: 60px; margin-bottom: 16px;
 }
 /* 왼쪽컨테이너 --- 어사이드 영역 */
-main .best .container {}
-main .best .container .left {}
-main .best .container .left .title {}
-main .best .container .left .title h3 {}
+main .best .container {
+    display: flex;
+    margin: 35px 0;
+}
+main .best .container .left {
+    width: 220px;
+    margin-right: 47px;
+    height: 100%;
+    max-height: 95vh;
+    position:sticky;
+    top:0;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    scrollbar-width:none;
+    border-bottom: 1px solid #eee; 
+}
+main .best .container .left .title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    position: sticky; top: 0;
+    z-index: 300;
+    background-color: #fff;
+    height: 60px;
+    line-height: 20px;
+    padding-top: 20px;
+}
+main .best .container .left .title h3 {
+    font-size: 0.938rem;
+    font-weight: 600;
+}
 main .best .container .left .title h3 p {}
-main .best .container .left .title h3 p [class$=right] {}
-main .best .container .left .title h3 p span {}
+main .best .container .left .title p [class$=right] {
+    color:#ddd; font-size: 14px;
+    margin-right: 4px;
+}
+main .best .container .left .title p span {
+    color:#ddd; font-size: 0.875rem;
+}
 /* 어사이드 -- ★공통★ */
 main .best .container .left .list {}
-main .best .container .left .list .list_title {}
-main .best .container .left .list .list_title span {}
+main .best .container .left .list .list_title {
+    display: flex; justify-content: space-between;
+    align-items: center;
+    height: 52px;
+}
+main .best .container .left .list .list_title span {
+    font-size: 0.938rem; font-weight: 600;
+}
 main .best .container .left .list .list_title span em {}
-main .best .container .left .list .list_title span [class$=up] {}
+main .best .container .left .list .list_title span [class$=up] {font-size: 10px;}
 main .best .container .left .list ul {}
-main .best .container .left .list ul li {}
-main .best .container .left .list ul li a {}
-main .best .container .left .list ul li a button {}
-main .best .container .left .list ul li a button img {width:18px;}
-main .best .container .left .list ul li a p:nth-child(2) {}
-main .best .container .left .list ul li a p:nth-child(3) {}
-main .best .container .left .list ul li.more_btn {}
-main .best .container .left .list ul li.more_btn a {}
-main .best .container .left .list ul li.more_btn a p {}
-main .best .container .left .list ul li.more_btn a p[class$=right] {}
+main .best .container .left .list ul li {margin:9px 0 18px;}
+main .best .container .left .list ul li .btn_circle,
+main .best .container .left .list ul li .btn_chk {display: flex; align-items: center;}
+main .best .container .left .list ul li .btn_circle img,
+main .best .container .left .list ul li .btn_chk img {
+    width:18px; margin-right: 8px;
+    transform: translateY(2px);
+}
+main .best .container .left .list ul li .btn_circle p:nth-child(2),
+main .best .container .left .list ul li .btn_chk p:nth-child(2) {
+    margin-right: 4px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #111;
+}
+main .best .container .left .list ul li .btn_circle p:nth-child(3),
+main .best .container .left .list ul li .btn_chk p:nth-child(3) {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color:#ccc;
+}
+main .best .container .left .list1 > ul > .more_btn ,
+main .best .container .left .list2 .box .more_btn {
+    display: flex; justify-content: center; 
+    border-bottom: 1px solid #eee;
+    margin-bottom: 11px;
+}
+main .best .container .left .list1 ul .more_btn a,
+main .best .container .left .list2 .box .more_btn a {}
+main .best .container .left .list1 ul .more_btn a p,
+main .best .container .left .list2 .box .more_btn a p {
+    font-size: 0.75rem; font-weight: 600;
+    color:#999; margin-right: 4px;
+    display: inline-block;
+}
+main .best .container .left .list1 ul .more_btn a p[class$=right],
+main .best .container .left .list2 .box .more_btn a p[class$=right] {
+    font-size: 12px;
+    color:#999;
+}
 /* 어사이드 --- 카테고리 */
+main .best .container .left .list1 > ul > .more_btn {padding: 9px 0 18px;}
 /* 어사이드 --- 브랜드의 상단영역 */
 main .best .container .left .list2 {}
 main .best .container .left .list2 .list_title {}
 main .best .container .left .list2 .list_title span {}
 main .best .container .left .list2 .list_title span em {}
 main .best .container .left .list2 .list_title span [class$=up] {}
-main .best .container .left .list2 .brand {}
-main .best .container .left .list2 .brand a {}
-main .best .container .left .list2 .brand a.name_active {}
-main .best .container .left .list2 .atoz_btn {}
-main .best .container .left .list2 .atoz_btn a {}
-main .best .container .left .list2 .atoz_btn a.atoz_active {}
-main .best .container .left .list2 .box {}
+main .best .container .left .list2 .brand {margin-bottom: 25px;}
+main .best .container .left .list2 .brand a:nth-child(2)::before {
+    content: ''; display: inline-block;
+    width:1px; height:12px;
+    background-color: #ddd;
+    margin-right: 10px;
+    transform: translateY(2px);
+}
+main .best .container .left .list2 .brand a:last-child {margin-right: 0;}
+main .best .container .left .list2 .brand a {
+    font-size: 0.875rem; margin-right: 10px; font-weight: 400;
+}
+main .best .container .left .list2 .brand a.name_active {
+    color:#5f0080;
+    font-size: 0.875rem; font-weight: 600;
+}
+main .best .container .left .list2 .atoz_btn {
+    display: flex; flex-flow: row wrap;
+    margin-bottom: 12px;
+}
+main .best .container .left .list2 .atoz_btn a:nth-child(1),
+main .best .container .left .list2 .atoz_btn a:nth-child(16),
+main .best .container .left .list2 .atoz_btn a:nth-child(17) {width:45px;}
+main .best .container .left .list2 .atoz_btn a {
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    line-height: 17px;
+    color:#b5b5b5;
+    font-size: 0.813rem;
+    height: 22px;
+    width:20px;
+    display: inline-block;
+    text-align: center;
+    padding: 2px 0 3px 0;
+    margin-bottom: 4px;
+    margin-right: 3px;
+    font-weight: 500;
+}
+main .best .container .left .list2 .atoz_btn a.atoz_active {
+    background-color: #333; color:#fff;
+}
+main .best .container .left .list2 .box {
+    position: relative;
+}
 /* 어사이드 --- 브랜드의 ★공통(lnb)★ */
 main .best .container .left .list2 .box .contents {}
-main .best .container .left .list2 .box .contents li {}
-main .best .container .left .list2 .box .contents li a {}
-main .best .container .left .list2 .box .contents li a .btn_chk {}
-main .best .container .left .list2 .box .contents li a .btn_chk img {width:18px;}
-main .best .container .left .list2 .box .contents li a .btn_circle {}
-main .best .container .left .list2 .box .contents li a .btn_circle img {}
-main .best .container .left .list2 .box .contents li a p:nth-child(2) {}
-main .best .container .left .list2 .box .contents li a p:nth-child(3) {}
-main .best .container .left .list2 .box .more_btn {}
-main .best .container .left .list2 .box .more_btn li {}
+main .best .container .left .list2 .box .contents li:last-child {/* padding-bottom: 0; */}
+main .best .container .left .list2 .box .contents li .btn_chk {}
+main .best .container .left .list2 .box .contents li .btn_chk img {width:18px;}
+main .best .container .left .list2 .box .contents li .btn_circle p:nth-child(2) {}
+main .best .container .left .list2 .box .contents li .btn_circle p:nth-child(3) {}
+main .best .container .left .list2 .box .con1 {
+    /* display: none; */
+}
+main .best .container .left .list2 .box .con2 {
+    display: none;
+    position: sticky; top:0;
+}
+main .best .container .left .list2 .box .con3 {
+    display: none;
+    position: sticky; top:0;
+}
+main .best .container .left .list2 .box .con4 {
+    display: none;
+    position: sticky; top:0;
+}
+main .best .container .left .list2 .box .con5 {
+    display: none;
+    position: sticky; top:0;
+}
+main .best .container .left .list2 .box .con6 {
+    display: none;
+    position: sticky; top:0;
+}
+main .best .container .left .list2 .box .con7 {
+    display: none;
+    position: sticky; top:0;
+}
+main .best .container .left .list2 .box .con8 {
+    display: none;
+    position: sticky; top:0;
+}
+main .best .container .left .list2 .box .con9 {
+    display: none;
+    position: sticky; top:0;
+}
+main .best .container .left .list2 .box .con10 {
+    display: none;
+    position: sticky; top:0;
+}
+main .best .container .left .list2 .box .con11 {
+    display: none;
+    position: sticky; top:0;
+}
+main .best .container .left .list2 .box .con12 {
+    display: none;
+    position: sticky; top:0;
+}
+main .best .container .left .list2 .box .con13 {
+    display: none;
+    position: sticky; top:0;
+}
+main .best .container .left .list2 .box .con14 {
+    display: none;
+    position: sticky; top:0;
+}
+main .best .container .left .list2 .box .con15 {
+    display: none;
+    position: sticky; top:0;
+}
+main .best .container .left .list2 .box .con16 {
+    display: none;
+    position: sticky; top:0;
+}
+main .best .container .left .list2 .box .con17 {
+    display: none;
+    position: sticky; top:0;
+}
+main .best .container .left .list2 .box .more_btn {background-color: #fff;}
+main .best .container .left .list2 .box .more_btn li:last-child {/* padding-bottom: 0; */}
 main .best .container .left .list2 .box .more_btn li a {}
 main .best .container .left .list2 .box .more_btn li a p {}
 main .best .container .left .list2 .box .more_btn li a p[class$=right] {}
 /* 어사이드 --- 가격 */
+main .best .container .left .list3 {
+    padding-bottom: 6px;
+    border-bottom: 1px solid #eee; 
+}
+main .best .container .left .list3 .list_title {
+    /* sub 접었을 때 기준 */
+    /* padding: 12px 0 2px;
+    height: 0px !important; */
+}
+main .best .container .left .list3 .list_title span {}
+main .best .container .left .list3 .list_title span em {}
+main .best .container .left .list3 .list_title span [class$=up] {}
+main .best .container .left .list3 ul li .btn_circle {
+    /* display: none !important;  */
+    display: flex; align-items: center;
+}
+main .best .container .left .list3 ul li .btn_circle img {width:18px;}
+main .best .container .left .list3 ul li .btn_circle p:nth-child(2) {}
+main .best .container .left .list3 ul li .btn_circle p:nth-child(3) {}
 /* 어사이드 --- 혜택 */
+main .best .container .left .list4 {
+    padding-bottom: 6px;
+    border-bottom: 1px solid #eee;  
+}
 /* 어사이드 --- 유형 */
+main .best .container .left .list5 {
+    padding-bottom: 6px;
+}
 /* 어사이드 --- 팝업(★공통영역★) */
 main .best .container .left .popup {display: none;}
 main .best .container .left .popup .cate_pop,
@@ -115,11 +302,10 @@ main .best .container .left .popup .brand_pop .btn_wrap .btn_ok span {}
 main .best .container .left .popup .cate_pop .list_wrap {}
 main .best .container .left .popup .cate_pop .list_wrap ul {}
 main .best .container .left .popup .cate_pop .list_wrap ul li {}
-main .best .container .left .popup .cate_pop .list_wrap ul li a {}
-main .best .container .left .popup .cate_pop .list_wrap ul li a .btn_chk {}
-main .best .container .left .popup .cate_pop .list_wrap ul li a .btn_chk img {width:18px;}
-main .best .container .left .popup .cate_pop .list_wrap ul li a p {}
-main .best .container .left .popup .cate_pop .list_wrap ul li a p:last-child {}
+main .best .container .left .popup .cate_pop .list_wrap ul li .btn_chk {}
+main .best .container .left .popup .cate_pop .list_wrap ul li .btn_chk img {width:18px;}
+main .best .container .left .popup .cate_pop .list_wrap ul li .btn_chk p {}
+main .best .container .left .popup .cate_pop .list_wrap ul li .btn_chk p:last-child {}
 /* 어사이드 --- 팝업(브랜드) */
 main .best .container .left .popup .brand_pop {}
 main .best .container .left .popup .brand_pop .wrap_top {}
@@ -143,39 +329,87 @@ main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_l
 main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .sub_title {}
 main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li ul {}
 main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .con li {}
-main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .con li a {}
-main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .con li a .btn_chk {}
-main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .con li a .btn_chk img {width:18px;}
-main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .con li a p {}
-main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .con li a p:last-child {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .con li .btn_chk {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .con li .btn_chk img {width:18px;}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .con li .btn_chk p {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub1 ul.contents_list li .con li .btn_chk p:last-child {}
 /* 어사이드 --- 팝업(브랜드) --- 탭2 */
 main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 {}
 main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all {}
 main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all li {}
-main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all li a {}
-main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all li a .btn_chk {}
-main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all li a .btn_chk img {width:18px;}
-main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all li a p {}
-main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all li a p:last-child {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all li .btn_chk {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all li .btn_chk img {width:18px;}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all li .btn_chk p {}
+main .best .container .left .popup .brand_pop .list_wrap .tap_sub2 .contents_all li .btn_chk p:last-child {}
 /* 오른쪽컨테이너 --- 상품 영역 */
-main .best .container .right {}
-main .best .container .right .lnb {}
+main .best .container .right {
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+main .best .container .right .lnb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
 /* ◇ --- js 부분(총 몇건) --- ◇ */
 main .best .container .right .lnb .total {}
-main .best .container .right .lnb .total span {}
+main .best .container .right .lnb .total span {
+    font-size: 0.875rem; font-weight: 600;
+}
 /* ◇ --- js 부분(총 몇건) //끝// --- ◇ */
 main .best .container .right .lnb .array {}
-main .best .container .right .lnb .array a {}
-main .best .container .right .lnb .array a [class$=question] {}
-main .best .container .right .lnb .array .quest_box {}
+main .best .container .right .lnb .array a:first-child::before {
+    display: none;
+}
+main .best .container .right .lnb .array a::before {
+    content: '';
+    display: inline-block;
+    width: 1px; height: 10px;
+    background-color: #ddd;
+    margin-right: 8px;
+}
+main .best .container .right .lnb .array a:first-child {
+    color:#333; font-weight: 500;
+}
+main .best .container .right .lnb .array a {
+    font-size: 0.875rem;
+    color:#999;
+    margin-left: 5px;
+}
+main .best .container .right .lnb .array a [class$=question] {
+    border: 2px solid #ddd;
+    display: inline-block;
+    padding: 1px 2px 3px;
+    text-align: center;
+    font-size: 8px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    color:#ccc;
+    margin-left: 4px;
+    transform: translateY(-2px);
+}
+main .best .container .right .lnb .array .quest_box {display: none;}
 main .best .container .right .lnb .array .quest_box p {}
 /* ◇ --- js 부분 (브랜드 이름 위치) --- ◇ */
 main .best .container .right .name_result {}
 /* ◇ --- js 부분 (브랜드 이름 위치) //끝// --- ◇ */
 /* 상품리스트 */
-main .best .container .right .product_box {}
-main .best .container .right .product_box .product {}
-main .best .container .right .product_box .product .thumb {}
+main .best .container .right .product_box {
+    display: flex; flex-flow: row wrap;
+}
+main .best .container .right .product_box .product {
+    max-width: 249px; max-height: 320px;
+}
+main .best .container .right .product_box .product .thumb {
+    background-image: url(../images/main/product/main_p_01.jpg);
+    display: block;
+    max-width:249px;
+    height: 100%;
+    border-radius: 4px;
+}
 main .best .container .right .product_box .product .thumb .icon_cuppon {}
 main .best .container .right .product_box .product .btn_cart {}
 main .best .container .right .product_box .product .btn_cart .btn_c {}
