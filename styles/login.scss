@@ -45,6 +45,7 @@ main {
                     }
                 }
                 .citation_num {
+                    display: none !important;
                     margin-top: 28px;
                     background-color: $c-247;
                     @include flex-col-ct-ct;

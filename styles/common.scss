@@ -53,6 +53,16 @@ $px10: 0.625rem;
     justify-content: center;
     align-items: center;
 }
+@mixin flex-col-lf {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+@mixin flex-col-rt {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+}
 
 // button 
 @mixin bo_bk3 {
@@ -82,6 +92,11 @@ $px10: 0.625rem;
 }
 @mixin pull_pp4 {
     background-color: #5F0080;
+    border-radius: 4px;
+    color:#fff;
+}
+@mixin pull_dd4 {
+    background-color: #ddd;
     border-radius: 4px;
     color:#fff;
 }

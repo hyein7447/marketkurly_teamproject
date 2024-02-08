@@ -54,6 +54,7 @@ main .container form fieldset .info_look a {
   font-size: 0.813rem;
 }
 main .container form fieldset .citation_num {
+  display: none !important;
   margin-top: 28px;
   background-color: #f7f7f7;
   display: flex;
