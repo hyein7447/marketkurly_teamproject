@@ -329,7 +329,7 @@ main .best .container .right .lnb .array a::before {
     background-color: #ddd;
     margin-right: 8px;
 }
-main .best .container .right .lnb .array a:nth-child(2) {
+main .best .container .right .lnb .array a:nth-child(1) {
     color:#333; font-weight: 500;
 }
 main .best .container .right .lnb .array a {
