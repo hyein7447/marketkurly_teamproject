@@ -4,17 +4,15 @@ $orange: #fa622f;
 $badge: #bd76ff;
 $bk1: #333;
 $bk2: #666;
-$gr1: #999;
-$gr2: #b5b5b5;
-$gr3: #ddd;
-$gr4: #eee;
-$gr5: #f4f4f4;
-$gr6: #f7f7f7;
 $error: #f03f40;
 $error: 1.5rem;
+$c-153:#999;
+$c-181:#b5b5b5;
+$c-221:#ddd;
 $c-226: #e2e2e2;
 $c-238: #eeeeee;
 $c-244: #f4f4f4;
+$c-247:#f7f7f7;
 $c-250: #fafafa;
 $c-51: #333;
 
@@ -58,7 +56,7 @@ $px10: 0.625rem;
 }
 
 // button 
-@mixin btn_bk3 {
+@mixin bo_bk3 {
     border: 1px solid #333;
     border-radius: 3px;
 }
