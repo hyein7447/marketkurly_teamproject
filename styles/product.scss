@@ -1,11 +1,16 @@
 @import 'common';
 
+section{
+    max-width: 1010px;
+    width: 100%;
+}
 .bottom_option {
     background-color: #fff;
     border-top: 2px solid $purple;
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 100;
     .bottom_wrap{
         margin: 0 auto;
         // background-color: aqua;
@@ -705,6 +710,7 @@
             }
         }
     }
+    // section2 상품설명
     .detail{
 
         .detail_img{border-bottom: 1px solid rgb(221, 221, 221);}
@@ -864,6 +870,7 @@
                 color: #666;
                 font-weight: 500;
                 font-size: 1.125rem;
+                padding: 0;
 
                 span{
                     display: block;
@@ -1107,6 +1114,551 @@
                         margin-left: 14px;
                     }
                 }
+            }
+        }
+    }
+    // section3 리뷰
+    .review{
+        margin: 72px 0;
+
+        h2{
+            font-size: $px24;
+            font-weight: 500;
+            line-height: 41px;
+            letter-spacing: -0.5px;
+        }
+        // 상품 후기 사진 목록
+        .review_photo_list{
+            padding: 20px 0 30px;
+            display: flex;
+            gap: 3px;
+            
+            a{
+                img{
+                    width: 123px;
+                }
+                &:first-child{
+                    img{
+                        border-top-left-radius: 6px;
+                        border-bottom-left-radius: 6px;
+                    }
+                }
+                &:last-child{
+                    display: inline-block;
+                    position: relative;
+
+                    span{
+                        position: absolute;
+                        left: 0;
+                        color: #fff;
+                        top: 0;
+                        line-height: 19px;
+                        font-weight: 500;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    img{
+                        border-top-right-radius: 6px;
+                        border-bottom-right-radius: 6px;
+                        filter: brightness(50%);
+                    }
+                }
+            }
+        }
+        // 상품 후기 사진 더보기
+        .review_photo_more{
+            display: flex;
+            flex-flow: row nowrap;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba($color: #000000, $alpha: 0.3);
+            z-index: 100;
+            display: none;
+            
+            .photo_more_container{
+                position: relative;
+                top: 10%;
+                margin: 0 auto;
+                width: 800px;
+                background-color: #fff;
+                padding: 30px;
+                border-radius: 12px;
+                height: max-content;
+
+                .photo_more_top{
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid rgb(244, 244, 244);
+                    margin-bottom: 20px;
+                    padding-bottom: 8px;
+                    h3{
+                        font-size: $px24;
+                        font-weight: 500;
+                        line-height: 30px;
+                        letter-spacing: -0.5px;
+                    }
+                    p{
+                        #photo_more_btn{
+                            width: 32px;
+                            img{width: 100%;}
+                        }
+                    }
+                }
+                .photo_more_btm{
+                    a{
+                        img{width: 120px;}
+                    }
+                }
+            }
+        }
+        // 리뷰 정렬
+        .review_sorting{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            p{
+                font-size: $px14;
+                font-weight: 500;
+                line-height: 16px;
+            }
+            .sort_wrap{
+                .sort{
+                    font-size: $px12;
+                    color: #999;
+
+                    &:first-child{
+                        &::after{
+                            content: '';
+                            display: inline-block;
+                            background-color: #999;
+                            width: 1px;
+                            height: 11px;
+                            margin: 0 8px 0 7px;
+                            position: relative;
+                            top: 1px;
+                        }
+                    }
+                }
+            }
+        }
+        // 리뷰 필터
+        .review_opt_wrap{
+            .review_filter{
+                position: relative;
+
+                .filter_btn_wrap{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    gap: 10px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #333;
+                    .filter_btn{
+                        color: #666;
+                        border: 1px solid #eee;
+                        border-radius: 18px;
+                        padding: 9px 10px 9px 14px;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        img{width: 18px;}
+                    }
+                }
+                .opt_filter_box{
+                    width: 440px;
+                    padding: 0 30px 30px 30px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 10px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 0;
+                    top: 50px;
+                    z-index: 999;
+                    display: none;
+
+                    .filter_box_top{
+                        padding: 20px 0;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 1px solid #f4f4f4;
+                        .filter_title{
+                            font-size: $px18;
+                            font-weight: 500;
+                            line-height: 20px;
+                        }
+                        .reset_btn_wrap{
+                            .reset_btn{
+                                color: #b5b5b5;
+
+                                i[class$=right]{
+                                    color: #b5b5b5;
+                                    margin-right: 5px;
+                                    font-size: $px13;
+                                }
+                            }
+                        }
+                    }
+                    .filter_box_contents{
+                        margin-top: 13px;
+                        ul{
+                            li{
+                                padding: 7px 0;
+                                font-size: $px14;
+                                letter-spacing: -0.05px;
+
+                                input{display: none;}
+                                label{
+                                    &::before{
+                                        content: '';
+                                        display: inline-block;
+                                        width: 24px;
+                                        height: 24px;
+                                        background-image: url(../images/sub/icon_check1.png);
+                                        background-size: 100%;
+                                        margin-right: 16px;
+                                        position: relative;
+                                        top: 4px;
+                                    }
+                                }
+                            }
+                        }
+                        .review_view_btn{
+                            margin-top: 16px;
+                            .view_btn{
+                                width: 380px;
+                                background-color: $purple;
+                                border-radius: 3px;
+                                line-height: 22px;
+                                color: #fff;
+                                font-weight: 500;
+                                height: 56px;
+                            }
+                        }
+                    }
+                }
+                .rating_filter_box{
+                    width: 440px;
+                    padding: 0 30px 30px 30px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 10px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 120px;
+                    top: 50px;
+                    z-index: 999;
+                    display: none;
+
+                    .filter_box_top{
+                        padding: 20px 0;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 1px solid #f4f4f4;
+                        .filter_title{
+                            font-size: $px18;
+                            font-weight: 500;
+                            line-height: 20px;
+                        }
+                        .reset_btn_wrap{
+                            .reset_btn{
+                                color: #b5b5b5;
+
+                                i[class$=right]{
+                                    color: #b5b5b5;
+                                    margin-right: 5px;
+                                    font-size: $px13;
+                                }
+                            }
+                        }
+                    }
+                    .filter_box_contents{
+                        margin-top: 13px;
+                        ul{
+                            li{
+                                padding: 7px 0;
+                                font-size: $px14;
+                                letter-spacing: -0.05px;
+
+                                input{display: none;}
+                                label{
+                                    &::before{
+                                        content: '';
+                                        display: inline-block;
+                                        width: 24px;
+                                        height: 24px;
+                                        background-image: url(../images/sub/icon_check1.png);
+                                        background-size: 100%;
+                                        margin-right: 16px;
+                                        position: relative;
+                                        top: 4px;
+                                    }
+                                }
+                            }
+                        }
+                        .review_view_btn{
+                            margin-top: 16px;
+                            .view_btn{
+                                width: 380px;
+                                background-color: $purple;
+                                border-radius: 3px;
+                                line-height: 22px;
+                                color: #fff;
+                                font-weight: 500;
+                                height: 56px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .review_container{
+            // 리뷰 공지
+            .review_notice_wrap{
+                .review_notice{
+                    .notice_btn_wrap{
+                        padding: 22px 20px 20px;
+                        border-bottom: 1px solid #eee;
+                        .review_notice_btn{
+                            .notice_icon{
+                                display: inline-block;
+                                width: 42px;
+                                border-radius: 4px;
+                                font-size: $px12;
+                                font-weight: 500;
+                                line-height: 22px;
+                                text-align: center;
+                                color: #666;
+                                background-color: #f4f4f4;
+                                margin-right: 9px;
+                            }
+                        }
+                    }
+                    // 공지 내용
+                    .review_notice_contents{
+                        padding: 25px 20px 20px;
+                        border-bottom: 1px solid #eee;
+                        background-color: #fafafa;
+                        display: none;
+
+                        p{
+                            line-height: 19px;
+                            font-size: $px14;
+                            padding-bottom: 15px;
+
+                            &:last-child{
+                                padding-bottom: 0;
+                            }
+                        }
+                        .blank{
+                            padding-bottom: 30px;
+                        }
+                    }
+                }
+            }
+            .review_contents_container{
+                padding: 30px 0 19px 20px;
+                border-bottom: 1px solid $c-244;
+                .review_contents{
+                    display: flex;
+                    .left{
+                        width: 225px;
+                        font-size: $px14;
+                        .best_icon, .rating_icon_m{
+                            display: inline-block;
+                            border-radius: 3px;
+                            padding: 3px 5px;
+                            // margin-right: 4px;
+                            font-weight: 500;
+                            font-size: $px10;
+                            line-height: 10px;
+                            color: #fff;
+                        }
+                        .best_icon{
+                            background-color: #a864d8;
+                        }
+                        .rating_icon_m{
+                            background-color: #4dbed7;
+                        }
+                    }
+                    .rigth_contents{
+                        width: calc(100% - 225px);
+                        .selected_option{
+                            color: #999;
+                            font-size: $px14;
+                            line-height: 19px;
+                            margin-bottom: 12px;
+                        }
+                        p{
+                            font-size: $px14;
+                            line-height: 19px;
+                            margin-bottom: 14px;
+                        }
+                        a{
+                            img{width: 93px;}
+                            &:first-child{
+                                img{
+                                    border-top-left-radius: 6px;
+                                    border-bottom-left-radius: 6px;
+                                }
+                            }
+                            &:last-child{
+                                img{
+                                    border-top-right-radius: 6px;
+                                    border-bottom-right-radius: 6px;
+                                }
+                            }
+                        }
+                        .date_helpfull_btn{
+                            display: flex;
+                            flex-flow: row nowrap;
+                            justify-content: space-between;
+                            padding: 19px 20px 0 0;
+                            height: 51px;
+                            .review_date{
+                                color: #999;
+                                margin-bottom: 0;
+                                line-height: 19px;
+                            }
+                            .helpful_btn{
+                                border: 1px solid $c-226;
+                                color: #999;
+                                padding: 0 12px;
+                                line-height: 20px;
+                                height: 32px;
+                                border-radius: 20px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: $px12;
+                                img{
+                                    width: 15px;
+                                    margin-right: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .page_btn_wrap{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+    }
+    .inquiry{
+        padding: 100px 0;
+        .inquiry_top_wrap{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            h2{
+                margin-bottom: 16px;
+                font-size: $px24;
+                font-weight: 500;
+                line-height: 21px;
+            }
+            #inquiry_btn{
+                background-color: $purple;
+                width: 120px;
+                text-align: center;
+                color: #fff;
+                border-radius: 3px;
+                font-size: $px14;
+                height: 40px;
+            }
+        }
+        .inquiry_top{
+            margin-bottom: 40px;
+            p{
+                line-height: 19px;
+                color: #999;
+                font-size: $px14;
+                a{
+                    line-height: 19px;
+                    color: #999;
+                    font-size: $px14;
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .inquiry_list{
+            .inquiry_list_wrap{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+                border-top: 2px solid #333;
+                border-bottom: 2px solid #333;
+                height: 58px;
+                p{
+                    font-weight: 500;
+                    width: 710px;
+                    margin: 0 auto;
+                    font-size: $px14;
+                }
+                .list_right{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    p{
+                        font-size: $px14;
+                        width: 100px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+            ul{
+                li{
+                    padding-left:20px;
+                    height: 64px;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid $c-244;
+                    p{
+                        width: 710px;
+                        font-size: $px14;
+                        color: #999;
+                    }
+                    .writer{
+                        display: flex;
+                        *{
+                            line-height: 19px;
+                            letter-spacing: -0.5px;
+                            font-size: $px14;
+                        }
+                        p{
+                            text-align: center;
+                            width: 100px;
+                            margin: 0 auto;
+                        }
+                        .answer_status{
+                            color: $purple;
+                        }
+                    }
+                }
+            }
+            .page_btn_wrap{
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                gap: 12px;
             }
         }
     }
