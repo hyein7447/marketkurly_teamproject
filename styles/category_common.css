@@ -397,6 +397,7 @@ main .best .container .right .product_box .product .thumb .icon_cuppon {
     position: absolute; top: 8px; left: 8px;
     padding: 4px 8px;
     color:#fff;
+    font-size: 0.875rem;
 }
 main .best .container .right .product_box .product .btn_cart {
     
@@ -689,6 +690,9 @@ main .best .popup .brand_pop .wrap_top .tab_sub a {
     font-weight: 500;
 }
 /* 어사이드 --- 팝업(브랜드) --- 탭공통 */
+/* ::-webkit-scrollbar {
+    display: none;
+} */
 main .best .popup .brand_pop .list_wrap {
     overflow: hidden scroll;
     scrollbar-width: none;
@@ -804,10 +808,13 @@ main .best .popup .cart_pop .thumb_name .p_tap_title {
     font-weight: 500;
     letter-spacing: -0.05rem;
 }
+.info:-webkit-scrollbar {
+    display: block;
+}
 main .best .popup .cart_pop .info {
     max-height: 310px;
-    /* overflow: hidden scroll;
-    scrollbar-width: thin; */
+    overflow: hidden scroll;
+    scrollbar-width: thin;
 }
 main .best .popup .cart_pop .info .cart_box {
     padding: 12px 0px;
