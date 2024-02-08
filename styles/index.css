@@ -68,14 +68,14 @@ main .ranking .container #ranking_slide #ranking_slide_wrap .item {
 }
 main .ranking .container #ranking_slide #ranking_slide_wrap .item:nth-child(4) {margin: 0;}
 main .ranking .container #ranking_slide #ranking_slide_wrap .item:last-child {margin: 0;}
-main .ranking .container #ranking_slide #ranking_slide_wrap .item a {}
-main .ranking .container #ranking_slide #ranking_slide_wrap .item a .img {
-    height: 320px; width: 100%; position: relative;
+main .ranking .container #ranking_slide #ranking_slide_wrap .item div {position: relative;}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item div .img {
+    height: 320px; width: 100%; 
 }
-main .ranking .container #ranking_slide #ranking_slide_wrap .item a .img img {
-    height: 100%; border-radius: 4px;
+main .ranking .container #ranking_slide #ranking_slide_wrap .item div .img img {
+    height: 100%; border-radius: 4px; width: 100%;
 }
-main .item a .img .coupon {
+main .item div .img .coupon {
     opacity: 0.9; color: #fff; font-size: 0.875rem;
     line-height: 1.4; padding: 4px 8px;
     font-weight: 500; position: absolute; top: 8px; left: 8px;
@@ -100,11 +100,11 @@ main .info h3 {
     -webkit-box-orient: vertical;
     letter-spacing: normal;word-break: break-word; overflow-wrap: break-word;
 }
-main .ranking .container #ranking_slide #ranking_slide_wrap .item a .info .price {}
+main .ranking .container #ranking_slide #ranking_slide_wrap .item div .info .price {}
 main .info .price del {
     color: #b5b5b5; font-size: 0.875rem;
 }
-main .ranking .container #ranking_slide #ranking_slide_wrap .item a .info .price .discount {
+main .ranking .container #ranking_slide #ranking_slide_wrap .item div .info .price .discount {
     
 }
 main .info .price .discount .rate {
@@ -160,33 +160,33 @@ main .special_p .right .item {
     margin-right: 18px; width: 249px;
 }
 main .special_p .right .item:last-child {margin: 0;}
-main .special_p .right .item a {}
-main .special_p .right .item a .img {height: 320px; width: 100%; position: relative;}
-main .special_p .right .item a .img img {height: 100%; border-radius: 4px;}
-main .special_p .right .item a .img .badge {
+main .special_p .right .item div {position: relative;}
+main .special_p .right .item div .img {height: 320px; width: 249px; display: block; }
+main .special_p .right .item div .img img {height: 100%; border-radius: 4px; width: 100%;}
+main .special_p .right .item div .img .badge {
     opacity: 0.9; color: #fff; font-size: 0.875rem;
     line-height: 1.4; padding: 4px 8px;
     font-weight: 500; position: absolute; top: 8px; left: 8px;
     border-radius: 4px;
     background-color:#BD76FF;
 }
-main .special_p .right .item a .cart_add {}
-main .special_p .right .item a .cart_add .cart_btn {}
-main .special_p .right .item a .cart_add .cart_btn img {width: 22px; height: 22px;}
-main .special_p .right .item a .info {}
-main .special_p .right .item a .info .desc {
+main .special_p .right .item div .cart_add {}
+main .special_p .right .item div .cart_add .cart_btn {}
+main .special_p .right .item div .cart_add .cart_btn img {width: 22px; height: 22px;}
+main .special_p .right .item div .info {}
+main .special_p .right .item div .info .desc {
     margin-bottom: 8px; font-size: 0.875rem;
     color: #999; line-height: 1.4; word-break: break-word;
 }
-main .special_p .right .item a .info h3 {}
-main .special_p .right .item a .info .price {}
-main .special_p .right .item a .info .price del {}
-main .special_p .right .item a .info .price .discount {}
-main .special_p .right .item a .info .price .discoun .rate {}
-main .special_p .right .item a .info .price .discoun .discount_price {}
-main .special_p .right .item a .info .price .review {}
-main .special_p .right .item a .info .price .review img {}
-main .special_p .right .item a .info .price .review .review_num {}
+main .special_p .right .item div .info h3 {}
+main .special_p .right .item div .info .price {}
+main .special_p .right .item div .info .price del {}
+main .special_p .right .item div .info .price .discount {}
+main .special_p .right .item div .info .price .discoun .rate {}
+main .special_p .right .item div .info .price .discoun .discount_price {}
+main .special_p .right .item div .info .price .review {}
+main .special_p .right .item div .info .price .review img {}
+main .special_p .right .item div .info .price .review .review_num {}
 /* MD 추천 */
 main .md {width: 1050px; margin: 0 auto; padding-bottom: 40px;}
 main .md .title {margin-bottom: 27px;}
@@ -212,22 +212,22 @@ main .md .container #md_slide #md_slide_wrap {
 }
 /* MD추천 슬라이드 아이템 공통 */
 main .md  .container #md_slide #md_slide_wrap .item {width: 249px; margin-right: 18px;}
-main .md .container #md_slide #md_slide_wrap .item a {}
-main .md  .container #md_slide #md_slide_wrap .item a .img {}
-main .md .container #md_slide #md_slide_wrap .item a .img img {width: 100%;}
-main .md  .container #md_slide #md_slide_wrap .item a .cart_add {}
-main .md  .container #md_slide #md_slide_wrap .item a .cart_add .cart_btn {}
-main .md .container #md_slide #md_slide_wrap .item a .cart_add .cart_btn img {}
-main .md  .container #md_slide #md_slide_wrap .item a .info {}
-main .md .container #md_slide #md_slide_wrap .item a .info h3 {}
-main .md  .container #md_slide #md_slide_wrap .item a .info .price {}
-main .md  .container #md_slide #md_slide_wrap .item a .info .price del {}
-main .md  .container #md_slide #md_slide_wrap .item a .info .price .discoun {}
-main .md  .container #md_slide #md_slide_wrap .item a .info .price .discoun .rate {}
-main .md  .container #md_slide #md_slide_wrap .item a .info .price .discoun .discount_price {}
-main .md .container #md_slide #md_slide_wrap .item a .info .price .review {}
-main .md  .container #md_slide #md_slide_wrap .item a .info .price .review img {}
-main .md  .container #md_slide #md_slide_wrap .item a .info .price .review .review_num {}
+main .md .container #md_slide #md_slide_wrap .item div {}
+main .md  .container #md_slide #md_slide_wrap .item div .img {}
+main .md .container #md_slide #md_slide_wrap .item div .img img {width: 100%; border-radius: 4px;}
+main .md  .container #md_slide #md_slide_wrap .item div .cart_add {}
+main .md  .container #md_slide #md_slide_wrap .item div .cart_add .cart_btn {}
+main .md .container #md_slide #md_slide_wrap .item div .cart_add .cart_btn img {}
+main .md  .container #md_slide #md_slide_wrap .item div .info {}
+main .md .container #md_slide #md_slide_wrap .item div .info h3 {}
+main .md  .container #md_slide #md_slide_wrap .item div .info .price {}
+main .md  .container #md_slide #md_slide_wrap .item div .info .price del {}
+main .md  .container #md_slide #md_slide_wrap .item div .info .price .discoun {}
+main .md  .container #md_slide #md_slide_wrap .item div .info .price .discoun .rate {}
+main .md  .container #md_slide #md_slide_wrap .item div .info .price .discoun .discount_price {}
+main .md .container #md_slide #md_slide_wrap .item div .info .price .review {}
+main .md  .container #md_slide #md_slide_wrap .item div .info .price .review img {}
+main .md  .container #md_slide #md_slide_wrap .item div .info .price .review .review_num {}
 main .md  .container #md_slide .prev_btn {}
 main .md  .container #md_slide .next_btn {}
 main .md  .all_btn {}
@@ -297,26 +297,26 @@ main .present .container #present_slide #present_slide_wrap .item {
 }
 main .present .container #present_slide #present_slide_wrap .item:nth-child(4) {margin: 0;}
 main .present .container #present_slide #present_slide_wrap .item:last-child {margin: 0;}
-main .present .container #present_slide #present_slide_wrap .item a {}
-main .present .container #present_slide #present_slide_wrap .item a .img {
-    height: 320px; width: 100%; position: relative;
+main .present .container #present_slide #present_slide_wrap .item div {position: relative; }
+main .present .container #present_slide #present_slide_wrap .item div .img {
+    height: 320px; width: 100%; 
 }
-main .present .container #present_slide #present_slide_wrap .item a .img img {
-    height: 100%; border-radius: 4px;
+main .present .container #present_slide #present_slide_wrap .item div .img img {
+    height: 100%; border-radius: 4px; width: 100%;
 }
-main .present .container #present_slide #present_slide_wrap .item a .cart_add {}
-main .present .container #present_slide #present_slide_wrap .item a .cart_add .cart_btn {}
-main .present .container #present_slide #present_slide_wrap .item a .cart_add .cart_btn img {}
-main .present .container #present_slide #present_slide_wrap .item a .info {}
-main .present .container #present_slide #present_slide_wrap .item a .info h3 {}
-main .present .container #present_slide #present_slide_wrap .item a .info .price {}
-main .present .container #present_slide #present_slide_wrap .item a .info .price del {}
-main .present .container #present_slide #present_slide_wrap .item a .info .price .discoun {}
-main .present .container #present_slide #present_slide_wrap .item a .info .price .discoun .rate {}
-main .present .container #present_slide #present_slide_wrap .item a .info .price .discoun .discount_price {}
-main .present .container #present_slide #present_slide_wrap .item a .info .price .review {}
-main .present .container #present_slide #present_slide_wrap .item a .info .price .review img {}
-main .present .container #present_slide #present_slide_wrap .item a .info .price .review .review_num {}
+main .present .container #present_slide #present_slide_wrap .item div .cart_add {}
+main .present .container #present_slide #present_slide_wrap .item div .cart_add .cart_btn {}
+main .present .container #present_slide #present_slide_wrap .item div .cart_add .cart_btn img {}
+main .present .container #present_slide #present_slide_wrap .item div .info {}
+main .present .container #present_slide #present_slide_wrap .item div .info h3 {}
+main .present .container #present_slide #present_slide_wrap .item div .info .price {}
+main .present .container #present_slide #present_slide_wrap .item div .info .price del {}
+main .present .container #present_slide #present_slide_wrap .item div .info .price .discoun {}
+main .present .container #present_slide #present_slide_wrap .item div .info .price .discoun .rate {}
+main .present .container #present_slide #present_slide_wrap .item div .info .price .discoun .discount_price {}
+main .present .container #present_slide #present_slide_wrap .item div .info .price .review {}
+main .present .container #present_slide #present_slide_wrap .item div .info .price .review img {}
+main .present .container #present_slide #present_slide_wrap .item div .info .price .review .review_num {}
 /* 컬리 레시피 */
 main .recipe {width: 1050px; margin: 0 auto; padding: 40px 0;}
 main .recipe .title {margin-bottom: 27px;}

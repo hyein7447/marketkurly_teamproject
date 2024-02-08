@@ -55,7 +55,10 @@
                         구매 가능한 상품을 확인하세요!</p>
                         <div class="map_btn">
                             <button type="button" id="map_login_btn">로그인</button>
-                            <button type="button" id="map_search_btn"><img src="./images/main/icon/map_search_btn.png" alt="검색하기">주소검색</button>
+                            <div class="address_btn">
+                                <input type="button" onclick="exec_daum_postcode()" value="      주소검색" id="map_search_btn">
+                                <img src="./images/main/icon/map_search_btn.png" alt="주소찾기">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -584,17 +587,17 @@
                 <div class="swiper-container" id="ranking_slide">
                     <div class="swiper-wrapper" id="ranking_slide_wrap">
                         <div class="swiper-slide item item1">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_01.jpg" alt="아이템이미지">
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 횡성축협한우 1++ 한우 프리미엄 구이 세트 (냉장)</h3>
                                     <div class="price">
-                                        <del>399,000원</del>
+                                        <p><del>399,000원</del></p>
                                         <div class="discount">
                                             <span class="rate">25%</span>
                                             <span class="discount_price">299,000원</span>
@@ -604,22 +607,22 @@
                                             <span class="review_num">50</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item2">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_02.jpg" alt="아이템이미지">
                                     <span class="coupon">+30%쿠폰</span>
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 민어굴비 세트</h3>
                                     <div class="price">
-                                        <del>79,000원</del>
+                                        <p><del>79,000원</del></p>
                                         <div class="discount">
                                             <span class="rate">30%</span>
                                             <span class="discount_price">55,300원</span>
@@ -629,21 +632,21 @@
                                             <span class="review_num">714</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item3">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_03.jpg" alt="아이템이미지">
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="" class="info">
                                     <h3>[선물세트] 나주 신고배 세트<br>4.5kg(6~7입)</h3>
                                     <div class="price">
-                                        <del>59,900원</del>
+                                        <p><del>59,900원</del></p>
                                         <div class="discount">
                                             <span class="rate">20%</span>
                                             <span class="discount_price">47,900원</span>
@@ -653,22 +656,22 @@
                                             <span class="review_num">15</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item4">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_04.jpg" alt="아이템이미지">
                                     <span class="coupon">+30%쿠폰</span>
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 제주 옥돔 (대) 세트 2kg</h3>
                                     <div class="price">
-                                        <del>249,000원</del>
+                                        <p><del>249,000원</del></p>
                                         <div class="discount">
                                             <span class="rate">28%</span>
                                             <span class="discount_price">179,000원</span>
@@ -678,21 +681,21 @@
                                             <span class="review_num">76</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item5">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="" class="img">
                                     <img src="./images/main/product/main_p_01.jpg" alt="아이템이미지">
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 횡성축협한우 1++ 한우 프리미엄 구이 세트 (냉장)</h3>
                                     <div class="price">
-                                        <del>399,000원</del>
+                                        <p><del>399,000원</del></p>
                                         <div class="discount">
                                             <span class="rate">25%</span>
                                             <span class="discount_price">299,000원</span>
@@ -702,22 +705,22 @@
                                             <span class="review_num">50</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item6">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_02.jpg" alt="아이템이미지">
                                     <span class="coupon">+30%쿠폰</span>
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 민어굴비 세트</h3>
                                     <div class="price">
-                                        <del>79,000원</del>
+                                        <p><del>79,000원</del></p>
                                         <div class="discount">
                                             <span class="rate">30%</span>
                                             <span class="discount_price">55,300원</span>
@@ -727,21 +730,21 @@
                                             <span class="review_num">714</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item7">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_03.jpg" alt="아이템이미지">
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 나주 신고배 세트<br>4.5kg(6~7입)</h3>
                                     <div class="price">
-                                        <del>59,900원</del>
+                                        <p><del>59,900원</del></p>
                                         <div class="discount">
                                             <span class="rate">20%</span>
                                             <span class="discount_price">47,900원</span>
@@ -751,22 +754,22 @@
                                             <span class="review_num">15</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item8">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_04.jpg" alt="아이템이미지">
                                     <span class="coupon">+30%쿠폰</span>
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 제주 옥돔 (대) 세트 2kg</h3>
                                     <div class="price">
-                                        <del>249,000원</del>
+                                        <p><del>249,000원</del></p>
                                         <div class="discount">
                                             <span class="rate">28%</span>
                                             <span class="discount_price">179,000원</span>
@@ -776,8 +779,8 @@
                                             <span class="review_num">76</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
@@ -795,28 +798,25 @@
                     <p>24시간 한정특가 놓치지마세요</p>
                 </div>
                 <div class="time">
-                    <div class="time_icon">
-                        <img src="#" alt="">
-                    </div>
                     <div class="timer"><span><i class="fa-solid fa-clock"></i></span>17:34:37</div>
                 </div>
                 <p>망설이면 늦어요!</p>
             </div>
             <div class="right">
                 <div class="item">
-                    <a href="#">
-                        <div class="img">
+                    <div>
+                        <a href="#" class="img">
                             <img src="./images/main/product/main_p_05.jpg" alt="아이템이미지">
                             <span class="badge">일일특가</span>
-                        </div>
+                        </a>
                         <div class="cart_add">
                             <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                         </div>
-                        <div class="info">
-                            <span class="desc">바다의 풍요로움을 신선히 담아낸</span>
+                        <a href="#" class="info">
+                            <p class="desc">바다의 풍요로움을 신선히 담아낸</p>
                             <h3>[선물세트] 옥돔&갈치&민어굴비 세트</h3>
                             <div class="price">
-                                <del>199,000원</del>
+                                <p><del>199,000원</del></p>
                                 <div class="discount">
                                     <span class="rate">45%</span>
                                     <span class="discount_price">109,000원</span>
@@ -826,23 +826,23 @@
                                     <span class="review_num">722</span>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
                 <div class="item">
-                    <a href="#">
-                        <div class="img">
+                    <div>
+                        <a href="#" class="img">
                             <img src="./images/main/product/main_p_06.jpg" alt="아이템이미지">
                             <span class="badge">일일특가</span>
-                        </div>
+                        </a>
                         <div class="cart_add">
                             <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                         </div>
-                        <div class="info">
-                            <span class="desc">오감만족 연두빛 포도의 매력</span>
+                        <a href="#" class="info">
+                            <p class="desc">오감만족 연두빛 포도의 매력</p>
                             <h3>[선물세트] 샤인머스켓2.4kg(3입)</h3>
                             <div class="price">
-                                <del>59,900원</del>
+                                <p><del>59,900원</del></p>
                                 <div class="discount">
                                     <span class="rate">26%</span>
                                     <span class="discount_price">43,990원</span>
@@ -852,24 +852,24 @@
                                     <span class="review_num">32</span>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
                 <div class="item">
-                    <a href="#">
-                        <div class="img">
+                    <div>
+                        <a href="#" class="img">
                             <img src="./images/main/product/main_p_07.jpg" alt="아이템이미지">
                             <span class="badge">일일특가</span>
-                        </div>
+                        </a>
                         <div class="cart_add">
                             <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                         </div>
-                        <div class="info">
-                            <span class="desc">2개 구매 시, 쇼핑백&트루바이타민 부스터
-                            1개입 증정</span>
+                        <a href="#" class="info">
+                            <p class="desc">2개 구매 시, 쇼핑백&트루바이타민 부스터
+                            1개입 증정</p>
                             <h3>[덴프스] 덴마크 유산균이야기 (60일분)</h3>
                             <div class="price">
-                                <del>91,750원</del>
+                                <p><del>91,750원</del></p>
                                 <div class="discount">
                                     <span class="rate">67%</span>
                                     <span class="discount_price">29,900원</span>
@@ -879,8 +879,8 @@
                                     <span class="review_num">9,999+</span>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -914,17 +914,17 @@
                 <div class="swiper-container" id="md_slide">
                     <div class="swiper-wrapper" id="md_slide_wrap">
                         <div class="swiper-slide item item1">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_08.jpg" alt="아이템이미지">
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 온담 정성담은 표고 흑화고 가루 세트</h3>
                                     <div class="price">
-                                        <del>34,900원</del>
+                                        <p><del>34,900원</del></p>
                                         <div class="discount">
                                             <span class="rate">22%</span>
                                             <span class="discount_price">26,900원</span>
@@ -934,41 +934,41 @@
                                             <span class="review_num">190</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item2">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_09.jpeg" alt="아이템이미지">
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트]온담 표고혼합 3종세트</h3>
                                     <div class="price">
-                                        <del>49,900원</del>
+                                        <p><del>49,900원</del></p>
                                         <div class="discount">
                                             <span class="rate">30%</span>
                                             <span class="discount_price">34,900원</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item3">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_10.jpeg" alt="아이템이미지">
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>양파3kg</h3>
                                     <div class="price">
-                                        <del>8,190원</del>
+                                        <p><del>8,190원</del></p>
                                         <div class="discount">
                                             <span class="rate">13%</span>
                                             <span class="discount_price">7,909원</span>
@@ -978,42 +978,42 @@
                                             <span class="review_num">9,999+</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item4">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_11.jpg" alt="아이템이미지">
                                     <span class="coupon">+30%쿠폰</span>
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>2월 제철 채소 4종 골라담기</h3>
                                     <div class="price">
-                                        <del>2,590원~</del>
+                                        <p><del>2,590원~</del></p>
                                         <div class="review">
                                             <img src="./images/main/icon/icon_sms.png" alt="">
                                             <span class="review_num">9,999+</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item5">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_08.jpg" alt="아이템이미지">
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 온담 정성담은 표고 흑화고 가루 세트</h3>
                                     <div class="price">
-                                        <del>34,900원</del>
+                                        <p><del>34,900원</del></p>
                                         <div class="discount">
                                             <span class="rate">22%</span>
                                             <span class="discount_price">26,900원</span>
@@ -1023,41 +1023,41 @@
                                             <span class="review_num">190</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item6">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_09.jpeg" alt="아이템이미지">
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트]온담 표고혼합 3종세트</h3>
                                     <div class="price">
-                                        <del>49,900원</del>
+                                        <p><del>49,900원</del></p>
                                         <div class="discount">
                                             <span class="rate">30%</span>
                                             <span class="discount_price">34,900원</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item7">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_10.jpeg" alt="아이템이미지">
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>양파3kg</h3>
                                     <div class="price">
-                                        <del>8,190원</del>
+                                        <p><del>8,190원</del></p>
                                         <div class="discount">
                                             <span class="rate">13%</span>
                                             <span class="discount_price">7,909원</span>
@@ -1067,29 +1067,29 @@
                                             <span class="review_num">9,999+</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item8">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_11.jpg" alt="아이템이미지">
                                     <span class="coupon">+30%쿠폰</span>
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>2월 제철 채소 4종 골라담기</h3>
                                     <div class="price">
-                                        <del>2,590원~</del>
+                                        <p><del>2,590원~</del></p>
                                         <div class="review">
                                             <img src="./images/main/icon/icon_sms.png" alt="">
                                             <span class="review_num">9,999+</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
@@ -1170,17 +1170,17 @@
                 <div class="swiper-container" id="present_slide">
                     <div class="swiper-wrapper" id="present_slide_wrap">
                         <div class="swiper-slide item item1">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_01.jpg" alt="아이템이미지">
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 횡성축협한우 1++ 한우 프리미엄 구이 세트 (냉장)</h3>
                                     <div class="price">
-                                        <del>399,000원</del>
+                                        <p><del>399,000원</del></p>
                                         <div class="discount">
                                             <span class="rate">25%</span>
                                             <span class="discount_price">299,000원</span>
@@ -1190,22 +1190,22 @@
                                             <span class="review_num">50</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item2">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_02.jpg" alt="아이템이미지">
                                     <span class="coupon">+30%쿠폰</span>
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 민어굴비 세트</h3>
                                     <div class="price">
-                                        <del>79,000원</del>
+                                        <p><del>79,000원</del></p>
                                         <div class="discount">
                                             <span class="rate">30%</span>
                                             <span class="discount_price">55,300원</span>
@@ -1215,21 +1215,21 @@
                                             <span class="review_num">714</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item3">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_03.jpg" alt="아이템이미지">
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 나주 신고배 세트<br>4.5kg(6~7입)</h3>
                                     <div class="price">
-                                        <del>59,900원</del>
+                                        <p><del>59,900원</del></p>
                                         <div class="discount">
                                             <span class="rate">20%</span>
                                             <span class="discount_price">47,900원</span>
@@ -1239,22 +1239,22 @@
                                             <span class="review_num">15</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item4">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_04.jpg" alt="아이템이미지">
                                     <span class="coupon">+30%쿠폰</span>
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 제주 옥돔 (대) 세트 2kg</h3>
                                     <div class="price">
-                                        <del>249,000원</del>
+                                        <p><del>249,000원</del></p>
                                         <div class="discount">
                                             <span class="rate">28%</span>
                                             <span class="discount_price">179,000원</span>
@@ -1264,21 +1264,21 @@
                                             <span class="review_num">76</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item5">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_01.jpg" alt="아이템이미지">
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 횡성축협한우 1++ 한우 프리미엄 구이 세트 (냉장)</h3>
                                     <div class="price">
-                                        <del>399,000원</del>
+                                        <p><del>399,000원</del></p>
                                         <div class="discount">
                                             <span class="rate">25%</span>
                                             <span class="discount_price">299,000원</span>
@@ -1288,22 +1288,22 @@
                                             <span class="review_num">50</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item6">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_02.jpg" alt="아이템이미지">
                                     <span class="coupon">+30%쿠폰</span>
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 민어굴비 세트</h3>
                                     <div class="price">
-                                        <del>79,000원</del>
+                                        <p><del>79,000원</del></p>
                                         <div class="discount">
                                             <span class="rate">30%</span>
                                             <span class="discount_price">55,300원</span>
@@ -1313,21 +1313,21 @@
                                             <span class="review_num">714</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item7">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_03.jpg" alt="아이템이미지">
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 나주 신고배 세트<br>4.5kg(6~7입)</h3>
                                     <div class="price">
-                                        <del>59,900원</del>
+                                        <p><del>59,900원</del></p>
                                         <div class="discount">
                                             <span class="rate">20%</span>
                                             <span class="discount_price">47,900원</span>
@@ -1337,22 +1337,22 @@
                                             <span class="review_num">15</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="swiper-slide item item8">
-                            <a href="#">
-                                <div class="img">
+                            <div>
+                                <a href="#" class="img">
                                     <img src="./images/main/product/main_p_04.jpg" alt="아이템이미지">
                                     <span class="coupon">+30%쿠폰</span>
-                                </div>
+                                </a>
                                 <div class="cart_add">
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
                                 </div>
-                                <div class="info">
+                                <a href="#" class="info">
                                     <h3>[선물세트] 제주 옥돔 (대) 세트 2kg</h3>
                                     <div class="price">
-                                        <del>249,000원</del>
+                                        <p><del>249,000원</del></p>
                                         <div class="discount">
                                             <span class="rate">28%</span>
                                             <span class="discount_price">179,000원</span>
@@ -1362,8 +1362,8 @@
                                             <span class="review_num">76</span>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
@@ -1517,7 +1517,7 @@
             </div>
             <div class="swiper-container" id="recently_slide">
                 <div class="swiper-wrapper" id="recently_slide_wrap">
-                    <span>최근 본 상품</span>
+                    <p>최근 본 상품</p>
                     <a href="#" class="swiper-slide item item1"></a>
                     <a href="#" class="swiper-slide item item2"></a>
                     <a href="#" class="swiper-slide item item3"></a>
@@ -1528,6 +1528,7 @@
             </div>
         </div>
     </div>
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <script>
         const mySwiper = new Swiper('#main_bnr_slide',{
             // 속성:값, 속성:값,
@@ -1582,6 +1583,61 @@
             start_btn.addEventListener('click',()=>{
                 mySwiper.autoplay.start()
         })
+        //본 예제에서는 도로명 주소 표기 방식에 대한 법령에 따라, 내려오는 데이터를 조합하여 올바른 주소를 구성하는 방법을 설명합니다.
+        function exec_daum_postcode() {
+            new daum.Postcode({
+                oncomplete: function(data) {
+                    // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                    // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
+                    // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                    var roadAddr = data.roadAddress; // 도로명 주소 변수
+                    var extraRoadAddr = ''; // 참고 항목 변수
+
+                    // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                    // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraRoadAddr += data.bname;
+                    }
+                    // 건물명이 있고, 공동주택일 경우 추가한다.
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                    extraRoadAddr += (extraRoadAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                    // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                    if(extraRoadAddr !== ''){
+                        extraRoadAddr = ' (' + extraRoadAddr + ')';
+                    }
+
+                    // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                    document.getElementById('postcode').value = data.zonecode;
+                    document.getElementById("roadAddress").value = roadAddr;
+                    document.getElementById("jibunAddress").value = data.jibunAddress;
+                    
+                    // 참고항목 문자열이 있을 경우 해당 필드에 넣는다.
+                    if(roadAddr !== ''){
+                        document.getElementById("extraAddress").value = extraRoadAddr;
+                    } else {
+                        document.getElementById("extraAddress").value = '';
+                    }
+
+                    var guideTextBox = document.getElementById("guide");
+                    // 사용자가 '선택 안함'을 클릭한 경우, 예상 주소라는 표시를 해준다.
+                    if(data.autoRoadAddress) {
+                        var expRoadAddr = data.autoRoadAddress + extraRoadAddr;
+                        guideTextBox.innerHTML = '(예상 도로명 주소 : ' + expRoadAddr + ')';
+                        guideTextBox.style.display = 'block';
+
+                    } else if(data.autoJibunAddress) {
+                        var expJibunAddr = data.autoJibunAddress;
+                        guideTextBox.innerHTML = '(예상 지번 주소 : ' + expJibunAddr + ')';
+                        guideTextBox.style.display = 'block';
+                    } else {
+                        guideTextBox.innerHTML = '';
+                        guideTextBox.style.display = 'none';
+                    }
+                }
+            }).open();
+        }
     </script>
 </body>
 </html>

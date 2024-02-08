@@ -62,7 +62,6 @@ header .header_top .user_info .map .map_open {
     position: absolute; left: 26%; transform: translateX(-50%); z-index: 999;
     top: 55px; width: 267px; padding: 18px 17px 17px;
     border: 1px solid #ddd; background-color: #fff;
-    display: none;
 }
 header .header_top .user_info .map .map_open::before {
     content: ''; display: inline-block; width: 36px; height: 36px;
@@ -88,14 +87,21 @@ header .header_top .user_info .map .map_open .map_btn #map_login_btn {
     width: 80px; height: 36px; border-radius: 3px; color: #5F0080; border: 1px solid #5F0080;
     background: #fff;
 }
-header .header_top .user_info .map .map_open .map_btn #map_search_btn {
-    font-size: 0.75rem; font-weight: 500; background: #5F0080; color: #fff;
-    display: flex; align-items: center; width: 145px; border-radius: 3px; justify-content: center;
-    padding: 0px 10px 0 0; height: 36px;
+header .header_top .user_info .map .map_open .map_btn .address_btn {
+    display: flex; justify-content: center; align-items: center;
+    background: #5F0080; width: 145px; border-radius: 3px;
+    padding: 0px 10px 0 0; height: 36px; cursor: pointer;
+    position: relative;
 }
-header .header_top .user_info .map .map_open .map_btn #map_search_btn img {
-    width: 20px; height: 20px;
+header .header_top .user_info .map .map_open .map_btn .address_btn img{
+    width: 20px; height: 20px; position: absolute; left: 32px; top: 9px;
 }
+header .header_top .user_info .map .map_open .map_btn .address_btn #map_search_btn {
+    font-size: 0.75rem; font-weight: 500;  color: #fff;
+    cursor: pointer; width: 145px; height: 36px;
+}
+
+
 header .header_top .user_info .wish {margin-right: 20px;}
 header .header_top .user_info .wish img {}
 header .header_top .user_info .cart {}
