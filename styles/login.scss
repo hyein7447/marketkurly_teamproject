@@ -1,0 +1,85 @@
+@import 'common';
+
+main {
+    margin: 0 auto;
+    .container {
+        width: 1050px;
+        margin:90px 0 60px;
+        h1 {
+            font-size: $px20;
+            font-weight: 800;
+            text-align: center;
+        }
+        form {
+            fieldset {
+                width: 340px;
+                margin: 0px auto;
+                letter-spacing: -0.6px;
+                #user_id {
+                    height: 54px;
+                    width: 100%;
+                    margin: 30px 0 12px;
+                    @include bo_dd4;
+                    padding: 0px 15px;
+                }
+                #user_pw {
+                    height: 54px;
+                    width: 100%;
+                    margin-bottom: 12px;
+                    @include bo_dd4;
+                    padding: 0px 15px;
+                }
+                .info_look {
+                    @include flex-row-end-ct;
+                    a:nth-child(1)::after {
+                        @include bf_333_10px;
+                        margin-left: 10px;
+                    }
+                    a:nth-child(2) {
+                        margin-left: 10px;
+                    }
+                    a {
+                        font-size: $px13;
+                    }
+                }
+                .citation_num {
+                    margin-top: 28px;
+                    background-color: $gr6;
+                    @include flex-col-ct-ct;
+                    padding: 20px;
+                    span {
+                        color: $bk2;
+                        font-size: $px13;
+                        text-align: center;
+                        font-weight: 500;
+                    }
+                    img {
+                        height: 34px;
+                        margin: 10px 0px;
+                    }
+                    #citation_num {
+                        background-color: #fff;
+                        @include bo_dd4;
+                        padding: 0px 15px;
+                        width: 100%;
+                        height: 46px;
+                        margin-bottom: 12px;
+                    }
+                }
+                }.btn_login {
+                    width: 100%;
+                    @include pull_pp3;
+                    height: 54px;
+                    margin-top: 28px;
+                }
+                .btn_join {
+                    width: 100%;
+                    @include bo_pp3;
+                    height: 54px;
+                    color: $purple;
+                    font-weight: 500;
+                    margin-top: 10px;
+                }
+        }
+    }
+}

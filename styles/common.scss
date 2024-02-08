@@ -2,6 +2,14 @@
 $purple: #5F0080;
 $orange: #fa622f;
 $badge: #bd76ff;
+$bk1: #333;
+$bk2: #666;
+$gr1: #999;
+$gr2: #b5b5b5;
+$gr3: #ddd;
+$gr4: #eee;
+$gr5: #f4f4f4;
+$gr6: #f7f7f7;
 $error: #f03f40;
 $error: 1.5rem;
 
@@ -24,9 +32,67 @@ $px11: 0.688rem;
     justify-content: space-between;
     align-items: center;
 }
+@mixin flex-row-end-ct {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
 @mixin flex-col-btw-ct {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
+}
+@mixin flex-col-ct-ct {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+// button 
+@mixin btn_bk3 {
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+@mixin bo_bk4 {
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+@mixin bo_dd4 {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+@mixin bo_pp3 {
+    border: 1px solid #5F0080;
+    border-radius: 3px;
+}
+@mixin bo_pp4 {
+    border: 1px solid #5F0080;
+    border-radius: 4px;
+}
+@mixin pull_pp3 {
+    background-color: #5F0080;
+    border-radius: 3px;
+    color:#fff;
+}
+@mixin pull_pp4 {
+    background-color: #5F0080;
+    border-radius: 4px;
+    color:#fff;
+}
+
+// | contents
+@mixin bf_ddd_12px {
+    content: '';
+    display: inline-block;
+    width: 1px; height: 12px;
+    background-color: #ddd;
+}
+@mixin bf_333_10px {
+    content: '';
+    display: inline-block;
+    width: 1px; height: 10px;
+    background-color: #333;
 }
