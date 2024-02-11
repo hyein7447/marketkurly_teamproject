@@ -1,0 +1,128 @@
+@import 'common';
+
+main {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    width: 100%;
+    .join {
+        margin: 0 auto;
+        width: 640px;
+        h1 {
+            font-size: $px28;
+            text-align: center;
+            font-weight: 500;
+            letter-spacing: -1px;
+            margin-bottom: 50px;
+        }
+        .box_wrap_info {
+            text-align: right;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            span, em {
+                font-size: $px12;
+            }
+            em {
+                color:$error;
+            }
+        }
+    } 
+    form {
+        .wrap {
+            li {
+                padding: 10px 20px;
+                @include flex-row-st;
+                .title {
+                    padding-top: 15px;
+                    width:22%;
+                    p,em {
+                        font-weight: 500;
+                        font-size: $px14;
+                    }
+                    em {
+                        color:$error;
+                    }
+                }
+                .input_area {
+                    width:58%;
+                    input {
+                        @include bo_dd4;
+                        width:100%;
+                        padding: 0px 15px;
+                        height: 46px;
+                    }
+                    .gender_male, .gender_female, .gender_none {
+                        display: flex; 
+                        flex-flow: row nowrap;
+                        align-items: center;
+                        width: calc((100% / 3) - 4px);
+                        display: inline-block;
+                    }
+                    .error_m {
+                        display: inline-block;
+                        color:$error;
+                        font-size: $px13;
+                        margin: 10px 0;
+                    }
+                    input[type=radio] {
+                        border:none;
+                        appearance: none;
+                        display: flex;
+                    }
+                    input[type=radio]:checked + label {
+                        background-image: url('../images/sub/icon_circle_on.svg');
+                        background-color: aqua;
+                    }
+                    input[type=radio]+ label::before  {
+                        cursor: pointer; 
+                        padding-left: 24px; 
+                        display: inline-block;
+                        width:24px; height: 24px;
+                        background-image: url('../images/sub/icon_circle_off.svg');
+                        background-color: pink;
+                    }
+                }
+                .date {
+                    @include bo_dd4;
+                    input {
+                        border: 0;
+                        text-align: center;
+                        display: flex; 
+                        flex-flow: row nowrap;
+                        align-items: center;
+                        width: calc((100% / 3) - 10px);
+                        display: inline-block;
+                    }
+                }
+                .btn_area {
+                    width:20%;
+                    button {
+                        width: 100%;
+                        @include bo_pp3;
+                        height: 46px;
+                        margin-left: 8px;
+                        font-size: $px14;
+                        font-weight: 500;
+                        color:$purple;
+                    }
+                }
+                .btn_search {
+                    height: 44px;
+                    @include bo_pp4;
+                    @include flex-row-ct-ct;
+                    width: 100%;
+                    color:$purple;
+                    font-size: $px14;
+                    font-weight: 500;
+                    img {
+                        width:20px;
+                    }
+                }
+                .btn_search + span {
+                    display: inline-block;
+                    margin-top: 10px;
+                    font-size: $px12;
+                }
+            }
+        }
+    }
+}
