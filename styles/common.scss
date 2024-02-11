@@ -3,7 +3,6 @@ $purple: #5F0080;
 $orange: #fa622f;
 $badge: #bd76ff;
 $error: #f03f40;
-$error: 1.5rem;
 $c-51: #333;
 $c-102: #666;
 $c-153:#999;
@@ -101,7 +100,7 @@ $px10: 0.625rem;
     color:#fff;
 }
 
-// | contents
+// 글자 사이 라인 -> | 
 @mixin bf_ddd_12px {
     content: '';
     display: inline-block;
