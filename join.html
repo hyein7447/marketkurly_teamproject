@@ -59,7 +59,7 @@
                                 <p>이름<em>*</em></p>
                             </div>
                             <div class="input_area">
-                                <input type="text" id="user_pw_rechk" minlength="20" placeholder="이름을 입력해 주세요">
+                                <input type="text" id="user_name_rechk" minlength="20" placeholder="이름을 입력해 주세요">
                                 <span><!-- js용 --></span>
                             </div>
                         </li>
@@ -68,7 +68,7 @@
                                 <p>이메일<em>*</em></p>
                             </div>
                             <div class="input_area">
-                                <input type="text" id="user_id" placeholder="예: marketkurly@kurly.com">
+                                <input type="text" id="user_mail" placeholder="예: marketkurly@kurly.com">
                                 <span><!-- js용 --></span>
                             </div>
                             <div class="btn_area">
@@ -84,7 +84,7 @@
                                 <span><!-- js용 --></span>
                             </div>
                             <div class="btn_area">
-                                <button type="button" class="btn_id_overlap2">인증번호 받기</button>
+                                <button type="button" class="btn_phone">인증번호 받기</button>
                             </div>
                         </li>
                         <li>
@@ -101,10 +101,10 @@
                             <div class="title">
                                 <p>성별</p>
                             </div>
-                            <div class="input_area">
-                                <label for="gender_male" class="gender_male"><input type="radio" name="male" id="gender_male"><!-- <img src="./images/sub/icon_circle_off.svg" alt=""> -->남자</label>
-                                <label for="gender_female" class="gender_female"><input type="radio" name="female" id="gender_female"><!-- <img src="./images/sub/icon_circle_off.svg" alt=""> -->여자</label>
-                                <label for="gender_none" class="gender_none"><input type="radio" name="none" id="gender_none"><!-- <img src="./images/sub/icon_circle_off.svg" alt=""> -->선택안함</label>
+                            <div class="input_area gender">
+                                <label for="gender_male" class="gender_male"><input type="radio" name="gender" id="gender_male">남자</label>
+                                <label for="gender_female" class="gender_female"><input type="radio" name="gender" id="gender_female">여자</label>
+                                <label for="gender_none" class="gender_none"><input type="radio" name="gender" id="gender_none">선택안함</label>
                             </div>
                         </li>
                         <li>
@@ -112,31 +112,39 @@
                                 <p>생년월일</p>
                             </div>
                             <div class="input_area date">
-                                <input type="text" name="year" id="date_year" placeholder="YYYY">/
-                                <input type="text" name="month" id="date_month" placeholder="MM">/
-                                <input type="text" name="day" id="date_day" placeholder="dd">
+                                <input type="text" name="year" id="date_year" placeholder="YYYY" maxlength="4">/
+                                <input type="text" name="month" id="date_month" placeholder="MM" maxlength="2">/
+                                <input type="text" name="day" id="date_day" placeholder="dd" maxlength="2">
                             </div>
                         </li>
                         <li>
                             <div class="title">
                                 <p>추가입력 사항</p>
                             </div>
-                            <div class="input_area">
-                                <label for="gender_male"><input type="radio" name="male" id="gender_male">친구초대 추천인 아이디</label>
-                                <label for="gender_male"><input type="radio" name="male" id="gender_male">참여 이벤트명</label>
-                                <div class="hiden_tab1">
-                                    <input type="text" name="recommend_id" id="recommend_id" placeholder="추천인 아이디를 입력해 주세요." maxlength="16">
-                                    <span>가입 후 7일 내 첫 주문 배송완료 시, 친구초대 이벤트 적립금이 지급됩니다.</span>
-                                </div>
-                                <div class="hiden_tab2">
-                                    <input type="text" name="event" id="event" placeholder="참여 이벤트명을 입력해 주세요.">
-                                    <span>추천인 아이디와 참여 이벤트명 중 하나만 선택 가능합니다.</span>
-                                    <span>가입 이후는 수정이 불가능 합니다.</span>
-                                    <span>대소문자 및 띄어쓰기에 유의해주세요.</span>
-                                </div>
+                            <div class="input_area event">
+                                <label for="friend" class="event_area"><input type="radio" name="add" id="friend">친구초대 추천인 아이디</label>
+                                <label for="event_name" class="event_area"><input type="radio" name="add" id="event_name">참여 이벤트명</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title">
+                            </div>
+                            <div class="input_area hiden_tab1">
+                                <input type="text" name="recommend_id" id="recommend_id" placeholder="추천인 아이디를 입력해 주세요." maxlength="16">
+                                <span>가입 후 7일 내 첫 주문 배송완료 시, 친구초대 이벤트 적립금이 지급됩니다.</span>
                             </div>
                             <div class="btn_area">
                                 <button type="button" class="btn_id_chk">아이디 확인</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title">
+                            </div>
+                            <div class="input_area hiden_tab2">
+                                <input type="text" name="event" id="event" placeholder="참여 이벤트명을 입력해 주세요.">
+                                <span>추천인 아이디와 참여 이벤트명 중 하나만 선택 가능합니다.</span>
+                                <span>가입 이후는 수정이 불가능 합니다.</span>
+                                <span>대소문자 및 띄어쓰기에 유의해주세요.</span>
                             </div>
                         </li>
                     </ul>
@@ -146,29 +154,30 @@
                                 <p>이용약관동의<em>*</em></p>
                             </div>
                             <div class="agree_area">
-                                <label for="agree_all"><input type="checkbox" name="agree_all" id="agree_all"><img src="./images/sub/icon_circle_off.svg" alt="">전체 동의합니다.</label>
+                                <label for="agree_all" class="agree_all"><input type="checkbox" name="agree_all" id="agree_all">전체 동의합니다.</label>
                                 <span>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</span>
                                 <div class="agree_view">
-                                    <label for="required"><input type="checkbox" name="required" id="required"><img src="./images/sub/icon_circle_off.svg" alt="">이용약관 동의 <em>(필수)</em></label>
-                                    <span>약관보기 &gt;</span>
+                                    <label for="required"><input type="checkbox" name="required" id="required">이용약관 동의 <em>(필수)</em></label>
+                                    <strong>약관보기</strong>
                                 </div>
                                 <div class="agree_view">
-                                    <label for="privacy_required"><input type="checkbox" name="privacy_required" id="privacy_required"><img src="./images/sub/icon_circle_off.svg" alt="">개인정보 수집∙이용 동의 <em>(필수)</em></label>
-                                    <span>약관보기 &gt;</span>
+                                    <label for="privacy_required"><input type="checkbox" name="privacy_required" id="privacy_required">개인정보 수집∙이용 동의 <em>(필수)</em></label>
+                                    <strong>약관보기</strong>
                                 </div>
                                 <div class="agree_view">
-                                    <label for="privacy_select"><input type="checkbox" name="privacy_select" id="privacy_select"><img src="./images/sub/icon_circle_off.svg" alt="">개인정보 수집∙이용 동의 <em>(선택)</em></label>
-                                    <span>약관보기 &gt;</span>
+                                    <label for="privacy_select"><input type="checkbox" name="privacy_select" id="privacy_select">개인정보 수집∙이용 동의 <em>(선택)</em></label>
+                                    <strong>약관보기</strong>
                                 </div>
-                                <label for="delivery"><input type="checkbox" name="delivery" id="delivery"><img src="./images/sub/icon_circle_off.svg" alt="">무료배송, 할인쿠폰 등 혜택/정보 수신 동의<em>(선택)</em></label>
+                                <label for="delivery"><input type="checkbox" name="delivery" id="delivery">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 <em>(선택)</em></label>
                                 <div class="receive">
                                     <div class="choice">
-                                        <label for="receive_sms"><input type="checkbox" name="sms" id="receive_sms"><img src="./images/sub/icon_circle_off.svg" alt="">SMS</label>
-                                        <label for="receive_sms"><input type="checkbox" name="email" id="receive_sms"><img src="./images/sub/icon_circle_off.svg" alt="">이메일</label>
+                                        <label for="sms"><input type="checkbox" name="receive_sms" id="sms">SMS</label>
+                                        <label for="email"><input type="checkbox" name="receive_sms" id="email">이메일</label>
                                     </div>
-                                    <span><img src="./images/login/icon_select_sub.svg" alt="">동의 시 한 달간 [5%적립] + [2만원 이상 무료배송] 첫 주문 후 안내</span>
+                                    <span><img src="./images/login/icon_select_sub.svg" alt="">
+                                        동의 시 한 달간 [5%적립] + [2만원 이상 무료배송] 첫 주문 후 안내</span>
                                 </div>
-                                <label for="older"><input type="checkbox" name="older" id="older"><img src="./images/sub/icon_circle_off.svg" alt="">본인은 만 14세 이상입니다.<em>(필수)</em></label>
+                                <label for="older"><input type="checkbox" name="older" id="older">본인은 만 14세 이상입니다. <em>(필수)</em></label>
                             </div>
                         </li>
                     </ul>
