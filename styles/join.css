@@ -1,0 +1,346 @@
+main {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+main .join {
+  margin: 0 auto;
+  width: 640px;
+}
+main .join h1 {
+  font-size: 1.75rem;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-bottom: 50px;
+}
+main .join .box_wrap_info {
+  text-align: right;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+main .join .box_wrap_info span, main .join .box_wrap_info em {
+  font-size: 0.75rem;
+}
+main .join .box_wrap_info em {
+  color: #f03f40;
+}
+main .join #btn_join {
+  width: 240px;
+  height: 56px;
+  text-align: center;
+  display: block;
+  background-color: #5F0080;
+  border-radius: 4px;
+  color: #fff;
+  margin: 40px auto;
+}
+main form .wrap li {
+  padding: 10px 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+}
+main form .wrap li .title {
+  padding-top: 15px;
+  width: 22%;
+}
+main form .wrap li .title p, main form .wrap li .title em {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+main form .wrap li .title em {
+  color: #f03f40;
+}
+main form .wrap li .input_area {
+  width: 58%;
+}
+main form .wrap li .input_area input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  padding: 0px 15px;
+  height: 46px;
+}
+main form .wrap li .input_area .gender_male, main form .wrap li .input_area .gender_female, main form .wrap li .input_area .gender_none {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: calc(33.3333333333% - 4px);
+  display: inline-block;
+}
+main form .wrap li .input_area .error_m {
+  display: inline-block;
+  color: #f03f40;
+  font-size: 0.813rem;
+  margin: 10px 0;
+}
+main form .wrap li .event {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  position: relative;
+}
+main form .wrap li .event label[class*=event] {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+main form .wrap li .event input[type=radio] {
+  background-image: url("../images/sub/icon_circle_off.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+main form .wrap li .event input[type=radio]:checked {
+  cursor: pointer;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/sub/icon_circle_on.svg");
+}
+main form .wrap li .hiden_tab1 span {
+  font-size: 0.75rem;
+  margin-top: 12px;
+}
+main form .wrap li .hiden_tab1 .btn_area {
+  width: 150px;
+  height: 44px;
+}
+main form .wrap li .hiden_tab2 {
+  display: none;
+}
+main form .wrap li .hiden_tab2 span:first-child {
+  margin-top: 10px;
+}
+main form .wrap li .hiden_tab2 span {
+  font-size: 0.75rem;
+  display: inline-block;
+}
+main form .wrap li .gender {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+main form .wrap li .gender label[class*=gender] {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: calc(33.3333333333% - 4px);
+  cursor: pointer;
+}
+main form .wrap li .gender input[type=radio] {
+  background-image: url("../images/sub/icon_circle_off.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+main form .wrap li .gender input[type=radio]:checked {
+  cursor: pointer;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/sub/icon_circle_on.svg");
+}
+main form .wrap li .date {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+main form .wrap li .date input {
+  border: 0;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: calc(33.3333333333% - 10px);
+  display: inline-block;
+}
+main form .wrap li .btn_area {
+  width: 20%;
+}
+main form .wrap li .btn_area button {
+  width: 100%;
+  border: 1px solid #5F0080;
+  border-radius: 3px;
+  height: 46px;
+  margin-left: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #5F0080;
+}
+main form .wrap li .btn_area .btn_phone {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 46px;
+  margin-left: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ddd;
+}
+main form .wrap li .btn_search {
+  height: 44px;
+  border: 1px solid #5F0080;
+  border-radius: 4px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #5F0080;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+main form .wrap li .btn_search img {
+  width: 20px;
+}
+main form .wrap li .btn_search + span {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.75rem;
+}
+main form .terms {
+  padding: 10px 20px;
+  border-top: 1px solid #333;
+}
+main form .terms li {
+  padding: 10px 0px 10px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+}
+main form .terms li .title {
+  padding: 10px 20px 10px 0;
+  width: 22%;
+}
+main form .terms li .title p, main form .terms li .title em {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+main form .terms li .title em {
+  color: #f03f40;
+}
+main form .terms li .agree_area {
+  width: 75%;
+}
+main form .terms li .agree_area label[class=agree_all] {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+main form .terms li .agree_area label {
+  font-size: 0.875rem;
+}
+main form .terms li .agree_area label em {
+  font-size: 0.875rem;
+  color: #999;
+  font-weight: 500;
+}
+main form .terms li .agree_area label input {
+  background-image: url("../images/sub/icon_check1.png");
+  background-size: cover;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  margin-right: 10px;
+  transform: translateY(5px);
+}
+main form .terms li .agree_area label input:checked {
+  background-image: url("../images/sub/icon_check4.png");
+  background-size: cover;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  margin-right: 10px;
+  transform: translateY(5px);
+}
+main form .terms li .agree_area span {
+  margin: 0 0 10px 30px;
+  display: inline-block;
+  font-size: 0.75rem;
+}
+main form .terms li .agree_area div[class*=agree] {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+main form .terms li .agree_area div[class*=agree] span {
+  font-size: 0.875rem;
+}
+main form .terms li .agree_area div[class*=agree] strong::after {
+  background-image: url("../images/main/icon/icon_arrow_right.svg");
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 10px;
+  height: 10px;
+  content: "";
+  margin-left: 2px;
+}
+main form .terms li .agree_area div[class*=agree] strong {
+  font-size: 0.875rem;
+  color: #5F0080;
+}
+main form .terms li .agree_area .receive .choice {
+  margin: 10px 0 10px 30px;
+}
+main form .terms li .agree_area .receive .choice label {
+  cursor: pointer;
+}
+main form .terms li .agree_area .receive span {
+  margin-left: 60px;
+  margin-bottom: 10px;
+  color: #5F0080;
+  font-weight: 500;
+  letter-spacing: -0.02rem;
+}
+main .tab_terms1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: #333;
+  width: 100%;
+  height: 100vh;
+}
+main .tab_terms1 .tab_box {
+  background-color: #fff;
+}
+main .tab_terms1 .tab_box h2 {
+  display: block;
+}
+main .tab_terms1 .tab_box .contents {
+  margin: 0 auto;
+}
+main .tab_terms1 .tab_box .contents #object_first {
+  height: 500px;
+  text-align: left;
+}/*# sourceMappingURL=join.css.map */

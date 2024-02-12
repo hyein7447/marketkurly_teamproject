@@ -3,7 +3,6 @@ $purple: #5F0080;
 $orange: #fa622f;
 $badge: #bd76ff;
 $error: #f03f40;
-$error: 1.5rem;
 $c-51: #333;
 $c-102: #666;
 $c-153:#999;
@@ -35,6 +34,12 @@ $px10: 0.625rem;
     justify-content: space-between;
     align-items: center;
 }
+@mixin flex-row-btw-st {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items:flex-start;
+}
 @mixin flex-row-end-ct {
     display: flex;
     flex-flow: row nowrap;
@@ -47,6 +52,14 @@ $px10: 0.625rem;
     justify-content: center;
     align-items: center;
 }
+<<<<<<< HEAD
+=======
+@mixin flex-row-st {
+    display:flex;
+    flex-flow:row nowrap;
+    align-items: flex-start;
+}
+>>>>>>> 8cd1db64356856d8ceeb9168d038dafbbb6b34b7
 @mixin flex-col-btw-ct {
     display: flex;
     flex-flow: column nowrap;
@@ -107,7 +120,7 @@ $px10: 0.625rem;
     color:#fff;
 }
 
-// | contents
+// 글자 사이 라인 -> | 
 @mixin bf_ddd_12px {
     content: '';
     display: inline-block;
