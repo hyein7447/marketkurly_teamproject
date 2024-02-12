@@ -1,1 +1,1257 @@
-/*# sourceMappingURL=wish.css.map */
+@charset "UTF-8";
+.user_info_bg {
+  background: #f7f7f7;
+  width: 100%;
+  padding: 50px 0;
+}
+.user_info_bg .user_info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 1050px;
+  margin: 0 auto;
+}
+.user_info_bg .user_info .left {
+  background: #fff;
+  padding: 31px;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  margin-right: 4px;
+  height: 100%;
+}
+.user_info_bg .user_info .left .user_level {
+  display: flex;
+}
+.user_info_bg .user_info .left .user_level .level_badge {
+  text-align: center;
+}
+.user_info_bg .user_info .left .user_level .level_badge span {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: 1px solid #5F0080;
+  padding: 0 5px;
+  font-size: 0.875rem;
+  background-color: #fff;
+  display: block;
+  line-height: 45px;
+  color: #5F0080;
+  margin-right: 20px;
+}
+.user_info_bg .user_info .left .user_level .user_info_name {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+.user_info_bg .user_info .left .user_level .user_info_name h2 {
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.user_info_bg .user_info .left .user_level .user_info_name .member_level {
+  display: flex;
+}
+.user_info_bg .user_info .left .user_level .user_info_name .member_level a {
+  font-size: 0.75rem;
+  color: #999;
+  font-family: 600;
+  letter-spacing: -0.8px;
+}
+.user_info_bg .user_info .left .user_level .user_info_name .member_level :last-child::before {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background-color: #999;
+  border-radius: 50%;
+  content: " ";
+  position: relative;
+  top: -3px;
+  margin: 0 5px;
+}
+.user_info_bg .user_info .left .benefit {
+  background-color: #f7f7f7;
+  padding: 15px 12px;
+  border-radius: 6px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.user_info_bg .user_info .left .benefit .badge {
+  color: #fff;
+  background-color: #f03f40;
+  margin-right: 8px;
+  font-size: 0.688rem;
+  letter-spacing: -0.3px;
+  text-align: center;
+  border-radius: 13px;
+  width: 40px;
+  height: 18px;
+  line-height: 18px;
+}
+.user_info_bg .user_info .left .benefit span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 24px;
+}
+.user_info_bg .user_info .left .benefit span em {
+  color: #5F0080;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+.user_info_bg .user_info .left .benefit span img {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+  margin-left: 12px;
+}
+.user_info_bg .user_info .right {
+  display: flex;
+  flex-flow: column;
+}
+.user_info_bg .user_info .right .top {
+  display: flex;
+  margin-bottom: 4px;
+}
+.user_info_bg .user_info .right .top a {
+  display: flex;
+  flex-flow: column;
+  background-color: #fff;
+  width: 222px;
+  padding: 26px 0px 30px 30px;
+  margin-right: 4px;
+  height: 100%;
+}
+.user_info_bg .user_info .right .top a span {
+  display: flex;
+  align-items: center;
+}
+.user_info_bg .user_info .right .top a span em {
+  margin-top: 20px;
+  display: block;
+  line-height: 23px;
+}
+.user_info_bg .user_info .right .top .user_style {
+  margin: 0;
+}
+.user_info_bg .user_info .right img {
+  width: 23px;
+  height: 23px;
+}
+.user_info_bg .user_info .right em {
+  font-size: 1.25rem;
+  color: #5F0080;
+  font-weight: 700;
+}
+.user_info_bg .user_info span {
+  font-weight: 600;
+  position: relative;
+  letter-spacing: -0.5px;
+}
+.user_info_bg .user_info .bottom {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_info_bg .user_info .bottom a {
+  background: #fff;
+  padding: 20px 30px;
+  margin-right: 4px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_info_bg .user_info .bottom a span {
+  display: flex;
+  align-items: center;
+  line-height: 24px;
+}
+.user_info_bg .user_info .bottom .kulry_member {
+  margin: 0;
+}
+
+.user_info_bnr a {
+  background: url(../images/sub/wishlist_bnr.avif);
+  display: block;
+  width: 1050px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.my_kurly_bg {
+  width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 50px 0 80px;
+}
+.my_kurly_bg .my_kurly {
+  width: 200px;
+}
+.my_kurly_bg .my_kurly h1 {
+  padding: 5px 0px 35px 1px;
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 35px;
+  letter-spacing: -1px;
+}
+.my_kurly_bg .my_kurly .my_kurly_menu {
+  border: 1px solid #f2f2f2;
+  background: #fff;
+}
+.my_kurly_bg .my_kurly .my_kurly_menu li a {
+  padding: 15px 13px 15px 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+  font-size: 0.875rem;
+}
+.my_kurly_bg .my_kurly .my_kurly_menu li a img {
+  width: 19px;
+  height: 19px;
+}
+.my_kurly_bg .my_kurly .user_q {
+  width: 100%;
+  height: 60px;
+  padding: 0 14px 0 20px;
+  margin-top: 36px;
+  line-height: 20px;
+  background: #fafafa;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.my_kurly_bg .my_kurly .user_q .txt p {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.my_kurly_bg .my_kurly .user_q .txt p span {
+  font-size: 0.75rem;
+}
+.my_kurly_bg .my_kurly .user_q .img img {
+  width: 19px;
+  height: 19px;
+}
+.my_kurly_bg .menu_c {
+  width: 820px;
+}
+.my_kurly_bg .menu_c .container { /* 메뉴 컨테이너 공통 */
+  display: none;
+}
+.my_kurly_bg .menu_c .container .title h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.my_kurly_bg .menu_c .container .title .desc {
+  font-size: 0.875rem;
+  color: #999;
+}
+.my_kurly_bg .menu_c .order_list {
+  position: relative;
+}
+.my_kurly_bg .menu_c .order_list .title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 27px;
+  border-bottom: 2px solid #333;
+}
+.my_kurly_bg .menu_c .order_list .title .txt {
+  display: flex;
+  align-items: center;
+}
+.my_kurly_bg .menu_c .order_list .title .txt .desc {
+  margin-left: 11px;
+}
+.my_kurly_bg .menu_c .order_list .title .date {
+  border: 1px solid #ddd;
+  width: 157px;
+  position: relative;
+}
+.my_kurly_bg .menu_c .order_list .title .date .date_top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 14px;
+}
+.my_kurly_bg .menu_c .order_list .title .date .date_top a {
+  font-size: 0.875rem;
+}
+.my_kurly_bg .menu_c .order_list .title .date .date_top img {
+  width: 10px;
+  height: 5px;
+  position: relative;
+  top: -2px;
+}
+.my_kurly_bg .menu_c .order_list .title .date .date_open {
+  display: none;
+  width: 157px;
+  border: 1px solid #ddd;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.my_kurly_bg .menu_c .order_list .title .date .date_open a {
+  display: block;
+  width: 100%;
+  font-size: 0.875rem;
+  padding: 12px 16px;
+}
+.my_kurly_bg .menu_c .order_list .title .date .date_open a:first-child {
+  color: #5F0080;
+  font-weight: 600;
+}
+.my_kurly_bg .menu_c .order_list .content_bg {
+  padding-top: 20px;
+  height: 540px;
+}
+.my_kurly_bg .menu_c .order_list .content_bg .content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 205px 0;
+  position: absolute;
+  top: 3.7%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.my_kurly_bg .menu_c .order_list .content_bg .content p {
+  text-align: center;
+  margin: 8px 0 24px;
+  color: #b5b5b5;
+}
+.my_kurly_bg .menu_c .order_list .content_bg .content a {
+  background: #5F0080;
+  border-radius: 3px;
+  width: 150px;
+  height: 44px;
+  text-align: center;
+  padding: 12px 10px;
+  display: block;
+  color: #fff;
+  font-size: 0.875rem;
+}
+.my_kurly_bg .menu_c .present_list {
+  position: relative;
+}
+.my_kurly_bg .menu_c .present_list .title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 27px;
+  border-bottom: 2px solid #333;
+}
+.my_kurly_bg .menu_c .present_list .title .txt {
+  display: flex;
+  align-items: center;
+}
+.my_kurly_bg .menu_c .present_list .title .txt .desc {
+  margin-left: 11px;
+}
+.my_kurly_bg .menu_c .present_list .title .date {
+  border: 1px solid #ddd;
+  width: 157px;
+  position: relative;
+}
+.my_kurly_bg .menu_c .present_list .title .date .date_top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 14px;
+}
+.my_kurly_bg .menu_c .present_list .title .date .date_top a {
+  font-size: 0.875rem;
+}
+.my_kurly_bg .menu_c .present_list .title .date .date_top img {
+  width: 10px;
+  height: 5px;
+  position: relative;
+  top: -2px;
+}
+.my_kurly_bg .menu_c .present_list .title .date .date_open {
+  display: none;
+  width: 157px;
+  border: 1px solid #ddd;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.my_kurly_bg .menu_c .present_list .title .date .date_open a {
+  display: block;
+  width: 100%;
+  font-size: 0.875rem;
+  padding: 12px 16px;
+}
+.my_kurly_bg .menu_c .present_list .title .date .date_open a:first-child {
+  color: #5F0080;
+  font-weight: 600;
+}
+.my_kurly_bg .menu_c .present_list .content_bg {
+  height: 540px;
+}
+.my_kurly_bg .menu_c .present_list .content_bg .content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 205px 0;
+  position: absolute;
+  top: 3.7%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.my_kurly_bg .menu_c .present_list .content_bg .content .content_icon img {
+  margin-bottom: 16px;
+}
+.my_kurly_bg .menu_c .present_list .content_bg .content p {
+  color: #b5b5b5;
+}
+.my_kurly_bg .menu_c .present_list .content_bg .content p span {
+  color: #b5b5b5;
+  font-size: 0.875rem;
+  margin-top: 10px;
+  display: block;
+}
+.my_kurly_bg .menu_c .many_buy_list .title ul li {
+  font-size: 0.875rem;
+  color: #b5b5b5;
+}
+.my_kurly_bg .menu_c .many_buy_list .title ul li::before {
+  width: 2px;
+  height: 2px;
+  content: "";
+  display: inline-block;
+  background-color: #b5b5b5;
+  margin: 0 5px;
+  position: relative;
+  top: -4px;
+}
+.my_kurly_bg .menu_c .many_buy_list .content_bg {
+  height: 540px;
+}
+.my_kurly_bg .menu_c .many_buy_list .content_bg .content p {
+  text-align: center;
+  color: #b5b5b5;
+  padding: 310px 0;
+}
+.my_kurly_bg .menu_c .wish_list .title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 27px;
+  border-bottom: 2px solid #333;
+}
+.my_kurly_bg .menu_c .wish_list .title p {
+  font-size: 0.875rem;
+  color: #999;
+  padding-left: 11px;
+}
+.my_kurly_bg .menu_c .wish_list .content_bg .content {
+  padding: 0 20px;
+}
+.my_kurly_bg .menu_c .wish_list .content_bg .content .item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #f4f4f4;
+}
+.my_kurly_bg .menu_c .wish_list .content_bg .content .item .info {
+  display: flex;
+  align-items: center;
+}
+.my_kurly_bg .menu_c .wish_list .content_bg .content .item .info .img {
+  margin-right: 16px;
+}
+.my_kurly_bg .menu_c .wish_list .content_bg .content .item .info .img img {
+  width: 60px;
+  height: 78px;
+  border-radius: 4px;
+}
+.my_kurly_bg .menu_c .wish_list .content_bg .content .item .info .txt {
+  padding: 0 20px;
+}
+.my_kurly_bg .menu_c .wish_list .content_bg .content .item .info .txt a {
+  display: block;
+}
+.my_kurly_bg .menu_c .wish_list .content_bg .content .item .info .txt .price {
+  margin-top: 6px;
+}
+.my_kurly_bg .menu_c .wish_list .content_bg .content .item .info .txt .price .rate {
+  color: #fa622f;
+  font-weight: 600;
+}
+.my_kurly_bg .menu_c .wish_list .content_bg .content .item .info .txt .price em {
+  font-weight: 800;
+}
+.my_kurly_bg .menu_c .wish_list .content_bg .content .item .info .txt .price del {
+  color: #b5b5b5;
+}
+.my_kurly_bg .menu_c .wish_list .content_bg .content .item .btn {
+  padding-right: 30px;
+}
+.my_kurly_bg .menu_c .wish_list .content_bg .content .item .btn #delete_btn {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 104px;
+  height: 36px;
+  text-align: center;
+  font-size: 0.813rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.my_kurly_bg .menu_c .wish_list .content_bg .content .item .btn #cart_btn {
+  border: 1px solid #5F0080;
+  border-radius: 4px;
+  width: 104px;
+  height: 36px;
+  font-size: 0.813rem;
+  font-weight: 500;
+  color: #5F0080;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.my_kurly_bg .menu_c .wish_list .content_bg .content .item .btn #cart_btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+.my_kurly_bg .menu_c .delivey_addr .title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #333;
+  height: 60px;
+  padding-bottom: 20px;
+}
+.my_kurly_bg .menu_c .delivey_addr .title .left {
+  display: flex;
+  align-items: center;
+}
+.my_kurly_bg .menu_c .delivey_addr .title .left p {
+  color: #999;
+  font-size: 0.875rem;
+  margin-left: 11px;
+}
+.my_kurly_bg .menu_c .delivey_addr .title .right #map_search_btn {
+  font-weight: 500;
+  line-height: 24px;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .top {
+  padding: 20px 0;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .top span {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .top span:nth-child(1) {
+  width: 60px;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .top span:nth-child(2) {
+  width: 380px;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .top span:nth-child(3) {
+  width: 120px;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .top span:nth-child(4) {
+  width: 100px;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .top span:nth-child(5) {
+  width: 100px;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .top span:last-child {
+  width: 60px;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .list .address {
+  display: flex;
+  align-items: center;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .list .address [class$=check] {
+  color: #5F0080;
+  font-size: 1.5rem;
+  padding-right: 12px;
+  margin: 20px 10px;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .list .address .address_txt {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .list .address .address_txt span {
+  font-weight: 500;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .list .address .address_txt span:first-child {
+  background-color: #f7f7f7;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #666;
+  text-align: center;
+  display: block;
+  margin-bottom: 7px;
+  border-radius: 11px;
+  width: 74px;
+  height: 22px;
+  line-height: 24px;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .list .address .address_txt span:last-child {
+  padding-right: 62px;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .list p span {
+  font-size: 0.875rem;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .list p:nth-of-type(2) span {
+  padding-left: 25px;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .list p em {
+  color: #5F0080;
+  font-size: 0.875rem;
+}
+.my_kurly_bg .menu_c .delivey_addr .content_bg .content .list .change_icon [class$=pen] {
+  color: #b5b5b5;
+  margin: 0 20px;
+}
+.my_kurly_bg .menu_c .product_review .title h2 {
+  padding-bottom: 27px;
+  height: 75px;
+  line-height: 48px;
+}
+.my_kurly_bg .menu_c .product_review .reivew_tab {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+}
+.my_kurly_bg .menu_c .product_review .reivew_tab .write_review {
+  font-weight: 500;
+  color: #5F0080;
+  line-height: 55px;
+  border: 1px solid #f4f4f4;
+  display: block;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+.my_kurly_bg .menu_c .product_review .reivew_tab .after_review {
+  font-weight: 500;
+  background-color: #fafafa;
+  line-height: 55px;
+  border: 1px solid #f4f4f4;
+  display: block;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+.my_kurly_bg .menu_c .product_review .reivew_c {
+  position: relative;
+}
+.my_kurly_bg .menu_c .product_review .reivew_c .write_review_c {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  top: 0;
+}
+.my_kurly_bg .menu_c .product_review .reivew_c .write_review_c .notice {
+  padding: 22px 0px 0 3px;
+}
+.my_kurly_bg .menu_c .product_review .reivew_c .write_review_c .notice li {
+  font-size: 0.875rem;
+  color: #999;
+  line-height: 20px;
+}
+.my_kurly_bg .menu_c .product_review .reivew_c .write_review_c .notice li::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  background-color: #999;
+  margin: 0 5px;
+  position: relative;
+  top: -5px;
+}
+.my_kurly_bg .menu_c .product_review .reivew_c .write_review_c a {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 16px;
+  text-decoration-line: underline;
+  margin: 6px 0 0 11px;
+  display: block;
+  margin-bottom: 40px;
+}
+.my_kurly_bg .menu_c .product_review .reivew_c .write_review_c p {
+  text-align: center;
+  padding: 110px 0;
+}
+.my_kurly_bg .menu_c .product_review .reivew_c .after_review_c p {
+  text-align: center;
+  padding: 295px 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.my_kurly_bg .menu_c .product_q .title {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #333;
+}
+.my_kurly_bg .menu_c .product_q .title h2 {
+  padding-bottom: 27px;
+  height: 75px;
+  line-height: 48px;
+}
+.my_kurly_bg .menu_c .product_q .title ul {
+  margin-bottom: 18px;
+}
+.my_kurly_bg .menu_c .product_q .title ul li {
+  color: #999;
+  font-size: 0.875rem;
+  letter-spacing: -0.3px;
+}
+.my_kurly_bg .menu_c .product_q .title ul li::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  background-color: #999;
+  border-radius: 50%;
+  margin: 0 5px;
+  position: relative;
+  top: -5px;
+}
+.my_kurly_bg .menu_c .product_q .title ul li span {
+  font-size: 0.875rem;
+  color: #999;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+.my_kurly_bg .menu_c .product_q .content_bg .content .top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+.my_kurly_bg .menu_c .product_q .content_bg .content .top p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 0;
+}
+.my_kurly_bg .menu_c .product_q .content_bg .content .top p:nth-child(1) {
+  width: 620px;
+}
+.my_kurly_bg .menu_c .product_q .content_bg .content .top p:nth-child(2) {
+  width: 100px;
+}
+.my_kurly_bg .menu_c .product_q .content_bg .content .top p:nth-child(3) {
+  width: 100px;
+}
+.my_kurly_bg .menu_c .product_q .content_bg .content .bottom {
+  padding: 117px 0;
+  text-align: center;
+}
+.my_kurly_bg .menu_c .product_q .content_bg .content .bottom span {
+  font-weight: 600;
+}
+.my_kurly_bg .menu_c .product_q .content_bg .content .page_btn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.my_kurly_bg .menu_c .product_q .content_bg .content .page_btn a {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  width: 44px;
+  height: 44px;
+}
+.my_kurly_bg .menu_c .product_q .content_bg .content .page_btn a img {
+  width: 38px;
+  position: relative;
+  left: 4px;
+}
+.my_kurly_bg .menu_c .product_q .content_bg .content .page_btn a:first-child {
+  margin-right: 12px;
+  transform: scaleX(-1);
+}
+.my_kurly_bg .menu_c .coupon_list {
+  position: relative;
+}
+.my_kurly_bg .menu_c .coupon_list .title h2 {
+  padding-bottom: 27px;
+  height: 75px;
+  line-height: 48px;
+}
+.my_kurly_bg .menu_c .coupon_list .title .coupon_add {
+  border: 1px solid #ddd;
+  padding: 19px 29px 14px;
+}
+.my_kurly_bg .menu_c .coupon_list .title .coupon_add .conpon_box #coupon_num {
+  border: 1px solid #1a1a1a;
+  padding: 0 10px;
+  width: 210px;
+  height: 34px;
+  font-size: 0.75rem;
+  letter-spacing: -0.6px;
+  color: #eee;
+  margin-right: 10px;
+}
+.my_kurly_bg .menu_c .coupon_list .title .coupon_add .conpon_box #coupon_btn {
+  width: 140px;
+  height: 34px;
+  background-color: #5F0080;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #fff;
+}
+.my_kurly_bg .menu_c .coupon_list .title .coupon_add .notice_message {
+  margin-top: 13px;
+  font-size: 0.75rem;
+  color: #fa622f;
+  font-weight: 500;
+}
+.my_kurly_bg .menu_c .coupon_list .content_bg .content .desc {
+  padding: 35px 0 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #333;
+}
+.my_kurly_bg .menu_c .coupon_list .content_bg .content .desc .left {
+  font-size: 0.75rem;
+}
+.my_kurly_bg .menu_c .coupon_list .content_bg .content .desc .left::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #333;
+  margin-right: 8px;
+  position: relative;
+  top: -3px;
+  font-weight: 400;
+}
+.my_kurly_bg .menu_c .coupon_list .content_bg .content .desc .right {
+  font-size: 0.813rem;
+  margin-right: 6px;
+  font-weight: 400;
+}
+.my_kurly_bg .menu_c .coupon_list .content_bg .content .top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+.my_kurly_bg .menu_c .coupon_list .content_bg .content .top p {
+  font-size: 0.875rem;
+  padding: 18px 0 19px;
+  font-weight: 600;
+  text-align: center;
+}
+.my_kurly_bg .menu_c .coupon_list .content_bg .content .top p:nth-child(1) {
+  width: 400px;
+  padding-left: 10px;
+  text-align: start;
+}
+.my_kurly_bg .menu_c .coupon_list .content_bg .content .top p:nth-child(2) {
+  width: 70px;
+}
+.my_kurly_bg .menu_c .coupon_list .content_bg .content .top p:nth-child(3) {
+  width: 100px;
+}
+.my_kurly_bg .menu_c .coupon_list .content_bg .content .top p:nth-child(4) {
+  width: 150px;
+}
+.my_kurly_bg .menu_c .coupon_list .content_bg .content .top p:nth-child(5) {
+  width: 100px;
+}
+.my_kurly_bg .menu_c .coupon_list .content_bg .content p span {
+  font-size: 0.813rem;
+  color: #666;
+  text-align: center;
+  display: block;
+  padding: 50px 0;
+  border-bottom: 1px solid #f4f4f4;
+}
+.my_kurly_bg .menu_c .coupon_list .error {
+  display: none;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background-color: #fff;
+  max-width: 360px;
+  width: 360px;
+  position: absolute;
+  top: 160px;
+  left: 100px;
+}
+.my_kurly_bg .menu_c .coupon_list .error .error_message {
+  padding: 40px 30px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  font-weight: 500;
+  color: #333;
+  line-height: 21px;
+  border-bottom: 1px solid #eee;
+}
+.my_kurly_bg .menu_c .coupon_list .error #submit_btn {
+  width: 100%;
+  height: 55px;
+  color: #5F0080;
+  font-weight: 500;
+}
+.my_kurly_bg .menu_c .kurly_style > .title {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #333;
+}
+.my_kurly_bg .menu_c .kurly_style > .title h2 {
+  padding-bottom: 27px;
+  height: 75px;
+  line-height: 48px;
+}
+.my_kurly_bg .menu_c .kurly_style > .title p {
+  font-size: 0.875rem;
+  padding-left: 11px;
+  letter-spacing: -0.3px;
+  color: #999;
+  line-height: 20px;
+  padding-bottom: 27px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm fieldset span {
+  font-size: 0.875rem;
+  width: 205px;
+  font-weight: 500;
+  display: block;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm fieldset .user_birth {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm fieldset .user_birth #birth_day {
+  padding: 0 11px 1px 15px;
+  border: 1px solid #ddd;
+  color: #333;
+  border-radius: 4px;
+  height: 46px;
+  width: 402px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm fieldset .user_gender {
+  margin-top: 42px;
+  display: flex;
+  align-items: flex-start;
+  height: 48px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm fieldset .user_gender a {
+  text-align: center;
+  width: 197px;
+  height: 48px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 12px 0 9px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm fieldset .user_gender a:nth-child(2) {
+  margin-right: 8px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm fieldset .user_child {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm fieldset .user_child label {
+  display: flex;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm fieldset .user_child label > span {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm fieldset .user_child #descendant {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm fieldset .user_child #descendant + label::before {
+  content: "\f058";
+  color: #ddd;
+  font-size: 1.5rem;
+  margin-right: 12px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm fieldset .user_child #descendant:checked + label::before {
+  color: #5F0080;
+  font-size: 1.5rem;
+  margin-right: 12px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie {
+  width: 100%;
+  border: 1px solid #eeeeee;
+  padding: 30px 0;
+  margin-top: 20px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .title .left {
+  display: flex;
+  align-items: center;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .title .left .beauty_icon {
+  padding: 0 26px 0 36px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .title .left .beauty_icon img {
+  width: 46px;
+  height: 46px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .title .left .beauty_txt h3 {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .title .left .beauty_txt p {
+  font-size: 0.875rem;
+  color: #999;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .title .open_icon {
+  margin-right: 36px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .title .open_icon img {
+  width: 38px;
+  transform: rotate(90deg);
+  position: relative;
+  top: 2px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .content_bg {
+  display: none;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .setting {
+  margin: 30px 0 57px;
+  display: flex;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .setting > p {
+  display: block;
+  width: 205px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .setting .nondisclosure #nondisclosure_setting {
+  display: none;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .setting .nondisclosure #nondisclosure_setting:checked + label .nondisclosure_btn_bg {
+  background-color: #5F0080;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .setting .nondisclosure #nondisclosure_setting:checked + label .nondisclosure_btn {
+  transform: translateX(17px);
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .setting label span {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-right: 14px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .setting label .nondisclosure_btn_bg {
+  display: inline-block;
+  background-color: #eee;
+  width: 40px;
+  height: 24px;
+  border-radius: 30px;
+  position: relative;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .setting label .nondisclosure_btn_bg .nondisclosure_btn {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  top: 1.5px;
+  left: 2px;
+  transition: transform 0.2s;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .setting .notice {
+  margin-top: 10px;
+  color: #666;
+  width: 100%;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .user_law {
+  border-top: 2px solid #333;
+  padding-top: 20px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .user_law label {
+  display: flex;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .user_law label span {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  margin-bottom: 15px;
+  display: block;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .user_law #agree {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .user_law #agree + label::before {
+  content: "\f058";
+  color: #ddd;
+  font-size: 1.5rem;
+  margin-right: 12px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .user_law #agree:checked + label::before {
+  color: #5F0080;
+  font-size: 1.5rem;
+  margin-right: 12px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .user_law a {
+  display: block;
+  font-size: 0.875rem;
+  letter-spacing: -0.3px;
+  text-decoration-line: underline;
+  margin: 0 0 60px 35px;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .completion {
+  width: 260px;
+  margin: 0 auto;
+}
+.my_kurly_bg .menu_c .kurly_style .content_bg .content .completion #completion_btn {
+  background-color: #ddd;
+  color: #fff;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+  height: 56px;
+  border-radius: 3px;
+  padding: 0 10px;
+}
+.my_kurly_bg .menu_c .info_change {
+  display: block;
+}
+.my_kurly_bg .menu_c .info_change .title {
+  border-bottom: 2px solid #333;
+}
+.my_kurly_bg .menu_c .info_change .title h2 {
+  padding-bottom: 27px;
+  height: 75px;
+  line-height: 48px;
+}
+.my_kurly_bg .menu_c .info_change .title p {
+  font-size: 1.125rem;
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+.my_kurly_bg .menu_c .info_change .title p span {
+  font-size: 0.75rem;
+  padding-bottom: 20px;
+  display: block;
+}
+.my_kurly_bg .menu_c .info_change .content_bg .content {
+  padding: 7px 60px 7px 120px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.my_kurly_bg .menu_c .info_change .content_bg .content .uesr_id {
+  display: flex;
+  padding: 10px 20px;
+}
+.my_kurly_bg .menu_c .info_change .content_bg .content .uesr_id span {
+  display: block;
+  width: 139px;
+  padding-top: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.my_kurly_bg .menu_c .info_change .content_bg .content .uesr_id #user_id_txt {
+  width: 333px;
+  height: 46px;
+  padding: 0 11px 1px 15px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  line-height: 1.5;
+  display: block;
+}
+.my_kurly_bg .menu_c .info_change .content_bg .content .user_pw {
+  display: flex;
+  padding: 10px 20px;
+}
+.my_kurly_bg .menu_c .info_change .content_bg .content .user_pw span {
+  display: block;
+  width: 139px;
+  padding-top: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.my_kurly_bg .menu_c .info_change .content_bg .content .user_pw span em {
+  color: #ee6a7b;
+}
+.my_kurly_bg .menu_c .info_change .content_bg .content .user_pw #user_pw_txt {
+  width: 333px;
+  height: 46px;
+  padding: 0 11px 1px 15px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  line-height: 1.5;
+  display: block;
+  background-color: #e8f0fe;
+}
+.my_kurly_bg .menu_c .info_change .content_bg .submit {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.my_kurly_bg .menu_c .info_change .content_bg .submit #check_btn {
+  display: block;
+  padding: 0 10px;
+  text-align: center;
+  width: 240px;
+  height: 56px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #5F0080;
+  font-weight: 600;
+}/*# sourceMappingURL=wish.css.map */
