@@ -1,0 +1,199 @@
+.main_btn #btn_up:hover {
+  background-image: url("../images/main/icon/footer/arrow_top_hover.png");
+  transition: 0.5s ease;
+}
+.main_btn #btn_up {
+  background-image: url("../images/main/icon/footer/arrow_top.png");
+  content: "";
+  background-size: cover;
+  width: 58px;
+  height: 58px;
+  position: fixed;
+  right: 31px;
+  bottom: 15px;
+  cursor: pointer;
+}
+.main_btn #btn_chatbot:hover {
+  background-image: url("../images/main/icon/footer/icon_chatbot_hover.png");
+  transition: 0.5s ease;
+}
+.main_btn #btn_chatbot {
+  background-image: url("../images/main/icon/footer/icon_chatbot.png");
+  content: "";
+  background-size: cover;
+  width: 58px;
+  height: 58px;
+  position: fixed;
+  right: 31px;
+  bottom: 78px;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100vh;
+}
+footer .f_container {
+  margin: 0 auto;
+  width: 1050px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 0 20px;
+}
+footer .f_container .left p:nth-child(1) {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-bottom: 17px;
+}
+footer .f_container .left p:nth-child(2) {
+  padding-bottom: 20px;
+}
+footer .f_container .left p:nth-child(2) .tel {
+  font-size: 1.75rem;
+  margin-right: 8px;
+  font-weight: 700;
+}
+footer .f_container .left p:nth-child(2) span {
+  letter-spacing: -0.05rem;
+  font-weight: 400;
+}
+footer .f_container .left .kakao, footer .f_container .left .question, footer .f_container .left .bulk_order {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+}
+footer .f_container .left .kakao button, footer .f_container .left .question button, footer .f_container .left .bulk_order button {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  margin: 6px 16px 16px 0;
+  font-size: 0.875rem;
+}
+footer .f_container .left .kakao span, footer .f_container .left .question span, footer .f_container .left .bulk_order span {
+  padding-top: 5px;
+  display: block;
+  font-size: 0.875rem;
+  color: #999;
+}
+footer .f_container .left .kakao .info p, footer .f_container .left .question .info p, footer .f_container .left .bulk_order .info p {
+  padding: 0;
+}
+footer .f_container .left .kakao .info p span:nth-child(2)::before, footer .f_container .left .question .info p span:nth-child(2)::before, footer .f_container .left .bulk_order .info p span:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #ddd;
+  margin-right: 5px;
+  margin-left: 2px;
+}
+footer .f_container .left .kakao .info p span, footer .f_container .left .question .info p span, footer .f_container .left .bulk_order .info p span {
+  display: inline;
+  font-size: 0.875rem;
+  color: #999;
+}
+footer .f_container .left .mail_send p, footer .f_container .left .mail_send a {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #999;
+}
+footer .f_list {
+  padding-top: 10px;
+  border-top: 1px solid #eeeeee;
+  margin: 0 auto;
+  width: 1050px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .f_list .isms, footer .f_list .eprivacy, footer .f_list .payments, footer .f_list .wooribank {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  padding: 20px 0 33px;
+}
+footer .f_list .isms img, footer .f_list .eprivacy img, footer .f_list .payments img, footer .f_list .wooribank img {
+  height: 34px;
+  margin-right: 14px;
+}
+footer .f_list .isms span, footer .f_list .eprivacy span, footer .f_list .payments span, footer .f_list .wooribank span {
+  font-size: 0.625rem;
+  color: #999;
+  line-height: 1.1rem;
+}
+footer .f_list .eprivacy img {
+  transform: translateY(4px);
+}
+footer .f_list .payments img {
+  transform: translateY(-2px);
+}
+footer .f_list .wooribank img {
+  height: 38px;
+}
+footer .right .kulry_f_info {
+  padding: 4px 0 30px;
+}
+footer .right .kulry_f_info a:nth-child(6) {
+  font-weight: 600;
+}
+footer .right .kulry_f_info a {
+  font-size: 0.875rem;
+  margin-right: 10px;
+  font-weight: 500;
+}
+footer .right .f_address {
+  margin-bottom: 40px;
+}
+footer .right .f_address p {
+  font-size: 0.75rem;
+  line-height: 1.3rem;
+  color: #999;
+}
+footer .right .f_address p em {
+  font-size: 0.75rem;
+  color: #5F0080;
+  font-weight: 500;
+}
+footer .right .f_address p span:nth-child(1)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #ddd;
+  margin: 0 5px 0 5px;
+  transform: translateY(2px);
+}
+footer .right .f_address p span {
+  font-size: 0.75rem;
+  color: #999;
+  font-weight: 500;
+}
+footer .right .f_icon a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+footer address {
+  width: 100%;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+footer address .box {
+  margin: 0 auto;
+  width: 1050px;
+  padding: 20px 0 30px;
+}
+footer address .box p, footer address .box em {
+  color: #999;
+  font-size: 0.625rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+footer address .box p:nth-child(3) {
+  margin-top: 8px;
+}/*# sourceMappingURL=common_footer.css.map */
