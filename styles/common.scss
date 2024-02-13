@@ -89,6 +89,10 @@ $px10: 0.625rem;
     border: 1px solid #333;
     border-radius: 4px;
 }
+@mixin bo_dd3 {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
 @mixin bo_dd4 {
     border: 1px solid #ddd;
     border-radius: 4px;

@@ -1,0 +1,198 @@
+@import 'common';
+
+.main_btn {
+    #btn_up:hover {
+        background-image: url('../images/main/icon/footer/arrow_top_hover.png');
+        transition: 0.5s ease;
+    }
+    #btn_up {
+        background-image: url('../images/main/icon/footer/arrow_top.png');
+        content: '';
+        background-size: cover;
+        width: 58px;
+        height: 58px;
+        position: fixed;
+        right: 31px; bottom: 15px;
+        cursor: pointer;
+    }
+    #btn_chatbot:hover {
+        background-image: url('../images/main/icon/footer/icon_chatbot_hover.png');
+        transition: 0.5s ease;
+    }
+    #btn_chatbot {
+        background-image: url('../images/main/icon/footer/icon_chatbot.png');
+        content: '';
+        background-size: cover;
+        width: 58px;
+        height: 58px;
+        position: fixed;
+        right: 31px; bottom: 78px;
+        cursor: pointer;
+    }
+}
+
+footer {
+    width:100%;
+    margin-top: 100vh;
+    .f_container {
+        margin:0 auto;
+        width:1050px;
+        @include flex-row-btw-st;
+        padding: 30px 0 20px;
+        .left {
+            p:nth-child(1) {
+                font-size: $px20;
+                font-weight: 500;
+                padding-bottom: 17px;
+            }
+            p:nth-child(2) {
+                padding-bottom: 20px;
+                .tel {
+                    font-size: $px28;
+                    margin-right: 8px;
+                    font-weight: 700;
+                }
+                span {
+                    letter-spacing: -0.05rem;
+                    font-weight: 400;
+                }
+            }
+            .kakao, .question , .bulk_order {
+                @include flex-row-st;
+                button {
+                    @include bo_dd3;
+                    width: 140px;
+                    height: 40px;
+                    text-align: center;
+                    margin: 6px 16px 16px 0;
+                    font-size: $px14;
+                }
+                span {
+                    padding-top: 5px;
+                    display: block;
+                    font-size: $px14;
+                    color:$c-153;
+                }
+                .info {
+                    p {
+                        padding: 0;
+                        span:nth-child(2)::before {
+                            @include bf_ddd_12px;
+                            margin-right: 5px;
+                            margin-left: 2px;
+                        }
+                        span {
+                            display: inline;
+                            font-size: $px14;
+                            color:$c-153;
+                        }
+                    }
+                }
+            }
+            .mail_send {
+                p, a {
+                    display: inline-block;
+                    font-size: $px12;
+                    color:$c-153;
+                }
+            }
+        }
+    }
+    .f_list {
+        padding-top: 10px;
+        border-top: 1px solid $c-238;
+        margin:0 auto;
+        width:1050px;
+        @include flex-row-btw-st;
+        .isms , .eprivacy , .payments, .wooribank  {
+            @include flex-row-st;
+            padding: 20px 0 33px;
+            img {
+                height:34px;
+                margin-right: 14px;
+            }
+            span {
+                font-size: $px10;
+                color:$c-153;
+                line-height: 1.1rem;
+            }
+        }
+        .eprivacy {
+            img {
+                transform: translateY(4px);
+            }
+        }
+        .payments {
+            img {
+                transform: translateY(-2px);
+            }
+        }
+        .wooribank {
+            img {
+                height: 38px;
+            }
+        }
+    }
+    .right {
+        .kulry_f_info {
+            padding:4px 0 30px;
+            a:nth-child(6) {
+                font-weight: 600;
+            }
+            a {
+                font-size: $px14;
+                margin-right: 10px;
+                font-weight: 500;
+            }
+        }
+        .f_address {
+            margin-bottom: 40px;
+            p {
+                font-size: $px12;
+                line-height: 1.3rem;
+                color:$c-153;
+                em {
+                    font-size: $px12;
+                    color:$purple;
+                    font-weight: 500;
+                }
+                span:nth-child(1)::after {
+                    @include bf_ddd_12px;
+                    margin: 0 5px 0 5px;
+                    transform: translateY(2px);
+                }
+                span {
+                    font-size: $px12;
+                    color:$c-153;
+                    font-weight: 500;
+                }
+            }
+        }
+        .f_icon {
+            a img {
+                width: 30px;
+                height: 30px;
+                margin-right: 8px;
+            }
+        }
+    }
+    address {
+        width:100%;
+        text-align: center;
+        background-color: $c-247;
+        .box {
+            margin:0 auto;
+            width: 1050px;
+            padding: 20px 0 30px;
+            p, em {
+                color:$c-153;
+                font-size: $px10;
+                font-weight: 500;
+                margin-bottom: 4px;
+            }
+            p:nth-child(3) {
+                margin-top: 8px;
+            }
+        }
+    }
+}
