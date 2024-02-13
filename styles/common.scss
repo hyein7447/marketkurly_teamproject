@@ -2,15 +2,8 @@
 $purple: #5F0080;
 $orange: #fa622f;
 $badge: #bd76ff;
-$bk1: #333;
-$bk2: #666;
-$gr1: #999;
-$gr2: #b5b5b5;
-$gr3: #ddd;
-$gr4: #eee;
-$gr5: #f4f4f4;
-$gr6: #f7f7f7;
 $error: #f03f40;
+<<<<<<< HEAD
 $error: 1.5rem;
 $c-51: #333;
 $c-102: #666666;
@@ -22,6 +15,17 @@ $c-238: #eeeeee;
 $c-244: #f4f4f4;
 $c-245: #f5f5f5;
 $c-247: #f7f7f7;
+=======
+$c-51: #333;
+$c-102: #666;
+$c-153:#999;
+$c-181:#b5b5b5;
+$c-221:#ddd;
+$c-226: #e2e2e2;
+$c-238: #eeeeee;
+$c-244: #f4f4f4;
+$c-247:#f7f7f7;
+>>>>>>> 8cf948c9bb3071ca92e5c2f99b0a5f074ce3f85d
 $c-250: #fafafa;
 
 // font size
@@ -44,11 +48,28 @@ $px10: 0.625rem;
     justify-content: space-between;
     align-items: center;
 }
+@mixin flex-row-btw-st {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items:flex-start;
+}
 @mixin flex-row-end-ct {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
+}
+@mixin flex-row-ct-ct {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-row-st {
+    display:flex;
+    flex-flow:row nowrap;
+    align-items: flex-start;
 }
 @mixin flex-col-btw-ct {
     display: flex;
@@ -62,15 +83,29 @@ $px10: 0.625rem;
     justify-content: center;
     align-items: center;
 }
+@mixin flex-col-lf {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+@mixin flex-col-rt {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+}
 
 // button 
-@mixin btn_bk3 {
+@mixin bo_bk3 {
     border: 1px solid #333;
     border-radius: 3px;
 }
 @mixin bo_bk4 {
     border: 1px solid #333;
     border-radius: 4px;
+}
+@mixin bo_dd3 {
+    border: 1px solid #ddd;
+    border-radius: 3px;
 }
 @mixin bo_dd4 {
     border: 1px solid #ddd;
@@ -94,8 +129,13 @@ $px10: 0.625rem;
     border-radius: 4px;
     color:#fff;
 }
+@mixin pull_dd4 {
+    background-color: #ddd;
+    border-radius: 4px;
+    color:#fff;
+}
 
-// | contents
+// 글자 사이 라인 -> | 
 @mixin bf_ddd_12px {
     content: '';
     display: inline-block;
