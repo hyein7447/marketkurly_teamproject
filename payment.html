@@ -4,125 +4,236 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>payment</title>
-    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/payment.css">
+    <link rel="stylesheet" href="./styles/payment_animation.css">
 </head>
 <body>
     <main>
-        <form action="#">
+        <form action="#" method="post">
             <fieldset>
                 <legend class="skip">주문서 양식</legend>
                 <h1>주문서</h1>
-                <div class="product_ordered">
-                    <p><span class="item"><!-- 주문상품 --></span> 외 <span class="num"><!-- 주문상품 종류 갯수 --></span> 상품을 주문합니다.</p>
-                </div>
-                <div class="customer_info">
-                    <ul>
-                        <li>
-                            <p class="left">보내는 분</p>
-                            <p class="name"><!-- user name --></p>
-                        </li>
-                        <li>
-                            <p class="left"></p>
-                            <p class="phone"><!-- user phone number --></p>
-                        </li>
-                        <li>
-                            <p class="left"></p>
-                            <p class="email">
-                                <!-- user email -->
-                                <span>이메일을 통해 주문처리과정을 보내드립니다.</span>
-                                <span>정보 변경은 마이컬리 &gt; 개인정보 수정 메뉴에서 가능합니다.</span>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="shipping_info">
-                    <ul>
-                        <li>
-                            <p class="left">배송지</p>
-                            <div class="destination">
-                                <p class="default">기본배송지</p>
-                                <p class="addr"><!-- user address --></p>
-                                <button type="button" class="modify_btn">변경</button>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="left">배송 요청사항</p>
-                            <div class="shipping_request">
-                                <p class="place"><!-- user place -->문 앞 | 자유 출입 가능</p>
-                                <p class="customer"><!-- customer name, phone number -->김컬리, 010-1234-5678</p>
-                                <button type="button" class="modify_btn">수정</button>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="packaging">
-                    <input type="radio" name="radio" id="radio1">
-                    <label for="radio1">컬리 퍼플 박스</label>
-                    <input type="radio" name="radio" id="radio2">
-                    <label for="radio2">종이 포장재</label>
-                </div>
-                <div class="coupon">
-                    <p class="left">쿠폰 적용</p>
-                    <div class="coupon_wrap">
-                        <div class="coupon_wrap_top">
-                            <select name="coupon_list" id="coupon_list">
-                                <option value="cp">쿠폰</option>
-                            </select>
-                            <p>쿠폰 적용 불가 상품입니다</p>
-                            <a href="#">쿠폰 사용 문의(카카오톡)</a>
-                        </div>
-                        <div class="coupon_wrap_btm">
-                            <a href="#"><em>컬리멤버스</em> cnrk 2,000원 즉시 할인 받기</a>
-                        </div>
+                <div class="order_top">
+                    <div class="product_ordered">
+                        <h2>주문 상품</h2>
+                        <p class="order_item"><span class="item">[KS365] 3겹 천연펄프 화장지 (27m X 30롤)<!-- 주문상품 --></span>외 <span class="item_num">1개<!-- 주문상품 종류 갯수 --></span> 상품을 주문합니다.</p>
                     </div>
-                </div>
-                <div class="kurlycard">
-                    <p class="left">즉시 할인</p>
-                    <div class="kurlycard_benefit">
-                        <div class="benefit">
-                            <p>[컬리카드] 첫 결제 3만원 할인</p>
-                            <input type="checkbox" name="chk" id="chk">
-                            <label for="chk">-30,000원 즉시할인 적용</label>
-                        </div>
-                        <div class="issuance">
-                            <button type="button" id="card_issuance_btn">카드발급</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="kurly_cash">
-                    <p class="left">적립금·컬리캐시</p>
-                    <div class="discount">
+                    <div class="customer_info">
+                        <h2>주문자 정보</h2>
                         <ul>
-                            <li>사용가능 잔액<span>0원</span></li>
-                            <li>적립금<span>0원</span></li>
-                            <li>컬리캐시<span>0원</span></li>
+                            <li>
+                                <p class="left">보내는 분</p>
+                                <p class="right name">홍길동<!-- user name --></p>
+                            </li>
+                            <li>
+                                <p class="left">휴대폰</p>
+                                <p class="right phone">010-1234-5678<!-- user phone number --></p>
+                            </li>
+                            <li>
+                                <p class="left">이메일</p>
+                                <p class="right email">
+                                    usermail@gmail.com<!-- user email -->
+                                    <br><span>이메일을 통해 주문처리과정을 보내드립니다.<br>정보 변경은 마이컬리 &gt; 개인정보 수정 메뉴에서 가능합니다.</span>
+                                </p>
+                            </li>
                         </ul>
-                        <div class="total">
-                            <input type="number" name="num" id="num">
-                            <button type="button" id="use_all_btn"></button>
+                    </div>
+                    <div class="shipping_info">
+                        <h2>배송정보</h2>
+                        <ul>
+                            <li>
+                                <p class="left">배송지</p>
+                                <div class="destination">
+                                    <p class="default">기본배송지</p>
+                                    <p class="right addr">인천광역시 부평구 부평동 123-4번지 1동 101호<!-- user address --></p>
+                                    <div class="modify_btn_wrap">
+                                        <button type="button" class="modify_btn">변경</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="left">배송 요청사항</p>
+                                <div class="shipping_request">
+                                    <p class="right place"><!-- user place -->문 앞 <span class="line"></span> 자유 출입 가능</p>
+                                    <p class="customer"><!-- customer name, phone number -->김컬리, 010-1234-5678</p>
+                                    <div class="modify_btn_wrap">
+                                        <button type="button" class="modify_btn">수정</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="packaging_wrap">
+                        <h2>포장방법</h2>
+                        <div class="packaging">
+                            <input type="radio" name="radio" id="radio1">
+                            <label for="radio1">컬리 퍼플 박스</label>
+                            <input type="radio" name="radio" id="radio2">
+                            <label for="radio2">종이 포장재</label>
                         </div>
-                        <p>사용 시 적립금이 먼저 소진됩니다.<br>
-                        컬리캐시 사용 시 컬리페이 간편결제만 가능합니다.</p>
                     </div>
                 </div>
-                <div class="payment_method">
-                    <p class="left">결제수단 선택</p>
-                    <div class="method_type">
-                        <div class="kakao_btn_wrap"><button type="button" id="kakao_btn"></button></div>
-                        <div class="kurly_pay_wrap"><button type="button" id="kurly_pay_btn"></button></div>
-                        <div class="kurly_pay">
-                            <div class="kurly_pay_benefit">
-                                <p>컬리카드로 결제하고<br><span>최대 5%</span> 적립 받으세요</p>
-                                <a href="#">카드 신청하기</a>
-                            </div>
-                            <div class="add_account">
-                                <a href="#">
-                                    <!-- 이미지 만들어오기 -->
-                                    카드 또는 계좌<br>
-                                    추가하기
-                                </a>
+                <div class="order_btm">
+                    <div class="btm_left">
+                        <div class="coupon_wrap">
+                            <h2>쿠폰</h2>
+                            <div class="coupon">
+                                <p class="left">쿠폰 적용</p>
+                                <div class="coupon_wrap">
+                                    <div class="coupon_wrap_top">
+                                        <p class="coupon_list_wrap"><button type="button" id="coupon_list">사용가능 쿠폰 0장 / 전체 0장<img src="./images/main/icon/icon_down_16x10.png" alt=""></button></p>
+                                        <p>쿠폰 적용 불가 상품입니다</p>
+                                        <a href="#">쿠폰 사용 문의(카카오톡) <img src="./images/main/icon/icon_arrow_right.svg" alt=""></a>
+                                    </div>
+                                    <a href="#"><img src="./images/sub/payment_kurlymembers_sale.png" alt=""></a>
+                                </div>
                             </div>
                         </div>
+                        <div class="kurlycard_wrap">
+                            <h2>컬리카드 혜택</h2>
+                            <div class="kurlycard">
+                                <p class="left">즉시 할인</p>
+                                <div class="kurlycard_benefit">
+                                    <div class="benefit">
+                                        <p>[컬리카드] 첫 결제 3만원 할인</p>
+                                        <div>
+                                            <input type="checkbox" name="chk" id="chk">
+                                            <label for="chk">-30,000원 즉시할인 적용</label>
+                                        </div>
+                                    </div>
+                                    <div class="issuance">
+                                        <button type="button" id="card_issuance_btn">카드발급</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kurly_cash_wrap">
+                            <h2>적립금·컬리캐시<a href="#"><img src="./images/main/icon/icon_question_mark.svg" alt=""></a></h2>
+                            <div class="kurly_cash">
+                                <p class="left">적립금·컬리캐시</p>
+                                <div class="discount">
+                                    <ul>
+                                        <li>사용가능 잔액<span class="available">0원</span></li>
+                                        <li>└ 적립금<span>0원</span></li>
+                                        <li>└ 컬리캐시<span>0원</span></li>
+                                    </ul>
+                                    <div class="total">
+                                        <input type="number" name="num" id="num" value="0" readonly>
+                                        <button type="button" id="use_all_btn">모두사용</button>
+                                    </div>
+                                    <p>사용 시 적립금이 먼저 소진됩니다.</p>
+                                    <p>컬리캐시 사용 시 컬리페이 간편결제만 가능합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment_method_wrap">
+                            <h2>결제 수단</h2>
+                            <div class="payment_method">
+                                <p class="left">결제수단 선택</p>
+                                <div class="method_type">
+                                    <div class="method_type_btn">
+                                        <button type="button" id="kakaopay_btn"><img src="./images/sub/icon_kakaopay.svg" alt=""></button>
+                                        <span class="benefit_icon">혜택</span>
+                                    </div>
+                                    <div class="method_type_btn"><button type="button" id="kurly_pay_btn"><img src="./images/main/logo/logo_marketkulry.svg" alt=""></button><span class="benefit_icon">혜택</span></div>
+                                    <div class="kurly_pay_wrap">
+                                        <div class="kurly_pay_bg">
+                                            <div class="kurly_pay">
+                                                <div class="kurly_pay_benefit">
+                                                    <p>컬리카드로 결제하고<br><span>최대 5%</span> 적립 받으세요</p>
+                                                    <!-- <a href="#"><em>카드 신청하기</em><span></span></a> -->
+                                                    <a href="#">카드 신청하기</a>
+                                                </div>
+                                                <div class="add_account">
+                                                    <a href="#">
+                                                        <img src="./images/main/icon/icon_add_btn.svg" alt="">
+                                                        <!-- 이미지 만들어오기 -->
+                                                        카드 또는 계좌<br>
+                                                        추가하기
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="kurlycard_active">컬리카드 결제 시 최대 <em>940원</em> 추가 적립</p>
+                                    </div>
+                                    <div class="payment_method_detail">
+                                        <a href="#">신용카드</a>
+                                        <a href="#">간편결제<span class="benefit_icon">혜택</span></a>
+                                        <a href="#">휴대폰</a>
+                                    </div>
+                                    <div class="credit_card">
+                                        <button type="button" id="select_card">카드를 선택해주세요<img src="./images/main/icon/icon_down_16x10.png" alt=""></button>
+                                        <button type="button" id="installment">할부를 선택해주세요<img src="./images/main/icon/icon_down_16x10_off.svg" alt=""></button>
+                                    </div>
+                                    <div class="guide_benefit">
+                                        <div class="top">
+                                            <p>혜택안내</p>
+                                            <a href="#">무이자 혜택안내<img src="./images/main/icon/icon_info.svg" alt=""></a>
+                                        </div>
+                                        <div class="btm">
+                                            <div class="kurly_pay_info">
+                                                <p class="title">컬리페이</p>
+                                                <p class="sub_title">컬리카드 & 컬리페이 결제 혜택</p>
+                                                <p class="detail_info">1. 컬리카드 첫 결제 3만원 즉시 할인 + 2만원 쿠폰팩 + 8만원 적립금 제공<br>24/02/01~ 02/29<br>2. 컬리페이 X 현대카드 5만원 이상 결제 시, 최대 2천원 M포인트 차감 할인<br>24/02/01~ 02/29</p>
+                                            </div>
+                                            <div class="kakaopay_info">
+                                                <p class="title">카카오페이</p>
+                                                <p class="sub_title">카카오페이머니 6만원 이상 결제 시 2천원 즉시할인</p>
+                                                <p class="detail_info">카카오페이  ID당 1회(실명인증 기준)<br>2/8 11시 ~ 2/15 11시</p>
+                                            </div>
+                                            <div class="payco_info">
+                                                <p class="title">페이코</p>
+                                                <p class="sub_title">페이코 포인트 결제 시 5% 최대 1천원 포인트 적립</p>
+                                                <p class="detail_info">포인트 적립 : 페이코 충전포인트로 5% 적립(건당 최대  1,000P)<br>2/8 11시 ~ 2/29 24시</p>
+                                            </div>
+                                            <div class="guide_benefit_more">
+                                                <button type="button" id="more_btn">혜택 더보기<img src="./images/main/icon/icon_arrow_down_gray.png" alt=""></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment_method_btm">
+                                <p>※ 카카오페이, 토스, 네이버페이, 페이코 결제 시, 결제하신 수단으로만 환불되는 점 양해부탁드립니다.</p>
+                                <p>※ 고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 토스 페이먼츠의 구매안전(에스크로) 서비스를 이용하실 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="collect_user_info_wrap">
+                            <h2>개인정보 수집/제공</h2>
+                            <div class="collect_user_info">
+                                <ul>
+                                    <li>개인정보 수집∙이용 및 처리 동의<a href="#">보기</a></li>
+                                    <li>결제대행 서비스 약관 동의<a href="#">보기</a></li>
+                                    <li>전자지급 결제대행 서비스 이용약관 동의<a href="#">보기</a></li>
+                                </ul>
+                                <p class="consent">위 내용을 확인 하였으며 결제에 동의합니다.</p>
+                            </div>
+                            <p>※ 주문완료 상태일 경우에만 주문 취소가 가능하며, 상품 미배송 시 결제하신 수단으로 환불됩니다.</p>
+                            <p>※ 컬리 내 개별 판매자가 등록한 오픈마켓 상품의 경우 컬리는 통신판매중개자로서 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.</p>
+                        </div>
+                        <div class="payment_btn_wrap">
+                            <button type="button" id="payment_btn">18,800원 <!-- 총액 -->결제하기</button>
+                    </div>
+                    </div>
+                    <div class="btm_right">
+                        <h2>결제 금액</h2>
+                        <div class="payment_amount">
+                            <ul>
+                                <li>주문금액<span>15,800 원</span></li>
+                                <li class="payment_amount_details">└ 상품금액<span>17,800<!-- 상품금액 --> 원</span></li>
+                                <li class="payment_amount_details">└ 상품할인금액<span>- 2,000<!-- 상품할인금액 --> 원</span></li>
+                                <li>배송비<span>+ 3,000 원</span></li>
+                                <li>쿠폰할인<span>0 원</span></li>
+                                <li>카드즉시할인<span>0 원</span></li>
+                                <li>적립금 ∙ 컬리캐시<span>0 원</span></li>
+                                <li class="payment_amount_details">└ 적립금<span>0 원</span></li>
+                                <li class="payment_amount_details">└ 컬리캐시<span>0 원</span></li>
+                            </ul>
+                            <p>최종결제금액 <span>18,800<em> 원</em></span></p>
+                            <p class="kurlycard_save">컬리카드 결제 시 최대 940원 추가 적립</p>
+                        </div>
+                        <a href="#"><img src="./images/sub/payment_save_coupon.png" alt=""></a>
                     </div>
                 </div>
             </fieldset>

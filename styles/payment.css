@@ -1,0 +1,683 @@
+main {
+  width: 1050px;
+  padding: 50px 0 60px;
+  margin: 0 auto;
+}
+main form fieldset h1 {
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+main form fieldset h2 {
+  margin-top: 75px;
+  padding: 16px 0;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #333;
+  line-height: 29px;
+  border-bottom: 1px solid #333;
+}
+main form fieldset .order_top .left {
+  width: 160px;
+}
+main form fieldset .order_top .left, main form fieldset .order_top .right {
+  line-height: 24px;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: -0.32px;
+}
+main form fieldset .order_top .product_ordered h2 {
+  margin-top: 0;
+}
+main form fieldset .order_top .product_ordered .order_item {
+  padding: 28px 0;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
+  border-bottom: 1px solid #f4f4f4;
+}
+main form fieldset .order_top .product_ordered .order_item span {
+  line-height: 24px;
+  font-weight: 500;
+}
+main form fieldset .order_top .product_ordered .order_item .item_num {
+  color: #5F0080;
+}
+main form fieldset .order_top .customer_info {
+  margin-top: 75px;
+}
+main form fieldset .order_top .customer_info ul {
+  padding: 10px;
+}
+main form fieldset .order_top .customer_info ul li {
+  padding: 8px;
+  display: flex;
+}
+main form fieldset .order_top .customer_info ul li .right span {
+  color: #666666;
+  font-size: 0.75rem;
+  line-height: 21px;
+}
+main form fieldset .order_top .shipping_info ul li {
+  display: flex;
+  padding-top: 20px;
+}
+main form fieldset .order_top .shipping_info ul li:first-child {
+  padding: 20px 0;
+  border-bottom: 1px solid #f4f4f4;
+}
+main form fieldset .order_top .shipping_info ul li .line {
+  width: 1px;
+  height: 14px;
+  background-color: #dddddd;
+  display: inline-block;
+  margin: 6px 8px 0;
+  position: relative;
+  top: 2px;
+}
+main form fieldset .order_top .shipping_info ul li .default {
+  background-color: #f7f7f7;
+  padding: 0 8px;
+  font-size: 0.75rem;
+  color: #666666;
+  line-height: 22px;
+  font-weight: 500;
+  border-radius: 11px;
+  margin-bottom: 8px;
+  width: -moz-max-content;
+  width: max-content;
+}
+main form fieldset .order_top .shipping_info ul li .customer {
+  margin-top: 8px;
+  font-size: 0.875rem;
+  color: #666666;
+  line-height: 24px;
+}
+main form fieldset .order_top .shipping_info ul li .modify_btn_wrap {
+  margin-top: 20px;
+}
+main form fieldset .order_top .shipping_info ul li .modify_btn_wrap .modify_btn {
+  padding: 0 10px;
+  text-align: center;
+  width: 60px;
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  height: 30px;
+  font-weight: 500;
+}
+main form fieldset .order_top .packaging {
+  padding: 20px 0;
+}
+main form fieldset .order_top .packaging input {
+  display: none;
+}
+main form fieldset .order_top .packaging label {
+  margin-right: 80px;
+  font-size: 0.875rem;
+}
+main form fieldset .order_top .packaging label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/sub/icon_circle_off.svg);
+  background-size: 100%;
+  margin-right: 16px;
+  position: relative;
+  top: 6px;
+}
+main form fieldset .order_btm {
+  display: flex;
+}
+main form fieldset .order_btm .left {
+  width: 160px;
+  line-height: 44px;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: -0.32px;
+}
+main form fieldset .order_btm .btm_left .coupon {
+  display: flex;
+}
+main form fieldset .order_btm .btm_left .coupon .coupon_wrap {
+  padding-top: 20px;
+}
+main form fieldset .order_btm .btm_left .coupon .coupon_wrap .coupon_wrap_top {
+  margin-bottom: 20px;
+}
+main form fieldset .order_btm .btm_left .coupon .coupon_wrap .coupon_wrap_top .coupon_list_wrap {
+  margin-bottom: 10px;
+}
+main form fieldset .order_btm .btm_left .coupon .coupon_wrap .coupon_wrap_top .coupon_list_wrap #coupon_list {
+  width: 100%;
+  height: 44px;
+  font-size: 0.875rem;
+  border: 1px solid #dddddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+main form fieldset .order_btm .btm_left .coupon .coupon_wrap .coupon_wrap_top a img {
+  width: 10px;
+}
+main form fieldset .order_btm .btm_left .coupon .coupon_wrap a {
+  color: #5F0080;
+  font-size: 0.75rem;
+}
+main form fieldset .order_btm .btm_left .coupon .coupon_wrap a img {
+  width: 552px;
+}
+main form fieldset .order_btm .btm_left .kurlycard_wrap .kurlycard {
+  padding-top: 20px;
+  display: flex;
+}
+main form fieldset .order_btm .btm_left .kurlycard_wrap .kurlycard .kurlycard_benefit {
+  width: 552px;
+  display: flex;
+  justify-content: space-between;
+}
+main form fieldset .order_btm .btm_left .kurlycard_wrap .kurlycard .kurlycard_benefit .benefit p {
+  margin-bottom: 10px;
+  font-size: 0.875rem;
+}
+main form fieldset .order_btm .btm_left .kurlycard_wrap .kurlycard .kurlycard_benefit .benefit input {
+  display: none;
+}
+main form fieldset .order_btm .btm_left .kurlycard_wrap .kurlycard .kurlycard_benefit .benefit label {
+  font-size: 0.875rem;
+  color: #999999;
+}
+main form fieldset .order_btm .btm_left .kurlycard_wrap .kurlycard .kurlycard_benefit .benefit label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/sub/icon_check1.png);
+  background-size: 100%;
+  margin-right: 8px;
+  position: relative;
+  top: 6px;
+}
+main form fieldset .order_btm .btm_left .kurlycard_wrap .kurlycard .kurlycard_benefit #card_issuance_btn {
+  padding: 0 10px;
+  background-color: #5F0080;
+  width: 100px;
+  color: #fff;
+  border-radius: 3px;
+  height: 44px;
+  margin-top: -5px;
+  font-size: 0.875rem;
+}
+main form fieldset .order_btm .btm_left .kurly_cash_wrap h2 a {
+  position: relative;
+  top: -2px;
+  margin-left: 8px;
+}
+main form fieldset .order_btm .btm_left .kurly_cash_wrap h2 a img {
+  width: 17px;
+}
+main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash {
+  padding-top: 20px;
+  display: flex;
+}
+main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount ul {
+  padding: 13px 0 8px;
+}
+main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount ul li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #b5b5b5;
+  margin-bottom: 8px;
+}
+main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount ul li span {
+  color: #b5b5b5;
+  font-size: 0.875rem;
+}
+main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount ul li .available {
+  font-weight: 500;
+  font-size: 1rem;
+}
+main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount .total {
+  margin-bottom: 10px;
+}
+main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount .total #num {
+  color: #cccccc;
+  background-color: #fafafa;
+  border: 1px solid #dddddd;
+  line-height: 42px;
+  padding: 0 11px 0 15px;
+  border-radius: 3px;
+  width: 306px;
+  font-size: 0.875rem;
+}
+main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount .total #use_all_btn {
+  border: 1px solid #dddddd;
+  color: #dddddd;
+  font-size: 0.875rem;
+  width: 100px;
+  border-radius: 3px;
+  height: 44px;
+  margin-left: 5px;
+}
+main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount p {
+  font-size: 0.75rem;
+  line-height: 16px;
+  color: #666666;
+  padding-top: 4px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method {
+  display: flex;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 20px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .method_type_btn {
+  width: 414px;
+  position: relative;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .method_type_btn .benefit_icon {
+  position: absolute;
+  top: -7px;
+  right: 10px;
+  background-color: #fff;
+  border: 1px solid #fa622f;
+  font-size: 0.625rem;
+  color: #fa622f;
+  font-weight: 500;
+  padding: 0 7px;
+  height: 17px;
+  border-radius: 9px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .method_type_btn #kakaopay_btn {
+  width: 100%;
+  height: 48px;
+  background-color: #f6e500;
+  border-radius: 3px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .method_type_btn:first-child {
+  margin-bottom: 12px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .method_type_btn #kurly_pay_btn {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #e2e2e2;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .method_type_btn #kurly_pay_btn img {
+  width: 50px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap {
+  border: 1px solid #e2e2e2;
+  border-top: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  width: 414px;
+  padding: 24px 0;
+  text-align: center;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg {
+  height: 130px;
+  position: relative;
+  overflow: hidden;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg .kurly_pay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 25%;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg .kurly_pay .kurly_pay_benefit {
+  margin-right: 20px;
+  text-align: center;
+  width: 206px;
+  height: 130px;
+  background-color: #faf0ff;
+  border: 1px solid rgb(234, 214, 245);
+  border-radius: 6px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg .kurly_pay .kurly_pay_benefit p {
+  font-size: 0.875rem;
+  line-height: 20px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg .kurly_pay .kurly_pay_benefit p span {
+  font-size: 0.875rem;
+  color: #5F0080;
+  font-weight: 600;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg .kurly_pay .kurly_pay_benefit a {
+  display: block;
+  width: 103px;
+  background: linear-gradient(-40deg, #BD5DED, #E783F2, #E148CF);
+  background-size: 400%;
+  padding: 10px 0;
+  margin-top: 8px;
+  font-weight: 600;
+  border-radius: 100px;
+  overflow: hidden;
+  position: relative;
+  font-size: 0.75rem;
+  color: #fff;
+  /* em{
+      display: block;
+      position: relative;
+      font-size: $px12;
+      color: #fff;
+      z-index: 1000;
+  }
+  span{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 99;
+      background: linear-gradient(-40deg, rgba(255, 255, 255, 0), #E684F2, rgba(255, 255, 255, 0));
+      background-size: 400%;
+  } */
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg .kurly_pay .add_account a {
+  border-radius: 6px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 206px;
+  background-color: #f5f5f5;
+  color: #999999;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 16px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg .kurly_pay .add_account a img {
+  width: 33px;
+  margin-bottom: 7px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurlycard_active {
+  margin-top: 28px;
+  font-size: 0.813rem;
+  font-weight: 500;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurlycard_active em {
+  font-weight: 500;
+  font-size: 0.813rem;
+  color: #8d4cc4;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .payment_method_detail {
+  display: flex;
+  margin-top: 12px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .payment_method_detail a {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 3px;
+  border: 1px solid #e2e2e2;
+  position: relative;
+  width: 138px;
+  height: 48px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .payment_method_detail a:nth-child(1) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .payment_method_detail a:nth-child(3) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .payment_method_detail a:nth-child(2) {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .payment_method_detail a .benefit_icon {
+  position: absolute;
+  top: -7px;
+  right: 10px;
+  background-color: #fff;
+  border: 1px solid #fa622f;
+  font-size: 0.625rem;
+  color: #fa622f;
+  font-weight: 500;
+  padding: 0 7px;
+  height: 17px;
+  border-radius: 9px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card {
+  margin: 20px 0;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card #select_card {
+  width: 276px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  border: 1px solid #dddddd;
+  font-size: 0.875rem;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card #select_card img {
+  display: block;
+  width: 10px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card #installment {
+  margin-top: 10px;
+  width: 276px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  border: 1px solid #dddddd;
+  font-size: 0.875rem;
+  color: #cccccc;
+  background-color: #fafafa;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card #installment img {
+  display: block;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .guide_benefit {
+  background-color: #fafafa;
+  width: 414px;
+  padding: 16px 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .guide_benefit .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .guide_benefit .top p {
+  font-size: 0.813rem;
+  color: #666;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .guide_benefit .top a {
+  color: #999;
+  font-size: 0.813rem;
+  font-weight: 500;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .guide_benefit .top a img {
+  width: 14px;
+  position: relative;
+  top: 2px;
+  margin-left: 4px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .guide_benefit .btm .guide_benefit_more {
+  padding-top: 11px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .guide_benefit .btm .guide_benefit_more #more_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 0.875rem;
+  line-height: 18px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .guide_benefit .btm .guide_benefit_more #more_btn img {
+  width: 18px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .guide_benefit .btm .title {
+  color: #fa622f;
+  font-size: 0.813rem;
+  font-weight: 500;
+  line-height: 18px;
+  padding-bottom: 4px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .guide_benefit .btm .sub_title {
+  color: #4c4c4c;
+  font-size: 0.813rem;
+  line-height: 18px;
+  padding-bottom: 2px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .guide_benefit .btm .detail_info {
+  font-size: 0.75rem;
+  color: #999;
+  line-height: 16px;
+  padding-bottom: 2px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method_btm {
+  border-top: 1px solid #f4f4f4;
+  padding-top: 20px;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method_btm p {
+  font-size: 0.75rem;
+  line-height: 16px;
+  color: #666666;
+}
+main form fieldset .order_btm .btm_left .collect_user_info_wrap ul {
+  margin: 20px 0;
+}
+main form fieldset .order_btm .btm_left .collect_user_info_wrap ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  font-size: 0.875rem;
+  line-height: 19px;
+}
+main form fieldset .order_btm .btm_left .collect_user_info_wrap ul li:first-child {
+  margin-top: 0;
+}
+main form fieldset .order_btm .btm_left .collect_user_info_wrap ul li a {
+  color: #999;
+  font-size: 0.875rem;
+  text-decoration: underline;
+}
+main form fieldset .order_btm .btm_left .collect_user_info_wrap .consent {
+  margin-top: 20px;
+  font-weight: 500;
+  line-height: 21px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f4f4f4;
+  font-size: 1rem;
+  color: #333;
+}
+main form fieldset .order_btm .btm_left .collect_user_info_wrap p {
+  font-size: 0.75rem;
+  color: #666666;
+  line-height: 16px;
+}
+main form fieldset .order_btm .btm_left .payment_btn_wrap {
+  margin: 40px 0 30px;
+  text-align: center;
+}
+main form fieldset .order_btm .btm_left .payment_btn_wrap #payment_btn {
+  width: 240px;
+  color: #fff;
+  background-color: #5F0080;
+  font-weight: 500;
+  height: 56px;
+  border-radius: 3px;
+}
+main form fieldset .order_btm .btm_right {
+  width: 284px;
+  position: relative;
+  top: 15px;
+  margin-left: 24px;
+}
+main form fieldset .order_btm .btm_right h2 {
+  margin-top: 0;
+  padding: 16px 0;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #333;
+  line-height: 29px;
+  border: 0;
+}
+main form fieldset .order_btm .btm_right .payment_amount {
+  padding: 17px 16px 18px 18px;
+  background-color: #fafafa;
+  border: 1px solid #f2f2f2;
+}
+main form fieldset .order_btm .btm_right .payment_amount ul {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f4f4f4;
+}
+main form fieldset .order_btm .btm_right .payment_amount ul li {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4px;
+  margin-top: 16px;
+}
+main form fieldset .order_btm .btm_right .payment_amount ul li:first-child {
+  margin-top: 0;
+}
+main form fieldset .order_btm .btm_right .payment_amount ul li span {
+  font-size: 1.125rem;
+}
+main form fieldset .order_btm .btm_right .payment_amount ul .payment_amount_details {
+  color: #999;
+  font-size: 0.875rem;
+  padding-bottom: 0;
+  margin-top: 8px;
+}
+main form fieldset .order_btm .btm_right .payment_amount ul .payment_amount_details span {
+  color: #999;
+  font-size: 0.875rem;
+}
+main form fieldset .order_btm .btm_right .payment_amount p {
+  display: flex;
+  justify-content: space-between;
+  color: #4c4c4c;
+}
+main form fieldset .order_btm .btm_right .payment_amount p * {
+  color: #4c4c4c;
+}
+main form fieldset .order_btm .btm_right .payment_amount p span {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+main form fieldset .order_btm .btm_right .payment_amount .kurlycard_save {
+  color: #8d4cc4;
+  font-size: 0.75rem;
+  margin-top: 6px;
+  line-height: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+main form fieldset .order_btm .btm_right a img {
+  width: 284px;
+}/*# sourceMappingURL=payment.css.map */
