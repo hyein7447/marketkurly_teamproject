@@ -3,19 +3,6 @@ $purple: #5F0080;
 $orange: #fa622f;
 $badge: #bd76ff;
 $error: #f03f40;
-<<<<<<< HEAD
-$error: 1.5rem;
-$c-51: #333;
-$c-102: #666666;
-$c-153: #999999;
-$c-204: #cccccc;
-$c-221: #dddddd;
-$c-226: #e2e2e2;
-$c-238: #eeeeee;
-$c-244: #f4f4f4;
-$c-245: #f5f5f5;
-$c-247: #f7f7f7;
-=======
 $c-51: #333;
 $c-102: #666;
 $c-153:#999;
@@ -25,7 +12,6 @@ $c-226: #e2e2e2;
 $c-238: #eeeeee;
 $c-244: #f4f4f4;
 $c-247:#f7f7f7;
->>>>>>> 8cf948c9bb3071ca92e5c2f99b0a5f074ce3f85d
 $c-250: #fafafa;
 
 // font size
@@ -70,6 +56,12 @@ $px10: 0.625rem;
     display:flex;
     flex-flow:row nowrap;
     align-items: flex-start;
+}
+@mixin flex-row-st-ct {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 @mixin flex-col-btw-ct {
     display: flex;
@@ -141,6 +133,12 @@ $px10: 0.625rem;
     display: inline-block;
     width: 1px; height: 12px;
     background-color: #ddd;
+}
+@mixin bf_999_12px {
+    content: '';
+    display: inline-block;
+    width: 1px; height: 12px;
+    background-color: #999;
 }
 @mixin bf_333_10px {
     content: '';
