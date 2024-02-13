@@ -505,7 +505,7 @@
                         }
                         .btn {
                             padding-right: 30px;
-                            #delete_btn {
+                            .delete_btn {
                                 border: 1px solid $c-221;
                                 border-radius: 4px;
                                 width: 104px;
@@ -515,7 +515,7 @@
                                 font-weight: 500;
                                 margin-bottom: 8px;
                             }
-                            #cart_btn {
+                            .cart_btn {
                                 border: 1px solid $purple;
                                 border-radius: 4px;
                                 width: 104px;
@@ -537,6 +537,7 @@
             }
         }
         .delivey_addr {
+            display: block;
             .title {
                 @include flex-row-btw-ct;
                 border-bottom: 2px solid #333;
@@ -554,7 +555,7 @@
                 }
                 .right {
                     img {}
-                    #map_search_btn {
+                    .map_search_btn {
                         font-weight: 500;
                         line-height: 24px;
                     }
@@ -929,32 +930,6 @@
                     }
                 }
             }
-            .error {
-                display: none;
-                border: 1px solid #eee;
-                border-radius: 12px;
-                background-color: #fff;
-                max-width: 360px;
-                width: 360px;
-                position: absolute;
-                top: 160px;
-                left: 100px;
-                .error_message {
-                    padding: 40px 30px;
-                    text-align: center;
-                    letter-spacing: -0.5px;
-                    font-weight: 500;
-                    color: $c-51;
-                    line-height: 21px;
-                    border-bottom: 1px solid #eee;
-                }
-                #submit_btn {
-                    width: 100%;
-                    height: 55px;
-                    color: $purple;
-                    font-weight: 500;
-                }
-            }
         }
         .kurly_style {
             > .title {
@@ -1051,10 +1026,11 @@
                         }
                         .proflie {
                             width: 100%;
-                            border: 1px solid $c-238;
-                            padding: 30px 0;
                             margin-top: 20px;
                             .title {
+                                border: 1px solid $c-238;
+                                padding: 30px 0;
+                                width: 100%;
                                 @include flex-row-btw-ct;
                                 .left {
                                     display: flex;
@@ -1090,6 +1066,245 @@
                             }
                             .content_bg {
                                 display: none;
+                                
+                                border: 1px solid $c-238;
+                                border-top: 0;
+                                width: 100%;
+                                background-color: $c-250;
+                                .content_top {
+                                    padding: 44px 0 40px;
+                                    .page_bar_bg {
+                                        width: 400px;
+                                        height: 6px;
+                                        border-radius: 6px;
+                                        background-color: #eee;
+                                        display: block;
+                                        margin: 0 auto;
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        .page_bar {
+                                            border-top-left-radius: 6px;
+                                            border-bottom-left-radius: 6px;
+                                            width: 70px;
+                                            height: 6px;
+                                            background-color: $badge;
+                                            display: block;
+                                        }
+                                    }
+                                }
+                                .content_box {
+                                    .content {
+                                        display: none;
+                                        padding: 0 36px;
+                                        .question {
+                                            p {
+                                                font-size: $px20;
+                                                font-weight: 700;
+                                            }
+                                            .desc {
+                                                margin: 10px 0px 30px;
+                                                font-size: $px14;
+                                                color: $c-153;
+                                                font-weight: 500;
+                                            }
+                                        }
+                                    }
+                                    .content1 {
+                                        .choice {
+                                            .item {
+                                                background-color: #fff;
+                                                border: 1px solid $c-238;
+                                                border-radius: 6px;
+                                                padding: 20px;
+                                                display: flex;
+                                                .item_img {
+                                                    img {
+                                                        width: 44px;
+                                                        height: 44px;
+                                                        margin-right: 15px;
+                                                        border-radius: 50%;
+                                                    }
+                                                }
+                                                .item_txt {
+                                                    display: flex;
+                                                    flex-flow: column nowrap;
+                                                    justify-content: flex-start;
+                                                    .skin_type {
+                                                        font-size: $px18;
+                                                        font-weight: 600;
+                                                    }
+                                                    .type_desc {
+                                                        font-size: $px14;
+                                                        line-height: 20px;
+                                                        margin-top: 6px;
+                                                        color: $c-102;
+                                                        width: 267px;
+                                                        height: 40px;
+                                                    }
+                                                }
+                                            }
+                                            .row1 {
+                                                display: flex;
+                                                justify-content: space-between;
+                                            }
+                                            .row2 {
+                                                display: flex;
+                                                justify-content: space-between;
+                                                margin-top: 10px;
+                                            }
+                                        }
+                                    }
+                                    .content2 {
+                                        .choice {
+                                            display: grid;
+                                            grid-template-areas: 
+                                                'item1 item2'
+                                                'item3 item3'
+                                            ;
+                                            gap: 10px;
+                                            .item1 {grid-area: item1;}
+                                            .item2 {grid-area: item2;}
+                                            .item3 {grid-area: item3;}
+                                            .item {
+                                                background-color: #fff;
+                                                border: 1px solid $c-238;
+                                                border-radius: 6px;
+                                                padding: 20px;
+                                                display: flex;
+                                                width: 368px;
+                                                .item_img {
+                                                    img {
+                                                        width: 44px;
+                                                        height: 44px;
+                                                        margin-right: 15px;
+                                                        border-radius: 50%;
+                                                    }
+                                                }
+                                                .item_txt {
+                                                    display: flex;
+                                                    flex-flow: column nowrap;
+                                                    justify-content: flex-start;
+                                                    .skin_type {
+                                                        font-size: $px18;
+                                                        font-weight: 600;
+                                                    }
+                                                    .type_desc {
+                                                        font-size: $px14;
+                                                        line-height: 20px;
+                                                        margin-top: 6px;
+                                                        color: $c-102;
+                                                        width: 267px;
+                                                        height: 40px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .content3 {
+                                        .choice {
+                                            width: calc(100% - 10px);
+                                            display: flex;
+                                            flex-flow: row wrap;
+                                            gap: 10px;
+                                            a {
+                                                border: 1px solid $c-238;
+                                                background-color: #fff;
+                                                text-align: center;
+                                                cursor: pointer;
+                                                width: calc(100% / 4 - 10px);
+                                                line-height: 1.25;
+                                                border-radius: 4px;
+                                                padding: 15px 10px;
+                                                display: block
+                                            }
+                                        }
+                                    }
+                                    .content4 {
+                                        .choice {
+                                            display: flex;
+                                            flex-flow: row wrap;
+                                            width: 100%;
+                                            gap: 10px;
+                                            .item {
+                                                background-color: #fff;
+                                                border: 1px solid $c-238;
+                                                border-radius: 6px;
+                                                display: block;
+                                                padding: 20px;
+                                                width: calc(100% / 2 - 10px);
+                                                .type {
+                                                    font-size: $px18;
+                                                    font-weight: 600;
+                                                }
+                                                .type_desc {
+                                                    font-size: $px14;
+                                                    line-height: 20px;
+                                                    margin-top: 6px;
+                                                    color: $c-102;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .content5 {
+                                        .choice {
+                                            display: flex;
+                                            flex-flow: row wrap;
+                                            width: 100%;
+                                            gap: 10px;
+                                            a {
+                                                padding: 15px 10px;
+                                                width: calc(100% / 4 - 10px);
+                                                border: 1px solid $c-238;
+                                                background-color: #fff;
+                                                border-radius: 4px;
+                                                text-align: center
+                                            }
+                                        }
+                                    }
+                                    .content6 {
+                                        .choice {
+                                            display: flex;
+                                            flex-flow: row wrap;
+                                            width: 100%;
+                                            gap: 10px;
+                                            a {
+                                                padding: 15px 10px;
+                                                width: calc(100% / 4 - 10px);
+                                                border: 1px solid $c-238;
+                                                background-color: #fff;
+                                                border-radius: 4px;
+                                                text-align: center
+                                            }
+                                        }
+                                    }
+                                }
+                                .content_btn {
+                                    @include flex-row-ct-ct;
+                                    padding: 30px 0 44px;
+                                    a {
+                                        @include flex-row-ct-ct;
+                                        padding: 20px;
+                                        font-size: $px14;
+                                        font-weight: 500;
+                                        letter-spacing: -0.3px;
+                                        position: relative;
+                                        img {
+                                            width: 38px;
+                                        }
+                                        &:last-child img {
+                                            transform: scaleX(-1);
+                                        }
+                                        &:first-child::after {
+                                            content: '';
+                                            display: inline-block;
+                                            width: 1px;
+                                            height: 12px;
+                                            background-color: $c-238;
+                                            position: absolute;
+                                            right: 0px; 
+                                        }
+                                    }
+                                }
                             }
                         }
                         .setting {
@@ -1202,7 +1417,6 @@
             }
         }
         .info_change {
-            display: block;
             .title {
                 border-bottom: 2px solid #333;
                 h2 {
@@ -1289,6 +1503,40 @@
                     }
                 }
             }
+        }
+    }
+}
+.coupon_error_bg {
+    display: none !important;
+
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.5);
+    @include flex-row-ct-ct;
+    .coupon_error {
+        display: none;
+        border: 1px solid #eee;
+        border-radius: 12px;
+        background-color: #fff;
+        max-width: 360px;
+        width: 360px;
+        .error_message {
+            padding: 40px 30px;
+            text-align: center;
+            letter-spacing: -0.5px;
+            font-weight: 500;
+            color: $c-51;
+            line-height: 21px;
+            border-bottom: 1px solid #eee;
+        }
+        #submit_btn {
+            width: 100%;
+            height: 55px;
+            color: $purple;
+            font-weight: 500;
         }
     }
 }

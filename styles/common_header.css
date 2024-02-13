@@ -112,6 +112,7 @@ header .header_btm {max-width: 1280;}
 header .header_btm nav {
     width: 1050px; height: 56px; display: flex; margin: 0 auto; justify-content: space-between;
     align-items: center; position: relative;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.07);
 }
 header .header_btm nav .category {font-weight: 500;}
 header .header_btm nav .category img {width: 16px; height: 14px; margin-right: 10px;}

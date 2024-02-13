@@ -52,14 +52,11 @@ $px10: 0.625rem;
     justify-content: center;
     align-items: center;
 }
-<<<<<<< HEAD
-=======
 @mixin flex-row-st {
     display:flex;
     flex-flow:row nowrap;
     align-items: flex-start;
 }
->>>>>>> 8cd1db64356856d8ceeb9168d038dafbbb6b34b7
 @mixin flex-col-btw-ct {
     display: flex;
     flex-flow: column nowrap;

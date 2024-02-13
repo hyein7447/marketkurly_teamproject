@@ -1,0 +1,184 @@
+@import 'common';
+
+main {
+    .container {
+        width:1050px;
+        margin: 0 auto;
+        .title {
+            width: 100%;
+            margin: 0 auto;
+            h2 {
+                padding: 50px 0px 48px;
+                font-weight: 500;
+                font-size: $px28;
+                line-height: 35px;
+                text-align: center;
+            }
+        }
+        .content {
+            @include flex-row-btw-ct;
+            .product_list {
+                .check {
+                    width: 100%;
+                    padding: 18px 10px 16px 2px;
+                    font-size: 14px;
+                    line-height: 26px;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+
+                    input[id*=check] {
+                        appearance: none;
+
+                        & + label::before {
+                            content: '\f058';
+                            color: $c-221;
+                            font-size: $px24;
+                            margin-right: 8px;
+                            position: relative;
+                            top: 1px;
+                        }
+
+                        &:checked + label::before {
+                            color: $purple;
+                            font-size: $px24;
+                            margin-right: 8px;
+                            top: 1px;
+                        }
+                    }
+                    .fa {
+                        span {
+                            font-size: $px14;
+                            line-height: 26px;
+                            font-weight: 600;
+                        }
+                        .num {}
+                    }
+                    a {
+                        font-size: $px14;
+                        line-height: 26px;
+                        font-weight: 600;
+
+                        &::before {
+                            @include bf_ddd_12px;
+                            margin: 0 12px;
+                        }
+                    }
+                }
+                .product_wrap {
+                    width: 742px;
+                    .item {
+                        border-top: 1px solid #333;
+                        .title {
+                            padding: 15px 5px 15px 0px;
+                            @include flex-row-btw-ct;
+                            .left {
+                                display: flex;
+                                align-items: center;
+                                .storage_icon {
+                                    margin-right: 8px;
+                                    img {
+                                        position: relative;
+                                        top: 2px;
+                                    }
+                                }
+                                p {
+                                    font-size: $px18;
+                                    font-weight: 600;
+                                    
+                                }
+                            }
+                            a {
+                                img {
+                                    width: 30px;
+                                    height: 30px;
+                                    transform: scaleY(-1);
+                                }
+                            }
+                        }
+                        .product {
+                            @include flex-row-btw-ct;
+                            padding: 20px 0;
+                            .chk_btn {
+                                input[name*=chk] {
+                                    appearance: none;
+                                    & + label::before {
+                                        content: '\f058';
+                                        color: $c-221;
+                                        font-size: $px24;
+                                        margin-right: 8px;
+                                        position: relative;
+                                        top: 1px;
+                                    }
+                                    &:checked + label::before {
+                                        color: $purple;
+                                        font-size: $px24;
+                                        margin-right: 8px;
+                                        top: 1px;
+                                    }
+                                }
+                            }
+                            .product_img {
+                                width: 60px;
+                                height: 78px;
+                                margin-right: 20px;
+                                display: block;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .product_name {
+                                width: 345px;
+                                margin-right: 20px;
+                                display: block;
+                                line-height: 22px;
+                                font-weight: 500;
+                            }
+                            .num {
+                                
+                            @include flex-row-btw-ct;
+                                border: 1px solid #DDDFE1;
+                                width: 88px;
+                                border-radius: 3px;
+                                .minus {
+                                    width: 28px;
+                                    height: 28px;
+                                }
+                                span {}
+                                .plus {
+                                    width: 28px;
+                                    height: 28px;
+                                }
+                            }
+                            .price {
+                                display: flex;
+                                flex-flow: column;
+                                width: 127px;
+                                text-align: right;
+
+                                span {
+                                    font-weight: 700;
+                                    line-height: 24px;
+                                }
+                                del {
+                                    font-size: $px14;
+                                    line-height: 24px;
+                                    color: $c-181;
+                                    padding-top: 4px;
+                                }
+                            }
+                            .delete_btn {
+                                img {
+                                    width: 30px;
+                                    height: 30px;
+                                    margin-left: 9px;
+                                    margin-right: 6px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
