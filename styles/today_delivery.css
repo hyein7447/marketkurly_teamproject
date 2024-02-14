@@ -1,0 +1,18 @@
+main {
+  width: 100%;
+}
+main .delivery_area {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+main .delivery_area .area1 {
+  width: 100%;
+  background-color: rgb(234, 230, 226);
+}
+main .delivery_area .area1 img {
+  max-width: 1050px;
+  margin: 0 auto;
+}/*# sourceMappingURL=today_delivery.css.map */

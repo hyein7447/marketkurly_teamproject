@@ -1,0 +1,17 @@
+@import 'common';
+
+main {
+    width: 100%;
+    .delivery_area {
+        @include flex-col-ct-ct;
+        width:100%;
+        .area1 { 
+            width: 100%;
+            background-color: rgb(234, 230, 226);
+            img {
+                max-width: 1050px; 
+                margin: 0 auto;
+            }
+        }
+    }
+}

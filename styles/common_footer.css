@@ -30,7 +30,6 @@
 }
 
 .chatbot_sub {
-  display: none;
   position: fixed;
   right: 34px;
   bottom: 150px;
@@ -68,6 +67,7 @@
   padding-bottom: 60px;
   max-height: 500px;
   overflow-y: scroll;
+  display: none;
 }
 .chatbot_sub .home .contact .list1 {
   padding: 15px;
@@ -186,9 +186,6 @@
   border-radius: 4px;
   color: #fff;
   padding: 10px 20px;
-}
-.chatbot_sub .setting {
-  display: none;
 }
 .chatbot_sub .setting .top p {
   font-weight: 600;
