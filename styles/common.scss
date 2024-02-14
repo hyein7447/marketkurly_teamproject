@@ -55,6 +55,12 @@ $px10: 0.625rem;
     justify-content: center;
     align-items: center;
 }
+@mixin flex-row-ct-st {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
 @mixin flex-row-st {
     display:flex;
     flex-flow:row nowrap;
@@ -141,6 +147,12 @@ $px10: 0.625rem;
     content: '';
     display: inline-block;
     width: 1px; height: 12px;
+    background-color: #999;
+}
+@mixin bf_999_16px {
+    content: '';
+    display: inline-block;
+    width: 1px; height: 16px;
     background-color: #999;
 }
 @mixin bf_333_10px {
