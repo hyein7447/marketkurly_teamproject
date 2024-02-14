@@ -1,6 +1,8 @@
 main .container {
   width: 1050px;
+  height: 942px;
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 main .container .title {
   width: 100%;
@@ -15,9 +17,11 @@ main .container .title h2 {
 }
 main .container .content {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
+  height: 100%;
+}
+main .container .content .product_list {
+  height: 100%;
 }
 main .container .content .product_list .check {
   width: 100%;
@@ -178,4 +182,137 @@ main .container .content .product_list .product_wrap .item .product .delete_btn 
   height: 30px;
   margin-left: 9px;
   margin-right: 6px;
+}
+main .container .content .order {
+  width: 284px;
+  height: 100%;
+  padding-top: 60px;
+}
+main .container .content .order .delivery {
+  padding: 23px 19px 20px;
+  border-top: 1px solid #F2F2F2;
+  border-left: 1px solid #F2F2F2;
+  border-right: 1px solid #F2F2F2;
+}
+main .container .content .order .delivery .top {
+  display: flex;
+  align-items: center;
+}
+main .container .content .order .delivery .top img {
+  margin-right: 6px;
+}
+main .container .content .order .delivery .top span {
+  display: block;
+  font-weight: 600;
+}
+main .container .content .order .delivery .address {
+  margin-top: 12px;
+  font-weight: 600;
+  line-height: 24px;
+}
+main .container .content .order .delivery p span {
+  padding: 7px 0 12px;
+  font-size: 0.875rem;
+  color: #5F0080;
+  display: block;
+}
+main .container .content .order .delivery .address_change #change_btn {
+  width: 100%;
+  display: block;
+  height: 36px;
+  border: 1px solid #5F0080;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #5F0080;
+  font-weight: 500;
+}
+main .container .content .order .price_info {
+  padding: 19px 18px 18px 20px;
+  border: 1px solid #F2F2F2;
+  background-color: #fafafa;
+  display: flex;
+  flex-flow: column;
+}
+main .container .content .order .price_info dl {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+}
+main .container .content .order .price_info dl:first-child {
+  padding: 0;
+}
+main .container .content .order .price_info dl:last-child {
+  margin-top: 16px;
+  padding-top: 18px;
+  border-top: 1px solid #f4f4f4;
+}
+main .container .content .order .price_info dl dt {
+  line-height: 24px;
+  white-space: nowrap;
+  width: 100px;
+  letter-spacing: -0.5px;
+}
+main .container .content .order .price_info dl dd {
+  letter-spacing: -0.5px;
+}
+main .container .content .order .price_info dl .total {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+main .container .content .order .price_info dl .total em {
+  font-size: 1rem;
+}
+main .container .content .order .price_info .free {
+  text-align: right;
+  font-size: 0.75rem;
+  color: #5F0080;
+  line-height: 18px;
+  display: block;
+  padding-top: 2px;
+}
+main .container .content .order .price_info .free em {
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #5F0080;
+  line-height: 18px;
+}
+main .container .content .order .order_btn_bg {
+  padding: 20px 0 16px;
+}
+main .container .content .order .order_btn_bg #order_btn {
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+  text-align: center;
+  color: #fff;
+  background-color: #5F0080;
+  border-radius: 3px;
+  height: 56px;
+  font-weight: 500;
+}
+main .container .content .order .notice ul li {
+  font-size: 0.75rem;
+  line-height: 16px;
+  padding-top: 4px;
+  padding-left: 7px;
+  color: #666;
+  letter-spacing: -0.8px;
+  font-weight: 500;
+  text-align: left;
+  position: relative;
+}
+main .container .content .order .notice ul li::before {
+  content: "";
+  display: inline-block;
+  width: 1.5px;
+  height: 1.5px;
+  border-radius: 50%;
+  background: #666;
+  margin: 0 5px;
+  position: absolute;
+  left: -7px;
+  top: 12px;
 }/*# sourceMappingURL=cart.css.map */

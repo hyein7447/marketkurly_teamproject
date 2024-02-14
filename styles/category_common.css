@@ -1,5 +1,5 @@
 /* 베스트 카테고리 선택자 */
-body, html {scroll-behavior: smooth;}
+body, html {scroll-behavior: smooth; max-width: 820px;}
 main {}
 /* 베스트 타이틀 영역 */
 main .best {width:1050px; margin:0 auto;}
@@ -194,7 +194,7 @@ main .best .container .left .list2 .box .contents li .btn_chk img {width:18px;}
 main .best .container .left .list2 .box .contents li .btn_circle p:nth-child(2) {}
 main .best .container .left .list2 .box .contents li .btn_circle p:nth-child(3) {}
 main .best .container .left .list2 .box .con1 {
-    /* display: none; */
+    display: none;
 }
 main .best .container .left .list2 .box .con2 {
     display: none;

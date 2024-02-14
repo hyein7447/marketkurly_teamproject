@@ -3,7 +3,9 @@
 main {
     .container {
         width:1050px;
+        height: 942px;
         margin: 0 auto;
+        padding-bottom: 80px;
         .title {
             width: 100%;
             margin: 0 auto;
@@ -16,8 +18,11 @@ main {
             }
         }
         .content {
-            @include flex-row-btw-ct;
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
             .product_list {
+                height: 100%;
                 .check {
                     width: 100%;
                     padding: 18px 10px 16px 2px;
@@ -175,6 +180,145 @@ main {
                                     margin-left: 9px;
                                     margin-right: 6px;
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+            .order {
+                width: 284px;
+                height: 100%;
+                padding-top: 60px;
+                .delivery {
+                    padding: 23px 19px 20px;
+                    border-top: 1px solid $c-242;
+                    border-left: 1px solid $c-242;
+                    border-right: 1px solid $c-242;
+
+                    .top {
+                        display: flex;
+                        align-items: center;
+                        img {margin-right: 6px;}
+                        span {
+                            display: block;
+                            font-weight: 600;
+                        }
+                    }
+                    .address {
+                        margin-top: 12px;
+                        font-weight: 600;
+                        line-height: 24px;
+                    }
+                    p {
+                        span {
+                            padding: 7px 0 12px;
+                            font-size: $px14;
+                            color: $purple;
+                            display: block;
+                        }
+                    }
+                    .address_change {
+                        #change_btn {
+                            width: 100%;
+                            display: block;
+                            height: 36px;
+                            border: 1px solid $purple;
+                            border-radius: 3px;
+                            text-align: center;
+                            font-size: $px12;
+                            color: $purple;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                .price_info {
+                    padding: 19px 18px 18px 20px;
+                    border: 1px solid $c-242;
+                    background-color: $c-250;
+                    display: flex;
+                    flex-flow: column;
+                    dl {
+                        @include flex-row-btw-ct;
+                        padding-top: 12px;
+                        &:first-child {
+                            padding: 0;
+                        }
+                        &:last-child {
+                            margin-top: 16px;
+                            padding-top: 18px;
+                            border-top: 1px solid $c-244;
+                        }
+                        dt {
+                            line-height: 24px;
+                            white-space: nowrap;
+                            width: 100px;
+                            letter-spacing: -0.5px;
+                        }
+                        dd {
+                            letter-spacing: -0.5px;
+                        }
+                        .total {
+                            font-size: $px20;
+                            font-weight: 600;
+                            em {
+                                font-size: 1.0rem;
+
+                            }
+                        }
+                    }
+                    .free {
+                        text-align: right;
+                        font-size: $px12;
+                        color: $purple;
+                        line-height: 18px;
+                        display: block;
+                        padding-top: 2px;
+                        em {
+                            font-weight: 600;
+                            font-size: $px12;
+                            color: $purple;
+                            line-height: 18px;
+                        }
+                    }
+                }
+                .order_btn_bg {
+                    padding: 20px 0 16px;
+                    #order_btn {
+                        display: block;
+                        width: 100%;
+                        padding: 0 10px;
+                        text-align: center;
+                        color: #fff;
+                        background-color: $purple;
+                        border-radius: 3px;
+                        height: 56px;
+                        font-weight: 500;
+                    }
+                }
+                .notice {
+                    ul {
+                        li {
+                            font-size: $px12;
+                            line-height: 16px;
+                            padding-top: 4px;
+                            padding-left: 7px;
+                            color: $c-102;
+                            letter-spacing: -0.8px;
+                            font-weight: 500;
+                            text-align:left;
+                            position: relative;
+
+                            &::before {
+                                content: '';
+                                display: inline-block;
+                                width: 1.5px;
+                                height: 1.5px;
+                                border-radius: 50%;
+                                background: $c-102;
+                                margin: 0 5px;
+                                position: absolute;
+                                left: -7px;
+                                top: 12px;
                             }
                         }
                     }

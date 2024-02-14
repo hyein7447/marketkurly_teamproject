@@ -1,5 +1,5 @@
 html,body{/* height: 500vh; */}
-header {max-width: 1280px; margin: 0 auto;}
+header {/* max-width: 1280px; */ margin: 0 auto;}
 /*  최상단 팝업 */
 header .pop_up {display: none;}
 header .pop_up p {}
@@ -108,11 +108,10 @@ header .header_top .user_info .wish img {}
 header .header_top .user_info .cart {}
 header .header_top .user_info .cart img {}
 /* header bottom */
-header .header_btm {max-width: 1280;}
+header .header_btm {box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.07);}
 header .header_btm nav {
     width: 1050px; height: 56px; display: flex; margin: 0 auto; justify-content: space-between;
     align-items: center; position: relative;
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.07);
 }
 header .header_btm nav .category {font-weight: 500;}
 header .header_btm nav .category img {width: 16px; height: 14px; margin-right: 10px;}
