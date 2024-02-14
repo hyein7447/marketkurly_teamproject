@@ -1,0 +1,116 @@
+@import 'common';
+
+main{
+    width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 80px;
+
+    aside{
+        h1{
+            font-size: $px28;
+            font-weight: 500;
+            line-height: 35px;
+            padding: 5px 0 35px 1px;
+            letter-spacing: -1px;
+        }
+        .board_list{
+            display: flex;
+            flex-flow: column nowrap;
+            border: 1px solid #f2f2f2;
+
+            a{
+                font-size: $px14;
+                font-weight: 500;
+                width: 197px;
+                border-bottom: 1px solid #f2f2f2;
+                padding: 15px 13px 15px 20px;
+                @include flex-row-btw-ct;
+
+                &:first-child{
+                    color: #5f0080;
+                    background-color: #fafafa;
+                }
+                span{
+                    img{width: 14px;}
+                }
+            }
+        }
+        .help_wrap{
+            @include flex-row-btw-ct;
+            background-color: #fafafa;
+            margin-top: 36px;
+            padding: 14px 14px 14px 20px;
+            
+            .help{
+                font-size: $px14;
+                em{
+                    font-size: $px12;
+                }
+            }
+            img{
+                width: 14px;
+            }
+        }
+    }
+    .notice{
+        width: 820px;
+        h2{
+            font-size: $px24;
+            font-weight: 500;
+            line-height: 48px;
+            letter-spacing: -0.5px;
+            margin-bottom: 27px;
+            span{
+                margin-left: 11px;
+                font-size: $px14;
+                letter-spacing: -0.3px;
+                color: #999;
+                line-height: 20px;
+            }
+        }
+        .title{width: 570px;}
+        .date, .writer{width: 100px;}
+        .notice_wrap{
+            @include flex-row-btw-ct;
+            padding: 20px 0;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+            padding-left: 20px;
+
+            p{
+                font-size: $px14;
+                text-align: center;
+                line-height: 20px;
+            }
+        }
+        .notice_container{
+            padding-left: 20px;
+
+            li{
+                @include flex-row-btw-ct;
+                padding: 20px 0;
+                border-bottom: 1px solid rgb(244, 244, 244);
+                a{
+                    font-size: $px14;
+                    text-align: center;
+                }
+                .title{
+                    text-align: left;
+                    padding-left: 20px;
+                }
+                .date{color: #999;}
+            }
+        }
+        .pagenation{
+            padding: 60px 0 30px;
+            text-align: center;
+            a{
+                &:first-child{
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+}
