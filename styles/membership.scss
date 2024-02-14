@@ -1,0 +1,80 @@
+@import 'common';
+
+main {
+    width:100%;
+    margin: 0 auto;
+    .membership {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        .top {
+            padding: 0 !important;
+        }
+        .mebr {
+            background-color: rgb(199, 228, 236);
+            width: 100%;
+            @include flex-col-ct-ct;
+            padding: 90px 0 0;
+            img {
+                width:100%;
+                max-width: 1900px;
+            }
+        }
+        .notice_row {
+            padding: 20px 0px 70px;
+            background-color: rgb(199, 228, 236);
+            width:100%;
+            @include flex-row-ct-ct;
+            .line_bg {
+                border-top: 1px solid #333;
+                max-width: 840px;
+                .title {
+                    p {
+                        width: 135px;
+                        padding-right:20px;
+                        font-size: $px15;
+                    }
+                }
+                .sub {
+                    li {
+    
+                    }
+                }
+            }
+        }
+        .tab_area {
+            background: rgb(33, 138, 182);
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: sticky;
+            top:0;
+            a:first-child::before {
+                display: none;
+                margin: 0;
+            }
+            a::before {
+                @include bf_999_12px;
+                margin-right: 80px;
+                margin-left: -80px;
+            }
+            a {
+                color:$c-181;
+                text-align: center;
+                padding: 15px 20px;
+                font-size: $px18;
+                min-width: 260px;
+                width:100%;
+            }
+        }
+        .swiper_box {
+            .product_wrap {
+                @include flex-row-st-ct;
+            }
+        }
+    }
+}
