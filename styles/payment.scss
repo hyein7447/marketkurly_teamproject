@@ -22,6 +22,12 @@ main{
                 color: $c-51;
                 line-height: 29px;
                 border-bottom: 1px solid $c-51;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                a{
+                    img{width: 17px;}
+                }
             }
             .order_top{
                 .left{
@@ -37,6 +43,8 @@ main{
                 .product_ordered{
                     h2{margin-top: 0;}
                     .order_item{
+                        // order_list 펼쳤을 때 display none
+                        // display: none;
                         padding: 28px 0;
                         line-height: 24px;
                         font-weight: 500;
@@ -48,6 +56,46 @@ main{
                             font-weight: 500;
                         }
                         .item_num{color: $purple;}
+                    }
+                    .order_list{
+                        li{
+                            padding: 25px 0;
+                            border-bottom: 1px solid rgb(244, 244, 244);
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .order_list_left{
+                                @include flex-row-btw-ct;
+                                .order_img{
+                                    img{width: 60px;}
+                                }
+                                .order_item_name{
+                                    color: #000;
+                                    display: flex;
+                                    flex-flow: column nowrap;
+                                    padding: 0 20px;
+                                    span{
+                                        color: #999;
+                                        font-size: $px14;
+                                        margin-top: 6px;
+                                    }
+                                }
+                            }
+                            .order_list_right{
+                                @include flex-row-btw-ct;
+                                .order_item_num{
+                                    font-size: $px14;
+                                    width: 100px;
+                                }
+                                .order_item_price{
+                                    font-weight: 700;
+                                    width: 126px;
+                                    text-align: right;
+                                }
+                            }
+
+                        }
                     }
                 }
                 .customer_info{
@@ -167,11 +215,20 @@ main{
                                         height: 44px;
                                         font-size: $px14;
                                         border: 1px solid $c-221;
+                                        background-color: $c-250;
+                                        color: $c-204;
                                         display: flex;
                                         justify-content: space-between;
                                         align-items: center;
                                         padding: 0 16px;
+                                        img{width: 13px;}
                                     }
+                                }
+                                .coupon_unavailable{
+                                    font-size: $px14;
+                                    color: $c-102;
+                                    margin-bottom: 10px;
+                                    line-height: 24px;
                                 }
                                 a{
                                     img{
@@ -323,6 +380,7 @@ main{
                                         height: 48px;
                                         background-color: #f6e500;
                                         border-radius: 3px;
+                                        img{margin-top: 7px;}
                                     }
                                     &:first-child{margin-bottom: 12px;}
                                     #kurly_pay_btn{
@@ -331,7 +389,10 @@ main{
                                         border: 1px solid $c-226;
                                         border-top-left-radius: 3px;
                                         border-top-right-radius: 3px;
-                                        img{width: 50px;}
+                                        img{
+                                            margin-top: 10px;
+                                            width: 82px;
+                                        }
                                     }
                                 }
                                 .kurly_pay_wrap{
@@ -485,6 +546,7 @@ main{
                                     }
                                 }
                                 .credit_card{
+                                    position: relative;
                                     margin: 20px 0;
                                     #select_card{
                                         width: 276px;
@@ -517,6 +579,40 @@ main{
                                         img{
                                             display: block;
                                             // width: 10px;
+                                        }
+                                    }
+                                    .select_card_list{
+                                        display: flex;
+                                        flex-flow: column nowrap;
+                                        padding: 20px;
+                                        border: 1px solid $c-221;
+                                        background-color: #fff;
+                                        width: 276px;
+                                        position: absolute;
+                                        top: 43px;
+
+                                        display: none;
+                                        a{
+                                            padding-bottom: 12px;
+                                            color: #555;
+                                            &:last-child{padding: 0;}
+                                        }
+                                    }
+                                    .select_installment_list{
+                                        display: flex;
+                                        flex-flow: column nowrap;
+                                        padding: 20px;
+                                        border: 1px solid $c-221;
+                                        background-color: #fff;
+                                        width: 276px;
+                                        position: absolute;
+                                        top: 96px;
+    
+                                        display: none;
+                                        a{
+                                            padding-bottom: 12px;
+                                            color: #555;
+                                            &:last-child{padding: 0;}
                                         }
                                     }
                                 }

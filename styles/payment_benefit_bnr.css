@@ -1,0 +1,89 @@
+@charset "UTF-8";
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 1050px;
+}
+main img {
+  display: block;
+}
+main * {
+  letter-spacing: -0.05em;
+}
+main button img {
+  display: inline;
+  margin-left: 20px;
+}
+main .month_card_btn_wrap {
+  background-color: #f3f3f3;
+  text-align: center;
+  width: 100%;
+}
+main .month_card_btn_wrap .month_card_btn {
+  color: #fff;
+  width: 480px;
+  padding: 23px 30px;
+  font-size: 1.25rem;
+  box-shadow: 2px 4px 8px rgba(51, 51, 51, 0.12);
+  border-radius: 4px;
+}
+main .month_card_btn_wrap #discount10 {
+  background-color: #3a074e;
+  margin-bottom: 20px;
+}
+main .month_card_btn_wrap #discount7 {
+  background-color: #5f0080;
+  margin-bottom: 90px;
+}
+main .kurly_card_btn_wrap {
+  width: 100%;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding-bottom: 90px;
+}
+main .kurly_card_btn_wrap #kurly_card_benefit {
+  background-color: #5f0080;
+  color: #fff;
+  width: 480px;
+  padding: 23px 30px;
+  font-size: 1.25rem;
+  box-shadow: 2px 4px 8px rgba(51, 51, 51, 0.12);
+  border-radius: 4px;
+}
+main .precautions {
+  background-color: #f7f7f7;
+  width: 100%;
+}
+main .precautions .precautions_contents {
+  max-width: 840px;
+  margin: 0 auto;
+  border-top: 1px solid #000;
+  padding: 20px 0;
+  display: flex;
+}
+main .precautions .precautions_contents .title {
+  width: 135px;
+  padding-right: 20px;
+  font-size: 0.938rem;
+  color: #000;
+  line-height: 1;
+}
+main .precautions .precautions_contents .precautions_list {
+  width: calc(100% - 135px);
+}
+main .precautions .precautions_contents .precautions_list li {
+  color: #000;
+  font-size: 0.938rem;
+  line-height: 27px;
+  position: relative;
+  font-weight: 300;
+}
+main .precautions .precautions_contents .precautions_list li::before {
+  position: absolute;
+  content: "•";
+  width: 13px;
+  left: -20px;
+  text-align: center;
+}/*# sourceMappingURL=payment_benefit_bnr.css.map */

@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common_header.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="pop_up">
+            <p>지금 가입하고,<em>1만원 할인 쿠폰</em>받아가세요!</p>
+            <div class="reset_btn">
+                <a href="#">X</a>
+            </div>
+        </div>
+        <div class="user_page">
+            <a href="#" class="join">회원가입</a>
+            <a href="#" class="login">로그인</a>
+            <a href="#" class="cs">고객센터<img src="./images/main/icon/icon_down_16x10.png" alt="고객센터오픈"></a>
+            <div class="cs_open"> <!-- 마우스오버 js -->
+                <a href="#">공지사항</a>
+                <a href="#">자주하는 질문</a>
+                <a href="#">1:1 문의</a>
+                <a href="#">대량주문 문의</a>
+            </div>
+        </div>
+        <div class="header_top">
+            <div class="left">
+                <div class="logo"><img src="./images/main/logo/logo_marketkulry.svg" alt="마켓컬리"></div>
+                <div class="menu">
+                    <a href="#">마켓컬리</a>
+                    <a href="#">뷰티컬리</a>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" id="user_search" placeholder="검색어를 입력해주세요">
+                <button type="button" id="search_btn"><img src="./images/main/icon/search_btn.png" alt="검색하기"></button>
+            </div>
+            <div class="user_info">
+                <div class="map">
+                    <a class="map_icon"><img src="./images/main/icon/icon_map_off.svg" alt="주소찾기"></a>
+                    <div class="map_open"> <!-- map 마우스 오버 시 오픈 JS -->
+                        <p><em>배송지를 등록</em>하고<br>
+                        구매 가능한 상품을 확인하세요!</p>
+                        <div class="map_btn">
+                            <button type="button" id="map_login_btn">로그인</button>
+                            <div class="address_btn">
+                                <input type="button" onclick="exec_daum_postcode()" value="      주소검색" id="map_search_btn">
+                                <img src="./images/main/icon/map_search_btn.png" alt="주소찾기">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="wish"><img src="./images/main/icon/icon_wish_off.svg" alt="위시리스트"></a>
+                <a class="cart"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니"></a>
+            </div>
+        </div>
+        <div class="header_btm">
+            <nav>
+                <a href="#" class="category"><img src="./images/main/icon/icon_menu_off.svg" alt="카테고리">카테고리</a>
+                <div class="gnb_bg"> <!-- 마우스 오버시 출력 JS -->
+                    <div class="gnb_wrap">
+                        <ul class="gnb">
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_001_off.png" alt="2024 설 선물세트"><span>2024 설 선물세트</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">프리미엄</a>
+                                            <a href="#">예약 선물세트</a>
+                                            <a href="#">뷰티</a>
+                                            <a href="#">건강식품</a>
+                                            <a href="#">오일·가공</a>
+                                            <a href="#">베이커리·다과</a>
+                                            <a href="#">과일·견과</a>
+                                            <a href="#">정육</a>
+                                            <a href="#">수산</a>
+                                            <a href="#">커피·차·전통주</a>
+                                            <a href="#">주방·생활</a>
+                                            <a href="#">골드바</a>
+                                            <a href="#">와인</a>
+                                            <a href="#">단독 특가</a>
+                                            <a href="#">트렌드·이색</a>
+                                            <a href="#">실속 선물</a>
+                                            <a href="#">빅세일</a>
+                                            <a href="#">20만원이상</a>
+                                            <a href="#">10-20만원</a>
+                                            <a href="#">7-10만원</a>
+                                            <a href="#">5-7만원</a>
+                                            <a href="#">5만원 미만</a>
+                                            <a href="#">카드사 쿠폰 적용 상품</a>
+                                            <a href="#">컬리 카드 쿠폰 적용 상품</a>
+                                            <a href="#">컬리 상품권</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_002_off.png" alt="채소"><span>채소</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">친환경</a>
+                                            <a href="#">고구마·감자·당근</a>
+                                            <a href="#">시금치·쌈채소·나물</a>
+                                            <a href="#">브로콜리·파프리카·양배추</a>
+                                            <a href="#">양파·대파·마늘·배추</a>
+                                            <a href="#">오이·호박·고추</a>
+                                            <a href="#">냉동·이색·간편채소</a>
+                                            <a href="#">콩나물·버섯</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_003_off.png" alt="과일·견과·쌀"><span>과일·견과·쌀</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">친환경</a>
+                                            <a href="#">제철과일</a>
+                                            <a href="#">국산과일</a>
+                                            <a href="#">수입과일</a>
+                                            <a href="#">간편과일</a>
+                                            <a href="#">냉동·건과일</a>
+                                            <a href="#">견과류</a>
+                                            <a href="#">쌀·잡곡</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_004_off.png" alt="수산·해산·건어물"><span>수산·해산·건어물</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">제철수산</a>
+                                            <a href="#">생선류</a>
+                                            <a href="#">굴비·반건류</a>
+                                            <a href="#">연어·참치</a>
+                                            <a href="#">회·탕류</a>
+                                            <a href="#">오징어·낙지·문어</a>
+                                            <a href="#">해산물·전복·조개류</a>
+                                            <a href="#">새우·게·랍스터</a>
+                                            <a href="#">수산가공품</a>
+                                            <a href="#">명란</a>
+                                            <a href="#">젓갈·장류</a>
+                                            <a href="#">간편구이</a>
+                                            <a href="#">김·미역·해조류</a>
+                                            <a href="#">멸치·황태·다시팩</a>
+                                            <a href="#">조미오징어·어포·쥐포</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_005_off.png" alt="정육·가공육·계란"><span>정육·가공육·계란</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">국내산 소고기</a>
+                                            <a href="#">수입산 소고기</a>
+                                            <a href="#">국내산 돼지고기</a>
+                                            <a href="#">수입산 돼지고기·양고기</a>
+                                            <a href="#">닭·오리고기</a>
+                                            <a href="#">식단관리용 가공육</a>
+                                            <a href="#">양념육</a>
+                                            <a href="#">돈까스·떡갈비·함박</a>
+                                            <a href="#">소시지·베이컨·하몽</a>
+                                            <a href="#">계란·가공란</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_006_off.png" alt="국·반찬·메인요리"><span>국·반찬·메인요리</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">국·탕·찌개</a>
+                                            <a href="#">밑반찬</a>
+                                            <a href="#">김치·젓갈·장류</a>
+                                            <a href="#">두부·어묵·부침개</a>
+                                            <a href="#">메인요리</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_007_off.png" alt="간편식·밀키트·샐러드"><span>간편식·밀키트·샐러드</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">밀키트</a>
+                                            <a href="#">샐러드·샌드위치</a>
+                                            <a href="#">선식·시리얼</a>
+                                            <a href="#">도시락·밥류</a>
+                                            <a href="#">짜장·짬뽕·파스타·면류</a>
+                                            <a href="#">떡볶이·튀김·순대</a>
+                                            <a href="#">치킨·피자·핫도그·만두</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_008_off.png" alt="면·양념·오일"><span>면·양념·오일</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">라면</a>
+                                            <a href="#">파스타·면류·조리용 떡</a>
+                                            <a href="#">밀가루·가루·믹스</a>
+                                            <a href="#">햄·통조림·병조림</a>
+                                            <a href="#">죽·스프·카레</a>
+                                            <a href="#">양념·액젓·장류</a>
+                                            <a href="#">식용유·참기름·오일</a>
+                                            <a href="#">식초·소스·드레싱</a>
+                                            <a href="#">소금·설탕·향신료</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_009_off.png" alt="생수·음료·커피"><span>생수·음료·커피</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">생수·탄산수</a>
+                                            <a href="#">음료·주스</a>
+                                            <a href="#">원두·드립백</a>
+                                            <a href="#">캡슐·인스턴트 커피</a>
+                                            <a href="#">차</a>
+                                            <a href="#">커피용품</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_010_off.png" alt="간식·과자·떡"><span>간식·과자·떡</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#"></a>
+                                            <a href="#"></a>
+                                            <a href="#"></a>
+                                            <a href="#"></a>
+                                            <a href="#"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_011_off.png" alt="베이커리"><span>베이커리</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">잼·스프레드</a>
+                                            <a href="#">식빵·모닝빵·베이글</a>
+                                            <a href="#">간식빵</a>
+                                            <a href="#">타르트·파이</a>
+                                            <a href="#">디저트</a>
+                                            <a href="#">케이크</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_012_off.png" alt="유제품"><span>유제품</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">우유·두유</a>
+                                            <a href="#">요거트·생크림</a>
+                                            <a href="#">자연치즈</a>
+                                            <a href="#">가공치즈</a>
+                                            <a href="#">버터</a>
+                                            <a href="#">아이스크림</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_013_off.png" alt="건강식품"><span>건강식품</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">비타민·미네랄</a>
+                                            <a href="#">건강즙·건강음료</a>
+                                            <a href="#">홍삼·인삼</a>
+                                            <a href="#">꿀·과일청</a>
+                                            <a href="#">영양제</a>
+                                            <a href="#">유산균</a>
+                                            <a href="#">건강분말·건강환</a>
+                                            <a href="#">체중관리</a>
+                                            <a href="#">프로틴</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_014_off.png" alt="와인·위스키"><span>와인·위스키</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">레드와인</a>
+                                            <a href="#">화이트·로제와인</a>
+                                            <a href="#">샴페인·스파클링</a>
+                                            <a href="#">스위트와인</a>
+                                            <a href="#">위스키·리큐르</a>
+                                            <a href="#">논알콜</a>
+                                            <a href="#">와인·위스키용품</a>
+                                            <a href="#">아티제 픽업</a>
+                                            <a href="#">레드텅 와인샵 픽업</a>
+                                            <a href="#">와인픽스 와인샵 픽업</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_015_off.png" alt="전통주"><span>전통주</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">막걸리·탁주</a>
+                                            <a href="#">증류주·약주·청주</a>
+                                            <a href="#">과실주·리큐르</a>
+                                            <a href="#">전통주 선물세트</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_016_off.png" alt="주방용품"><span>주방용품</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">일회용품·주방잡화</a>
+                                            <a href="#">주방·조리도구</a>
+                                            <a href="#">냄비·팬·솥</a>
+                                            <a href="#">식기·그릇</a>
+                                            <a href="#">컵·잔·물병</a>
+                                            <a href="#">밀폐·보관·저장용기</a>
+                                            <a href="#">커트러리</a>
+                                            <a href="#">주방수납정리</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_017_off.png" alt="생활용품·리빙"><span>생활용품·리빙</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">화장지·물티슈</a>
+                                            <a href="#">세제</a>
+                                            <a href="#">탈취·제습·방충제</a>
+                                            <a href="#">청소용품</a>
+                                            <a href="#">욕실용품</a>
+                                            <a href="#">세탁용품</a>
+                                            <a href="#">수납정리용품</a>
+                                            <a href="#">의약외품·마스크</a>
+                                            <a href="#">여성·위생용품</a>
+                                            <a href="#">패션잡화</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_018_off.png" alt="가전제품"><span>가전제품</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">주방가전</a>
+                                            <a href="#">생활가전</a>
+                                            <a href="#">계절가전</a>
+                                            <a href="#">디지털·PC</a>
+                                            <a href="#">대형·설치가전</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_019_off.png" alt="가구·인테리어"><span>가구·인테리어</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">거실가구</a>
+                                            <a href="#">소파·체어</a>
+                                            <a href="#">침실가구</a>
+                                            <a href="#">주방가구</a>
+                                            <a href="#">서재가구</a>
+                                            <a href="#">화장대·콘솔</a>
+                                            <a href="#">매트리스·토퍼</a>
+                                            <a href="#">홈데코</a>
+                                            <a href="#">조명·거울</a>
+                                            <a href="#">러그·커튼</a>
+                                            <a href="#">침구</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_020_off.png" alt="유아동"><span>유아동</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">분유·간편 이유식</a>
+                                            <a href="#">이유식 재료</a>
+                                            <a href="#">간식·음식</a>
+                                            <a href="#">건강식품</a>
+                                            <a href="#">이유·수유용품</a>
+                                            <a href="#">기저귀·물티슈</a>
+                                            <a href="#">세제·위생용품</a>
+                                            <a href="#">스킨·구강케어</a>
+                                            <a href="#">완구·잡화류</a>
+                                            <a href="#">유아동패션</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_021_off.png" alt="스포츠·레져·캠핑"><span>스포츠·레져·캠핑</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">골프</a>
+                                            <a href="#">구기·라켓</a>
+                                            <a href="#">러닝·자전거</a>
+                                            <a href="#">시즌스포츠</a>
+                                            <a href="#">휘트니스</a>
+                                            <a href="#">캠핑</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_022_off.png" alt="반려동물"><span>반려동물</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">강아지 간식·영양제</a>
+                                            <a href="#">강아지 주식</a>
+                                            <a href="#">고양이 간식·영양제</a>
+                                            <a href="#">고양이 주식</a>
+                                            <a href="#">배변용품</a>
+                                            <a href="#">미용·목욕용품</a>
+                                            <a href="#">펫 의류·외출용품</a>
+                                            <a href="#">급식기·급수기</a>
+                                            <a href="#">하우스용품</a>
+                                            <a href="#">장난감</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_023_off.png" alt="럭셔리뷰티"><span>럭셔리뷰티</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">스킨케어</a>
+                                            <a href="#">메이크업</a>
+                                            <a href="#">바디케어</a>
+                                            <a href="#">헤어케어</a>
+                                            <a href="#">프레그런스</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_024_off.png" alt="스킨케어·메이크업"><span>스킨케어·메이크업</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">스킨·미스트·패드</a>
+                                            <a href="#">에센스·앰플·로션</a>
+                                            <a href="#">크림·오일</a>
+                                            <a href="#">클렌징</a>
+                                            <a href="#">마스크팩</a>
+                                            <a href="#">선케어</a>
+                                            <a href="#">베이스메이크업</a>
+                                            <a href="#">립메이크업</a>
+                                            <a href="#">아이메이크업</a>
+                                            <a href="#">맨즈케어</a>
+                                            <a href="#">뷰티소품·기기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_025_off.png" alt="헤어·바디·구강"><span>헤어·바디·구강</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#">구강·면도</a>
+                                            <a href="#">샴푸·컨디셔너</a>
+                                            <a href="#">트리트먼트·팩</a>
+                                            <a href="#">헤어에센스·염모</a>
+                                            <a href="#">바디워시·스크럽</a>
+                                            <a href="#">바디로션·크림</a>
+                                            <a href="#">핸드·립·데오</a>
+                                            <a href="#">향수·디퓨저</a>
+                                            <a href="#">헤어·바디소품</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_026_off.png" alt="컬리상품권"><span>컬리상품권</span></a>
+                                <div class="lnb_bg"></div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/main/icon/category/cate_027_off.png" alt="컬리의 추천"><span>컬리의 추천</span></a>
+                                <div class="lnb_bg">
+                                    <div class="lnb_wrap">
+                                        <div class="lnb">
+                                            <a href="#"><img src="./images/main/icon/category/cate_kulry_001.png" alt="홈캉스">홈캉스</a>
+                                            <a href="#"><img src="./images/main/icon/category/cate_kulry_002.jpg" alt="식단관리">식단관리</a>
+                                            <a href="#"><img src="./images/main/icon/category/cate_kulry_003.jpg" alt="간편한 아침식사">간편한 아침식사</a>
+                                            <a href="#"><img src="./images/main/icon/category/cate_kulry_004.png" alt="재구매BEST">재구매BEST</a>
+                                            <a href=""><img src="./images/main/icon/category/cate_kulry_005.png" alt="3천원의 행복">3천원의 행복</a>
+                                            <a href="#"><img src="./images/main/icon/category/cate_kulry_006.jpg" alt="컬리마트">컬리마트</a>
+                                            <a href="#"><img src="./images/main/icon/category/cate_kulry_007.png" alt="대용량 상품">대용량 상품</a>
+                                            <a href="#"><img src="./images/main/icon/category/cate_kulry_008.png" alt="캠핑">캠핑</a>
+                                            <a href="#"><img src="./images/main/icon/category/cate_kulry_009.jpg" alt="1인가구">1인 가구</a>
+                                            <a href="#"><img src="./images/main/icon/category/cate_kulry_010.png" alt="비건">비건</a>
+                                            <a href="#"><img src="./images/main/icon/category/cate_kulry_011.png" alt="베이커리 맛집">베이커리 맛집</a>
+                                            <a href="#"><img src="./images/main/icon/category/cate_kulry_012.png" alt="오프라인 맛집">오프라인 맛집</a>
+                                            <a href="#"><img src="./images/main/icon/category/cate_kulry_013.png" alt="컬리가 만든 상품">컬리가 만든 상품</a>
+                                            <a href="#"><img src="./images/main/icon/category/cate_kulry_014.png" alt="Kulry Only">Kulry Only</a>
+                                            <a href="#"><img src="./images/main/icon/category/cate_kulry_015.png" alt="KF365 / KS365">KF365 / KS365</a>
+                                            <a href="#"><img src="./images/main/icon/category/cate_kulry_016.png" alt="희소가치 프로젝트">희소가치 프로젝트</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="theme">
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">알뜰쇼핑</a></li>
+                    <li><a href="#">특가/혜택</a></li>
+                </ul>
+                <a href="#" class="delivery">
+                    <span><em>샛별·하루</em> 배송안내</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="main_bnr">
+            <div class="swiper-container" id="main_bnr_slide">
+                <div class="swiper-wrapper" id="main_bnr_slide_wrap">
+                    <a href="#" class="swiper-slide slide slide1"></a>
+                    <a href="#" class="swiper-slide slide slide2"></a>
+                    <a href="#" class="swiper-slide slide slide3"></a>
+                    <a href="#" class="swiper-slide slide slide4"></a>
+                    <a href="#" class="swiper-slide slide slide5"></a>
+                    <a href="#" class="swiper-slide slide slide6"></a>
+                </div>
+                <div class="swiper-pagination">
+                    <span class="current">1</span> <!--현재 페이지 js -->
+                    <span class="total">/6</span> <!-- 촐 페이지js -->
+                </div> <!-- 페이지번호표시용 -->
+                <div class="swiper-button-prev" id="main_prev_btn"></div> <!-- 이전버튼 -->
+                <div class="swiper-button-next" id="main_next_btn"></div> <!-- 다음버튼 -->
+            </div>
+        </section>
+        <section class="ranking">
+            <div class="title">
+                <a href="#">설 선물특가 실시간 랭킹🔥 <img src="./images/main/icon/main_title_arrow.svg" alt="실시간 랭킹 바로가기"></a>
+                <p>지금 주목해야할 인기 상품 최대 79% 할인</p>
+            </div>
+            <div class="container">
+                <div class="swiper-container" id="ranking_slide">
+                    <div class="swiper-wrapper" id="ranking_slide_wrap">
+                        <div class="swiper-slide item item1">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_01.jpg" alt="아이템이미지">
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 횡성축협한우 1++ 한우 프리미엄 구이 세트 (냉장)</h3>
+                                    <div class="price">
+                                        <p><del>399,000원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">25%</span>
+                                            <span class="discount_price">299,000원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">50</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item2">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_02.jpg" alt="아이템이미지">
+                                    <span class="coupon">+30%쿠폰</span>
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 민어굴비 세트</h3>
+                                    <div class="price">
+                                        <p><del>79,000원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">30%</span>
+                                            <span class="discount_price">55,300원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">714</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item3">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_03.jpg" alt="아이템이미지">
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="" class="info">
+                                    <h3>[선물세트] 나주 신고배 세트<br>4.5kg(6~7입)</h3>
+                                    <div class="price">
+                                        <p><del>59,900원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">20%</span>
+                                            <span class="discount_price">47,900원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">15</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item4">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_04.jpg" alt="아이템이미지">
+                                    <span class="coupon">+30%쿠폰</span>
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 제주 옥돔 (대) 세트 2kg</h3>
+                                    <div class="price">
+                                        <p><del>249,000원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">28%</span>
+                                            <span class="discount_price">179,000원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">76</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item5">
+                            <div>
+                                <a href="" class="img">
+                                    <img src="./images/main/product/main_p_01.jpg" alt="아이템이미지">
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 횡성축협한우 1++ 한우 프리미엄 구이 세트 (냉장)</h3>
+                                    <div class="price">
+                                        <p><del>399,000원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">25%</span>
+                                            <span class="discount_price">299,000원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">50</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item6">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_02.jpg" alt="아이템이미지">
+                                    <span class="coupon">+30%쿠폰</span>
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 민어굴비 세트</h3>
+                                    <div class="price">
+                                        <p><del>79,000원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">30%</span>
+                                            <span class="discount_price">55,300원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">714</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item7">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_03.jpg" alt="아이템이미지">
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 나주 신고배 세트<br>4.5kg(6~7입)</h3>
+                                    <div class="price">
+                                        <p><del>59,900원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">20%</span>
+                                            <span class="discount_price">47,900원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">15</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item8">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_04.jpg" alt="아이템이미지">
+                                    <span class="coupon">+30%쿠폰</span>
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 제주 옥돔 (대) 세트 2kg</h3>
+                                    <div class="price">
+                                        <p><del>249,000원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">28%</span>
+                                            <span class="discount_price">179,000원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">76</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
+                    <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
+                </div>
+            </div>
+        </section>
+        <section class="sub_bnr">
+            <a href="#"></a> <!-- img bg로 삽입 -->
+        </section>
+        <section class="special_p">
+            <div class="left">
+                <div class="title">
+                    <h2>설 선물 특가🎁</h2>
+                    <p>24시간 한정특가 놓치지마세요</p>
+                </div>
+                <div class="time">
+                    <div class="timer"><span><i class="fa-solid fa-clock"></i></span>17:34:37</div>
+                </div>
+                <p>망설이면 늦어요!</p>
+            </div>
+            <div class="right">
+                <div class="item">
+                    <div>
+                        <a href="#" class="img">
+                            <img src="./images/main/product/main_p_05.jpg" alt="아이템이미지">
+                            <span class="badge">일일특가</span>
+                        </a>
+                        <div class="cart_add">
+                            <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                        </div>
+                        <a href="#" class="info">
+                            <p class="desc">바다의 풍요로움을 신선히 담아낸</p>
+                            <h3>[선물세트] 옥돔&갈치&민어굴비 세트</h3>
+                            <div class="price">
+                                <p><del>199,000원</del></p>
+                                <div class="discount">
+                                    <span class="rate">45%</span>
+                                    <span class="discount_price">109,000원</span>
+                                </div>
+                                <div class="review">
+                                    <img src="./images/main/icon/icon_sms.png" alt="">
+                                    <span class="review_num">722</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <a href="#" class="img">
+                            <img src="./images/main/product/main_p_06.jpg" alt="아이템이미지">
+                            <span class="badge">일일특가</span>
+                        </a>
+                        <div class="cart_add">
+                            <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                        </div>
+                        <a href="#" class="info">
+                            <p class="desc">오감만족 연두빛 포도의 매력</p>
+                            <h3>[선물세트] 샤인머스켓2.4kg(3입)</h3>
+                            <div class="price">
+                                <p><del>59,900원</del></p>
+                                <div class="discount">
+                                    <span class="rate">26%</span>
+                                    <span class="discount_price">43,990원</span>
+                                </div>
+                                <div class="review">
+                                    <img src="./images/main/icon/icon_sms.png" alt="">
+                                    <span class="review_num">32</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <a href="#" class="img">
+                            <img src="./images/main/product/main_p_07.jpg" alt="아이템이미지">
+                            <span class="badge">일일특가</span>
+                        </a>
+                        <div class="cart_add">
+                            <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                        </div>
+                        <a href="#" class="info">
+                            <p class="desc">2개 구매 시, 쇼핑백&트루바이타민 부스터
+                            1개입 증정</p>
+                            <h3>[덴프스] 덴마크 유산균이야기 (60일분)</h3>
+                            <div class="price">
+                                <p><del>91,750원</del></p>
+                                <div class="discount">
+                                    <span class="rate">67%</span>
+                                    <span class="discount_price">29,900원</span>
+                                </div>
+                                <div class="review">
+                                    <img src="./images/main/icon/icon_sms.png" alt="">
+                                    <span class="review_num">9,999+</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="md">
+            <div class="title">
+                <h2>MD의 추천</h2>
+            </div>
+            <ul class="tag">
+                <li><a href="#">간편식·밀키트·샐러드</a></li>
+                <li><a href="#">과일·견과·쌀</a></li>
+                <li><a href="#">국·반찬·메인요리</a></li>
+                <li><a href="#">헤어·바디·구강</a></li>
+                <li><a href="#">정육·가공육·계란</a></li>
+                <li><a href="#">생수·음료·커피</a></li>
+                <li><a href="#">베이커리</a></li>
+                <li><a href="#">스킨·메이크업</a></li>
+                <li><a href="#">채소</a></li>
+                <li><a href="#">수산·해산·건어물</a></li>
+                <li><a href="#">생활용품·리빙</a></li>
+                <li><a href="#">면·양념·오일</a></li>
+                <li><a href="#">주방용품</a></li>
+                <li><a href="#">간식·과자·떡</a></li>
+                <li><a href="#">전통주</a></li>
+                <li><a href="#">가전제품</a></li>
+                <li><a href="#">건강식품</a></li>
+                <li><a href="#">유아동</a></li>
+                <li><a href="#">와인·위스키</a></li>
+                <li><a href="#">반려동물</a></li>
+            </ul>
+            <div class="container">
+                <div class="swiper-container" id="md_slide">
+                    <div class="swiper-wrapper" id="md_slide_wrap">
+                        <div class="swiper-slide item item1">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_08.jpg" alt="아이템이미지">
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 온담 정성담은 표고 흑화고 가루 세트</h3>
+                                    <div class="price">
+                                        <p><del>34,900원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">22%</span>
+                                            <span class="discount_price">26,900원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">190</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item2">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_09.jpeg" alt="아이템이미지">
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트]온담 표고혼합 3종세트</h3>
+                                    <div class="price">
+                                        <p><del>49,900원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">30%</span>
+                                            <span class="discount_price">34,900원</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item3">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_10.jpeg" alt="아이템이미지">
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>양파3kg</h3>
+                                    <div class="price">
+                                        <p><del>8,190원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">13%</span>
+                                            <span class="discount_price">7,909원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">9,999+</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item4">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_11.jpg" alt="아이템이미지">
+                                    <span class="coupon">+30%쿠폰</span>
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>2월 제철 채소 4종 골라담기</h3>
+                                    <div class="price">
+                                        <p><del>2,590원~</del></p>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">9,999+</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item5">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_08.jpg" alt="아이템이미지">
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 온담 정성담은 표고 흑화고 가루 세트</h3>
+                                    <div class="price">
+                                        <p><del>34,900원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">22%</span>
+                                            <span class="discount_price">26,900원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">190</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item6">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_09.jpeg" alt="아이템이미지">
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트]온담 표고혼합 3종세트</h3>
+                                    <div class="price">
+                                        <p><del>49,900원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">30%</span>
+                                            <span class="discount_price">34,900원</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item7">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_10.jpeg" alt="아이템이미지">
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>양파3kg</h3>
+                                    <div class="price">
+                                        <p><del>8,190원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">13%</span>
+                                            <span class="discount_price">7,909원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">9,999+</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item8">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_11.jpg" alt="아이템이미지">
+                                    <span class="coupon">+30%쿠폰</span>
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>2월 제철 채소 4종 골라담기</h3>
+                                    <div class="price">
+                                        <p><del>2,590원~</del></p>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">9,999+</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
+                    <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
+                </div>
+            </div>
+            <div class="all_btn">
+                <a href="#">채소 전체보기</a>
+            </div>
+        </section>
+        <section class="sub_bnr2">
+            <a href="#"></a> <!-- img bg로 삽입 -->
+        </section>
+        <section class="kurly_original">
+            <div class="title">
+                <a href="#">마켓컬리 ORIGINAL <img src="./images/main/icon/main_title_arrow.svg" alt="마켓컬리 오리지널 바로가기"></a>
+                <p>New 불고기 오리지널 콘텐츠 무료로 읽기</p>
+            </div>
+            <div class="container">
+                <div class="swiper-container" id="original_slide">
+                    <div class="swiper-wrapper" id="original_slide_wrap">
+                        <div class="swiper-slide item item1">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="./images/main/product/original_01.jpg" alt="아이템이미지">
+                                </div>
+                                <div class="info">
+                                    <h2>맛있는 불고기 공식, 좋은고기+양념</h2>
+                                    <p>완벽한 불고기를 만드는 2가지 포인트</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item item2">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="./images/main/product/original_02.jpg" alt="아이템이미지">
+                                </div>
+                                <div class="info">
+                                    <h2>서울・언양・광양, 이들의 교집합은? </h2>
+                                    <p>지도로 보는 3가지 불고기 타입</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item item3">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="./images/main/product/original_01.jpg" alt="아이템이미지">
+                                </div>
+                                <div class="info">
+                                    <h2>맛있는 불고기 공식, 좋은고기+양념</h2>
+                                    <p>완벽한 불고기를 만드는 2가지 포인트</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item item4">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="./images/main/product/original_02.jpg" alt="아이템이미지">
+                                </div>
+                                <div class="info">
+                                    <h2>서울・언양・광양, 이들의 교집합은? </h2>
+                                    <p>지도로 보는 3가지 불고기 타입</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
+                    <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
+                </div>
+            </div>
+        </section>
+        <section class="present">
+            <div class="title">
+                <a href="#">품절임박 인기 선물특가💥 <img src="./images/main/icon/main_title_arrow.svg" alt="실시간 랭킹 바로가기"></a>
+                <p>지금 준비해야 놓치지 않는 인기 선물 최대 40%</p>
+            </div>
+            <div class="container">
+                <div class="swiper-container" id="present_slide">
+                    <div class="swiper-wrapper" id="present_slide_wrap">
+                        <div class="swiper-slide item item1">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_01.jpg" alt="아이템이미지">
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 횡성축협한우 1++ 한우 프리미엄 구이 세트 (냉장)</h3>
+                                    <div class="price">
+                                        <p><del>399,000원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">25%</span>
+                                            <span class="discount_price">299,000원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">50</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item2">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_02.jpg" alt="아이템이미지">
+                                    <span class="coupon">+30%쿠폰</span>
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 민어굴비 세트</h3>
+                                    <div class="price">
+                                        <p><del>79,000원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">30%</span>
+                                            <span class="discount_price">55,300원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">714</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item3">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_03.jpg" alt="아이템이미지">
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 나주 신고배 세트<br>4.5kg(6~7입)</h3>
+                                    <div class="price">
+                                        <p><del>59,900원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">20%</span>
+                                            <span class="discount_price">47,900원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">15</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item4">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_04.jpg" alt="아이템이미지">
+                                    <span class="coupon">+30%쿠폰</span>
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 제주 옥돔 (대) 세트 2kg</h3>
+                                    <div class="price">
+                                        <p><del>249,000원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">28%</span>
+                                            <span class="discount_price">179,000원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">76</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item5">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_01.jpg" alt="아이템이미지">
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 횡성축협한우 1++ 한우 프리미엄 구이 세트 (냉장)</h3>
+                                    <div class="price">
+                                        <p><del>399,000원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">25%</span>
+                                            <span class="discount_price">299,000원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">50</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item6">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_02.jpg" alt="아이템이미지">
+                                    <span class="coupon">+30%쿠폰</span>
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 민어굴비 세트</h3>
+                                    <div class="price">
+                                        <p><del>79,000원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">30%</span>
+                                            <span class="discount_price">55,300원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">714</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item7">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_03.jpg" alt="아이템이미지">
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 나주 신고배 세트<br>4.5kg(6~7입)</h3>
+                                    <div class="price">
+                                        <p><del>59,900원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">20%</span>
+                                            <span class="discount_price">47,900원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">15</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item8">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_04.jpg" alt="아이템이미지">
+                                    <span class="coupon">+30%쿠폰</span>
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 제주 옥돔 (대) 세트 2kg</h3>
+                                    <div class="price">
+                                        <p><del>249,000원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">28%</span>
+                                            <span class="discount_price">179,000원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">76</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
+                    <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
+                </div>
+            </div>
+        </section>
+        <section class="recipe">
+            <div class="title">
+                <a href="#">컬리의 레시피<img src="./images/main/icon/main_title_arrow.svg" alt="컬리의 레시피 바로가기"></a>
+            </div>
+            <div class="container">
+                <div class="swiper-container" id="recipe_slide">
+                    <div class="swiper-wrapper" id="recipe_slide_wrap">
+                        <div class="swiper-slide item item1">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="./images/main/product/recipe_01.jpg" alt="아이템이미지">
+                                </div>
+                                <div class="text">
+                                    <p>유자 참기름 소스와 제철 생선</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item item2">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="./images/main/product/recipe_02.jpg" alt="아이템이미지">
+                                </div>
+                                <div class="text">
+                                    <p>참기름 간장 떡볶이</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item item3">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="./images/main/product/recipe_03.jpg" alt="아이템이미지">
+                                </div>
+                                <div class="text">
+                                    <p>감홍로 아포가토</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item item4">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="./images/main/product/recipe_01.jpg" alt="아이템이미지">
+                                </div>
+                                <div class="text">
+                                    <p>유자 참기름 소스와 제철 생선</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item item5">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="./images/main/product/recipe_02.jpg" alt="아이템이미지">
+                                </div>
+                                <div class="text">
+                                    <p>참기름 간장 떡볶이</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item item6">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="./images/main/product/recipe_03.jpg" alt="아이템이미지">
+                                </div>
+                                <div class="text">
+                                    <p>감홍로 아포가토</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
+                    <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
+                </div>
+            </div>
+        </section>
+        <section class="sub_bnr3">
+            <a href="#"></a> <!-- img bg로 삽입 -->
+        </section>
+        <section class="instagram">
+            <div class="title">
+                <h2>인스타그램 고객 후기</h2>
+                <p>더 많은 고객 후기가 궁금하다면?</p>
+            </div>
+            <div class="swiper-container" id="instagram_slide">
+                <div class="swiper-wrapper" id="instagram_slide_wrap">
+                    <div class="swiper-slide item item1">
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/main/product/review_01.jpg" alt="아이템이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item item2">
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/main/product/review_02.jpg" alt="아이템이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item item3">
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/main/product/review_03.jpg" alt="아이템이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item item4">
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/main/product/review_04.jpg" alt="아이템이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item item5">
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/main/product/review_05.jpg" alt="아이템이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item item6">
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/main/product/review_06.jpg" alt="아이템이미지">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
+                <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
+            </div>
+            <div class="more">
+                <p>더 많은 고객후기가 궁금하다면?</p>
+                <a href="#">@marketkurly_regram</a>
+            </div>
+        </section>
+    </main>
+    <div class="aside_bg">
+        <div class="aside">
+            <div class="delivery">
+                <a href="#"><img src="./images/main/icon/aside_deliveryInfo.jpg" alt="샛별배송안내"></a>
+            </div>
+            <div class="level_recipe">
+                <a href="#" class="level">등급별 혜택</a>
+                <a href="#" class="recipe">레시피</a>
+            </div>
+            <div class="swiper-container" id="recently_slide">
+                <div class="swiper-wrapper" id="recently_slide_wrap">
+                    <p>최근 본 상품</p>
+                    <a href="#" class="swiper-slide item item1"></a>
+                    <a href="#" class="swiper-slide item item2"></a>
+                    <a href="#" class="swiper-slide item item3"></a>
+                    <a href="#" class="swiper-slide item item4"></a>
+                </div>
+                <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
+                <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
+            </div>
+        </div>
+    </div>
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script>
+        const mySwiper = new Swiper('#main_bnr_slide',{
+            // 속성:값, 속성:값,
+            // autoplay:{delay:1000,}, //자동 재생 (기본값 false)
+            // loop:true, //반복(기본값 false)
+            //direction:'vertical', //방향 (기본값 horizontal ) 설정시 부모에 높이값도 같이 설정해야함 !
+            effect:'fade', //제자리 효과 (direction과 같이 쓸 수 없음)
+            //effect:'cube', //큐브 돌아가는 효과 (부모에 overflow 빼기)
+            //큐브 이펙트 설정 시 추가 옵션
+            /*cubeEffect:{
+                shadow:true, //규브 하단 그림자 (안보일거면 false)
+                shadowOffset:30, //하단 그림자 y위치 (기본값 20)
+                shadowScale:0.8, //하단 그림자 크기 (기본값1)
+                slideShadows:true, // 다음 큐브 그림자 유무 (기본값 false)
+            }, */
+            grabCursor:true, //마우스 올리면 손모양 아이콘 변경하기
+            //effect:'flip', //뒤집히면서 넘어가는 effect
+            // 페이지 번호 표시하기 (HTML 태그 먼저 준비 후 작성)
+            pagination:{
+                //el:'#mainslide1 .swiper-pagination',
+                //type:'bullets', //모양설정
+                //el:'#mainslide1 .pagination_progress', //로딩HTML 연결
+                //type:'progressbar', //로딩모양변경
+                //페이지 모양을 자유롭게 변경하고 싶을 때
+                el:'#main_bnr_slide .swiper-pagination',
+                type:'bullets', //여기까진 위와 동일
+                clickabel:true, //사용자 모양 클릭 가능한 설정
+                renderBullet:function(i, name){//사용자 지정 함수생성
+                    console.log(i, name) // i는 인덱스, name은 page인식이름
+                    //return에서 원하는 태그 구현
+                    //return으로 생성한 태그에 클래스를 주면 css도 가능
+                    return `<span class="page_bar ${name}">${i+1}</span>`
+                }
+            }, //pagination 종료 위치
+            //내비게이션 속성
+            navigation:{
+                nextEl:'#main_bnr_slide .swiper-button-next',
+                prevEl:'#main_bnr_slide .swiper-button-prev',
+            },
+            //여러장의 슬라이드 보기
+            direction:'horizontal', // 기본값이므로 생략 가능
+            slidesPerView:1, // 한 화면 보이는 슬라이드 개수 (전체 슬라이드 개수보다 최소 1개 적게 작성해야함, 총 3개라면 최대 2개까지)
+            spaceBetween:10, //슬라이드 사이 여백 (flex와 동일개념) (기본값 0)
+        })
+        //재생, 정지 버튼으로 swiper 제어하기
+            const pause_btn = document.querySelector('#pause')
+            const start_btn = document.querySelector('#start')
+            pause_btn.addEventListener('click',()=>{
+                //정지하고 싶은 swiper를 가진 변수명 연결
+                mySwiper.autoplay.stop()
+            })
+            start_btn.addEventListener('click',()=>{
+                mySwiper.autoplay.start()
+        })
+        //본 예제에서는 도로명 주소 표기 방식에 대한 법령에 따라, 내려오는 데이터를 조합하여 올바른 주소를 구성하는 방법을 설명합니다.
+        function exec_daum_postcode() {
+            new daum.Postcode({
+                oncomplete: function(data) {
+                    // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                    // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
+                    // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                    var roadAddr = data.roadAddress; // 도로명 주소 변수
+                    var extraRoadAddr = ''; // 참고 항목 변수
+
+                    // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                    // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraRoadAddr += data.bname;
+                    }
+                    // 건물명이 있고, 공동주택일 경우 추가한다.
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                    extraRoadAddr += (extraRoadAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                    // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                    if(extraRoadAddr !== ''){
+                        extraRoadAddr = ' (' + extraRoadAddr + ')';
+                    }
+
+                    // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                    document.getElementById('postcode').value = data.zonecode;
+                    document.getElementById("roadAddress").value = roadAddr;
+                    document.getElementById("jibunAddress").value = data.jibunAddress;
+                    
+                    // 참고항목 문자열이 있을 경우 해당 필드에 넣는다.
+                    if(roadAddr !== ''){
+                        document.getElementById("extraAddress").value = extraRoadAddr;
+                    } else {
+                        document.getElementById("extraAddress").value = '';
+                    }
+
+                    var guideTextBox = document.getElementById("guide");
+                    // 사용자가 '선택 안함'을 클릭한 경우, 예상 주소라는 표시를 해준다.
+                    if(data.autoRoadAddress) {
+                        var expRoadAddr = data.autoRoadAddress + extraRoadAddr;
+                        guideTextBox.innerHTML = '(예상 도로명 주소 : ' + expRoadAddr + ')';
+                        guideTextBox.style.display = 'block';
+
+                    } else if(data.autoJibunAddress) {
+                        var expJibunAddr = data.autoJibunAddress;
+                        guideTextBox.innerHTML = '(예상 지번 주소 : ' + expJibunAddr + ')';
+                        guideTextBox.style.display = 'block';
+                    } else {
+                        guideTextBox.innerHTML = '';
+                        guideTextBox.style.display = 'none';
+                    }
+                }
+            }).open();
+        }
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

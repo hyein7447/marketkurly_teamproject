@@ -1,0 +1,128 @@
+body, html {
+  overflow-x: hidden;
+}
+
+main {
+  min-width: 1050px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+main .img_container img {
+  width: 100%;
+}
+main .intro {
+  background-color: #3c214c;
+}
+main .guide {
+  background-color: #f4f1fb;
+  padding-bottom: 100px;
+}
+main .guide .guide_btm {
+  position: relative;
+}
+main .guide .guide_btm .slide_img_container {
+  position: relative;
+  width: 100%;
+}
+main .guide .guide_btm .slide_img_container .slide_img {
+  margin: 0 auto;
+  width: 100%;
+  height: 663px;
+  display: flex;
+  justify-content: center;
+}
+main .guide .guide_btm .slide_img_container .slide_img img {
+  position: absolute;
+}
+main .guide .guide_btm .slide_img_container .guide_page_btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  right: 28%;
+}
+main .guide .guide_btm .slide_img_container .guide_page_btn .guide_page span {
+  color: #5F0080;
+  font-weight: 700;
+  padding: 0 3px;
+}
+main .guide .guide_btm .slide_img_container .guide_page_btn #prev_btn {
+  width: 50px;
+  height: 50px;
+  background: url(https://res.kurly.com/images/event/2021/0511/box/pc/btn_prev_type2.png) 50% 50% no-repeat;
+  background-size: 25%;
+}
+main .guide .guide_btm .slide_img_container .guide_page_btn #next_btn {
+  width: 50px;
+  height: 50px;
+  background: url(https://res.kurly.com/images/event/2021/0511/box/pc/btn_prev_type2.png) 50% 50% no-repeat;
+  background-size: 25%;
+  transform: rotate(180deg);
+}
+main .purchase_guide .purchase_btn {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main .purchase_guide .purchase_btn a {
+  display: block;
+  position: absolute;
+  width: 877px;
+  height: 100px;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .history {
+  background-color: #f4f1fb;
+  padding-bottom: 100px;
+}
+main .history .history_img {
+  width: 1050px;
+  height: 410px;
+  margin: 0 auto;
+  position: relative;
+  left: 90px;
+}
+main .history .history_img .scroll {
+  position: absolute;
+  display: flex;
+}
+main .design {
+  padding-bottom: 100px;
+}
+main .design .design_story {
+  display: flex;
+  height: -moz-max-content;
+  height: max-content;
+  width: 950px;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+main .design .design_story img {
+  width: 363px;
+  margin: 0 8px;
+}
+main .personal_box .personal_box_btn {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main .personal_box .personal_box_btn a {
+  display: block;
+  position: absolute;
+  width: 877px;
+  height: 100px;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .img002 {
+  position: relative;
+  top: -4px;
+}/*# sourceMappingURL=purplebox.css.map */

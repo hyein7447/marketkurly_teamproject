@@ -1,0 +1,70 @@
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+main .img_container img {
+  width: 100%;
+}
+main .intro {
+  background-color: #3c214c;
+}
+main .guide {
+  background-color: #f4f1fb;
+  padding-bottom: 100px;
+}
+main .guide .guide_btm {
+  position: relative;
+  width: 100%;
+}
+main .guide .guide_btm .slide_img {
+  width: 100%;
+  height: 663px;
+  display: flex;
+  justify-content: center;
+}
+main .guide .guide_btm .slide_img img {
+  position: absolute;
+}
+main .guide .guide_btm .guide_page_btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  right: 220px;
+}
+main .guide .guide_btm .guide_page_btn .guide_page span {
+  color: #5F0080;
+  font-weight: 700;
+  padding: 0 3px;
+}
+main .guide .guide_btm .guide_page_btn #prev_btn {
+  width: 50px;
+  height: 50px;
+  background: url(https://res.kurly.com/images/event/2021/0511/box/pc/btn_prev_type2.png) 50% 50% no-repeat;
+  background-size: 25%;
+}
+main .guide .guide_btm .guide_page_btn #next_btn {
+  width: 50px;
+  height: 50px;
+  background: url(https://res.kurly.com/images/event/2021/0511/box/pc/btn_prev_type2.png) 50% 50% no-repeat;
+  background-size: 25%;
+  transform: rotate(180deg);
+}
+main .purchase_guide .purchase_btn {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main .purchase_guide .purchase_btn a {
+  display: block;
+  position: absolute;
+  width: 877px;
+  height: 100px;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .img002 {
+  position: relative;
+  top: -3px;
+}/*# sourceMappingURL=purplebox.css.map */

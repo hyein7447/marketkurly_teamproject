@@ -16,8 +16,33 @@
                 <h1>주문서</h1>
                 <div class="order_top">
                     <div class="product_ordered">
-                        <h2>주문 상품</h2>
+                        <h2>
+                            주문 상품
+                            <a href="#"><img src="./images/main/icon/icon_arrow_down_333.png" alt=""></a>
+                        </h2>
                         <p class="order_item"><span class="item">[KS365] 3겹 천연펄프 화장지 (27m X 30롤)<!-- 주문상품 --></span>외 <span class="item_num">1개<!-- 주문상품 종류 갯수 --></span> 상품을 주문합니다.</p>
+                        <ul class="order_list">
+                            <li>
+                                <div class="order_list_left">
+                                    <p class="order_img"><img src="./images/main/product/p_003.jpg" alt=""></p>
+                                    <p class="order_item_name">[애슐리] 시카도 딥디쉬 피자</p>
+                                </div>
+                                <div class="order_list_right">
+                                    <p class="order_item_num">1개</p>
+                                    <p class="order_item_price">8,900원</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_list_left">
+                                    <p class="order_img"><img src="./images/main/product/p_007.jpeg" alt=""></p>
+                                    <p class="order_item_name">[픽어베이글] 플레인 베이글<span>[픽어베이글] 베이글 8종 (택1)</span></p>
+                                </div>
+                                <div class="order_list_right">
+                                    <p class="order_item_num">1개</p>
+                                    <p class="order_item_price">2,900원</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <div class="customer_info">
                         <h2>주문자 정보</h2>
@@ -82,8 +107,8 @@
                                 <p class="left">쿠폰 적용</p>
                                 <div class="coupon_wrap">
                                     <div class="coupon_wrap_top">
-                                        <p class="coupon_list_wrap"><button type="button" id="coupon_list">사용가능 쿠폰 0장 / 전체 0장<img src="./images/main/icon/icon_down_16x10.png" alt=""></button></p>
-                                        <p>쿠폰 적용 불가 상품입니다</p>
+                                        <p class="coupon_list_wrap"><button type="button" id="coupon_list">사용가능 쿠폰 0장 / 전체 0장<img src="./images/main/icon/icon_down_16x10_off.svg" alt=""></button></p>
+                                        <p class="coupon_unavailable">쿠폰 적용 불가 상품입니다</p>
                                         <a href="#">쿠폰 사용 문의(카카오톡) <img src="./images/main/icon/icon_arrow_right.svg" alt=""></a>
                                     </div>
                                     <a href="#"><img src="./images/sub/payment_kurlymembers_sale.png" alt=""></a>
@@ -136,7 +161,7 @@
                                         <button type="button" id="kakaopay_btn"><img src="./images/sub/icon_kakaopay.svg" alt=""></button>
                                         <span class="benefit_icon">혜택</span>
                                     </div>
-                                    <div class="method_type_btn"><button type="button" id="kurly_pay_btn"><img src="./images/main/logo/logo_marketkulry.svg" alt=""></button><span class="benefit_icon">혜택</span></div>
+                                    <div class="method_type_btn"><button type="button" id="kurly_pay_btn"><img src="./images/main/logo/logo_pay_purple.svg" alt=""></button><span class="benefit_icon">혜택</span></div>
                                     <div class="kurly_pay_wrap">
                                         <div class="kurly_pay_bg">
                                             <div class="kurly_pay">
@@ -155,7 +180,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <p class="kurlycard_active">컬리카드 결제 시 최대 <em>940원</em> 추가 적립</p>
+                                        <p class="kurlycard_active">컬리카드 결제 시 최대 <em>740원</em> 추가 적립</p>
                                     </div>
                                     <div class="payment_method_detail">
                                         <a href="#">신용카드</a>
@@ -163,8 +188,44 @@
                                         <a href="#">휴대폰</a>
                                     </div>
                                     <div class="credit_card">
-                                        <button type="button" id="select_card">카드를 선택해주세요<img src="./images/main/icon/icon_down_16x10.png" alt=""></button>
-                                        <button type="button" id="installment">할부를 선택해주세요<img src="./images/main/icon/icon_down_16x10_off.svg" alt=""></button>
+                                        <p><button type="button" id="select_card">카드를 선택해주세요<img src="./images/main/icon/icon_down_16x10.png" alt=""></button></p>
+                                        <p><button type="button" id="installment">할부를 선택해주세요<img src="./images/main/icon/icon_down_16x10_off.svg" alt=""></button></p>
+                                        <div class="select_card_list">
+                                            <a href="#">현대</a>
+                                            <a href="#">신한</a>
+                                            <a href="#">비씨(페이북)</a>
+                                            <a href="#">KB국민</a>
+                                            <a href="#">삼성</a>
+                                            <a href="#">롯데</a>
+                                            <a href="#">하나(외환)</a>
+                                            <a href="#">NH채움</a>
+                                            <a href="#">우리</a>
+                                            <a href="#">수협</a>
+                                            <a href="#">씨티</a>
+                                            <a href="#">광주</a>
+                                            <a href="#">전북</a>
+                                            <a href="#">제주</a>
+                                            <a href="#">신협체크</a>
+                                            <a href="#">MG새마을체크</a>
+                                            <a href="#">저축은행체크</a>
+                                            <a href="#">우체국카드</a>
+                                            <a href="#">KDB산업은행</a>
+                                            <a href="#">카카오뱅크</a>
+                                        </div>
+                                        <div class="select_installment_list">
+                                            <a href="#">일시불</a>
+                                            <a href="#">2개월(무이자)</a>
+                                            <a href="#">3개월(무이자)</a>
+                                            <a href="#">4개월</a>
+                                            <a href="#">5개월</a>
+                                            <a href="#">6개월</a>
+                                            <a href="#">7개월</a>
+                                            <a href="#">8개월</a>
+                                            <a href="#">9개월</a>
+                                            <a href="#">10개월</a>
+                                            <a href="#">11개월</a>
+                                            <a href="#">12개월</a>
+                                        </div>
                                     </div>
                                     <div class="guide_benefit">
                                         <div class="top">
@@ -220,9 +281,9 @@
                         <h2>결제 금액</h2>
                         <div class="payment_amount">
                             <ul>
-                                <li>주문금액<span>15,800 원</span></li>
-                                <li class="payment_amount_details">└ 상품금액<span>17,800<!-- 상품금액 --> 원</span></li>
-                                <li class="payment_amount_details">└ 상품할인금액<span>- 2,000<!-- 상품할인금액 --> 원</span></li>
+                                <li>주문금액<span>11,800 원</span></li>
+                                <li class="payment_amount_details">└ 상품금액<span>11,800<!-- 상품금액 --> 원</span></li>
+                                <li class="payment_amount_details">└ 상품할인금액<span>0<!-- 상품할인금액 --> 원</span></li>
                                 <li>배송비<span>+ 3,000 원</span></li>
                                 <li>쿠폰할인<span>0 원</span></li>
                                 <li>카드즉시할인<span>0 원</span></li>
@@ -230,8 +291,8 @@
                                 <li class="payment_amount_details">└ 적립금<span>0 원</span></li>
                                 <li class="payment_amount_details">└ 컬리캐시<span>0 원</span></li>
                             </ul>
-                            <p>최종결제금액 <span>18,800<em> 원</em></span></p>
-                            <p class="kurlycard_save">컬리카드 결제 시 최대 940원 추가 적립</p>
+                            <p>최종결제금액 <span>14,800<em> 원</em></span></p>
+                            <p class="kurlycard_save">컬리카드 결제 시 최대 740원 추가 적립</p>
                         </div>
                         <a href="#"><img src="./images/sub/payment_save_coupon.png" alt=""></a>
                     </div>
