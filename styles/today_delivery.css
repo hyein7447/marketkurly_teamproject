@@ -8,11 +8,31 @@ main .delivery_area {
   align-items: center;
   width: 100%;
 }
-main .delivery_area .area1 {
+main .delivery_area img {
+  margin: 0 auto;
+  width: 100%;
+}
+main .area2 {
   width: 100%;
   background-color: rgb(234, 230, 226);
 }
-main .delivery_area .area1 img {
+main .area2 img {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+main .area5 {
+  width: 100%;
+  background-color: rgb(216, 209, 223);
+}
+main .area5 .chk_zone img {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+main .area6, main .area7 {
+  width: 100%;
+  background-color: rgb(233, 231, 241);
+}
+main .area6 img, main .area7 img {
   max-width: 1050px;
   margin: 0 auto;
 }/*# sourceMappingURL=today_delivery.css.map */

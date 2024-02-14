@@ -30,6 +30,7 @@
 }
 
 .chatbot_sub {
+  display: none;
   position: fixed;
   right: 34px;
   bottom: 150px;

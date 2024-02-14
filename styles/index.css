@@ -1,3 +1,4 @@
+body {max-width: 820px;}
 main {}
 main .title a { display: flex; justify-content: center; font-weight: 600; font-size: 1.75rem ; align-items: center;
 margin-bottom: 10px;}
