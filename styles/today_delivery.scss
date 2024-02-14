@@ -1,0 +1,39 @@
+@import 'common';
+
+main {
+    width: 100%;
+    .delivery_area {
+        @include flex-col-ct-ct;
+        width:100%;
+        img {
+            margin: 0 auto;
+            width:100%;
+        }
+    }
+    .area2 { 
+        width: 100%;
+        background-color: rgb(234, 230, 226);
+        img {
+            max-width: 1050px; 
+            margin: 0 auto;
+        }
+    }
+    .area5 { 
+        width: 100%;
+        background-color: rgb(216, 209, 223);
+        .chk_zone {
+            img {
+            max-width: 1050px; 
+            margin: 0 auto;
+            }
+        }
+    }
+    .area6, .area7 { 
+        width: 100%;
+        background-color: rgb(233, 231, 241);
+        img {
+            max-width: 1050px; 
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,124 @@
+main {
+  width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 80px;
+}
+main aside h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 35px;
+  padding: 5px 0 35px 1px;
+  letter-spacing: -1px;
+}
+main aside .board_list {
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px solid #f2f2f2;
+}
+main aside .board_list a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  width: 197px;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 15px 13px 15px 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main aside .board_list a:first-child {
+  color: #5f0080;
+  background-color: #fafafa;
+}
+main aside .board_list a span img {
+  width: 14px;
+}
+main aside .help_wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  margin-top: 36px;
+  padding: 14px 14px 14px 20px;
+}
+main aside .help_wrap .help {
+  font-size: 0.875rem;
+}
+main aside .help_wrap .help em {
+  font-size: 0.75rem;
+}
+main aside .help_wrap img {
+  width: 14px;
+}
+main .notice {
+  width: 820px;
+}
+main .notice h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  margin-bottom: 27px;
+}
+main .notice h2 span {
+  margin-left: 11px;
+  font-size: 0.875rem;
+  letter-spacing: -0.3px;
+  color: #999;
+  line-height: 20px;
+}
+main .notice .title {
+  width: 570px;
+}
+main .notice .date, main .notice .writer {
+  width: 100px;
+}
+main .notice .notice_wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #333;
+  padding-left: 20px;
+}
+main .notice .notice_wrap p {
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 20px;
+}
+main .notice .notice_container {
+  padding-left: 20px;
+}
+main .notice .notice_container li {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(244, 244, 244);
+}
+main .notice .notice_container li a {
+  font-size: 0.875rem;
+  text-align: center;
+}
+main .notice .notice_container li .title {
+  text-align: left;
+  padding-left: 20px;
+}
+main .notice .notice_container li .date {
+  color: #999;
+}
+main .notice .pagenation {
+  padding: 60px 0 30px;
+  text-align: center;
+}
+main .notice .pagenation a:first-child {
+  margin-right: 12px;
+}/*# sourceMappingURL=notice.css.map */
