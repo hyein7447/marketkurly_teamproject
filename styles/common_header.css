@@ -102,7 +102,7 @@ header .header_top .user_info .map .map_open .map_btn .address_btn {
 header .header_top .user_info .map .map_open .map_btn .address_btn img{
     width: 20px; height: 20px; position: absolute; left: 32px; top: 9px;
 }
-header .header_top .user_info .map .map_open .map_btn .address_btn #map_search_btn {
+header .header_top .user_info .map .map_open .map_btn .address_btn .map_search_btn {
     font-size: 0.75rem; font-weight: 500;  color: #fff;
     cursor: pointer; width: 145px; height: 36px;
 }
