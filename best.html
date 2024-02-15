@@ -3812,7 +3812,7 @@
             </div>
             <!-- 추천순 탭 -->
             <ul class="filter_nav">
-                <li><a href="#">추천순<i class="fa-solid fa-question"></i></li>
+                <li><a href="#" class="nav_active">추천순<i class="fa-solid fa-question"></i></a></li>
                 <li><a href="#">신상품순</a></li>
                 <li><a href="#">판매량순</a></li>
                 <li><a href="#">혜택순</a></li>
@@ -3995,19 +3995,24 @@
             </div>
             <!-- 상단 필터 - 추천순 옆 ? 클릭시 팝업창 -->
             <div class="quest_box">
-                <p>추천순</p>
-                <p>소비자 인기도(판매량, 판매금액, 조회수 등), 상품 출시일, 수요 적합성, 상품 운영상 필요 등을 종합적으로 고려한 순서입니다.</p>
-                <a href="#">확인</a>
+                <div class="q_popup">
+                    <p>추천순</p>
+                    <p>소비자 인기도(판매량, 판매금액, 조회수 등), 상품 출시일, 수요 적합성, 상품 운영상 필요 등을 종합적으로 고려한 순서입니다.</p>
+                    <a href="#">확인</a>
+                </div>
             </div>
             <!-- 필터 클릭시 슬라이드되는 탭 영역 -->
             <div class="tab_slide">
                 <div class="bg">
                     <div class="area">
-                        <div class="title">
+                        <div class="bar_line">
+                            <span></span>
+                        </div>
+                        <div class="tab_title">
                             <h3>필터</h3>
                         </div>
                         <div class="list_title">
-                            <p>카테고리</p>
+                            <p class="list_title_active">카테고리</p>
                             <p>배송</p>
                             <p>가격</p>
                             <p>브랜드</p>
@@ -4017,7 +4022,7 @@
                         <ul class="list tab1">
                             <li>
                                 <a href="#" class="btn_chk">
-                                    <img src="./images/sub/icon_check1.png" alt="" class="imgId">
+                                    <img src="./images/sub/icon_check1.png" alt="">
                                     <p>간편식·밀키트·샐러드</p>
                                     <p>76</p>
                                 </a>
@@ -4045,7 +4050,8 @@
                             </li>
                             <li>
                                 <a href="#" class="btn_chk">
-                                    <i class="fa-regular fa-circle-check"></i>
+                                    <!-- <i class="fa-regular fa-circle-check"></i> -->
+                                    <img src="./images/sub/icon_check1.png" alt="">
                                     <p>생수·음료·커피</p>
                                     <p>19</p>
                                 </a>
@@ -4173,8 +4179,7 @@
                                 <a href="#">상품 많은순</a>
                             </div>
                             <div class="atoz_btn">
-                                <a href="#" class="atoz_active">전체</a>
-                                <a href="#">ㄱ</a>
+                                <a href="#" class="atoz_active">ㄱ</a>
                                 <a href="#">ㄴ</a>
                                 <a href="#">ㄷ</a>
                                 <a href="#">ㄹ</a>
