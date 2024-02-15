@@ -1,0 +1,543 @@
+@import 'common';
+
+// 태블릿
+@media screen and (max-width:820px) {
+    main{
+        max-width: 803px;
+        .bottom_option{display: none;}
+        .m_product_page_nav{
+            display: block;
+            background-color: #fff;
+            position: fixed;
+            max-width: 820px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            .nav_top{
+                @include flex-row-btw-ct;
+                #cart_btn{
+                    margin-right: 25px;
+                    img{width: 30px;}
+                }
+                h1{
+                    font-weight: 600
+                }
+            }
+            .nav_wrap{
+                padding: 0 16px;
+                @include flex-row-ct-ct;
+    
+                li{
+                    width: 100%;
+                    text-align: center;
+                    padding: 13px 0;
+                    box-shadow: rgb(221, 221, 221) 0px -0.5px 0px 0px inset;
+                    
+                    a{
+                        font-size: $px15;
+                        color: #666;
+                        font-weight: 500;
+    
+                        span{
+                            color: #999;
+                            font-size: $px12;
+                        }
+                    }
+                }
+            }
+        }
+        .product_container{
+            // max-width: 820px;
+            padding: 0;
+
+            .img_information{
+                display: block;
+
+                .img_container{
+                    width: 100%;
+                    img{width: 100%;}
+                }
+                .information{
+                    width: 100%;
+                    padding: 24px 16px 0;
+
+                    .newstar{
+                        font-size: $px13;
+                        font-weight: 600;
+                        margin-bottom: 6px;
+                        letter-spacing: -0.5px;
+                        line-height: 18px;
+                    }
+                    .title_share{
+
+                        h1{
+                            font-size: $px18;
+                            font-weight: 600;
+                        }
+                        .pc_icon_share{display: none;}
+                        .m_icon_share{
+                            display: block;
+                            img{
+                                width: 20px;
+                                margin: 0 10px;
+                            }
+                        }
+                    }
+                    .additional{
+                        font-size: $px14;
+                        margin-top: 4px;
+                        font-weight: 500;
+                    }
+                    .price{
+                        margin-top: 12px;
+                        em{
+                            font-size: $px24;
+                        }
+                    }
+                    .origin{
+                        margin-top: 8px;
+                        font-size: $px18;
+                        line-height: 23px;
+                        font-weight: 400;
+                    }
+                    .coupon{
+                        width: 100%;
+                    }
+                    .pc_item_info{display: none;}
+                    .m_item_info{
+                        border-top: 1px solid rgb(244, 244, 244);
+                        display: block;
+                        li{
+                            border: 0;
+                        }
+                        .m_item_info_top{
+                            padding: 10px 16px 24px;
+                            border-bottom: 8px solid #f4f4f4;
+                            dl{
+                                padding-top: 10px;
+                            }
+                        }
+                        .m_item_info_btm{
+                            padding: 0 16px 24px;
+
+                            h2{
+                                padding: 24px 0 6px;
+                                font-weight: bold;
+                                font-size: 1rem;
+                                line-height: 21px;
+                            }
+                            dl{
+                                width: 100%;
+                                margin-top: 10px;
+
+                                dt{
+                                    width: 85px;
+                                    font-weight: 400;
+                                }
+                                dd{
+                                    width: calc(100% - 85px);
+                                    .explanation{font-weight: 400;}
+                                    p{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .purchase{display: none;}
+                }
+            }
+            .product_page_nav{display: none;}
+            .description_container{
+                margin-top: 0;
+                padding: 0 16px;
+                width: 100%;
+
+                .intro{
+                    .main_img{
+                        margin-bottom: 48px;
+                    }
+                    .additional{
+                        font-size: $px20;
+                        margin-bottom: 7px;
+                        line-height: 22px;
+                        font-weight: 500;
+                    }
+                    h3{
+                        font-size: $px26;
+                        padding-bottom: 24px;
+                        line-height: 32px;
+                        font-weight: 500;
+                    }
+                    .description{
+                        margin: 24px 0 100px;
+                        font-size: $px14;
+                        color: #373737;
+                        line-height: 23px;
+                    }
+                }
+                .checkpoint{
+                    text-align: left;
+                    margin-bottom: 100px;
+                    img{width: 720px;}
+
+                    h3{
+                        text-align: center;
+                        margin-bottom: 50px;
+
+                        span{
+                            font-size: 1.406rem;
+                            padding: 0 10px;
+                            text-shadow: 1px 0px;
+                        }
+                        &::before{
+                            top: 13px;
+                        }
+                    }
+                    .pc_description_img{display: none;}
+                    .m_description_img{
+                        display: block;
+                        margin-bottom: 100px;
+                    }
+                    .content_img{
+                        margin-top: 90px;
+                    }
+                    .sub_title{
+                        margin: 36px 0 16px;
+                        font-size: $px18;
+                        line-height: 24px;
+                        color: #373737;
+                    }
+                    .description{
+                        font-size: $px14;
+                        line-height: 23px;
+                        color: #373737;
+                    }
+                }
+                .kurly_pick{
+                    text-align: left;
+                    img{width: 710px;}
+                    
+                    h3{
+                        text-align: center;
+                        margin-bottom: 50px;
+
+                        span{
+                            font-size: 1.406rem;
+                            padding: 0 15px;
+                        }
+                        &::before{
+                            top: 13px;
+                        }
+                    }
+                    ul{
+
+                        li{
+                            padding: 36px 0;
+                            margin-bottom: 0;
+                            &:last-child{padding-bottom: 90px;}
+
+                            .option{
+                                margin: 0;
+                                margin-bottom: 16px;
+                                font-size: $px18;
+                                font-weight: 500;
+                            }
+                            p{
+                                font-size: $px14;
+                                line-height: 23px;
+                                color: #373737;
+                                
+                                .option_detail{
+                                    font-size: $px14;
+                                    line-height: 23px;
+                                    color: #373737;
+                                }
+                            }
+                        }
+                    }
+                }
+                .tip_wrap{
+                    margin-bottom: 100px;
+
+                    h3{
+                        font-size: $px18;
+                        top: 6px;
+                        left: 15px;
+                        text-shadow: 1px 0;
+                    }
+                    .tip{
+                        padding: 30px 20px 20px;
+
+                        .sub_title{
+                            font-size: $px18;
+                            line-height: 24px;
+                            margin-bottom: 5px;
+                            font-weight: 500;
+                            letter-spacing: 0.5px;
+                        }
+                        .description{
+                            font-size: $px14;
+                            line-height: 23px;
+
+                        }
+                    }
+                }
+                .recipe{
+                    margin-bottom: 100px;
+
+                    h3{
+                        font-size: 1.406rem;
+                        font-weight: 500;
+                        padding: 0;
+                        padding-bottom: 10px;
+                        line-height: 33px;
+                        text-shadow: 1px 0;
+                    }
+                    .recipe_menu{
+                        font-size: $px18;
+                        margin-top: 10px;
+                        margin-bottom: 70px;
+                        text-align: center;
+                        font-weight: 500;
+                    }
+                    .sub_title{
+                        margin-top: 30px;
+                        margin-bottom: 16px;
+                        font-size: $px18;
+                        font-weight: 500;
+                        text-shadow: 1px 0;
+                    }
+                    .description{
+                        font-size: $px14;
+                        color: #373737;
+                        line-height: 23px;
+                    }
+                    img{width: 720px;}
+                }
+                .about_brand{
+                    margin-bottom: 0;
+                    img{width: 100%}
+                    
+                    
+                    .pc_about_brand_img{display: none;}
+                    .m_about_brand_img{
+                        display: block;
+                    }
+                    .touch{
+                        @include flex-row-ct-ct;
+                        margin: 120px 4px 0;
+                        border-radius: 24px;
+                        background-color: #f2f1f5;
+                        text-align: center;
+                        height: 48px;
+                        font-size: $px12;
+                        img{
+                            width: 32px;
+                            margin-left: 13px;
+                        }
+                    }
+                    h3{
+                        margin-bottom: 50px;
+                        
+                        span{
+                            font-size: 1.406rem;
+                            padding: 0 10px;
+                        }
+                        &::before{
+                            top: 13px;
+                        }
+                    }
+                    .description{
+                        margin: 36px 0 54px;
+                        font-size: $px14;
+                        line-height: 23px;
+                        color: #373737;
+                    }
+                }
+            }
+            .detail{
+                .pc_detail_img{display: none;}
+                .m_detail_img{
+                    display: block;
+                    img{width: 100%;}
+                }
+                .detail_contents1{display: none;}
+                .detail_contents2{display: none;}
+                .why_kurly{
+                    text-align: left;
+                    padding: 0 26px 22px;
+                    margin-top: 80px;
+                    margin-bottom: 20px;
+                    border: 0;
+
+                    h3{
+                        position: relative;
+                        span{
+                            font-size: 1.375rem;
+                            background-color: #fff;
+                            font-weight: 600;
+                            padding-right: 15px;
+                        }
+                        
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            background-color: #ddd;
+                            width: 100%;
+                            height: 1px;
+                            z-index: -100;
+                            top: 16px;
+                            left: 0;
+                        }
+                    }
+                    .pc_list_wrap{display: none;}
+                    .m_list_wrap{
+                        display: block;
+
+                        dl{
+                            display: flex;
+                            padding-top: 22px;
+                            dt{margin-right: 18px;}
+                            dd{
+                                font-size: $px13;
+                                line-height: 1.54;
+                                
+                                em{
+                                    display: block;
+                                    padding-bottom: 10px;
+                                    font-size: $px14;
+                                    color: $purple;
+                                    font-weight: 600;
+                                }
+                                span{
+                                    display: block;
+                                    padding-top: 7px;
+                                    font-size: $px11;
+                                    color: #666;
+                                }
+                            }
+                        }
+                    }
+                }
+                .inquiry_wrap{display: none;}
+                .exchange_refund{display: none;}
+                .order_cancel{display: none;}
+                .shipping{display: none;}
+            }
+            // 상단 nav 클릭 시 나타나는 메뉴들
+            .m_detail{
+                padding: 0 16px;
+                display: block;
+                
+                .m_detail_img{
+                    img{width: 100%;}
+                }
+                .detail_contents1{
+                    border-top: 1px solid #eee;
+                    h3{
+                        font-size: $px18;
+                        font-weight: bold;
+                        line-height: 23px;
+                        text-align: center;
+                        margin: 36px 0 13px;
+                    }
+                    ul{
+                        background-color: #fff;
+                        overflow-x: auto;
+                        position: sticky;
+                        width: max-content;
+                        left: 0;
+                        top: 88px;
+                        padding: 11px 0;
+                        gap: 8px;
+                        text-align: center;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        li{
+                            color: #4c4c4c;
+                            padding: 9px 15px 11px;
+                            border: 1px solid #eee;
+                            border-radius: 6px;
+                            font-size: $px14;
+                            line-height: 19px;
+                            min-width: 70px;
+                            max-width: 214px;
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                    .detail_box{
+                        margin-top: 7px;
+                        border-bottom: 8px solid #f4f4f4;
+                        dl{
+                            border-top: 1px solid #eee;
+                            display: flex;
+                            &:first-child{
+                                border: 0;
+                            }
+                            dt{
+                                width: 102px;
+                                padding: 12px 0;
+                                font-size: $px14;
+                                line-height: 19px;
+                            }
+                            dd{
+                                font-size: $px14;
+                                padding: 12px 14px;
+                                color: #666;
+                            }
+                        }
+                    }
+                }
+                .detail_contents2{
+                    border-bottom: 8px solid #f4f4f4;
+                    padding: 36px 0 24px;
+
+                    h3{
+                        margin-bottom: 13px;
+                        font-size: $px18;
+                        font-weight: bold;
+                        line-height: 23px;
+                        text-align: center;
+                    }
+                    dl{
+                        display: flex;
+                        dt{
+                            width: 102px;
+                            padding: 12px 0;
+                            font-size: $px14;
+                            line-height: 19px;
+                        }
+                        dd{
+                            font-size: $px14;
+                            padding: 12px 14px;
+                            color: #666;
+                        }
+                    }
+                }
+                .inquiry_wrap{
+                    text-align: center;
+                    background-color: red;
+                    
+                    h3{
+                        color: #666;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .review{display: none;}
+            .inquiry{display: none;}
+        }
+    }
+}
+
+// 모바일 max
+@media screen and (max-width:430px) {
+    
+}
+// 모바일 mini
+@media screen and (max-width:320px) {
+    
+}
