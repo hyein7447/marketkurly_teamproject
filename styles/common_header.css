@@ -7,7 +7,10 @@ header .pop_up p em {}
 header .pop_up .reset_btn {}
 header .pop_up .reset_btn a {}
 /* header 회원가입, 로그인, 고객센터 */
-header .user_page {width: 1050px; margin: 0 auto; display: flex; justify-content: flex-end; height: 32px;align-items: center; position: relative; }
+header .user_page {
+    display: none !important;
+    width: 1050px; margin: 0 auto; display: flex; justify-content: flex-end; height: 32px;align-items: center; position: relative; 
+}
 header .user_page a {font-size: 0.75rem;} /* 마이페이지 a 공통 */
 header .user_page .join {color: #5F0080;}
 header .user_page .login {}
@@ -31,8 +34,10 @@ header .user_page .cs_open a {
 }
 /* header top */
 header .header_top {
+    display: none !important;
     width: 1050px; height: 63px; margin: 0 auto;
-    display: flex; align-items: center; justify-content: space-between;}
+    display: flex; align-items: center; justify-content: space-between;
+}
 header .header_top .left {display: flex; align-items: center;}
 header .header_top .left .logo {}
 header .header_top .left .logo img {}
@@ -108,7 +113,10 @@ header .header_top .user_info .wish img {}
 header .header_top .user_info .cart {}
 header .header_top .user_info .cart img {}
 /* header bottom */
-header .header_btm {box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.07);}
+header .header_btm {
+    display: none;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.07);
+}
 header .header_btm nav {
     width: 1050px; height: 56px; display: flex; margin: 0 auto; justify-content: space-between;
     align-items: center; position: relative;
@@ -201,3 +209,4 @@ header .header_btm nav .delivery span em {
     letter-spacing: -0.32px;
     font-weight: 500;
 }
+
