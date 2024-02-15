@@ -1,3 +1,11 @@
+.m_product_page_nav {
+  display: none;
+}
+
+.m_detail {
+  display: none;
+}
+
 section {
   max-width: 1010px;
   width: 100%;
@@ -10,7 +18,6 @@ section {
   bottom: 0;
   width: 100%;
   z-index: 100;
-  display: none;
 }
 .bottom_option .bottom_wrap {
   margin: 0 auto;
@@ -214,6 +221,9 @@ section {
   font-weight: 500;
   color: #333;
 }
+.product_container .img_information .information .title_share .m_icon_share {
+  display: none;
+}
 .product_container .img_information .information .additional {
   font-size: 0.875rem;
   color: #b5b5b5;
@@ -251,6 +261,9 @@ section {
 .product_container .img_information .information .coupon p img {
   width: 16px;
   margin-top: 2px;
+}
+.product_container .img_information .information .m_item_info {
+  display: none;
 }
 .product_container .img_information .information ul {
   margin-top: 20px;
@@ -506,6 +519,9 @@ section {
   top: 40px;
   left: 0;
 }
+.product_container .description_container .checkpoint .m_description_img {
+  display: none;
+}
 .product_container .description_container .checkpoint .content_img {
   margin-top: 170px;
 }
@@ -561,6 +577,10 @@ section {
   line-height: 32px;
   font-size: 1.125rem;
   color: #373737;
+}
+.product_container .description_container .kurly_pick ul li p .option_detail {
+  font-size: 1.125rem;
+  font-weight: bold;
 }
 .product_container .description_container .tip_wrap {
   text-align: left;
@@ -624,6 +644,12 @@ section {
   text-align: left;
   margin-bottom: 270px;
 }
+.product_container .description_container .about_brand .m_about_brand_img {
+  display: none;
+}
+.product_container .description_container .about_brand .touch {
+  display: none;
+}
 .product_container .description_container .about_brand h3 {
   margin: 0 auto;
   position: relative;
@@ -655,8 +681,11 @@ section {
   font-size: 1.125rem;
   line-height: 32px;
 }
-.product_container .detail .detail_img {
+.product_container .detail .pc_detail_img {
   border-bottom: 1px solid rgb(221, 221, 221);
+}
+.product_container .detail .m_detail_img {
+  display: none;
 }
 .product_container .detail .detail_contents1 {
   padding: 72px 0;
@@ -743,23 +772,26 @@ section {
   padding: 100px 0 88px;
   border-bottom: 1px solid rgb(221, 221, 221);
 }
-.product_container .detail .why_kurly h3 {
+.product_container .detail .why_kurly h3 span {
   color: #666;
   font-size: 2.063rem;
 }
-.product_container .detail .why_kurly .list_wrap {
+.product_container .detail .why_kurly .m_list_wrap {
+  display: none;
+}
+.product_container .detail .why_kurly .pc_list_wrap {
   display: flex;
   flex-flow: row wrap;
   margin-top: 21px;
   justify-content: center;
 }
-.product_container .detail .why_kurly .list_wrap dl {
+.product_container .detail .why_kurly .pc_list_wrap dl {
   margin-top: 59px;
   display: flex;
   flex-flow: column nowrap;
   width: 315px;
 }
-.product_container .detail .why_kurly .list_wrap dl dt {
+.product_container .detail .why_kurly .pc_list_wrap dl dt {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -768,17 +800,17 @@ section {
   font-weight: 500;
   font-size: 1.125rem;
 }
-.product_container .detail .why_kurly .list_wrap dl dt img {
+.product_container .detail .why_kurly .pc_list_wrap dl dt img {
   width: 40px;
   margin-bottom: 10px;
 }
-.product_container .detail .why_kurly .list_wrap dl dd {
+.product_container .detail .why_kurly .pc_list_wrap dl dd {
   margin-top: 22px;
   line-height: 25px;
   font-weight: 300;
   color: #333;
 }
-.product_container .detail .why_kurly .list_wrap dl dd span {
+.product_container .detail .why_kurly .pc_list_wrap dl dd span {
   display: block;
   font-size: 0.688rem;
   color: #666;
@@ -816,7 +848,7 @@ section {
 .product_container .detail .inquiry_wrap ul li {
   width: 340px;
 }
-.product_container .detail .inquiry_wrap ul li p {
+.product_container .detail .inquiry_wrap ul li strong {
   display: flex;
   align-items: center;
   font-size: 1.125rem;
@@ -824,7 +856,7 @@ section {
   font-weight: 500;
   color: #5F0080;
 }
-.product_container .detail .inquiry_wrap ul li p::before {
+.product_container .detail .inquiry_wrap ul li strong::before {
   content: "";
   display: inline-block;
   width: 3px;

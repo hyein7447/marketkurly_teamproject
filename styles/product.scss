@@ -1,5 +1,7 @@
 @import 'common';
 
+.m_product_page_nav{display: none;}
+.m_detail{display: none;}
 section{
     max-width: 1010px;
     width: 100%;
@@ -114,7 +116,6 @@ section{
                 .each_price {
                     font-weight: bold;
                 }
-                a {}
             }
             .total {
                 margin-top: 20px;
@@ -183,7 +184,7 @@ section{
         }
     }
 
-    display: none;
+    // display: none;
 }
 
 .product_container {
@@ -222,11 +223,7 @@ section{
                     font-weight: 500;
                     color: #333;
                 }
-                a {
-                    img {
-
-                    }
-                }
+                .m_icon_share{display: none;}
             }
             .additional {
                 font-size: 0.875rem;
@@ -271,7 +268,8 @@ section{
                     }
                 }
             }
-            ul {
+            .m_item_info{display: none;}
+            ul{
                 margin-top: 20px;
 
                 li {
@@ -552,6 +550,7 @@ section{
                     left: 0;
                 }
             }
+            .m_description_img{display: none;}
             .content_img{                
                 margin-top: 170px;
             }
@@ -610,6 +609,11 @@ section{
                         line-height: 32px;
                         font-size: 1.125rem;
                         color: #373737;
+                        
+                        .option_detail{
+                            font-size: 1.125rem;
+                            font-weight: bold;
+                        }
                     }
                 }
             }
@@ -676,7 +680,9 @@ section{
         .about_brand{
             text-align: left;
             margin-bottom: 270px;
-
+            
+            .m_about_brand_img{display: none;}
+            .touch{display: none;}
             h3{
                 margin: 0 auto;
                 position: relative;
@@ -713,7 +719,8 @@ section{
     // section2 상품설명
     .detail{
 
-        .detail_img{border-bottom: 1px solid rgb(221, 221, 221);}
+        .pc_detail_img{border-bottom: 1px solid rgb(221, 221, 221);}
+        .m_detail_img{display: none;}
         .detail_contents1{
             padding: 72px 0;
             border-bottom: 1px solid rgb(221, 221, 221);
@@ -807,10 +814,13 @@ section{
             border-bottom: 1px solid rgb(221, 221, 221);
 
             h3{
-                color: #666;
-                font-size: 2.063rem;
+                span{
+                    color: #666;
+                    font-size: 2.063rem;
+                }
             }
-            .list_wrap{
+            .m_list_wrap{display: none;}
+            .pc_list_wrap{
                 display: flex;
                 flex-flow: row wrap;
                 margin-top: 21px;
@@ -887,7 +897,7 @@ section{
                 li{
                     width: 340px;
 
-                    p{
+                    strong{
                         display: flex;
                         align-items: center;
                         font-size: 1.125rem;
