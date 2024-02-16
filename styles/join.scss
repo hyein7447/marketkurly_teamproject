@@ -448,3 +448,144 @@ main {
         }
     }
 }
+@media screen and (max-width:540px) {
+    main {
+        .join {
+            max-width: 100%;
+            form {
+                .wrap {
+                    padding: 0 16px;
+                    li {
+                        padding: 10px 0px;
+                        @include flex-row-st;
+                        .title {
+                            padding-top: 15px;
+                            width:22%;
+                            p,em {
+                                font-weight: 500;
+                                font-size: $px11;
+                            }
+                        }
+                        .input_area.date {
+                            padding: 0;
+                            input {
+                                width: 30%;
+                            }
+                        }
+                        .input_area {
+                            width:58%;
+                            input::placeholder {
+                                font-size: $px11;
+                            }
+                            input {
+                                width:100%;
+                                padding: 0px 15px;
+                                height: 36px;
+                            }
+                            .gender_male, .gender_female, .gender_none {
+                                font-size: $px11;
+                                width: calc(100% / 3);
+                            }
+                            .gender , .event {
+                                height: 36px;
+                                label[class*=event]:checked {
+                                    width:16px;
+                                    height:16px;
+                                }
+                                label[class*=gender] {
+                                    width: calc(100% / 3);
+                                    font-size: $px11;
+                                }
+                                input[type=radio] {
+                                    width:16px;
+                                    height:16px;
+                                    font-size: $px11;
+                                }
+                                input[type=radio]:checked {
+                                    width:16px;
+                                    height:16px;
+                                }
+                            }
+                            .error_m {
+                                font-size: $px11;
+                            }
+                            .btn_search {
+                                height: 36px;
+                                font-size: $px11;
+                            }
+                        }
+                        .btn_area {
+                            width:18%;
+                            button {
+                                height: 35px;
+                                margin-left: 6px;
+                                font-size: $px11;
+                            }
+                            .btn_phone {
+                                height: 35px;
+                                margin-left: 6px;
+                                font-size: $px11;
+                            }
+                        }
+                        .event {
+                            label[class*=event] {
+                                font-size: $px11;
+                            }
+                            label[class*=gender]:checked {
+                                width:16px;
+                                height:16px;
+                            }
+                        }
+                        .hiden_tab1 {
+                            span {font-size: $px11;}
+                        }
+                    }
+                }
+                .terms {
+                    padding:10px 0px 10px 0 ;
+                    li {
+                        .title {
+                            p {font-size: $px11; em {font-size: $px11;}}
+                        }
+                        .agree_area {
+                            width: 75%;
+                            label[class=agree_all] {
+                                font-size: $px17;
+                                font-weight: 500;
+                            }
+                            p {
+                                line-height: 1.2rem;
+                                font-size: $px10;
+                            }
+                            div[class*=agree] {
+                                span {
+                                    font-size: $px11;
+                                }
+                                strong::after {
+                                    width: 10px;
+                                    height: 10px;
+                                    font-size: $px11;
+                                }
+                                strong {
+                                    font-size: $px11;
+                                    transform: translateY(4px);
+                                }
+                            }
+                        }
+                        .receive {
+                            p {
+                                font-size: $px10; 
+                                line-height: 1.2rem;
+                                margin-left: 40px;
+                                margin: 5px 0 5px 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            #btn_join {
+                margin: 20px auto 60px;
+            }
+        }
+    }
+}

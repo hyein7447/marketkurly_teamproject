@@ -17,8 +17,8 @@
 <body>
     <header>
         <div class="user_page">
-            <a href="#" class="join">회원가입</a>
-            <a href="#" class="login">로그인</a>
+            <a href="./join.html" class="join">회원가입</a>
+            <a href="./login.html" class="login">로그인</a>
             <div class="cs_bg">
                 <a href="#" class="cs">고객센터<img src="./images/main/icon/icon_down_16x10.png" alt="고객센터오픈"></a>
                 <div class="cs_open"> <!-- 마우스오버 js -->
@@ -542,12 +542,12 @@
                     </div>
                 </div>
                 <ul class="theme">
-                    <li><a href="#">신상품</a></li>
-                    <li><a href="#">베스트</a></li>
-                    <li><a href="#">알뜰쇼핑</a></li>
+                    <li><a href="./new.html">신상품</a></li>
+                    <li><a href="./best.html">베스트</a></li>
+                    <li><a href="./category_fruit.html">알뜰쇼핑</a></li>
                     <li><a href="#">특가/혜택</a></li>
                 </ul>
-                <a href="#" class="delivery">
+                <a href="./today_delivery.html" class="delivery">
                     <span><em>샛별·하루</em> 배송안내</span>
                 </a>
             </nav>

@@ -1,13 +1,12 @@
 @import 'common';
-
 main {
     position: relative;
     width: 100%;
     @include flex-col-ct-ct;
     .container {
         margin: 0 auto;
-        max-width: 1280px;
-        padding:90px 0 60px;
+        max-width: 460px;
+        padding:90px 16px 90px;
         h1 {
             font-size: $px20;
             font-weight: 800;
@@ -15,25 +14,25 @@ main {
         }
         form {
             fieldset {
-                min-width: 340px;
-                width: 450px;
+                width: 100%;
                 margin: 0px auto;
                 letter-spacing: -0.6px;
                 #user_id {
-                    height: 54px;
+                    height: 60px;
                     width: 100%;
                     margin: 30px 0 12px;
                     @include bo_dd4;
                     padding: 0px 15px;
                 }
                 #user_pw {
-                    height: 54px;
+                    height: 60px;
                     width: 100%;
                     margin-bottom: 12px;
                     @include bo_dd4;
                     padding: 0px 15px;
                 }
                 .info_look {
+                    padding: 7px 0;
                     @include flex-row-end-ct;
                     a:nth-child(1)::after {
                         @include bf_333_10px;
@@ -74,13 +73,13 @@ main {
                 }.btn_login {
                     width: 100%;
                     @include pull_pp3;
-                    height: 54px;
+                    height: 60px;
                     margin-top: 28px;
                 }
                 .btn_join {
                     width: 100%;
                     @include bo_pp3;
-                    height: 54px;
+                    height: 60px;
                     color: $purple;
                     font-weight: 500;
                     margin-top: 10px;
@@ -119,4 +118,8 @@ main {
             }
         }
     }
-}
+}    
+@media screen and (max-width:1280px) {}
+@media screen and (max-width:820px) {}
+@media screen and (max-width:430px) {}
+@media screen and (max-width:320px) {}

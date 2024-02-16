@@ -2,11 +2,11 @@
 body, html {scroll-behavior: smooth;}
 main {}
 /* 베스트 타이틀 영역 */
+main .best_mobile {display: none;}
 main .best {
     max-width:1280px;
     margin:0 auto;
 }
-main .best_mobile {display: none;}
 main .best .bnr {}
 main .best .bnr a {}
 main .best .bnr a img {

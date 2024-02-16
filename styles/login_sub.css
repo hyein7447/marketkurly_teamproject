@@ -2,9 +2,9 @@ main {
   width: 100%;
 }
 main .container {
-  max-width: 380px;
+  max-width: 550px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 90px 0;
 }
 main .container .title {
   padding-bottom: 30px;
