@@ -12,21 +12,21 @@
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/category_common.css">
     <!-- <link rel="stylesheet" href="./styles/category_m_common.css"> -->
 </head>
 <body>
+    <?php include("header.php"); ?>
     <main>
         <div class="best">
             <div class="top">
                 <h1>베스트</h1>
                 <div class="cate_list">
-                    <a href="#" class="top_active">TOP300</a>
-                    <a href="#">인기급상승</a>
+                    <a href="" class="top_active">TOP300</a>
+                    <a href="./new.html">인기급상승</a>
                     <a href="#">컬리에만있는</a>
-                    <a href="#">제철신선</a>
-                    <a href="#">직원추천상품</a>
+                    <a href="./category_fruit.html">제철신선</a>
+                    <a href="./category_fruit.html">직원추천상품</a>
                     <a href="#">찜이많은</a>
                 </div>
             </div>
@@ -3600,44 +3600,51 @@
                     <div class="name_result"><!-- js로 처리 / 브랜드 이름 위치 --></div>
                     <div class="product_box">
                         <div class="product">
-                            <div class="thumb"><p class="icon_cuppon">+30%쿠폰</p></div>
+                            <a href="./product.html" class="thumb">
+                                <div class="thumb_img"><p class="icon_cuppon">+30%쿠폰</p></div>
+                            </a>
                             <div class="btn_cart">
                                 <button type="button" class="btn_c">
                                     <img src="./images/main/icon/icon_cart_off.svg" alt="">
                                     <span>담기</span>
                                 </button>
                             </div>
-                            <div class="info"><!--js로 처리 / DB 영역-->
-                                <h3 class="p_brand">샛별배송</h3>
-                                <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
-                                <p class="p_explain">매일 아침을 여는 베이글</p>
-                                <p class="p_price_del"><del>14,500원</del></p>
-                                <p class="p_price"><em>15%</em>11,800원</p>
+                            <div class="info"><!-- js로 처리 / DB 영역-->
+                                <a href="./product.html">
+                                    <h3 class="p_brand">샛별배송</h3>
+                                    <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                                    <p class="p_explain">매일 아침을 여는 베이글</p>
+                                    <p class="p_price_del"><del>14,500원</del></p>
+                                    <p class="p_price"><em>15%</em>11,800원</p>
+                                </a>
                                 <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
                                 <p class="p_icon_only">Kurly Only</p>
                                 <p class="p_icon_ko">희소가치 프로젝트</p>
                             </div>
                         </div>
                         <div class="product">
-                            <div class="thumb"><p></p></div>
+                            <a href="./product.html" class="thumb"><p></p></a>
                             <div class="btn_cart">
                                 <button type="button" class="btn_c">
                                     <img src="./images/main/icon/icon_cart_off.svg" alt="">
                                     <span>담기</span>
                                 </button>
                             </div>
-                            <div class="info"><!--js로 처리 / DB 영역-->
-                                <h3 class="p_brand">샛별배송</h3>
-                                <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글</h2>
-                                <p class="p_explain">매일 아침을 여는 베이글</p>
-                                <p class="p_price_del"><del></del></p>
-                                <p class="p_price"><em></em>11,800원</p>
+                            <div class="info"><!-- js로 처리 / DB 영역-->
+                                <a href="./product.html">
+                                    <h3 class="p_brand">샛별배송</h3>
+                                    <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                                    <p class="p_explain">매일 아침을 여는 베이글</p>
+                                    <p class="p_price_del"><del>14,500원</del></p>
+                                    <p class="p_price">11,800원</p>
+                                </a>
                                 <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
+                                <p></p>
                                 <p></p>
                             </div>
                         </div>
                         <div class="product">
-                            <div class="thumb"><p></p></div>
+                            <a href="./product.html" class="thumb"><p></p></a>
                             <div class="btn_cart">
                                 <button type="button" class="btn_c">
                                     <img src="./images/main/icon/icon_cart_off.svg" alt="">
@@ -3645,122 +3652,154 @@
                                 </button>
                             </div>
                             <div class="info"><!--js로 처리 / DB 영역-->
-                                <h3 class="p_brand">샛별배송</h3>
-                                <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
-                                <p class="p_explain">매일 아침을 여는 베이글</p>
-                                <p class="p_price_del"><del>14,500원</del></p>
-                                <p class="p_price"><em>15%</em>11,800원</p>
+                                <a href="./product.html">
+                                    <h3 class="p_brand">샛별배송</h3>
+                                    <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                                    <p class="p_explain">매일 아침을 여는 베이글</p>
+                                    <p class="p_price_del"><del>14,500원</del></p>
+                                    <p class="p_price">11,800원</p>
+                                </a>
                                 <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
                                 <p></p>
                                 <p class="p_icon_ko">한정수량</p>
                             </div>
                         </div>
                         <div class="product">
-                            <div class="thumb"><p class="icon_cuppon">+30%쿠폰</p></div>
+                            <a href="./product.html" class="thumb">
+                                <div class="thumb_img"><p class="icon_cuppon">+30%쿠폰</p></div>
+                            </a>
                             <div class="btn_cart">
                                 <button type="button" class="btn_c">
                                     <img src="./images/main/icon/icon_cart_off.svg" alt="">
                                     <span>담기</span>
                                 </button>
                             </div>
-                            <div class="info"><!--js로 처리 / DB 영역-->
-                                <h3 class="p_brand">샛별배송</h3>
-                                <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
-                                <p class="p_explain">매일 아침을 여는 베이글</p>
-                                <p class="p_price_del"><del>14,500원</del></p>
-                                <p class="p_price"><em>15%</em>11,800원</p>
+                            <div class="info"><!-- js로 처리 / DB 영역-->
+                                <a href="./product.html">
+                                    <h3 class="p_brand">샛별배송</h3>
+                                    <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                                    <p class="p_explain">매일 아침을 여는 베이글</p>
+                                    <p class="p_price_del"><del>14,500원</del></p>
+                                    <p class="p_price"><em>15%</em>11,800원</p>
+                                </a>
                                 <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
                                 <p class="p_icon_only">Kurly Only</p>
+                                <p class="p_icon_ko">희소가치 프로젝트</p>
                             </div>
                         </div>
                         <div class="product">
-                            <div class="thumb"><p class="icon_cuppon">+30%쿠폰</p></div>
+                            <a href="./product.html" class="thumb">
+                                <div class="thumb_img"><p class="icon_cuppon">+30%쿠폰</p></div>
+                            </a>
                             <div class="btn_cart">
                                 <button type="button" class="btn_c">
                                     <img src="./images/main/icon/icon_cart_off.svg" alt="">
                                     <span>담기</span>
                                 </button>
                             </div>
-                            <div class="info"><!--js로 처리 / DB 영역-->
-                                <h3 class="p_brand">샛별배송</h3>
-                                <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
-                                <p class="p_explain">매일 아침을 여는 베이글</p>
-                                <p class="p_price_del"><del>14,500원</del></p>
-                                <p class="p_price"><em>15%</em>11,800원</p>
+                            <div class="info"><!-- js로 처리 / DB 영역-->
+                                <a href="./product.html">
+                                    <h3 class="p_brand">샛별배송</h3>
+                                    <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                                    <p class="p_explain">매일 아침을 여는 베이글</p>
+                                    <p class="p_price_del"><del>14,500원</del></p>
+                                    <p class="p_price"><em>15%</em>11,800원</p>
+                                </a>
                                 <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
                                 <p class="p_icon_only">Kurly Only</p>
+                                <p class="p_icon_ko">희소가치 프로젝트</p>
                             </div>
                         </div>
                         <div class="product">
-                            <div class="thumb"><p class="icon_cuppon">+30%쿠폰</p></div>
+                            <a href="./product.html" class="thumb">
+                                <div class="thumb_img"><p class="icon_cuppon">+30%쿠폰</p></div>
+                            </a>
                             <div class="btn_cart">
                                 <button type="button" class="btn_c">
                                     <img src="./images/main/icon/icon_cart_off.svg" alt="">
                                     <span>담기</span>
                                 </button>
                             </div>
-                            <div class="info"><!--js로 처리 / DB 영역-->
-                                <h3 class="p_brand">샛별배송</h3>
-                                <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
-                                <p class="p_explain">매일 아침을 여는 베이글</p>
-                                <p class="p_price_del"><del>14,500원</del></p>
-                                <p class="p_price"><em>15%</em>11,800원</p>
+                            <div class="info"><!-- js로 처리 / DB 영역-->
+                                <a href="./product.html">
+                                    <h3 class="p_brand">샛별배송</h3>
+                                    <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                                    <p class="p_explain">매일 아침을 여는 베이글</p>
+                                    <p class="p_price_del"><del>14,500원</del></p>
+                                    <p class="p_price"><em>15%</em>11,800원</p>
+                                </a>
                                 <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
                                 <p class="p_icon_only">Kurly Only</p>
+                                <p class="p_icon_ko">희소가치 프로젝트</p>
                             </div>
                         </div>
                         <div class="product">
-                            <div class="thumb"><p class="icon_cuppon">+30%쿠폰</p></div>
+                            <a href="./product.html" class="thumb">
+                                <div class="thumb_img"><p class="icon_cuppon">+30%쿠폰</p></div>
+                            </a>
                             <div class="btn_cart">
                                 <button type="button" class="btn_c">
                                     <img src="./images/main/icon/icon_cart_off.svg" alt="">
                                     <span>담기</span>
                                 </button>
                             </div>
-                            <div class="info"><!--js로 처리 / DB 영역-->
-                                <h3 class="p_brand">샛별배송</h3>
-                                <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
-                                <p class="p_explain">매일 아침을 여는 베이글</p>
-                                <p class="p_price_del"><del>14,500원</del></p>
-                                <p class="p_price"><em>15%</em>11,800원</p>
+                            <div class="info"><!-- js로 처리 / DB 영역-->
+                                <a href="./product.html">
+                                    <h3 class="p_brand">샛별배송</h3>
+                                    <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                                    <p class="p_explain">매일 아침을 여는 베이글</p>
+                                    <p class="p_price_del"><del>14,500원</del></p>
+                                    <p class="p_price"><em>15%</em>11,800원</p>
+                                </a>
                                 <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
                                 <p class="p_icon_only">Kurly Only</p>
+                                <p class="p_icon_ko">희소가치 프로젝트</p>
                             </div>
                         </div>
                         <div class="product">
-                            <div class="thumb"><p class="icon_cuppon">+30%쿠폰</p></div>
+                            <a href="./product.html" class="thumb">
+                                <div class="thumb_img"><p class="icon_cuppon">+30%쿠폰</p></div>
+                            </a>
                             <div class="btn_cart">
                                 <button type="button" class="btn_c">
                                     <img src="./images/main/icon/icon_cart_off.svg" alt="">
                                     <span>담기</span>
                                 </button>
                             </div>
-                            <div class="info"><!--js로 처리 / DB 영역-->
-                                <h3 class="p_brand">샛별배송</h3>
-                                <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
-                                <p class="p_explain">매일 아침을 여는 베이글</p>
-                                <p class="p_price_del"><del>14,500원</del></p>
-                                <p class="p_price"><em>15%</em>11,800원</p>
+                            <div class="info"><!-- js로 처리 / DB 영역-->
+                                <a href="./product.html">
+                                    <h3 class="p_brand">샛별배송</h3>
+                                    <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                                    <p class="p_explain">매일 아침을 여는 베이글</p>
+                                    <p class="p_price_del"><del>14,500원</del></p>
+                                    <p class="p_price"><em>15%</em>11,800원</p>
+                                </a>
                                 <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
                                 <p class="p_icon_only">Kurly Only</p>
+                                <p class="p_icon_ko">희소가치 프로젝트</p>
                             </div>
                         </div>
                         <div class="product">
-                            <div class="thumb"><p class="icon_cuppon">+30%쿠폰</p></div>
+                            <a href="./product.html" class="thumb">
+                                <div class="thumb_img"><p class="icon_cuppon">+30%쿠폰</p></div>
+                            </a>
                             <div class="btn_cart">
                                 <button type="button" class="btn_c">
                                     <img src="./images/main/icon/icon_cart_off.svg" alt="">
                                     <span>담기</span>
                                 </button>
                             </div>
-                            <div class="info"><!--js로 처리 / DB 영역-->
-                                <h3 class="p_brand">샛별배송</h3>
-                                <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
-                                <p class="p_explain">매일 아침을 여는 베이글</p>
-                                <p class="p_price_del"><del>14,500원</del></p>
-                                <p class="p_price"><em>15%</em>11,800원</p>
+                            <div class="info"><!-- js로 처리 / DB 영역-->
+                                <a href="./product.html">
+                                    <h3 class="p_brand">샛별배송</h3>
+                                    <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                                    <p class="p_explain">매일 아침을 여는 베이글</p>
+                                    <p class="p_price_del"><del>14,500원</del></p>
+                                    <p class="p_price"><em>15%</em>11,800원</p>
+                                </a>
                                 <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
                                 <p class="p_icon_only">Kurly Only</p>
+                                <p class="p_icon_ko">희소가치 프로젝트</p>
                             </div>
                         </div>
                     </div>
@@ -3829,9 +3868,9 @@
             </div>
             <div class="product_box">
                 <div class="product">
-                    <div class="thumb">
+                    <a href="./product.html" class="thumb">
                         <div class="thumb_img"><p class="icon_cuppon">+30%쿠폰</p></div>
-                    </div>
+                    </a>
                     <div class="btn_cart">
                         <button type="button" class="btn_c">
                             <img src="./images/main/icon/icon_cart_off.svg" alt="">
@@ -3839,40 +3878,41 @@
                         </button>
                     </div>
                     <div class="info"><!-- js로 처리 / DB 영역-->
-                        <h3 class="p_brand">샛별배송</h3>
-                        <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
-                        <p class="p_explain">매일 아침을 여는 베이글</p>
-                        <p class="p_price_del"><del>14,500원</del></p>
-                        <p class="p_price"><em>15%</em>11,800원</p>
+                        <a href="./product.html">
+                            <h3 class="p_brand">샛별배송</h3>
+                            <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                            <p class="p_explain">매일 아침을 여는 베이글</p>
+                            <p class="p_price_del"><del>14,500원</del></p>
+                            <p class="p_price"><em>15%</em>11,800원</p>
+                        </a>
                         <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
                         <p class="p_icon_only">Kurly Only</p>
                         <p class="p_icon_ko">희소가치 프로젝트</p>
                     </div>
                 </div>
                 <div class="product">
-                    <div class="thumb">
-                        <div class="thumb_img"><p></p></div>
-                    </div>
+                    <a href="./product.html" class="thumb"><p></p></a>
                     <div class="btn_cart">
                         <button type="button" class="btn_c">
                             <img src="./images/main/icon/icon_cart_off.svg" alt="">
                             <span>담기</span>
                         </button>
                     </div>
-                    <div class="info"><!--js로 처리 / DB 영역-->
-                        <h3 class="p_brand">샛별배송</h3>
-                        <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글</h2>
-                        <p class="p_explain">매일 아침을 여는 베이글</p>
-                        <p class="p_price_del"><del></del></p>
-                        <p class="p_price"><em></em>11,800원</p>
+                    <div class="info"><!-- js로 처리 / DB 영역-->
+                        <a href="./product.html">
+                            <h3 class="p_brand">샛별배송</h3>
+                            <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                            <p class="p_explain">매일 아침을 여는 베이글</p>
+                            <p class="p_price_del"><del>14,500원</del></p>
+                            <p class="p_price">11,800원</p>
+                        </a>
                         <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
+                        <p></p>
                         <p></p>
                     </div>
                 </div>
                 <div class="product">
-                    <div class="thumb">
-                        <div class="thumb_img"><p></p></div>
-                    </div>
+                    <a href="./product.html" class="thumb"><p></p></a>
                     <div class="btn_cart">
                         <button type="button" class="btn_c">
                             <img src="./images/main/icon/icon_cart_off.svg" alt="">
@@ -3880,116 +3920,154 @@
                         </button>
                     </div>
                     <div class="info"><!--js로 처리 / DB 영역-->
-                        <h3 class="p_brand">샛별배송</h3>
-                        <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
-                        <p class="p_explain">매일 아침을 여는 베이글</p>
-                        <p class="p_price_del"><del>14,500원</del></p>
-                        <p class="p_price"><em>15%</em>11,800원</p>
-                        <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
-                        <p></p>
-                        <p class="p_icon_ko">한정수량</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="thumb">
-                        <div class="thumb_img"><p></p></div>
-                    </div>
-                    <div class="btn_cart">
-                        <button type="button" class="btn_c">
-                            <img src="./images/main/icon/icon_cart_off.svg" alt="">
-                            <span>담기</span>
-                        </button>
-                    </div>
-                    <div class="info"><!--js로 처리 / DB 영역-->
-                        <h3 class="p_brand">샛별배송</h3>
-                        <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
-                        <p class="p_explain">매일 아침을 여는 베이글</p>
-                        <p class="p_price_del"><del>14,500원</del></p>
-                        <p class="p_price"><em>15%</em>11,800원</p>
-                        <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
-                        <p class="p_icon_only">Kurly Only</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="thumb">
-                        <div class="thumb_img"><p></p></div>
-                    </div>
-                    <div class="btn_cart">
-                        <button type="button" class="btn_c">
-                            <img src="./images/main/icon/icon_cart_off.svg" alt="">
-                            <span>담기</span>
-                        </button>
-                    </div>
-                    <div class="info"><!--js로 처리 / DB 영역-->
-                        <h3 class="p_brand">샛별배송</h3>
-                        <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
-                        <p class="p_explain">매일 아침을 여는 베이글</p>
-                        <p class="p_price_del"><del>14,500원</del></p>
-                        <p class="p_price"><em>15%</em>11,800원</p>
+                        <a href="./product.html">
+                            <h3 class="p_brand">샛별배송</h3>
+                            <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                            <p class="p_explain">매일 아침을 여는 베이글</p>
+                            <p class="p_price_del"><del>14,500원</del></p>
+                            <p class="p_price">11,800원</p>
+                        </a>
                         <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
                         <p></p>
                         <p class="p_icon_ko">한정수량</p>
                     </div>
                 </div>
                 <div class="product">
-                    <div class="thumb">
-                        <div class="thumb_img"><p></p></div>
-                    </div>
+                    <a href="./product.html" class="thumb">
+                        <div class="thumb_img"><p class="icon_cuppon">+30%쿠폰</p></div>
+                    </a>
                     <div class="btn_cart">
                         <button type="button" class="btn_c">
                             <img src="./images/main/icon/icon_cart_off.svg" alt="">
                             <span>담기</span>
                         </button>
                     </div>
-                    <div class="info"><!--js로 처리 / DB 영역-->
-                        <h3 class="p_brand">샛별배송</h3>
-                        <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
-                        <p class="p_explain">매일 아침을 여는 베이글</p>
-                        <p class="p_price_del"><del>14,500원</del></p>
-                        <p class="p_price"><em>15%</em>11,800원</p>
+                    <div class="info"><!-- js로 처리 / DB 영역-->
+                        <a href="./product.html">
+                            <h3 class="p_brand">샛별배송</h3>
+                            <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                            <p class="p_explain">매일 아침을 여는 베이글</p>
+                            <p class="p_price_del"><del>14,500원</del></p>
+                            <p class="p_price"><em>15%</em>11,800원</p>
+                        </a>
                         <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
                         <p class="p_icon_only">Kurly Only</p>
+                        <p class="p_icon_ko">희소가치 프로젝트</p>
                     </div>
                 </div>
                 <div class="product">
-                    <div class="thumb">
-                        <div class="thumb_img"><p></p></div>
-                    </div>
+                    <a href="./product.html" class="thumb">
+                        <div class="thumb_img"><p class="icon_cuppon">+30%쿠폰</p></div>
+                    </a>
                     <div class="btn_cart">
                         <button type="button" class="btn_c">
                             <img src="./images/main/icon/icon_cart_off.svg" alt="">
                             <span>담기</span>
                         </button>
                     </div>
-                    <div class="info"><!--js로 처리 / DB 영역-->
-                        <h3 class="p_brand">샛별배송</h3>
-                        <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
-                        <p class="p_explain">매일 아침을 여는 베이글</p>
-                        <p class="p_price_del"><del>14,500원</del></p>
-                        <p class="p_price"><em>15%</em>11,800원</p>
+                    <div class="info"><!-- js로 처리 / DB 영역-->
+                        <a href="./product.html">
+                            <h3 class="p_brand">샛별배송</h3>
+                            <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                            <p class="p_explain">매일 아침을 여는 베이글</p>
+                            <p class="p_price_del"><del>14,500원</del></p>
+                            <p class="p_price"><em>15%</em>11,800원</p>
+                        </a>
                         <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
-                        <p></p>
-                        <p class="p_icon_ko">한정수량</p>
+                        <p class="p_icon_only">Kurly Only</p>
+                        <p class="p_icon_ko">희소가치 프로젝트</p>
                     </div>
                 </div>
                 <div class="product">
-                    <div class="thumb">
-                        <div class="thumb_img"><p></p></div>
-                    </div>
+                    <a href="./product.html" class="thumb">
+                        <div class="thumb_img"><p class="icon_cuppon">+30%쿠폰</p></div>
+                    </a>
                     <div class="btn_cart">
                         <button type="button" class="btn_c">
                             <img src="./images/main/icon/icon_cart_off.svg" alt="">
                             <span>담기</span>
                         </button>
                     </div>
-                    <div class="info"><!--js로 처리 / DB 영역-->
-                        <h3 class="p_brand">샛별배송</h3>
-                        <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
-                        <p class="p_explain">매일 아침을 여는 베이글</p>
-                        <p class="p_price_del"><del>14,500원</del></p>
-                        <p class="p_price"><em>15%</em>11,800원</p>
+                    <div class="info"><!-- js로 처리 / DB 영역-->
+                        <a href="./product.html">
+                            <h3 class="p_brand">샛별배송</h3>
+                            <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                            <p class="p_explain">매일 아침을 여는 베이글</p>
+                            <p class="p_price_del"><del>14,500원</del></p>
+                            <p class="p_price"><em>15%</em>11,800원</p>
+                        </a>
                         <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
                         <p class="p_icon_only">Kurly Only</p>
+                        <p class="p_icon_ko">희소가치 프로젝트</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="./product.html" class="thumb">
+                        <div class="thumb_img"><p class="icon_cuppon">+30%쿠폰</p></div>
+                    </a>
+                    <div class="btn_cart">
+                        <button type="button" class="btn_c">
+                            <img src="./images/main/icon/icon_cart_off.svg" alt="">
+                            <span>담기</span>
+                        </button>
+                    </div>
+                    <div class="info"><!-- js로 처리 / DB 영역-->
+                        <a href="./product.html">
+                            <h3 class="p_brand">샛별배송</h3>
+                            <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                            <p class="p_explain">매일 아침을 여는 베이글</p>
+                            <p class="p_price_del"><del>14,500원</del></p>
+                            <p class="p_price"><em>15%</em>11,800원</p>
+                        </a>
+                        <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
+                        <p class="p_icon_only">Kurly Only</p>
+                        <p class="p_icon_ko">희소가치 프로젝트</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="./product.html" class="thumb">
+                        <div class="thumb_img"><p class="icon_cuppon">+30%쿠폰</p></div>
+                    </a>
+                    <div class="btn_cart">
+                        <button type="button" class="btn_c">
+                            <img src="./images/main/icon/icon_cart_off.svg" alt="">
+                            <span>담기</span>
+                        </button>
+                    </div>
+                    <div class="info"><!-- js로 처리 / DB 영역-->
+                        <a href="./product.html">
+                            <h3 class="p_brand">샛별배송</h3>
+                            <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                            <p class="p_explain">매일 아침을 여는 베이글</p>
+                            <p class="p_price_del"><del>14,500원</del></p>
+                            <p class="p_price"><em>15%</em>11,800원</p>
+                        </a>
+                        <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
+                        <p class="p_icon_only">Kurly Only</p>
+                        <p class="p_icon_ko">희소가치 프로젝트</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="./product.html" class="thumb">
+                        <div class="thumb_img"><p class="icon_cuppon">+30%쿠폰</p></div>
+                    </a>
+                    <div class="btn_cart">
+                        <button type="button" class="btn_c">
+                            <img src="./images/main/icon/icon_cart_off.svg" alt="">
+                            <span>담기</span>
+                        </button>
+                    </div>
+                    <div class="info"><!-- js로 처리 / DB 영역-->
+                        <a href="./product.html">
+                            <h3 class="p_brand">샛별배송</h3>
+                            <h2 class="p_title">[델리백베이글] 뉴욕 H&H 베이글 패밀리팩 2종 (택1)</h2>
+                            <p class="p_explain">매일 아침을 여는 베이글</p>
+                            <p class="p_price_del"><del>14,500원</del></p>
+                            <p class="p_price"><em>15%</em>11,800원</p>
+                        </a>
+                        <p class="p_review"><i class="fa-regular fa-comment-dots"></i>999+</p>
+                        <p class="p_icon_only">Kurly Only</p>
+                        <p class="p_icon_ko">희소가치 프로젝트</p>
                     </div>
                 </div>
             </div>
@@ -5143,6 +5221,7 @@
             </div>
         </div>
     </main>
+    <?php include("footer.php"); ?>
     <!-- <script>
         const li = document.querySelectorAll('.best_mobile > .tab_slide > li ') 
         const btn_chk = document.querySelector('.best_mobile > .tab_slide > .bg .btn_chk ')

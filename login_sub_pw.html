@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아이디·비밀번호 찾기 | 마켓컬리</title>
+    <title>비밀번호 찾기 | 마켓컬리</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
@@ -14,10 +14,11 @@
     <link rel="stylesheet" href="./styles/login_sub.css">
 </head>
 <body>
+    <?php include("header.php"); ?>
     <main>
         <div class="container">
             <div class="title">
-                <h1>아이디찾기</h1>
+                <h1>비밀번호 찾기</h1>
             </div>
             <div class="tab">
                 <a href="#" class="pp_active">휴대폰 인증</a>
@@ -52,10 +53,11 @@
                         <img src="./images/login/icon_cancle.svg" alt="입력 지우기">
                     </label>
                     <span class="error_m"><!-- js / 가입 시 등록한 이름을 입력해 주세요. --></span>
-                    <button type="button" id="mail_chk_active">확인</button>
+                    <button type="button" id="mail_chk_active" onclick="location.href='./login.html'">확인</button>
                 </div>
             </div>
         </div>
     </main>
+    <?php include("footer.php"); ?>
 </body>
 </html>

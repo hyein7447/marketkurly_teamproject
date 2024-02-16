@@ -5,7 +5,7 @@ main {
 }
 main .join {
   margin: 0 auto;
-  width: 640px;
+  max-width: 640px;
 }
 main .join h1 {
   font-size: 1.875rem;
@@ -218,7 +218,7 @@ main form .wrap li .btn_search + span {
   font-size: 0.875rem;
 }
 main form .terms {
-  padding: 10px 20px;
+  padding: 10px 0px 10px 20px;
   border-top: 1px solid #333;
 }
 main form .terms li {
@@ -228,7 +228,7 @@ main form .terms li {
   align-items: flex-start;
 }
 main form .terms li .title {
-  padding: 10px 20px 10px 0;
+  padding: 6px 20px 10px 0;
   width: 22%;
 }
 main form .terms li .title p, main form .terms li .title em {
@@ -242,7 +242,7 @@ main form .terms li .agree_area {
   width: 75%;
 }
 main form .terms li .agree_area label[class=agree_all] {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 500;
 }
 main form .terms li .agree_area label {
@@ -280,7 +280,7 @@ main form .terms li .agree_area label input:checked {
   transform: translateY(5px);
 }
 main form .terms li .agree_area span {
-  margin: 0 0 10px 30px;
+  margin: 10px 0 10px 30px;
   display: inline-block;
   font-size: 0.875rem;
 }
@@ -310,7 +310,7 @@ main form .terms li .agree_area div[class*=agree] strong {
   color: #5F0080;
 }
 main form .terms li .agree_area .receive .choice {
-  margin: 10px 0 10px 30px;
+  margin: 10px 0 0px 30px;
 }
 main form .terms li .agree_area .receive .choice label {
   cursor: pointer;
@@ -321,6 +321,9 @@ main form .terms li .agree_area .receive span {
   color: #5F0080;
   font-weight: 500;
   letter-spacing: -0.02rem;
+}
+main form .terms li .agree_area .receive span img {
+  transform: translateY(3px);
 }
 main .tab_terms1, main .tab_terms2, main .tab_terms3 {
   position: fixed;
