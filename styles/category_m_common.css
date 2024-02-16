@@ -122,10 +122,21 @@ main .best_mobile .filter_nav li a [class$=tion] {
   color: #ccc;
   transform: translateY(-3px);
 }
+main .best_mobile .array::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
 main .best_mobile .array {
   padding: 20px 0 30px;
+  overflow: auto scroll;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 main .best_mobile .array a {
+  flex-shrink: 0;
+  background-color: #fff;
   border-radius: 25px;
   border: 1px solid #eeeeee;
   padding: 8px 15px;
@@ -142,21 +153,16 @@ main .best_mobile .product_box {
   justify-content: space-between;
 }
 main .best_mobile .product_box .product {
-  min-width: 330px;
   margin-bottom: 30px;
   position: relative;
   width: calc(50% - 4px);
 }
 main .best_mobile .product_box .product .thumb {
-  height: 524px;
-  width: 100%;
-}
-main .best_mobile .product_box .product .thumb .thumb_img {
   background-image: url(../images/main/product/main_p_01.jpg);
   background-size: cover;
   background-position: center;
   display: block;
-  height: 100%;
+  padding-top: 140%;
   width: 100%;
   border-radius: 4px;
   cursor: pointer;
@@ -170,7 +176,6 @@ main .best_mobile .product_box .product .thumb p.icon_cuppon {
   left: 8px;
   padding: 4px 8px;
   color: #fff;
-  font-size: 0.875rem;
 }
 main .best_mobile .product_box .product .btn_cart .btn_c {
   width: 100%;
@@ -203,7 +208,7 @@ main .best_mobile .product_box .product .info .p_title {
   font-size: 1rem;
 }
 main .best_mobile .product_box .product .info .p_explain {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   padding-top: 4px;
   color: #999;
 }
@@ -311,6 +316,8 @@ main .best_mobile .tab_slide .bg {
 main .best_mobile .tab_slide .bg .bar_line {
   background-color: #fff;
   padding: 10px 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 main .best_mobile .tab_slide .bg .bar_line span {
   content: "";
@@ -325,8 +332,17 @@ main .best_mobile .tab_slide .bg .bar_line span {
 }
 main .best_mobile .tab_slide .bg .area {
   background-position-y: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* .tab1 {
+      display: none;
+  }
+  .tab6 {
+      display: block !important;
+  } */
 }
 main .best_mobile .tab_slide .bg .area .tab_title {
   padding: 20px 4px 10px;
@@ -361,17 +377,16 @@ main .best_mobile .tab_slide .bg .area .list_title p.list_title_active {
 }
 main .best_mobile .tab_slide .bg .area .list_title p {
   font-size: 1rem;
-  margin-right: 14px;
+  margin-right: 22px;
   font-weight: 500;
   position: relative;
 }
 main .best_mobile .tab_slide .bg .area .list {
   background-color: #fff;
   padding: 15px 0;
-  max-height: 500px;
-  min-height: 400px;
-  height: 430px;
+  height: 48vh;
   overflow-y: auto;
+  scrollbar-width: thin;
 }
 main .best_mobile .tab_slide .bg .area .list li {
   padding: 9px 4px 18px;

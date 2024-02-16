@@ -10,8 +10,9 @@
   height: 58px;
   position: fixed;
   right: 31px;
-  bottom: 15px;
+  bottom: 30px;
   cursor: pointer;
+  z-index: 999;
 }
 .main_btn #btn_chatbot:hover {
   background-image: url("../images/main/icon/footer/icon_chatbot_hover.png");
@@ -25,8 +26,9 @@
   height: 58px;
   position: fixed;
   right: 31px;
-  bottom: 78px;
+  bottom: 93px;
   cursor: pointer;
+  z-index: 999;
 }
 
 .chatbot_sub {
