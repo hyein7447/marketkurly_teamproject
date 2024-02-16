@@ -56,6 +56,11 @@ $px10: 0.625rem;
     justify-content: center;
     align-items: center;
 }
+@mixin flex-row-ct {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
 @mixin flex-row-ct-st {
     display: flex;
     flex-flow: row nowrap;
@@ -84,6 +89,11 @@ $px10: 0.625rem;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+}
+@mixin flex-col-st {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
 }
 @mixin flex-col-lf {
     display: flex;
