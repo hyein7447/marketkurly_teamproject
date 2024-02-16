@@ -519,11 +519,74 @@
                 }
                 .inquiry_wrap{
                     text-align: center;
-                    background-color: red;
+                    margin-top: 51px;
                     
                     h3{
                         color: #666;
                         font-weight: 600;
+                    }
+                    .m_inquiry{
+                        padding: 13px 0 0;
+                        font-weight: 600;
+                        font-size: $px12;
+                        color: $c-102;
+                        line-height: 19px;
+                        span{
+                            display: block;
+                            font-size: $px12;
+                            margin: 22px auto 0;
+                            padding: 13px 0;
+                        }
+                    }
+                    ul{
+                        margin-top: 43px;
+                        li{
+                            margin-bottom: 30px;
+                            strong{
+                                display: block;
+                                color: $purple;
+                                font-weight: 600;
+                                font-size: $px15;
+                                line-height: 19px;
+                            }
+                            em{
+                                display: block;
+                                padding: 6px 0 12px;
+                                font-size: $px12;
+                                color: $c-51;
+                                line-height: 17px;
+                            }
+                            span{
+                                display: block;
+                                padding: 16px 20px 7px;
+                                font-size: $px12;
+                                color: $c-153;
+                                line-height: 17px;
+                            }
+                            .m_inquiry_btn{
+                                width: 150px;
+                                height: 34px;
+                                border: 1px solid $c-242;
+                                border-radius: 18px;
+                                background-color: $c-242;
+                                font-size: $px14;
+                                color: $c-51;
+                            }
+                        }
+                    }
+                }
+                .exchange_refund{
+                    .guide_list{
+                        li{
+
+                            .guide_list_title{
+                                border-top: 1px solid $c-244;
+                                padding: 14px 0 16px;
+                                font-weight: 600;
+                                font-size: $px13;
+                                color: $purple;
+                            }
+                        }
                     }
                 }
             }

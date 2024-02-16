@@ -91,10 +91,12 @@ main{
             padding-left: 20px;
 
             li{
-                @include flex-row-btw-ct;
                 padding: 20px 0;
                 border-bottom: 1px solid rgb(244, 244, 244);
                 a{
+                    @include flex-row-btw-ct;
+                }
+                span{
                     font-size: $px14;
                     text-align: center;
                 }
