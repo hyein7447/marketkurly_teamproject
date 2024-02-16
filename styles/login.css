@@ -8,7 +8,7 @@ main .container {
   padding: 90px 0 60px;
 }
 main .container h1 {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 800;
   text-align: center;
 }
@@ -51,7 +51,7 @@ main .container form fieldset .info_look a:nth-child(2) {
   margin-left: 10px;
 }
 main .container form fieldset .info_look a {
-  font-size: 0.813rem;
+  font-size: 0.938rem;
 }
 main .container form fieldset .citation_num {
   display: none !important;
@@ -65,7 +65,7 @@ main .container form fieldset .citation_num {
 }
 main .container form fieldset .citation_num span {
   color: #666;
-  font-size: 0.813rem;
+  font-size: 0.938rem;
   text-align: center;
   font-weight: 500;
 }

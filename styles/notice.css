@@ -6,7 +6,7 @@ main {
   padding: 50px 0 80px;
 }
 main aside h1 {
-  font-size: 1.75rem;
+  font-size: 1.875rem;
   font-weight: 500;
   line-height: 35px;
   padding: 5px 0 35px 1px;
@@ -18,7 +18,7 @@ main aside .board_list {
   border: 1px solid #f2f2f2;
 }
 main aside .board_list a {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   width: 197px;
   border-bottom: 1px solid #f2f2f2;
@@ -45,10 +45,10 @@ main aside .help_wrap {
   padding: 14px 14px 14px 20px;
 }
 main aside .help_wrap .help {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 main aside .help_wrap .help em {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 main aside .help_wrap img {
   width: 14px;
@@ -59,7 +59,7 @@ main .notice {
 main .notice h2 {
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   font-weight: 500;
   line-height: 48px;
   letter-spacing: -0.5px;
@@ -67,7 +67,7 @@ main .notice h2 {
 }
 main .notice h2 span {
   margin-left: 11px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   letter-spacing: -0.3px;
   color: #999;
   line-height: 20px;
@@ -89,7 +89,7 @@ main .notice .notice_wrap {
   padding-left: 20px;
 }
 main .notice .notice_wrap p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   text-align: center;
   line-height: 20px;
 }
@@ -107,7 +107,7 @@ main .notice .notice_container li a {
   align-items: center;
 }
 main .notice .notice_container li span {
-  font-size: 0.875rem;
+  font-size: 1rem;
   text-align: center;
 }
 main .notice .notice_container li .title {

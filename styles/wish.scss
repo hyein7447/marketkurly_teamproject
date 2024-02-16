@@ -5,7 +5,7 @@
     padding: 50px 0;
     .user_info {
         @include flex-row-btw-ct;
-        width: 1050px;
+        max-width: 1280px;
         margin: 0 auto;
         .left {
             background: #fff;

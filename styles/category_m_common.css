@@ -56,7 +56,7 @@ main .best_mobile .sub_header .cate_title a img {
   padding: 4px;
 }
 main .best_mobile .sub_header .cate_title a span {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: -0.02rem;
 }
@@ -68,14 +68,14 @@ main .best_mobile .sub_header .filter {
   padding: 5px 8px;
 }
 main .best_mobile .sub_header .filter .left .num_total span {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 main .best_mobile .sub_header .filter .right a {
   margin-left: 10px;
 }
 main .best_mobile .sub_header .filter .right a span {
   margin-right: 2px;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 main .best_mobile .sub_header .filter .right a [class$=down] {
   font-size: 14px;
@@ -106,7 +106,7 @@ main .best_mobile .filter_nav li .nav_active {
 main .best_mobile .filter_nav li a {
   padding: 16px 0px 16px 16px;
   text-align: left;
-  font-size: 0.875rem;
+  font-size: 1rem;
   white-space: nowrap;
 }
 main .best_mobile .filter_nav li a [class$=tion] {
@@ -129,7 +129,7 @@ main .best_mobile .array a {
   border-radius: 25px;
   border: 1px solid #eeeeee;
   padding: 8px 15px;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 main .best_mobile .array a [class$=down] {
   font-size: 12px;
@@ -192,7 +192,7 @@ main .best_mobile .product_box .product .info {
   cursor: pointer;
 }
 main .best_mobile .product_box .product .info .p_brand {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #999;
   padding-top: 5px;
 }
@@ -200,7 +200,7 @@ main .best_mobile .product_box .product .info .p_title {
   line-height: 1.5rem;
   color: #111;
   padding-top: 4px;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 main .best_mobile .product_box .product .info .p_explain {
   font-size: 0.75rem;
@@ -211,24 +211,24 @@ main .best_mobile .product_box .product .info .p_price_del {
   padding-top: 4px;
 }
 main .best_mobile .product_box .product .info .p_price_del del {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #b5b5b5;
 }
 main .best_mobile .product_box .product .info .p_price {
   letter-spacing: -0.05rem;
   font-weight: 800;
   padding-top: 2px;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 main .best_mobile .product_box .product .info .p_price em {
   color: #fa622f;
   font-weight: 700;
   padding-right: 7px;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 main .best_mobile .product_box .product .info .p_review {
   padding-top: 8px;
-  font-size: 0.625rem;
+  font-size: 0.75rem;
 }
 main .best_mobile .product_box .product .info .p_review [class$=dots] {
   font-size: 12px;
@@ -237,7 +237,7 @@ main .best_mobile .product_box .product .info .p_review [class$=dots] {
 main .best_mobile .product_box .product .info .p_icon_only {
   padding: 2px 8px 4px;
   margin: 12px 2px 0px 0px;
-  font-size: 0.688rem;
+  font-size: 0.813rem;
   color: #5F0080;
   background-color: #f4f4f4;
   display: inline-block;
@@ -250,7 +250,7 @@ main .best_mobile .product_box .product .info .p_icon_only {
 main .best_mobile .product_box .product .info .p_icon_ko {
   padding: 2px 8px 4px;
   margin: 12px 2px 0px 0px;
-  font-size: 0.688rem;
+  font-size: 0.813rem;
   background-color: #f4f4f4;
   display: inline-block;
   font-weight: 600;
@@ -334,7 +334,7 @@ main .best_mobile .tab_slide .bg .area .tab_title {
   width: 100%;
 }
 main .best_mobile .tab_slide .bg .area .tab_title h3 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 main .best_mobile .tab_slide .bg .area .list_title {
@@ -360,7 +360,7 @@ main .best_mobile .tab_slide .bg .area .list_title p.list_title_active {
   font-weight: 800;
 }
 main .best_mobile .tab_slide .bg .area .list_title p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-right: 14px;
   font-weight: 500;
   position: relative;
@@ -388,12 +388,12 @@ main .best_mobile .tab_slide .bg .area .list li .btn_chk img, main .best_mobile 
 }
 main .best_mobile .tab_slide .bg .area .list li .btn_chk p:nth-child(2), main .best_mobile .tab_slide .bg .area .list li .btn_circle p:nth-child(2) {
   margin-right: 4px;
-  font-size: 0.938rem;
+  font-size: 1.063rem;
   font-weight: 400;
   color: #111;
 }
 main .best_mobile .tab_slide .bg .area .list li .btn_chk p:nth-child(3), main .best_mobile .tab_slide .bg .area .list li .btn_circle p:nth-child(3) {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: #cccccc;
 }
@@ -418,7 +418,7 @@ main .best_mobile .tab_slide .bg .area .list.tab4 .brand a:nth-child(2)::before 
   margin-left: 5px;
 }
 main .best_mobile .tab_slide .bg .area .list.tab4 .brand a {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: -0.03rem;
 }
@@ -437,7 +437,7 @@ main .best_mobile .tab_slide .bg .area .list.tab4 .atoz_btn a {
   padding: 6px 9px;
   background-color: #f7f7f7;
   color: #666;
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-right: 4px;
   margin-bottom: 10px;
 }
@@ -464,12 +464,12 @@ main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab ul.contents
 }
 main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab ul.contents li .btn_chk p:nth-child(2) {
   margin-right: 4px;
-  font-size: 0.938rem;
+  font-size: 1.063rem;
   font-weight: 400;
   color: #111;
 }
 main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab ul.contents li .btn_chk p:nth-child(3) {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: #cccccc;
 }
@@ -491,12 +491,12 @@ main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab.box2 .conte
 }
 main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab.box2 .contents li .btn_chk p:nth-child(2) {
   margin-right: 4px;
-  font-size: 0.938rem;
+  font-size: 1.063rem;
   font-weight: 400;
   color: #111;
 }
 main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab.box2 .contents li .btn_chk p:nth-child(3) {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: #cccccc;
 }
@@ -526,7 +526,7 @@ main .best_mobile .tab_slide .bg .area .btn_wrap .btn_reset [class$=right] {
 }
 main .best_mobile .tab_slide .bg .area .btn_wrap .btn_reset span {
   color: #ddd;
-  font-size: 0.938rem;
+  font-size: 1.063rem;
   white-space: nowrap;
 }
 main .best_mobile .tab_slide .bg .area .btn_wrap .btn_view {
@@ -539,5 +539,5 @@ main .best_mobile .tab_slide .bg .area .btn_wrap .btn_view {
 }
 main .best_mobile .tab_slide .bg .area .btn_wrap .btn_view span {
   color: #fff;
-  font-size: 0.938rem;
+  font-size: 1.063rem;
 }/*# sourceMappingURL=category_m_common.css.map */

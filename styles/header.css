@@ -22,25 +22,26 @@ header .user_page .login::after {
     content: ''; width: 1px; height: 13px; background: #d9d9d9;
     display: inline-block; margin: 0 8px;
 }
-header .user_page .cs {}
-header .user_page .cs img {
+header .user_page .cs_bg .cs {display: flex; position: relative; font-size:0.875rem ; line-height: 30px;}
+header .user_page .cs_bg .cs img {
     width: 10px; height: 7px; margin-left: 4px;
-    position: relative;
-    top: -1px;
+    position: relative; top: 12px;
 }
-header .user_page .cs_open {
+header .user_page .cs_bg .cs_open {
     display: flex; flex-flow: column nowrap; 
-    position: absolute;
-    right: 2px; top: 34px; width: 130px;
+    position: absolute; top: 30px;
+    width: 130px; right: 0;
     padding: 3px 9px; border: 1px solid #ddd;
     z-index: 99;
     background-color: #fff;
     display: none;
 }
-header .user_page .cs_open a {
+header .user_page .cs_bg .cs_open a {
     display: block; height: 24px; line-height: 24px;
     font-size: 0.875rem;
 }
+header .user_page .cs_bg:hover .cs_open {display: flex;}
+
 /* header top */
 header .header_top {
     max-width: 1280px; height: 63px; margin: 0 auto;
@@ -115,6 +116,7 @@ header .header_top .user_info .map .map_open .map_btn .address_btn .map_search_b
     cursor: pointer; width: 145px; height: 36px;
 }
 
+header .header_top .user_info .map:hover .map_open {display: block;}
 
 header .header_top .user_info .wish {margin-right: 20px;}
 header .header_top .user_info .wish img {}
@@ -127,14 +129,13 @@ header .header_btm nav {
     max-width: 1280px; height: 56px; display: flex; margin: 0 auto; justify-content: space-between;
     align-items: center; position: relative;
 }
-header .header_btm nav .category {font-weight: 500; white-space: nowrap; font-size: 1.125rem;}
+header .header_btm nav .category {font-weight: 500; white-space: nowrap; font-size: 1.125rem; line-height: 30px;}
 header .header_btm nav .category img {width: 16px; height: 14px; margin-right: 10px;}
 /* 카테고리 마우스 오버 시 출력되는 카데고리 */
 header .header_btm nav .gnb_bg {
     position: absolute; top: 46px; left: 0;
     max-height: calc(-55px + 95vh); overflow-y: hidden; overflow-x: hidden;
     min-height: 200px; display: flex;
-    display: none;
 }
 header .header_btm nav .gnb_bg .gnb_wrap {
     width: 517px; position: relative; z-index: 321; padding-top: 10px;

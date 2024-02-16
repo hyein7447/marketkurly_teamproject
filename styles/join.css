@@ -8,7 +8,7 @@ main .join {
   width: 640px;
 }
 main .join h1 {
-  font-size: 1.75rem;
+  font-size: 1.875rem;
   text-align: center;
   font-weight: 500;
   letter-spacing: -1px;
@@ -20,7 +20,7 @@ main .join .box_wrap_info {
   padding-bottom: 10px;
 }
 main .join .box_wrap_info span, main .join .box_wrap_info em {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 main .join .box_wrap_info em {
   color: #f03f40;
@@ -47,7 +47,7 @@ main form .wrap li .title {
 }
 main form .wrap li .title p, main form .wrap li .title em {
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 main form .wrap li .title em {
   color: #f03f40;
@@ -72,7 +72,7 @@ main form .wrap li .input_area .gender_male, main form .wrap li .input_area .gen
 main form .wrap li .input_area .error_m {
   display: inline-block;
   color: #f03f40;
-  font-size: 0.813rem;
+  font-size: 0.938rem;
   margin: 10px 0;
 }
 main form .wrap li .event {
@@ -88,7 +88,7 @@ main form .wrap li .event label[class*=event] {
   flex-flow: row nowrap;
   align-items: center;
   cursor: pointer;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 main form .wrap li .event input[type=radio] {
   background-image: url("../images/sub/icon_circle_off.svg");
@@ -110,7 +110,7 @@ main form .wrap li .event input[type=radio]:checked {
   background-image: url("../images/sub/icon_circle_on.svg");
 }
 main form .wrap li .hiden_tab1 span {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   margin-top: 12px;
 }
 main form .wrap li .hiden_tab1 .btn_area {
@@ -124,7 +124,7 @@ main form .wrap li .hiden_tab2 span:first-child {
   margin-top: 10px;
 }
 main form .wrap li .hiden_tab2 span {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   display: inline-block;
 }
 main form .wrap li .gender {
@@ -182,7 +182,7 @@ main form .wrap li .btn_area button {
   border-radius: 3px;
   height: 46px;
   margin-left: 8px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #5F0080;
 }
@@ -192,7 +192,7 @@ main form .wrap li .btn_area .btn_phone {
   border-radius: 4px;
   height: 46px;
   margin-left: 8px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #ddd;
 }
@@ -206,7 +206,7 @@ main form .wrap li .btn_search {
   align-items: center;
   width: 100%;
   color: #5F0080;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 main form .wrap li .btn_search img {
@@ -215,7 +215,7 @@ main form .wrap li .btn_search img {
 main form .wrap li .btn_search + span {
   display: inline-block;
   margin-top: 10px;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 main form .terms {
   padding: 10px 20px;
@@ -233,7 +233,7 @@ main form .terms li .title {
 }
 main form .terms li .title p, main form .terms li .title em {
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 main form .terms li .title em {
   color: #f03f40;
@@ -242,14 +242,14 @@ main form .terms li .agree_area {
   width: 75%;
 }
 main form .terms li .agree_area label[class=agree_all] {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 main form .terms li .agree_area label {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 main form .terms li .agree_area label em {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #999;
   font-weight: 500;
 }
@@ -282,7 +282,7 @@ main form .terms li .agree_area label input:checked {
 main form .terms li .agree_area span {
   margin: 0 0 10px 30px;
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 main form .terms li .agree_area div[class*=agree] {
   display: flex;
@@ -292,7 +292,7 @@ main form .terms li .agree_area div[class*=agree] {
   margin-bottom: 16px;
 }
 main form .terms li .agree_area div[class*=agree] span {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 main form .terms li .agree_area div[class*=agree] strong::after {
   background-image: url("../images/main/icon/icon_arrow_right.svg");
@@ -306,7 +306,7 @@ main form .terms li .agree_area div[class*=agree] strong::after {
   margin-left: 2px;
 }
 main form .terms li .agree_area div[class*=agree] strong {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #5F0080;
 }
 main form .terms li .agree_area .receive .choice {
@@ -343,7 +343,7 @@ main .tab_terms1 .tab_box h2, main .tab_terms2 .tab_box h2, main .tab_terms3 .ta
   display: block;
   padding: 30px 30px 24px;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 main .tab_terms1 .tab_box .contents, main .tab_terms2 .tab_box .contents, main .tab_terms3 .tab_box .contents {
   text-align: left;
@@ -362,7 +362,7 @@ main .tab_terms1 .tab_box .contents #object_first strong, main .tab_terms2 .tab_
   padding-bottom: 8px;
 }
 main .tab_terms1 .tab_box .contents #object_first span, main .tab_terms2 .tab_box .contents #object_first span, main .tab_terms3 .tab_box .contents #object_first span {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 main .tab_terms1 .tab_box .btn_ok, main .tab_terms2 .tab_box .btn_ok, main .tab_terms3 .tab_box .btn_ok {
   display: block;
@@ -385,7 +385,7 @@ main .tab_terms2 .tab_box h2, main .tab_terms3 .tab_box h2 {
   display: block;
   padding: 30px 30px 24px;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 main .tab_terms2 .tab_box .contents, main .tab_terms3 .tab_box .contents {
   text-align: left;
@@ -413,7 +413,7 @@ main .tab_terms2 .tab_box .contents table thead tr th:nth-child(2), main .tab_te
 }
 main .tab_terms2 .tab_box .contents table thead tr th, main .tab_terms3 .tab_box .contents table thead tr th {
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 1rem;
   padding: 10px 5px;
   background-color: #f4f4f4;
   border: 1px solid #ccc;
@@ -433,15 +433,15 @@ main .tab_terms2 .tab_box .contents table tbody tr td, main .tab_terms3 .tab_box
   padding: 5px;
   border: 1px solid #ccc;
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 19px;
 }
 main .tab_terms2 .tab_box .contents table tbody tr td em, main .tab_terms3 .tab_box .contents table tbody tr td em {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 600;
 }
 main .tab_terms2 .tab_box .contents table tbody tr td strong, main .tab_terms3 .tab_box .contents table tbody tr td strong {
-  font-size: 0.938rem;
+  font-size: 1.063rem;
   text-decoration: underline;
   font-weight: 600;
 }
@@ -451,12 +451,12 @@ main .tab_terms2 .tab_box .contents table strong, main .tab_terms3 .tab_box .con
   padding-bottom: 8px;
 }
 main .tab_terms2 .tab_box .contents table span, main .tab_terms3 .tab_box .contents table span {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 main .tab_terms2 .tab_box .contents p, main .tab_terms3 .tab_box .contents p {
   padding: 10px 5px;
   color: #999;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 main .tab_terms2 .tab_box .btn_ok, main .tab_terms3 .tab_box .btn_ok {
   display: block;

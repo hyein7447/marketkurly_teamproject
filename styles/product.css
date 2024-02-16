@@ -1054,7 +1054,7 @@ section {
   margin: 72px 0;
 }
 .product_container .review h2 {
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   font-weight: 500;
   line-height: 41px;
   letter-spacing: -0.5px;
@@ -1125,7 +1125,7 @@ section {
   padding-bottom: 8px;
 }
 .product_container .review .review_photo_more .photo_more_container .photo_more_top h3 {
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   font-weight: 500;
   line-height: 30px;
   letter-spacing: -0.5px;
@@ -1147,12 +1147,12 @@ section {
   margin-bottom: 16px;
 }
 .product_container .review .review_sorting p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 16px;
 }
 .product_container .review .review_sorting .sort_wrap .sort {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #999;
 }
 .product_container .review .review_sorting .sort_wrap .sort:first-child::after {
@@ -1208,7 +1208,7 @@ section {
   border-bottom: 1px solid #f4f4f4;
 }
 .product_container .review .review_opt_wrap .review_filter .opt_filter_box .filter_box_top .filter_title {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 20px;
 }
@@ -1218,14 +1218,14 @@ section {
 .product_container .review .review_opt_wrap .review_filter .opt_filter_box .filter_box_top .reset_btn_wrap .reset_btn i[class$=right] {
   color: #b5b5b5;
   margin-right: 5px;
-  font-size: 0.813rem;
+  font-size: 0.938rem;
 }
 .product_container .review .review_opt_wrap .review_filter .opt_filter_box .filter_box_contents {
   margin-top: 13px;
 }
 .product_container .review .review_opt_wrap .review_filter .opt_filter_box .filter_box_contents ul li {
   padding: 7px 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   letter-spacing: -0.05px;
 }
 .product_container .review .review_opt_wrap .review_filter .opt_filter_box .filter_box_contents ul li input {
@@ -1274,7 +1274,7 @@ section {
   border-bottom: 1px solid #f4f4f4;
 }
 .product_container .review .review_opt_wrap .review_filter .rating_filter_box .filter_box_top .filter_title {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 20px;
 }
@@ -1284,14 +1284,14 @@ section {
 .product_container .review .review_opt_wrap .review_filter .rating_filter_box .filter_box_top .reset_btn_wrap .reset_btn i[class$=right] {
   color: #b5b5b5;
   margin-right: 5px;
-  font-size: 0.813rem;
+  font-size: 0.938rem;
 }
 .product_container .review .review_opt_wrap .review_filter .rating_filter_box .filter_box_contents {
   margin-top: 13px;
 }
 .product_container .review .review_opt_wrap .review_filter .rating_filter_box .filter_box_contents ul li {
   padding: 7px 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   letter-spacing: -0.05px;
 }
 .product_container .review .review_opt_wrap .review_filter .rating_filter_box .filter_box_contents ul li input {
@@ -1328,7 +1328,7 @@ section {
   display: inline-block;
   width: 42px;
   border-radius: 4px;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 22px;
   text-align: center;
@@ -1344,7 +1344,7 @@ section {
 }
 .product_container .review .review_container .review_notice_wrap .review_notice .review_notice_contents p {
   line-height: 19px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   padding-bottom: 15px;
 }
 .product_container .review .review_container .review_notice_wrap .review_notice .review_notice_contents p:last-child {
@@ -1362,14 +1362,14 @@ section {
 }
 .product_container .review .review_container .review_contents_container .review_contents .left {
   width: 225px;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .product_container .review .review_container .review_contents_container .review_contents .left .best_icon, .product_container .review .review_container .review_contents_container .review_contents .left .rating_icon_m {
   display: inline-block;
   border-radius: 3px;
   padding: 3px 5px;
   font-weight: 500;
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   line-height: 10px;
   color: #fff;
 }
@@ -1384,12 +1384,12 @@ section {
 }
 .product_container .review .review_container .review_contents_container .review_contents .rigth_contents .selected_option {
   color: #999;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 19px;
   margin-bottom: 12px;
 }
 .product_container .review .review_container .review_contents_container .review_contents .rigth_contents p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 19px;
   margin-bottom: 14px;
 }
@@ -1426,7 +1426,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 .product_container .review .review_container .review_contents_container .review_contents .rigth_contents .date_helpfull_btn .helpful_btn img {
   width: 15px;
@@ -1449,7 +1449,7 @@ section {
 }
 .product_container .inquiry .inquiry_top_wrap h2 {
   margin-bottom: 16px;
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   font-weight: 500;
   line-height: 21px;
 }
@@ -1459,7 +1459,7 @@ section {
   text-align: center;
   color: #fff;
   border-radius: 3px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   height: 40px;
 }
 .product_container .inquiry .inquiry_top {
@@ -1468,12 +1468,12 @@ section {
 .product_container .inquiry .inquiry_top p {
   line-height: 19px;
   color: #999;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .product_container .inquiry .inquiry_top p a {
   line-height: 19px;
   color: #999;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -1491,7 +1491,7 @@ section {
   font-weight: 500;
   width: 710px;
   margin: 0 auto;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .product_container .inquiry .inquiry_list .inquiry_list_wrap .list_right {
   display: flex;
@@ -1499,7 +1499,7 @@ section {
   justify-content: space-between;
 }
 .product_container .inquiry .inquiry_list .inquiry_list_wrap .list_right p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   width: 100px;
   margin: 0 auto;
 }
@@ -1514,7 +1514,7 @@ section {
 }
 .product_container .inquiry .inquiry_list ul li p {
   width: 710px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #999;
 }
 .product_container .inquiry .inquiry_list ul li .writer {
@@ -1523,7 +1523,7 @@ section {
 .product_container .inquiry .inquiry_list ul li .writer * {
   line-height: 19px;
   letter-spacing: -0.5px;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .product_container .inquiry .inquiry_list ul li .writer p {
   text-align: center;
