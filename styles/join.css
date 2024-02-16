@@ -242,14 +242,14 @@ main form .terms li .agree_area {
   width: 75%;
 }
 main form .terms li .agree_area label[class=agree_all] {
-  font-size: 1.125rem;
+  font-size: 1.188rem;
   font-weight: 500;
 }
 main form .terms li .agree_area label {
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 main form .terms li .agree_area label em {
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: #999;
   font-weight: 500;
 }

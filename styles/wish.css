@@ -18,8 +18,9 @@
   display: flex;
   flex-flow: column;
   width: 100%;
-  margin-right: 4px;
+  margin-right: 8px;
   height: 100%;
+  white-space: nowrap;
 }
 .user_info_bg .user_info .left .user_level {
   display: flex;
@@ -115,7 +116,7 @@
 }
 .user_info_bg .user_info .right .top {
   display: flex;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 .user_info_bg .user_info .right .top a {
   display: flex;
@@ -123,7 +124,7 @@
   background-color: #fff;
   width: 222px;
   padding: 26px 0px 30px 30px;
-  margin-right: 4px;
+  margin-right: 8px;
   height: 100%;
 }
 .user_info_bg .user_info .right .top a span {
@@ -161,7 +162,7 @@
 .user_info_bg .user_info .bottom a {
   background: #fff;
   padding: 20px 30px;
-  margin-right: 4px;
+  margin-right: 8px;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -180,14 +181,14 @@
 .user_info_bnr a {
   background: url(../images/sub/wishlist_bnr.avif);
   display: block;
-  width: 1050px;
+  max-width: 1280px;
   height: 60px;
   margin: 0 auto;
   margin-top: 20px;
 }
 
 .my_kurly_bg {
-  width: 1050px;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
@@ -245,7 +246,7 @@
   height: 19px;
 }
 .my_kurly_bg .menu_c {
-  width: 820px;
+  width: calc(100% - 250px);
 }
 .my_kurly_bg .menu_c .container { /* 메뉴 컨테이너 공통 */
   display: none;
@@ -537,9 +538,6 @@
   height: 20px;
   margin-right: 4px;
 }
-.my_kurly_bg .menu_c .delivey_addr {
-  display: block;
-}
 .my_kurly_bg .menu_c .delivey_addr .title {
   display: flex;
   flex-flow: row nowrap;
@@ -818,6 +816,7 @@
   transform: scaleX(-1);
 }
 .my_kurly_bg .menu_c .coupon_list {
+  display: block;
   position: relative;
 }
 .my_kurly_bg .menu_c .coupon_list .title h2 {

@@ -2,8 +2,7 @@
 
 main {
     .container {
-        width:1050px;
-        height: 942px;
+        max-width: 1280px;
         margin: 0 auto;
         padding-bottom: 80px;
         .title {
@@ -22,11 +21,12 @@ main {
             justify-content: space-between;
             height: 100%;
             .product_list {
+                width: 70%;
                 height: 100%;
                 .check {
                     width: 100%;
                     padding: 18px 10px 16px 2px;
-                    font-size: 14px;
+                    font-size: $px16;
                     line-height: 26px;
                     font-weight: 500;
                     display: flex;
@@ -34,6 +34,7 @@ main {
 
                     input[id*=check] {
                         appearance: none;
+                        
 
                         & + label::before {
                             content: '\f058';
@@ -56,13 +57,14 @@ main {
                             font-size: $px14;
                             line-height: 26px;
                             font-weight: 600;
+                            font-size: $px16;
                         }
                         .num {}
                     }
                     a {
-                        font-size: $px14;
                         line-height: 26px;
                         font-weight: 600;
+                        font-size: $px16;
 
                         &::before {
                             @include bf_ddd_12px;
@@ -71,7 +73,7 @@ main {
                     }
                 }
                 .product_wrap {
-                    width: 742px;
+                    width: 100%;
                     .item {
                         border-top: 1px solid #333;
                         .title {
@@ -124,12 +126,13 @@ main {
                                 }
                             }
                             .product_img {
-                                width: 60px;
-                                height: 78px;
+                                width: 80px;
+                                height: 98px;
                                 margin-right: 20px;
                                 display: block;
                                 img {
-                                    width: 100%;
+                                    width: 80px;
+                                    height: 98px;
                                 }
                             }
                             .product_name {
@@ -138,6 +141,7 @@ main {
                                 display: block;
                                 line-height: 22px;
                                 font-weight: 500;
+                                font-size: $px16;
                             }
                             .num {
                                 
@@ -160,17 +164,19 @@ main {
                                 flex-flow: column;
                                 width: 127px;
                                 text-align: right;
+                                font-size: $px16;
 
                                 span {
                                     font-weight: 700;
                                     line-height: 24px;
+                                    font-size: $px16;
                                 }
                                 del {
                                     font-size: $px14;
                                     line-height: 24px;
                                     color: $c-181;
                                     padding-top: 4px;
-                                    
+                                    font-size: $px16;
                                 }
                             }
                             .delete_btn {
@@ -187,6 +193,7 @@ main {
             }
             .order {
                 width: 284px;
+                margin-left: 50px;
                 height: 100%;
                 padding-top: 60px;
                 .delivery {
@@ -299,7 +306,7 @@ main {
                     ul {
                         li {
                             font-size: $px12;
-                            line-height: 16px;
+                            line-height: 18px;
                             padding-top: 4px;
                             padding-left: 7px;
                             color: $c-102;

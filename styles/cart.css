@@ -1,6 +1,5 @@
 main .container {
-  width: 1050px;
-  height: 942px;
+  max-width: 1280px;
   margin: 0 auto;
   padding-bottom: 80px;
 }
@@ -21,12 +20,13 @@ main .container .content {
   height: 100%;
 }
 main .container .content .product_list {
+  width: 70%;
   height: 100%;
 }
 main .container .content .product_list .check {
   width: 100%;
   padding: 18px 10px 16px 2px;
-  font-size: 14px;
+  font-size: 1.125rem;
   line-height: 26px;
   font-weight: 500;
   display: flex;
@@ -55,11 +55,12 @@ main .container .content .product_list .check .fa span {
   font-size: 1rem;
   line-height: 26px;
   font-weight: 600;
+  font-size: 1.125rem;
 }
 main .container .content .product_list .check a {
-  font-size: 1rem;
   line-height: 26px;
   font-weight: 600;
+  font-size: 1.125rem;
 }
 main .container .content .product_list .check a::before {
   content: "";
@@ -70,7 +71,7 @@ main .container .content .product_list .check a::before {
   margin: 0 12px;
 }
 main .container .content .product_list .product_wrap {
-  width: 742px;
+  width: 100%;
 }
 main .container .content .product_list .product_wrap .item {
   border-top: 1px solid #333;
@@ -129,13 +130,14 @@ main .container .content .product_list .product_wrap .item .product .chk_btn inp
   top: 1px;
 }
 main .container .content .product_list .product_wrap .item .product .product_img {
-  width: 60px;
-  height: 78px;
+  width: 80px;
+  height: 98px;
   margin-right: 20px;
   display: block;
 }
 main .container .content .product_list .product_wrap .item .product .product_img img {
-  width: 100%;
+  width: 80px;
+  height: 98px;
 }
 main .container .content .product_list .product_wrap .item .product .product_name {
   width: 345px;
@@ -143,6 +145,7 @@ main .container .content .product_list .product_wrap .item .product .product_nam
   display: block;
   line-height: 22px;
   font-weight: 500;
+  font-size: 1.125rem;
 }
 main .container .content .product_list .product_wrap .item .product .num {
   display: flex;
@@ -166,16 +169,19 @@ main .container .content .product_list .product_wrap .item .product .price {
   flex-flow: column;
   width: 127px;
   text-align: right;
+  font-size: 1.125rem;
 }
 main .container .content .product_list .product_wrap .item .product .price span {
   font-weight: 700;
   line-height: 24px;
+  font-size: 1.125rem;
 }
 main .container .content .product_list .product_wrap .item .product .price del {
   font-size: 1rem;
   line-height: 24px;
   color: #b5b5b5;
   padding-top: 4px;
+  font-size: 1.125rem;
 }
 main .container .content .product_list .product_wrap .item .product .delete_btn img {
   width: 30px;
@@ -185,6 +191,7 @@ main .container .content .product_list .product_wrap .item .product .delete_btn 
 }
 main .container .content .order {
   width: 284px;
+  margin-left: 50px;
   height: 100%;
   padding-top: 60px;
 }
@@ -295,7 +302,7 @@ main .container .content .order .order_btn_bg #order_btn {
 }
 main .container .content .order .notice ul li {
   font-size: 0.875rem;
-  line-height: 16px;
+  line-height: 18px;
   padding-top: 4px;
   padding-left: 7px;
   color: #666;

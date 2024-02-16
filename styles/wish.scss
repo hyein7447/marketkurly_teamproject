@@ -13,8 +13,9 @@
             display: flex;
             flex-flow: column;
             width: 100%;
-            margin-right: 4px;
+            margin-right: 8px;
             height: 100%;
+            white-space: nowrap;
             .user_level {
                 display: flex;
                 .level_badge {
@@ -114,14 +115,14 @@
             flex-flow: column;
             .top {
                 display: flex;
-                margin-bottom: 4px;
+                margin-bottom: 8px;
                 a {
                     display: flex;
                     flex-flow: column;
                     background-color: #fff;
                     width: 222px;
                     padding: 26px 0px 30px 30px;
-                    margin-right: 4px;
+                    margin-right: 8px;
                     height: 100%;
 
                     span {
@@ -164,7 +165,7 @@
                 a {
                     background: #fff;
                     padding: 20px 30px;
-                    margin-right: 4px;
+                    margin-right: 8px;
                     width: 100%;
                     @include flex-row-btw-ct;
 
@@ -184,14 +185,14 @@
     a {
         background: url(../images/sub/wishlist_bnr.avif);
         display: block;
-        width: 1050px;
+        max-width: 1280px;
         height: 60px;
         margin: 0 auto;
         margin-top: 20px;
     }
 }
 .my_kurly_bg {
-    width: 1050px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
@@ -249,7 +250,7 @@
         }
     }
     .menu_c {
-        width: 820px;
+        width: calc(100% - 250px);
         .container { /* 메뉴 컨테이너 공통 */
             display: none;
             .title {
@@ -537,7 +538,6 @@
             }
         }
         .delivey_addr {
-            display: block;
             .title {
                 @include flex-row-btw-ct;
                 border-bottom: 2px solid #333;
@@ -834,6 +834,7 @@
             }
         }
         .coupon_list {
+            display: block;
             position: relative;
             .title {
                 h2 {

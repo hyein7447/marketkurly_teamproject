@@ -6,7 +6,7 @@ const gnb_bg = document.querySelector('.gnb_bg')
 console.log(gnb)
 
 gnb_bg.style.display = 'none'
-// gnb.style.display = 'none'
+gnb.style.display = 'none'
 
 category.addEventListener('mouseover',()=>{
     gnb_bg.style.display = 'block'
