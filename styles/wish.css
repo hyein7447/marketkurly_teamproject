@@ -33,7 +33,7 @@
   border-radius: 50%;
   border: 1px solid #5F0080;
   padding: 0 5px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   background-color: #fff;
   display: block;
   line-height: 45px;
@@ -46,7 +46,7 @@
   align-items: flex-start;
 }
 .user_info_bg .user_info .left .user_level .user_info_name h2 {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   margin-bottom: 6px;
   font-weight: 700;
 }
@@ -54,7 +54,7 @@
   display: flex;
 }
 .user_info_bg .user_info .left .user_level .user_info_name .member_level a {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #999;
   font-family: 600;
   letter-spacing: -0.8px;
@@ -82,7 +82,7 @@
   color: #fff;
   background-color: #f03f40;
   margin-right: 8px;
-  font-size: 0.688rem;
+  font-size: 0.813rem;
   letter-spacing: -0.3px;
   text-align: center;
   border-radius: 13px;
@@ -91,14 +91,14 @@
   line-height: 18px;
 }
 .user_info_bg .user_info .left .benefit span {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: -0.5px;
   line-height: 24px;
 }
 .user_info_bg .user_info .left .benefit span em {
   color: #5F0080;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: -0.5px;
 }
@@ -143,7 +143,7 @@
   height: 23px;
 }
 .user_info_bg .user_info .right em {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   color: #5F0080;
   font-weight: 700;
 }
@@ -200,7 +200,7 @@
 .my_kurly_bg .my_kurly h1 {
   padding: 5px 0px 35px 1px;
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 1.875rem;
   line-height: 35px;
   letter-spacing: -1px;
 }
@@ -215,7 +215,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #f2f2f2;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .my_kurly_bg .my_kurly .my_kurly_menu li a img {
   width: 19px;
@@ -234,11 +234,11 @@
   align-items: center;
 }
 .my_kurly_bg .my_kurly .user_q .txt p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 .my_kurly_bg .my_kurly .user_q .txt p span {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 .my_kurly_bg .my_kurly .user_q .img img {
   width: 19px;
@@ -251,11 +251,11 @@
   display: none;
 }
 .my_kurly_bg .menu_c .container .title h2 {
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   font-weight: 500;
 }
 .my_kurly_bg .menu_c .container .title .desc {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #999;
 }
 .my_kurly_bg .menu_c .order_list {
@@ -289,7 +289,7 @@
   padding: 16px 14px;
 }
 .my_kurly_bg .menu_c .order_list .title .date .date_top a {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .my_kurly_bg .menu_c .order_list .title .date .date_top img {
   width: 10px;
@@ -309,7 +309,7 @@
 .my_kurly_bg .menu_c .order_list .title .date .date_open a {
   display: block;
   width: 100%;
-  font-size: 0.875rem;
+  font-size: 1rem;
   padding: 12px 16px;
 }
 .my_kurly_bg .menu_c .order_list .title .date .date_open a:first-child {
@@ -345,7 +345,7 @@
   padding: 12px 10px;
   display: block;
   color: #fff;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .my_kurly_bg .menu_c .present_list {
   position: relative;
@@ -378,7 +378,7 @@
   padding: 16px 14px;
 }
 .my_kurly_bg .menu_c .present_list .title .date .date_top a {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .my_kurly_bg .menu_c .present_list .title .date .date_top img {
   width: 10px;
@@ -398,7 +398,7 @@
 .my_kurly_bg .menu_c .present_list .title .date .date_open a {
   display: block;
   width: 100%;
-  font-size: 0.875rem;
+  font-size: 1rem;
   padding: 12px 16px;
 }
 .my_kurly_bg .menu_c .present_list .title .date .date_open a:first-child {
@@ -427,12 +427,12 @@
 }
 .my_kurly_bg .menu_c .present_list .content_bg .content p span {
   color: #b5b5b5;
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-top: 10px;
   display: block;
 }
 .my_kurly_bg .menu_c .many_buy_list .title ul li {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #b5b5b5;
 }
 .my_kurly_bg .menu_c .many_buy_list .title ul li::before {
@@ -460,7 +460,7 @@
   border-bottom: 2px solid #333;
 }
 .my_kurly_bg .menu_c .wish_list .title p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #999;
   padding-left: 11px;
 }
@@ -515,7 +515,7 @@
   width: 104px;
   height: 36px;
   text-align: center;
-  font-size: 0.813rem;
+  font-size: 0.938rem;
   font-weight: 500;
   margin-bottom: 8px;
 }
@@ -524,7 +524,7 @@
   border-radius: 4px;
   width: 104px;
   height: 36px;
-  font-size: 0.813rem;
+  font-size: 0.938rem;
   font-weight: 500;
   color: #5F0080;
   display: flex;
@@ -555,7 +555,7 @@
 }
 .my_kurly_bg .menu_c .delivey_addr .title .left p {
   color: #999;
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-left: 11px;
 }
 .my_kurly_bg .menu_c .delivey_addr .title .right .map_search_btn {
@@ -572,7 +572,7 @@
   align-items: center;
 }
 .my_kurly_bg .menu_c .delivey_addr .content_bg .content .top span {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   text-align: center;
 }
@@ -607,7 +607,7 @@
 }
 .my_kurly_bg .menu_c .delivey_addr .content_bg .content .list .address [class$=check] {
   color: #5F0080;
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   padding-right: 12px;
   margin: 20px 10px;
 }
@@ -622,7 +622,7 @@
 .my_kurly_bg .menu_c .delivey_addr .content_bg .content .list .address .address_txt span:first-child {
   background-color: #f7f7f7;
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #666;
   text-align: center;
   display: block;
@@ -636,14 +636,14 @@
   padding-right: 62px;
 }
 .my_kurly_bg .menu_c .delivey_addr .content_bg .content .list p span {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .my_kurly_bg .menu_c .delivey_addr .content_bg .content .list p:nth-of-type(2) span {
   padding-left: 25px;
 }
 .my_kurly_bg .menu_c .delivey_addr .content_bg .content .list p em {
   color: #5F0080;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .my_kurly_bg .menu_c .delivey_addr .content_bg .content .list .change_icon [class$=pen] {
   color: #b5b5b5;
@@ -696,7 +696,7 @@
   padding: 22px 0px 0 3px;
 }
 .my_kurly_bg .menu_c .product_review .reivew_c .write_review_c .notice li {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #999;
   line-height: 20px;
 }
@@ -712,7 +712,7 @@
 }
 .my_kurly_bg .menu_c .product_review .reivew_c .write_review_c a {
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 16px;
   text-decoration-line: underline;
   margin: 6px 0 0 11px;
@@ -744,7 +744,7 @@
 }
 .my_kurly_bg .menu_c .product_q .title ul li {
   color: #999;
-  font-size: 0.875rem;
+  font-size: 1rem;
   letter-spacing: -0.3px;
 }
 .my_kurly_bg .menu_c .product_q .title ul li::before {
@@ -759,7 +759,7 @@
   top: -5px;
 }
 .my_kurly_bg .menu_c .product_q .title ul li span {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #999;
   font-weight: 700;
   text-decoration-line: underline;
@@ -772,7 +772,7 @@
   border-bottom: 1px solid #333;
 }
 .my_kurly_bg .menu_c .product_q .content_bg .content .top p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 600;
   text-align: center;
   padding: 20px 0;
@@ -834,7 +834,7 @@
   padding: 0 10px;
   width: 210px;
   height: 34px;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   letter-spacing: -0.6px;
   color: #eee;
   margin-right: 10px;
@@ -843,13 +843,13 @@
   width: 140px;
   height: 34px;
   background-color: #5F0080;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: #fff;
 }
 .my_kurly_bg .menu_c .coupon_list .title .coupon_add .notice_message {
   margin-top: 13px;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #fa622f;
   font-weight: 500;
 }
@@ -862,7 +862,7 @@
   border-bottom: 2px solid #333;
 }
 .my_kurly_bg .menu_c .coupon_list .content_bg .content .desc .left {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 .my_kurly_bg .menu_c .coupon_list .content_bg .content .desc .left::before {
   content: "";
@@ -876,7 +876,7 @@
   font-weight: 400;
 }
 .my_kurly_bg .menu_c .coupon_list .content_bg .content .desc .right {
-  font-size: 0.813rem;
+  font-size: 0.938rem;
   margin-right: 6px;
   font-weight: 400;
 }
@@ -888,7 +888,7 @@
   border-bottom: 1px solid #333;
 }
 .my_kurly_bg .menu_c .coupon_list .content_bg .content .top p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   padding: 18px 0 19px;
   font-weight: 600;
   text-align: center;
@@ -911,7 +911,7 @@
   width: 100px;
 }
 .my_kurly_bg .menu_c .coupon_list .content_bg .content p span {
-  font-size: 0.813rem;
+  font-size: 0.938rem;
   color: #666;
   text-align: center;
   display: block;
@@ -929,7 +929,7 @@
   line-height: 48px;
 }
 .my_kurly_bg .menu_c .kurly_style > .title p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   padding-left: 11px;
   letter-spacing: -0.3px;
   color: #999;
@@ -937,7 +937,7 @@
   padding-bottom: 27px;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm fieldset span {
-  font-size: 0.875rem;
+  font-size: 1rem;
   width: 205px;
   font-weight: 500;
   display: block;
@@ -994,12 +994,12 @@
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm fieldset .user_child #descendant + label::before {
   content: "\f058";
   color: #ddd;
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   margin-right: 12px;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm fieldset .user_child #descendant:checked + label::before {
   color: #5F0080;
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   margin-right: 12px;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie {
@@ -1027,12 +1027,12 @@
   height: 46px;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .title .left .beauty_txt h3 {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   margin-bottom: 5px;
   font-weight: 600;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .title .left .beauty_txt p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #999;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .title .open_icon {
@@ -1077,12 +1077,12 @@
   padding: 0 36px;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .content_bg .content_box .content .question p {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 700;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .content_bg .content_box .content .question .desc {
   margin: 10px 0px 30px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #999;
   font-weight: 500;
 }
@@ -1105,11 +1105,11 @@
   justify-content: flex-start;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .content_bg .content_box .content1 .choice .item .item_txt .skin_type {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .content_bg .content_box .content1 .choice .item .item_txt .type_desc {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 20px;
   margin-top: 6px;
   color: #666;
@@ -1159,11 +1159,11 @@
   justify-content: flex-start;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .content_bg .content_box .content2 .choice .item .item_txt .skin_type {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .content_bg .content_box .content2 .choice .item .item_txt .type_desc {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 20px;
   margin-top: 6px;
   color: #666;
@@ -1202,11 +1202,11 @@
   width: calc(50% - 10px);
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .content_bg .content_box .content4 .choice .item .type {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .proflie .content_bg .content_box .content4 .choice .item .type_desc {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 20px;
   margin-top: 6px;
   color: #666;
@@ -1252,7 +1252,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: -0.3px;
   position: relative;
@@ -1279,7 +1279,7 @@
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .setting > p {
   display: block;
   width: 205px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .setting .nondisclosure #nondisclosure_setting {
@@ -1292,7 +1292,7 @@
   transform: translateX(17px);
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .setting label span {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-right: 14px;
 }
@@ -1320,7 +1320,7 @@
   color: #666;
   width: 100%;
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .user_law {
   border-top: 2px solid #333;
@@ -1330,7 +1330,7 @@
   display: flex;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .user_law label span {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 600;
   letter-spacing: -0.3px;
   margin-bottom: 15px;
@@ -1344,17 +1344,17 @@
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .user_law #agree + label::before {
   content: "\f058";
   color: #ddd;
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   margin-right: 12px;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .user_law #agree:checked + label::before {
   color: #5F0080;
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   margin-right: 12px;
 }
 .my_kurly_bg .menu_c .kurly_style .content_bg .content .kurly_style_frm .user_law a {
   display: block;
-  font-size: 0.875rem;
+  font-size: 1rem;
   letter-spacing: -0.3px;
   text-decoration-line: underline;
   margin: 0 0 60px 35px;
@@ -1382,12 +1382,12 @@
   line-height: 48px;
 }
 .my_kurly_bg .menu_c .info_change .title p {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   padding-bottom: 8px;
   font-weight: 600;
 }
 .my_kurly_bg .menu_c .info_change .title p span {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   padding-bottom: 20px;
   display: block;
 }
@@ -1403,7 +1403,7 @@
   display: block;
   width: 139px;
   padding-top: 12px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 .my_kurly_bg .menu_c .info_change .content_bg .content .uesr_id #user_id_txt {
@@ -1423,7 +1423,7 @@
   display: block;
   width: 139px;
   padding-top: 12px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 .my_kurly_bg .menu_c .info_change .content_bg .content .user_pw span em {

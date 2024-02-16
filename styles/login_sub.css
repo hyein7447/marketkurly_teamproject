@@ -11,7 +11,7 @@ main .container .title {
 }
 main .container .title h1 {
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 1.875rem;
   text-align: center;
 }
 main .tab {
@@ -48,7 +48,7 @@ main .tab_contents .phone {
 }
 main .tab_contents .phone span {
   padding: 8px 0px 11px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 19px;
 }
@@ -75,7 +75,7 @@ main .tab_contents .phone .error_m {
   color: #f03f40;
   margin-bottom: 8px;
   margin-top: -5px;
-  font-size: 0.813rem;
+  font-size: 0.938rem;
   padding: 0;
 }
 main .tab_contents .phone #get_num {
@@ -94,7 +94,7 @@ main .tab_contents .email {
 }
 main .tab_contents .email span {
   padding: 8px 0px 11px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 19px;
 }
@@ -121,7 +121,7 @@ main .tab_contents .email .error_m {
   color: #f03f40;
   margin-bottom: 8px;
   margin-top: -5px;
-  font-size: 0.813rem;
+  font-size: 0.938rem;
   padding: 0;
 }
 main .tab_contents .email #mail_chk {

@@ -60,7 +60,7 @@
 }
 .chatbot_sub .home .top span {
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   color: #fff;
 }
 .chatbot_sub .home .contact {
@@ -88,11 +88,11 @@
 .chatbot_sub .home .contact .list1 .basic_chat .profile span span:first-child {
   display: block;
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   margin-bottom: 4px;
 }
 .chatbot_sub .home .contact .list1 .basic_chat .profile span span:nth-child(2) {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: -0.02rem;
 }
@@ -104,17 +104,17 @@
   color: #fff;
   border-radius: 4px;
   padding: 14px 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin: 20px 0 7px;
 }
 .chatbot_sub .home .contact .list1 > a span {
   color: #fff;
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-right: 5px;
 }
 .chatbot_sub .home .contact .list1 p {
   text-align: center;
-  font-size: 0.688rem;
+  font-size: 0.813rem;
   font-weight: 600;
 }
 .chatbot_sub .home .contact .list2 {
@@ -128,7 +128,7 @@
   margin-top: 15px;
 }
 .chatbot_sub .home .contact .list2 p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 .chatbot_sub .home .contact .list2 .chat_icon a img {
@@ -141,19 +141,19 @@
   color: #fff;
 }
 .chatbot_sub .home .contact .list3 [class$=dots] {
-  font-size: 0.813rem;
+  font-size: 0.938rem;
 }
 .chatbot_sub .home .contact .list3 p {
   color: #fff;
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 .chatbot_sub .chat {
   display: none;
 }
 .chatbot_sub .chat .top p {
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   color: #fff;
 }
 .chatbot_sub .chat .wrap .null {
@@ -190,7 +190,7 @@
 }
 .chatbot_sub .setting .top p {
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   color: #fff;
 }
 .chatbot_sub .setting .user_info {
@@ -218,14 +218,14 @@
 .chatbot_sub .setting .user_info .user_top p:nth-child(3) {
   color: #fff;
   margin: 5px 0 20px;
-  font-size: 0.813rem;
+  font-size: 0.938rem;
 }
 .chatbot_sub .setting .user_info .user_top a {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
   padding: 4px 10px;
   border-radius: 4px;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 .chatbot_sub .setting .user_info .user_top a i[class$=square] {
   color: #fff;
@@ -247,7 +247,7 @@
 }
 .chatbot_sub .setting .user_info .environment li span, .chatbot_sub .setting .user_info .set_alarm li span {
   color: #999;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .chatbot_sub .setting .user_info .environment li .t_icon, .chatbot_sub .setting .user_info .set_alarm li .t_icon {
   display: flex;
@@ -262,7 +262,7 @@
 }
 .chatbot_sub .setting .user_info .environment li .t_icon p, .chatbot_sub .setting .user_info .set_alarm li .t_icon p {
   color: #fff;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 .chatbot_sub .setting .user_info .environment li .lang, .chatbot_sub .setting .user_info .set_alarm li .lang {
@@ -278,7 +278,7 @@
 }
 .chatbot_sub .setting .user_info .environment li .lang p, .chatbot_sub .setting .user_info .set_alarm li .lang p {
   color: #fff;
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-right: 10px;
   font-weight: 300;
 }
@@ -335,7 +335,7 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  font-size: 0.938rem;
+  font-size: 1.063rem;
 }
 .chatbot_sub .navigation a [class*=fa] {
   margin-bottom: 5px;
@@ -363,11 +363,11 @@
   margin-right: 12px;
 }
 .sub2 .title p span:nth-child(1) {
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-bottom: 4px;
 }
 .sub2 .title p span:nth-child(2) {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #999;
 }
 .sub2 .title p span {
@@ -398,7 +398,7 @@
 .sub2 .notice_bnr p {
   color: #999;
   display: inline-block;
-  font-size: 0.813rem;
+  font-size: 0.938rem;
 }
 .sub2 .chat_qa {
   overflow-y: auto;
@@ -437,7 +437,7 @@
 }
 .sub2 .chat_qa .qa_list .qa_brand p span {
   color: #fff;
-  font-size: 0.688rem;
+  font-size: 0.813rem;
   font-weight: 400;
 }
 .sub2 .chat_qa .qa_list .qa_brand .comment_wrap .comment_box {
@@ -447,7 +447,7 @@
 .sub2 .chat_qa .qa_list .qa_brand .comment_wrap .comment_box .brand_ment {
   display: inline-block;
   color: #fff;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 300;
   margin-bottom: 4px;
   background-color: #444;
@@ -462,11 +462,11 @@
 .sub2 .chat_qa .qa_list .qa_brand .comment_wrap .comment_box .brand_ment span [class$=right] {
   color: #bd76ff;
   margin-right: 10px;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 .sub2 .chat_qa .qa_list .qa_brand .comment_wrap .comment_box .brand_ment span a {
   color: #bd76ff;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .sub2 .chat_qa .qa_list .qa_user {
   display: flex;
@@ -491,7 +491,7 @@
   border-radius: 16px;
   color: #fff;
   padding: 8px 14px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-bottom: 8px;
   font-weight: 300;
 }
@@ -506,7 +506,7 @@
   border-radius: 16px;
   color: #fff;
   padding: 8px 14px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-bottom: 8px;
   font-weight: 300;
 }
@@ -529,7 +529,7 @@
   border-radius: 16px;
   color: #fff;
   padding: 8px 14px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-bottom: 8px;
   font-weight: 300;
 }
@@ -545,7 +545,7 @@
   border-radius: 16px;
   color: #fff;
   padding: 8px 14px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-bottom: 8px;
   font-weight: 300;
 }
@@ -570,19 +570,20 @@
 }
 
 footer {
+  border-top: 1px solid #eee;
   width: 100%;
 }
 footer .f_container {
   margin: 0 auto;
-  width: 1050px;
+  max-width: 1280px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 30px 0 20px;
+  padding: 40px 0 20px;
 }
 footer .f_container .left p:nth-child(1) {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 500;
   padding-bottom: 17px;
 }
@@ -590,7 +591,7 @@ footer .f_container .left p:nth-child(2) {
   padding-bottom: 20px;
 }
 footer .f_container .left p:nth-child(2) .tel {
-  font-size: 1.75rem;
+  font-size: 1.875rem;
   margin-right: 8px;
   font-weight: 700;
 }
@@ -610,7 +611,7 @@ footer .f_container .left .kakao button, footer .f_container .left .question but
   height: 40px;
   text-align: center;
   margin: 6px 16px 16px 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 footer .f_container .left .kakao span, footer .f_container .left .question span, footer .f_container .left .bulk_order span {
   padding-top: 5px;
@@ -637,14 +638,14 @@ footer .f_container .left .kakao .info p span, footer .f_container .left .questi
 }
 footer .f_container .left .mail_send p, footer .f_container .left .mail_send a {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #999;
 }
 footer .f_list {
   padding-top: 10px;
   border-top: 1px solid #eeeeee;
   margin: 0 auto;
-  width: 1050px;
+  max-width: 1280px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -661,7 +662,7 @@ footer .f_list .isms img, footer .f_list .eprivacy img, footer .f_list .payments
   margin-right: 14px;
 }
 footer .f_list .isms span, footer .f_list .eprivacy span, footer .f_list .payments span, footer .f_list .wooribank span {
-  font-size: 0.625rem;
+  font-size: 0.65rem;
   color: #999;
   line-height: 1.1rem;
 }
@@ -674,6 +675,9 @@ footer .f_list .payments img {
 footer .f_list .wooribank img {
   height: 38px;
 }
+footer .right {
+  padding-top: 49px;
+}
 footer .right .kulry_f_info {
   padding: 4px 0 30px;
 }
@@ -681,20 +685,20 @@ footer .right .kulry_f_info a:nth-child(6) {
   font-weight: 600;
 }
 footer .right .kulry_f_info a {
-  font-size: 0.875rem;
-  margin-right: 10px;
+  font-size: 1rem;
+  margin-right: 18px;
   font-weight: 500;
 }
 footer .right .f_address {
   margin-bottom: 40px;
 }
 footer .right .f_address p {
-  font-size: 0.75rem;
+  font-size: 0.813rem;
   line-height: 1.3rem;
   color: #999;
 }
 footer .right .f_address p em {
-  font-size: 0.75rem;
+  font-size: 0.813rem;
   color: #5F0080;
   font-weight: 500;
 }
@@ -708,7 +712,7 @@ footer .right .f_address p span:nth-child(1)::after {
   transform: translateY(2px);
 }
 footer .right .f_address p span {
-  font-size: 0.75rem;
+  font-size: 0.813rem;
   color: #999;
   font-weight: 500;
 }
@@ -729,10 +733,10 @@ footer address .box {
 }
 footer address .box p, footer address .box em {
   color: #999;
-  font-size: 0.625rem;
+  font-size: 0.685rem;
   font-weight: 500;
   margin-bottom: 4px;
 }
 footer address .box p:nth-child(3) {
   margin-top: 8px;
-}/*# sourceMappingURL=common_footer.css.map */
+}/*# sourceMappingURL=footer.css.map */

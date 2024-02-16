@@ -74,7 +74,7 @@ main .best .container .left .title {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #eee;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     position: sticky; top: 0;
     z-index: 300;
     background-color: #fff;
@@ -128,10 +128,11 @@ main .best .container .left .list ul li .btn_chk p:nth-child(2) {
     margin-right: 4px;
     font-weight: 400;
     color: #111;
+    font-size: 0.875rem;
 }
 main .best .container .left .list ul li .btn_circle p:nth-child(3),
 main .best .container .left .list ul li .btn_chk p:nth-child(3) {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: 400;
     color:#ccc;
 }
@@ -172,11 +173,12 @@ main .best .container .left .list2 .brand a:nth-child(2)::before {
 }
 main .best .container .left .list2 .brand a:last-child {margin-right: 0;}
 main .best .container .left .list2 .brand a {
-    margin-right: 10px; font-weight: 400;
+    margin-right: 10px; font-weight: 400; font-size: 0.875rem;
 }
 main .best .container .left .list2 .brand a.name_active {
     color:#5f0080;
     font-weight: 600;
+    font-size: 0.875rem;
 }
 main .best .container .left .list2 .atoz_btn {
     display: flex; flex-flow: row wrap;
@@ -190,7 +192,7 @@ main .best .container .left .list2 .atoz_btn a {
     border-radius: 2px;
     line-height: 17px;
     color:#b5b5b5;
-    font-size: 0.938rem;
+    font-size: 0.875rem;
     height: 22px;
     width:20px;
     display: inline-block;
@@ -201,7 +203,7 @@ main .best .container .left .list2 .atoz_btn a {
     font-weight: 500;
 }
 main .best .container .left .list2 .atoz_btn a.atoz_active {
-    background-color: #333; color:#fff;
+    background-color: #333; color:#fff; font-size: 0.875rem;
 }
 main .best .container .left .list2 .box {
     position: relative;
@@ -214,7 +216,7 @@ main .best .container .left .list2 .box .contents li .btn_chk img {width:18px;}
 main .best .container .left .list2 .box .contents li .btn_circle p:nth-child(2) {}
 main .best .container .left .list2 .box .contents li .btn_circle p:nth-child(3) {}
 main .best .container .left .list2 .box .con1 {
-    display: none;
+    /* display: none; */
 }
 main .best .container .left .list2 .box .con2 {
     display: none;
@@ -329,7 +331,7 @@ main .best .container .right .lnb {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 /* ◇ --- js 부분(총 몇건) --- ◇ */
 main .best .container .right .lnb .total {}
@@ -398,7 +400,7 @@ main .best .container .right .product_box {
 }
 main .best .container .right .product_box .product {
     width:calc((100% / 3) - 10px);
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     position: relative;
 }
 main .best .container .right .product_box .product .thumb {
@@ -441,29 +443,29 @@ main .best .container .right .product_box .product .info {
     padding: 8px 10px 0 0;
     cursor: pointer;
 }
-main .best .container .right .product_box .product .info .p_brand {
+main .best .container .right .product_box .product .info a .p_brand {
     color:#999;
 }
-main .best .container .right .product_box .product .info .p_title {
+main .best .container .right .product_box .product .info a .p_title {
     line-height: 1.5rem; color: #111;
     padding-top: 4px;
 }
-main .best .container .right .product_box .product .info .p_explain {
+main .best .container .right .product_box .product .info a .p_explain {
     font-size: 0.875rem; padding-top: 4px;
     color:#999;
 }
-main .best .container .right .product_box .product .info .p_price_del {
+main .best .container .right .product_box .product .info a .p_price_del {
     padding-top: 8px;
 }
-main .best .container .right .product_box .product .info .p_price_del del {
+main .best .container .right .product_box .product .info a .p_price_del del {
     color:#b5b5b5;
 }
-main .best .container .right .product_box .product .info .p_price {
+main .best .container .right .product_box .product .info a .p_price {
     letter-spacing: -0.05rem;
     font-weight: 800;
     padding-top: 2px;
 }
-main .best .container .right .product_box .product .info .p_price em {
+main .best .container .right .product_box .product .info a .p_price em {
     color:#fa622f;
     font-weight: 700;
     margin-right: 7px;

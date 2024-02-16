@@ -6,7 +6,7 @@ main {
     width: 100%;
     .join {
         margin: 0 auto;
-        width: 640px;
+        max-width: 640px;
         h1 {
             font-size: $px28;
             text-align: center;
@@ -202,13 +202,13 @@ main {
             }
         }
         .terms {
-            padding:10px 20px ;
+            padding:10px 0px 10px 20px ;
             border-top: 1px solid #333;
             li {
                 padding: 10px 0px 10px 0;
                 @include flex-row-st;
                 .title {
-                    padding: 10px 20px 10px 0;
+                    padding: 6px 20px 10px 0;
                     width:22%;
                     p,em {
                         font-weight: 500;
@@ -221,13 +221,13 @@ main {
                 .agree_area {
                     width: 75%;
                     label[class=agree_all] {
-                        font-size: $px18;
+                        font-size: $px17;
                         font-weight: 500;
                     }
                     label {
-                        font-size: $px14;
+                        font-size: $px12;
                         em {   
-                            font-size: $px14;
+                            font-size: $px12;
                             color: $c-153;
                             font-weight: 500;
                         }
@@ -255,7 +255,7 @@ main {
                         }
                     }
                     span {
-                        margin: 0 0 10px 30px;
+                        margin: 10px 0 10px 30px;
                         display: inline-block;
                         font-size: $px12;
                     }
@@ -283,7 +283,7 @@ main {
                     }
                     .receive {
                         .choice {
-                            margin: 10px 0 10px 30px;
+                            margin: 10px 0 0px 30px;
                             label {
                                 cursor: pointer;
                             }
@@ -294,6 +294,9 @@ main {
                             color:$purple;
                             font-weight: 500;
                             letter-spacing: -0.02rem;
+                            img {
+                                transform: translateY(3px);
+                            }
                         }
                     }
                 }

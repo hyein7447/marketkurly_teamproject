@@ -1,19 +1,24 @@
 main {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 main .container {
   margin: 0 auto;
-  max-width: 1050px;
+  max-width: 1280px;
   padding: 90px 0 60px;
 }
 main .container h1 {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 800;
   text-align: center;
 }
 main .container form fieldset {
-  width: 340px;
+  min-width: 340px;
+  width: 450px;
   margin: 0px auto;
   letter-spacing: -0.6px;
 }
@@ -51,7 +56,7 @@ main .container form fieldset .info_look a:nth-child(2) {
   margin-left: 10px;
 }
 main .container form fieldset .info_look a {
-  font-size: 0.813rem;
+  font-size: 0.938rem;
 }
 main .container form fieldset .citation_num {
   display: none !important;
@@ -65,7 +70,7 @@ main .container form fieldset .citation_num {
 }
 main .container form fieldset .citation_num span {
   color: #666;
-  font-size: 0.813rem;
+  font-size: 0.938rem;
   text-align: center;
   font-weight: 500;
 }

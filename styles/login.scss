@@ -3,9 +3,10 @@
 main {
     position: relative;
     width: 100%;
+    @include flex-col-ct-ct;
     .container {
         margin: 0 auto;
-        max-width: 1050px;
+        max-width: 1280px;
         padding:90px 0 60px;
         h1 {
             font-size: $px20;
@@ -14,7 +15,8 @@ main {
         }
         form {
             fieldset {
-                width: 340px;
+                min-width: 340px;
+                width: 450px;
                 margin: 0px auto;
                 letter-spacing: -0.6px;
                 #user_id {

@@ -42,7 +42,7 @@
   }
   .m_header .top .title a {
     color: #5F0080;
-    font-size: 0.813rem;
+    font-size: 0.938rem;
     font-weight: 600;
     line-height: 27px;
     padding: 0px 10px 0px 13px;
@@ -92,7 +92,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    font-size: 0.938rem;
+    font-size: 1.063rem;
     color: #666;
   }
   .m_header .menu a:first-child {
@@ -191,7 +191,7 @@
   }
   .m_header .m_nav .gnb_bg .gnb_wrap .gnb li .lnb_bg .lnb_wrap .lnb a {
     padding: 14px 0px 10px 60px;
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 20px;
   }
   .m_header .m_nav .gnb_bg .gnb_wrap .gnb .kurly_theme {
@@ -229,7 +229,7 @@
   }
   .m_header .m_nav .gnb_bg .gnb_wrap .gnb .kurly_theme .lnb a span {
     line-height: 20px;
-    font-size: 0.875rem;
+    font-size: 1rem;
     padding: 10px;
     display: block;
   }

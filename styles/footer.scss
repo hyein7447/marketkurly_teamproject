@@ -542,12 +542,13 @@
 }
 // footer 영역
 footer {
+    border-top: 1px solid #eee;
     width:100%;
     .f_container {
         margin:0 auto;
-        width:1050px;
+        max-width:1280px;
         @include flex-row-btw-st;
-        padding: 30px 0 20px;
+        padding: 40px 0 20px;
         .left {
             p:nth-child(1) {
                 font-size: $px20;
@@ -579,7 +580,7 @@ footer {
                 span {
                     padding-top: 5px;
                     display: block;
-                    font-size: $px14;
+                    font-size: $px12;
                     color:$c-153;
                 }
                 .info {
@@ -592,7 +593,7 @@ footer {
                         }
                         span {
                             display: inline;
-                            font-size: $px14;
+                            font-size: $px12;
                             color:$c-153;
                         }
                     }
@@ -611,7 +612,7 @@ footer {
         padding-top: 10px;
         border-top: 1px solid $c-238;
         margin:0 auto;
-        width:1050px;
+        max-width:1280px;
         @include flex-row-btw-st;
         .isms , .eprivacy , .payments, .wooribank  {
             @include flex-row-st;
@@ -621,7 +622,7 @@ footer {
                 margin-right: 14px;
             }
             span {
-                font-size: $px10;
+                font-size: 0.65rem;
                 color:$c-153;
                 line-height: 1.1rem;
             }
@@ -643,6 +644,7 @@ footer {
         }
     }
     .right {
+        padding-top : 49px;
         .kulry_f_info {
             padding:4px 0 30px;
             a:nth-child(6) {
@@ -650,18 +652,18 @@ footer {
             }
             a {
                 font-size: $px14;
-                margin-right: 10px;
+                margin-right: 18px;
                 font-weight: 500;
             }
         }
         .f_address {
             margin-bottom: 40px;
             p {
-                font-size: $px12;
+                font-size: $px11;
                 line-height: 1.3rem;
                 color:$c-153;
                 em {
-                    font-size: $px12;
+                    font-size: $px11;
                     color:$purple;
                     font-weight: 500;
                 }
@@ -671,7 +673,7 @@ footer {
                     transform: translateY(2px);
                 }
                 span {
-                    font-size: $px12;
+                    font-size: $px11;
                     color:$c-153;
                     font-weight: 500;
                 }
@@ -695,7 +697,7 @@ footer {
             padding: 20px 0 30px;
             p, em {
                 color:$c-153;
-                font-size: $px10;
+                font-size: 0.685rem;
                 font-weight: 500;
                 margin-bottom: 4px;
             }

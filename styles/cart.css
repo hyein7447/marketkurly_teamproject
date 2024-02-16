@@ -11,7 +11,7 @@ main .container .title {
 main .container .title h2 {
   padding: 50px 0px 48px;
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 1.875rem;
   line-height: 35px;
   text-align: center;
 }
@@ -40,24 +40,24 @@ main .container .content .product_list .check input[id*=check] {
 main .container .content .product_list .check input[id*=check] + label::before {
   content: "\f058";
   color: #ddd;
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   margin-right: 8px;
   position: relative;
   top: 1px;
 }
 main .container .content .product_list .check input[id*=check]:checked + label::before {
   color: #5F0080;
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   margin-right: 8px;
   top: 1px;
 }
 main .container .content .product_list .check .fa span {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 26px;
   font-weight: 600;
 }
 main .container .content .product_list .check a {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 26px;
   font-weight: 600;
 }
@@ -94,7 +94,7 @@ main .container .content .product_list .product_wrap .item .title .left .storage
   top: 2px;
 }
 main .container .content .product_list .product_wrap .item .title .left p {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 main .container .content .product_list .product_wrap .item .title a img {
@@ -117,14 +117,14 @@ main .container .content .product_list .product_wrap .item .product .chk_btn inp
 main .container .content .product_list .product_wrap .item .product .chk_btn input[name*=chk] + label::before {
   content: "\f058";
   color: #ddd;
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   margin-right: 8px;
   position: relative;
   top: 1px;
 }
 main .container .content .product_list .product_wrap .item .product .chk_btn input[name*=chk]:checked + label::before {
   color: #5F0080;
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   margin-right: 8px;
   top: 1px;
 }
@@ -172,7 +172,7 @@ main .container .content .product_list .product_wrap .item .product .price span 
   line-height: 24px;
 }
 main .container .content .product_list .product_wrap .item .product .price del {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 24px;
   color: #b5b5b5;
   padding-top: 4px;
@@ -212,7 +212,7 @@ main .container .content .order .delivery .address {
 }
 main .container .content .order .delivery p span {
   padding: 7px 0 12px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #5F0080;
   display: block;
 }
@@ -223,7 +223,7 @@ main .container .content .order .delivery .address_change #change_btn {
   border: 1px solid #5F0080;
   border-radius: 3px;
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #5F0080;
   font-weight: 500;
 }
@@ -259,7 +259,7 @@ main .container .content .order .price_info dl dd {
   letter-spacing: -0.5px;
 }
 main .container .content .order .price_info dl .total {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 600;
 }
 main .container .content .order .price_info dl .total em {
@@ -267,7 +267,7 @@ main .container .content .order .price_info dl .total em {
 }
 main .container .content .order .price_info .free {
   text-align: right;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #5F0080;
   line-height: 18px;
   display: block;
@@ -275,7 +275,7 @@ main .container .content .order .price_info .free {
 }
 main .container .content .order .price_info .free em {
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #5F0080;
   line-height: 18px;
 }
@@ -294,7 +294,7 @@ main .container .content .order .order_btn_bg #order_btn {
   font-weight: 500;
 }
 main .container .content .order .notice ul li {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 16px;
   padding-top: 4px;
   padding-left: 7px;
