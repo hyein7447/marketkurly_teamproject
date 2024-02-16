@@ -120,9 +120,18 @@ main {
                 }
             }
         }
+        .array::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera*/
+        }
         .array {
             padding: 20px 0 30px;
+            overflow: auto scroll;
+            @include flex-row-st;
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
             a {
+                flex-shrink: 0;
+                background-color: #fff;
                 border-radius: 25px;
                 border: 1px solid $c-238;
                 padding: 8px 15px;
@@ -139,23 +148,18 @@ main {
             flex-flow: row wrap;
             justify-content: space-between;
             .product {
-                min-width: 330px;
                 margin-bottom: 30px;
                 position: relative;
                 width:calc((100% / 2) - 4px);
                 .thumb {
-                    height: 524px;
-                    width:100%;
-                    .thumb_img {
-                        background-image: url(../images/main/product/main_p_01.jpg);
-                        background-size: cover;
-                        background-position: center;
-                        display: block;
-                        height: 100%;
-                        width: 100%;
-                        border-radius: 4px;
-                        cursor: pointer;
-                    }
+                    background-image: url(../images/main/product/main_p_01.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    display: block;
+                    padding-top: calc(50% / 1 * 2.8);
+                    width: 100%;
+                    border-radius: 4px;
+                    cursor: pointer;
                     p.icon_cuppon {
                         background-color: #bd76ff;
                         border-radius: 4px;
@@ -163,7 +167,6 @@ main {
                         position: absolute; top: 8px; left: 8px;
                         padding: 4px 8px;
                         color:#fff;
-                        font-size: 0.875rem;
                     }
                 }
                 .btn_cart {
@@ -195,7 +198,7 @@ main {
                         font-size: $px14;
                     }
                     .p_explain {
-                        font-size: 0.75rem; 
+                        font-size: 0.875rem; 
                         padding-top: 4px;
                         color:#999;
                     }
@@ -299,6 +302,8 @@ main {
                 .bar_line {
                     background-color: #fff;
                     padding: 10px 0;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
                     span {
                         content: '';
                         display: inline-block;
@@ -313,8 +318,11 @@ main {
                 .area {
                     // background-color: #fff;
                     background-position-y: 100%;
-                    border-top-left-radius: 10px;
-                    border-top-right-radius: 10px;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    position:absolute;
+                    bottom:0;
+                    width:100%;
                     .tab_title {
                         padding: 20px 4px 10px;
                         background-color: #fff;
@@ -343,7 +351,7 @@ main {
                         }
                         p {
                             font-size: $px14;
-                            margin-right: 14px;
+                            margin-right: 22px;
                             font-weight: 500;
                             position: relative;
                         }
@@ -351,10 +359,11 @@ main {
                     .list {
                         background-color: #fff;
                         padding: 15px 0;
-                        max-height: 500px;
-                        min-height: 400px;
-                        height: 430px;
+                        // max-height: 500px;
+                        // min-height: 400px;
+                        height: 48vh;
                         overflow-y: auto;
+                        scrollbar-width: thin;
                         li {
                             padding:9px 4px 18px;
                             .btn_chk, .btn_circle {
@@ -487,6 +496,12 @@ main {
                             }
                         }
                     }  
+                    /* .tab1 {
+                        display: none;
+                    }
+                    .tab6 {
+                        display: block !important;
+                    } */
                     .tab2, .tab3, .tab4, .tab5, .tab6 {
                         display: none;
                     }

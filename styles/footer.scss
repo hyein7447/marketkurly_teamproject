@@ -13,8 +13,9 @@
         width: 58px;
         height: 58px;
         position: fixed;
-        right: 31px; bottom: 15px;
+        right: 31px; bottom: 30px;
         cursor: pointer;
+        z-index: 999;
     }
     #btn_chatbot:hover {
         background-image: url('../images/main/icon/footer/icon_chatbot_hover.png');
@@ -27,8 +28,9 @@
         width: 58px;
         height: 58px;
         position: fixed;
-        right: 31px; bottom: 78px;
+        right: 31px; bottom: 93px;
         cursor: pointer;
+        z-index: 999;
     }
 }
 // 챗봇 영역

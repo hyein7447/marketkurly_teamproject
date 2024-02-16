@@ -10,8 +10,9 @@
   height: 58px;
   position: fixed;
   right: 31px;
-  bottom: 15px;
+  bottom: 30px;
   cursor: pointer;
+  z-index: 999;
 }
 .main_btn #btn_chatbot:hover {
   background-image: url("../images/main/icon/footer/icon_chatbot_hover.png");
@@ -25,8 +26,9 @@
   height: 58px;
   position: fixed;
   right: 31px;
-  bottom: 78px;
+  bottom: 93px;
   cursor: pointer;
+  z-index: 999;
 }
 
 .chatbot_sub {
@@ -616,7 +618,7 @@ footer .f_container .left .kakao button, footer .f_container .left .question but
 footer .f_container .left .kakao span, footer .f_container .left .question span, footer .f_container .left .bulk_order span {
   padding-top: 5px;
   display: block;
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: #999;
 }
 footer .f_container .left .kakao .info p, footer .f_container .left .question .info p, footer .f_container .left .bulk_order .info p {
@@ -633,7 +635,7 @@ footer .f_container .left .kakao .info p span:nth-child(2)::before, footer .f_co
 }
 footer .f_container .left .kakao .info p span, footer .f_container .left .question .info p span, footer .f_container .left .bulk_order .info p span {
   display: inline;
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: #999;
 }
 footer .f_container .left .mail_send p, footer .f_container .left .mail_send a {
@@ -662,7 +664,7 @@ footer .f_list .isms img, footer .f_list .eprivacy img, footer .f_list .payments
   margin-right: 14px;
 }
 footer .f_list .isms span, footer .f_list .eprivacy span, footer .f_list .payments span, footer .f_list .wooribank span {
-  font-size: 0.625rem;
+  font-size: 0.65rem;
   color: #999;
   line-height: 1.1rem;
 }
@@ -685,20 +687,20 @@ footer .right .kulry_f_info a:nth-child(6) {
   font-weight: 600;
 }
 footer .right .kulry_f_info a {
-  font-size: 0.875rem;
-  margin-right: 10px;
+  font-size: 1rem;
+  margin-right: 18px;
   font-weight: 500;
 }
 footer .right .f_address {
   margin-bottom: 40px;
 }
 footer .right .f_address p {
-  font-size: 0.75rem;
+  font-size: 0.813rem;
   line-height: 1.3rem;
   color: #999;
 }
 footer .right .f_address p em {
-  font-size: 0.75rem;
+  font-size: 0.813rem;
   color: #5F0080;
   font-weight: 500;
 }
@@ -712,7 +714,7 @@ footer .right .f_address p span:nth-child(1)::after {
   transform: translateY(2px);
 }
 footer .right .f_address p span {
-  font-size: 0.75rem;
+  font-size: 0.813rem;
   color: #999;
   font-weight: 500;
 }
@@ -733,7 +735,7 @@ footer address .box {
 }
 footer address .box p, footer address .box em {
   color: #999;
-  font-size: 0.625rem;
+  font-size: 0.685rem;
   font-weight: 500;
   margin-bottom: 4px;
 }

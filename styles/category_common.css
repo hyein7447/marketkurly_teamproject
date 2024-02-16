@@ -399,7 +399,7 @@ main .best .container .right .product_box {
     justify-content: space-between;
 }
 main .best .container .right .product_box .product {
-    width:calc((100% / 3) - 10px);
+    width:calc((100% / 3) - 8px);
     margin-bottom: 40px;
     position: relative;
 }
