@@ -2,8 +2,8 @@
 
 @media screen and (max-width:840px){
     .m_header {
-        .top {display: none !important;}
-        .menu {display: none !important;}
+        .top {display: none ;}
+        .menu {display: none ;}
         .lnb_bg {display: none;}
         .m_nav {display: none;}
         .user_login {display: none;}
@@ -276,12 +276,21 @@
                         margin: 12px 8px 12px 6px;
                         @include flex-row-ct-ct;
                         img {
-                            width: 22px;
-                            height: 22px;
+                            width: 20px;
+                            height: 20px;
                         }
                     }
                     #search {
+                        display: block;
+                        padding-right: 40px;
+                        &::placeholder {
+                            color: #999;
+                        }
                     }
+                }
+                h3 {
+                    font-weight: 600;
+                    padding-top: 9px;
                 }
             }
         }
