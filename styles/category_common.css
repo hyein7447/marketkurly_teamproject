@@ -1,5 +1,5 @@
 /* 베스트 카테고리 선택자 */
-body, html {scroll-behavior: smooth; max-width: 820px;}
+body, html {scroll-behavior: smooth; }
 main {}
 /* 베스트 타이틀 영역 */
 main .best {width:1050px; margin:0 auto;}
