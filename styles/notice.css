@@ -97,14 +97,16 @@ main .notice .notice_container {
   padding-left: 20px;
 }
 main .notice .notice_container li {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px 0;
   border-bottom: 1px solid rgb(244, 244, 244);
 }
 main .notice .notice_container li a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main .notice .notice_container li span {
   font-size: 0.875rem;
   text-align: center;
 }

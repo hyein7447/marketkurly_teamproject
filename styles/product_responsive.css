@@ -539,11 +539,67 @@
   }
   main .product_container .m_detail .inquiry_wrap {
     text-align: center;
-    background-color: red;
+    margin-top: 51px;
   }
   main .product_container .m_detail .inquiry_wrap h3 {
     color: #666;
     font-weight: 600;
+  }
+  main .product_container .m_detail .inquiry_wrap .m_inquiry {
+    padding: 13px 0 0;
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: #666;
+    line-height: 19px;
+  }
+  main .product_container .m_detail .inquiry_wrap .m_inquiry span {
+    display: block;
+    font-size: 0.75rem;
+    margin: 22px auto 0;
+    padding: 13px 0;
+  }
+  main .product_container .m_detail .inquiry_wrap ul {
+    margin-top: 43px;
+  }
+  main .product_container .m_detail .inquiry_wrap ul li {
+    margin-bottom: 30px;
+  }
+  main .product_container .m_detail .inquiry_wrap ul li strong {
+    display: block;
+    color: #5F0080;
+    font-weight: 600;
+    font-size: 0.938rem;
+    line-height: 19px;
+  }
+  main .product_container .m_detail .inquiry_wrap ul li em {
+    display: block;
+    padding: 6px 0 12px;
+    font-size: 0.75rem;
+    color: #333;
+    line-height: 17px;
+  }
+  main .product_container .m_detail .inquiry_wrap ul li span {
+    display: block;
+    padding: 16px 20px 7px;
+    font-size: 0.75rem;
+    color: #999;
+    line-height: 17px;
+  }
+  main .product_container .m_detail .inquiry_wrap ul li .m_inquiry_btn {
+    width: 150px;
+    height: 34px;
+    border: 1px solid #F2F2F2;
+    border-radius: 18px;
+    background-color: #F2F2F2;
+    font-size: 0.875rem;
+    color: #333;
+  }
+  main .product_container .m_detail .exchange_refund .guide_list li .guide_list_title {
+    border-top: 1px solid #f4f4f4;
+    padding: 14px 0 16px;
+    font-weight: 600;
+    font-size: 0.813rem;
+    color: #5F0080;
   }
   main .product_container .review {
     display: none;

@@ -24,7 +24,7 @@ section {
   width: 900px;
   position: relative;
 }
-.bottom_option .bottom_wrap .select_btn {
+.bottom_option .bottom_wrap #select_btn {
   background-color: #5F0080;
   color: #fff;
   font-weight: 500;
@@ -40,7 +40,7 @@ section {
   height: 48px;
   border-radius: 3px;
 }
-.bottom_option .bottom_wrap .select_btn img {
+.bottom_option .bottom_wrap #select_btn img {
   margin-left: 5px;
 }
 .bottom_option .bottom_wrap .bottom_purchase {
@@ -252,13 +252,17 @@ section {
   border-radius: 4px;
 }
 .product_container .img_information .information .coupon .words {
+  display: block;
   font-size: 0.813rem;
 }
 .product_container .img_information .information .coupon .words em {
   color: #5F0080;
   font-size: 0.813rem;
 }
-.product_container .img_information .information .coupon p img {
+.product_container .img_information .information .coupon span {
+  display: block;
+}
+.product_container .img_information .information .coupon span img {
   width: 16px;
   margin-top: 2px;
 }
@@ -453,12 +457,14 @@ section {
 }
 .product_container .product_page_nav li {
   width: 251px;
-  padding: 20px 0;
   background-color: #fafafa;
   border: 1px solid #eee;
   text-align: center;
 }
 .product_container .product_page_nav li a {
+  padding: 20px 0;
+  display: block;
+  height: 100%;
   color: #666;
   font-weight: 500;
 }
@@ -704,18 +710,21 @@ section {
   gap: 8px;
 }
 .product_container .detail .detail_contents1 ul li {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  min-width: 70px;
+  max-width: 214px;
+}
+.product_container .detail .detail_contents1 ul li a {
+  display: flex;
+  align-items: center;
   border: 1px solid rgb(238, 238, 238);
   padding: 8px 13px;
   font-size: 0.813rem;
   letter-spacing: -0.5px;
-  min-width: 70px;
-  max-width: 214px;
   border-radius: 4px;
   line-height: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 0.813rem;
 }
 .product_container .detail .detail_contents1 .detail_box {
@@ -896,16 +905,14 @@ section {
 .product_container .detail .exchange_refund .title h3 em {
   margin-left: 14px;
 }
-.product_container .detail .exchange_refund .title .close {
+.product_container .detail .exchange_refund .title .close .close_btn {
   color: #5F0080;
   line-height: 24px;
   letter-spacing: -0.4px;
   font-size: 1rem;
 }
-.product_container .detail .exchange_refund .title .close .close_btn {
-  margin-left: 4px;
-}
 .product_container .detail .exchange_refund .title .close .close_btn img {
+  margin-left: 8px;
   width: 14px;
   transform: rotate(180deg);
   margin-bottom: 3px;
@@ -989,16 +996,14 @@ section {
   font-size: 1rem;
   padding-top: 0;
 }
-.product_container .detail .order_cancel .title .close {
+.product_container .detail .order_cancel .title .close .close_btn {
   color: #5F0080;
   line-height: 24px;
   letter-spacing: -0.4px;
   font-size: 1rem;
 }
-.product_container .detail .order_cancel .title .close .close_btn {
-  margin-left: 4px;
-}
 .product_container .detail .order_cancel .title .close .close_btn img {
+  margin-left: 8px;
   width: 14px;
   transform: rotate(180deg);
   margin-bottom: 3px;
