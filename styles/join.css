@@ -26,7 +26,8 @@ main .join .box_wrap_info em {
   color: #f03f40;
 }
 main .join #btn_join {
-  width: 240px;
+  width: 76%;
+  float: right;
   height: 56px;
   text-align: center;
   display: block;
@@ -245,6 +246,17 @@ main form .terms li .agree_area label[class=agree_all] {
   font-size: 1.188rem;
   font-weight: 500;
 }
+main form .terms li .agree_area .agree_all + p {
+  margin: 10px 0;
+  font-size: 0.875rem;
+}
+main form .terms li .agree_area .receive label {
+  margin-right: 10px;
+}
+main form .terms li .agree_area .receive p {
+  font-size: 0.875rem;
+  margin: 10px 0 10px 40px;
+}
 main form .terms li .agree_area label {
   font-size: 0.875rem;
 }
@@ -372,7 +384,6 @@ main .tab_terms1 .tab_box .btn_ok, main .tab_terms2 .tab_box .btn_ok, main .tab_
   text-align: center;
   margin: 0 auto;
   color: #5F0080;
-  width: 100%;
   height: 56px;
   font-weight: 500;
 }
@@ -507,34 +518,27 @@ main .tab_terms2 .tab_box .btn_ok, main .tab_terms3 .tab_box .btn_ok {
   main .join form .wrap li .input_area input::placeholder {
     font-size: 0.813rem;
   }
-  main .join form .wrap li .input_area input {
-    width: 100%;
-    padding: 0px 15px;
-    height: 36px;
-  }
   main .join form .wrap li .input_area .gender_male, main .join form .wrap li .input_area .gender_female, main .join form .wrap li .input_area .gender_none {
     font-size: 0.813rem;
     width: 33.3333333333%;
-  }
-  main .join form .wrap li .input_area .gender, main .join form .wrap li .input_area .event {
-    height: 36px;
+    height: 16px;
   }
   main .join form .wrap li .input_area .gender label[class*=event]:checked, main .join form .wrap li .input_area .event label[class*=event]:checked {
-    width: 16px;
-    height: 16px;
+    width: 33.3333333333%;
   }
   main .join form .wrap li .input_area .gender label[class*=gender], main .join form .wrap li .input_area .event label[class*=gender] {
     width: 33.3333333333%;
     font-size: 0.813rem;
   }
   main .join form .wrap li .input_area .gender input[type=radio], main .join form .wrap li .input_area .event input[type=radio] {
-    width: 16px;
     height: 16px;
     font-size: 0.813rem;
   }
   main .join form .wrap li .input_area .gender input[type=radio]:checked, main .join form .wrap li .input_area .event input[type=radio]:checked {
-    width: 16px;
     height: 16px;
+  }
+  main .join form .wrap li .input_area input {
+    padding: 0px 15px;
   }
   main .join form .wrap li .input_area .error_m {
     font-size: 0.813rem;

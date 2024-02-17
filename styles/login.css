@@ -8,12 +8,12 @@ main {
 }
 main .container {
   margin: 0 auto;
-  max-width: 460px;
+  max-width: 550px;
   padding: 90px 16px 90px;
 }
 main .container h1 {
-  font-size: 1.375rem;
-  font-weight: 800;
+  font-weight: 500;
+  font-size: 1.875rem;
   text-align: center;
 }
 main .container form fieldset {

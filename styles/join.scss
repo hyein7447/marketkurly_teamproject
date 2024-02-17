@@ -26,7 +26,9 @@ main {
             }
         }
         #btn_join {
-            width: 240px;
+            // width: 240px;
+            width:76%;
+            float:right;
             height: 56px;
             text-align: center;
             display: block;
@@ -224,6 +226,19 @@ main {
                         font-size: $px17;
                         font-weight: 500;
                     }
+                    .agree_all + p {
+                        margin: 10px 0 ;
+                        font-size: $px12;
+                    }
+                    .receive {
+                        label {
+                            margin-right: 10px;
+                        }
+                        p {
+                            font-size: $px12;
+                            margin:10px 0 10px 40px ;
+                        }
+                    }
                     label {
                         font-size: $px12;
                         em {   
@@ -343,7 +358,6 @@ main {
                 text-align: center;
                 margin: 0 auto;
                 color:$purple;
-                width: 100%;
                 height: 56px;
                 font-weight: 500;
             }
@@ -477,34 +491,29 @@ main {
                             input::placeholder {
                                 font-size: $px11;
                             }
-                            input {
-                                width:100%;
-                                padding: 0px 15px;
-                                height: 36px;
-                            }
                             .gender_male, .gender_female, .gender_none {
                                 font-size: $px11;
                                 width: calc(100% / 3);
+                                height: 16px;
                             }
                             .gender , .event {
-                                height: 36px;
                                 label[class*=event]:checked {
-                                    width:16px;
-                                    height:16px;
+                                    width: calc(100% / 3);
                                 }
                                 label[class*=gender] {
                                     width: calc(100% / 3);
                                     font-size: $px11;
                                 }
                                 input[type=radio] {
-                                    width:16px;
                                     height:16px;
                                     font-size: $px11;
                                 }
                                 input[type=radio]:checked {
-                                    width:16px;
                                     height:16px;
                                 }
+                            }
+                            input {
+                                padding: 0px 15px;
                             }
                             .error_m {
                                 font-size: $px11;

@@ -5,11 +5,11 @@ main {
     @include flex-col-ct-ct;
     .container {
         margin: 0 auto;
-        max-width: 460px;
+        max-width: 550px;
         padding:90px 16px 90px;
         h1 {
-            font-size: $px20;
-            font-weight: 800;
+            font-weight: 500;
+            font-size: $px28;
             text-align: center;
         }
         form {

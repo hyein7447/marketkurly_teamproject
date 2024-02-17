@@ -405,7 +405,7 @@
 .sub2 .chat_qa {
   overflow-y: auto;
 }
-.sub2 .chat_qa .kulry_logo {
+.sub2 .chat_qa .kurly_logo {
   display: none !important;
   display: flex;
   flex-flow: column nowrap;
@@ -413,11 +413,11 @@
   align-items: center;
   padding: 30px 0;
 }
-.sub2 .chat_qa .kulry_logo img {
+.sub2 .chat_qa .kurly_logo img {
   width: 80px;
   margin-bottom: 10px;
 }
-.sub2 .chat_qa .kulry_logo span {
+.sub2 .chat_qa .kurly_logo span {
   color: #fff;
 }
 .sub2 .chat_qa .qa_list {
@@ -680,13 +680,13 @@ footer .f_list .wooribank img {
 footer .right {
   padding-top: 49px;
 }
-footer .right .kulry_f_info {
+footer .right .kurly_f_info {
   padding: 4px 0 30px;
 }
-footer .right .kulry_f_info a:nth-child(6) {
+footer .right .kurly_f_info a:nth-child(6) {
   font-weight: 600;
 }
-footer .right .kulry_f_info a {
+footer .right .kurly_f_info a {
   font-size: 1rem;
   margin-right: 18px;
   font-weight: 500;
@@ -730,7 +730,7 @@ footer address {
 }
 footer address .box {
   margin: 0 auto;
-  width: 1050px;
+  max-width: 1280px;
   padding: 20px 0 30px;
 }
 footer address .box p, footer address .box em {
@@ -741,4 +741,146 @@ footer address .box p, footer address .box em {
 }
 footer address .box p:nth-child(3) {
   margin-top: 8px;
+}
+
+@media screen and (max-width: 1280px) {
+  footer .f_container {
+    padding: 40px 16px 20px;
+  }
+  footer .f_list {
+    padding: 10px 16px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  footer .f_list .isms, footer .f_list .eprivacy, footer .f_list .payments, footer .f_list .wooribank {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    padding: 20px 0 33px;
+  }
+  footer address .box {
+    padding: 20px 16px 30px;
+  }
+}
+@media screen and (max-width: 820px) {
+  footer .f_container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    padding: 40px 16px 20px;
+  }
+  footer .f_container .left p:nth-child(1) {
+    font-size: 1.125rem;
+  }
+  footer .f_container .left p:nth-child(2) .tel {
+    font-size: 1.625rem;
+  }
+  footer .f_container .left > p:nth-child(2) {
+    padding-bottom: 14px;
+  }
+  footer .f_container .left .question > p:nth-child(2) {
+    padding-bottom: 0px;
+  }
+  footer .f_container .left .kakao button, footer .f_container .left .question button, footer .f_container .left .bulk_order button {
+    width: 100px;
+    height: 30px;
+    margin: 6px 10px 10px 0;
+    font-size: 0.875rem;
+  }
+  footer .f_container .left .kakao span, footer .f_container .left .question span, footer .f_container .left .bulk_order span {
+    font-size: 0.75rem;
+  }
+  footer .f_container .left .kakao .info p:nth-child(2), footer .f_container .left .question .info p:nth-child(2), footer .f_container .left .bulk_order .info p:nth-child(2) {
+    padding-bottom: 0px;
+  }
+  footer .f_container .left .kakao .info p span, footer .f_container .left .question .info p span, footer .f_container .left .bulk_order .info p span {
+    font-size: 0.75rem;
+  }
+  footer .f_container .left .mail_send {
+    padding-top: 5px;
+  }
+  footer .f_container .left .mail_send > p:nth-child(1) {
+    padding-bottom: 4px;
+    font-size: 0.813rem;
+  }
+  footer .f_container .right {
+    padding-top: 8px;
+  }
+  footer .f_container .right .f_address {
+    margin-bottom: 16px;
+  }
+  footer .f_container .right .kurly_f_info {
+    padding: 8px 0px 20px;
+    font-size: 0.625rem;
+  }
+  footer .f_container .right .kurly_f_info a {
+    font-size: 0.875rem;
+    margin-right: 10px;
+  }
+  footer .f_list {
+    padding: 10px 16px 10px;
+    display: grid;
+    grid-template-areas: "list1 list2" "list3 list4";
+    justify-content: start;
+  }
+  footer .f_list .isms, footer .f_list .eprivacy, footer .f_list .payments, footer .f_list .wooribank {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    padding: 7px 40px 7px 0;
+  }
+  footer .f_list .isms img, footer .f_list .eprivacy img, footer .f_list .payments img, footer .f_list .wooribank img {
+    width: 40px;
+  }
+  footer address {
+    text-align: left;
+  }
+  footer address .box {
+    padding: 20px 16px 30px;
+  }
+}
+@media screen and (max-width: 430px) {
+  footer .f_container .left .mail_send {
+    display: none;
+  }
+  footer .f_container .left .mail_send > p:nth-child(1) {
+    padding-bottom: 4px;
+    font-size: 0.813rem;
+  }
+  footer .f_container .right {
+    padding-top: 8px;
+  }
+  footer .f_container .right .f_address p {
+    font-size: 0.688rem;
+  }
+  footer .f_container .right .f_address p span {
+    font-size: 0.688rem;
+  }
+  footer .f_container .right .f_address p span em {
+    font-size: 0.688rem;
+  }
+  footer .f_container .right .f_address p em {
+    font-size: 0.688rem;
+  }
+  footer .f_container .right .kurly_f_info {
+    font-size: 0.68rem;
+    padding: 4px 0 8px;
+  }
+  footer .f_container .right .kurly_f_info a {
+    font-size: 0.75rem;
+  }
+  footer .f_list {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+  }
+  footer .f_list .isms img, footer .f_list .eprivacy img, footer .f_list .payments img, footer .f_list .wooribank img {
+    width: 30px;
+  }
+  footer address .box p, footer address .box em {
+    font-size: 0.65rem;
+    display: inline-block;
+  }
 }/*# sourceMappingURL=footer.css.map */
