@@ -544,7 +544,7 @@
                 <ul class="theme">
                     <li><a href="./new.html">신상품</a></li>
                     <li><a href="./best.html">베스트</a></li>
-                    <li><a href="./category_fruit.html">알뜰쇼핑</a></li>
+                    <li><a href="./frugal.html">알뜰쇼핑</a></li>
                     <li><a href="#">특가/혜택</a></li>
                 </ul>
                 <a href="./today_delivery.html" class="delivery">
