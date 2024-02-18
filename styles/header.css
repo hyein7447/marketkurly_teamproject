@@ -1,5 +1,11 @@
-/* 모바일용 header 가리기용 */
-header .m_header {display: none;}
+/* 모바일용 header 가리기 */
+header .m_header {}
+/* 데스크탑 header 가리기 */
+header .user_page,
+header .header_top,
+header .header_btm {display: none;}
+
+
 
 html,body{}
 header { 
@@ -123,8 +129,7 @@ header .header_top .user_info .wish img {}
 header .header_top .user_info .cart {}
 header .header_top .user_info .cart img {}
 /* header bottom */
-header .header_btm {
-}
+header .header_btm {}
 header .header_btm nav {
     max-width: 1280px; height: 56px; display: flex; margin: 0 auto; justify-content: space-between;
     align-items: center; position: relative;
@@ -134,7 +139,7 @@ header .header_btm nav .category img {width: 16px; height: 14px; margin-right: 1
 /* 카테고리 마우스 오버 시 출력되는 카데고리 */
 header .header_btm nav .gnb_bg {
     position: absolute; top: 46px; left: 0;
-    max-height: calc(-55px + 95vh); overflow-y: hidden; overflow-x: hidden;
+    overflow-y: hidden; overflow-x: hidden;
     min-height: 200px; display: flex;
 }
 header .header_btm nav .gnb_bg .gnb_wrap {
@@ -143,9 +148,9 @@ header .header_btm nav .gnb_bg .gnb_wrap {
 }
 header .header_btm nav .gnb_bg .gnb_wrap .gnb {
     border: 1px solid #ddd;
-    width: 247px; height: 100%;
-    overflow-y: auto ; overflow-x: hidden;
-    background: #fff;
+    width: 247px; 
+    overflow-y: scroll ; overflow-x: hidden;
+    background: #fff; max-height: calc(-55px + 95vh);
 }
 
 header .header_btm nav .gnb_bg .gnb_wrap .gnb li {
@@ -158,10 +163,9 @@ header .header_btm nav .gnb_bg .gnb_wrap .gnb li a span {padding: 1px 20px 0 10p
 /* lnb 전체 가리기, 선택 보이기 */
 header .header_btm nav .gnb_bg .gnb_wrap .gnb li .lnb_bg .lnb_wrap .lnb {
     display: none;
-
 }
 /* header .header_btm nav .gnb_bg .gnb_wrap .gnb li:nth-child(1) .lnb_bg .lnb_wrap .lnb { display: block;} */
-header .header_btm nav .gnb_bg .gnb_wrap .gnb li:last-child .lnb_bg .lnb_wrap .lnb { display: none !important;}
+header .header_btm nav .gnb_bg .gnb_wrap .gnb li:last-child .lnb_bg .lnb_wrap .lnb {}
 
 /* gnb 마우스 오버시 출력되는 lnb */
 header .header_btm nav .gnb_bg .gnb_wrap .gnb li .lnb_bg {
@@ -223,3 +227,16 @@ header .header_btm nav .delivery span em {
     font-weight: 500;
 }
 
+/* js 호출용 디자인 */
+
+.gnb_active { 
+    background-color: #f7f7f7;
+    color: #5F0080;
+}
+.color_active {
+    color: #5F0080;
+}
+.lnb_active {
+    color: #5F0080;
+    text-decoration-line: underline ;
+}

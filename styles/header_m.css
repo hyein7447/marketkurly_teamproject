@@ -1,9 +1,17 @@
-@media screen and (max-width: 840px) {
-  .m_header .top {
+@media screen and (max-width: 820px) {
+  header .user_page,
+  header .header_top,
+  header .header_btm {
     display: none;
   }
+  .m_header .top {
+    display: none !important;
+  }
   .m_header .menu {
-    display: none;
+    display: none !important;
+  }
+  .m_header .btm_menu {
+    display: none !important;
   }
   .m_header .lnb_bg {
     display: none;
@@ -11,7 +19,7 @@
   .m_header .m_nav {
     display: none;
   }
-  .m_header .user_login {
+  .m_header .user_search {
     display: none;
   }
   .m_header .top {
@@ -311,5 +319,13 @@
   .m_header .user_search .search_bg h3 {
     font-weight: 600;
     padding-top: 9px;
+  }
+  .m_header .user_login .title {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=header_m.css.map */
