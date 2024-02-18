@@ -386,7 +386,7 @@
     }
     .chat_qa {
         overflow-y: auto;
-        .kulry_logo {
+        .kurly_logo {
             display: none !important;
             @include flex-col-ct-ct;
             padding: 30px 0;
@@ -647,7 +647,7 @@ footer {
     }
     .right {
         padding-top : 49px;
-        .kulry_f_info {
+        .kurly_f_info {
             padding:4px 0 30px;
             a:nth-child(6) {
                 font-weight: 600;
@@ -695,7 +695,7 @@ footer {
         background-color: $c-247;
         .box {
             margin:0 auto;
-            width: 1050px;
+            max-width: 1280px;
             padding: 20px 0 30px;
             p, em {
                 color:$c-153;
@@ -709,3 +709,164 @@ footer {
         }
     }
 }
+@media screen and (max-width:1280px) {
+    footer{
+        .f_container {
+            padding: 40px 16px 20px;
+            .left {
+
+            }
+        }
+        .f_list {
+            padding: 10px 16px 0;
+            @include flex-row-btw-st;
+            .isms , .eprivacy , .payments, .wooribank  {
+                @include flex-row-st;
+                padding: 20px 0 33px;
+                img {
+                }
+                span {
+                }
+            }
+        }
+        .right {}
+        address {
+            .box {
+                padding: 20px 16px 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width:820px) {
+    footer{
+        .f_container {
+            @include flex-col-st;
+            padding: 40px 16px 20px;
+            .left {
+                p:nth-child(1) {
+                    font-size: $px16;
+                }
+                p:nth-child(2) {
+                    .tel {
+                        font-size: $px24;
+                    }
+                }
+                > p:nth-child(2) {
+                    padding-bottom: 14px;
+                }
+                .question > p:nth-child(2) {
+                    padding-bottom: 0px;
+                }
+                .kakao, .question , .bulk_order {
+                    button {
+                        width: 100px;
+                        height: 30px;
+                        margin: 6px 10px 10px 0;
+                        font-size: $px12;
+                    }
+                    span {font-size: $px10;}
+                    .info {
+                        p:nth-child(2) {padding-bottom: 0px;}
+                        p {
+                            span {font-size: $px10;}
+                        }
+                    }
+                }
+                .mail_send {
+                    padding-top: 5px;
+                    p, a {}
+                    > p:nth-child(1) {padding-bottom: 4px; font-size: $px11;}
+                }
+            }
+            .right {
+                padding-top: 8px;
+                .f_address {
+                    margin-bottom: 16px;
+                }
+                .kurly_f_info {
+                    padding: 8px 0px 20px;
+                    font-size: $px8;
+                    // white-space: wrap;
+                    a {
+                        font-size: $px12;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .f_list {
+            padding: 10px 16px 10px;
+            display: grid;
+            grid-template-areas: 
+                'list1 list2'
+                'list3 list4'
+            ;
+            justify-content: start;
+            .isms , .eprivacy , .payments, .wooribank  {
+                @include flex-row-st;
+                padding: 7px 40px 7px 0;
+                img {
+                    width: 40px;
+                }
+                span {
+                }
+            }
+        }
+        address {
+            text-align: left;
+            .box {
+                padding: 20px 16px 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width:430px) {
+    footer {
+        .f_container {
+            .left {
+                .mail_send {
+                    display: none;
+                    p, a {}
+                    > p:nth-child(1) {padding-bottom: 4px; font-size: $px11;}
+                }
+            }
+            .right {
+                padding-top: 8px;
+                .f_address {
+                    p {
+                        font-size: $px9;
+                        span {
+                            font-size: $px9;
+                            em {font-size: $px9;}
+                        }
+                        em {font-size: $px9;}
+                    }
+                }
+                .kurly_f_info {
+                    font-size: 0.68rem;
+                    padding: 4px 0 8px;
+                    a {
+                        font-size: $px10;
+                    }
+                }
+            }
+        }
+        .f_list {
+            @include flex-col-st;
+            .isms , .eprivacy , .payments, .wooribank  {
+                img {
+                    width: 30px;
+                }
+            }
+        }
+        address {
+            .box {
+                p, em {
+                    font-size: 0.65rem;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:320px) {}

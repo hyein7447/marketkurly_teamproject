@@ -8,22 +8,21 @@ main {
 }
 main .container {
   margin: 0 auto;
-  max-width: 1280px;
-  padding: 90px 0 60px;
+  max-width: 550px;
+  padding: 90px 16px 90px;
 }
 main .container h1 {
-  font-size: 1.375rem;
-  font-weight: 800;
+  font-weight: 500;
+  font-size: 1.875rem;
   text-align: center;
 }
 main .container form fieldset {
-  min-width: 340px;
-  width: 450px;
+  width: 100%;
   margin: 0px auto;
   letter-spacing: -0.6px;
 }
 main .container form fieldset #user_id {
-  height: 54px;
+  height: 60px;
   width: 100%;
   margin: 30px 0 12px;
   border: 1px solid #ddd;
@@ -31,7 +30,7 @@ main .container form fieldset #user_id {
   padding: 0px 15px;
 }
 main .container form fieldset #user_pw {
-  height: 54px;
+  height: 60px;
   width: 100%;
   margin-bottom: 12px;
   border: 1px solid #ddd;
@@ -39,6 +38,7 @@ main .container form fieldset #user_pw {
   padding: 0px 15px;
 }
 main .container form fieldset .info_look {
+  padding: 7px 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
@@ -92,14 +92,14 @@ main .container form .btn_login {
   background-color: #5F0080;
   border-radius: 3px;
   color: #fff;
-  height: 54px;
+  height: 60px;
   margin-top: 28px;
 }
 main .container form .btn_join {
   width: 100%;
   border: 1px solid #5F0080;
   border-radius: 3px;
-  height: 54px;
+  height: 60px;
   color: #5F0080;
   font-weight: 500;
   margin-top: 10px;
