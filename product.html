@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="widdt=device-widdt, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[픽어베이글] 베이글 8종 (택1) | 마켓컬리</title>
     <link rel="shortcut icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
@@ -220,33 +220,33 @@
                     <div class="purchase">
                         <dl>
                             <dt>상품 선택</dt>
-                            <dd>
+                            <dd class="select_container">   
                                 <div>
                                     <button type="button" class="option_btn">상품을 선택해주세요<img src="./images/main/icon/icon_down_16x10.png" alt=""></button>
                                 </div>
                                 <div class="option">
-                                    <a href="#">[픽어베이글] 플레인 베이글 <span>2,900원</span></a>
-                                    <a href="#">[픽어베이글] 통밀 베이글 <span>2,900원</span></a>
-                                    <a href="#">[픽어베이글] 블루베리 베이글 <span>2,900원</span></a>
-                                    <a href="#">[픽어베이글] 시나몬 앤 레이즌 베이글 <span>2,900원</span></a>
-                                    <a href="#">[픽어베이글] 에브리띵 베이글 <span>2,900원</span></a>
-                                    <a href="#">[픽어베이글] 멀티 그레인 베이글 <span>2,800원</span></a>
-                                    <a href="#">[픽어베이글] 세서미 베이글 <span>2,800원</span></a>
-                                    <a href="#">[픽어베이글] 다크통밀 베이글 <span>2,900원</span></a>
+                                    <a href="#" class="select_opt"><strong>[픽어베이글] 플레인 베이글</strong> <span>2,900원</span></a>
+                                    <a href="#" class="select_opt"><strong>[픽어베이글] 통밀 베이글</strong> <span>2,900원</span></a>
+                                    <a href="#" class="select_opt"><strong>[픽어베이글] 블루베리 베이글</strong> <span>2,900원</span></a>
+                                    <a href="#" class="select_opt"><strong>[픽어베이글] 시나몬 앤 레이즌 베이글</strong> <span>2,900원</span></a>
+                                    <a href="#" class="select_opt"><strong>[픽어베이글] 에브리띵 베이글</strong> <span>2,900원</span></a>
+                                    <a href="#" class="select_opt"><strong>[픽어베이글] 멀티 그레인 베이글</strong> <span>2,800원</span></a>
+                                    <a href="#" class="select_opt"><strong>[픽어베이글] 세서미 베이글</strong> <span>2,800원</span></a>
+                                    <a href="#" class="select_opt"><strong>[픽어베이글] 다크통밀 베이글</strong> <span>2,900원</span></a>
                                 </div>
-                                <div class="select">
-                                    <div class="select_item">
+                                <div class="select_wrap">
+                                    <!-- <div class="select">
                                         <p class="item_name"></p>
-                                    </div>
-                                    <div class="num_price">
-                                        <div class="num_result">
-                                            <button type="button" class="minus"></button>
-                                            <input type="text" class="num" value="1" readonly>
-                                            <button type="button" class="plus"></button>
+                                        <div class="num_price">
+                                            <div class="num_result">
+                                                <button type="button" class="minus"></button>
+                                                <input type="text" class="num num_count" value="1" readonly>
+                                                <button type="button" class="plus"></button>
+                                            </div>
+                                            <div class="price"></div>
                                         </div>
-                                        <div class="price"><!-- 총액 --></div>
-                                    </div>
-                                    <a href="#"><img src="./images/main/icon/icon_cancle.svg" alt=""></a>
+                                        <a href="#"><img src="./images/main/icon/icon_cancle.svg" alt=""></a>
+                                    </div> -->
                                 </div>
                             </dd>
                         </dl>
@@ -258,7 +258,7 @@
                             </div>
                         </div>
                         <div class="wish_notify_cart_btn">
-                            <button type="button" class="wish"><img src="./images/main/icon/icon_wish_on.svg" alt=""></button><!-- 활성화 시 active_2로 img 변경 -->
+                            <button type="button" class="wish" id="top_purchase_wish"><img src="./images/main/icon/icon_wish_on.svg" alt=""></button><!-- 활성화 시 active_2로 img 변경 -->
                             <button type="button" class="alarm"><img src="./images/sub/icon_alarm.svg" alt=""></button>
                             <button type="button" class="cart">장바구니 담기</button>
                         </div>
@@ -286,7 +286,7 @@
                     <p class="m_description_img"><img src="./images/main/product/m_detail/m_p_description_001.jpg" alt=""></p>
                     <p class="content_img"><img src="./images/main/product/p_description_003.jpg" alt=""></p>
                     <p class="sub_title">뿌리 깊은 정통성을 지닌 뉴욕 베이글</p>
-                    <p class="description"> 베이글은 원래 유대인들의 빵이라는 사실을 아시나요? 19세기 무렵 다수의 유대인들이 유럽에서 미국 뉴욕으로 건너와 정착하며, 베이글은 뉴욕을 대표하는 음식이 되었습니다. 베이글이 전 세계적으로 널리 퍼지면서 그 맛과 종류는 다양해졌지만 전통적인 뉴욕 베이글만의 오리지널리티는 변하지 않았지요. 뉴욕의 베이글은 버터와 계란 없이 이스트와 설탕, 소금을 넣은 밀가루 반죽으로 만들어집니다. 한 번 삶은 뒤 구워내어 단단하고 묵직한 식감, 밀도 높은 조직감은 오리지널 베이글만의 ・<span class="option_detail">특징</span>이죠. 뉴욕 베이글은 베이직하고, 뿌리 깊은 정통성을 지닌 베이글입니다. </p>
+                    <p class="description"> 베이글은 원래 유대인들의 빵이라는 사실을 아시나요? 19세기 무렵 다수의 유대인들이 유럽에서 미국 뉴욕으로 건너와 정착하며, 베이글은 뉴욕을 대표하는 음식이 되었습니다. 베이글이 전 세계적으로 널리 퍼지면서 그 맛과 종류는 다양해졌지만 전통적인 뉴욕 베이글만의 오리지널리티는 변하지 않았지요. 뉴욕의 베이글은 버터와 계란 없이 이스트와 설탕, 소금을 넣은 밀가루 반죽으로 만들어집니다. 한 번 삶은 뒤 구워내어 단단하고 묵직한 식감, 밀도 높은 조직감은 오리지널 베이글만의 특징이죠. 뉴욕 베이글은 베이직하고, 뿌리 깊은 정통성을 지닌 베이글입니다. </p>
                     <p class="content_img"><img src="./images/main/product/p_description_004.jpg" alt=""></p>
                     <p class="sub_title">한국에서 만나는 뉴욕의 맛</p>
                     <p class="description"> 어떻게 뉴욕의 픽어베이글을 한국에서 맛볼 수 있는지 궁금하시다고요? 아시아 최초로 서울 압구정동에 ‘픽어베이글’의 여덟 번째 매장이 문을 열었거든요. 정통 뉴욕 베이글을 마켓컬리에서 온라인 최초로 보여 드립니다. 베이글의 참맛을 느끼고 싶으신 분들, 뉴욕에서 먹었던 베이글의 맛이 지독하게 그리운 분들께 적극 추천할게요. 픽어베이글은 뉴욕에서 공수한 생지를 사용해 만들기 때문에 치밀한 조직감을 자랑해요. 마치 빵과 떡의 중간단계처럼 속살이 찰지게 뭉쳐 있거든요. 달걀, 우유, 버터를 넣지 않아 지방과 당분 함량이 적어 가볍게 즐기실 수도 있습니다. 뉴욕의 맛을 그대로 느끼시려면 꼭 토스터나 오븐 등에 가열해서 드세요. 처음의 그 맛 그대로 쫄깃하게 드실 수 있을 거예요. </p>
@@ -380,7 +380,7 @@
                 <div class="detail_contents1">
                     <h3>상품고시정보</h3>
                     <ul>
-                        <li><a href="#">[픽어베이글] 플레인 베이글</a></li>
+                        <li><a href="#" class="detail_opt_active">[픽어베이글] 플레인 베이글</a></li>
                         <li><a href="#">[픽어베이글] 통밀 베이글</a></li>
                         <li><a href="#">[픽어베이글] 블루베리 베이글</a></li>
                         <li><a href="#">[픽어베이글] 시나몬 앤 레이즌 베이글</a></li>
@@ -1261,5 +1261,7 @@
         </div>
     </main>
     <?php include("footer.php"); ?>
+
+    <script src="./script/product.js"></script>
 </body>
 </html>
