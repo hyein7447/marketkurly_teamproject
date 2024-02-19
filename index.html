@@ -20,6 +20,7 @@
     <!--swipe 플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--swipe 플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -1378,12 +1379,24 @@
         <section class="main_bnr">
             <div class="swiper-container" id="main_bnr_slide">
                 <div class="swiper-wrapper" id="main_bnr_slide_wrap">
-                    <a href="#" class="swiper-slide slide slide1"></a>
-                    <a href="#" class="swiper-slide slide slide2"></a>
-                    <a href="#" class="swiper-slide slide slide3"></a>
-                    <a href="#" class="swiper-slide slide slide4"></a>
-                    <a href="#" class="swiper-slide slide slide5"></a>
-                    <a href="#" class="swiper-slide slide slide6"></a>
+                    <a href="#" class="swiper-slide slide slide1">
+                        <img src="./images/main/bnr/bnr_001.jpg" alt="친구 초대하면 친구도 나도 5천원씩">
+                    </a>
+                    <a href="#" class="swiper-slide slide slide2">
+                        <img src="./images/main/bnr/bnr_002.jpg" alt="한눈에 보는 2월 결제 혜택">
+                    </a>
+                    <a href="#" class="swiper-slide slide slide3">
+                        <img src="./images/main/bnr/bnr_003.jpg" alt="컬리카트 최대 13만원 혜택">
+                    </a>
+                    <a href="#" class="swiper-slide slide slide4">
+                        <img src="./images/main/bnr/bnr_004.jpg" alt="놀라운 혜택을 더한 설 선물세트 특선">
+                    </a>
+                    <a href="#" class="swiper-slide slide slide5">
+                        <img src="./images/main/bnr/bnr_005.jpg" alt="월 이용료 이상의 혜택 컬리멤버스">
+                    </a>
+                    <a href="#" class="swiper-slide slide slide6">
+                        <img src="./images/main/bnr/bnr_006.jpg" alt="간편하고도 품격있는 설 상차림의 모든 것">
+                    </a>
                 </div>
                 <div class="pagination">
                     <span class="current">1</span> <!--현재 페이지 js -->
@@ -2345,11 +2358,22 @@
     </div>
     <?php include("footer.php"); ?>
     <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="./script/header.js"></script>
     <script>
-        const mySwiper = new Swiper('#main_bnr_slide',{
+        // 메인 배너 슬라이드
+        const main_bnr_swiper = new Swiper('#main_bnr_slide',{
+            navigation:{
+                nextEl:'#main_bnr_slide .swiper-button-next',
+                prevEl:'#main_bnr_slide .swiper-button-prev',
+            },
+            pagination: {
+            el: "#main_bnr_slide .pagination",
+            // type: "fraction",
+            },
+        })
 
-            centeredSlides:true, //슬라이드의 기준을 가운데부터 시작하도록 설정하기
+/*         const ranking_swiper = new Swiper ('#ranking_slide',{
             navigation:{
                 nextEl:'#main_bnr_slide .swiper-button-next',
                 prevEl:'#main_bnr_slide .swiper-button-prev',
@@ -2357,9 +2381,9 @@
             pagination: {
             el: "#main_bnr_slide .pagination",
             type: "fraction",
-
             },
-        })
+        }) */
+
 
         //본 예제에서는 도로명 주소 표기 방식에 대한 법령에 따라, 내려오는 데이터를 조합하여 올바른 주소를 구성하는 방법을 설명합니다.
         function exec_daum_postcode() {
@@ -2417,5 +2441,6 @@
             }).open();
         }
     </script>
+    <script src="./script/index.js"></script>
 </body>
 </html>
