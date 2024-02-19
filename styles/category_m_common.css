@@ -29,7 +29,7 @@
     margin-top: 28px;
     white-space: nowrap;
   }
-  main .best .top .cate_list a.top_active {
+  main .best .top .cate_list a:hover {
     font-weight: 700;
     color: #5f0080;
   }
@@ -703,4 +703,8 @@
   main .best_mobile .tab_slide .bg .area .btn_wrap .btn_view span {
     font-size: 0.813rem;
   }
+}
+.top_active {
+  font-weight: 700;
+  color: #5f0080;
 }/*# sourceMappingURL=category_m_common.css.map */
