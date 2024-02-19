@@ -5,25 +5,64 @@ const option = purchase.querySelector('.option');
 const select_opt = option.querySelectorAll('.select_opt');
 
 const select_container = document.querySelector('.select_container');
-const select = select_container.querySelector('.select');
-const select_item = select_container.querySelector('.select_item');
-const item_name = select.querySelector('.item_name');
+const select_wrap = document.querySelector('.select_wrap');
 
 option_btn.addEventListener('click',()=>{
     option.style.display = 'block'
 })
 
-select_opt.forEach((t, i) => {
+for(let i of select_opt){
+    i.addEventListener('click',(e)=>{
+        e.preventDefault();
+        option.style.display = 'none'
+        console.log(i.firstElementChild.innerHTML)
+        console.log(i.lastChild.innerHTML)
+        /* let create_select_opt = document.createElement('div')
+        // create_select_opt.classList.add('select_item')
+        create_select_opt.innerHTML = `<div>${i.firstElementChild.innerHTML}</div>`
+        create_select_opt.innerHTML = `<div>${i.lastElementChild.innerHTML}</div>`
+        // create_select_opt.innerHTML += `<span>${i.firstElementChild.innerHTML}</span>` */
+        let create_list = document.createElement('div')
+        /* create_list.classList.add('result_list')
+        create_list.innerHTML = `<p class="item_name">${i.firstElementChild.innerHTML}</p>`
+        create_list.innerHTML += `<div class="num_price">`
+        create_list.innerHTML += `<div class="num_result">`
+        create_list.innerHTML += `<button type="button" class="minus"></button>`
+        create_list.innerHTML += `<input type="text" class="num num_count" value="1" readonly>`
+        create_list.innerHTML += `<button type="button" class="plus"></button>`
+        create_list.innerHTML += `</div>`
+        create_list.innerHTML += `<p class="price">${i.lastElementChild.innerHTML}</p>`
+         `</div>` */
+        create_list.innerHTML = `<div class="select">`
+        create_list.innerHTML += `<p class="item_name">${i.firstElementChild.innerHTML}</p>`
+        create_list.innerHTML += `<div class="num_price">`
+        create_list.innerHTML += `<div class="num_result">`
+        create_list.innerHTML += `<button type="button" class="minus"></button>`
+        create_list.innerHTML += `<input type="text" class="num num_count" value="1" readonly>`
+        create_list.innerHTML += `<button type="button" class="plus"></button>`
+        create_list.innerHTML += `</div>`
+        create_list.innerHTML += `<div class="price">${i.lastElementChild.innerHTML}</div>`
+        create_list.innerHTML += `</div>`
+        create_list.innerHTML += `<a href="#"><img src="./images/main/icon/icon_cancle.svg" alt=""></a>`
+        create_list.innerHTML += `</div>`
+        select_wrap.appendChild(create_list)
+    })
+}
+/* select_opt.forEach((t, i) => {
     t.addEventListener('click', (e) => {
         e.preventDefault();
-        select.style.display = 'block';
         option.style.display = 'none';
+        // select.style.display = 'block';
         item_name.textContent = t.textContent.trim();
-
+        
         // 다중선택 복합대입
-        // select_container.innerHTML += ;
+        const new_select_opt = document.createElement('div')
+        // new_select_opt.classList.add('select')
+        // new_select_opt.innerHTML = 
+        console.log(new_select_opt)
+        select_wrap.appendChild(new_select_opt)
     });
-});
+}); */
 
 // -------------- wish btn 클릭 시 활성화
 const wish = document.querySelectorAll('.wish')
@@ -33,14 +72,11 @@ function on_off(name, status){
 }
 
 wish[1].addEventListener('click',function(){
-    // 현재 이미지 경로 가져오기
     const current_src = this.children[0].src;
-    // 'off' 이미지 경로 생성
     const off_src = on_off('wish', 'off');
 
     const off = current_src.includes('icon_wish_off.svg');
 
-    // 'off' 상태라면 'on' 이미지로 변경, 아니라면 'off' 이미지로 변경
     this.children[0].src = off ? on_off('wish', 'on2') : off_src;
 })
 
@@ -71,49 +107,142 @@ window.addEventListener('scroll', () => {
 });
 
 // -------- option 수량 증감
-const num_price = document.querySelector('.num_price')
+/* const num_price = document.querySelector('.num_price')
 const plus = num_price.querySelector('.plus')
 const minus = num_price.querySelector('.minus')
 const num_count = num_price.querySelector('.num')
+const item_price = num_price.querySelector('.price')
+
+let num = 1;
+let price = 2900;
+let total = num * price;
+
+price.innerText = total;
+console.log(price)
+item_price.innerHTML = price.toLocaleString('ko-kr')+'원';
+num_count.value = num;
 
 plus.addEventListener('click',()=>{
-    num_count.value++
+    num++
+    num_count.value = num;
+    price.innerHTML = total;
 })
 minus.addEventListener('click',()=>{
     if(num_count.value > 1){
-        num_count.value--
+        num--
+        num_count.value = num;
     }
-})
+}) */
+
+// ---------- 상품고시정보 선택한 옵션 클릭 시 활성화
+const detail_opt = document.querySelectorAll('.detail_contents1 > ul > li > a')
+
+const detail_opt_default = ()=>{
+    for(let t of detail_opt){
+        t.classList.remove('detail_opt_active')
+    }
+}
+
+detail_opt.forEach((t, i) => {
+    t.addEventListener('click', (e) => {
+        detail_opt_default()
+        t.classList.add('detail_opt_active')
+        e.preventDefault()
+    });
+});
 
 // ---------- 상세설명 
 const exchange_refund = document.querySelector('.exchange_refund')
-const exchange_refund_close = document.querySelector('.exchange_refund > .title > .close > .close_btn')
-const exchange_refund_con = document.querySelector('.exchange_refund > ul')
 const order_cancel = document.querySelector('.order_cancel')
-const order_cancel_close = document.querySelector('.order_cancel > .title > .close > .close_btn')
+const exchange_refund_con = document.querySelector('.exchange_refund > ul')
 const order_cancel_con = document.querySelector('.order_cancel > ul')
-console.log(exchange_refund_close)
-console.log(order_cancel_close)
+const exchange_refund_close = document.querySelector('.exchange_refund > .title > .close > .close_btn')
+const order_cancel_close = document.querySelector('.order_cancel > .title > .close > .close_btn')
+const exchange_refund_close_icon = document.querySelector('.exchange_refund > .title > .close > .close_btn > img')
+const order_cancel_close_icon = document.querySelector('.order_cancel > .title > .close > .close_btn > img')
 
-console.log(exchange_refund_con.style.display == false)
 let exchange_refund_con_status = false;
+let order_cancel_con_status = false;
 
-order_cancel_close.addEventListener('click', function(){
+exchange_refund_close.addEventListener('click', function(){
     if(exchange_refund_con_status == false){
-        price_info_open.style.display = 'none';
-        console.log(exchange_refund_con_status)
+        exchange_refund_con.style.display = 'none';
         exchange_refund_con_status = !exchange_refund_con_status
+        exchange_refund_close_icon.style.transform = 'rotate(0deg)'
     }else{
-        exchange_refund_con_status.style.display = 'block';
-        console.log(exchange_refund_con_status)
-        exchange_refund_con_status = !price_info_open_status
+        exchange_refund_con.style.display = 'block';
+        exchange_refund_con_status = !exchange_refund_con_status
+        exchange_refund_close_icon.style.transform = 'rotate(180deg)'
+    }
+})
+order_cancel_close.addEventListener('click', function(){
+    if(order_cancel_con_status == false){
+        order_cancel_con.style.display = 'none';
+        order_cancel_con_status = !order_cancel_con_status
+        order_cancel_close_icon.style.transform = 'rotate(0deg)'
+    }else{
+        order_cancel_con.style.display = 'block';
+        order_cancel_con_status = !order_cancel_con_status
+        order_cancel_close_icon.style.transform = 'rotate(180deg)'
     }
 })
 
-/* exchange_refund_close.addEventListener('click',()=>{
-    exchange_refund_con.style.display = 'none'
+// ---------- review 더보기 클릭 시 review_photo_more 박스 나타남
+const review_photo_more = document.querySelector('.review_photo_more')
+const review_photo_more_btn = document.querySelector('.review_photo_list > a > span')
+const photo_more_close = document.querySelector('#photo_more_btn')
+
+review_photo_more_btn.addEventListener('click', (e) => {
+    e.preventDefault()
+    review_photo_more.style.display = 'block'
+});
+photo_more_close.addEventListener('click',()=>{
+    review_photo_more.style.display = 'none'
 })
-order_cancel_close.addEventListener('click',()=>{
-    order_cancel_con.style.display = 'none'
+
+// -------- 리뷰 옵션
+const filter_btn = document.querySelectorAll('.filter_btn')
+const opt_filter_box = document.querySelector('.opt_filter_box')
+const rating_filter_box = document.querySelector('.rating_filter_box')
+
+let filter_btn_status = false;
+let rating_filter_box_status = false;
+
+filter_btn[0].addEventListener('click', function(){
+    if(filter_btn_status == false){
+        opt_filter_box.style.display = 'block';
+        filter_btn_status = !filter_btn_status
+    }else{
+        opt_filter_box.style.display = 'none';
+        filter_btn_status = !filter_btn_status
+    }
 })
- */
+filter_btn[1].addEventListener('click', function(){
+    if(rating_filter_box_status == false){
+        rating_filter_box.style.display = 'block';
+        rating_filter_box_status = !rating_filter_box_status
+    }else{
+        rating_filter_box.style.display = 'none';
+        rating_filter_box_status = !rating_filter_box_status
+    }
+})
+
+// ---------- 리뷰공지 클릭 시 내용 보이기
+const review_notice_btn = document.querySelectorAll('.review_notice_btn');
+const review_notice_contents = document.querySelectorAll('.review_notice_contents');
+
+// 각 버튼에 대한 동작 함수 정의
+function view_notice(i) {
+    if (review_notice_contents[i].style.display === 'none') {
+        review_notice_contents[i].style.display = 'block';
+    } else {
+        review_notice_contents[i].style.display = 'none';
+    }
+}
+
+// 각 버튼에 이벤트 리스너 추가
+review_notice_btn.forEach((t, i) => {
+    t.addEventListener('click', function(){
+        view_notice(i);
+    });
+});

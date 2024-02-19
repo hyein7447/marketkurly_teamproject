@@ -12,16 +12,12 @@
     header .header_btm {display: none;}
 
     header {
+        padding: 0;
         .m_header {
             display: block;
-            
-            .top {}
-            .menu {}
-            .btm_menu {}
-            .lnb_bg {}
-            .m_nav {}
-            .user_search {}
-            .user_login {}
+            .lnb_bg {display: none;}
+            .m_nav {display: none;}
+            .user_search {display: none;}
     
             .top {
                 min-height: 44px;
@@ -84,7 +80,7 @@
             }
             .menu {
                 height: 44px;
-                padding: 0 18px;
+                padding: 0 16px;
                 width: 100%;
                 box-shadow: rgb(221, 221, 221) 0px -0.5px 0px 0px inset;
                 @include flex-row-btw-ct;
@@ -306,40 +302,6 @@
                         font-weight: 600;
                         padding-top: 9px;
                     }
-                }
-            }
-            .user_login {
-                .title {
-                    width: 100%;
-                    background-color: #fff;
-                    @include flex-row-ct-ct;
-                    a {
-                        img {}
-                    }
-                    h2 {}
-                }
-                .user_id_pw {
-                    #user_id {}
-                    #user_pw {}
-                }
-                .id_save {
-                    #id_save_btn{}
-                    label {
-                        span {}
-                    }
-                }
-                .btn{
-                    #login_btn {}
-                    #join_btn {}
-                }
-                .id_pw_search {
-                    a {}
-                }
-                p {
-                    em {}
-                }
-                a {
-                    img {}
                 }
             }
         }

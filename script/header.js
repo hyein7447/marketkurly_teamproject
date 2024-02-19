@@ -1,58 +1,59 @@
-
+const category_bg = document.querySelector('.category_bg')
 const category = document.querySelector('.category')
-const gnb = document.querySelector('.gnb')
 const gnb_bg = document.querySelector('.gnb_bg')
-const lnb = document.querySelectorAll('.lnb_wrap .lnb')
+const gnb_wrap = document.querySelector('.gnb_wrap')
+const gnb = document.querySelector('.gnb')
 const gnb_li = document.querySelectorAll('.gnb_cate')
 const gnb_icon = document.querySelectorAll('.gnb_icon')
-const icon_img  = document.querySelectorAll('.gnb_icon img')
-const category_bg = document.querySelector('.category_bg')
-const gnb_wrap = document.querySelector('.gnb_wrap')
-console.log(lnb, gnb_li,gnb_icon,icon_img)
+const lnb = document.querySelectorAll('.header_btm .lnb_wrap .lnb')
+console.log(lnb, gnb_li, gnb_icon[0].children)
 
-// 초기 nav 가리기
-gnb_bg.style.display = 'none'
-lnb[26].style.display = 'none'
-
-function onoff(target, num, status){
-    return target.childeren[0].src = `./images/main/icon/category/cate_${num}_${status}.png`
-}
+// 초기 gnb 가리기
+gnb.style.display ='none'
 
 // 카테고리 icon 마우스오버 시 gnb 출력
 category_bg.addEventListener('mouseover',()=>{
     gnb_bg.style.display = 'block'
     gnb.style.display = 'block'
+
+    // 카테고리 txt active 적용
     category.classList.add('color_active')
     
 })
 
-category.addEventListener('mouseout',()=>{
+category_bg.addEventListener('mouseout',()=>{
+    // 카테고리 icon 마우스아웃 시 gnb 제거
     gnb_bg.style.display = 'none'
     gnb.style.display = 'none'
-    category.classList.remove('color_active')
+
+    // 카테고리 icon 마우스아웃 시 lnb 제거
     for(let j of lnb ){j.style.display='none'}
+
+    // 카테고리 txt active 제거
+    category.classList.remove('color_active')
 })
 
 // gnb 마우스오버 시 lnb 출력
-
 gnb_li.forEach((t, i)=>{
     t.addEventListener('mouseover',()=>{
-        for(let j of lnb ){j.style.display='none'}
-        lnb[i].style.display = 'block'
-        gnb_wrap.style.display ='block'
+        for(let j of lnb ){j.style.display='none'} //초기 lnb 전체숨김
+        lnb[i].style.display = 'block' //해당 lnb만 출력
+        
+        // gnb li active 적용
         t.classList.add('gnb_active')
         gnb_icon[i].children[1].classList.add('gnb_active')
     })
 })
+// gnb 마우스아웃 시 lnb 제거
 gnb_li.forEach((t, i)=>{
     t.addEventListener('mouseout',()=>{
+        lnb[i].style.display = 'none'
+        
+        // gnb li active 제거
         t.classList.remove('gnb_active')
         gnb_icon[i].children[1].classList.remove('gnb_active')
-    })
-})
 
-gnb_bg.addEventListener('mouseout',()=>{
-    gnb_bg.style.display = 'none'
+    })
 })
 
 gnb_li[26].addEventListener('mouseover',()=>{

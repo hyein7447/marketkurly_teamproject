@@ -86,7 +86,6 @@ main{
                     padding: 10px 20px;
                     background-color: rgb(247, 247, 247);
                     margin-top: 20px;
-                    // display: none;
                     
                     * {
                         font-size: 0.875rem;
@@ -312,7 +311,6 @@ main{
                         }
                         dd{
                             width: 77%;
-                            background-color: yellow;
 
                             .option_btn{
                                 @include flex-row-btw-ct;
@@ -335,19 +333,15 @@ main{
                                     }
                                 }
                             }
-                            .select{
-                                background-color: red;
+                            .select_wrap{
                                 margin-top: 7.5px;
                                 padding: 13.75px 15px;
                                 border: 1px solid $c-244;
                                 position: relative;
-                                display: none;
+                                // display: none;
 
-                                .select_item{
-                                    background-color: orange;
-                                    .item_name{
-                                        font-size: $px12;
-                                    }
+                                .item_name{
+                                    font-size: $px12;
                                 }
                                 .num_price{
                                     @include flex-row-btw-ct;
@@ -712,12 +706,18 @@ main{
                         a{
                             display: flex;
                             align-items: center;
+                            color: #4c4c4c;
                             border: 1px solid rgb(238, 238, 238);
                             padding: 10px 16.25px;
                             font-size: $px13;
                             letter-spacing: -0.5px;
                             border-radius: 4px;
                             line-height: 22.5px;
+                            font-weight: 500;
+                        }
+                        .detail_opt_active{
+                            border: 1px solid #333;
+                            color: #4c4c4c;
                         }
                     }
                 }
@@ -1135,6 +1135,7 @@ main{
                     top: 10%;
                     margin: 0 auto;
                     width: 62.5%;
+                    width: 45%;
                     background-color: #fff;
                     padding: 37.5px;
                     border-radius: 12px;
@@ -1256,6 +1257,11 @@ main{
     
                                     input{display: none;}
                                     label{
+                                        span{
+                                            font-size: $px12;
+                                            color: $c-204;
+                                            padding-left: 5px;
+                                        }
                                         &::before{
                                             content: '';
                                             display: inline-block;
@@ -1326,6 +1332,11 @@ main{
     
                                     input{display: none;}
                                     label{
+                                        span{
+                                            font-size: $px12;
+                                            color: $c-204;
+                                            padding-left: 5px;
+                                        }
                                         &::before{
                                             content: '';
                                             display: inline-block;
@@ -1392,6 +1403,7 @@ main{
                             padding: 31.25px 25px 25px;
                             border-bottom: 1px solid #eee;
                             background-color: #fafafa;
+                            text-align: left;
                             display: none;
 
                             p{

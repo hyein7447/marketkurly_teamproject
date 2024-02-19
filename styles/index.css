@@ -1,4 +1,6 @@
 body {}
+
+header .m_header {}
 main {}
 main .title a {
     display: flex; justify-content: center; font-weight: 600; font-size: 1.875rem ; 
@@ -270,7 +272,7 @@ main .kurly_original .container #original_slide {
 main .kurly_original .container #original_slide #original_slide_wrap {
     display: flex; width: max-content;
 }
-/* 컬리 only 슬라이드 아이템 공통*/
+/* 컬리 오리지널 슬라이드 아이템 공통*/
 main .kurly_original .container #original_slide #original_slide_wrap .item {
     margin-right: 18px; width: 630px; 
 }
