@@ -161,6 +161,7 @@ main .best .container .left .list2 .box .more_btn a p[class$=right] {
 }
 /* 어사이드 --- 카테고리 */
 main .best .container .left .list1 > ul > .more_btn {padding: 9px 0 0px;}
+main .best .container .left .list2 .box .more_btn {margin-bottom: 18px;}
 /* 어사이드 --- 브랜드의 상단영역 */
 main .best .container .left .list2 {}
 main .best .container .left .list2 .list_title {}
@@ -232,7 +233,6 @@ main .best .container .left .list2 .box .con15,
 main .best .container .left .list2 .box .con16, 
 main .best .container .left .list2 .box .con17 {
     display: none;
-    position: sticky; top:0;
 }
 main .best .container .left .list2 .box .con1 {
     /* display: none; */
@@ -350,7 +350,7 @@ main .best .container .right .product_box .product {
     position: relative;
 }
 main .best .container .right .product_box .product .thumb {
-    background-image: url(../images/main/product/main_p_01.jpg);
+    background-image: url(../images/main/product/main_p_02.jpg);
     /* background-size: calc((100% / 3) - 13px) , 340px; */
     padding-top: calc(33% / 1 * 4);
     background-size: cover;

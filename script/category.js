@@ -39,7 +39,7 @@ const brand_tab_a = brand_pop.querySelectorAll('.wrap_top > .wrap > .tab > a')
 const brand_subtab_a = brand_pop.querySelectorAll('.wrap_top > .tab_sub > a')
 const cate_pop = document.querySelector('.best > .popup > .cate_pop')
 const cate_more_btn = ul_1.querySelector('.more_btn > a ')
-const brand_more_btn = ul_2_ul.querySelector('.more_btn > li > a ')
+const brand_more_btn = ul_2_ul.querySelector('.more_btn > a ')
 const cate_pop_btn_reset = cate_pop.querySelector('.btn_wrap > .btn_reset ')
 const cate_pop_btn_ok = cate_pop.querySelector('.btn_wrap > .btn_ok')
 const brand_pop_btn_ok = brand_pop.querySelector('.btn_wrap > .btn_ok')
@@ -120,30 +120,36 @@ for (let a of atoz_btn_a){
 
 // ---------------------- 구분선 --------------------------
 
-// 브랜드 atoz_btn 클릭시 서브탭 활성화 ------------------>>>>>>>>>>> 작업중★
-const brand_ul_hide = ()=>{
-    for (let a of brand_tab_box_ul){
-        a.style.display = 'none'
-    }
-    // brand_tab_box_ul[0].style.display = 'none';
-}
-let box_ul_status = false;
+// 브랜드 atoz_btn 클릭시 서브탭 활성화 ------------------>>>>>>>>>>> 작업중★★★★★★
+// 호출용 함수
+let box_basic_hide = ()=>{brand_tab_box_ul[0].style.display = 'none';}
+let box_hide = ()=>{for(let a of brand_tab_box_ul){a.style.display = 'none';}}
+// 초기값 1번 ul 활성화
 brand_tab_box_ul[0].style.display = 'block';
-for(let i of brand_tab_box_ul){
-    for (let a of atoz_btn_a){
-        a.addEventListener('click',()=>{
-            console.log(i,'-----',brand_tab_box_ul[i])
-            if(box_ul_status = false){
-                i.style.display = 'block';
-                box_ul_status = !box_ul_status;
-            }else{
-                console.log(i,'--111---')
-                i.style.display = 'none';
-                box_ul_status = !box_ul_status;
-            }
-        })
-    }
-}
+let box_ul_status = false;
+// atoz_btn_a 클릭시 초기값 숨기고 -> 해당 탭 보이기 -> 클릭시 이전 탭 숨기기
+brand_tab_box_ul.forEach(function(idx,arr){
+    atoz_btn_a[arr].addEventListener('click',function(){
+        box_hide() //모슨 박스 숨기는 함수
+        if(box_ul_status == false){
+            idx.style.display = 'block';
+            box_basic_hide() //초기박스 숨기는 함수 
+            box_ul_status = !box_ul_status;
+        }else{
+            box_hide() //모슨 박스 숨기는 함수
+            idx.style.display = 'block';
+            box_ul_status = !box_ul_status;
+        }
+    })
+})
+// 상품 많은순 클릭 시 atoz_btn_a 리스트 숨기기 -> 가나다순 클릭 시 리스트 보이기
+brand_a[1].addEventListener('click',()=>{
+    ul_2_atoz.style.display = 'none';
+})
+brand_a[0].addEventListener('click',()=>{
+    ul_2_atoz.style.display = 'block';
+})
+
 // ---------------------- 구분선 --------------------------
 
 // 카테고리 ^ [chevron-up] 아이콘 클릭 시 탭 활성화 -> 비활성화 / 아이콘 상하 반전
@@ -236,10 +242,10 @@ for (let i of ul_li_a1){
         if (btn_chk_img_status == false){
             chk_reset.children[0].classList.add('name_active')
             chk_reset.children[1].classList.add('name_active')
-            i.children[0].src = './images/sub/icon_check4.png';
+            i.children[0].src = './images/sub/icon_check_pp.svg';
             btn_chk_img_status = !btn_chk_img_status;
         }else {
-            i.children[0].src = './images/sub/icon_check1.png';
+            i.children[0].src = './images/sub/icon_check_999.svg';
             btn_chk_img_status = !btn_chk_img_status;
         }
     })
@@ -249,10 +255,10 @@ chk_reset_basic()
 for (let i of ul_li_a2){
     i.addEventListener('click',()=>{
         if (btn_chk_img_status == false){
-            i.children[0].src = './images/sub/icon_check4.png';
+            i.children[0].src = './images/sub/icon_check_pp.svg';
             btn_chk_img_status = !btn_chk_img_status;
         }else {
-            i.children[0].src = './images/sub/icon_check1.png';
+            i.children[0].src = './images/sub/icon_check_999.svg';
             btn_chk_img_status = !btn_chk_img_status;
         }
     })
@@ -271,10 +277,10 @@ for (let i of ul_li_a3){
 for (let i of ul_li_a4){
     i.addEventListener('click',()=>{
         if (btn_chk_img_status == false){
-            i.children[0].src = './images/sub/icon_check4.png';
+            i.children[0].src = './images/sub/icon_check_pp.svg';
             btn_chk_img_status = !btn_chk_img_status;
         }else {
-            i.children[0].src = './images/sub/icon_check1.png';
+            i.children[0].src = './images/sub/icon_check_999.svg';
             btn_chk_img_status = !btn_chk_img_status;
         }
     })
@@ -282,10 +288,10 @@ for (let i of ul_li_a4){
 for (let i of ul_li_a5){
     i.addEventListener('click',()=>{
         if (btn_chk_img_status == false){
-            i.children[0].src = './images/sub/icon_check4.png';
+            i.children[0].src = './images/sub/icon_check_pp.svg';
             btn_chk_img_status = !btn_chk_img_status;
         }else {
-            i.children[0].src = './images/sub/icon_check1.png';
+            i.children[0].src = './images/sub/icon_check_999.svg';
             btn_chk_img_status = !btn_chk_img_status;
         }
     })
