@@ -745,10 +745,10 @@ footer address .box p:nth-child(3) {
 
 @media screen and (max-width: 1280px) {
   footer .f_container {
-    padding: 40px 16px 20px;
+    padding: 40px 20px 20px;
   }
   footer .f_list {
-    padding: 10px 16px 0;
+    padding: 10px 20px 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -761,7 +761,7 @@ footer address .box p:nth-child(3) {
     padding: 20px 0 33px;
   }
   footer address .box {
-    padding: 20px 16px 30px;
+    padding: 20px 20px 30px;
   }
 }
 @media screen and (max-width: 820px) {

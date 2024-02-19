@@ -3,7 +3,7 @@
     scroll-behavior: smooth;
   }
   main {
-    padding: 0 16px;
+    padding: 0 20px;
   }
   main .best {
     max-width: 1280px;
@@ -47,6 +47,7 @@
     scroll-behavior: smooth;
   }
   main {
+    padding: 0 16px;
     position: relative;
   }
   main .best {
@@ -707,4 +708,18 @@
 .top_active {
   font-weight: 700;
   color: #5f0080;
+<<<<<<< HEAD
+}
+
+.name_active {
+  color: #5f0080;
+  font-weight: 600 !important;
+}
+
+.atoz_active {
+  transition: 0.5s ease;
+  background-color: #333 !important;
+  color: #fff !important;
+=======
+>>>>>>> 0549c7b47779c9d8bb5ca7cfaca22571a17d662d
 }/*# sourceMappingURL=category_m_common.css.map */
