@@ -3,7 +3,7 @@
     scroll-behavior: smooth;
   }
   main {
-    padding: 0 16px;
+    padding: 0 20px;
   }
   main .best {
     max-width: 1280px;
@@ -29,7 +29,7 @@
     margin-top: 28px;
     white-space: nowrap;
   }
-  main .best .top .cate_list a.top_active {
+  main .best .top .cate_list a:hover {
     font-weight: 700;
     color: #5f0080;
   }
@@ -47,6 +47,7 @@
     scroll-behavior: smooth;
   }
   main {
+    padding: 0 16px;
     position: relative;
   }
   main .best {
@@ -703,4 +704,19 @@
   main .best_mobile .tab_slide .bg .area .btn_wrap .btn_view span {
     font-size: 0.813rem;
   }
+}
+.top_active {
+  font-weight: 700;
+  color: #5f0080;
+}
+
+.name_active {
+  color: #5f0080;
+  font-weight: 600 !important;
+}
+
+.atoz_active {
+  transition: 0.5s ease;
+  background-color: #333 !important;
+  color: #fff !important;
 }/*# sourceMappingURL=category_m_common.css.map */

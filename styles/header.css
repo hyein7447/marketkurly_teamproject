@@ -1,11 +1,10 @@
 /* 모바일용 header 가리기 */
-header .m_header {}
+header .m_header {display: none;}
+
 /* 데스크탑 header 가리기 */
 header .user_page,
 header .header_top,
-header .header_btm {display: none;}
-
-
+header .header_btm {}
 
 html,body{}
 header { 

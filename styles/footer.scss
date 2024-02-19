@@ -712,13 +712,13 @@ footer {
 @media screen and (max-width:1280px) {
     footer{
         .f_container {
-            padding: 40px 16px 20px;
+            padding: 40px 20px 20px;
             .left {
 
             }
         }
         .f_list {
-            padding: 10px 16px 0;
+            padding: 10px 20px 0;
             @include flex-row-btw-st;
             .isms , .eprivacy , .payments, .wooribank  {
                 @include flex-row-st;
@@ -732,7 +732,7 @@ footer {
         .right {}
         address {
             .box {
-                padding: 20px 16px 30px;
+                padding: 20px 20px 30px;
             }
         }
     }
