@@ -133,6 +133,7 @@ header .header_btm nav {
     max-width: 1280px; height: 56px; display: flex; margin: 0 auto; justify-content: space-between;
     align-items: center; position: relative;
 }
+header .header_btm nav .category_bg {padding: 20px 0;}
 header .header_btm nav .category {font-weight: 500; white-space: nowrap; font-size: 1.125rem; line-height: 30px;}
 header .header_btm nav .category img {width: 16px; height: 14px; margin-right: 10px;}
 /* 카테고리 마우스 오버 시 출력되는 카데고리 */
@@ -140,6 +141,7 @@ header .header_btm nav .gnb_bg {
     position: absolute; top: 46px; left: 0;
     overflow-y: hidden; overflow-x: hidden;
     min-height: 200px; display: flex;
+    z-index: 999;
 }
 header .header_btm nav .gnb_bg .gnb_wrap {
     width: 800px; position: relative; padding-top: 10px;
@@ -168,13 +170,18 @@ header .header_btm nav .gnb_bg .gnb_wrap .gnb li:last-child .lnb_bg .lnb_wrap .l
 
 /* gnb 마우스 오버시 출력되는 lnb */
 header .header_btm nav .gnb_bg .gnb_wrap .gnb li .lnb_bg {
-    
+    position: absolute;
+    left: 230px;
+    top: 10px;
+    padding-left: 17px;
 }
 header .header_btm nav .gnb_bg .gnb_wrap .gnb li .lnb_bg .lnb_wrap {}
 header .header_btm nav .gnb_bg .gnb_wrap .gnb li .lnb_bg .lnb_wrap .lnb {
-    position: absolute; top: 10px; left: 246px; z-index: 320; border: 1px solid #ddd;
-    height: 100%; width: 266px; overflow-y: scroll; padding-top: 10px;
+    /* position: absolute; top: 10px; left: 246px; */ 
+    z-index: 320; border: 1px solid #ddd;
+    height: 100vh; width: 266px; overflow-y: scroll; padding-top: 10px;
     border-left: none; border-left: none; background: #f7f7f7;
+    
 }
 header .header_btm nav .gnb_bg .gnb_wrap .gnb li .lnb_bg .lnb_wrap .lnb a {
     padding: 13px 20px 13px 18px;
@@ -196,7 +203,7 @@ header .header_btm nav .gnb_bg .gnb_wrap .gnb .gnb_cate27 .lnb_bg .lnb_wrap {hei
 header .header_btm nav .gnb_bg .gnb_wrap .gnb .gnb_cate27 .lnb_bg .lnb_wrap .lnb {
     width: 550px; padding: 20px 0 0 21px; overflow-x: hidden;
     display: flex; flex-flow: row wrap;
-    height: 100%;
+    height: 100vh;
 }
 header .header_btm nav .gnb_bg .gnb_wrap .gnb .gnb_cate27 .lnb_bg .lnb_wrap .lnb a {
     display: flex; 
@@ -241,7 +248,7 @@ header .header_btm nav .delivery span em {
     color: #5F0080;
 }
 .color_active {
-    color: #5F0080;
+    color: #5F0080 !important;
 }
 .lnb_active {
     color: #5F0080;

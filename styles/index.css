@@ -13,11 +13,13 @@ main .main_bnr {}
 main .main_bnr {}
 main .main_bnr #main_bnr_slide {
     max-width: 1920px; margin: 0 auto 40px; position: relative;
+    overflow-x: hidden;
 }
 main .main_bnr #main_bnr_slide #main_bnr_slide_wrap {}
 /* 메인 배너 slide 공통 */
 main .main_bnr #main_bnr_slide #main_bnr_slide_wrap .slide {
     display: block; background-size: cover; height: 370px;
+    position: relative;
 } 
 /* 메인 배너 slide 개별 */
 main .main_bnr #main_bnr_slide #main_bnr_slide_wrap .slide1 {
@@ -38,11 +40,33 @@ main .main_bnr #main_bnr_slide #main_bnr_slide_wrap .slide5 {
 main .main_bnr #main_bnr_slide #main_bnr_slide_wrap .slide6 {
     background: url(../images/main/bnr/bnr_006.jpg);
 }
-main .main_bnr #main_bnr_slide .swiper-pagination {
-    position: absolute; bottom: 0 ;
+main .main_bnr #main_bnr_slide .pagination {
+    /* position: absolute; bottom: 0 ; */
+    background: aqua;
+    width: 55px;
+    height: 23px;
+    /* position: absolute; */
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 23px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    border-radius: 12px;
+    bottom: 0;
+    right: 0;
 }
-main .main_bnr #main_bnr_slide .swiper-pagination .current {}
-main .main_bnr #main_bnr_slide .swiper-pagination .total {}
+main .main_bnr #main_bnr_slide .pagination .current {
+    background: tomato;
+    position: absolute;
+    
+}
+main .main_bnr #main_bnr_slide .pagination .total {
+    background: yellow;
+    position: absolute;
+}
 main .main_bnr #main_bnr_slide #main_prev_btn { transform: scaleX(-1);}
 /* 이전, 다음 버튼 공통 묶음 */
 main .main_bnr #main_bnr_slide #main_prev_btn,
