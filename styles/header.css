@@ -142,7 +142,7 @@ header .header_btm nav .gnb_bg {
     min-height: 200px; display: flex;
 }
 header .header_btm nav .gnb_bg .gnb_wrap {
-    width: 517px; position: relative; z-index: 321; padding-top: 10px;
+    width: 800px; position: relative; padding-top: 10px;
     
 }
 header .header_btm nav .gnb_bg .gnb_wrap .gnb {
@@ -187,22 +187,30 @@ header .header_btm nav .gnb_bg .gnb_wrap .gnb li:first-child .lnb_bg .lnb_wrap .
 }
 /* lnb 마지막 자식 컬리의 추천 */
 /* lnb 마지막 자식 컬리의 추천 공통 */
-header .header_btm nav .gnb_bg .gnb_wrap:last-child {width: 1000px;}
-header .header_btm nav .gnb_bg .gnb_wrap .gnb li:nth-child(27) {}
-header .header_btm nav .gnb_bg .gnb_wrap .gnb li:nth-child(27) .lnb_bg {}
-header .header_btm nav .gnb_bg .gnb_wrap .gnb li:nth-child(27) .lnb_bg .lnb_wrap {height: 100%;}
-header .header_btm nav .gnb_bg .gnb_wrap .gnb li:nth-child(27) .lnb_bg .lnb_wrap .lnb {
-    width: 560px; padding: 20px 0 0 21px; overflow-x: hidden;
+header .header_btm nav .gnb_bg .gnb_wrap .gnb .gnb_cate27 {}
+header .header_btm nav .gnb_bg .gnb_wrap .gnb .gnb_cate27 a {}
+header .header_btm nav .gnb_bg .gnb_wrap .gnb .gnb_cate27 a img {}
+header .header_btm nav .gnb_bg .gnb_wrap .gnb .gnb_cate27 a span {}
+header .header_btm nav .gnb_bg .gnb_wrap .gnb .gnb_cate27 .lnb_bg {}
+header .header_btm nav .gnb_bg .gnb_wrap .gnb .gnb_cate27 .lnb_bg .lnb_wrap {height: 100%;}
+header .header_btm nav .gnb_bg .gnb_wrap .gnb .gnb_cate27 .lnb_bg .lnb_wrap .lnb {
+    width: 550px; padding: 20px 0 0 21px; overflow-x: hidden;
     display: flex; flex-flow: row wrap;
     height: 100%;
 }
-header .header_btm nav .gnb_bg .gnb_wrap .gnb li:nth-child(27) .lnb_bg .lnb_wrap .lnb > a {
-    display: flex; flex-flow: column nowrap; align-items: flex-start; margin-right: 10px;
+header .header_btm nav .gnb_bg .gnb_wrap .gnb .gnb_cate27 .lnb_bg .lnb_wrap .lnb a {
+    display: flex; 
+    flex-flow: column nowrap; 
+    align-items: flex-start; 
+    margin-right: 10px;
     padding: 0;
 }
-header .header_btm nav .gnb_bg .gnb_wrap .gnb li:nth-child(27) .lnb_bg .lnb_wrap .lnb > a > img {
-    width: 116px; height: 88px; margin-bottom: 8px;
+header .header_btm nav .gnb_bg .gnb_wrap .gnb .gnb_cate27 .lnb_bg .lnb_wrap .lnb a img {
+    width: 116px; 
+    height: 88px; 
+    margin-bottom: 8px;
 }
+
 /* 신상품, 베스트, 알뜰쇼핑, 특가/혜택 */
 header .header_btm nav .theme {display: flex;}
 header .header_btm nav .theme li {padding: 0 40px; text-align: center;}

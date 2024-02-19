@@ -9,8 +9,20 @@
   header .header_btm {
     display: none;
   }
+  header {
+    padding: 0;
+  }
   header .m_header {
     display: block;
+  }
+  header .m_header .lnb_bg {
+    display: none;
+  }
+  header .m_header .m_nav {
+    display: none;
+  }
+  header .m_header .user_search {
+    display: none;
   }
   header .m_header .top {
     min-height: 44px;
@@ -78,7 +90,7 @@
   }
   header .m_header .menu {
     height: 44px;
-    padding: 0 18px;
+    padding: 0 16px;
     width: 100%;
     box-shadow: rgb(221, 221, 221) 0px -0.5px 0px 0px inset;
     display: flex;
@@ -309,13 +321,5 @@
   header .m_header .user_search .search_bg h3 {
     font-weight: 600;
     padding-top: 9px;
-  }
-  header .m_header .user_login .title {
-    width: 100%;
-    background-color: #fff;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
   }
 }/*# sourceMappingURL=header_m.css.map */
