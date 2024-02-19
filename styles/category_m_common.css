@@ -708,11 +708,10 @@
 .top_active {
   font-weight: 700;
   color: #5f0080;
-<<<<<<< HEAD
 }
 
 .name_active {
-  color: #5f0080;
+  color: #5f0080 !important;
   font-weight: 600 !important;
 }
 
@@ -720,6 +719,4 @@
   transition: 0.5s ease;
   background-color: #333 !important;
   color: #fff !important;
-=======
->>>>>>> 0549c7b47779c9d8bb5ca7cfaca22571a17d662d
 }/*# sourceMappingURL=category_m_common.css.map */

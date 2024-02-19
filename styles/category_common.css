@@ -215,72 +215,27 @@ main .best .container .left .list2 .box .contents li .btn_chk {}
 main .best .container .left .list2 .box .contents li .btn_chk img {width:18px;}
 main .best .container .left .list2 .box .contents li .btn_circle p:nth-child(2) {}
 main .best .container .left .list2 .box .contents li .btn_circle p:nth-child(3) {}
-main .best .container .left .list2 .box .con1 {
-    /* display: none; */
-}
-main .best .container .left .list2 .box .con2 {
-    display: none;
-    position: sticky; top:0;
-}
-main .best .container .left .list2 .box .con3 {
-    display: none;
-    position: sticky; top:0;
-}
-main .best .container .left .list2 .box .con4 {
-    display: none;
-    position: sticky; top:0;
-}
-main .best .container .left .list2 .box .con5 {
-    display: none;
-    position: sticky; top:0;
-}
-main .best .container .left .list2 .box .con6 {
-    display: none;
-    position: sticky; top:0;
-}
-main .best .container .left .list2 .box .con7 {
-    display: none;
-    position: sticky; top:0;
-}
-main .best .container .left .list2 .box .con8 {
-    display: none;
-    position: sticky; top:0;
-}
-main .best .container .left .list2 .box .con9 {
-    display: none;
-    position: sticky; top:0;
-}
-main .best .container .left .list2 .box .con10 {
-    display: none;
-    position: sticky; top:0;
-}
-main .best .container .left .list2 .box .con11 {
-    display: none;
-    position: sticky; top:0;
-}
-main .best .container .left .list2 .box .con12 {
-    display: none;
-    position: sticky; top:0;
-}
-main .best .container .left .list2 .box .con13 {
-    display: none;
-    position: sticky; top:0;
-}
-main .best .container .left .list2 .box .con14 {
-    display: none;
-    position: sticky; top:0;
-}
-main .best .container .left .list2 .box .con15 {
-    display: none;
-    position: sticky; top:0;
-}
-main .best .container .left .list2 .box .con16 {
-    display: none;
-    position: sticky; top:0;
-}
+main .best .container .left .list2 .box .con2, 
+main .best .container .left .list2 .box .con3, 
+main .best .container .left .list2 .box .con4, 
+main .best .container .left .list2 .box .con5, 
+main .best .container .left .list2 .box .con6, 
+main .best .container .left .list2 .box .con7, 
+main .best .container .left .list2 .box .con8, 
+main .best .container .left .list2 .box .con9, 
+main .best .container .left .list2 .box .con10, 
+main .best .container .left .list2 .box .con11, 
+main .best .container .left .list2 .box .con12, 
+main .best .container .left .list2 .box .con13, 
+main .best .container .left .list2 .box .con14, 
+main .best .container .left .list2 .box .con15, 
+main .best .container .left .list2 .box .con16, 
 main .best .container .left .list2 .box .con17 {
     display: none;
     position: sticky; top:0;
+}
+main .best .container .left .list2 .box .con1 {
+    /* display: none; */
 }
 main .best .container .left .list2 .box .more_btn {background-color: #fff;}
 main .best .container .left .list2 .box .more_btn li:last-child {/* padding-bottom: 0; */}
