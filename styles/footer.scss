@@ -552,60 +552,67 @@ footer {
         @include flex-row-btw-st;
         padding: 40px 0 20px;
         .left {
-            p:nth-child(1) {
+            @include flex-row-st;
+            .con1 {
+                margin-right: 50px;
+                p:nth-child(1) {
                 font-size: $px20;
                 font-weight: 500;
                 padding-bottom: 17px;
-            }
-            p:nth-child(2) {
-                padding-bottom: 20px;
-                .tel {
-                    font-size: $px28;
-                    margin-right: 8px;
-                    font-weight: 700;
                 }
-                span {
-                    letter-spacing: -0.05rem;
-                    font-weight: 400;
-                }
-            }
-            .kakao, .question , .bulk_order {
-                @include flex-row-st;
-                button {
-                    @include bo_dd3;
-                    width: 140px;
-                    height: 40px;
-                    text-align: center;
-                    margin: 6px 16px 16px 0;
-                    font-size: $px14;
-                }
-                span {
-                    padding-top: 5px;
-                    display: block;
-                    font-size: $px12;
-                    color:$c-153;
-                }
-                .info {
-                    p {
-                        padding: 0;
-                        span:nth-child(2)::before {
-                            @include bf_ddd_12px;
-                            margin-right: 5px;
-                            margin-left: 2px;
-                        }
-                        span {
-                            display: inline;
-                            font-size: $px12;
-                            color:$c-153;
-                        }
+                p:nth-child(2) {
+                    padding-bottom: 20px;
+                    .tel {
+                        font-size: $px28;
+                        margin-right: 8px;
+                        font-weight: 700;
+                    }
+                    span {
+                        letter-spacing: -0.05rem;
+                        font-weight: 400;
                     }
                 }
             }
-            .mail_send {
-                p, a {
-                    display: inline-block;
-                    font-size: $px12;
-                    color:$c-153;
+            .con2 {
+                .kakao, .question , .bulk_order {
+                    @include flex-row-st;
+                    button {
+                        @include bo_dd3;
+                        width: 140px;
+                        height: 40px;
+                        text-align: center;
+                        margin: 2px 16px 16px 0;
+                        font-size: $px14;
+                    }
+                    span {
+                        padding-top: 5px;
+                        display: block;
+                        font-size: $px12;
+                        color:$c-153;
+                    }
+                    .info {
+                        p {
+                            padding: 0;
+                            span:nth-child(2)::before {
+                                @include bf_ddd_12px;
+                                margin-right: 5px;
+                                margin-left: 2px;
+                                transform: rotateY(-3px);
+                            }
+                            span {
+                                display: inline;
+                                font-size: $px12;
+                                color:$c-153;
+                            }
+                        }
+                    }
+                }
+                .mail_send {
+                    p, a {
+                        display: inline-block;
+                        font-size: $px12;
+                        color:$c-153;
+                    }
                 }
             }
         }
@@ -646,7 +653,6 @@ footer {
         }
     }
     .right {
-        padding-top : 49px;
         .kurly_f_info {
             padding:4px 0 30px;
             a:nth-child(6) {
@@ -714,7 +720,16 @@ footer {
         .f_container {
             padding: 40px 20px 20px;
             .left {
-
+                // @include flex-col-st;
+                .con1 {
+                    margin-right: 30px;
+                    p:nth-child(2) {
+                        @include flex-col-st;
+                        span:nth-child(2) {
+                            margin-top: 8px;
+                        }
+                    }
+                }
             }
         }
         .f_list {
@@ -733,6 +748,56 @@ footer {
         address {
             .box {
                 padding: 20px 20px 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width:1080px) {
+    footer{
+        .f_container {
+            .left {
+                @include flex-col-st;
+                .con1 {
+                    p:nth-child(1) {
+                    }
+                    p:nth-child(2) {
+                        @include flex-row-st;
+                        .tel {}
+                    }
+                }
+                .con2 {
+                    .kakao, .question , .bulk_order {
+                        button {
+                        }
+                        span {}
+                        .info {
+                        }
+                    }
+                    .mail_send {
+                        p, a {}
+                    }
+                }
+            }
+            .right {
+                padding-top: 48px;
+                .f_address {
+                }
+                .kurly_f_info {
+                    a {
+                    }
+                }
+            }
+        }
+        .f_list {
+            .isms , .eprivacy , .payments, .wooribank  {
+                img {
+                }
+                span {
+                }
+            }
+        }
+        address {
+            .box {
             }
         }
     }

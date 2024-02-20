@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/product.css">
-    <link rel="stylesheet" href="./styles/product_responsive.css">
+    <link rel="stylesheet" href="./styles/product_m.css">
 </head>
 <body>
     <main>
@@ -212,12 +212,19 @@
                             <dl>
                                 <dt>안내사항</dt>
                                 <dd>
-                                    <p>베이글을 굽는 과정에서 베이글 반죽의 양쪽 끝이 붙어 상품이 뜯어져 보일 수 있는 점 양해 부탁드립니다.<br>블루베리 베이글에 파란색, 보라색 등 푸른색이 이염될 수 있습니다. 블루베리가 반죽과 섞이면서 주변과 색이 섞이는 것으로 안심하고 섭취하셔도 됩니다.</p>
+                                    <p>베이글을 굽는 과정에서 베이글 반죽의 양쪽 끝이 붙어 상품이 뜯어져 보일 수 있는 점 양해 부탁드립니다. 블루베리 베이글에 파란색, 보라색 등 푸른색이 이염될 수 있습니다. 블루베리가 반죽과 섞이면서 주변과 색이 섞이는 것으로 안심하고 섭취하셔도 됩니다.</p>
                                 </dd>
                             </dl>
                         </li>
                     </ul>
                     <div class="purchase">
+                        <!-- 중복 선택 경고창 -->
+                    <div class="warning_container">
+                        <div class="warning_box">
+                            <p class="warning_txt">이미 추가된 옵션입니다.</p>
+                            <p class="warning_btn_wrap"><button type="button" id="warning_btn">확인</button></p>
+                        </div>
+                    </div>
                         <dl>
                             <dt>상품 선택</dt>
                             <dd class="select_container">   
@@ -236,14 +243,14 @@
                                 </div>
                                 <div class="select_wrap">
                                     <!-- <div class="select">
-                                        <p class="item_name"></p>
+                                        <p class="item_name">베이글</p>
                                         <div class="num_price">
                                             <div class="num_result">
                                                 <button type="button" class="minus"></button>
                                                 <input type="text" class="num num_count" value="1" readonly>
                                                 <button type="button" class="plus"></button>
                                             </div>
-                                            <div class="price"></div>
+                                            <div class="price">2900원</div>
                                         </div>
                                         <a href="#"><img src="./images/main/icon/icon_cancle.svg" alt=""></a>
                                     </div> -->
@@ -376,7 +383,7 @@
             <!-- section2 상세정보 -->
             <section class="detail">
                 <p class="pc_detail_img"><img src="images/main/product/p_description_011.jpg" alt=""></p>
-                <p class="m_detail_img"><img src="images/main/product/m_detail/m_p_description_002.jpg" alt=""></p>
+                <p class="m_detail_img"><img src="images/main/product/m_detail/m_p_description_002.jpg" alt="" class="m_img"></p>
                 <div class="detail_contents1">
                     <h3>상품고시정보</h3>
                     <ul>
@@ -626,11 +633,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="order_cancel">
+                <div class="order_cancle">
                     <div class="title">
-                        <div class="order_cancel_info">
+                        <div class="order_cancle_info">
                             <p>주문 취소 안내</p>
-                            <div class="order_cancel_list">
+                            <div class="order_cancle_list">
                                 <p>- [주문완료] 상태일 경우에만 주문 취소 가능합니다.</p>
                                 <p>- [마이컬리 &gt; 주문내역 상세페이지] 에서 직접 취소하실 수 있습니다.</p>
                             </div>
@@ -793,7 +800,7 @@
                                     <div class="filter_box_top">
                                         <p class="filter_title">회원 등급</p>
                                         <p class="reset_btn">
-                                        <button type="button" class="reset_btn"><!-- 리셋 아이콘 이미지 -->초기화</button>
+                                        <button type="button" class="reset_btn"><i class="fa-solid fa-arrow-rotate-right"></i>초기화</button>
                                         </p>
                                     </div>
                                     <div class="filter_box_contents">
@@ -1082,7 +1089,7 @@
             <!-- 태블릿 모바일 상단 nav 클릭 시 나타나는 메뉴들 -->
             <section class="m_detail">
                 <p class="touch">아래 이미지를 터치하면 확대해서 볼 수 있습니다.<img src="./images/sub/icon_touch.png" alt=""></p>
-                <p class="m_detail_img"><img src="images/main/product/p_description_011.jpg" alt=""></p>
+                <p class="m_detail_img"><img src="images/main/product/m_detail/m_p_description_002.jpg" alt=""></p>
                 <div class="detail_contents1">
                     <h3>상품고시정보</h3>
                     <ul>
@@ -1187,9 +1194,11 @@
                             <button type="button" class="guide_list_title">01. 상품에 문제가 있는 경우</button>
                             <div class="guide_list_contents">
                                 <p class="words">
-                                    받으신 상품이 표시·광고 내용 또는 계약 내용과 다른 경우에는 상품을 받은 날부터 3개월 이내,
-                                    그 사실을 알게 된 날부터 30일 이내에 교환 및 환불을 요청하실 수 있습니다.<br>
-                                    상품의 정확한 상태를 확인할 수 있도록 사진을 함께 보내주시면 더 빠른 상담이 가능합니다.<br>
+                                    받으신 상품이 표시·광고 내용 또는 계약 내용과<br> 다른 경우에는 상품을 받은 날부터 3개월 이내,<br>
+                                    그 사실을 알게 된 날부터 30일 이내에<br> 교환 및 환불을 요청하실 수 있습니다.<br>
+                                </p>
+                                <p class="words">
+                                    상품의 정확한 상태를 확인할 수 있도록<br> 사진을 함께 보내주시면 더 빠른 상담이 가능합니다.<br>
                                     <span>※ 배송 상품에 문제가 있는 것으로 확인되면 배송비는 판매자가 부담합니다.</span>
                                 </p>
                             </div>
@@ -1204,52 +1213,50 @@
                                     고객의 책임 있는 사유로 인한 교환 및 반품이 어려운 점<br>
                                     양해 부탁드립니다.
                                 </p>
-                                <p class="words">상품에 따라 조금씩 맛이 다를 수 있으며, 개인의 기호에 따라 같은 상품도 다르게 느끼실 수 있습니다.</p>
+                                <p class="words">상품에 따라 조금씩 맛이 다를 수 있으며,<br> 개인의 기호에 따라 같은 상품도 다르게 느끼실 수 있습니다.</p>
                                 <p class="words">
                                     <strong>유통기한 30일 이상 식품<br>(신선 / 냉장 / 냉동 제외) & 기타 상품 (뷰티 제품, 생활용품)</strong>
-                                    상품을 받은 날부터 7일 이내 교환, 반품이 가능합니다. 고객행복센터로 문의해주세요.
+                                    상품을 받은 날부터 7일 이내 교환, 반품이 가능합니다.<br>고객행복센터로 문의해주세요.
                                     <span>※ 단순 변심, 주문 착오, 주소 오입력 등 고객의 책임 있는 사유로 인한 교환 및 반품의 경우 고객님께서 왕복배송비 6,000원을 부담하셔야 합니다.</span>
                                 </p>
                             </div>
                         </li>
                         <li>
-                            <button type="button" class="guide_list_title">03. 교환·반품이 불가한 경우</div>
+                            <button type="button" class="guide_list_title">03. 교환·반품이 불가한 경우</button>
                             <div class="guide_list_contents">
-                                <p class="words">다음에 해당하는 교환·환불 신청은 처리가 어려울 수 있으니 양해 부탁드립니다.</p>
-                                <ul class="guide_list_sub">
-                                    <li>
-                                        · 고객님의 책임 있는 사유로 상품이 멸실되거나 훼손된 경우
-                                        <br>(단, 상품의 내용을 확인하기 위해 포장 등을 훼손한 경우는 제외)
-                                    </li>
-                                    <li>· 고객님의 사용 또는 일부 소비로 상품의 가치가 감소한 경우</li>
-                                    <li>· 시간이 지나 다시 판매하기 곤란할 정도로 상품의 가치가 감소한 경우</li>
-                                    <li>· 복제가 가능한 상품의 포장이 훼손된 경우</li>
-                                    <li>· 고객님의 주문에 따라 개별적으로 생산되는 상품의 제작이 이미 진행된 경우</li>
-                                </ul>
+                                <p class="words">
+                                    <strong>신선 / 냉장 / 냉동 식품</strong></p>
+                                    <p class="words">다음에 해당하는 교환·환불 신청은<br>처리가 어려울 수 있으니 양해 부탁드립니다.</p>
+                                    <p class="words">· 고객님의 책임 있는 사유로 상품이 멸실되거나 훼손된 경우<br>
+                                    (단, 상품의 내용을 확인하기 위해 포장 등을 훼손한 경우는 제외)</p>
+                                    <p class="words">· 고객님의 사용 또는 일부 소비로 상품의 가치가 감소한 경우</p>
+                                    <p class="words">· 시간이 지나 다시 판매하기 곤란할 정도로 상품의 가치가 감소한 경우</p>
+                                    <p class="words">· 복제가 가능한 상품의 포장이 훼손된 경우</p>
+                                    <p class="words">· 고객님의 주문에 따라 개별적으로 생산되는 상품의 제작이 이미 진행된 경우</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <div class="m_order_cancel">
-                    <div class="order_cancel_info">
+                <div class="m_order_cancle">
+                    <div class="order_cancle_info">
                         <h3>주문 취소 안내</h3>
                         <p>[주문완료] 상태일 경우에만 주문 취소 가능합니다.</p>
                         <p>[마이컬리 &gt; 주문내역 상세페이지] 에서 직접 취소하실 수 있습니다.</p>
                     </div>
-                    <div class="order_cancel_list">
-                        <p class="order_cancel_title">주문 취소 관련</p>
+                    <div class="order_cancle_list">
+                        <p class="order_cancle_title">주문 취소 관련</p>
                         <ul>
-                            <li>[배송준비중] 부터는 취소가 불가하니, 반품으로 진행해주세요. (상품에 따라 반품이 불가할 수 있습니다.)</li>
-                            <li>주문마감 시간에 임박할수록 취소 가능 시간이 짧아질 수 있습니다.</li>
-                            <li>비회원은 App 또는 모바일 웹사이트에서 [마이컬리 &gt; 비회원 주문조회 페이지] 에서 취소가 가능합니다.</li>
-                            <li>일부 예약상품은 배송 3~4일 전에만 취소 가능합니다.</li>
-                            <li>주문상품의 부분취소는 불가능합니다. 전체 주문 취소 후 다시 구매 해주세요.</li>
-                            <li>미성년자 결제 시 법정대리인이 그 거래를 취소할 수 있습니다.</li>
+                            <li>· [배송준비중] 부터는 취소가 불가하니, 반품으로 진행해주세요. (상품에 따라 반품이 불가할 수 있습니다.)</li>
+                            <li>· 주문마감 시간에 임박할수록 취소 가능 시간이 짧아질 수 있습니다.</li>
+                            <li>· 비회원은 App 또는 모바일 웹사이트에서 [마이컬리 &gt; 비회원 주문조회 페이지] 에서 취소가 가능합니다.</li>
+                            <li>· 일부 예약상품은 배송 3~4일 전에만 취소 가능합니다.</li>
+                            <li>· 주문상품의 부분취소는 불가능합니다. 전체 주문 취소 후 다시 구매 해주세요.</li>
+                            <li>· 미성년자 결제 시 법정대리인이 그 거래를 취소할 수 있습니다.</li>
                         </ul>
-                        <p class="order_cancel_title">결제 승인 취소 / 환불 관련</p>
+                        <p class="order_cancle_title">결제 승인 취소 / 환불 관련</p>
                         <ul>
-                            <li>카드 환불은 카드사 정책에 따르며, 자세한 사항은 카드사에 문의해주세요.</li>
-                            <li>결제 취소 시, 사용하신 적립금과 쿠폰도 모두 복원됩니다.</li>
+                            <li>· 카드 환불은 카드사 정책에 따르며, 자세한 사항은 카드사에 문의해주세요.</li>
+                            <li>· 결제 취소 시, 사용하신 적립금과 쿠폰도 모두 복원됩니다.</li>
                         </ul>
                     </div>
                 </div>

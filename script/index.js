@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // 타이머 함수
 // 타이머 시작 시간 설정 (현재 시간으로부터 24시간 후)
 const startTime = new Date();
@@ -82,12 +83,17 @@ function exec_daum_postcode() {
 }
 
 // 메인 배너 버튼 opacity
+=======
+// 메인 배너 버튼 opacity
+
+>>>>>>> 1b7efdc5b96aea585178b59830afed68b0d942cf
 const main_prev_btn = document.querySelector('#main_prev_btn')
 const main_next_btn = document.querySelector('#main_next_btn')
 const main_bnr_slide = document.querySelector('#main_bnr_slide')
 const main_bnr = document.querySelector('.main_bnr')
 console.log(main_next_btn,main_prev_btn,main_bnr_slide)
 
+<<<<<<< HEAD
 main_bnr_slide.addEventListener('mouseover',()=>{
     main_prev_btn.classList.add('opacity')
     main_next_btn.classList.add('opacity')
@@ -121,3 +127,16 @@ window.addEventListener('scroll',()=>{
         aside_bg.classList.remove('position')
     }
 })
+=======
+main_prev_btn.style.display = 'none'
+main_next_btn.style.display = 'none'
+
+main_bnr_slide.addEventListener('mouseover',()=>{
+    main_prev_btn.style.display = 'block'
+    main_next_btn.style.display = 'block'
+})
+main_bnr_slide.addEventListener('mouseout',()=>{
+    main_prev_btn.style.display = 'none'
+    main_next_btn.style.display = 'none'
+})
+>>>>>>> 1b7efdc5b96aea585178b59830afed68b0d942cf

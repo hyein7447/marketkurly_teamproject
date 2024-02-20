@@ -584,47 +584,55 @@ footer .f_container {
   align-items: flex-start;
   padding: 40px 0 20px;
 }
-footer .f_container .left p:nth-child(1) {
-  font-size: 1.375rem;
-  font-weight: 500;
-  padding-bottom: 17px;
-}
-footer .f_container .left p:nth-child(2) {
-  padding-bottom: 20px;
-}
-footer .f_container .left p:nth-child(2) .tel {
-  font-size: 1.875rem;
-  margin-right: 8px;
-  font-weight: 700;
-}
-footer .f_container .left p:nth-child(2) span {
-  letter-spacing: -0.05rem;
-  font-weight: 400;
-}
-footer .f_container .left .kakao, footer .f_container .left .question, footer .f_container .left .bulk_order {
+footer .f_container .left {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
 }
-footer .f_container .left .kakao button, footer .f_container .left .question button, footer .f_container .left .bulk_order button {
+footer .f_container .left .con1 {
+  margin-right: 50px;
+}
+footer .f_container .left .con1 p:nth-child(1) {
+  font-size: 1.375rem;
+  font-weight: 500;
+  padding-bottom: 17px;
+}
+footer .f_container .left .con1 p:nth-child(2) {
+  padding-bottom: 20px;
+}
+footer .f_container .left .con1 p:nth-child(2) .tel {
+  font-size: 1.875rem;
+  margin-right: 8px;
+  font-weight: 700;
+}
+footer .f_container .left .con1 p:nth-child(2) span {
+  letter-spacing: -0.05rem;
+  font-weight: 400;
+}
+footer .f_container .left .con2 .kakao, footer .f_container .left .con2 .question, footer .f_container .left .con2 .bulk_order {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+}
+footer .f_container .left .con2 .kakao button, footer .f_container .left .con2 .question button, footer .f_container .left .con2 .bulk_order button {
   border: 1px solid #ddd;
   border-radius: 3px;
   width: 140px;
   height: 40px;
   text-align: center;
-  margin: 6px 16px 16px 0;
+  margin: 2px 16px 16px 0;
   font-size: 1rem;
 }
-footer .f_container .left .kakao span, footer .f_container .left .question span, footer .f_container .left .bulk_order span {
+footer .f_container .left .con2 .kakao span, footer .f_container .left .con2 .question span, footer .f_container .left .con2 .bulk_order span {
   padding-top: 5px;
   display: block;
   font-size: 0.875rem;
   color: #999;
 }
-footer .f_container .left .kakao .info p, footer .f_container .left .question .info p, footer .f_container .left .bulk_order .info p {
+footer .f_container .left .con2 .kakao .info p, footer .f_container .left .con2 .question .info p, footer .f_container .left .con2 .bulk_order .info p {
   padding: 0;
 }
-footer .f_container .left .kakao .info p span:nth-child(2)::before, footer .f_container .left .question .info p span:nth-child(2)::before, footer .f_container .left .bulk_order .info p span:nth-child(2)::before {
+footer .f_container .left .con2 .kakao .info p span:nth-child(2)::before, footer .f_container .left .con2 .question .info p span:nth-child(2)::before, footer .f_container .left .con2 .bulk_order .info p span:nth-child(2)::before {
   content: "";
   display: inline-block;
   width: 1px;
@@ -632,13 +640,14 @@ footer .f_container .left .kakao .info p span:nth-child(2)::before, footer .f_co
   background-color: #ddd;
   margin-right: 5px;
   margin-left: 2px;
+  transform: rotateY(-3px);
 }
-footer .f_container .left .kakao .info p span, footer .f_container .left .question .info p span, footer .f_container .left .bulk_order .info p span {
+footer .f_container .left .con2 .kakao .info p span, footer .f_container .left .con2 .question .info p span, footer .f_container .left .con2 .bulk_order .info p span {
   display: inline;
   font-size: 0.875rem;
   color: #999;
 }
-footer .f_container .left .mail_send p, footer .f_container .left .mail_send a {
+footer .f_container .left .con2 .mail_send p, footer .f_container .left .con2 .mail_send a {
   display: inline-block;
   font-size: 0.875rem;
   color: #999;
@@ -676,9 +685,6 @@ footer .f_list .payments img {
 }
 footer .f_list .wooribank img {
   height: 38px;
-}
-footer .right {
-  padding-top: 49px;
 }
 footer .right .kurly_f_info {
   padding: 4px 0 30px;
@@ -747,6 +753,17 @@ footer address .box p:nth-child(3) {
   footer .f_container {
     padding: 40px 20px 20px;
   }
+  footer .f_container .left .con1 {
+    margin-right: 30px;
+  }
+  footer .f_container .left .con1 p:nth-child(2) {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+  }
+  footer .f_container .left .con1 p:nth-child(2) span:nth-child(2) {
+    margin-top: 8px;
+  }
   footer .f_list {
     padding: 10px 20px 0;
     display: flex;
@@ -762,6 +779,21 @@ footer address .box p:nth-child(3) {
   }
   footer address .box {
     padding: 20px 20px 30px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  footer .f_container .left {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+  }
+  footer .f_container .left .con1 p:nth-child(2) {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+  }
+  footer .f_container .right {
+    padding-top: 48px;
   }
 }
 @media screen and (max-width: 820px) {

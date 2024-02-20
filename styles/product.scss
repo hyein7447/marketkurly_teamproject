@@ -7,7 +7,6 @@ main{
     margin: 0 auto;
     
     img{width: 100%;}
-    
     // 상품 하단 옵션 창
     .bottom_option{
         background-color: #fff;
@@ -16,7 +15,7 @@ main{
         bottom: 0;
         left: 0;
         width: 100%;
-        z-index: 100;
+        z-index: 1000;
         display: none;
         .bottom_wrap{
             margin: 0 auto;
@@ -295,6 +294,43 @@ main{
                     }
                 }
                 .purchase{
+                        // 중복 선택 경고창
+                        .warning_container{
+                            background-color: rgba($color: #000000, $alpha: 0.3);
+                            z-index: 1000;
+                            position: absolute;
+                            width: 100%;
+                            height: 150vh;
+                            top: 50%;
+                            left: 0;
+                            display: flex;
+                            align-items: center;
+                            display: none;
+
+                            .warning_box{
+                                margin: 0 auto;
+                                background-color: #fff;
+                                width: 20%;
+                                border-radius: 10px;
+                                padding: 20px 0;
+                                .warning_txt{
+                                    padding-left: 24px;
+                                    font-size: $px14;
+                                    font-weight: 500;
+                                    text-align: left;
+                                }
+                                .warning_btn_wrap{
+                                    padding-top: 30px;
+                                    text-align: right;
+                                    #warning_btn{
+                                        color: $purple;
+                                        font-size: $px14;
+                                        font-weight: 600;
+                                        padding-right:18px;
+                                    }
+                                }
+                            }
+                        }
                     
                     dl{
                         border: 1px solid #f4f4f4;
@@ -335,10 +371,12 @@ main{
                             }
                             .select_wrap{
                                 margin-top: 7.5px;
-                                padding: 13.75px 15px;
-                                border: 1px solid $c-244;
-                                position: relative;
-                                // display: none;
+                                .select{
+                                    position: relative;
+                                    padding: 13.75px 15px;
+                                    border: 1px solid $c-244;
+                                    // border-bottom: 1px solid $c-244;
+                                }
 
                                 .item_name{
                                     font-size: $px12;
@@ -371,6 +409,7 @@ main{
                                     position: absolute;
                                     right: 15px;
                                     top: 14px;
+                                    img{height: 100%;}
                                 }
                             }
                         }
@@ -439,6 +478,7 @@ main{
             align-items: center;
             max-width: 1190px;
             width: 96%;
+            z-index: 1000;
 
             li{
                 width: 25%;
@@ -979,7 +1019,7 @@ main{
                     }
                 }
             }
-            .order_cancel{
+            .order_cancle{
                 .title{
                     border: 1px solid #ddd;
                     padding: 18.75px 36.25px;
@@ -992,9 +1032,9 @@ main{
                         color: $purple;
                         padding-top: 3.75px;
                     }
-                    .order_cancel_info{
+                    .order_cancle_info{
                         display: flex;
-                        .order_cancel_list{
+                        .order_cancle_list{
                             p{
                                 margin-left: 50px;
                                 color: #666;
@@ -1086,7 +1126,6 @@ main{
                 gap: 3.75px;
 
                 a{
-                    img{}
                     &:first-child{
                         img{
                             border-top-left-radius: 6px;
@@ -1224,7 +1263,7 @@ main{
                         position: absolute;
                         left: 0;
                         top: 62.5px;
-                        z-index: 999;
+                        z-index: 99;
                         display: none;
                         .filter_box_top{
                             padding: 25px 0;
@@ -1301,7 +1340,7 @@ main{
                         position: absolute;
                         left: 133px;
                         top: 62.5px;
-                        z-index: 999;
+                        z-index: 99;
                         display: none;
                         .filter_box_top{
                             padding: 25px 0;
@@ -1623,6 +1662,6 @@ main{
 .m_detail_img{display: none;}
 .m_list_wrap{display: none;}
 .m_detail{display: none;}
-.m_order_cancel{display: none;}
+.m_order_cancle{display: none;}
 .m_shipping{display: none;}
 .touch{display: none;}

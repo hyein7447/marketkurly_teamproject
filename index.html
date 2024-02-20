@@ -20,6 +20,7 @@
     <!--swipe 플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--swipe 플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -2573,13 +2574,28 @@
     </main>
     <?php include("footer.php"); ?>
     <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="./script/header.js"></script>
     <script>
         // 메인 배너 슬라이드
         const main_bnr_swiper = new Swiper('#main_bnr_slide',{
+<<<<<<< HEAD
             slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
+=======
+            navigation:{
+                nextEl:'#main_bnr_slide .swiper-button-next',
+                prevEl:'#main_bnr_slide .swiper-button-prev',
+            },
+            pagination: {
+            el: "#main_bnr_slide .pagination",
+            // type: "fraction",
+            },
+        })
+
+/*         const ranking_swiper = new Swiper ('#ranking_slide',{
+>>>>>>> 1b7efdc5b96aea585178b59830afed68b0d942cf
             navigation:{
                 nextEl: "#main_next_btn",
                 prevEl: "#main_prev_btn",
@@ -2588,6 +2604,7 @@
             el: "#main_bnr_slide .pagination",
             type: "fraction",
             },
+<<<<<<< HEAD
         })
         // ranking 슬라이드
         const ranking_swiper = new Swiper('#ranking_slide',{
@@ -2600,6 +2617,10 @@
         })
         const ranking_next_btn = document.querySelector('#ranking_next_btn')
         const ranking_prev_btn = document.querySelector('#ranking_prev_btn')
+=======
+        }) */
+
+>>>>>>> 1b7efdc5b96aea585178b59830afed68b0d942cf
 
         //초기 prev 버튼 숨김
         ranking_prev_btn.style.display = 'none'
