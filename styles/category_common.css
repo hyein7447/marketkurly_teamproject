@@ -37,19 +37,6 @@ main .best .top .cate_list a {
     padding: 10px 30px 10px 60px;
     white-space: nowrap;
 }
-/* 미디어 쿼리용 참고 */
-/* main .best .top .cate_list {
-    width: 100%;
-    display: flex; flex-flow: row wrap;
-    border: 1px solid #ddd;
-    padding:30px 40px;
-    margin-top: 28px;
-}
-main .best .top .cate_list a {
-    line-height: 20px;
-    letter-spacing: -0.01rem;
-    width: 180px; 
-} */
 /* 왼쪽컨테이너 --- 어사이드 영역 */
 main .best .container {
     display: flex;
@@ -234,9 +221,7 @@ main .best .container .left .list2 .box .con16,
 main .best .container .left .list2 .box .con17 {
     display: none;
 }
-main .best .container .left .list2 .box .con1 {
-    /* display: none; */
-}
+main .best .container .left .list2 .box .con1 {}
 main .best .container .left .list2 .box .more_btn {background-color: #fff;}
 main .best .container .left .list2 .box .more_btn li:last-child {/* padding-bottom: 0; */}
 main .best .container .left .list2 .box .more_btn li a {}
@@ -461,6 +446,9 @@ main .best .container .right .arrow_num {
 main .best .container .right .arrow_num a:first-child {
     border-left:1px solid #d3d3d3;
 }
+main .best .container .right .arrow_num a:hover {
+    background-color: #f7f7f7 ;
+}
 main .best .container .right .arrow_num a {
     width:34px; height:34px;
     border-top:1px solid #d3d3d3;
@@ -472,12 +460,6 @@ main .best .container .right .arrow_num a {
     align-items: center;
     justify-content: center;
     font-weight: 500;
-}
-main .best .container .right .arrow_num a img {}
-main .best .container .right .arrow_num a.arr_active {
-    color: #5f0080;
-    font-weight: 500;
-    background-color: #f7f7f7;
 }
 /* 
 ---------------------★팝업 영역★---------------------//
@@ -737,7 +719,7 @@ main .best .popup .brand_pop .list_wrap .tab_sub2 .contents_all li .btn_chk p:la
 main .best .popup .cart_pop {
     /* display: none; */
     background-color: #fff;
-    width: 440px;
+    width: 500px;
     height: auto;
     margin: 0 auto;
     border-radius: 12px;

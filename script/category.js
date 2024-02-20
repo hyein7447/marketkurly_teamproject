@@ -34,10 +34,13 @@ const changeImg = btn_chk_a.querySelectorAll('img')
 const popup = document.querySelector('.popup')
 const cart_pop = document.querySelector('.cart_pop')
 const cart_result_pop = document.querySelector('.cart_result_pop')
-const brand_pop = document.querySelector('.brand_pop')
+const brand_pop = document.querySelector('.best > .popup > .brand_pop')
+const brand_pop_li = brand_pop.querySelectorAll('.list_wrap > .tab_sub1 > .contents_list > li > .con > li')
+const brand_pop_a = brand_pop.querySelectorAll('.list_wrap > .tab_sub1 > .contents_list > li > .con > li > .btn_chk')
 const brand_tab_a = brand_pop.querySelectorAll('.wrap_top > .wrap > .tab > a')
-const brand_subtab_a = brand_pop.querySelectorAll('.wrap_top > .tab_sub > a')
 const cate_pop = document.querySelector('.best > .popup > .cate_pop')
+const cate_pop_li = cate_pop.querySelectorAll('.list_wrap > ul > li')
+const cate_pop_a = cate_pop.querySelectorAll('.list_wrap > ul > li > a')
 const cate_more_btn = ul_1.querySelector('.more_btn > a ')
 const brand_more_btn = ul_2_ul.querySelector('.more_btn > a ')
 const cate_pop_btn_reset = cate_pop.querySelector('.btn_wrap > .btn_reset ')
@@ -47,7 +50,7 @@ const cate_more_x_btn = cate_pop.querySelector('.wrap_top > a')
 const brand_more_x_btn = brand_pop.querySelector('.wrap_top > .wrap > a ')
 const btn_cancel = cart_pop.querySelector('.btn_cancel')
 const btn_cart_r = cart_pop.querySelector('.btn_cart_r')
-console.log(aside_arrow1,ul_1,ul_2_title,ul_2_atoz)
+console.log(cate_pop, cate_pop_li,cate_pop_a)
 console.log(atoz_btn_a,ul_2_atoz)
 // rigth 영역 변수
 const product_cart_btn = document.querySelector('.btn_c')
@@ -55,8 +58,8 @@ const product = document.querySelectorAll('.product')
 const pc_array_a = document.querySelectorAll('.right > .lnb > .array > a')
 const pc_array_q = document.querySelector('.right > .lnb > .array > a > [class$=question]')
 const quest_box = document.querySelector('.right > .lnb > .array > .quest_box')
-
-
+const arrow_num = document.querySelectorAll('.right > .arrow_num > a')
+console.log(arrow_num)
 console.log('----------------- 데스크탑 버전 -----------------')
 
 /* 
@@ -120,7 +123,7 @@ for (let a of atoz_btn_a){
 
 // ---------------------- 구분선 --------------------------
 
-// 브랜드 atoz_btn 클릭시 서브탭 활성화 ------------------>>>>>>>>>>> 작업중★★★★★★
+// 브랜드 atoz_btn 클릭시 서브탭 활성화 ------------------   
 // 호출용 함수
 let box_basic_hide = ()=>{brand_tab_box_ul[0].style.display = 'none';}
 let box_hide = ()=>{for(let a of brand_tab_box_ul){a.style.display = 'none';}}
@@ -142,12 +145,35 @@ brand_tab_box_ul.forEach(function(idx,arr){
         }
     })
 })
+atoz_btn_a[0].addEventListener('click',()=>{
+    brand_tab_box_ul[0].style.display = 'block';
+})
 // 상품 많은순 클릭 시 atoz_btn_a 리스트 숨기기 -> 가나다순 클릭 시 리스트 보이기
 brand_a[1].addEventListener('click',()=>{
     ul_2_atoz.style.display = 'none';
+    box_hide()
+    brand_tab_box_ul[0].style.display = 'block';
 })
 brand_a[0].addEventListener('click',()=>{
     ul_2_atoz.style.display = 'block';
+})
+
+// ---------------------- 구분선 --------------------------         
+
+// 브랜드 팝업 atoz_btn 클릭시 서브탭 해당 글씨의 위치 보여주기
+const brand_pop_list = brand_pop.querySelectorAll('.wrap_top > .list_wrap > .tab_sub1 > .contents_list') //ul //NodeList[]
+const brand_subtab_a = brand_pop.querySelectorAll('.wrap_top > .tab_sub > a') //a
+// console.log(brand_pop_list,brand_subtab_a,"----확인----")
+let b_pop_ul = brand_pop.children[1].children[0].children //ul잡기
+let ul_parent = brand_pop.children[1] //ul 부모 설정
+
+console.log(b_pop_ul,'b_pop_ul 확인')
+
+brand_subtab_a.forEach((o,i)=>{
+    o.addEventListener('click',(e)=>{
+        e.preventDefault()
+        ul_parent.scrollTo(0, b_pop_ul[i].offsetTop - 115)
+    })
 })
 
 // ---------------------- 구분선 --------------------------
@@ -231,72 +257,87 @@ aside_arrow5.addEventListener('click',()=>{
 // ---------------------- 구분선 --------------------------
 
 // 카테고리 어사이드 메뉴 클릭시 체크이미지 변경
-// 회색 체크 이미지 클릭 시 -> 보라색 체크 이미지로 이미지경로 변경
-let btn_chk_img_status = false;
-const chk_reset_basic = ()=>{
-    chk_reset.children[0].classList.remove('name_active')
-    chk_reset.children[1].classList.remove('name_active')
-}
-for (let i of ul_li_a1){
-    i.addEventListener('click',()=>{
-        if (btn_chk_img_status == false){
-            chk_reset.children[0].classList.add('name_active')
-            chk_reset.children[1].classList.add('name_active')
-            i.children[0].src = './images/sub/icon_check_pp.svg';
-            btn_chk_img_status = !btn_chk_img_status;
-        }else {
-            i.children[0].src = './images/sub/icon_check_999.svg';
-            btn_chk_img_status = !btn_chk_img_status;
-        }
-    })
-}
-chk_reset_basic()
+// 회색 체크 이미지 클릭 시 -> 보라색 체크 이미지로 이미지경로 변경     
 
-for (let i of ul_li_a2){
-    i.addEventListener('click',()=>{
-        if (btn_chk_img_status == false){
-            i.children[0].src = './images/sub/icon_check_pp.svg';
-            btn_chk_img_status = !btn_chk_img_status;
-        }else {
-            i.children[0].src = './images/sub/icon_check_999.svg';
-            btn_chk_img_status = !btn_chk_img_status;
+// 방법1) 현재 이미지 경로 확인해서 변경하기
+for (let i of ul_li_a1) {
+    i.addEventListener('click', () => {
+        // 현재 이미지 경로가 './images/sub/icon_check_on.svg'인지 확인
+        if (i.children[0].src.includes('icon_check_on')) {
+            i.children[0].src = './images/sub/icon_check_off.svg';
+        } else {
+            i.children[0].src = './images/sub/icon_check_on.svg';
         }
-    })
+    });
 }
-for (let i of ul_li_a3){
-    i.addEventListener('click',()=>{
-        if (btn_chk_img_status == false){
+for (let i of ul_li_a2) {
+    i.addEventListener('click', () => {
+        // 현재 이미지 경로가 './images/sub/icon_check_on.svg'인지 확인
+        if (i.children[0].src.includes('icon_check_on')) {
+            i.children[0].src = './images/sub/icon_check_off.svg';
+        } else {
+            i.children[0].src = './images/sub/icon_check_on.svg';
+        }
+    });
+}
+// 방법2) dataset 속성 활용 [dataset 속성을 사용하여 'checked' 속성 값에 따라 이미지 경로를 변경]
+for (let i of ul_li_a3) {
+    i.addEventListener('click', () => {
+        // 'checked' 속성 값을 토글
+        i.dataset.checked = i.dataset.checked == 'true' ? 'false' : 'true';
+        // 'checked' 속성 값에 따라 이미지 경로 변경
+        if (i.dataset.checked == 'true') {
             i.children[0].src = './images/sub/icon_circle_on.svg';
-            btn_chk_img_status = !btn_chk_img_status;
-        }else {
+        } else {
             i.children[0].src = './images/sub/icon_circle_off.svg';
-            btn_chk_img_status = !btn_chk_img_status;
         }
-    })
+    });
 }
-for (let i of ul_li_a4){
-    i.addEventListener('click',()=>{
-        if (btn_chk_img_status == false){
-            i.children[0].src = './images/sub/icon_check_pp.svg';
-            btn_chk_img_status = !btn_chk_img_status;
-        }else {
-            i.children[0].src = './images/sub/icon_check_999.svg';
-            btn_chk_img_status = !btn_chk_img_status;
+for (let i of ul_li_a4) {
+    i.addEventListener('click', () => {
+        i.dataset.checked = i.dataset.checked == 'true' ? 'false' : 'true';
+        if (i.dataset.checked == 'true') {
+            i.children[0].src = './images/sub/icon_check_on.svg';
+        } else {
+            i.children[0].src = './images/sub/icon_check_off.svg';
         }
-    })
+    });
 }
-for (let i of ul_li_a5){
-    i.addEventListener('click',()=>{
-        if (btn_chk_img_status == false){
-            i.children[0].src = './images/sub/icon_check_pp.svg';
-            btn_chk_img_status = !btn_chk_img_status;
-        }else {
-            i.children[0].src = './images/sub/icon_check_999.svg';
-            btn_chk_img_status = !btn_chk_img_status;
+for (let i of ul_li_a5) {
+    i.addEventListener('click', () => {
+        i.dataset.checked = i.dataset.checked == 'true' ? 'false' : 'true';
+        if (i.dataset.checked == 'true') {
+            i.children[0].src = './images/sub/icon_check_on.svg';
+        } else {
+            i.children[0].src = './images/sub/icon_check_off.svg';
         }
-    })
+    });
 }
-// 카테고리 어사이드 메뉴의 팝업창 클릭시 체크이미지 변경
+
+// ---------------------- 구분선 --------------------------
+
+// 어사이드 메뉴의 - 카테고리 - 팝업창 체크 이미지 변경
+for (let a of cate_pop_a) {
+    a.addEventListener('click', () => {
+        // 현재 이미지 경로가 './images/sub/icon_check_on.svg'인지 확인
+        if (a.children[0].src.includes('icon_check_on')) {
+            a.children[0].src = './images/sub/icon_check_off.svg';
+        } else {
+            a.children[0].src = './images/sub/icon_check_on.svg';
+        }
+    });
+}
+// 어사이드 메뉴의 - 브랜드 - 팝업창 체크 이미지 변경
+for (let a of brand_pop_a) {
+    a.addEventListener('click', () => {
+        // 현재 이미지 경로가 './images/sub/icon_check_on.svg'인지 확인
+        if (a.children[0].src.includes('icon_check_on')) {
+            a.children[0].src = './images/sub/icon_check_off.svg';
+        } else {
+            a.children[0].src = './images/sub/icon_check_on.svg';
+        }
+    });
+}
 
 // ---------------------- 구분선 --------------------------
 
@@ -334,17 +375,35 @@ brand_pop_btn_ok.addEventListener('click',()=>{
 // 브랜드 더보기 팝업 - 상단 타이틀 글씨 컬러 (퍼플) 변경
 // 초기값 -> 1번째 글씨 활성화
 brand_tab_a[0].classList.add('top_active')
+// 보라색 지우는 함수 호출용
 const brand_tab_a_basic = ()=>{
-    brand_tab_a[0].classList.remove('top_active')
-    brand_tab_a[1].classList.remove('top_active')
+    for(let i of brand_tab_a){i.classList.remove('top_active')}
 }
-// 클릭 -> 이전에 활성화된 a 비활성화 하고 클릭 대상 a가 활성화
-for(let i of brand_tab_a){
-    i.addEventListener('click',()=>{
+let list_basic = brand_pop.children[1].children[0]
+let list_all = brand_pop.children[1].children[1]
+let list_total = document.querySelectorAll('.list_wrap .list')
+console.log(list_total,'=====')
+
+// 클릭 -> 이전에 활성화된 a 비활성화 하고 클릭 대상 a가 활성화   /// 확인 필요 ★★★★★★
+brand_tab_a.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
         brand_tab_a_basic()
-        i.classList.add('top_active')
+        t.classList.add('top_active')
+        for(let a of list_total){a.style.display = 'none';}
+        list_total[i].style.display = 'block';
     })
-}
+})
+// 가나다순 클릭 시 tab_sub2 숨기고 tab_sub1 컨테이너 출력
+// 상품 많은순 클릭 시 tab_sub1 숨기고 tab_sub2 컨테이너 출력
+// brand_tab_a[1].addEventListener('click',()=>{
+//     let list_all = brand_pop.children[1].children[1]
+//     let list_basic = brand_pop.children[1].children[0]
+//     console.log(list_all,list_basic)
+//     list_basic.style.display = 'none';
+//     list_all.style.display = 'block';
+// })
+// ---------------------- 구분선 --------------------------
+
 // 브랜드 더보기 팝업 - 상단 박스 컬러 (블랙) 변경
 // 초기값 -> 1번째 박스 활성화
 brand_subtab_a[0].classList.add('atoz_active')
@@ -434,13 +493,42 @@ product_cart_btn.addEventListener('click',()=>{
 
 // ---------------------- 구분선 --------------------------
 
+// right 컨테이너 하단 버튼 클릭시 컬러 활성화 -> classList 추가하기
+// 초기값 -> 1 활성화
+let num_basic = ()=>{
+    for(let a of arrow_num){
+        a.classList.remove('arr_active')
+    }
+}
+arrow_num[2].classList.add('arr_active')
+for(let i of arrow_num){
+    i.addEventListener('click',()=>{
+        num_basic()
+        i.classList.add('arr_active')
+    })
+}
+
+// ---------------------- 구분선 --------------------------
+
 console.log('----------------- 모바일 버전 -----------------')
-// test 
-/* const li = document.querySelectorAll('.best_mobile > .tab_slide > li ') 
+// test
+const m_li = document.querySelectorAll('.best_mobile > .tab_slide > li ') 
 const btn_chk = document.querySelector('.best_mobile > .tab_slide > .bg .btn_chk ')
 const chnImg = btn_chk.querySelector('img')
 console.log(li,btn_chk,chnImg)
-btn_chk.addEventListener('click',()=>{
-    chnImg.src = './images/sub/icon_check2.png';
-    console.log('---')
-}) */
+// 변수
+const cate_title = document.querySelectorAll('.cate_title > a')
+console.log(cate_title)
+
+// ---------------------- 구분선 --------------------------
+// 모바일 베스트 카테고리 상단에 이미지와 같이있는 타이틀리스트
+// 클릭 -> 보라색으로 활성화
+let title_reset = ()=>{for(let a of cate_title){a.classList.remove('cate_active')}}
+// 초기값
+cate_title[0].classList.add('cate_active')
+for(let i of cate_title){
+    i.addEventListener('click',()=>{
+        title_reset()
+        i.classList.add('cate_active')
+    })
+}

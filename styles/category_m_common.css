@@ -47,7 +47,7 @@
     scroll-behavior: smooth;
   }
   main {
-    padding: 0 16px;
+    padding: 0 16px 40px;
     position: relative;
   }
   main .best {
@@ -719,4 +719,18 @@
   transition: 0.5s ease;
   background-color: #333 !important;
   color: #fff !important;
+}
+
+.arr_active {
+  color: #5f0080 !important;
+  background-color: #f7f7f7 !important;
+}
+
+.cate_active img {
+  border: 2px solid #8d4cc4;
+  border-radius: 50%;
+}
+.cate_active span {
+  color: #8d4cc4;
+  font-weight: 700;
 }/*# sourceMappingURL=category_m_common.css.map */
