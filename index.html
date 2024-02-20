@@ -1378,12 +1378,24 @@
         <section class="main_bnr">
             <div class="swiper-container" id="main_bnr_slide">
                 <div class="swiper-wrapper" id="main_bnr_slide_wrap">
-                    <a href="#" class="swiper-slide slide slide1"></a>
-                    <a href="#" class="swiper-slide slide slide2"></a>
-                    <a href="#" class="swiper-slide slide slide3"></a>
-                    <a href="#" class="swiper-slide slide slide4"></a>
-                    <a href="#" class="swiper-slide slide slide5"></a>
-                    <a href="#" class="swiper-slide slide slide6"></a>
+                    <a href="#" class="swiper-slide slide slide1">
+                        <img src="./images/main/bnr/bnr_001.jpg" alt="친구 초대하면 친구도 나도 5천원씩">
+                    </a>
+                    <a href="#" class="swiper-slide slide slide2">
+                        <img src="./images/main/bnr/bnr_002.jpg" alt="한눈에 보는 2월 결제 혜택">
+                    </a>
+                    <a href="#" class="swiper-slide slide slide3">
+                        <img src="./images/main/bnr/bnr_003.jpg" alt="컬리카트 최대 13만원 혜택">
+                    </a>
+                    <a href="#" class="swiper-slide slide slide4">
+                        <img src="./images/main/bnr/bnr_004.jpg" alt="놀라운 혜택을 더한 설 선물세트 특선">
+                    </a>
+                    <a href="#" class="swiper-slide slide slide5">
+                        <img src="./images/main/bnr/bnr_005.jpg" alt="월 이용료 이상의 혜택 컬리멤버스">
+                    </a>
+                    <a href="#" class="swiper-slide slide slide6">
+                        <img src="./images/main/bnr/bnr_006.jpg" alt="간편하고도 품격있는 설 상차림의 모든 것">
+                    </a>
                 </div>
                 <div class="pagination">
                     <span class="current">1</span> <!--현재 페이지 js -->
@@ -1572,7 +1584,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="swiper-slide item item8">
+                        <div class="swiper-slide item item9">
                             <div>
                                 <a href="#" class="img">
                                     <img src="./images/main/product/main_p_04.jpg" alt="아이템이미지">
@@ -1597,9 +1609,65 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="swiper-slide item item10">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_04.jpg" alt="아이템이미지">
+                                    <span class="coupon">+30%쿠폰</span>
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 제주 옥돔 (대) 세트 2kg</h3>
+                                    <div class="price">
+                                        <p><del>249,000원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">28%</span>
+                                            <span class="discount_price">179,000원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">76</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item11">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_04.jpg" alt="아이템이미지">
+                                    <span class="coupon">+30%쿠폰</span>
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 제주 옥돔 (대) 세트 2kg</h3>
+                                    <div class="price">
+                                        <p><del>249,000원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">28%</span>
+                                            <span class="discount_price">179,000원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">76</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item12">
+                            <a href="#">
+                                <img src="./images/main/icon/all_arrow.svg" alt="전체보기 바로가기">
+                                <span>전체보기</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
-                    <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
+                    <div class="swiper-button-prev" id="ranking_prev_btn"></div> <!-- 이전버튼 -->
+                    <div class="swiper-button-next" id="ranking_next_btn"></div> <!-- 다음버튼 -->
                 </div>
             </div>
         </section>
@@ -1613,7 +1681,8 @@
                     <p>24시간 한정특가 놓치지마세요</p>
                 </div>
                 <div class="time">
-                    <div class="timer"><span><i class="fa-solid fa-clock"></i></span>17:34:37</div>
+                    <span><i class="fa-solid fa-clock"></i></span>
+                    <div id="timer"></div>
                 </div>
                 <p>망설이면 늦어요!</p>
             </div>
@@ -1907,8 +1976,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
-                    <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
+                    <div class="swiper-button-prev" id="md_prev_btn"></div> <!-- 이전버튼 -->
+                    <div class="swiper-button-next" id="md_next_btn"></div> <!-- 다음버튼 -->
                 </div>
             </div>
             <div class="all_btn">
@@ -1970,9 +2039,37 @@
                                 </div>
                             </a>
                         </div>
+                        <div class="swiper-slide item item5">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="./images/main/product/original_01.jpg" alt="아이템이미지">
+                                </div>
+                                <div class="info">
+                                    <h2>맛있는 불고기 공식, 좋은고기+양념</h2>
+                                    <p>완벽한 불고기를 만드는 2가지 포인트</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item item6">
+                            <a href="#">
+                                <div class="img">
+                                    <img src="./images/main/product/original_02.jpg" alt="아이템이미지">
+                                </div>
+                                <div class="info">
+                                    <h2>서울・언양・광양, 이들의 교집합은? </h2>
+                                    <p>지도로 보는 3가지 불고기 타입</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item item7">
+                            <a href="#">
+                                <img src="./images/main/icon/all_arrow.svg" alt="전체보기 바로가기">
+                                <span>전체보기</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
-                    <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
+                    <div class="swiper-button-prev" id="original_prev_btn"></div> <!-- 이전버튼 -->
+                    <div class="swiper-button-next" id="original_next_btn"></div> <!-- 다음버튼 -->
                 </div>
             </div>
         </section>
@@ -2180,9 +2277,64 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="swiper-slide item item9">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_03.jpg" alt="아이템이미지">
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 나주 신고배 세트<br>4.5kg(6~7입)</h3>
+                                    <div class="price">
+                                        <p><del>59,900원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">20%</span>
+                                            <span class="discount_price">47,900원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">15</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item10">
+                            <div>
+                                <a href="#" class="img">
+                                    <img src="./images/main/product/main_p_04.jpg" alt="아이템이미지">
+                                    <span class="coupon">+30%쿠폰</span>
+                                </a>
+                                <div class="cart_add">
+                                    <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt="장바구니 담기">담기</button>
+                                </div>
+                                <a href="#" class="info">
+                                    <h3>[선물세트] 제주 옥돔 (대) 세트 2kg</h3>
+                                    <div class="price">
+                                        <p><del>249,000원</del></p>
+                                        <div class="discount">
+                                            <span class="rate">28%</span>
+                                            <span class="discount_price">179,000원</span>
+                                        </div>
+                                        <div class="review">
+                                            <img src="./images/main/icon/icon_sms.png" alt="">
+                                            <span class="review_num">76</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item item11">
+                            <a href="#">
+                                <img src="./images/main/icon/all_arrow.svg" alt="전체보기 바로가기">
+                                <span>전체보기</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
-                    <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
+                    <div class="swiper-button-prev" id="present_prev_btn"></div> <!-- 이전버튼 -->
+                    <div class="swiper-button-next" id="present_next_btn"></div> <!-- 다음버튼 -->
                 </div>
             </div>
         </section>
@@ -2254,8 +2406,8 @@
                             </a>
                         </div>
                     </div>
-                    <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
-                    <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
+                    <div class="swiper-button-prev" id="recipe_prev_btn"></div> <!-- 이전버튼 -->
+                    <div class="swiper-button-next" id="recipe_next_btn"></div> <!-- 다음버튼 -->
                 </div>
             </div>
         </section>
@@ -2311,111 +2463,399 @@
                             </div>
                         </a>
                     </div>
+                    <div class="swiper-slide item item7">
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/main/product/review_01.jpg" alt="아이템이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item item8">
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/main/product/review_02.jpg" alt="아이템이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item item9">
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/main/product/review_03.jpg" alt="아이템이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item item10">
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/main/product/review_04.jpg" alt="아이템이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item item11">
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/main/product/review_05.jpg" alt="아이템이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item item12">
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/main/product/review_06.jpg" alt="아이템이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item item13">
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/main/product/review_02.jpg" alt="아이템이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item item14">
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/main/product/review_03.jpg" alt="아이템이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item item15">
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/main/product/review_04.jpg" alt="아이템이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item item16">
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/main/product/review_05.jpg" alt="아이템이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item item17">
+                        <a href="#">
+                            <img src="./images/main/icon/all_arrow.svg" alt="전체보기 바로가기">
+                            <span>전체보기</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
-                <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
+                <div class="swiper-button-prev" id="instagram_prev_btn"></div> <!-- 이전버튼 -->
+                <div class="swiper-button-next" id="instagram_next_btn"></div> <!-- 다음버튼 -->
             </div>
             <div class="more">
                 <p>더 많은 고객후기가 궁금하다면?</p>
                 <a href="#">@marketkurly_regram</a>
             </div>
         </section>
-    </main>
-    <div class="aside_bg">
-        <div class="aside">
-            <div class="delivery">
-                <a href="#"><img src="./images/main/icon/aside_deliveryInfo.jpg" alt="샛별배송안내"></a>
-            </div>
-            <div class="level_recipe">
-                <a href="#" class="level">등급별 혜택</a>
-                <a href="#" class="recipe">레시피</a>
-            </div>
-            <div class="swiper-container" id="recently_slide">
-                <div class="swiper-wrapper" id="recently_slide_wrap">
-                    <p>최근 본 상품</p>
-                    <a href="#" class="swiper-slide item item1"></a>
-                    <a href="#" class="swiper-slide item item2"></a>
-                    <a href="#" class="swiper-slide item item3"></a>
-                    <a href="#" class="swiper-slide item item4"></a>
+        <div class="aside_bg">
+            <div class="aside">
+                <div class="delivery">
+                    <a href="#"><img src="./images/main/icon/aside_deliveryInfo.jpg" alt="샛별배송안내"></a>
                 </div>
-                <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
-                <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
+                <div class="level_recipe">
+                    <a href="#" class="level">등급별 혜택</a>
+                    <a href="#" class="recipe">레시피</a>
+                </div>
+                <div class="swiper-container" id="recently_slide">
+                    <div class="swiper-wrapper" id="recently_slide_wrap">
+                        <p>최근 본 상품</p>
+                        <a href="#" class="swiper-slide item item1"></a>
+                        <a href="#" class="swiper-slide item item2"></a>
+                        <a href="#" class="swiper-slide item item3"></a>
+                        <a href="#" class="swiper-slide item item4"></a>
+                    </div>
+                    <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
+                    <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
+                </div>
             </div>
         </div>
-    </div>
+    </main>
     <?php include("footer.php"); ?>
     <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <script src="./script/header.js"></script>
     <script>
-        const mySwiper = new Swiper('#main_bnr_slide',{
-
-            centeredSlides:true, //슬라이드의 기준을 가운데부터 시작하도록 설정하기
+        // 메인 배너 슬라이드
+        const main_bnr_swiper = new Swiper('#main_bnr_slide',{
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
             navigation:{
-                nextEl:'#main_bnr_slide .swiper-button-next',
-                prevEl:'#main_bnr_slide .swiper-button-prev',
+                nextEl: "#main_next_btn",
+                prevEl: "#main_prev_btn",
             },
             pagination: {
             el: "#main_bnr_slide .pagination",
             type: "fraction",
-
             },
         })
+        // ranking 슬라이드
+        const ranking_swiper = new Swiper('#ranking_slide',{
+            slidesPerView: 4,
+            spaceBetween: 25,
+            navigation:{
+                nextEl: "#ranking_next_btn",
+                prevEl: "#ranking_prev_btn",
+            },
+        })
+        const ranking_next_btn = document.querySelector('#ranking_next_btn')
+        const ranking_prev_btn = document.querySelector('#ranking_prev_btn')
 
-        //본 예제에서는 도로명 주소 표기 방식에 대한 법령에 따라, 내려오는 데이터를 조합하여 올바른 주소를 구성하는 방법을 설명합니다.
-        function exec_daum_postcode() {
-            new daum.Postcode({
-                oncomplete: function(data) {
-                    // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+        //초기 prev 버튼 숨김
+        ranking_prev_btn.style.display = 'none'
 
-                    // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
-                    // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
-                    var roadAddr = data.roadAddress; // 도로명 주소 변수
-                    var extraRoadAddr = ''; // 참고 항목 변수
+        // 3. 슬라이드 변경 시 이벤트 리스너 추가
+        ranking_swiper.on('slideChange', () => {
+            const currentIndex = ranking_swiper.activeIndex;
+            const totalSlides = ranking_swiper.slides.length;
 
-                    // 법정동명이 있을 경우 추가한다. (법정리는 제외)
-                    // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
-                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
-                        extraRoadAddr += data.bname;
-                    }
-                    // 건물명이 있고, 공동주택일 경우 추가한다.
-                    if(data.buildingName !== '' && data.apartment === 'Y'){
-                    extraRoadAddr += (extraRoadAddr !== '' ? ', ' + data.buildingName : data.buildingName);
-                    }
-                    // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
-                    if(extraRoadAddr !== ''){
-                        extraRoadAddr = ' (' + extraRoadAddr + ')';
-                    }
+            // 4. 현재 슬라이드가 처음 슬라이드일 때 prev 버튼 숨김
+            if (currentIndex === 0) {
+                ranking_prev_btn.style.display = 'none';
+            } else {
+                ranking_prev_btn.style.display = 'block';
+            }
 
-                    // 우편번호와 주소 정보를 해당 필드에 넣는다.
-                    document.getElementById('postcode').value = data.zonecode;
-                    document.getElementById("roadAddress").value = roadAddr;
-                    document.getElementById("jibunAddress").value = data.jibunAddress;
-                    
-                    // 참고항목 문자열이 있을 경우 해당 필드에 넣는다.
-                    if(roadAddr !== ''){
-                        document.getElementById("extraAddress").value = extraRoadAddr;
-                    } else {
-                        document.getElementById("extraAddress").value = '';
-                    }
+            // 5. 현재 슬라이드가 마지막 슬라이드일 때 next 버튼 숨김
+            if (currentIndex + 4 >= totalSlides) {
+                ranking_next_btn.style.display = 'none';
+            } else {
+                ranking_next_btn.style.display = 'block';
+            }
+        });
 
-                    var guideTextBox = document.getElementById("guide");
-                    // 사용자가 '선택 안함'을 클릭한 경우, 예상 주소라는 표시를 해준다.
-                    if(data.autoRoadAddress) {
-                        var expRoadAddr = data.autoRoadAddress + extraRoadAddr;
-                        guideTextBox.innerHTML = '(예상 도로명 주소 : ' + expRoadAddr + ')';
-                        guideTextBox.style.display = 'block';
+        ranking_prev_btn.addEventListener("click", () => {
+            const currentIndex = ranking_swiper.activeIndex;
+            // 다음 4개의 슬라이드로 이동
+            ranking_swiper.slideTo(currentIndex - 4);
+        })
 
-                    } else if(data.autoJibunAddress) {
-                        var expJibunAddr = data.autoJibunAddress;
-                        guideTextBox.innerHTML = '(예상 지번 주소 : ' + expJibunAddr + ')';
-                        guideTextBox.style.display = 'block';
-                    } else {
-                        guideTextBox.innerHTML = '';
-                        guideTextBox.style.display = 'none';
-                    }
-                }
-            }).open();
-        }
+        ranking_next_btn.addEventListener("click", () => {
+            const currentIndex = ranking_swiper.activeIndex;
+            // 다음 4개의 슬라이드로 이동
+            ranking_swiper.slideTo(currentIndex + 4);
+        })
+        
+        // MD 슬라이드
+        const md_swiper = new Swiper('#md_slide',{
+            slidesPerView: 4,
+            spaceBetween: 25,
+            navigation:{
+                prevEl: "#md_prev_btn",
+                nextEl: "#md_next_btn",
+            },
+        })
+        const md_prev_btn = document.querySelector('#md_prev_btn')
+        const md_next_btn = document.querySelector('#md_next_btn')
+
+        md_prev_btn.style.display = 'none'
+        
+        md_prev_btn.addEventListener("click", () => {
+            const currentIndex = md_swiper.activeIndex;
+            // 4. 다음 4개의 슬라이드로 이동
+            md_swiper.slideTo(currentIndex - 4);
+
+                // 9. prev 버튼 숨김 (인덱스가 0인 경우에만)
+            if (currentIndex - 4 <= 0) {
+                md_prev_btn.style.display = 'none';
+            }
+            md_next_btn.style.display = 'block'
+        })
+
+        md_next_btn.addEventListener("click", () => {
+            const currentIndex = md_swiper.activeIndex;
+            // 4. 다음 4개의 슬라이드로 이동
+            md_swiper.slideTo(currentIndex + 4);
+            console.log(currentIndex)
+
+            // 6. prev 버튼 출력 (인덱스가 0보다 큰 경우에만)
+            if (currentIndex > 0) {
+                md_prev_btn.style.display = 'block';
+            }
+            md_next_btn.style.display='none'
+        })
+
+        // 오리지널 슬라이드
+        const original_swiper = new Swiper('#original_slide',{
+            slidesPerView: 2,
+            spaceBetween: 25,
+            navigation:{
+                prevEl: "#original_prev_btn",
+                nextEl: "#original_next_btn",
+            },
+        })
+        const original_prev_btn = document.querySelector('#original_prev_btn')
+        const original_next_btn = document.querySelector('#original_next_btn')
+
+        //초기 prev 버튼 숨김
+        original_prev_btn.style.display = 'none'
+
+        // 3. 슬라이드 변경 시 이벤트 리스너 추가
+        original_swiper.on('slideChange', () => {
+            const currentIndex = original_swiper.activeIndex;
+            const totalSlides = original_swiper.slides.length;
+
+            // 4. 현재 슬라이드가 처음 슬라이드일 때 prev 버튼 숨김
+            if (currentIndex === 0) {
+                original_prev_btn.style.display = 'none';
+            } else {
+                original_prev_btn.style.display = 'block';
+            }
+
+            // 5. 현재 슬라이드가 마지막 슬라이드일 때 next 버튼 숨김
+            if (currentIndex + 2 >= totalSlides -1 ) {
+                original_next_btn.style.display = 'none';
+            } else {
+                original_next_btn.style.display = 'block';
+            }
+        });
+
+        original_prev_btn.addEventListener("click", () => {
+            const currentIndex = original_swiper.activeIndex;
+            // 다음 2개의 슬라이드로 이동
+            original_swiper.slideTo(currentIndex - 2);
+        })
+
+        original_next_btn.addEventListener("click", () => {
+            const currentIndex = original_swiper.activeIndex;
+            // 다음 2개의 슬라이드로 이동
+            original_swiper.slideTo(currentIndex + 2);
+        })
+        
+        //present 슬라이드
+        const present_swiper = new Swiper('#present_slide',{
+            slidesPerView: 4,
+            spaceBetween: 25,
+            navigation:{
+                nextEl: "#present_next_btn",
+                prevEl: "#present_prev_btn",
+            },
+        })
+        const present_next_btn = document.querySelector('#present_next_btn')
+        const present_prev_btn = document.querySelector('#present_prev_btn')
+
+        //초기 prev 버튼 숨김
+        present_prev_btn.style.display = 'none'
+
+        // 3. 슬라이드 변경 시 이벤트 리스너 추가
+        present_swiper.on('slideChange', () => {
+            const currentIndex = present_swiper.activeIndex;
+            const totalSlides = present_swiper.slides.length;
+
+            // 4. 현재 슬라이드가 처음 슬라이드일 때 prev 버튼 숨김
+            if (currentIndex === 0) {
+                present_prev_btn.style.display = 'none';
+            } else {
+                present_prev_btn.style.display = 'block';
+            }
+
+            // 5. 현재 슬라이드가 마지막 슬라이드일 때 next 버튼 숨김
+            if (currentIndex + 4 >= totalSlides) {
+                present_next_btn.style.display = 'none';
+            } else {
+                present_next_btn.style.display = 'block';
+            }
+        });
+
+        present_prev_btn.addEventListener("click", () => {
+            const currentIndex = present_swiper.activeIndex;
+            // 다음 4개의 슬라이드로 이동
+            present_swiper.slideTo(currentIndex - 4);
+        })
+
+        present_next_btn.addEventListener("click", () => {
+            const currentIndex = present_swiper.activeIndex;
+            // 다음 4개의 슬라이드로 이동
+            present_swiper.slideTo(currentIndex + 4);
+        })
+
+        // recipe 슬라이드
+        const recipe_swiper = new Swiper('#recipe_slide',{
+            slidesPerView: 3,
+            spaceBetween: 25,
+            navigation:{
+                prevEl: "#recipe_prev_btn",
+                nextEl: "#recipe_next_btn",
+            },
+        })
+        const recipe_prev_btn = document.querySelector('#recipe_prev_btn')
+        const recipe_next_btn = document.querySelector('#recipe_next_btn')
+
+        recipe_prev_btn.style.display = 'none'
+        
+        recipe_prev_btn.addEventListener("click", () => {
+            const currentIndex = recipe_swiper.activeIndex;
+            // 4. 다음 4개의 슬라이드로 이동
+            recipe_swiper.slideTo(currentIndex - 3);
+
+                // 9. prev 버튼 숨김 (인덱스가 0인 경우에만)
+            if (currentIndex - 3 <= 0) {
+                recipe_prev_btn.style.display = 'none';
+            }
+            recipe_next_btn.style.display = 'block'
+        })
+
+        recipe_next_btn.addEventListener("click", () => {
+            const currentIndex = recipe_swiper.activeIndex;
+            // 4. 다음 4개의 슬라이드로 이동
+            recipe_swiper.slideTo(currentIndex + 3);
+            console.log(currentIndex)
+
+            // 6. prev 버튼 출력 (인덱스가 0보다 큰 경우에만)
+            if (currentIndex > 0) {
+                recipe_prev_btn.style.display = 'block';
+            }
+            recipe_next_btn.style.display='none'
+        })
+
+        //인스타그램 슬라이드
+        const instagram_swiper = new Swiper('#instagram_slide',{
+            slidesPerView: 6,
+            spaceBetween: 5,
+            navigation:{
+                nextEl: "#instagram_next_btn",
+                prevEl: "#instagram_prev_btn",
+            },
+        })
+        const instagram_next_btn = document.querySelector('#instagram_next_btn')
+        const instagram_prev_btn = document.querySelector('#instagram_prev_btn')
+
+        //초기 prev 버튼 숨김
+        instagram_prev_btn.style.display = 'none'
+
+        // 3. 슬라이드 변경 시 이벤트 리스너 추가
+        instagram_swiper.on('slideChange', () => {
+            const currentIndex = instagram_swiper.activeIndex;
+            const totalSlides = instagram_swiper.slides.length;
+
+            // 4. 현재 슬라이드가 처음 슬라이드일 때 prev 버튼 숨김
+            if (currentIndex === 0) {
+                instagram_prev_btn.style.display = 'none';
+            } else {
+                instagram_prev_btn.style.display = 'block';
+            }
+
+            // 5. 현재 슬라이드가 마지막 슬라이드일 때 next 버튼 숨김
+            if (currentIndex + 6 >= totalSlides) {
+                instagram_next_btn.style.display = 'none';
+            } else {
+                instagram_next_btn.style.display = 'block';
+            }
+        });
+
+        instagram_prev_btn.addEventListener("click", () => {
+            const currentIndex = instagram_swiper.activeIndex;
+            // 다음 6개의 슬라이드로 이동
+            instagram_swiper.slideTo(currentIndex - 6);
+        })
+
+        instagram_next_btn.addEventListener("click", () => {
+            const currentIndex = instagram_swiper.activeIndex;
+            // 다음 6개의 슬라이드로 이동
+            instagram_swiper.slideTo(currentIndex + 6);
+        })
+
     </script>
+    <script src="./script/index.js"></script>
 </body>
 </html>
