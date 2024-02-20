@@ -2561,12 +2561,20 @@
                 <div class="swiper-container" id="recently_slide">
                     <div class="swiper-wrapper" id="recently_slide_wrap">
                         <p>최근 본 상품</p>
-                        <a href="#" class="swiper-slide item item1"></a>
-                        <a href="#" class="swiper-slide item item2"></a>
-                        <a href="#" class="swiper-slide item item3"></a>
-                        <a href="#" class="swiper-slide item item4"></a>
+                        <a href="#" class="swiper-slide item item1">
+                            <img src="./images/main/icon/aside_p_01.jpg" alt="최근 본 상품">
+                        </a>
+                        <a href="#" class="swiper-slide item item2">
+                            <img src="./images/main/icon/aside_p_01.jpg" alt="최근 본 상품">
+                        </a>
+                        <a href="#" class="swiper-slide item item3">
+                            <img src="./images/main/icon/aside_p_01.jpg" alt="최근 본 상품">
+                        </a>
+                        <a href="#" class="swiper-slide item item4">
+                            <img src="./images/main/icon/aside_p_01.jpg" alt="최근 본 상품">
+                        </a>
                     </div>
-                    <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->
+                    <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->   
                     <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
                 </div>
             </div>
@@ -2579,23 +2587,9 @@
     <script>
         // 메인 배너 슬라이드
         const main_bnr_swiper = new Swiper('#main_bnr_slide',{
-<<<<<<< HEAD
             slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
-=======
-            navigation:{
-                nextEl:'#main_bnr_slide .swiper-button-next',
-                prevEl:'#main_bnr_slide .swiper-button-prev',
-            },
-            pagination: {
-            el: "#main_bnr_slide .pagination",
-            // type: "fraction",
-            },
-        })
-
-/*         const ranking_swiper = new Swiper ('#ranking_slide',{
->>>>>>> 1b7efdc5b96aea585178b59830afed68b0d942cf
             navigation:{
                 nextEl: "#main_next_btn",
                 prevEl: "#main_prev_btn",
@@ -2604,7 +2598,6 @@
             el: "#main_bnr_slide .pagination",
             type: "fraction",
             },
-<<<<<<< HEAD
         })
         // ranking 슬라이드
         const ranking_swiper = new Swiper('#ranking_slide',{
@@ -2617,10 +2610,6 @@
         })
         const ranking_next_btn = document.querySelector('#ranking_next_btn')
         const ranking_prev_btn = document.querySelector('#ranking_prev_btn')
-=======
-        }) */
-
->>>>>>> 1b7efdc5b96aea585178b59830afed68b0d942cf
 
         //초기 prev 버튼 숨김
         ranking_prev_btn.style.display = 'none'
@@ -2874,6 +2863,17 @@
             const currentIndex = instagram_swiper.activeIndex;
             // 다음 6개의 슬라이드로 이동
             instagram_swiper.slideTo(currentIndex + 6);
+        })
+
+        // aside 슬라이드
+        const recently_swiper = new Swiper('#recently_slide',{
+            slidesPerView: 3,
+            spaceBetween: 10,
+            direction:'vertical',
+            navigation:{
+                prevEl: "#recently_slide .prev_btn",
+                nextEl: "#recently_slide .next_btn",
+            },
         })
 
     </script>
