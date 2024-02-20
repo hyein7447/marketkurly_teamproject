@@ -132,7 +132,7 @@
     font-size: 1rem;
   }
   main .best_mobile .sub_header .filter .right a [class$=down] {
-    font-size: 14px;
+    font-size: 12px;
   }
   main .best_mobile .sub_header .filter .right a img {
     width: 16px;
@@ -148,14 +148,9 @@
     border-radius: 6px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     padding: 4px 0;
-    display: none;
   }
   main .best_mobile .filter_nav li {
     padding: 10px 0px;
-  }
-  main .best_mobile .filter_nav li .nav_active {
-    color: #5F0080;
-    font-weight: 600;
   }
   main .best_mobile .filter_nav li a {
     padding: 16px 0px 16px 16px;
@@ -212,9 +207,13 @@
     position: relative;
     width: calc(50% - 4px);
   }
+  main .best_mobile .product_box .product .thumb:hover {
+    background-size: 110%;
+    transition: 0.7s ease;
+  }
   main .best_mobile .product_box .product .thumb {
     background-image: url(../images/main/product/main_p_01.jpg);
-    background-size: cover;
+    background-size: 108%;
     background-position: center;
     display: block;
     padding-top: 140%;
@@ -356,25 +355,19 @@
     font-weight: 600;
   }
   main .best_mobile .tab_slide {
-    display: none;
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 900;
     width: 100%;
   }
-  main .best_mobile .tab_slide .bg {
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(37, 21, 21, 0.4);
-  }
-  main .best_mobile .tab_slide .bg .bar_line {
+  main .best_mobile .tab_slide .bar_line {
     background-color: #fff;
     padding: 10px 0;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
-  main .best_mobile .tab_slide .bg .bar_line span {
+  main .best_mobile .tab_slide .bar_line span {
     content: "";
     display: inline-block;
     display: flex;
@@ -385,30 +378,24 @@
     background-color: #ddd;
     border-radius: 16px;
   }
-  main .best_mobile .tab_slide .bg .area {
+  main .best_mobile .tab_slide .area {
     background-position-y: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* .tab1 {
-        display: none;
-    }
-    .tab6 {
-        display: block !important;
-    } */
   }
-  main .best_mobile .tab_slide .bg .area .tab_title {
+  main .best_mobile .tab_slide .area .tab_title {
     padding: 20px 16px 10px;
     background-color: #fff;
     width: 100%;
   }
-  main .best_mobile .tab_slide .bg .area .tab_title h3 {
+  main .best_mobile .tab_slide .area .tab_title h3 {
     font-size: 1.25rem;
     font-weight: 600;
   }
-  main .best_mobile .tab_slide .bg .area .list_title {
+  main .best_mobile .tab_slide .area .list_title {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -417,68 +404,66 @@
     padding: 10px 16px 16px;
     border-bottom: 1px solid #f7f7f7;
   }
-  main .best_mobile .tab_slide .bg .area .list_title p.list_title_active::before {
+  main .best_mobile .tab_slide .area .list_title p.list_title_active::before {
     content: "";
     width: 100%;
     height: 2px;
     background-color: #5F0080;
     position: absolute;
     bottom: -17px;
-    transition: 0.4s ease;
+    transition: 0.5s ease;
+    transform: translateX(1px);
   }
-  main .best_mobile .tab_slide .bg .area .list_title p.list_title_active {
-    color: #5F0080;
-    font-weight: 800;
-  }
-  main .best_mobile .tab_slide .bg .area .list_title p {
+  main .best_mobile .tab_slide .area .list_title p {
+    cursor: pointer;
     font-size: 1rem;
     margin-right: 22px;
     font-weight: 500;
     position: relative;
   }
-  main .best_mobile .tab_slide .bg .area .list {
+  main .best_mobile .tab_slide .area .list {
     background-color: #fff;
     padding: 15px 0;
     height: 48vh;
     overflow-y: auto;
     scrollbar-width: thin;
   }
-  main .best_mobile .tab_slide .bg .area .list li {
+  main .best_mobile .tab_slide .area .list li {
     padding: 9px 16px 18px;
   }
-  main .best_mobile .tab_slide .bg .area .list li .btn_chk, main .best_mobile .tab_slide .bg .area .list li .btn_circle {
+  main .best_mobile .tab_slide .area .list li .btn_chk, main .best_mobile .tab_slide .area .list li .btn_circle {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
   }
-  main .best_mobile .tab_slide .bg .area .list li .btn_chk img, main .best_mobile .tab_slide .bg .area .list li .btn_circle img {
+  main .best_mobile .tab_slide .area .list li .btn_chk img, main .best_mobile .tab_slide .area .list li .btn_circle img {
     width: 20px;
     margin-right: 8px;
     transform: translateY(2px);
   }
-  main .best_mobile .tab_slide .bg .area .list li .btn_chk p:nth-child(2), main .best_mobile .tab_slide .bg .area .list li .btn_circle p:nth-child(2) {
+  main .best_mobile .tab_slide .area .list li .btn_chk p:nth-child(2), main .best_mobile .tab_slide .area .list li .btn_circle p:nth-child(2) {
     margin-right: 4px;
     font-size: 1.063rem;
     font-weight: 400;
     color: #111;
   }
-  main .best_mobile .tab_slide .bg .area .list li .btn_chk p:nth-child(3), main .best_mobile .tab_slide .bg .area .list li .btn_circle p:nth-child(3) {
+  main .best_mobile .tab_slide .area .list li .btn_chk p:nth-child(3), main .best_mobile .tab_slide .area .list li .btn_circle p:nth-child(3) {
     font-size: 0.875rem;
     font-weight: 400;
     color: #cccccc;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 {
+  main .best_mobile .tab_slide .area .list.tab4 {
     background-color: #fff;
     padding: 15px 0;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .brand .name_active {
+  main .best_mobile .tab_slide .area .list.tab4 .brand .name_active {
     color: #5f0080;
     font-weight: 600;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .brand a:last-child {
+  main .best_mobile .tab_slide .area .list.tab4 .brand a:last-child {
     margin-right: 0;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .brand a:nth-child(2)::before {
+  main .best_mobile .tab_slide .area .list.tab4 .brand a:nth-child(2)::before {
     content: "";
     display: inline-block;
     width: 1px;
@@ -487,19 +472,19 @@
     margin-right: 10px;
     margin-left: 5px;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .brand a {
+  main .best_mobile .tab_slide .area .list.tab4 .brand a {
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: -0.03rem;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .atoz_btn {
+  main .best_mobile .tab_slide .area .list.tab4 .atoz_btn {
     padding: 30px 4px 5px;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .atoz_btn a.atoz_active {
+  main .best_mobile .tab_slide .area .list.tab4 .atoz_btn a.atoz_active {
     background-color: #333;
     color: #fff;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .atoz_btn a {
+  main .best_mobile .tab_slide .area .list.tab4 .atoz_btn a {
     min-width: 31px;
     height: 31px;
     border-radius: 20px;
@@ -511,7 +496,7 @@
     margin-right: 4px;
     margin-bottom: 10px;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab ul.contents {
+  main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab ul.contents {
     background-color: #fff;
     padding: 15px 0;
     max-height: 500px;
@@ -519,61 +504,61 @@
     height: 430px;
     overflow-y: auto;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab ul.contents li {
+  main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab ul.contents li {
     padding: 9px 4px 18px;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab ul.contents li .btn_chk {
+  main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab ul.contents li .btn_chk {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab ul.contents li .btn_chk img {
+  main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab ul.contents li .btn_chk img {
     width: 20px;
     margin-right: 8px;
     transform: translateY(2px);
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab ul.contents li .btn_chk p:nth-child(2) {
+  main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab ul.contents li .btn_chk p:nth-child(2) {
     margin-right: 4px;
     font-size: 1.063rem;
     font-weight: 400;
     color: #111;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab ul.contents li .btn_chk p:nth-child(3) {
+  main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab ul.contents li .btn_chk p:nth-child(3) {
     font-size: 0.875rem;
     font-weight: 400;
     color: #cccccc;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab.box2 .contents {
+  main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab.box2 .contents {
     max-height: 500px;
     min-height: 400px;
     height: 430px;
     overflow-y: auto;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab.box2 .contents li .btn_chk {
+  main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab.box2 .contents li .btn_chk {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab.box2 .contents li .btn_chk img {
+  main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab.box2 .contents li .btn_chk img {
     width: 20px;
     margin-right: 8px;
     transform: translateY(2px);
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab.box2 .contents li .btn_chk p:nth-child(2) {
+  main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab.box2 .contents li .btn_chk p:nth-child(2) {
     margin-right: 4px;
     font-size: 1.063rem;
     font-weight: 400;
     color: #111;
   }
-  main .best_mobile .tab_slide .bg .area .list.tab4 .list_box .box_tab.box2 .contents li .btn_chk p:nth-child(3) {
+  main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab.box2 .contents li .btn_chk p:nth-child(3) {
     font-size: 0.875rem;
     font-weight: 400;
     color: #cccccc;
   }
-  main .best_mobile .tab_slide .bg .area .tab2, main .best_mobile .tab_slide .bg .area .tab3, main .best_mobile .tab_slide .bg .area .tab4, main .best_mobile .tab_slide .bg .area .tab5, main .best_mobile .tab_slide .bg .area .tab6 {
+  main .best_mobile .tab_slide .area .tab2, main .best_mobile .tab_slide .area .tab3, main .best_mobile .tab_slide .area .tab4, main .best_mobile .tab_slide .area .tab5, main .best_mobile .tab_slide .area .tab6 {
     display: none;
   }
-  main .best_mobile .tab_slide .bg .area .btn_wrap {
+  main .best_mobile .tab_slide .area .btn_wrap {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -582,24 +567,24 @@
     padding: 8px 12px;
     height: 68px;
   }
-  main .best_mobile .tab_slide .bg .area .btn_wrap .btn_reset {
+  main .best_mobile .tab_slide .area .btn_wrap .btn_reset {
     margin-right: 8px;
     height: 68px;
     width: 16%;
     padding: 10px 0;
   }
-  main .best_mobile .tab_slide .bg .area .btn_wrap .btn_reset [class$=right] {
+  main .best_mobile .tab_slide .area .btn_wrap .btn_reset [class$=right] {
     color: #ddd;
     font-size: 13px;
     margin-right: 4px;
     white-space: nowrap;
   }
-  main .best_mobile .tab_slide .bg .area .btn_wrap .btn_reset span {
+  main .best_mobile .tab_slide .area .btn_wrap .btn_reset span {
     color: #ddd;
     font-size: 1.063rem;
     white-space: nowrap;
   }
-  main .best_mobile .tab_slide .bg .area .btn_wrap .btn_view {
+  main .best_mobile .tab_slide .area .btn_wrap .btn_view {
     background-color: #5F0080;
     border-radius: 4px;
     color: #fff;
@@ -607,9 +592,14 @@
     padding: 10px 0;
     width: 82%;
   }
-  main .best_mobile .tab_slide .bg .area .btn_wrap .btn_view span {
+  main .best_mobile .tab_slide .area .btn_wrap .btn_view span {
     color: #fff;
     font-size: 1.063rem;
+  }
+  main .best_mobile .tab_slide .bg {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(37, 21, 21, 0.4);
   }
 }
 @media screen and (max-width: 430px) {
@@ -733,4 +723,14 @@
 .cate_active span {
   color: #8d4cc4;
   font-weight: 700;
+}
+
+.display_none {
+  display: none !important;
+}
+
+.list_title_active {
+  color: #5f0080;
+  font-weight: 800;
+  transition: 0.4s ease;
 }/*# sourceMappingURL=category_m_common.css.map */

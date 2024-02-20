@@ -334,14 +334,16 @@ main .best .container .right .product_box .product {
     margin-bottom: 40px;
     position: relative;
 }
+main .best .container .right .product_box .product .thumb:hover {
+    background-size: 103%;
+    transition: 0.4s ease; 
+}
 main .best .container .right .product_box .product .thumb {
     background-image: url(../images/main/product/main_p_02.jpg);
-    /* background-size: calc((100% / 3) - 13px) , 340px; */
     padding-top: calc(33% / 1 * 4);
-    background-size: cover;
+    background-size: 102%;
     background-position: center;
     display: block;
-    /* height: 320px; */
     width: 100%;
     border-radius: 4px;
     cursor: pointer;
