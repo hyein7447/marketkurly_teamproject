@@ -11,130 +11,77 @@ option_btn.addEventListener('click',()=>{
     option.style.display = 'block'
 })
 
-/* for(let i of select_opt){
-    i.addEventListener('click',(e)=>{
-        e.preventDefault();
-        option.style.display = 'none'
-        console.log(i.firstElementChild.innerHTML)
-        console.log(i.lastChild.innerHTML)
-        let create_list = document.createElement('div')
-        create_list.classList.add('select')
-        create_list.innerHTML = `<div class="select">`
-        create_list.innerHTML += `<p class="item_name">${i.firstElementChild.innerHTML}</p>`
-        create_list.innerHTML += `<div class="num_price">`
-        create_list.innerHTML += `<div class="num_result">`
-        create_list.innerHTML += `<button type="button" class="minus"></button>`
-        create_list.innerHTML += `<input type="text" class="num num_count" value="1" readonly>`
-        create_list.innerHTML += `<button type="button" class="plus"></button>`
-        create_list.innerHTML += `</div>`
-        create_list.innerHTML += `<div class="price">${i.lastElementChild.innerHTML}</div>`
-        create_list.innerHTML += `</div>`
-        create_list.innerHTML += `<a href="#"><img src="./images/main/icon/icon_cancle.svg" alt=""></a>`
-        create_list.innerHTML += `</div>`
-        select_wrap.appendChild(create_list)
-    })
-} */
+let selectedItems = new Set();
 
 for (let i of select_opt) {
     i.addEventListener('click', (e) => {
         e.preventDefault();
+
         option.style.display = 'none';
 
-        let create_list = document.createElement('div');
-        create_list.classList.add('select'); // 클래스 추가
+        let itemName = i.firstElementChild.innerHTML;
 
-        let itemName = document.createElement('p');
-        itemName.classList.add('item_name'); // 클래스 추가
-        itemName.innerText = i.firstElementChild.innerHTML;
-        create_list.appendChild(itemName);
+        if (selectedItems.has(itemName)) {
+            alert('이미 추가된 옵션입니다.');
+            return;
+        }
 
-        let numPrice = document.createElement('div');
-        numPrice.classList.add('num_price'); // 클래스 추가
+        selectedItems.add(itemName);
 
-        let numResult = document.createElement('div');
-        numResult.classList.add('num_result'); // 클래스 추가
-        numResult.innerHTML = `<button type="button" class="minus"></button><input type="text" class="num num_count" value="1" readonly><button type="button" class="plus"></button>`;
-        numPrice.appendChild(numResult);
+        console.log(itemName);
+        console.log(i.lastChild.innerHTML);
 
-        let price = document.createElement('div');
-        price.classList.add('price'); // 클래스 추가
-        price.innerText = i.lastElementChild.innerHTML;
-        numPrice.appendChild(price);
+        console.log(i.firstElementChild.innerHTML);
+        console.log(i.lastChild.innerHTML);
 
-        create_list.appendChild(numPrice);
+        let create_select = document.createElement('div');
+        create_select.classList.add('select');
+        create_select.innerHTML = `<p class="item_name">${i.firstElementChild.innerHTML}</p>`;
 
-        let cancelImg = document.createElement('a');
-        cancelImg.setAttribute('href', '#');
-        cancelImg.innerHTML = '<img src="./images/main/icon/icon_cancel.svg" alt="">';
-        create_list.appendChild(cancelImg);
+        let create_num_price = document.createElement('div');
+        create_num_price.classList.add('num_price');
+        create_num_price.innerHTML = `<div class="num_result">
+                                        <button type="button" class="minus"></button>
+                                        <input type="text" class="num num_count" value="1" readonly>
+                                        <button type="button" class="plus"></button>
+                                    </div>
+                                    <div class="price">${i.lastElementChild.innerHTML}</div>`;
 
-        select_wrap.appendChild(create_list);
+        create_select.appendChild(create_num_price);
+
+        let cancle_button = document.createElement('a');
+        cancle_button.href = "#";
+        cancle_button.innerHTML = `<img src="./images/main/icon/icon_cancle.svg" alt="">`;
+
+        create_select.appendChild(cancle_button);
+
+        select_wrap.appendChild(create_select);
+
+        // X 버튼 클릭 시 선택한 select 박스 삭제
+        cancle_button.addEventListener('click', (e) => {
+            e.preventDefault();
+            create_select.remove();
+        });
+
+
+        // minus, plus 버튼 클릭 시 수량 증가 및 감소
+        let minusButton = create_num_price.querySelector('.minus');
+        let plusButton = create_num_price.querySelector('.plus');
+        let numInput = create_num_price.querySelector('.num_count');
+
+        minusButton.addEventListener('click', () => {
+            let currentValue = parseInt(numInput.value);
+            if (currentValue > 1) {
+                numInput.value = currentValue - 1;
+            }
+        });
+
+        plusButton.addEventListener('click', () => {
+            let currentValue = parseInt(numInput.value);
+            numInput.value = currentValue + 1;
+        });
     });
 }
-
-// -------- option 수량 증감
-const num_price = document.querySelector('.num_price')
-const plus = num_price.querySelector('.plus')
-const minus = num_price.querySelector('.minus')
-const num_count = num_price.querySelector('.num')
-const item_price = num_price.querySelector('.price')
-
-/* let num = 1;
-let price = 2900;
-let total = num * price;
-
-price.innerText = total;
-console.log(price)
-item_price.innerHTML = price.toLocaleString('ko-kr')+'원';
-num_count.value = num;
-
-plus.addEventListener('click',()=>{
-    num++
-    num_count.value = num;
-    price.innerHTML = total;
-})
-minus.addEventListener('click',()=>{
-    if(num_count.value > 1){
-        num--
-        num_count.value = num;
-    }
-}) */
-
-// 태그 생성 부분
-
-plus.addEventListener('click', () => {
-    num++;
-    num_count.value = num;
-    total = num * price;
-    item_price.innerHTML = total.toLocaleString('ko-kr') + '원';
-});
-
-minus.addEventListener('click', () => {
-    if (num > 1) {
-        num--;
-        num_count.value = num;
-        total = num * price;
-        item_price.innerHTML = total.toLocaleString('ko-kr') + '원';
-    }
-});
-
-// 태그를 생성하는 동안 각 요소에 이벤트를 적용
-create_list.querySelector('.plus').addEventListener('click', () => {
-    num++;
-    num_count.value = num;
-    total = num * price;
-    item_price.innerHTML = total.toLocaleString('ko-kr') + '원';
-});
-
-create_list.querySelector('.minus').addEventListener('click', () => {
-    if (num > 1) {
-        num--;
-        num_count.value = num;
-        total = num * price;
-        item_price.innerHTML = total.toLocaleString('ko-kr') + '원';
-    }
-});
-
 
 // -------------- wish btn 클릭 시 활성화
 const wish = document.querySelectorAll('.wish')
@@ -197,16 +144,16 @@ detail_opt.forEach((t, i) => {
 
 // ---------- 상세설명 
 const exchange_refund = document.querySelector('.exchange_refund')
-const order_cancel = document.querySelector('.order_cancel')
+const order_cancle = document.querySelector('.order_cancle')
 const exchange_refund_con = document.querySelector('.exchange_refund > ul')
-const order_cancel_con = document.querySelector('.order_cancel > ul')
+const order_cancle_con = document.querySelector('.order_cancle > ul')
 const exchange_refund_close = document.querySelector('.exchange_refund > .title > .close > .close_btn')
-const order_cancel_close = document.querySelector('.order_cancel > .title > .close > .close_btn')
+const order_cancle_close = document.querySelector('.order_cancle > .title > .close > .close_btn')
 const exchange_refund_close_icon = document.querySelector('.exchange_refund > .title > .close > .close_btn > img')
-const order_cancel_close_icon = document.querySelector('.order_cancel > .title > .close > .close_btn > img')
+const order_cancle_close_icon = document.querySelector('.order_cancle > .title > .close > .close_btn > img')
 
 let exchange_refund_con_status = false;
-let order_cancel_con_status = false;
+let order_cancle_con_status = false;
 
 exchange_refund_close.addEventListener('click', function(){
     if(exchange_refund_con_status == false){
@@ -219,15 +166,15 @@ exchange_refund_close.addEventListener('click', function(){
         exchange_refund_close_icon.style.transform = 'rotate(180deg)'
     }
 })
-order_cancel_close.addEventListener('click', function(){
-    if(order_cancel_con_status == false){
-        order_cancel_con.style.display = 'none';
-        order_cancel_con_status = !order_cancel_con_status
-        order_cancel_close_icon.style.transform = 'rotate(0deg)'
+order_cancle_close.addEventListener('click', function(){
+    if(order_cancle_con_status == false){
+        order_cancle_con.style.display = 'none';
+        order_cancle_con_status = !order_cancle_con_status
+        order_cancle_close_icon.style.transform = 'rotate(0deg)'
     }else{
-        order_cancel_con.style.display = 'block';
-        order_cancel_con_status = !order_cancel_con_status
-        order_cancel_close_icon.style.transform = 'rotate(180deg)'
+        order_cancle_con.style.display = 'block';
+        order_cancle_con_status = !order_cancle_con_status
+        order_cancle_close_icon.style.transform = 'rotate(180deg)'
     }
 })
 
@@ -270,6 +217,9 @@ filter_btn[1].addEventListener('click', function(){
         rating_filter_box_status = !rating_filter_box_status
     }
 })
+
+// 리뷰 옵션 선택 시 체크박스 이미지 변경
+
 
 // ---------- 리뷰공지 클릭 시 내용 보이기
 const review_notice_btn = document.querySelectorAll('.review_notice_btn');

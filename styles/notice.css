@@ -1,9 +1,9 @@
 main {
-  max-width: 1050px;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 50px 0 80px;
+  padding: 50px 20px 80px;
 }
 main aside h1 {
   font-size: 1.875rem;
@@ -19,7 +19,7 @@ main aside .board_list {
 }
 main aside .board_list a {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   width: 197px;
   border-bottom: 1px solid #f2f2f2;
   padding: 15px 13px 15px 20px;
@@ -31,6 +31,7 @@ main aside .board_list a {
 main aside .board_list a:first-child {
   color: #5f0080;
   background-color: #fafafa;
+  font-weight: 500;
 }
 main aside .board_list a span img {
   width: 14px;
