@@ -332,10 +332,12 @@ main .product_container .img_information .information .purchase dl dd .option a 
   font-size: 0.875rem;
 }
 main .product_container .img_information .information .purchase dl dd .select_wrap {
+  position: relative;
   margin-top: 7.5px;
+}
+main .product_container .img_information .information .purchase dl dd .select_wrap .select {
   padding: 13.75px 15px;
   border: 1px solid #f4f4f4;
-  position: relative;
 }
 main .product_container .img_information .information .purchase dl dd .select_wrap .item_name {
   font-size: 0.875rem;

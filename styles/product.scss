@@ -334,11 +334,13 @@ main{
                                 }
                             }
                             .select_wrap{
-                                margin-top: 7.5px;
-                                padding: 13.75px 15px;
-                                border: 1px solid $c-244;
                                 position: relative;
-                                // display: none;
+                                margin-top: 7.5px;
+                                .select{
+                                    padding: 13.75px 15px;
+                                    border: 1px solid $c-244;
+                                    // border-bottom: 1px solid $c-244;
+                                }
 
                                 .item_name{
                                     font-size: $px12;

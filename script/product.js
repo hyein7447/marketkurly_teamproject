@@ -11,28 +11,14 @@ option_btn.addEventListener('click',()=>{
     option.style.display = 'block'
 })
 
-for(let i of select_opt){
+/* for(let i of select_opt){
     i.addEventListener('click',(e)=>{
         e.preventDefault();
         option.style.display = 'none'
         console.log(i.firstElementChild.innerHTML)
         console.log(i.lastChild.innerHTML)
-        /* let create_select_opt = document.createElement('div')
-        // create_select_opt.classList.add('select_item')
-        create_select_opt.innerHTML = `<div>${i.firstElementChild.innerHTML}</div>`
-        create_select_opt.innerHTML = `<div>${i.lastElementChild.innerHTML}</div>`
-        // create_select_opt.innerHTML += `<span>${i.firstElementChild.innerHTML}</span>` */
         let create_list = document.createElement('div')
-        /* create_list.classList.add('result_list')
-        create_list.innerHTML = `<p class="item_name">${i.firstElementChild.innerHTML}</p>`
-        create_list.innerHTML += `<div class="num_price">`
-        create_list.innerHTML += `<div class="num_result">`
-        create_list.innerHTML += `<button type="button" class="minus"></button>`
-        create_list.innerHTML += `<input type="text" class="num num_count" value="1" readonly>`
-        create_list.innerHTML += `<button type="button" class="plus"></button>`
-        create_list.innerHTML += `</div>`
-        create_list.innerHTML += `<p class="price">${i.lastElementChild.innerHTML}</p>`
-         `</div>` */
+        create_list.classList.add('select')
         create_list.innerHTML = `<div class="select">`
         create_list.innerHTML += `<p class="item_name">${i.firstElementChild.innerHTML}</p>`
         create_list.innerHTML += `<div class="num_price">`
@@ -47,22 +33,108 @@ for(let i of select_opt){
         create_list.innerHTML += `</div>`
         select_wrap.appendChild(create_list)
     })
-}
-/* select_opt.forEach((t, i) => {
-    t.addEventListener('click', (e) => {
+} */
+
+for (let i of select_opt) {
+    i.addEventListener('click', (e) => {
         e.preventDefault();
         option.style.display = 'none';
-        // select.style.display = 'block';
-        item_name.textContent = t.textContent.trim();
-        
-        // 다중선택 복합대입
-        const new_select_opt = document.createElement('div')
-        // new_select_opt.classList.add('select')
-        // new_select_opt.innerHTML = 
-        console.log(new_select_opt)
-        select_wrap.appendChild(new_select_opt)
+
+        let create_list = document.createElement('div');
+        create_list.classList.add('select'); // 클래스 추가
+
+        let itemName = document.createElement('p');
+        itemName.classList.add('item_name'); // 클래스 추가
+        itemName.innerText = i.firstElementChild.innerHTML;
+        create_list.appendChild(itemName);
+
+        let numPrice = document.createElement('div');
+        numPrice.classList.add('num_price'); // 클래스 추가
+
+        let numResult = document.createElement('div');
+        numResult.classList.add('num_result'); // 클래스 추가
+        numResult.innerHTML = `<button type="button" class="minus"></button><input type="text" class="num num_count" value="1" readonly><button type="button" class="plus"></button>`;
+        numPrice.appendChild(numResult);
+
+        let price = document.createElement('div');
+        price.classList.add('price'); // 클래스 추가
+        price.innerText = i.lastElementChild.innerHTML;
+        numPrice.appendChild(price);
+
+        create_list.appendChild(numPrice);
+
+        let cancelImg = document.createElement('a');
+        cancelImg.setAttribute('href', '#');
+        cancelImg.innerHTML = '<img src="./images/main/icon/icon_cancel.svg" alt="">';
+        create_list.appendChild(cancelImg);
+
+        select_wrap.appendChild(create_list);
     });
-}); */
+}
+
+// -------- option 수량 증감
+const num_price = document.querySelector('.num_price')
+const plus = num_price.querySelector('.plus')
+const minus = num_price.querySelector('.minus')
+const num_count = num_price.querySelector('.num')
+const item_price = num_price.querySelector('.price')
+
+/* let num = 1;
+let price = 2900;
+let total = num * price;
+
+price.innerText = total;
+console.log(price)
+item_price.innerHTML = price.toLocaleString('ko-kr')+'원';
+num_count.value = num;
+
+plus.addEventListener('click',()=>{
+    num++
+    num_count.value = num;
+    price.innerHTML = total;
+})
+minus.addEventListener('click',()=>{
+    if(num_count.value > 1){
+        num--
+        num_count.value = num;
+    }
+}) */
+
+// 태그 생성 부분
+
+plus.addEventListener('click', () => {
+    num++;
+    num_count.value = num;
+    total = num * price;
+    item_price.innerHTML = total.toLocaleString('ko-kr') + '원';
+});
+
+minus.addEventListener('click', () => {
+    if (num > 1) {
+        num--;
+        num_count.value = num;
+        total = num * price;
+        item_price.innerHTML = total.toLocaleString('ko-kr') + '원';
+    }
+});
+
+// 태그를 생성하는 동안 각 요소에 이벤트를 적용
+create_list.querySelector('.plus').addEventListener('click', () => {
+    num++;
+    num_count.value = num;
+    total = num * price;
+    item_price.innerHTML = total.toLocaleString('ko-kr') + '원';
+});
+
+create_list.querySelector('.minus').addEventListener('click', () => {
+    if (num > 1) {
+        num--;
+        num_count.value = num;
+        total = num * price;
+        item_price.innerHTML = total.toLocaleString('ko-kr') + '원';
+    }
+});
+
 
 // -------------- wish btn 클릭 시 활성화
 const wish = document.querySelectorAll('.wish')
@@ -105,34 +177,6 @@ window.addEventListener('scroll', () => {
         nav.style.position = 'static';
     }
 });
-
-// -------- option 수량 증감
-/* const num_price = document.querySelector('.num_price')
-const plus = num_price.querySelector('.plus')
-const minus = num_price.querySelector('.minus')
-const num_count = num_price.querySelector('.num')
-const item_price = num_price.querySelector('.price')
-
-let num = 1;
-let price = 2900;
-let total = num * price;
-
-price.innerText = total;
-console.log(price)
-item_price.innerHTML = price.toLocaleString('ko-kr')+'원';
-num_count.value = num;
-
-plus.addEventListener('click',()=>{
-    num++
-    num_count.value = num;
-    price.innerHTML = total;
-})
-minus.addEventListener('click',()=>{
-    if(num_count.value > 1){
-        num--
-        num_count.value = num;
-    }
-}) */
 
 // ---------- 상품고시정보 선택한 옵션 클릭 시 활성화
 const detail_opt = document.querySelectorAll('.detail_contents1 > ul > li > a')
