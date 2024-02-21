@@ -1,0 +1,28 @@
+@import 'common';
+
+@media screen and (max-width:820px) {
+    main{
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 0 16px;
+
+        aside{
+            width: 100%;
+            margin-bottom: 20px;
+            h1{
+                padding: 20px 0;
+            }
+            .board_list{
+                @include flex-row-btw-ct;
+
+            }
+            .help_wrap{display: none;}
+        }
+        .container{
+            width: 100%;
+            .notice_wrap{padding: 20px;}
+            .notice_container{padding: 0 20px;}
+        }
+    }
+    .pagenation{display: none;}
+}

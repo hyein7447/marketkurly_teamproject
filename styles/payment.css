@@ -1,23 +1,23 @@
 main {
-  max-width: 1050px;
-  padding: 50px 0 60px;
+  max-width: 1280px;
+  padding: 62.5px 0 60px;
   margin: 0 auto;
 }
 main form fieldset h1 {
   font-weight: 500;
   font-size: 1.875rem;
-  line-height: 36px;
+  line-height: 45px;
   letter-spacing: -0.5px;
   text-align: center;
   margin-bottom: 48px;
 }
 main form fieldset h2 {
-  margin-top: 75px;
-  padding: 16px 0;
+  margin-top: 93.75px;
+  padding: 20px 0;
   font-weight: 500;
   font-size: 1.375rem;
   color: #333;
-  line-height: 29px;
+  line-height: 36.25px;
   border-bottom: 1px solid #333;
   display: flex;
   justify-content: space-between;
@@ -30,8 +30,8 @@ main form fieldset .order_top .left {
   width: 160px;
 }
 main form fieldset .order_top .left, main form fieldset .order_top .right {
-  line-height: 24px;
-  margin-right: 30px;
+  line-height: 37.5px;
+  margin-right: 37.5px;
   font-weight: 500;
   font-size: 1rem;
   letter-spacing: -0.32px;
@@ -40,14 +40,14 @@ main form fieldset .order_top .product_ordered h2 {
   margin-top: 0;
 }
 main form fieldset .order_top .product_ordered .order_item {
-  padding: 28px 0;
-  line-height: 24px;
+  padding: 32px 0;
+  line-height: 37.5px;
   font-weight: 500;
   text-align: center;
   border-bottom: 1px solid #f4f4f4;
 }
 main form fieldset .order_top .product_ordered .order_item span {
-  line-height: 24px;
+  line-height: 37.5px;
   font-weight: 500;
 }
 main form fieldset .order_top .product_ordered .order_item .item_num {
@@ -96,7 +96,7 @@ main form fieldset .order_top .product_ordered .order_list li .order_list_right 
   text-align: right;
 }
 main form fieldset .order_top .customer_info {
-  margin-top: 75px;
+  margin-top: 93.75px;
 }
 main form fieldset .order_top .customer_info ul {
   padding: 10px;
@@ -143,7 +143,7 @@ main form fieldset .order_top .shipping_info ul li .customer {
   margin-top: 8px;
   font-size: 1rem;
   color: #666;
-  line-height: 24px;
+  line-height: 37.5px;
 }
 main form fieldset .order_top .shipping_info ul li .modify_btn_wrap {
   margin-top: 20px;
@@ -176,7 +176,7 @@ main form fieldset .order_top .packaging label::before {
   height: 24px;
   background-image: url(../images/sub/icon_circle_off.svg);
   background-size: 100%;
-  margin-right: 16px;
+  margin-right: 20px;
   position: relative;
   top: 6px;
 }
@@ -186,7 +186,7 @@ main form fieldset .order_btm {
 main form fieldset .order_btm .left {
   width: 160px;
   line-height: 44px;
-  margin-right: 30px;
+  margin-right: 37.5px;
   font-weight: 500;
   font-size: 1rem;
   letter-spacing: -0.32px;
@@ -213,7 +213,7 @@ main form fieldset .order_btm .btm_left .coupon .coupon_wrap .coupon_wrap_top .c
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 20px;
 }
 main form fieldset .order_btm .btm_left .coupon .coupon_wrap .coupon_wrap_top .coupon_list_wrap #coupon_list img {
   width: 13px;
@@ -222,7 +222,7 @@ main form fieldset .order_btm .btm_left .coupon .coupon_wrap .coupon_wrap_top .c
   font-size: 1rem;
   color: #666;
   margin-bottom: 10px;
-  line-height: 24px;
+  line-height: 37.5px;
 }
 main form fieldset .order_btm .btm_left .coupon .coupon_wrap .coupon_wrap_top a img {
   width: 10px;
@@ -329,7 +329,7 @@ main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount .
 }
 main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount p {
   font-size: 0.875rem;
-  line-height: 16px;
+  line-height: 20px;
   color: #666;
   padding-top: 4px;
 }
@@ -387,7 +387,7 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .me
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   width: 414px;
-  padding: 24px 0;
+  padding: 37.5px 0;
   text-align: center;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg {
@@ -466,14 +466,14 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .me
   color: #999;
   font-size: 0.875rem;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 20px;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg .kurly_pay .add_account a img {
   width: 33px;
   margin-bottom: 7px;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurlycard_active {
-  margin-top: 28px;
+  margin-top: 32px;
   font-size: 0.938rem;
   font-weight: 500;
 }
@@ -598,7 +598,7 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .me
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .guide_benefit {
   background-color: #fafafa;
   width: 414px;
-  padding: 16px 20px;
+  padding: 20px 20px;
   border-radius: 6px;
   margin-bottom: 20px;
 }
@@ -653,7 +653,7 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .me
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .guide_benefit .btm .detail_info {
   font-size: 0.875rem;
   color: #999;
-  line-height: 16px;
+  line-height: 20px;
   padding-bottom: 2px;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method_btm {
@@ -662,7 +662,7 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method_btm
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method_btm p {
   font-size: 0.875rem;
-  line-height: 16px;
+  line-height: 20px;
   color: #666;
 }
 main form fieldset .order_btm .btm_left .collect_user_info_wrap ul {
@@ -697,10 +697,10 @@ main form fieldset .order_btm .btm_left .collect_user_info_wrap .consent {
 main form fieldset .order_btm .btm_left .collect_user_info_wrap p {
   font-size: 0.875rem;
   color: #666;
-  line-height: 16px;
+  line-height: 20px;
 }
 main form fieldset .order_btm .btm_left .payment_btn_wrap {
-  margin: 40px 0 30px;
+  margin: 40px 0 37.5px;
   text-align: center;
 }
 main form fieldset .order_btm .btm_left .payment_btn_wrap #payment_btn {
@@ -715,32 +715,32 @@ main form fieldset .order_btm .btm_right {
   width: 284px;
   position: relative;
   top: 15px;
-  margin-left: 24px;
+  margin-left: 37.5px;
 }
 main form fieldset .order_btm .btm_right h2 {
   margin-top: 0;
-  padding: 16px 0;
+  padding: 20px 0;
   font-weight: 500;
   font-size: 1.375rem;
   color: #333;
-  line-height: 29px;
+  line-height: 36.25px;
   border: 0;
 }
 main form fieldset .order_btm .btm_right .payment_amount {
-  padding: 17px 16px 18px 18px;
+  padding: 17px 20px 18px 18px;
   background-color: #fafafa;
   border: 1px solid #f2f2f2;
 }
 main form fieldset .order_btm .btm_right .payment_amount ul {
-  margin-bottom: 16px;
-  padding-bottom: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #f4f4f4;
 }
 main form fieldset .order_btm .btm_right .payment_amount ul li {
   display: flex;
   justify-content: space-between;
   padding-bottom: 4px;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 main form fieldset .order_btm .btm_right .payment_amount ul li:first-child {
   margin-top: 0;
@@ -774,7 +774,7 @@ main form fieldset .order_btm .btm_right .payment_amount .kurlycard_save {
   color: #8d4cc4;
   font-size: 0.875rem;
   margin-top: 6px;
-  line-height: 16px;
+  line-height: 20px;
   display: flex;
   justify-content: flex-end;
 }

@@ -1,0 +1,35 @@
+@media screen and (max-width: 820px) {
+  main {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0 16px;
+  }
+  main aside {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  main aside h1 {
+    padding: 20px 0;
+  }
+  main aside .board_list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main aside .help_wrap {
+    display: none;
+  }
+  main .container {
+    width: 100%;
+  }
+  main .container .notice_wrap {
+    padding: 20px;
+  }
+  main .container .notice_container {
+    padding: 0 20px;
+  }
+  .pagenation {
+    display: none;
+  }
+}/*# sourceMappingURL=notice_m.css.map */

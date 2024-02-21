@@ -1,5 +1,6 @@
 main {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -20,7 +21,7 @@ main aside .board_list {
 main aside .board_list a {
   font-size: 1rem;
   font-weight: 400;
-  width: 197px;
+  width: 230px;
   border-bottom: 1px solid #f2f2f2;
   padding: 15px 13px 15px 20px;
   display: flex;
@@ -28,13 +29,13 @@ main aside .board_list a {
   justify-content: space-between;
   align-items: center;
 }
-main aside .board_list a:first-child {
+main aside .board_list a span img {
+  width: 14px;
+}
+main aside .board_list .active {
   color: #5f0080;
   background-color: #fafafa;
   font-weight: 500;
-}
-main aside .board_list a span img {
-  width: 14px;
 }
 main aside .help_wrap {
   display: flex;
@@ -54,10 +55,13 @@ main aside .help_wrap .help em {
 main aside .help_wrap img {
   width: 14px;
 }
-main .notice {
-  width: 820px;
+main .container {
+  width: calc(100% - 270px);
 }
-main .notice h2 {
+main .container .notice {
+  width: 100%;
+}
+main .container .notice h2 {
   display: flex;
   align-items: center;
   font-size: 1.625rem;
@@ -66,20 +70,20 @@ main .notice h2 {
   letter-spacing: -0.5px;
   margin-bottom: 27px;
 }
-main .notice h2 span {
+main .container .notice h2 span {
   margin-left: 11px;
   font-size: 1rem;
   letter-spacing: -0.3px;
   color: #999;
   line-height: 20px;
 }
-main .notice .title {
-  width: 570px;
+main .container .notice .title {
+  width: 59%;
 }
-main .notice .date, main .notice .writer {
-  width: 100px;
+main .container .notice .date, main .container .notice .writer {
+  width: 10%;
 }
-main .notice .notice_wrap {
+main .container .notice .notice_wrap {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -89,39 +93,160 @@ main .notice .notice_wrap {
   border-bottom: 1px solid #333;
   padding-left: 20px;
 }
-main .notice .notice_wrap p {
+main .container .notice .notice_wrap p {
   font-size: 1rem;
   text-align: center;
   line-height: 20px;
 }
-main .notice .notice_container {
+main .container .notice .notice_container {
   padding-left: 20px;
 }
-main .notice .notice_container li {
+main .container .notice .notice_container li {
   padding: 20px 0;
   border-bottom: 1px solid rgb(244, 244, 244);
 }
-main .notice .notice_container li a {
+main .container .notice .notice_container li a {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 }
-main .notice .notice_container li span {
+main .container .notice .notice_container li span {
   font-size: 1rem;
   text-align: center;
 }
-main .notice .notice_container li .title {
+main .container .notice .notice_container li .title {
   text-align: left;
   padding-left: 20px;
 }
-main .notice .notice_container li .date {
+main .container .notice .notice_container li .date {
   color: #999;
 }
-main .notice .pagenation {
+main .container .notice .pagenation {
   padding: 60px 0 30px;
   text-align: center;
 }
-main .notice .pagenation a:first-child {
+main .container .notice .pagenation a:first-child {
   margin-right: 12px;
+}
+main .container .faq {
+  width: 100%;
+}
+main .container .faq h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  margin-bottom: 27px;
+}
+main .container .faq h2 span {
+  margin-left: 11px;
+  font-size: 1rem;
+  letter-spacing: -0.3px;
+  color: #999;
+  line-height: 20px;
+}
+main .container .faq .title {
+  width: 75%;
+}
+main .container .faq .date, main .container .faq .writer {
+  width: 15%;
+}
+main .container .faq .notice_wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #333;
+  padding-left: 20px;
+}
+main .container .faq .notice_wrap p {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 20px;
+}
+main .container .faq .notice_container {
+  padding-left: 20px;
+}
+main .container .faq .notice_container li {
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(244, 244, 244);
+}
+main .container .faq .notice_container li a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main .container .faq .notice_container li span {
+  font-size: 1rem;
+  text-align: center;
+}
+main .container .faq .notice_container li .title {
+  width: 75%;
+  text-align: left;
+}
+main .container .faq .notice_container li .date {
+  color: #999;
+}
+main .container .faq .pagenation {
+  padding: 60px 0 30px;
+  text-align: center;
+}
+main .container .faq .pagenation a:first-child {
+  margin-right: 12px;
+}
+main .container .inquiry {
+  width: 100%;
+}
+main .container .inquiry h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  margin-bottom: 27px;
+}
+main .container .inquiry .title {
+  width: 59%;
+}
+main .container .inquiry .date, main .container .inquiry .writer {
+  width: 10%;
+}
+main .container .inquiry .notice_wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #333;
+  padding-left: 20px;
+}
+main .container .inquiry .notice_wrap p {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 20px;
+}
+main .container .inquiry .notice_container {
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+  line-height: 200px;
+}
+main .container .inquiry p {
+  text-align: right;
+}
+main .container .inquiry #inquiry_btn {
+  background-color: #5F0080;
+  padding: 0 12.5px;
+  width: 12%;
+  height: 44px;
+  color: #fff;
+  border-radius: 3px;
 }/*# sourceMappingURL=notice.css.map */

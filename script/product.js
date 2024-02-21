@@ -38,7 +38,6 @@ option_btn.addEventListener('click',()=>{
 
 let selectedItems = new Set();
 let previousSelectedState = null;
-let itemsSatus;
 
 for (let i of select_opt) {
     i.addEventListener('click', (e) => {
