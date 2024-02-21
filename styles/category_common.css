@@ -117,7 +117,7 @@ main .best .container .left .list ul li .btn_chk p:nth-child(2) {
     margin-right: 4px;
     font-weight: 400;
     color: #111;
-    font-size: 0.875rem;
+    /* font-size: 0.875rem; */
 }
 main .best .container .left .list ul li .btn_circle p:nth-child(3),
 main .best .container .left .list ul li .btn_chk p:nth-child(3) {
@@ -167,10 +167,6 @@ main .best .container .left .list2 .brand a:last-child {margin-right: 0;}
 main .best .container .left .list2 .brand a {
     margin-right: 10px; font-weight: 400; font-size: 0.875rem;
 }
-/* main .best .container .left .list2 .brand a.name_active {
-    color:#5f0080;
-    font-weight: 600;
-} */
 main .best .container .left .list2 .atoz_btn {
     display: flex; flex-flow: row wrap;
     margin-bottom: 12px;
@@ -552,7 +548,7 @@ main .best .popup .cate_pop .list_wrap {
 main .best .popup .cate_pop .list_wrap ul {
     display: flex; flex-flow: row wrap;
     margin-bottom: 56px;
-    padding: 2px 0;
+    padding: 15px 0;
 }
 main .best .popup .cate_pop .list_wrap ul li {
     flex-grow: 0;

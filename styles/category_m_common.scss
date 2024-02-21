@@ -506,11 +506,12 @@
                             justify-content: flex-start;
                             gap:8px 1px;
                             a {
-                                min-width: 31px;
-                                height: 31px;
+                                text-align: center;
+                                min-width: 30px;
+                                height: 30px;
                                 border-radius: 20px;
                                 white-space: nowrap;
-                                padding: 6px 9px;
+                                padding: 6px 9px 0px;
                                 background-color: $c-247;
                                 color:$c-102;
                                 font-size: $px12;
@@ -714,7 +715,10 @@
                                     @include flex-row-ct;
                                     padding: 4px 8px 4px;
                                     .minus {
-                                        img {height: 22px;}
+                                        img {
+                                            height: 22px;
+                                            transform: translateY(2px);
+                                        }
                                     }
                                     .p_tab_num {
                                         width: 31px;
@@ -723,7 +727,10 @@
                                         font-weight: 600;
                                     }
                                     .plus {
-                                        img {height: 22px;}
+                                        img {
+                                            height: 22px;
+                                            transform: translateY(2px);
+                                        }
                                     }
                                 }
                             }
@@ -945,10 +952,10 @@
     }
 }
 .cate_row_active {
-    border: 1px solid $purple;
+    border: 2px solid #8d4cc4 !important;
     span {
-        color:#8d4cc4 ;
-        font-weight: 700 ;
+        color:#8d4cc4 !important;
+        font-weight: 700 !important;
     }  
 }
 .display_none {
@@ -988,7 +995,7 @@
     a {
         @include flex-row-st-ct;
         text-align: left;
-        padding: 2px 8px 4px 0px;
+        padding-right: 8px;
         white-space: nowrap;
         border: 1px solid $c-204;
         border-radius: 50px;

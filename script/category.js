@@ -58,6 +58,11 @@ const pc_array_a = document.querySelectorAll('.right > .lnb > .array > a')
 const pc_array_q = document.querySelector('.right > .lnb > .array > a > [class$=question]')
 const quest_box = document.querySelector('.right > .lnb > .array > .quest_box')
 const arrow_num = document.querySelectorAll('.right > .arrow_num > a')
+const pop_minus = cart_pop.querySelector('.price_num .num .minus')
+const pop_num = cart_pop.querySelector('.price_num .num .p_tab_num')
+const pop_plus = cart_pop.querySelector('.price_num .num .plus')
+const p_tab_price = document.querySelector('.cart_pop .total .total_result .p_tab_price')
+console.log(pop_minus,pop_plus,pop_num,p_tab_price)
 console.log('----------------- 데스크탑 버전 -----------------')
 // ---------------------- 구분선 --------------------------
 /* 
@@ -490,7 +495,37 @@ for(let i of arrow_num){
         i.classList.add('arr_active')
     })
 }
-// ---------------------- 구분선 --------------------------
+
+// ---------------------- 구분선 --------------------------  ★★★★ㅁ8ㅁ8ㅁ★★★★ 작업중
+// 카트 담기 팝업 안에 + - 수량 증가 감소, 가격변경
+let p_num = 0;
+let pop_total = 0;
+let total
+let price = 11800;
+// 증가
+pop_plus.addEventListener('click',()=>{
+    if(p_num < 20){
+        p_num++ ;
+        pop_num.innerText = p_num
+        pop_total =  p_num*price
+        p_tab_price.innerHTML = `${pop_total.toLocaleString('ko-kr')}<em>원</em>`
+    }else{
+        alert('최대 구매 수량입니다.')
+    }
+})
+// 감소
+pop_minus.addEventListener('click',()=>{
+    if(0< p_num){
+        p_num--;
+        pop_num.innerText = p_num
+        pop_total =  p_num*price
+        p_tab_price.innerHTML = `${pop_total.toLocaleString('ko-kr')}<em>원</em>`
+    }else if(p_num == 0){
+        p_tab_price.innerHTML = `0<em>원</em>`;
+        pop_num.innerText = `0`;
+        // pop_minus.children.setAttribute('fill-opacity', '0.4');
+    }
+})
 console.log('----------------- 모바일 버전 -----------------')
 // test
 const m_li = document.querySelectorAll('.best_mobile > .tab_slide > li ') 
@@ -523,12 +558,45 @@ const product_m = document.querySelectorAll('.best_mobile > .product_box > .prod
 const slide_cart = document.querySelector('.tab_cart')
 const slide_cart_bg = document.querySelector('.tab_cart > .bg_bk')
 const slide_btn_cart_r = document.querySelector('.tab_cart > .bg_wh > .btn_cart > .btn_cart_r')
-console.log(product_m)
-// ---------------------- 구분선 --------------------------        ★★★★★★★★★★★★★ 작업중
+const slide_num = document.querySelector('.bg_wh .info .cart_box .price_num .num .p_tab_num')
+const slide_minus = document.querySelector('.bg_wh .info .cart_box .price_num .num .minus')
+const slide_plus = document.querySelector('.bg_wh .info .cart_box .price_num .num .plus')
+const slide_total_btn = slide_btn_cart_r.querySelector('span')
+console.log(slide_total_btn,slide_minus)
+// ---------------------- 구분선 -------------------------- ★★★★★★★★★★★★★ 작업중
+// 모바일 슬라이드 탭 카트 담기 팝업 안에 + - 수량 증가 감소, 가격변경
+let m_num = 0;
+let slide_total = 0;
+let m_price = 11800;
+// 증가
+slide_plus.addEventListener('click',()=>{
+    if(m_num < 20){
+        m_num++ ;
+        slide_num.innerText = m_num
+        slide_total =  m_num*m_price
+        slide_total_btn.innerHTML = `<span>${slide_total.toLocaleString('ko-kr')}원 장바구니 담기</span>`
+    }else{
+        alert('최대 구매 수량입니다.')
+    }
+})
+// 감소
+slide_minus.addEventListener('click',()=>{
+    if(1<= m_num){
+        m_num--;
+        slide_num.innerText = m_num
+        slide_total =  m_num*m_price
+        p_tab_price.innerHTML = `<span>${slide_total.toLocaleString('ko-kr')}원 장바구니 담기</span>`
+    }else if(m_num === 0){
+        slide_total_btn.innerHTML = `장바구니 담기`;
+        slide_num.innerText = `0`;
+    }
+})
+// ---------------------- 구분선 --------------------------       
 // 스크롤 내렸을 때 상단 카테고리 타이틀부분 아이콘 정렬 변경
 //cate_title = a / cate_title_row
 // const cate_title_test = document.querySelector('.cate_title_col');
 let cate_title_parent = document.querySelector('.best_mobile > .sub_header > .cate_title')
+let cate_title_area = document.querySelector('.best_mobile > .sub_header')
 // let title_row_reset = ()=>{for(let b of cate_title_parent){b.classList.remove('cate_row_active')}}
 cate_title[0].classList.add('cate_active') //초기값 -> 탑 0일때
 // 스크롤 이벤트 감지
@@ -536,54 +604,53 @@ window.addEventListener('scroll',()=>{
     // 현재 스크롤 위치
     const scrollTop = window.pageYOffset;
     // 화면 기준 top에서 스크롤한번 내렸을 때
-    if (scrollTop > 20){
+    if (scrollTop > 3){
         title_reset() //col용 a의 active 비활성화
         cate_title_parent.classList.add('cate_title_row');
         cate_title_parent.classList.remove('cate_title_col');
-        /* // cate_title.classList.remove('cate_active')
-        // cate_title.classList.add('cate_row_active') */
-        cate_title[0].classList.add('cate_row_active') //row용 활성화
-        // for(let a of cate_title_parent){
-        //     cate_title.addEventListener('click',()=>{
-        //         a.classList.add('cate_row_active')
-        //         cate_title.classList.remove('cate_active')
-        //     })
-        // }
+        top_offset30()
     }
     // 화면 기준 제일 top으로 다시 올라갔을 때
     else if (scrollTop === 0){
+        title_row_reset()
         cate_title_parent.classList.remove('cate_title_row');
         cate_title_parent.classList.add('cate_title_col');
-        // cate_title[0].classList('cate_active')
-        /* // cate_title_parent.classList.add('cate_title_col');
-        // cate_title_parent.classList.add('cate_row_active') */
         cate_title[0].classList.add('cate_active') //초기값 -> 탑 0일때 col용 활성화
         top_zero() //col용 a클릭했을 때 변경되는 함수 호출
-        cate_title.classList.remove('cate_row_active') //row용 활성화 제거
+        cate_title[0].classList.remove('cate_row_active') //row용 활성화 제거
     }
 });
 // ---------------------- 구분선 --------------------------
-// 모바일 베스트 카테고리 상단에 이미지와 같이있는 타이틀리스트                 ★★★★★★★★★★★★ 확인용 위치
+// 모바일 베스트 카테고리 상단에 이미지와 같이있는 타이틀리스트                 ★★★★★★★★★★★★ 나중에 확인할 위치
 // 클릭 -> 보라색으로 활성화
 let title_reset = ()=>{for(let a of cate_title){a.classList.remove('cate_active')}}
 let top_zero = ()=>{
     for(let i of cate_title){
         i.addEventListener('click',()=>{
+            title_row_reset()
             title_reset()
+            i.preventDefault
             i.classList.add('cate_active')
         })
     }
 }
-top_zero() //아래에서도 호출해야 돼서 매개변수로 만듦
-// title_row_reset()
-// 초기값
-// cate_title[0].classList.add('cate_active')
-// for(let i of cate_title){
-//     i.addEventListener('click',()=>{
-//         title_reset()
-//         i.classList.add('cate_active')
-//     })
-// }
+top_zero() //다른곳에서도 호출해야 돼서 매개변수로 처리
+let title_row_reset = ()=>{for(let v of cate_title){v.classList.remove('cate_row_active')}}
+let top_offset30 = ()=>{
+    for(let s of cate_title){
+        cate_title[0].classList.add('cate_row_active')        
+        s.addEventListener('click',()=>{
+            if (s === cate_title[0]){
+                cate_title[0].classList.remove('cate_row_active') 
+            }else {
+                title_reset()
+                title_row_reset()
+                s.preventDefault
+                s.classList.add('cate_row_active')
+            }
+        })
+    }
+}
 // ---------------------- 구분선 --------------------------
 // 초기값 -> 추천순 클릭시 sub메뉴 보이기 + arrow 반전 -> sub메뉴 클릭시 해당 a classList 활성화
 let title_a_status = false;
@@ -592,7 +659,6 @@ filter_title.forEach((t,i)=>{
     t.addEventListener('click',()=>{
         title_a_status = !title_a_status
         if(i === 0 && title_a_status == true){
-            console.log(filter_title_arr)
             filter_nav.style.display = 'block'
             filter_title_arr.style.transform = 'rotate(180deg)'
         }else {
@@ -797,3 +863,4 @@ for(let j of product_m){
         })
     }
 }
+// ---------------------- 구분선 --------------------------    

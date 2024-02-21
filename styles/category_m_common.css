@@ -515,11 +515,12 @@
     gap: 8px 1px;
   }
   main .best_mobile .tab_slide .area .list.tab4 .atoz_btn a {
-    min-width: 31px;
-    height: 31px;
+    text-align: center;
+    min-width: 30px;
+    height: 30px;
     border-radius: 20px;
     white-space: nowrap;
-    padding: 6px 9px;
+    padding: 6px 9px 0px;
     background-color: #f7f7f7;
     color: #666;
     font-size: 0.875rem;
@@ -740,6 +741,7 @@
   }
   main .best_mobile .tab_cart .bg_wh .info .cart_box .price_num .num .minus img {
     height: 22px;
+    transform: translateY(2px);
   }
   main .best_mobile .tab_cart .bg_wh .info .cart_box .price_num .num .p_tab_num {
     width: 31px;
@@ -749,6 +751,7 @@
   }
   main .best_mobile .tab_cart .bg_wh .info .cart_box .price_num .num .plus img {
     height: 22px;
+    transform: translateY(2px);
   }
   main .best_mobile .tab_cart .bg_wh .total {
     padding: 10px 24px;
@@ -937,11 +940,11 @@
 }
 
 .cate_row_active {
-  border: 1px solid #5F0080;
+  border: 2px solid #8d4cc4 !important;
 }
 .cate_row_active span {
-  color: #8d4cc4;
-  font-weight: 700;
+  color: #8d4cc4 !important;
+  font-weight: 700 !important;
 }
 
 .display_none {
@@ -996,7 +999,7 @@
   justify-content: flex-start;
   align-items: center;
   text-align: left;
-  padding: 2px 8px 4px 0px;
+  padding-right: 8px;
   white-space: nowrap;
   border: 1px solid #cccccc;
   border-radius: 50px;
