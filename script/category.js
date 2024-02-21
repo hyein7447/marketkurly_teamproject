@@ -152,7 +152,6 @@ brand_a[0].addEventListener('click',()=>{
 // 브랜드 팝업 atoz_btn 클릭시 서브탭 해당 글씨의 위치 보여주기
 const brand_pop_list = brand_pop.querySelectorAll('.wrap_top > .list_wrap > .tab_sub1 > .contents_list') //ul //NodeList[]
 const brand_subtab_a = brand_pop.querySelectorAll('.wrap_top > .tab_sub > a') //a
-// console.log(brand_pop_list,brand_subtab_a,"----확인----")
 let b_pop_ul = brand_pop.children[1].children[0].children //ul잡기
 let ul_parent = brand_pop.children[1] //ul 부모 설정
 brand_subtab_a.forEach((o,i)=>{
@@ -493,22 +492,34 @@ console.log('----------------- 모바일 버전 -----------------')
 const m_li = document.querySelectorAll('.best_mobile > .tab_slide > li ') 
 const btn_chk = document.querySelector('.best_mobile > .tab_slide > .bg .btn_chk ')
 // 모바일 변수
+const mobile_main = document.querySelector('.best_mobile')
 const cate_title = document.querySelectorAll('.cate_title > a')
 const filter_nav = document.querySelector('.filter_nav')
-const filter_nav_q = document.querySelector('.filter_nav > li > a > [class$=question]')
-const filter_quest_box = document.querySelector('.quest_box')
+const filter_nav_q = document.querySelector('.filter_nav > li > [class$=question]')
+const filter_quest_box = document.querySelector('.best_mobile > .quest_box')
 const filter_quest_box_btn = document.querySelector('.q_popup > a')
+const m_array_a = document.querySelectorAll('.best_mobile > .array > a')
 const tab_slide = document.querySelector('.tab_slide')
 const tab_slide_bg = document.querySelector('.tab_slide .bg')
 const filter_nav_a = document.querySelectorAll('.filter_nav > li > a')
 const filter_title = document.querySelectorAll('.filter >.right > a')
 const filter_title_arr = document.querySelector('.filter >.right > a > [class$=down]')
-let filter_title_span = document.querySelector('.filter >.right > a > span ')
+let filter_title_span = document.querySelector('.filter >.right > a > span')
 const slide_tab_list = document.querySelectorAll('.area > .list')
 const slide_tab_list_t = document.querySelectorAll('.area > .list_title > p')
 const slide_li_chk = document.querySelectorAll('.area > ul > li > .btn_chk')
 const slide_li_cir = document.querySelectorAll('.area > ul > li > .btn_circle')
-console.log(slide_li_chk,slide_li_cir)
+const slide_brand_title_a = document.querySelectorAll('.tab_slide > .area > .list > .brand > a')
+const slide_brand_atoz_box = document.querySelector('.tab_slide > .area > .list > .atoz_btn')
+const slide_brand_atoz = document.querySelectorAll('.tab_slide > .area > .list > .atoz_btn > a')
+const slide_brand_list = document.querySelectorAll('.tab_slide > .area > .list > .list_box > .box1 > ul')
+const slide_brand_list_all = document.querySelector('.tab_slide > .area > .list > .list_box > .box2 > ul')
+const slide_btn_view = document.querySelector('.tab_slide > .area > .btn_wrap > .btn_view') 
+const product_m = document.querySelectorAll('.best_mobile > .product_box > .product')
+const product_btn_cart = document.querySelector('.best_mobile > .product_box > .product > .btn_cart > .btn_c')
+const slide_cart = document.querySelector('.tab_cart')
+const slide_cart_bg = document.querySelector('tab_cart > .bg_bk')
+console.log(slide_cart, product_m)
 // ---------------------- 구분선 --------------------------
 // 모바일 베스트 카테고리 상단에 이미지와 같이있는 타이틀리스트
 // 클릭 -> 보라색으로 활성화
@@ -563,14 +574,15 @@ filter_nav_a.forEach((t,i)=>{
     })
 })
 // ---------------------- 구분선 --------------------------
-// 추천순 옆 question이미지 클릭시 내용팝업 보이기     ------------- 확인 필요 ★★★★★★★★★★
+// 추천순 옆 question이미지 클릭시 내용팝업 보이기  
 // 기본값
-console.log(filter_quest_box,filter_nav_q)
 // filter_quest_box.style.visibility = 'hidden'
-// filter_quest_box.style.display = 'none'
-filter_quest_box.classList.add('display_none')
+filter_quest_box.style.display = 'none'
+// filter_quest_box.classList.add('display_none')
 filter_nav_q.addEventListener('click',()=>{
     filter_quest_box.style.display = 'flex';
+    filter_nav.style.display = 'none'
+    filter_title_arr.style.transform = 'rotate(0deg)'
     filter_quest_box_btn.addEventListener('click',()=>{
         filter_quest_box.style.display = 'none'
     })
@@ -578,12 +590,20 @@ filter_nav_q.addEventListener('click',()=>{
 // ---------------------- 구분선 --------------------------
 // 필터옆 아이콘 클릭 시 하단에 필터 슬라이드 보이기
 // 초기값
-tab_slide.style.display = 'none';
-filter_title[1].addEventListener('click',()=>{
-    tab_slide.style.display = 'block';
+let bg_hide = ()=>{
     tab_slide_bg.addEventListener('click',()=>{
         tab_slide.style.display = 'none';
     })
+}
+tab_slide.style.display = 'none';
+filter_title[1].addEventListener('click',()=>{
+    tab_slide.style.display = 'block';
+    bg_hide()
+    // 다른탭 누르고 재 클릭시 겹치지 않게 0번으로 보이게 기본값 0번으로 세팅
+    list_hide()
+    list_t_basic()
+    slide_tab_list_t[0].classList.add('list_title_active')
+    slide_tab_list[0].style.display = 'block';
 })
 // ---------------------- 구분선 --------------------------
 // 필터클릭시 - 슬라이드 팝업의 체크이미지 변경
@@ -608,10 +628,8 @@ for (let i of slide_li_cir) {
         }
     });
 }
-// ---------------------- 구분선 --------------------------                      ★★★★★★★★★★★★★ 작업중
+// ---------------------- 구분선 --------------------------         
 // 슬라이드의 카테고리 클릭시 하단 탭 변경 + 카테고리 글씨 보라색으로 활성화
-// slide_tab_list slide_tab_list_t
-console.log(slide_tab_list)
 let list_hide = ()=>{for(let a of slide_tab_list){a.style.display = 'none';}}
 slide_tab_list_t[0].classList.add('list_title_active')
 slide_tab_list[0].style.display = 'block';
@@ -626,3 +644,104 @@ slide_tab_list_t.forEach((t,i)=>{
     })
 })
 // ---------------------- 구분선 --------------------------
+// 슬라이드의 카테고리 - 브랜드 - 제목 클릭시 글씨색변경 + 하단 탭 변경 + atoz버튼 활성화
+// ** 1번 ** 브랜드 가나다순 상품많은순 클릭시 글씨컬러 변경
+// 초기값 -> 가나다순 컬러 활성화
+slide_brand_title_a[0].classList.add('name_active')
+// 활성화 제거 함수 호출용
+const brand_title_a_remove = ()=>{
+    for(let a of slide_brand_title_a){a.classList.remove('name_active')}
+}
+// 초기값 활성화 제거 -> 클릭한 대상 컬러 활성화
+slide_brand_title_a.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        brand_title_a_remove()
+        t.classList.add('name_active')
+        // 추가)** 3번 ** 상품많은순 클릭했을때 리스트 변경 + atoz박스 숨기기
+        if(i === 0){
+            slide_brand_atoz_box.style.display = 'flex';
+        }else if( i === 1){
+            slide_brand_atoz_box.style.display = 'none';
+            brand_list_hide() //가나다순 리스트 제거 호출
+            slide_brand_list_all.style.display = 'block';
+        }
+    })
+})
+// ** 2번 ** atoz버튼 클릭 시 클래스리스트 활성화
+// 초기값 -> ㄱ활성화
+slide_brand_atoz[0].classList.add('atoz_active')
+// atoz버튼 활성화 제거용 함수
+const slide_atoz_remove = ()=>{
+    for(let j of slide_brand_atoz){j.classList.remove('atoz_active')}
+}
+// 리스트 제거용 함수
+const brand_list_hide = ()=>{
+    for(let a of slide_brand_list){a.style.display = 'none'}
+}
+slide_brand_atoz.forEach((t,i)=>{ 
+    t.addEventListener('click',()=>{
+        slide_atoz_remove() //글씨 활성화 제거
+        t.classList.add('atoz_active') //클릭대상 글씨 활성화
+        brand_list_hide() //리스트 제거
+        slide_brand_list[i].style.display = 'block'; //클릭대상 리스트 활성화
+    })
+})
+// ---------------------- 구분선 --------------------------   
+// 슬라이드에서 상품보기 버튼 클릭 시 슬라이드 비활성화
+slide_btn_view.addEventListener('click',()=>{
+    tab_slide.style.display = 'none'
+})
+// ---------------------- 구분선 --------------------------       
+// array 리스트 클릭시 해당글씨 및 리스트가 활성화된 슬라이드 보이기
+m_array_a.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        bg_hide()
+        tab_slide.style.display = 'block';
+        if(i === 0){// 1.카테고리
+            list_hide()
+            list_t_basic()
+            slide_tab_list_t[0].classList.add('list_title_active')
+            slide_tab_list[0].style.display = 'block';
+        }else if(i === 1){// 2.배송
+            list_hide()
+            list_t_basic()
+            slide_tab_list_t[1].classList.add('list_title_active')
+            slide_tab_list[1].style.display = 'block';
+        }else if(i === 2){// 3.가격
+            list_hide()
+            list_t_basic()
+            slide_tab_list_t[2].classList.add('list_title_active')
+            slide_tab_list[2].style.display = 'block';
+        }else if(i === 3){// 4.브랜드
+            list_hide()
+            list_t_basic()
+            slide_tab_list_t[3].classList.add('list_title_active')
+            slide_tab_list[3].style.display = 'block';
+        }else if(i === 4){// 5.혜택
+            list_hide()
+            list_t_basic()
+            slide_tab_list_t[4].classList.add('list_title_active')
+            slide_tab_list[4].style.display = 'block';
+        }else if(i === 5){// 6.유형
+            list_hide()
+            list_t_basic()
+            slide_tab_list_t[5].classList.add('list_title_active')
+            slide_tab_list[5].style.display = 'block';
+        }
+    })
+})
+// ---------------------- 구분선 --------------------------        ★★★★★★★★★★★★★ 작업중
+// 담기버튼 클릭시 팝업 활성화
+console.log(product_m)
+// console.log(product_m.children.children[0])
+// for(let p of product_m){ //slide_cart_bg
+//     p.children[1].children.addEventListener('click',()=>{
+//         slide_cart.style.display = 'block';
+//         slide_cart_bg.addEventListener('click',()=>{
+//             slide_cart.style.display = 'none';
+//         })
+//     })
+// }
+// product_btn_cart.addEventListener('click',()=>{
+//     slide_cart.style.display = 'block'
+// })

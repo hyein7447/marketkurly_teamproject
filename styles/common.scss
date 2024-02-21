@@ -108,6 +108,11 @@ $px16: 1.125rem;
     flex-flow: column nowrap;
     align-items: flex-end;
 }
+@mixin flex-col-end {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
 
 // button 
 @mixin bo_bk3 {
