@@ -449,7 +449,7 @@
   }
   main .best_mobile .tab_slide .area .list li .btn_chk p:nth-child(2), main .best_mobile .tab_slide .area .list li .btn_circle p:nth-child(2) {
     margin-right: 4px;
-    font-size: 1.063rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #111;
   }
@@ -498,7 +498,7 @@
     padding: 6px 9px;
     background-color: #f7f7f7;
     color: #666;
-    font-size: 1rem;
+    font-size: 0.875rem;
     margin-right: 4px;
   }
   main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab .con2, main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab .con3, main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab .con4, main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab .con5, main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab .con6, main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab .con7, main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab .con8, main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab .con9, main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab .con10, main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab .con11, main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab .con12, main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab .con13, main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab .con14, main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab .con15, main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab .con16, main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab .con17 {
@@ -532,7 +532,7 @@
   }
   main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab ul.contents li .btn_chk p:nth-child(2) {
     margin-right: 4px;
-    font-size: 1.063rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #111;
   }
@@ -559,7 +559,7 @@
   }
   main .best_mobile .tab_slide .area .list.tab4 .list_box .box_tab.box2 .contents li .btn_chk p:nth-child(2) {
     margin-right: 4px;
-    font-size: 1.063rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #111;
   }

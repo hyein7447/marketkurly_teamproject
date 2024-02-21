@@ -518,8 +518,8 @@ const slide_btn_view = document.querySelector('.tab_slide > .area > .btn_wrap > 
 const product_m = document.querySelectorAll('.best_mobile > .product_box > .product')
 const product_btn_cart = document.querySelector('.best_mobile > .product_box > .product > .btn_cart > .btn_c')
 const slide_cart = document.querySelector('.tab_cart')
-const slide_cart_bg = document.querySelector('tab_cart > .bg_bk')
-console.log(slide_cart, product_m)
+const slide_cart_bg = document.querySelector('.tab_cart > .bg_bk')
+console.log(product_m)
 // ---------------------- 구분선 --------------------------
 // 모바일 베스트 카테고리 상단에 이미지와 같이있는 타이틀리스트
 // 클릭 -> 보라색으로 활성화
@@ -733,15 +733,26 @@ m_array_a.forEach((t,i)=>{
 // ---------------------- 구분선 --------------------------        ★★★★★★★★★★★★★ 작업중
 // 담기버튼 클릭시 팝업 활성화
 console.log(product_m)
-// console.log(product_m.children.children[0])
-// for(let p of product_m){ //slide_cart_bg
-//     p.children[1].children.addEventListener('click',()=>{
-//         slide_cart.style.display = 'block';
-//         slide_cart_bg.addEventListener('click',()=>{
-//             slide_cart.style.display = 'none';
-//         })
-//     })
-// }
-// product_btn_cart.addEventListener('click',()=>{
-//     slide_cart.style.display = 'block'
-// })
+product_m.forEach((t,i)=>{
+    console.log(t,i,t.children[1].children,'----')
+    for(let a of t.children[1].children){
+        a.addEventListener('click',()=>{
+            slide_cart.style.display = 'block';
+            slide_cart_bg.addEventListener('click',()=>{
+                slide_cart.style.display = 'none';
+            })
+        })
+        // product_btn_cart.addEventListener('click',()=>{
+        //     slide_cart.style.display = 'block'
+        // })
+    }
+    // t.children[1].children.addEventListener('click',()=>{
+    //     slide_cart.style.display = 'block';
+    //     slide_cart_bg.addEventListener('click',()=>{
+    //         slide_cart.style.display = 'none';
+    //     })
+    // })
+    // product_btn_cart.addEventListener('click',()=>{
+    //     slide_cart.style.display = 'block'
+    // })
+})
