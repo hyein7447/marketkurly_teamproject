@@ -15,6 +15,7 @@ console.log(lnb, gnb_li, gnb_icon[0].firstElementChild,menu,map_icon.firstElemen
 
 // 초기 gnb 가리기
 gnb.style.display ='none'
+gnb_bg.style.display = 'none'
 for(let l of lnb){l.style.display = 'none'}
 
 

@@ -1,0 +1,21 @@
+@import 'common';
+
+@media screen and (max-width:1280px){
+    main {
+        .user_info_bg {
+            .user_info {
+                padding: 0 20px;
+            }
+            .user_info_bnr {
+                padding: 0 20px;
+            }
+        }
+        .my_kurly_bg {
+            padding: 50px 20px 80px;
+        }
+    }
+}
+
+@media screen and (max-width:820px) {
+    
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마켓컬리 | 뷰티컬리</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {padding: 30px;
+        letter-spacing: -0.5px;
+        }
+        header {}
+        header h1 {
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 36px;
+        }
+        main {
+            padding-top: 24px;
+        }
+        main .badge {
+        }
+        main .badge span {
+            background-color: #f7f7f7;
+            display: inline-block;
+            height: 22px;
+            padding: 1px 8px 0px;
+            margin-bottom: 11px;
+            border-radius: 11px;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 22px;
+            color: #666;
+        }
+        main p {
+            padding-top: 8px;
+            padding-bottom: 11px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: 19px;
+        }
+        main input {
+            width: 100%;
+            height: 44px;
+            padding: 0px 11px 1px 15px;
+            border-radius: 4px;
+            border: 1px solid #DDDDDD;
+            line-height: 42px;
+        }
+        main input::placeholder{
+            font-size: 0.875rem;
+            color: #ddd;
+            font-weight: 500;
+        }
+        main .address_box {}
+        main .name_box {}
+        main .num_box {}
+        main .submit {}
+        main .submit #submit_btn {
+            margin-top:30px;
+            display: block;
+            padding: 0px 10px;
+            text-align: center;
+            width: 100%;
+            height: 44px;
+            border-radius: 3px;
+            color: #fff;
+            background-color: #5f0080;
+            border: 0px none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>배송지 수정</h1>
+    </header>
+    <main>
+        <div class="badge">
+            <span>기본배송지</span>
+        </div>
+        <p>인천광역시 부평구 부평대로 19-1 6층,9층,10층 </p>
+        <div class="address_box">
+            <input type="text" placeholder="나머지 주소를 입력해 주세요">
+        </div>
+        <p>받으실 분</p>
+        <div class="name_box">
+            <input type="text" placeholder="이름을 입력해 주세요">
+        </div>
+        <p>휴대폰</p>
+        <div class="num_box">
+            <input type="number" placeholder="번호를 입력해 주세요">
+        </div>
+        <div class="submit">
+            <button type="button" id="submit_btn">저장</button>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,11 @@
+@media screen and (max-width: 1280px) {
+  main .user_info_bg .user_info {
+    padding: 0 20px;
+  }
+  main .user_info_bg .user_info_bnr {
+    padding: 0 20px;
+  }
+  main .my_kurly_bg {
+    padding: 50px 20px 80px;
+  }
+}/*# sourceMappingURL=wish_m.css.map */

@@ -2558,24 +2558,26 @@
                     <a href="#" class="level">등급별 혜택</a>
                     <a href="#" class="recipe">레시피</a>
                 </div>
-                <div class="swiper-container" id="recently_slide">
-                    <div class="swiper-wrapper" id="recently_slide_wrap">
-                        <p>최근 본 상품</p>
-                        <a href="#" class="swiper-slide item item1">
-                            <img src="./images/main/icon/aside_p_01.jpg" alt="최근 본 상품">
-                        </a>
-                        <a href="#" class="swiper-slide item item2">
-                            <img src="./images/main/icon/aside_p_01.jpg" alt="최근 본 상품">
-                        </a>
-                        <a href="#" class="swiper-slide item item3">
-                            <img src="./images/main/icon/aside_p_01.jpg" alt="최근 본 상품">
-                        </a>
-                        <a href="#" class="swiper-slide item item4">
-                            <img src="./images/main/icon/aside_p_01.jpg" alt="최근 본 상품">
-                        </a>
+                <div class="recently_bg">
+                    <p>최근 본 상품</p>
+                    <div class="swiper-container" id="recently_slide">
+                        <div class="swiper-wrapper" id="recently_slide_wrap">
+                            <div class="swiper-slide item item1">
+                                <a href="#"><img src="./images/main/icon/aside_p_01.jpg" alt="최근 본 상품"></a>
+                            </div>
+                            <div class="swiper-slide item item2">
+                                <a href="#"><img src="./images/main/icon/aside_p_01.jpg" alt="최근 본 상품"></a>
+                            </div>
+                            <div class="swiper-slide item item3">
+                                <a href="#"><img src="./images/main/icon/aside_p_01.jpg" alt="최근 본 상품"></a>
+                            </div>
+                            <div class="swiper-slide item item4">
+                                <a href="#"><img src="./images/main/icon/aside_p_01.jpg" alt="최근 본 상품"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev" id="aside_prev_btn"></div> <!-- 이전버튼 -->   
+                        <div class="swiper-button-next" id="aside_next_btn"></div> <!-- 다음버튼 -->
                     </div>
-                    <div class="swiper-button-prev prev_btn"></div> <!-- 이전버튼 -->   
-                    <div class="swiper-button-next next_btn"></div> <!-- 다음버튼 -->
                 </div>
             </div>
         </div>
@@ -2867,12 +2869,12 @@
 
         // aside 슬라이드
         const recently_swiper = new Swiper('#recently_slide',{
-            slidesPerView: 3,
-            spaceBetween: 10,
+            slidesPerView: 2,
+            spaceBetween: 5,
             direction:'vertical',
             navigation:{
-                prevEl: "#recently_slide .prev_btn",
-                nextEl: "#recently_slide .next_btn",
+                prevEl: "#aside_prev_btn",
+                nextEl: "#aside_next_btn",
             },
         })
 

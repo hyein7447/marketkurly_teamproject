@@ -16,13 +16,6 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/wish.css">
     <link rel="stylesheet" href="./styles/wish_m.css">
-    <!--swipe 플러그인 필수 css cdn 연결-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!--swipe 플러그인 필수 JS cdn 연결-->
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <?php include("header.php"); ?>
@@ -448,9 +441,14 @@
                                             <img src="./images/sub/icon_arrow_right.png" alt="뷰티 프로필 더보기">
                                         </div>
                                     </a>
-                                    <div class="swiper_container" id="content_box_bg">
-                                        <div class="swiper-wrapper" id="content_box">
-                                            <div class="swiper-slide content content1">
+                                    <div class="content_bg">
+                                        <div class="content_top">
+                                            <span class="page_bar_bg">
+                                                <span class="page_bar"></span>
+                                            </span>
+                                        </div>
+                                        <div class="content_box">
+                                            <div class="content content1">
                                                 <div class="question">
                                                     <p>어떤 피부타입을 가지고 계신가요?</p>
                                                     <p class="desc">본인에게 맞는 타입 1개만 선택해주세요.</p>
@@ -498,7 +496,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide content content2">
+                                            <div class="content content2">
                                                 <div class="question">
                                                     <p>어떤 피부톤을 가지고 계신가요?</p>
                                                     <p class="desc">본인에게 맞는 톤 1개만 선택해주세요.</p>
@@ -533,7 +531,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide content content3">
+                                            <div class="content content3">
                                                 <div class="question">
                                                     <p>요즘 피부 고민은 무엇인가요?</p>
                                                     <p class="desc">고민되는 점을 여러개 선택해주세요.</p>
@@ -552,7 +550,7 @@
                                                     <a href="#">칙칙함</a>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide content content4">
+                                            <div class="content content4">
                                                 <div class="question">
                                                     <p>어떤 두피 타입을 가지고 계신가요?</p>
                                                     <p class="desc">본인에게 맞는 타입 1개만 선택해주세요.</p>
@@ -580,7 +578,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide content content5">
+                                            <div class="content content5">
                                                 <div class="question">
                                                     <p>요즘 헤어 고민은 무엇인가요?</p>
                                                     <p class="desc">고민되는 점을 여러개 선택해주세요.</p>
@@ -594,7 +592,7 @@
                                                     <a href="#">탈모 케어</a>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide content content6">
+                                            <div class="content content6">
                                                 <div class="question">
                                                     <p>사용 경험이 있는 브랜드를 선택해주세요!</p>
                                                     <p class="desc">여러 브랜드를 고르실 수 있어요.</p>
@@ -649,12 +647,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="btn_bg">
-                                            <div class="swiper-button-prev" id="p_prev_btn">이전 단계</div>
-                                            <div class="swiper-button-next" id="p_next_btn">선택 후 다음</div>
-                                        </div>
-                                        <div class="page_bar_bg">
-                                            <div class="swiper-pagination" id="page_bar"></div>
+                                        <div class="content_btn">
+                                            <a href="#" class="prev_btn"><img src="./images/sub/icon_arrow_left.svg" alt="다음으로이동">이전 단계</a>
+                                            <a href="#" class="next_btn">선택 후 다음<img src="./images/sub/icon_arrow_left.svg" alt="다음으로이동"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -725,22 +720,6 @@
             </div>
         </div>
     </div>
-    <script>
-        const proflie_swiper = new Swiper('#content_box_bg',{
-            slidesPerView: 1,
-            spaceBetween: 10,
-            navigation:{
-                prevEl: "#p_prev_btn",
-                nextEl: "#p_next_btn",
-            },
-            pagination: {
-            el: "#page_bar",
-            type: "progressbar",
-            },
-        })
-    </script>
-    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="./script/wish.js"></script>
 </body>
 </html>
