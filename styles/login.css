@@ -59,7 +59,6 @@ main .container form fieldset .info_look a {
   font-size: 0.938rem;
 }
 main .container form fieldset .citation_num {
-  display: none !important;
   margin-top: 28px;
   background-color: #f7f7f7;
   display: flex;
@@ -105,7 +104,6 @@ main .container form .btn_join {
   margin-top: 10px;
 }
 main .popup {
-  display: none !important;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -127,7 +125,7 @@ main .popup .box {
 }
 main .popup .box p {
   padding: 40px 30px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   width: 100%;
   letter-spacing: -0.05rem;
