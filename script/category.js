@@ -528,8 +528,8 @@ console.log(product_m)
 // 스크롤 내렸을 때 상단 카테고리 타이틀부분 아이콘 정렬 변경
 //cate_title = a / cate_title_row
 // const cate_title_test = document.querySelector('.cate_title_col');
-const cate_title_parent = document.querySelector('.best_mobile > .sub_header > .cate_title')
-let title_row_reset = ()=>{for(let j of cate_title_parent){j.classList.remove('cate_row_active')}}
+let cate_title_parent = document.querySelector('.best_mobile > .sub_header > .cate_title')
+// let title_row_reset = ()=>{for(let b of cate_title_parent){b.classList.remove('cate_row_active')}}
 cate_title[0].classList.add('cate_active') //초기값 -> 탑 0일때
 // 스크롤 이벤트 감지
 window.addEventListener('scroll',()=>{
@@ -575,7 +575,7 @@ let top_zero = ()=>{
     }
 }
 top_zero() //아래에서도 호출해야 돼서 매개변수로 만듦
-title_row_reset()
+// title_row_reset()
 // 초기값
 // cate_title[0].classList.add('cate_active')
 // for(let i of cate_title){
