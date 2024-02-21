@@ -461,6 +461,10 @@ for(let i of product){
             popup.style.display = 'none';
             cart_pop.style.display = 'none';
         })
+        btn_cart_r.addEventListener('click',()=>{
+            popup.style.display = 'none';
+            cart_pop.style.display = 'none';
+        })
     })
 }
 product_cart_btn.addEventListener('click',()=>{
@@ -516,22 +520,70 @@ const slide_brand_list = document.querySelectorAll('.tab_slide > .area > .list >
 const slide_brand_list_all = document.querySelector('.tab_slide > .area > .list > .list_box > .box2 > ul')
 const slide_btn_view = document.querySelector('.tab_slide > .area > .btn_wrap > .btn_view') 
 const product_m = document.querySelectorAll('.best_mobile > .product_box > .product')
-const product_btn_cart = document.querySelector('.best_mobile > .product_box > .product > .btn_cart > .btn_c')
 const slide_cart = document.querySelector('.tab_cart')
 const slide_cart_bg = document.querySelector('.tab_cart > .bg_bk')
+const slide_btn_cart_r = document.querySelector('.tab_cart > .bg_wh > .btn_cart > .btn_cart_r')
 console.log(product_m)
+// ---------------------- 구분선 --------------------------        ★★★★★★★★★★★★★ 작업중
+// 스크롤 내렸을 때 상단 카테고리 타이틀부분 아이콘 정렬 변경
+//cate_title = a / cate_title_row
+// const cate_title_test = document.querySelector('.cate_title_col');
+const cate_title_parent = document.querySelector('.best_mobile > .sub_header > .cate_title')
+let title_row_reset = ()=>{for(let j of cate_title_parent){j.classList.remove('cate_row_active')}}
+cate_title[0].classList.add('cate_active') //초기값 -> 탑 0일때
+// 스크롤 이벤트 감지
+window.addEventListener('scroll',()=>{
+    // 현재 스크롤 위치
+    const scrollTop = window.pageYOffset;
+    // 화면 기준 top에서 스크롤한번 내렸을 때
+    if (scrollTop > 20){
+        title_reset() //col용 a의 active 비활성화
+        cate_title_parent.classList.add('cate_title_row');
+        cate_title_parent.classList.remove('cate_title_col');
+        /* // cate_title.classList.remove('cate_active')
+        // cate_title.classList.add('cate_row_active') */
+        cate_title[0].classList.add('cate_row_active') //row용 활성화
+        // for(let a of cate_title_parent){
+        //     cate_title.addEventListener('click',()=>{
+        //         a.classList.add('cate_row_active')
+        //         cate_title.classList.remove('cate_active')
+        //     })
+        // }
+    }
+    // 화면 기준 제일 top으로 다시 올라갔을 때
+    else if (scrollTop === 0){
+        cate_title_parent.classList.remove('cate_title_row');
+        cate_title_parent.classList.add('cate_title_col');
+        // cate_title[0].classList('cate_active')
+        /* // cate_title_parent.classList.add('cate_title_col');
+        // cate_title_parent.classList.add('cate_row_active') */
+        cate_title[0].classList.add('cate_active') //초기값 -> 탑 0일때 col용 활성화
+        top_zero() //col용 a클릭했을 때 변경되는 함수 호출
+        cate_title.classList.remove('cate_row_active') //row용 활성화 제거
+    }
+});
 // ---------------------- 구분선 --------------------------
-// 모바일 베스트 카테고리 상단에 이미지와 같이있는 타이틀리스트
+// 모바일 베스트 카테고리 상단에 이미지와 같이있는 타이틀리스트                 ★★★★★★★★★★★★ 확인용 위치
 // 클릭 -> 보라색으로 활성화
 let title_reset = ()=>{for(let a of cate_title){a.classList.remove('cate_active')}}
-// 초기값
-cate_title[0].classList.add('cate_active')
-for(let i of cate_title){
-    i.addEventListener('click',()=>{
-        title_reset()
-        i.classList.add('cate_active')
-    })
+let top_zero = ()=>{
+    for(let i of cate_title){
+        i.addEventListener('click',()=>{
+            title_reset()
+            i.classList.add('cate_active')
+        })
+    }
 }
+top_zero() //아래에서도 호출해야 돼서 매개변수로 만듦
+title_row_reset()
+// 초기값
+// cate_title[0].classList.add('cate_active')
+// for(let i of cate_title){
+//     i.addEventListener('click',()=>{
+//         title_reset()
+//         i.classList.add('cate_active')
+//     })
+// }
 // ---------------------- 구분선 --------------------------
 // 초기값 -> 추천순 클릭시 sub메뉴 보이기 + arrow 반전 -> sub메뉴 클릭시 해당 a classList 활성화
 let title_a_status = false;
@@ -730,29 +782,18 @@ m_array_a.forEach((t,i)=>{
         }
     })
 })
-// ---------------------- 구분선 --------------------------        ★★★★★★★★★★★★★ 작업중
-// 담기버튼 클릭시 팝업 활성화
-console.log(product_m)
-product_m.forEach((t,i)=>{
-    console.log(t,i,t.children[1].children,'----')
-    for(let a of t.children[1].children){
+// ---------------------- 구분선 --------------------------    
+// 담기버튼 클릭시 팝업 활성화 -> 기본 슬라이드에서 플랙스때문에 none처리가 안돼 classList로 처리
+for(let j of product_m){
+    for(let a of j.children[1].children){ //썸네일의 담기 버튼
         a.addEventListener('click',()=>{
-            slide_cart.style.display = 'block';
+            slide_cart.classList.remove('display_none');
             slide_cart_bg.addEventListener('click',()=>{
-                slide_cart.style.display = 'none';
+                slide_cart.classList.add('display_none');
             })
         })
-        // product_btn_cart.addEventListener('click',()=>{
-        //     slide_cart.style.display = 'block'
-        // })
+        slide_btn_cart_r.addEventListener('click',()=>{ //슬라이드의 담기 버튼
+            slide_cart.classList.add('display_none');
+        })
     }
-    // t.children[1].children.addEventListener('click',()=>{
-    //     slide_cart.style.display = 'block';
-    //     slide_cart_bg.addEventListener('click',()=>{
-    //         slide_cart.style.display = 'none';
-    //     })
-    // })
-    // product_btn_cart.addEventListener('click',()=>{
-    //     slide_cart.style.display = 'block'
-    // })
-})
+}

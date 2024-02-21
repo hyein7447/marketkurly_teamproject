@@ -726,13 +726,13 @@ main .best .popup .cart_pop {
     margin: 0 auto;
     border-radius: 12px;
     padding: 30px;
-    overflow-x: hidden;
+    overflow: hidden;
     padding: 30px;
 }
 main .best .popup .cart_pop .thumb_name {
     display: flex; flex-flow: row nowrap;
     align-items: center;
-    padding: 5px 0px 12px;
+    padding: 5px 0px 20px;
     border-bottom: 1px solid #eee;
 }
 main .best .popup .cart_pop .thumb_name .thumb {
@@ -760,12 +760,12 @@ main .best .popup .cart_pop .info .cart_box {
     border-bottom: 1px solid #eee;
 }
 main .best .popup .cart_pop .info .cart_box .p_tab_title {
-    letter-spacing: -0.05rem;
+    letter-spacing: -0.05rem; font-size: 0.938rem;
 }
 main .best .popup .cart_pop .info .cart_box .price_num {
     display: flex; justify-content: space-between;
     align-items: center;
-    padding-top: 8px;
+    padding: 14px 0 10px;
 }
 main .best .popup .cart_pop .info .cart_box .price_num .p_tab_price {
     font-weight: 700;
@@ -775,7 +775,7 @@ main .best .popup .cart_pop .info .cart_box .price_num .p_tab_price span {}
 main .best .popup .cart_pop .info .cart_box .price_num .p_tab_price span del {
     font-size: 0.875rem;
     color:#b5b5b5;
-    margin-left: 5px;
+    margin-left: 8px;
 }
 main .best .popup .cart_pop .info .cart_box .price_num .num {
     border: 1px solid #ddd;
