@@ -64,13 +64,15 @@ main .container .notice {
 main .container .notice h2 {
   display: flex;
   align-items: center;
-  font-size: 1.625rem;
+  font-size: 1.375rem;
   font-weight: 500;
   line-height: 48px;
   letter-spacing: -0.5px;
   margin-bottom: 27px;
+  white-space: nowrap;
 }
 main .container .notice h2 span {
+  white-space: normal;
   margin-left: 11px;
   font-size: 1rem;
   letter-spacing: -0.3px;

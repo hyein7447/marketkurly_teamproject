@@ -63,12 +63,14 @@ main{
             h2{
                 display: flex;
                 align-items: center;
-                font-size: $px24;
+                font-size: $px20;
                 font-weight: 500;
                 line-height: 48px;
                 letter-spacing: -0.5px;
                 margin-bottom: 27px;
+                white-space: nowrap;
                 span{
+                    white-space: normal;
                     margin-left: 11px;
                     font-size: $px14;
                     letter-spacing: -0.3px;

@@ -26,3 +26,195 @@
     }
     .pagenation{display: none;}
 }
+
+// 모바일 max
+@media screen and (max-width:430px) {
+    main{
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 0 16px;
+
+        aside{
+            width: 100%;
+            margin-bottom: 20px;
+            h1{
+                padding: 10px 0;
+                font-size: $px26;
+            }
+            .board_list{
+                @include flex-row-btw-ct;
+                height: max-content;
+                a{
+                    font-size: $px12;
+                    padding: 10px;
+                    width: max-content;
+                    span{display: none;}
+                }
+
+            }
+            .help_wrap{display: none;}
+        }
+        .container{
+            width: 100%;
+            .notice_wrap{padding: 10px;}
+            h2{display: none;}
+            .notice_container{padding: 0 20px;}
+            .notice{
+                h2{display: none;}
+                .notice_wrap{
+                    padding: 10px;
+                    p{font-size: 0.75rem;}
+                }
+                .notice_container{
+                    padding: 0 10px;
+                    li{
+                        padding: 10px 0;
+                        span{
+                            margin: 0;
+                            font-size: 0.75rem;
+                        }
+                        .title{
+                            padding: 0;
+                        }
+                        .date, .writer{width: max-content;}
+                    }
+                }
+            }
+            .faq{
+                h2{display: none;}
+                .notice_wrap{
+                    padding: 10px;
+                    p{font-size: 0.75rem;}
+                    .title{width: 60%;}
+                }
+                .notice_container{
+                    padding: 0 10px;
+                    li{
+                        padding: 10px 0;
+                        span{
+                            margin: 0;
+                            font-size: 0.75rem;
+                        }
+                        .title{
+                            padding: 0;
+                            width: 60%;
+                        }
+                        .date, .writer{width: max-content;}
+                    }
+                }
+            }
+            .inquiry{
+                h2{display: none;}
+                .notice_wrap{
+                    padding: 10px;
+                    p{
+                        font-size: 0.75rem;
+                    }
+                    .date, .writer{width: 15%;}
+                }
+                .notice_container{padding: 0 10px;}
+                #inquiry_btn{
+                    background-color: $purple;
+                    padding: 0 12.5px;
+                    width: max-content;
+                    height: 30px;
+                    color: #fff;
+                    border-radius: 3px;
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+    .pagenation{display: none;}
+}
+// 모바일 mini
+@media screen and (max-width:320px) {
+    main{
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 0 16px;
+    
+        aside{
+            width: 100%;
+            margin-bottom: 20px;
+            h1{
+                padding: 10px 0;
+                font-size: $px20;
+            }
+            .board_list{
+                @include flex-row-btw-ct;
+                height: max-content;
+                a{
+                    font-size: $px10;
+                    padding: 5px;
+                    width: max-content;
+                    span{display: none;}
+                }
+    
+            }
+            .help_wrap{display: none;}
+        }
+        .container{
+            width: 100%;
+            .notice_wrap{padding: 5px;}
+            h2{display: none;}
+            .notice_container{padding: 0 20px;}
+            .notice{
+                h2{display: none;}
+                .notice_wrap{
+                    padding: 5px;
+                    p{font-size: 0.625rem;}
+                }
+                .notice_container{
+                    padding: 0 5px;
+                    li{
+                        padding: 10px 0;
+                        span{
+                            margin: 0;
+                            font-size: 0.625rem;
+                        }
+                        .title{
+                            padding: 0;
+                        }
+                        .date, .writer{width: max-content;}
+                    }
+                }
+            }
+            .faq{
+                h2{display: none;}
+                .notice_wrap{
+                    padding: 5px;
+                    p{font-size: 0.625rem;}
+                    .title{width: 60%;}
+                }
+                .notice_container{
+                    padding: 0 5px;
+                    li{
+                        padding: 5px 0;
+                        span{
+                            margin: 0;
+                            font-size: 0.625rem;
+                        }
+                        .title{
+                            padding: 0;
+                            width: 60%;
+                        }
+                        .date, .writer{width: max-content;}
+                    }
+                }
+            }
+            .inquiry{
+                h2{display: none;}
+                .notice_wrap{
+                    padding: 5px;
+                    p{
+                        font-size: 0.625rem;
+                    }
+                    .date, .writer{width: 15%;}
+                }
+            }
+        }
+    }
+    .pagenation{display: none;}
+    
+}
