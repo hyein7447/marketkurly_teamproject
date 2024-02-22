@@ -26,8 +26,12 @@ const opt_filter_box = document.querySelector('.opt_filter_box') // 옵션 필�
 const rating_filter_box = document.querySelector('.rating_filter_box') // 등급 필터
 const review_notice_btn = document.querySelectorAll('.review_notice_btn'); // 리뷰 - 공지 버튼
 const review_notice_contents = document.querySelectorAll('.review_notice_contents'); // 리뷰 - 공지 내용
-const total = document.querySelector('.total') // 총액
 const helpful_btn = document.querySelectorAll('.helpful_btn') // 도움돼요 버튼
+const sort_a = document.querySelectorAll('.sort') // 리뷰 정렬 (추천순/최근등로순)
+const total = document.querySelector('.total > em') // 총액
+const filter_box_opt = document.querySelectorAll('.filter_box_contents > ul > li > input[name="opt_chk"]') // 옵션 필터 input
+const rating_chk_opt = document.querySelectorAll('.filter_box_contents > ul > li > input[name="rating_chk"]') // 등급 필터 input
+const reset_btn = document.querySelectorAll('.reset_btn') // 초기화 버튼
 
 
 // --------------- 상단 상품선택 option 선택 시 선택한 옵션 나타나기
@@ -49,11 +53,10 @@ for (let i of select_opt) {
 
         selectedItems.add(itemName);
 
-        console.log(itemName);
-        console.log(i.lastChild.innerHTML);
-
-        console.log(i.firstElementChild.innerHTML);
-        console.log(i.lastChild.innerHTML);
+        // console.log(itemName);
+        // console.log(i.lastChild.innerHTML);
+        // console.log(i.firstElementChild.innerHTML);
+        // console.log(i.lastChild.innerHTML);
 
         let create_select = document.createElement('div');
         create_select.classList.add('select');
@@ -77,30 +80,56 @@ for (let i of select_opt) {
 
         create_select.appendChild(cancle_button);
         select_wrap.appendChild(create_select);
-
+        
         // minus, plus 버튼 클릭 시 수량 증가 및 감소
-        let minusButton = create_num_price.querySelector('.minus');
-        let plusButton = create_num_price.querySelector('.plus');
-        let numInput = create_num_price.querySelector('.num_count');
-    
-        minusButton.addEventListener('click', () => {
-            let currentValue = parseInt(numInput.value);
-            if (currentValue > 1) {
-                numInput.value = currentValue - 1;
-            }
-        });
-        plusButton.addEventListener('click', () => {
-            let currentValue = parseInt(numInput.value);
-            numInput.value = currentValue + 1;
-        });
+        let minusButton = create_num_price.querySelectorAll('.minus');
+        let plusButton = create_num_price.querySelectorAll('.plus');
+        let numInput = create_num_price.querySelectorAll('.num_count');
+        // console.log(minusButton)
+        // console.log(plusButton)
+        // console.log(numInput)
+        
+        let priceText = i.lastElementChild.innerHTML;
+        let price = parseInt(priceText.replace(/[^\d]/g, ''));
+        let totalPrice = 0;
 
-        itemsSatus = 1;
-
-        // 중복 선택 방지 
+        totalPrice += price;
+        total.innerHTML = totalPrice.toLocaleString('ko-kr');
+        
+        // ---------------------- 수정하기 ~~~ ☆★ 미완성 ☆★
+        for(let p of plusButton){
+            p.addEventListener('click', function(){
+                numInput[0].value = parseInt(numInput[0].value) + 1;
+                // 클릭 시 가격 변동
+                const itemPriceText = this.parentElement.parentElement.lastElementChild.innerHTML
+                const itemPrice = parseInt(itemPriceText.replace(/[^\d]/g, ''));
+                console.log(itemPrice)
+                totalPrice += itemPrice;
+                console.log(totalPrice)
+                total.innerHTML = totalPrice.toLocaleString('ko-kr');
+                // console.log(totalPrice)
+            });
+        }
+        for(let m of minusButton){
+            m.addEventListener('click', function(){
+                if (parseInt(numInput[0].value) > 1) {
+                    numInput[0].value = parseInt(numInput[0].value) - 1;
+                    // 클릭 시 가격 변동
+                    const itemPriceText = this.parentElement.parentElement.lastElementChild.innerHTML
+                    const itemPrice = parseInt(itemPriceText.replace(/[^\d]/g, ''));
+                    totalPrice -= itemPrice;
+                    total.innerHTML = totalPrice.toLocaleString('ko-kr');
+                    console.log(totalPrice)
+                }
+            });
+        }
+        
+        // 중복 선택 방지 --- 나중에하기
         /* if (selectedItems.has(itemName)) {
             alert('이미 추가된 옵션입니다.');
             return;
         } */
+
         // 취소버튼 만들기
         cancle_button.addEventListener('click',function(e){
             e.preventDefault();
@@ -119,9 +148,7 @@ function on_off(name, status){
 wish[1].addEventListener('click',function(){
     const current_src = this.children[0].src;
     const off_src = on_off('wish', 'off');
-
     const off = current_src.includes('icon_wish_off.svg');
-
     this.children[0].src = off ? on_off('wish', 'on2') : off_src;
 })
 
@@ -203,7 +230,7 @@ photo_more_close.addEventListener('click',()=>{
     review_photo_more.style.display = 'none'
 })
 
-// -------- 리뷰 옵션
+// -------- 리뷰 옵션 클릭 시 보이기
 
 let filter_btn_status = false;
 let rating_filter_box_status = false;
@@ -212,6 +239,7 @@ filter_btn[0].addEventListener('click', function(){
     if(filter_btn_status == false){
         opt_filter_box.style.display = 'block';
         filter_btn_status = !filter_btn_status
+        // rating_filter_box.style.display = 'none';
     }else{
         opt_filter_box.style.display = 'none';
         filter_btn_status = !filter_btn_status
@@ -221,13 +249,25 @@ filter_btn[1].addEventListener('click', function(){
     if(rating_filter_box_status == false){
         rating_filter_box.style.display = 'block';
         rating_filter_box_status = !rating_filter_box_status
+        // opt_filter_box.style.display = 'none';
     }else{
         rating_filter_box.style.display = 'none';
         rating_filter_box_status = !rating_filter_box_status
     }
 })
 
-// ---------- 리뷰 옵션 선택 시 체크박스 이미지 변경
+// -------- 상품 옵션, 회원 등급 초기화 버튼 기능
+
+reset_btn[0].addEventListener('click',()=>{
+    filter_box_opt.forEach(checkbox => {
+        checkbox.checked = false;
+    })
+})
+reset_btn[1].addEventListener('click',()=>{
+    rating_chk_opt.forEach(checkbox => {
+        checkbox.checked = false;
+    })
+})
 
 // ---------- 리뷰 도움돼요 버튼 클릭 시 이벤트
 for (let t of helpful_btn) {
@@ -260,11 +300,21 @@ for (let t of helpful_btn) {
     });
 }
 
+// ---------- 리뷰 정렬 클릭 시 활성화
 
+const sort_default = () => {for(let t of sort_a){t.style.color = '#999'}}
+sort_default()
+sort_a[0].style.color = '#333';
+
+for(let t of sort_a){
+    t.addEventListener('click',()=>{
+        sort_default()
+        t.style.color = '#333'
+    })
+}
 
 // ---------- 리뷰공지 클릭 시 내용 보이기
 
-// 각 버튼에 대한 동작 함수 정의
 function view_notice(i) {
     if (review_notice_contents[i].style.display === 'none') {
         review_notice_contents[i].style.display = 'block';
@@ -273,7 +323,6 @@ function view_notice(i) {
     }
 }
 
-// 각 버튼에 이벤트 리스너 추가
 review_notice_btn.forEach((t, i) => {
     t.addEventListener('click', function(){
         view_notice(i);
@@ -292,3 +341,98 @@ document.querySelectorAll('a').forEach(link => {
         }
     });
 });
+
+// ------------------- 미디어쿼리 --------------------
+
+const img_information = document.querySelector('.img_information') // 상품설명 컨텐츠
+const description_container = document.querySelector('.description_container') // 상품설명 컨텐츠
+const detail = document.querySelector('.detail') // 상품설명 컨텐츠
+const m_detail = document.querySelector('.m_detail') // 상세정보 컨텐츠
+const review = document.querySelector('.review') // 리뷰 컨텐츠
+const inquiry = document.querySelector('.inquiry') // 문의 컨텐츠
+const m_nav_a = document.querySelectorAll('.nav_wrap > li > a') // nav
+
+console.log(img_information)
+console.log(description_container)
+console.log(detail)
+console.log(m_detail)
+console.log(review)
+console.log(inquiry)
+console.log(m_nav_a)
+
+const max820 = window.matchMedia('(max-width: 820px)');
+const max1280 = window.matchMedia('(max-width: 1280px)');
+
+const m_section_show = () =>{
+    // img_information.style.display = 'block'
+    description_container.style.display = 'block'
+    detail.style.display = 'block'
+    m_detail.style.display = 'block'
+    review.style.display = 'block'
+    inquiry.style.display = 'block'
+}
+const m_section_hide = () =>{
+    img_information.style.display = 'none'
+    description_container.style.display = 'none'
+    detail.style.display = 'none'
+    m_detail.style.display = 'none'
+    review.style.display = 'none'
+    inquiry.style.display = 'none'
+}
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth <= 820) {
+        m_section_hide();
+        img_information.style.display = 'block'
+        description_container.style.display = 'block'
+        detail.style.display = 'block'
+        
+        m_nav_a[0].addEventListener('click',()=>{
+            m_section_hide();
+            img_information.style.display = 'block'
+            description_container.style.display = 'block'
+            detail.style.display = 'block'
+        })
+        m_nav_a[1].addEventListener('click',()=>{
+            m_section_hide();
+            m_detail.style.display = 'block'
+        })
+        m_nav_a[2].addEventListener('click',()=>{
+            m_section_hide();
+            review.style.display = 'none'
+        })
+        m_nav_a[3].addEventListener('click',()=>{
+            m_section_hide();
+            inquiry.style.display = 'block'
+        })
+    } else {
+        img_information.style.display = 'flex';
+    }
+});
+
+// 미디어 쿼리 변경 시 이벤트 처리
+max820.addListener((mediaQueryList) => {
+    if(mediaQueryList.matches) {
+        m_nav_a[0].addEventListener('click',()=>{
+            m_section_hide();
+            img_information.style.display = 'block'
+            description_container.style.display = 'block'
+            detail.style.display = 'block'
+        })
+        m_nav_a[1].addEventListener('click',()=>{
+            m_detail.style.display = 'block'
+        })
+        m_nav_a[2].addEventListener('click',()=>{
+            review.style.display = 'block'
+        })
+        m_nav_a[3].addEventListener('click',()=>{
+            inquiry.style.display = 'block'
+        })
+    }else{
+        m_section_show();
+    }
+});
+
+if(max1280.matches){
+    img_information.style.display = 'flex'
+}

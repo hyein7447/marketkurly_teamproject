@@ -865,7 +865,7 @@ main .product_container .detail .inquiry_wrap h3 {
   font-weight: 500;
   margin-left: 6.25px;
 }
-main .product_container .detail .inquiry_wrap .inquiry {
+main .product_container .detail .inquiry_wrap .inquiry_p {
   margin-left: 6.25px;
   margin-top: 38.75px;
   color: #666;
@@ -873,7 +873,7 @@ main .product_container .detail .inquiry_wrap .inquiry {
   font-size: 1.25rem;
   padding: 0;
 }
-main .product_container .detail .inquiry_wrap .inquiry span {
+main .product_container .detail .inquiry_wrap .inquiry_p span {
   display: block;
   margin-top: 7.5px;
   font-weight: 300;
@@ -1188,6 +1188,7 @@ main .product_container .review .review_sorting p {
 main .product_container .review .review_sorting .sort_wrap .sort {
   font-size: 0.875rem;
   color: #999;
+  font-weight: 500;
 }
 main .product_container .review .review_sorting .sort_wrap .sort:first-child::after {
   content: "";
@@ -1276,13 +1277,16 @@ main .product_container .review .review_opt_wrap .review_filter .opt_filter_box 
 main .product_container .review .review_opt_wrap .review_filter .opt_filter_box .filter_box_contents ul li label::before {
   content: "";
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background-image: url(../images/sub/icon_check1.png);
   background-size: 100%;
   margin-right: 20px;
   position: relative;
   top: 5px;
+}
+main .product_container .review .review_opt_wrap .review_filter .opt_filter_box .filter_box_contents ul li input[type=checkbox]:checked + label::before {
+  background-image: url(../images/sub/icon_check4.png);
 }
 main .product_container .review .review_opt_wrap .review_filter .opt_filter_box .filter_box_contents .review_view_btn {
   width: 100%;
@@ -1352,13 +1356,16 @@ main .product_container .review .review_opt_wrap .review_filter .rating_filter_b
 main .product_container .review .review_opt_wrap .review_filter .rating_filter_box .filter_box_contents ul li label::before {
   content: "";
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background-image: url(../images/sub/icon_check1.png);
   background-size: 100%;
   margin-right: 20px;
   position: relative;
   top: 5px;
+}
+main .product_container .review .review_opt_wrap .review_filter .rating_filter_box .filter_box_contents ul li input[type=checkbox]:checked + label::before {
+  background-image: url(../images/sub/icon_check4.png);
 }
 main .product_container .review .review_opt_wrap .review_filter .rating_filter_box .filter_box_contents .review_view_btn {
   width: 100%;

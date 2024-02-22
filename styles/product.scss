@@ -877,7 +877,7 @@ main{
                     margin-left: 6.25px;
                     
                 }
-                .inquiry{
+                .inquiry_p{
                     margin-left: 6.25px;
                     margin-top: 38.75px;
                     color: #666;
@@ -1217,6 +1217,7 @@ main{
                     .sort{
                         font-size: $px12;
                         color: #999;
+                        font-weight: 500;
     
                         &:first-child{
                             &::after{
@@ -1304,8 +1305,8 @@ main{
                                         &::before{
                                             content: '';
                                             display: inline-block;
-                                            width: 30px;
-                                            height: 30px;
+                                            width: 25px;
+                                            height: 25px;
                                             background-image: url(../images/sub/icon_check1.png);
                                             background-size: 100%;
                                             margin-right: 20px;
@@ -1313,6 +1314,9 @@ main{
                                             top: 5px;
                                         }
                                         font-size: $px16;
+                                    }
+                                    input[type="checkbox"]:checked + label::before {
+                                        background-image: url(../images/sub/icon_check4.png);
                                     }
                                 }
                             }
@@ -1379,8 +1383,8 @@ main{
                                         &::before{
                                             content: '';
                                             display: inline-block;
-                                            width: 30px;
-                                            height: 30px;
+                                            width: 25px;
+                                            height: 25px;
                                             background-image: url(../images/sub/icon_check1.png);
                                             background-size: 100%;
                                             margin-right: 20px;
@@ -1388,6 +1392,9 @@ main{
                                             top: 5px;
                                         }
                                         font-size: $px16;
+                                    }
+                                    input[type="checkbox"]:checked + label::before {
+                                        background-image: url(../images/sub/icon_check4.png);
                                     }
                                 }
                             }

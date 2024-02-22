@@ -366,7 +366,7 @@
     font-size: 0.875rem;
   }
   main .product_container .description_container .about_brand .touch img {
-    width: 3%;
+    width: 4%;
     margin-left: 13px;
   }
   main .product_container .description_container .about_brand h3 {
@@ -456,13 +456,13 @@
     font-size: 0.813rem;
     color: #666;
   }
+  main .product_container .detail .order_cancle {
+    display: none;
+  }
   main .product_container .detail .inquiry_wrap {
     display: none;
   }
   main .product_container .detail .exchange_refund {
-    display: none;
-  }
-  main .product_container .detail .order_cancel {
     display: none;
   }
   main .product_container .detail .shipping {
@@ -471,6 +471,21 @@
   main .product_container .m_detail {
     padding: 0 16px;
     display: block;
+  }
+  main .product_container .m_detail .touch {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background-color: #f2f1f5;
+    text-align: center;
+    height: 48px;
+    font-size: 0.875rem;
+  }
+  main .product_container .m_detail .touch img {
+    width: 4%;
+    margin-left: 13px;
   }
   main .product_container .m_detail .m_detail_img {
     display: block;
@@ -651,42 +666,42 @@
     color: #666;
     font-size: 0.75rem;
   }
-  main .product_container .m_detail .m_order_cancel {
+  main .product_container .m_detail .m_order_cancle {
     display: block;
     text-align: center;
     padding: 30px 0 0;
   }
-  main .product_container .m_detail .m_order_cancel .order_cancel_info {
+  main .product_container .m_detail .m_order_cancle .order_cancle_info {
     padding-bottom: 30px;
     border-bottom: 8px solid #f4f4f4;
   }
-  main .product_container .m_detail .m_order_cancel .order_cancel_info h3 {
+  main .product_container .m_detail .m_order_cancle .order_cancle_info h3 {
     font-size: 1.125rem;
     font-weight: 600;
     color: #666;
   }
-  main .product_container .m_detail .m_order_cancel .order_cancel_info p {
+  main .product_container .m_detail .m_order_cancle .order_cancle_info p {
     color: #666;
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 19px;
     padding-top: 20px;
   }
-  main .product_container .m_detail .m_order_cancel .order_cancel_list {
+  main .product_container .m_detail .m_order_cancle .order_cancle_list {
     padding: 30px 0;
     padding-top: 0;
     background-color: #f4f4f4;
   }
-  main .product_container .m_detail .m_order_cancel .order_cancel_list .order_cancel_title {
+  main .product_container .m_detail .m_order_cancle .order_cancle_list .order_cancle_title {
     font-size: 0.875rem;
     padding-top: 30px;
     color: #5F0080;
     font-weight: 600;
   }
-  main .product_container .m_detail .m_order_cancel .order_cancel_list ul {
+  main .product_container .m_detail .m_order_cancle .order_cancle_list ul {
     padding-top: 10px;
   }
-  main .product_container .m_detail .m_order_cancel .order_cancel_list ul li {
+  main .product_container .m_detail .m_order_cancle .order_cancle_list ul li {
     padding-top: 20px;
     font-size: 0.875rem;
     color: #666;
@@ -708,10 +723,28 @@
     line-height: 19px;
     padding-top: 20px;
   }
-  main .product_container .review {
+  main .product_container .inquiry {
+    width: 100%;
+  }
+  main .product_container .inquiry .inquiry_top_wrap h2 {
     display: none;
   }
-  main .product_container .inquiry {
+  main .product_container .inquiry .inquiry_top_wrap p {
+    width: 100%;
+  }
+  main .product_container .inquiry .inquiry_top_wrap p #inquiry_btn {
+    background-color: #fff;
+    color: #5F0080;
+    border: 1px solid #5F0080;
+    border-radius: 5px;
+  }
+  main .product_container .inquiry .inquiry_top {
     display: none;
+  }
+  main .product_container .inquiry .inquiry_list .inquiry_list_wrap {
+    display: none;
+  }
+  main .product_container .inquiry .inquiry_list ul {
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=product_m.css.map */
