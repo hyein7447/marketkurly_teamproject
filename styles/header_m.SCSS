@@ -93,6 +93,23 @@
                         font-weight: 600;
                     }
                 }
+                .delivery {
+                    height: 32px; text-align: center;
+                    padding: 6px 16px;
+                    border-radius: 18px;
+                    border: 1px solid #E7E7E7;
+                    span {    
+                        font-size: 0.813rem; line-height: 16px;
+                        letter-spacing: -0.32px;
+                        font-weight: 500; display: block;
+                        white-space: nowrap;
+                        em {
+                            color: #5F0080; font-size: 0.813rem; line-height: 16px;
+                            letter-spacing: -0.32px;
+                            font-weight: 500;
+                        }
+                    }
+                }
             }
             .btm_menu {
                 @include flex-row-btw-ct;

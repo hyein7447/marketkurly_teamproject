@@ -134,7 +134,7 @@ function handleResize() {
     const windowWidth = window.innerWidth;
 
     // 조건 확인
-    if (windowWidth <= 820) {
+    if (windowWidth <= 1582) {
         applyFunction(); // 조건이 만족하면 함수 호출
     }else {
         applyFunction2()

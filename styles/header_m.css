@@ -101,6 +101,28 @@
     color: #5F0080;
     font-weight: 600;
   }
+  header .m_header .menu .delivery {
+    height: 32px;
+    text-align: center;
+    padding: 6px 16px;
+    border-radius: 18px;
+    border: 1px solid #E7E7E7;
+  }
+  header .m_header .menu .delivery span {
+    font-size: 0.813rem;
+    line-height: 16px;
+    letter-spacing: -0.32px;
+    font-weight: 500;
+    display: block;
+    white-space: nowrap;
+  }
+  header .m_header .menu .delivery span em {
+    color: #5F0080;
+    font-size: 0.813rem;
+    line-height: 16px;
+    letter-spacing: -0.32px;
+    font-weight: 500;
+  }
   header .m_header .btm_menu {
     display: flex;
     flex-flow: row nowrap;

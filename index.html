@@ -9,6 +9,8 @@
     <link rel="icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
     <!-- styles -->
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/header_m.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/index_m.css">
     <!-- font-family -->
@@ -24,7 +26,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <?php include("header.php"); ?>
     <main>
         <section class="main_bnr">
             <div class="swiper-container" id="main_bnr_slide">
@@ -1235,6 +1236,7 @@
     <?php include("footer.php"); ?>
     <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="./script/header.js"></script>
     <script>
         // 메인 배너 슬라이드
         const main_bnr_swiper = new Swiper('#main_bnr_slide',{
@@ -1258,6 +1260,32 @@
                 nextEl: "#ranking_next_btn",
                 prevEl: "#ranking_prev_btn",
             },
+            breakpoints: {
+                // 윈도우 화면 너비가 1280 이상일 때(min-width 기준)
+                1280: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 840 이상일 때
+                840: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 430 이상일 때
+                430: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 320 이상일 때
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                }
+            }
         })
         const ranking_next_btn = document.querySelector('#ranking_next_btn')
         const ranking_prev_btn = document.querySelector('#ranking_prev_btn')
@@ -1305,6 +1333,33 @@
                 prevEl: "#md_prev_btn",
                 nextEl: "#md_next_btn",
             },
+            breakpoints: {
+                // 윈도우 화면 너비가 1280 이상일 때(min-width 기준)
+                1280: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 840 이상일 때
+                840: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 430 이상일 때
+                430: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 320 이상일 때
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                }
+            }
+            
         })
         const md_prev_btn = document.querySelector('#md_prev_btn')
         const md_next_btn = document.querySelector('#md_next_btn')
@@ -1344,6 +1399,32 @@
                 prevEl: "#original_prev_btn",
                 nextEl: "#original_next_btn",
             },
+            breakpoints: {
+                // 윈도우 화면 너비가 1280 이상일 때(min-width 기준)
+                1280: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 840 이상일 때
+                840: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 430 이상일 때
+                430: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 320 이상일 때
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                }
+            }
         })
         const original_prev_btn = document.querySelector('#original_prev_btn')
         const original_next_btn = document.querySelector('#original_next_btn')
@@ -1391,6 +1472,32 @@
                 nextEl: "#present_next_btn",
                 prevEl: "#present_prev_btn",
             },
+            breakpoints: {
+                // 윈도우 화면 너비가 1280 이상일 때(min-width 기준)
+                1280: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 840 이상일 때
+                840: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 430 이상일 때
+                430: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 320 이상일 때
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                }
+            }
         })
         const present_next_btn = document.querySelector('#present_next_btn')
         const present_prev_btn = document.querySelector('#present_prev_btn')
@@ -1438,6 +1545,32 @@
                 prevEl: "#recipe_prev_btn",
                 nextEl: "#recipe_next_btn",
             },
+            breakpoints: {
+                // 윈도우 화면 너비가 1280 이상일 때(min-width 기준)
+                1280: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 840 이상일 때
+                840: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 430 이상일 때
+                430: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 320 이상일 때
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                }
+            },
         })
         const recipe_prev_btn = document.querySelector('#recipe_prev_btn')
         const recipe_next_btn = document.querySelector('#recipe_next_btn')
@@ -1476,6 +1609,32 @@
             navigation:{
                 nextEl: "#instagram_next_btn",
                 prevEl: "#instagram_prev_btn",
+            },
+            breakpoints: {
+                // 윈도우 화면 너비가 1280 이상일 때(min-width 기준)
+                1280: {
+                    slidesPerView: 6,
+                    spaceBetween: 5,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 840 이상일 때
+                840: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 430 이상일 때
+                430: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 320 이상일 때
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                }
             },
         })
         const instagram_next_btn = document.querySelector('#instagram_next_btn')
