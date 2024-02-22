@@ -14,11 +14,7 @@
     header {
         padding: 0;
         .m_header {
-            display: block;
-            .lnb_bg {display: none;}
-            .m_nav {display: none;}
-            .user_search {display: none;}
-    
+            display: block;    
             .top {
                 min-height: 44px;
                 background-color: $purple;
@@ -79,6 +75,7 @@
                 }
             }
             .menu {
+                position: relative;
                 height: 44px;
                 padding: 0 16px;
                 width: 100%;
@@ -117,6 +114,9 @@
             }
             .m_nav {
                 .gnb_bg {
+                    position: absolute;
+                    top: 0;
+                    background-color: #fff;
                     .gnb_wrap {
                         .gnb_header {
                             min-height: 44px;
@@ -237,6 +237,10 @@
                 }
             }
             .user_search {
+                position: absolute;
+                top: 0;
+                background-color: #fff;
+                width: 100%;
                 .search_header {
                     min-height: 44px;
                     background-color: $purple;
@@ -272,6 +276,7 @@
                     padding: 10px 16px;
                     width: 100%;
                     height: 62px;
+                    position: relative;
                     .search_box {
                         height: 42px;
                         background-color: $c-244;
@@ -302,8 +307,101 @@
                         font-weight: 600;
                         padding-top: 9px;
                     }
+                    .tag {
+                        display: flex;
+                        flex-flow: wrap;
+                        width: calc(100% + 8px);
+                        padding-top: 17px;
+                        background-color: #fff;
+                        a {
+                            margin: 0px 8px 12px 0px;
+                            padding: 9px 15px 9px 14px;
+                            height: 36px;
+                            font-size: $px14;
+                            line-height: 18px;
+                            background-color: #FAF3FF;
+                            color: #8D4CC6;
+                            border-radius: 18px;
+                        }
+                    }
+                    a {
+                        span {
+                            display: flex;
+                            align-items: center;
+                            font-weight: 600;
+                            padding-top: 9px;
+                            img {
+                                margin-left: 5px;
+                            }
+                        }
+                        .desc {
+                            display: block;
+                            font-size: $px12;
+                            font-weight: 400;
+                            padding-top: 5px;
+                            color: #999;
+                        }
+                    }
+                    .keyword_open {
+                        border: 1px solid $c-51;
+                        position: absolute;
+                        display: flex;
+                        align-items: flex-start;
+                        padding: 12px;
+                        justify-content: space-between;
+                        width: 225px;
+                        height: 56px;
+                        bottom: -220px;
+                        left: 16px;
+                        z-index: 20;
+                        border-radius: 4px;
+                        background-color: #fff;
+                        
+                        line-height: 16px;
+                        span {
+                            font-size: $px12;
+                        }
+                        a {
+                            transform: scaleY(0.7);
+                            position: relative;
+                            top: -1px;
+                        }
+                    }
+                    ul {
+                        display: flex;
+                        flex-flow: wrap;
+                        padding-top: 11px;
+                        background-color: fff;
+                        li {
+                            width: 100%;
+                            height: 48px;
+                            display: flex;
+                            flex-flow: row nowrap;
+                            align-items: center;
+                            border-bottom: 1px solid $c-244;
+                            span {
+                                width: 20px;
+                                margin-right: 10px;
+                                text-align: center;
+                                font-weight: 500;
+                                font-size: $px16;
+                                color: #8D4CC6;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
+}
+
+
+// js 호출용
+
+.open_toggle {
+    display: block !important;
+}
+
+.open_toggle2 {
+    display: flex !important;
 }

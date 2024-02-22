@@ -319,6 +319,10 @@
                             width: 100%;
                             font-size: $px14;
                             padding: 12px 16px;
+                            background-color: #fff;
+                            &:hover {
+                                background-color: $c-250;
+                            }
                         }
                     }
                 }
@@ -1000,14 +1004,25 @@
                                 display: flex;
                                 align-items: center;
                                 span {}
-                                #birth_day {
-                                    padding: 0 11px 1px 15px;
-                                    border: 1px solid $c-221;
-                                    color: $c-51;
-                                    border-radius: 4px;
-                                    height: 46px;
-                                    width: 402px;
-                                    overflow: hidden;
+                                .birth_input {
+                                    display: flex;
+                                    flex-flow: column;
+                                    #birth_day {
+                                        padding: 0 11px 1px 15px;
+                                        border: 1px solid $c-221;
+                                        color: $c-51;
+                                        border-radius: 4px;
+                                        height: 46px;
+                                        width: 402px;
+                                        overflow: hidden;
+                                    }
+                                    .birth_error {
+                                        display: block;
+                                        color: #F03F40;
+                                        font-size: $px10;
+                                        margin-top: 3px;
+                                        margin-left: 4px;
+                                    }
                                 }
                             }
                             .user_gender {
@@ -1296,15 +1311,12 @@
                                     }
                                 }
                                 .btn_bg {
-
                                     background-color: $c-250;
                                     border: 1px solid $c-238;
                                     border-top: 0;
                                     padding: 44px 36px;
                                     @include flex-row-ct-ct;
-                                    position: absolute;
-                                    bottom: 0;
-                                    left: 0;
+                                    position: relative !important;
                                     width: 100%;
                                     height: 150px;
                                     z-index: 99;
@@ -1314,7 +1326,6 @@
                                         align-items: center;
                                         margin-right: 20px;
                                         cursor: pointer;
-                                        position: absolute;
                                         top: 50%;
                                         left: 37%;
                                         opacity: 1;
@@ -1335,7 +1346,6 @@
                                         display: flex;
                                         align-items: center;
                                         margin-left: 20px;
-                                        position: absolute;
                                         top: 50%;
                                         right: 37%;
                                         width: 120px;
@@ -1685,6 +1695,9 @@
 .color_active {
     color: $purple;
     font-weight: 600;
+}
+.color_active2 {
+    color: $purple !important;
 }
 
 .pop_up_active{

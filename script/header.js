@@ -11,7 +11,6 @@ const map_icon = document.querySelector('.map_icon')
 const wish = document.querySelector('.wish')
 const cart = document.querySelector('.cart')
 const gnb_menu = document.querySelectorAll('.theme li > a')
-console.log(lnb, gnb_li, gnb_icon[0].firstElementChild,menu,map_icon.firstElementChild)
 
 // 초기 gnb 가리기
 gnb.style.display ='none'
@@ -128,4 +127,45 @@ gnb_menu.forEach((t,i)=>{
     t.addEventListener('mouseout',()=>{
         gnb_menu[i].classList.remove('lnb_active')
     })
+})
+
+
+// 모바일 header JS
+
+//bottom 메뉴 클릭시 해당 페이지 출력
+
+const btm_menu = document.querySelectorAll('.btm_menu a')
+const m_nav = document.querySelector('.m_nav')
+const user_search = document.querySelector('.m_header .user_search')
+const lnb_bg = document.querySelectorAll('.m_nav .lnb_bg')
+const m_gnb_bg = document.querySelector('.m_nav .gnb_bg')
+const m_gnb_li = document.querySelectorAll('.m_nav .gnb > li')
+const help_icon = document.querySelector('.search_bg > a')
+const keyword_open = document.querySelector('.keyword_open')
+console.log(btm_menu,m_nav,user_search,lnb_bg,gnb_bg,m_gnb_li,help_icon)
+
+// 초기 메뉴 가리기
+user_search.style.display = 'none'
+m_gnb_bg.style.display = 'none'
+for(let l of lnb_bg){l.style.display= 'none'}
+keyword_open.style.display = 'none'
+
+btm_menu[1].addEventListener('click',()=>{
+    m_gnb_bg.style.display = 'block'
+    user_search.style.display ='none'
+})
+
+m_gnb_li.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        lnb_bg[i].classList.toggle('open_toggle')
+    })
+})
+btm_menu[2].addEventListener('click',()=>{
+    user_search.style.display = 'block'
+    m_gnb_bg.style.display = 'none'
+})
+
+help_icon.addEventListener('click',(e)=>{
+    keyword_open.classList.toggle('open_toggle2')
+    event.preventDefault();
 })

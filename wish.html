@@ -277,6 +277,9 @@
                                     <button type="button" class="delete_btn">삭제</button>
                                     <button type="button" class="cart_btn"><img src="./images/main/icon/icon_cart_on.svg" alt="장바구니 담기">담기</button>
                                 </div>
+                                <div class="cart_pop">
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -314,7 +317,7 @@
                                 <p><span>김혜인</span></p>
                                 <p><span>010-0000-0000</span></p>
                                 <p><em>샛별배송</em></p>
-                                <a href="./wish_address_popup.html" target="_blank" class="change_icon"><i class="fa-solid fa-pen"></i></a>
+                                <a href="#" class="change_icon"><i class="fa-solid fa-pen"></i></a>
                             </div>
                         </div>
                     </div>
@@ -419,8 +422,10 @@
                                     <legend class="skip">나의컬리스타일</legend>
                                     <div class="user_birth">
                                         <span>출생년도</span>
-                                        <input type="text" id="birth_day" maxlength="4" placeholder="출생년도를 입력해주세요">
-                                        <span class="birth_error"></span>
+                                        <span class="birth_input">
+                                            <input type="text" id="birth_day" maxlength="4" placeholder="출생년도를 입력해주세요">
+                                            <span class="birth_error"></span>
+                                        </span>
                                     </div>
                                     <div class="user_gender">
                                         <span>성별</span>
@@ -725,8 +730,10 @@
             </div>
         </div>
     </div>
+    <?php include("footer.php"); ?>
     <script>
         const proflie_swiper = new Swiper('#content_box_bg',{
+            autoHeight: true,
             slidesPerView: 1,
             spaceBetween: 10,
             navigation:{

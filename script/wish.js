@@ -136,6 +136,14 @@ reset_btn.addEventListener('click',()=>{
     del_popup_bg.style.display = 'none'
 })
 
+// 배송관리 수정 아이콘 클릭시 새창열림
+const change_icon = document.querySelector('.list .change_icon')
+
+change_icon.addEventListener('click',()=>{
+    window.open('wish_address_popup.html','popup','width=530,height=569')
+})
+
+
 //상품 후기 작성가능/작성한 메뉴 탭 클릭시 내용 출력
 
 const reivew_tab = document.querySelectorAll('.reivew_tab a')
@@ -193,12 +201,20 @@ const birth_error = document.querySelector('.birth_error')
 const gender_male = document.querySelector('#gender_male')
 const user_gender = document.querySelectorAll('.user_gender a')
 const proflie = document.querySelector('.proflie .title')
-const proflie_c = document.querySelector('.proflie .content_bg')
-const content_box = document.querySelectorAll('.content_box .content')
-const prev_btn = document.querySelector ('.proflie .prev_btn')
-const next_btn = document.querySelector ('.proflie .next_btn')
-const choice_item = document.querySelectorAll('#content_box .item')
-console.log(user_gender,proflie,proflie_c,content_box,choice_item)
+const proflie_c = document.querySelector('.proflie #content_box_bg')
+const content1_item = document.querySelectorAll('.content1 .item')
+const content1_item_skin_type = document.querySelectorAll('.content1 .skin_type')
+const content1_item_type_desc = document.querySelectorAll('.content1 .type_desc')
+const content2_item_skin_type = document.querySelectorAll('.content2 .skin_type')
+const content2_item_type_desc = document.querySelectorAll('.content2 .type_desc')
+const content2_item = document.querySelectorAll('.content2 .item')
+const content3_item = document.querySelectorAll('.content3 .choice a')
+const content4_item = document.querySelectorAll('.content4 .item')
+const content4_item_type = document.querySelectorAll('.content4 .choice .item .type ')
+const content4_item_type_desc = document.querySelectorAll('.content4 .choice .item .type_desc ')
+const content5_item = document.querySelectorAll('.content5 .choice a')
+const content6_item = document.querySelectorAll('.content6 .choice a')
+console.log(content4_item_type)
 let num = /^\d+$/
 
 birth_input.addEventListener('input',()=>{
@@ -217,14 +233,78 @@ user_gender.forEach((t,i)=>{
         event.preventDefault();
     })
 })
-// 피부타입 선택시 active 활성화
 
+//뷰티 프로필 팝업 숨김 / 출력
 
-// // proflie_c.style.display = 'none'
-// for(let c of content_box){c.style.display='none'}
-// content_box[0].style.display = 'block'
+proflie_c.style.display = 'none'
 
-/* proflie.addEventListener('click',(e)=>{
+proflie.addEventListener('click',(e)=>{
     proflie_c.classList.toggle('open_toggle')
     event.preventDefault();
-}) */
+})
+
+content1_item.forEach((t,i)=>{
+    t.addEventListener('click',(e)=>{
+        for(let a of content1_item){a.classList.remove('gender_active')}
+        content1_item[i].classList.add('gender_active')
+        
+        for(let j of content1_item_skin_type){j.classList.remove('color_active2')}
+        content1_item_skin_type[i].classList.add('color_active2')
+        
+        for(let l of content1_item_type_desc){l.classList.remove('color_active2')}
+        content1_item_type_desc[i].classList.add('color_active2')
+        
+        event.preventDefault();
+    })
+})
+
+content2_item.forEach((t,i)=>{
+    t.addEventListener('click',(e)=>{
+        for(let a of content2_item){a.classList.remove('gender_active')}
+        content2_item[i].classList.add('gender_active')
+        
+        for(let j of content2_item_skin_type){j.classList.remove('color_active2')}
+        content2_item_skin_type[i].classList.add('color_active2')
+        
+        for(let l of content2_item_type_desc){l.classList.remove('color_active2')}
+        content2_item_type_desc[i].classList.add('color_active2')
+
+        event.preventDefault();
+    })
+})
+
+content3_item.forEach((t,i)=>{
+    t.addEventListener('click',(e)=>{
+        content3_item[i].classList.add('gender_active')
+        event.preventDefault();
+    })
+})
+
+content4_item.forEach((t,i)=>{
+    t.addEventListener('click',(e)=>{
+        for(let a of content4_item){a.classList.remove('gender_active')}
+        content4_item[i].classList.add('gender_active')
+
+        for(let b of content4_item_type){b.classList.remove('color_active2')}
+        content4_item_type[i].classList.add('color_active2')
+
+        for(let c of content4_item_type_desc){c.classList.remove('color_active2')}
+        content4_item_type_desc[i].classList.add('color_active2')
+
+        event.preventDefault();
+    })
+})
+
+content5_item.forEach((t,i)=>{
+    t.addEventListener('click',(e)=>{
+        content5_item[i].classList.add('gender_active')
+        event.preventDefault();
+    })
+})
+
+content6_item.forEach((t,i)=>{
+    t.addEventListener('click',(e)=>{
+        content6_item[i].classList.add('gender_active')
+        event.preventDefault();
+    })
+})

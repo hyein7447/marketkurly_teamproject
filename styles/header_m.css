@@ -15,15 +15,6 @@
   header .m_header {
     display: block;
   }
-  header .m_header .lnb_bg {
-    display: none;
-  }
-  header .m_header .m_nav {
-    display: none;
-  }
-  header .m_header .user_search {
-    display: none;
-  }
   header .m_header .top {
     min-height: 44px;
     background-color: #5F0080;
@@ -89,6 +80,7 @@
     width: 30px;
   }
   header .m_header .menu {
+    position: relative;
     height: 44px;
     padding: 0 16px;
     width: 100%;
@@ -126,6 +118,11 @@
     width: calc(25% - 18px);
     display: flex;
     justify-content: center;
+  }
+  header .m_header .m_nav .gnb_bg {
+    position: absolute;
+    top: 0;
+    background-color: #fff;
   }
   header .m_header .m_nav .gnb_bg .gnb_wrap .gnb_header {
     min-height: 44px;
@@ -243,6 +240,12 @@
     padding: 10px;
     display: block;
   }
+  header .m_header .user_search {
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+  }
   header .m_header .user_search .search_header {
     min-height: 44px;
     background-color: #5F0080;
@@ -285,6 +288,7 @@
     padding: 10px 16px;
     width: 100%;
     height: 62px;
+    position: relative;
   }
   header .m_header .user_search .search_bg .search_box {
     height: 42px;
@@ -322,4 +326,90 @@
     font-weight: 600;
     padding-top: 9px;
   }
+  header .m_header .user_search .search_bg .tag {
+    display: flex;
+    flex-flow: wrap;
+    width: calc(100% + 8px);
+    padding-top: 17px;
+    background-color: #fff;
+  }
+  header .m_header .user_search .search_bg .tag a {
+    margin: 0px 8px 12px 0px;
+    padding: 9px 15px 9px 14px;
+    height: 36px;
+    font-size: 1rem;
+    line-height: 18px;
+    background-color: #FAF3FF;
+    color: #8D4CC6;
+    border-radius: 18px;
+  }
+  header .m_header .user_search .search_bg a span {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding-top: 9px;
+  }
+  header .m_header .user_search .search_bg a span img {
+    margin-left: 5px;
+  }
+  header .m_header .user_search .search_bg a .desc {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding-top: 5px;
+    color: #999;
+  }
+  header .m_header .user_search .search_bg .keyword_open {
+    border: 1px solid #333;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    padding: 12px;
+    justify-content: space-between;
+    width: 225px;
+    height: 56px;
+    bottom: -220px;
+    left: 16px;
+    z-index: 20;
+    border-radius: 4px;
+    background-color: #fff;
+    line-height: 16px;
+  }
+  header .m_header .user_search .search_bg .keyword_open span {
+    font-size: 0.875rem;
+  }
+  header .m_header .user_search .search_bg .keyword_open a {
+    transform: scaleY(0.7);
+    position: relative;
+    top: -1px;
+  }
+  header .m_header .user_search .search_bg ul {
+    display: flex;
+    flex-flow: wrap;
+    padding-top: 11px;
+    background-color: fff;
+  }
+  header .m_header .user_search .search_bg ul li {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-bottom: 1px solid #f4f4f4;
+  }
+  header .m_header .user_search .search_bg ul li span {
+    width: 20px;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: #8D4CC6;
+  }
+}
+.open_toggle {
+  display: block !important;
+}
+
+.open_toggle2 {
+  display: flex !important;
 }/*# sourceMappingURL=header_m.css.map */

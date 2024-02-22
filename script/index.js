@@ -109,9 +109,7 @@ tag.forEach((t,i)=>{
     })
 })
 
-
 // aside 스크롤시 가운데 위치
-
 const aside_bg = document.querySelector('.aside_bg')
 
 window.addEventListener('scroll',()=>{
@@ -123,3 +121,23 @@ window.addEventListener('scroll',()=>{
         aside_bg.classList.remove('position')
     }
 })
+
+// max-width 820일 때 aside_bg 숨김
+function applyFunction() {
+    aside_bg.style.display = 'none';
+}
+function applyFunction2() {
+    aside_bg.style.display = 'block';
+}
+
+function handleResize() {
+    const windowWidth = window.innerWidth;
+
+    // 조건 확인
+    if (windowWidth <= 820) {
+        applyFunction(); // 조건이 만족하면 함수 호출
+    }else {
+        applyFunction2()
+    }
+}
+window.addEventListener('resize', handleResize);
