@@ -637,6 +637,7 @@
                 width: 100%;
                 @include flex-col-end;
                 .bg_wh {
+                    animation: slide_up 0.6s ease-in-out;
                     position: sticky;
                     top:100vh;
                     z-index: 500;
@@ -685,6 +686,10 @@
                         }
                     }
                     .info {
+                        max-height: 45vh;
+                        overflow-y: scroll;
+                        -ms-overflow-style: none; /* IE and Edge */
+                        scrollbar-width: none; /* Firefox */
                         width: 100%;
                         background-color: #fff;
                         .cart_box {
@@ -1011,22 +1016,9 @@
         }
     }
 }
-// a {
-    //     @include flex-col-ct-ct;
-    //     text-align: center;
-    //     width: 84px;
-    //     min-width: 76px;
-    //     padding: 8px 0px 12px;
-    //     white-space: nowrap;
-    //     img {
-    //         width: 72px;
-    //         height: 72px;
-    //         margin-bottom: 8px;
-    //         padding: 4px;
-    //     }
-    //     span {
-    //         font-size: $px13;
-    //         font-weight: 400;
-    //         letter-spacing: -0.02rem;
-    //     }
-    // }
+// 슬라이드용 애니메이션
+// animation: slide_up 0.6s ease-in-out;
+@keyframes slide_up {
+    0% {opacity: 0; transform: translateY(100%);}
+    100% {opacity: 1; transform: translateY(0);}
+}

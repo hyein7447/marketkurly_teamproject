@@ -29,6 +29,7 @@ main .join .box_wrap_info em {
 }
 main .join form .wrap {
   padding-top: 30px;
+  padding-bottom: 10px;
 }
 main .join form .wrap li {
   padding: 10px 20px;
@@ -48,7 +49,7 @@ main .join form .wrap li .title em {
   color: #f03f40;
 }
 main .join form .wrap li .sub_area {
-  width: 78%;
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
@@ -71,10 +72,9 @@ main .join form .wrap li .sub_area .input_area .gender_male, main .join form .wr
   display: inline-block;
 }
 main .join form .wrap li .sub_area .input_area .error_m {
-  display: inline-block;
   color: #f03f40;
-  font-size: 0.875rem;
-  margin: 10px 0;
+  font-size: 0.813rem;
+  margin-top: 10px;
 }
 main .join form .wrap li .sub_area .btn_area {
   width: 22%;
@@ -133,24 +133,6 @@ main .join form .wrap li .sub_area .event input[type=radio]:checked {
   width: 24px;
   height: 24px;
   background-image: url("../images/sub/icon_circle_on.svg");
-}
-main .join form .wrap li .sub_area .hiden_tab1 span {
-  font-size: 0.875rem;
-  margin-top: 12px;
-}
-main .join form .wrap li .sub_area .hiden_tab1 .btn_area {
-  width: 150px;
-  height: 44px;
-}
-main .join form .wrap li .sub_area .hiden_tab2 {
-  display: none;
-}
-main .join form .wrap li .sub_area .hiden_tab2 span:first-child {
-  margin-top: 10px;
-}
-main .join form .wrap li .sub_area .hiden_tab2 span {
-  font-size: 0.875rem;
-  display: inline-block;
 }
 main .join form .wrap li .sub_area .gender {
   display: flex;
@@ -218,6 +200,47 @@ main .join form .wrap li .sub_area .btn_search + span {
   display: inline-block;
   margin-top: 10px;
   font-size: 0.875rem;
+}
+main .join form .wrap .hiden_tab_area {
+  padding: 0px 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+main .join form .wrap .hiden_tab_area .sub_area {
+  width: 82%;
+}
+main .join form .wrap .hiden_tab_area .sub_area .hiden_tab1 {
+  height: 100px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+main .join form .wrap .hiden_tab_area .sub_area .hiden_tab1 span {
+  font-size: 0.875rem;
+  margin-top: 12px;
+}
+main .join form .wrap .hiden_tab_area .sub_area .hiden_tab1 .btn_area {
+  width: 150px;
+  height: 44px;
+}
+main .join form .wrap .hiden_tab_area .sub_area .hiden_tab2 {
+  width: 82%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+main .join form .wrap .hiden_tab_area .sub_area .hiden_tab2 input {
+  margin-bottom: 10px;
+}
+main .join form .wrap .hiden_tab_area .sub_area .hiden_tab2 span {
+  font-size: 0.875rem;
+  display: inline-block;
+  margin-top: 4px;
+}
+main .join form .wrap .hiden_tab_area .sub_area .hiden_tab2 span:last-child {
+  margin-bottom: 40px;
 }
 main .join form .terms {
   padding: 10px 0px 10px 20px;
@@ -339,6 +362,10 @@ main .join form .terms li .agree_area .receive span {
 main .join form .terms li .agree_area .receive span img {
   transform: translateY(3px);
 }
+main .join form .terms li .agree_area .receive p {
+  color: #5F0080;
+  letter-spacing: -0.04rem;
+}
 main .join #btn_join {
   width: 76%;
   float: right;
@@ -364,8 +391,9 @@ main .tab_terms1, main .tab_terms2, main .tab_terms3 {
 }
 main .tab_terms1 .tab_box, main .tab_terms2 .tab_box, main .tab_terms3 .tab_box {
   background-color: #fff;
-  width: 440px;
+  width: 100%;
   border-radius: 10px;
+  margin: 0 30px;
 }
 main .tab_terms1 .tab_box h2, main .tab_terms2 .tab_box h2, main .tab_terms3 .tab_box h2 {
   display: block;
@@ -412,7 +440,7 @@ main .tab_terms2 .tab_box h2, main .tab_terms3 .tab_box h2 {
   display: block;
   padding: 30px 30px 24px;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 main .tab_terms2 .tab_box .contents, main .tab_terms3 .tab_box .contents {
   text-align: left;
@@ -433,10 +461,10 @@ main .tab_terms2 .tab_box .contents table thead, main .tab_terms3 .tab_box .cont
   width: 100%;
 }
 main .tab_terms2 .tab_box .contents table thead tr th:nth-child(1), main .tab_terms3 .tab_box .contents table thead tr th:nth-child(1) {
-  width: 180px;
+  width: 170px;
 }
 main .tab_terms2 .tab_box .contents table thead tr th:nth-child(2), main .tab_terms2 .tab_box .contents table thead tr th:nth-child(3), main .tab_terms3 .tab_box .contents table thead tr th:nth-child(2), main .tab_terms3 .tab_box .contents table thead tr th:nth-child(3) {
-  width: 90px;
+  width: 86px;
 }
 main .tab_terms2 .tab_box .contents table thead tr th, main .tab_terms3 .tab_box .contents table thead tr th {
   font-weight: 600;
@@ -464,11 +492,11 @@ main .tab_terms2 .tab_box .contents table tbody tr td, main .tab_terms3 .tab_box
   line-height: 19px;
 }
 main .tab_terms2 .tab_box .contents table tbody tr td em, main .tab_terms3 .tab_box .contents table tbody tr td em {
-  font-size: 0.875rem;
+  font-size: 0.813rem;
   font-weight: 600;
 }
 main .tab_terms2 .tab_box .contents table tbody tr td strong, main .tab_terms3 .tab_box .contents table tbody tr td strong {
-  font-size: 1.063rem;
+  font-size: 0.813rem;
   text-decoration: underline;
   font-weight: 600;
 }
@@ -478,12 +506,12 @@ main .tab_terms2 .tab_box .contents table strong, main .tab_terms3 .tab_box .con
   padding-bottom: 8px;
 }
 main .tab_terms2 .tab_box .contents table span, main .tab_terms3 .tab_box .contents table span {
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 main .tab_terms2 .tab_box .contents p, main .tab_terms3 .tab_box .contents p {
   padding: 10px 5px;
   color: #999;
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 main .tab_terms2 .tab_box .btn_ok, main .tab_terms3 .tab_box .btn_ok {
   display: block;
@@ -517,10 +545,15 @@ main .tab_terms2 .tab_box .btn_ok, main .tab_terms3 .tab_box .btn_ok {
     font-size: 0.813rem;
   }
   main .join form .wrap li .sub_area .input_area.date {
-    padding: 0;
+    height: 50px;
   }
   main .join form .wrap li .sub_area .input_area.date input {
     width: 30%;
+  }
+  main .join form .wrap li .sub_area .input_area.date .error_m {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
   }
   main .join form .wrap li .sub_area .input_area input::-moz-placeholder {
     font-size: 0.813rem;
@@ -551,7 +584,7 @@ main .tab_terms2 .tab_box .btn_ok, main .tab_terms3 .tab_box .btn_ok {
     padding: 0px 15px;
   }
   main .join form .wrap li .sub_area .input_area .error_m {
-    font-size: 0.813rem;
+    font-size: 0.688rem;
   }
   main .join form .wrap li .sub_area .input_area .btn_search + span {
     font-size: 0.75rem;
@@ -679,6 +712,28 @@ main .tab_terms2 .tab_box .btn_ok, main .tab_terms3 .tab_box .btn_ok {
   }
   main .join form .wrap li .sub_area .event label[class*=event] {
     font-size: 0.813rem;
+  }
+  main .join form .wrap .hiden_tab_area {
+    padding: 5px 0 0 0px;
+    width: 100%;
+  }
+  main .join form .wrap .hiden_tab_area .sub_area {
+    width: 100%;
+  }
+  main .join form .wrap .hiden_tab_area .sub_area .hiden_tab1 {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+  main .join form .wrap .hiden_tab_area .sub_area .hiden_tab1 span {
+    font-size: 0.688rem;
+  }
+  main .join form .wrap .hiden_tab_area .sub_area .hiden_tab2 {
+    width: 100%;
+  }
+  main .join form .wrap .hiden_tab_area .sub_area .hiden_tab2 span {
+    font-size: 0.688rem;
   }
   main .join form .terms {
     border-top: 4px solid #eeeeee;

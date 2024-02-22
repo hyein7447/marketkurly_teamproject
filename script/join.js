@@ -5,11 +5,9 @@ const user_pw_rechk = document.querySelector('#user_pw_rechk')
 const user_name_rechk = document.querySelector('#user_name_rechk')
 const user_number = document.querySelector('#user_number')
 const user_mail = document.querySelector('#user_mail')
-const event_friend = document.querySelector('.friend')
-const event_name = document.querySelector('.event_name')
-const event_sub_friend = document.querySelector('.sub_area .hiden_tab1')
-const event_sub_name = document.querySelector('.sub_area .hiden_tab2')
-const terms_all = document.querySelector('.agree_all')
+const terms_all = document.querySelector('#agree_all')
+const terms_list = document.querySelectorAll('input[type=checkbox]')
+const user_date = document.querySelectorAll('input[id*=date]')
 // 에러메세지
 const error_messages = document.querySelectorAll('.input_area span')
 // 버튼들
@@ -18,11 +16,173 @@ const btn_id_overlap = document.querySelector('.btn_id_overlap')
 const btn_id_overlap2 = document.querySelector('.btn_id_overlap2')
 const btn_phone = document.querySelector('.btn_phone')
 // 약관보기 탭
-const agree_view = document.querySelectorAll('.agree_view strong')
-
+const agree_view = document.querySelectorAll('.agree_view > strong')
+const tab_terms = document.querySelectorAll('[class*=tab_terms]')
+const btn_ok = document.querySelectorAll('.btn_ok')
 // 추가입력사항 (탭처리 필요)
+const event_btn = document.querySelectorAll('.event > .event_area')
+const hiden_tab = document.querySelectorAll('.hiden_tab')
+const event_friend = document.querySelector('#friend')
+const event_name = document.querySelector('#event_name')
+const hiden_tab01 = document.querySelector('.hiden_tab01')
+const hiden_tab02 = document.querySelector('.hiden_tab02')
+console.log(terms_list,user_date)
+/* ---------------------- 구분선 -------------------------- */
+// 약관보기 팝업 호출용
+let agree_view_hide = ()=>{for(let h of tab_terms){h.style.display = 'none'}}
+// 약관보기 팝업
+agree_view.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        agree_view_hide()
+        tab_terms[i].style.display = 'flex';
+        btn_ok[i].addEventListener('click',()=>{agree_view_hide()}) /* ☆☆이벤트 안에 이벤트 가능한지 */
+    })
+})
+/* ---------------------- 구분선 -------------------------- */
+// 아이디 호출용
+function id_regular(userId) {
+    // 정규 표현식 6~16자 영문 또는 영문과 숫자 조합
+    let en_num = /^[a-zA-Z0-9]{6,16}$/;
+    return en_num.test(userId);
+}
+// 비밀번호 호출용
+function pw_regular(userPw) {
+    // 최소 10자 이상 입력
+    return userPw.length >= 10;
+}
+// 이메일 호출용
+function mail_regular(userMail) {
+    // 일반 이메일 주소 체크 특수문자 + 영문 + 숫자
+    let m_address = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+    return m_address.test(userMail);
+}
+// 생년월일 호출용
+function date_regular(userDate) {
+    // 숫자만 사용가능
+    let date_num = /^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])+$/;
+    return date_num.test(userDate);
+}
+// 아이디 입력 이벤트 처리
+const result_id = id_regular(user_id.value);
+user_id.addEventListener('input', () => {
+    if (result_id) {// 유효한 경우 에러 메시지 삭제
+        error_messages[0].innerHTML = '';
+    } else {// 유효하지 않은 경우 에러 메시지 표시
+        error_messages[0].innerHTML = '6자 이상 16자 이하의 영문 혹은 영문과 숫자를 조합';
+    }
+});
+// 비밀번호 입력 이벤트 처리
+const result_pw = pw_regular(user_pw.value);
+user_pw.addEventListener('input', () => {
+    if (result_pw) {
+        error_messages[1].innerHTML = '';
+    } else {
+        error_messages[1].innerHTML = '최소 10자 이상 입력';
+    }
+});
+// 이메일 입력 이벤트 처리
+const result_mail = mail_regular(user_mail.value);
+user_mail.addEventListener('input', () => {
+    if (result_mail) {
+        error_messages[4].innerHTML = '';
+    } else {
+        error_messages[4].innerHTML = '이메일 형식으로 입력해 주세요.';
+    }
+});
+// 생년월일 입력 이벤트 처리
+for (let i = 0; i < user_date.length; i++) {
+    const date = user_date[i];
+    // 입력 시마다 유효성 검사
+    date.addEventListener('input', () => {
+        const result_date = date_regular(user_date.value);
+        // 오류 메시지 표시/숨김
+        if (result_date) {
+            error_messages[7].innerHTML = '';
+        } else {
+            error_messages[7].innerHTML = '태어난 년도 4자리를 정확하게 입력해주세요.';
+        }
+    });
+}
+/* const result_date = date_regular(user_date.value);
+for (let i of user_date) {
+    i.addEventListener('input', () => {
+        if (result_date) {
+        // 유효한 경우 에러 메시지 삭제
+        error_messages[7].innerHTML = '';
+        } else {
+        // 유효하지 않은 경우 에러 메시지 표시
+        error_messages[7].innerHTML = '태어난 년도 4자리를 정확하게 입력해주세요.';
+        }
+    });
+} */
+/* ---------------------- 구분선 -------------------------- */
+// 이용약관 동의 - 전체동의 클릭시 전체 클릭 활성화
+// 연습)방법1
+/* terms_all.addEventListener('click',()=>{
+    for(let i of terms_list){
+        i.checked = terms_all.checked
+    }
+}) */
+// 연습)방법2
+terms_all.addEventListener('click',()=>{
+    if (terms_all.checked){
+        for(let i of terms_list){i.checked = true}
+    }else {
+        for(let i of terms_list){i.checked = false}
+    }
+})
+/* 
+    ★★ 전부 같은표현인지 확인 필요 ★★
+    연습 1번)
+    termsList.forEach((checkbox) =>{ checkbox.checked = termsAll.checked});
+    연습 2번)
+    terms_list.forEach((t)=>{t.checked = termsAll.checked});
+    연습 3번)
+    for(let i of terms_list){i.checked = true}
+    연습 4번)
+    terms_list.forEach(checkbox => checkbox.checked = true);
+*/
 
-console.log(agree_view)
+/* // 연습)방법3
+function check_all() {
+    // 전체 선택 체크박스 상태에 따라 모든 체크박스 선택/해제
+    for (let i of terms_list) {i.checked = terms_all.checked}
+}
+// 전체 선택 체크박스 이벤트
+terms_all.addEventListener('change', check_all);
+// 초기화: 페이지 로드 시 전체 선택 체크박스가 선택되어 있으면 모든 체크박스 선택
+if (terms_all.checked) {
+    check_all();
+} */
+/* ---------------------- 구분선 -------------------------- */
+// 가입하기 버튼 클릭시 메인페이지로 이동
+btn_join.addEventListener('click',()=>{
+    window.location.href = "index.html";
+})
+/* ---------------------- 구분선 -------------------------- */
+// 추가입력사항 클릭했을 때 숨겨진 탭 활성화
+// 숨겨진 탭 초기화 함수
+const hide_tab = () => {
+    hiden_tab01.classList.add('display_none');
+    hiden_tab02.classList.add('display_none');
+};
+// 친구 초대 추천인 아이디 활성화 했을 때
+event_friend.addEventListener('change',()=>{
+    if (event_friend.checked){
+        hide_tab();
+        hiden_tab01.classList.remove('display_none');
+    }
+});
+// 참여 이벤트명 활성화 됐을 때
+event_name.addEventListener('change',()=>{
+    if (event_name.checked){
+        hide_tab();
+        hiden_tab02.classList.remove('display_none');
+    }
+});
+// 초기 탭 숨기기
+hide_tab();
+/* ---------------------- 구분선 -------------------------- */
 // 지도 API 함수
 function sample6_execDaumPostcode() {
     new daum.Postcode({

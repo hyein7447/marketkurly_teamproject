@@ -715,7 +715,7 @@ main .best .popup .brand_pop .list_wrap .tab_sub2 .contents_all li .btn_chk p:la
 }
 /* ◇ --- js 부분 (상품 리스트 DB로 처리) (장바구니 담기 팝업) --- ◇ */
 main .best .popup .cart_pop {
-    /* display: none; */
+    display: none;
     background-color: #fff;
     width: 500px;
     height: auto;
@@ -748,8 +748,9 @@ main .best .popup .cart_pop .thumb_name .p_tab_title {
 }
 main .best .popup .cart_pop .info {
     max-height: 310px;
-    /* overflow: hidden scroll; */
-    /* scrollbar-width: thin; */
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 main .best .popup .cart_pop .info .cart_box {
     padding: 12px 0px;
@@ -767,7 +768,6 @@ main .best .popup .cart_pop .info .cart_box .price_num .p_tab_price {
     font-weight: 700;
     letter-spacing: -0.02rem;
 }
-main .best .popup .cart_pop .info .cart_box .price_num .p_tab_price span {}
 main .best .popup .cart_pop .info .cart_box .price_num .p_tab_price span del {
     font-size: 0.875rem;
     color:#b5b5b5;
@@ -779,7 +779,6 @@ main .best .popup .cart_pop .info .cart_box .price_num .num {
     display: flex; align-items: center;
     padding: 2px 4px 0px;
 }
-main .best .popup .cart_pop .info .cart_box .price_num .num .minus {}
 main .best .popup .cart_pop .info .cart_box .price_num .num .minus img {
     height: 22px;
 }
@@ -789,7 +788,6 @@ main .best .popup .cart_pop .info .cart_box .price_num .num .p_tab_num {
     line-height: 24px;
     font-weight: 600;
 }
-main .best .popup .cart_pop .info .cart_box .price_num .num .plus {}
 main .best .popup .cart_pop .info .cart_box .price_num .num .plus img {
     height: 22px;
 }

@@ -30,8 +30,8 @@
                             </div>
                             <div class="sub_area">
                                 <div class="input_area">
-                                    <input type="text" id="user_id" placeholder="아이디를 입력해주세요">
-                                    <span ><!-- js용 --></span>
+                                    <input type="text" id="user_id" placeholder="아이디를 입력해주세요" minlength="4" maxlength="16">
+                                    <span class="error_m"><!-- js용 --></span>
                                 </div>
                                 <div class="btn_area">
                                     <button type="button" class="btn_id_overlap">중복확인</button>
@@ -44,8 +44,8 @@
                             </div>
                             <div class="sub_area">
                                 <div class="input_area">
-                                    <input type="password" id="user_pw" minlength="16" placeholder="비밀번호를 입력해주세요">
-                                    <span><!-- js용 --></span>
+                                    <input type="password" id="user_pw" minlength="10" placeholder="비밀번호를 입력해주세요">
+                                    <span class="error_m"><!-- js용 --></span>
                                 </div>
                             </div>
                         </li>
@@ -56,7 +56,7 @@
                             <div class="sub_area">
                                 <div class="input_area">
                                     <input type="password" id="user_pw_rechk" minlength="16" placeholder="비밀번호를 한번 더 입력해주세요">
-                                    <span><!-- js용 --></span>
+                                    <span class="error_m"><!-- js용 --></span>
                                 </div>
                             </div>
                         </li>
@@ -67,7 +67,7 @@
                             <div class="sub_area">
                                 <div class="input_area">
                                     <input type="text" id="user_name_rechk" minlength="20" placeholder="이름을 입력해 주세요">
-                                    <span><!-- js용 --></span>
+                                    <span class="error_m"><!-- js용 --></span>
                                 </div>
                             </div>
                         </li>
@@ -78,7 +78,7 @@
                             <div class="sub_area">
                                 <div class="input_area">
                                     <input type="text" id="user_mail" placeholder="예: marketkurly@kurly.com">
-                                    <span><!-- js용 --></span>
+                                    <span class="error_m"><!-- js용 --></span>
                                 </div>
                                 <div class="btn_area">
                                     <button type="button" class="btn_id_overlap2">중복확인</button>
@@ -92,7 +92,7 @@
                             <div class="sub_area">
                                 <div class="input_area">
                                     <input type="text" id="user_number" placeholder="숫자만 입력해주세요." maxlength="11">
-                                    <span><!-- js용 --></span>
+                                    <span class="error_m"><!-- js용 --></span>
                                 </div>
                                 <div class="btn_area">
                                     <button type="button" class="btn_phone">인증번호 받기</button>
@@ -119,7 +119,7 @@
                                 <div class="input_area gender">
                                     <label for="gender_male" class="gender_male"><input type="radio" name="gender" id="gender_male">남자</label>
                                     <label for="gender_female" class="gender_female"><input type="radio" name="gender" id="gender_female">여자</label>
-                                    <label for="gender_none" class="gender_none"><input type="radio" name="gender" id="gender_none">선택안함</label>
+                                    <label for="gender_none" class="gender_none"><input type="radio" name="gender" id="gender_none" checked>선택안함</label>
                                 </div>
                             </div>
                         </li>
@@ -132,6 +132,7 @@
                                     <input type="text" name="year" id="date_year" placeholder="YYYY" maxlength="4">/
                                     <input type="text" name="month" id="date_month" placeholder="MM" maxlength="2">/
                                     <input type="text" name="day" id="date_day" placeholder="dd" maxlength="2">
+                                    <span class="error_m"><!-- js용 --></span>
                                 </div>
                             </div>
                         </li>
@@ -146,10 +147,10 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="hiden_tab_area">
                             <div class="title display_none">
                             </div>
-                            <div class="sub_area display_none">
+                            <div class="sub_area hiden_tab01 display_none">
                                 <div class="input_area hiden_tab1">
                                     <input type="text" name="recommend_id" id="recommend_id" placeholder="추천인 아이디를 입력해 주세요." maxlength="16">
                                     <span>가입 후 7일 내 첫 주문 배송완료 시, 친구초대 이벤트 적립금이 지급됩니다.</span>
@@ -159,9 +160,9 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="hiden_tab_area">
                             <div class="title display_none"></div>
-                            <div class="sub_area display_none">
+                            <div class="sub_area hiden_tab02 display_none">
                                 <div class="input_area hiden_tab2">
                                     <input type="text" name="event" id="event" placeholder="참여 이벤트명을 입력해 주세요.">
                                     <span>추천인 아이디와 참여 이벤트명 중 하나만 선택 가능합니다.</span>

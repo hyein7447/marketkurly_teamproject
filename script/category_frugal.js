@@ -64,7 +64,7 @@ const pop_plus = cart_pop.querySelector('.price_num .num .plus')
 const p_tab_price = document.querySelector('.cart_pop .total .total_result .p_tab_price')
 console.log(pop_minus,pop_plus,pop_num,p_tab_price)
 console.log('----------------- 데스크탑 버전 -----------------')
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 /* 
     ******** 상단 영역 js
 */
@@ -84,7 +84,7 @@ cate_top_a.forEach((o,i)=>{
         cate_top_a[i].classList.add('top_active')
     })
 }) */
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 /* 
     ******** 왼쪽 어사이드 영역 js
 */
@@ -103,7 +103,7 @@ for (let i of brand_a){
         i.classList.add('name_active')
     })
 }
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // 브랜드 atoz_btn 클릭시 박스컬러 & 글씨컬러 활성화
 // 초기값 -> 전체박스 활성화
 atoz_btn_a[0].classList.add('atoz_active')
@@ -118,7 +118,7 @@ for (let a of atoz_btn_a){
         a.classList.add('atoz_active')
     })
 }
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // 브랜드 atoz_btn 클릭시 서브탭 활성화 ------------------   
 // 호출용 함수
 /* let box_basic_hide = ()=>{brand_tab_box_ul[0].style.display = 'none';}
@@ -153,7 +153,7 @@ brand_a[1].addEventListener('click',()=>{
 brand_a[0].addEventListener('click',()=>{
     ul_2_atoz.style.display = 'block';
 })
-// ---------------------- 구분선 --------------------------         
+/* ---------------------- 구분선 -------------------------- */         
 // 브랜드 팝업 atoz_btn 클릭시 서브탭 해당 글씨의 위치 보여주기
 const brand_pop_list = brand_pop.querySelectorAll('.wrap_top > .list_wrap > .tab_sub1 > .contents_list') //ul //NodeList[]
 const brand_subtab_a = brand_pop.querySelectorAll('.wrap_top > .tab_sub > a') //a
@@ -165,7 +165,7 @@ brand_subtab_a.forEach((o,i)=>{
         ul_parent.scrollTo(0, b_pop_ul[i].offsetTop - 115)
     })
 })
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // 카테고리 ^ [chevron-up] 아이콘 클릭 시 탭 활성화 -> 비활성화 / 아이콘 상하 반전
 let aside_arrow1_status = false;
 aside_arrow1.addEventListener('click',()=>{
@@ -241,7 +241,7 @@ aside_arrow5.addEventListener('click',()=>{
         aside_arrow5_status = !aside_arrow5_status;
     }
 })
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // 카테고리 어사이드 메뉴 클릭시 체크이미지 변경
 // 회색 체크 이미지 클릭 시 -> 보라색 체크 이미지로 이미지경로 변경     
 // 방법1) 현재 이미지 경로 확인해서 변경하기
@@ -298,7 +298,7 @@ for (let i of ul_li_a5) {
         }
     });
 }
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // 어사이드 메뉴의 - 카테고리 - 팝업창 체크 이미지 변경
 for (let a of cate_pop_a) {
     a.addEventListener('click', () => {
@@ -331,7 +331,7 @@ for (let a of brand_pop_all_a) {
         }
     });
 }
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // 어사이드 카테고리 더보기 클릭 시 팝업창 활성화
 // 초기값 -> 비활성화 -> 클릭 시 -> 활성화 -> 닫기버튼 클릭 -> 비활성화
 // 카테고리 더보기 >
@@ -360,7 +360,7 @@ brand_pop_btn_ok.addEventListener('click',()=>{
     popup.style.display = 'none';
     brand_pop.style.display = 'none';
 }) */
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // 브랜드 더보기 팝업 - 상단 타이틀 글씨 컬러 (퍼플) 변경
 // 초기값 -> 1번째 글씨 활성화
 brand_tab_a[0].classList.add('top_active')
@@ -396,7 +396,7 @@ brand_tab_a.forEach((t,i)=>{
 //     list_basic.style.display = 'none';
 //     list_all.style.display = 'block';
 // })
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // 브랜드 더보기 팝업 - 상단 박스 컬러 (블랙) 변경
 // 초기값 -> 1번째 박스 활성화
 brand_subtab_a[0].classList.add('atoz_active')
@@ -412,7 +412,7 @@ for(let i of brand_subtab_a){
         i.classList.add('atoz_active')
     })
 }
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 /* 
     ******** 오른쪽 영역 js
 */
@@ -438,7 +438,7 @@ pc_array_a.forEach((o,i)=>{
         pc_array_a[i].style.fontWeight = '500';
     })
 })
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // 추천순옆 ? 아이콘에 마우스오버시 설명박스 활성화
 // 초기값 -> 박스 비활성화
 quest_box.style.display = 'none';
@@ -449,7 +449,7 @@ pc_array_q.addEventListener('mouseover',()=>{
 pc_array_q.addEventListener('mouseout',()=>{
     quest_box.style.display = 'none';
 })
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // 담기 버튼 클릭 시 팝업 활성화
 // 팝업창 초기값 -> 화면 비활성화
 popup.style.display = 'none';
@@ -480,7 +480,7 @@ product_cart_btn.addEventListener('click',()=>{
         cart_pop.style.display = 'none';
     })
 })
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // right 컨테이너 하단 버튼 클릭시 컬러 활성화 -> classList 추가하기
 // 초기값 -> 1 활성화
 let num_basic = ()=>{
@@ -496,7 +496,7 @@ for(let i of arrow_num){
     })
 }
 
-// ---------------------- 구분선 --------------------------  ★★★★ㅁ8ㅁ8ㅁ★★★★ 작업중
+/* ---------------------- 구분선 -------------------------- */
 // 카트 담기 팝업 안에 + - 수량 증가 감소, 가격변경
 let p_num = 0;
 let pop_total = 0;
@@ -563,7 +563,7 @@ const slide_minus = document.querySelector('.bg_wh .info .cart_box .price_num .n
 const slide_plus = document.querySelector('.bg_wh .info .cart_box .price_num .num .plus')
 const slide_total_btn = slide_btn_cart_r.querySelector('span')
 console.log(slide_total_btn,slide_minus)
-// ---------------------- 구분선 -------------------------- ★★★★★★★★★★★★★ 작업중
+/* ---------------------- 구분선 -------------------------- */ ★★★★★★★★★★★★★ 작업중
 // 모바일 슬라이드 탭 카트 담기 팝업 안에 + - 수량 증가 감소, 가격변경
 let m_num = 0;
 let slide_total = 0;
@@ -591,7 +591,7 @@ slide_minus.addEventListener('click',()=>{
         slide_num.innerText = `0`;
     }
 })
-// ---------------------- 구분선 --------------------------       
+/* ---------------------- 구분선 -------------------------- */       
 // 스크롤 내렸을 때 상단 카테고리 타이틀부분 아이콘 정렬 변경
 //cate_title = a / cate_title_row
 // const cate_title_test = document.querySelector('.cate_title_col');
@@ -620,7 +620,7 @@ window.addEventListener('scroll',()=>{
         cate_title[0].classList.remove('cate_row_active') //row용 활성화 제거
     }
 }); */
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // 모바일 베스트 카테고리 상단에 이미지와 같이있는 타이틀리스트                 ★★★★★★★★★★★★ 나중에 확인할 위치
 // 클릭 -> 보라색으로 활성화
 /* let title_reset = ()=>{for(let a of cate_title){a.classList.remove('cate_active')}}
@@ -651,7 +651,7 @@ let top_offset30 = ()=>{
         })
     }
 } */
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // 초기값 -> 추천순 클릭시 sub메뉴 보이기 + arrow 반전 -> sub메뉴 클릭시 해당 a classList 활성화
 let title_a_status = false;
 filter_nav.style.display = 'none'
@@ -691,7 +691,7 @@ filter_nav_a.forEach((t,i)=>{
         }
     })
 })
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // 추천순 옆 question이미지 클릭시 내용팝업 보이기  
 // 기본값
 // filter_quest_box.style.visibility = 'hidden'
@@ -705,7 +705,7 @@ filter_quest_box.style.display = 'none'
         filter_quest_box.style.display = 'none'
     })
 }) */
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // 필터옆 아이콘 클릭 시 하단에 필터 슬라이드 보이기
 // 초기값
 let bg_hide = ()=>{
@@ -723,7 +723,7 @@ filter_title[1].addEventListener('click',()=>{
     slide_tab_list_t[0].classList.add('list_title_active')
     slide_tab_list[0].style.display = 'block';
 })
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // 필터클릭시 - 슬라이드 팝업의 체크이미지 변경
 // 클릭 -> 회색에서 보라색으로 이미지 변경
 for (let i of slide_li_chk) {
@@ -746,7 +746,7 @@ for (let i of slide_li_cir) {
         }
     });
 }
-// ---------------------- 구분선 --------------------------         
+/* ---------------------- 구분선 -------------------------- */         
 // 슬라이드의 카테고리 클릭시 하단 탭 변경 + 카테고리 글씨 보라색으로 활성화
 let list_hide = ()=>{for(let a of slide_tab_list){a.style.display = 'none';}}
 slide_tab_list_t[0].classList.add('list_title_active')
@@ -761,7 +761,7 @@ slide_tab_list_t.forEach((t,i)=>{
         slide_tab_list[i].style.display = 'block';
     })
 })
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 // 슬라이드의 카테고리 - 브랜드 - 제목 클릭시 글씨색변경 + 하단 탭 변경 + atoz버튼 활성화
 // ** 1번 ** 브랜드 가나다순 상품많은순 클릭시 글씨컬러 변경
 // 초기값 -> 가나다순 컬러 활성화
@@ -804,12 +804,12 @@ slide_brand_atoz.forEach((t,i)=>{
         slide_brand_list[i].style.display = 'block'; //클릭대상 리스트 활성화
     })
 }) */
-// ---------------------- 구분선 --------------------------   
+/* ---------------------- 구분선 -------------------------- */   
 // 슬라이드에서 상품보기 버튼 클릭 시 슬라이드 비활성화
 /* slide_btn_view.addEventListener('click',()=>{
     tab_slide.style.display = 'none'
 }) */
-// ---------------------- 구분선 --------------------------       
+/* ---------------------- 구분선 -------------------------- */       
 // array 리스트 클릭시 해당글씨 및 리스트가 활성화된 슬라이드 보이기
 m_array_a.forEach((t,i)=>{
     t.addEventListener('click',()=>{
@@ -848,7 +848,7 @@ m_array_a.forEach((t,i)=>{
         }
     })
 })
-// ---------------------- 구분선 --------------------------    
+/* ---------------------- 구분선 -------------------------- */    
 // 담기버튼 클릭시 팝업 활성화 -> 기본 슬라이드에서 플랙스때문에 none처리가 안돼 classList로 처리
 for(let j of product_m){
     for(let a of j.children[1].children){ //썸네일의 담기 버튼
@@ -863,4 +863,4 @@ for(let j of product_m){
         })
     }
 }
-// ---------------------- 구분선 --------------------------    
+/* ---------------------- 구분선 -------------------------- */    

@@ -8,7 +8,7 @@ const user_id = document.querySelector('#user_id')
 const user_pw = document.querySelector('#user_pw')
 const user_db = [{ id:"kurly", pw:"1234", number:"8610" }]
 
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */
 popup_box.style.display = 'none';
 citation_num.style.display = 'none';
 let tryCount = 0; //로그인 횟수 변수생성
@@ -35,4 +35,4 @@ btn_login.addEventListener('click',()=>{
 pop_btn_ok.addEventListener('click',()=>{
     popup_box.style.display = 'none';
 })
-// ---------------------- 구분선 --------------------------
+/* ---------------------- 구분선 -------------------------- */

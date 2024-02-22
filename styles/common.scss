@@ -64,6 +64,12 @@ $px16: 1.125rem;
     flex-flow: row nowrap;
     align-items: center;
 }
+@mixin flex-row-end {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
 @mixin flex-row-ct-st {
     display: flex;
     flex-flow: row nowrap;

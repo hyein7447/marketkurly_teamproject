@@ -651,6 +651,7 @@
     justify-content: flex-end;
   }
   main .best_mobile .tab_cart .bg_wh {
+    animation: slide_up 0.6s ease-in-out;
     position: sticky;
     top: 100vh;
     z-index: 500;
@@ -703,6 +704,10 @@
     color: #b5b5b5;
   }
   main .best_mobile .tab_cart .bg_wh .info {
+    max-height: 45vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
     width: 100%;
     background-color: #fff;
   }
@@ -1013,4 +1018,15 @@
   font-size: 0.938rem;
   font-weight: 400;
   letter-spacing: -0.02rem;
+}
+
+@keyframes slide_up {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=category_m_common.css.map */
