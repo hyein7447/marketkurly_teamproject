@@ -27,58 +27,80 @@ main .join .box_wrap_info span, main .join .box_wrap_info em {
 main .join .box_wrap_info em {
   color: #f03f40;
 }
-main .join #btn_join {
-  width: 76%;
-  float: right;
-  height: 56px;
-  text-align: center;
-  display: block;
-  background-color: #5F0080;
-  border-radius: 4px;
-  color: #fff;
-  margin: 40px auto;
+main .join form .wrap {
+  padding-top: 30px;
 }
-main form .wrap li {
+main .join form .wrap li {
   padding: 10px 20px;
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
 }
-main form .wrap li .title {
+main .join form .wrap li .title {
   padding-top: 15px;
   width: 22%;
 }
-main form .wrap li .title p, main form .wrap li .title em {
+main .join form .wrap li .title p, main .join form .wrap li .title em {
   font-weight: 500;
   font-size: 1rem;
 }
-main form .wrap li .title em {
+main .join form .wrap li .title em {
   color: #f03f40;
 }
-main form .wrap li .input_area {
-  width: 58%;
+main .join form .wrap li .sub_area {
+  width: 78%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
 }
-main form .wrap li .input_area input {
+main .join form .wrap li .sub_area .input_area {
+  width: 78%;
+}
+main .join form .wrap li .sub_area .input_area input {
   border: 1px solid #ddd;
   border-radius: 4px;
   width: 100%;
   padding: 0px 15px;
   height: 46px;
 }
-main form .wrap li .input_area .gender_male, main form .wrap li .input_area .gender_female, main form .wrap li .input_area .gender_none {
+main .join form .wrap li .sub_area .input_area .gender_male, main .join form .wrap li .sub_area .input_area .gender_female, main .join form .wrap li .sub_area .input_area .gender_none {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   width: calc(33.3333333333% - 4px);
   display: inline-block;
 }
-main form .wrap li .input_area .error_m {
+main .join form .wrap li .sub_area .input_area .error_m {
   display: inline-block;
   color: #f03f40;
-  font-size: 0.938rem;
+  font-size: 0.875rem;
   margin: 10px 0;
 }
-main form .wrap li .event {
+main .join form .wrap li .sub_area .btn_area {
+  width: 22%;
+}
+main .join form .wrap li .sub_area .btn_area button {
+  width: 100%;
+  border: 1px solid #5F0080;
+  border-radius: 3px;
+  height: 46px;
+  margin-left: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #5F0080;
+  padding: 0 6px;
+}
+main .join form .wrap li .sub_area .btn_area .btn_phone {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 46px;
+  margin-left: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ddd;
+}
+main .join form .wrap li .sub_area .event {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -86,14 +108,14 @@ main form .wrap li .event {
   height: 48px;
   position: relative;
 }
-main form .wrap li .event label[class*=event] {
+main .join form .wrap li .sub_area .event label[class*=event] {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   cursor: pointer;
   font-size: 1rem;
 }
-main form .wrap li .event input[type=radio] {
+main .join form .wrap li .sub_area .event input[type=radio] {
   background-image: url("../images/sub/icon_circle_off.svg");
   background-repeat: no-repeat;
   width: 24px;
@@ -105,46 +127,46 @@ main form .wrap li .event input[type=radio] {
           appearance: none;
   cursor: pointer;
 }
-main form .wrap li .event input[type=radio]:checked {
+main .join form .wrap li .sub_area .event input[type=radio]:checked {
   cursor: pointer;
   display: inline-block;
   width: 24px;
   height: 24px;
   background-image: url("../images/sub/icon_circle_on.svg");
 }
-main form .wrap li .hiden_tab1 span {
+main .join form .wrap li .sub_area .hiden_tab1 span {
   font-size: 0.875rem;
   margin-top: 12px;
 }
-main form .wrap li .hiden_tab1 .btn_area {
+main .join form .wrap li .sub_area .hiden_tab1 .btn_area {
   width: 150px;
   height: 44px;
 }
-main form .wrap li .hiden_tab2 {
+main .join form .wrap li .sub_area .hiden_tab2 {
   display: none;
 }
-main form .wrap li .hiden_tab2 span:first-child {
+main .join form .wrap li .sub_area .hiden_tab2 span:first-child {
   margin-top: 10px;
 }
-main form .wrap li .hiden_tab2 span {
+main .join form .wrap li .sub_area .hiden_tab2 span {
   font-size: 0.875rem;
   display: inline-block;
 }
-main form .wrap li .gender {
+main .join form .wrap li .sub_area .gender {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   height: 48px;
 }
-main form .wrap li .gender label[class*=gender] {
+main .join form .wrap li .sub_area .gender label[class*=gender] {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   width: calc(33.3333333333% - 4px);
   cursor: pointer;
 }
-main form .wrap li .gender input[type=radio] {
+main .join form .wrap li .sub_area .gender input[type=radio] {
   background-image: url("../images/sub/icon_circle_off.svg");
   background-repeat: no-repeat;
   width: 24px;
@@ -156,18 +178,18 @@ main form .wrap li .gender input[type=radio] {
           appearance: none;
   cursor: pointer;
 }
-main form .wrap li .gender input[type=radio]:checked {
+main .join form .wrap li .sub_area .gender input[type=radio]:checked {
   cursor: pointer;
   display: inline-block;
   width: 24px;
   height: 24px;
   background-image: url("../images/sub/icon_circle_on.svg");
 }
-main form .wrap li .date {
+main .join form .wrap li .sub_area .date {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-main form .wrap li .date input {
+main .join form .wrap li .sub_area .date input {
   border: 0;
   text-align: center;
   display: flex;
@@ -176,30 +198,7 @@ main form .wrap li .date input {
   width: calc(33.3333333333% - 10px);
   display: inline-block;
 }
-main form .wrap li .btn_area {
-  width: 20%;
-}
-main form .wrap li .btn_area button {
-  width: 100%;
-  border: 1px solid #5F0080;
-  border-radius: 3px;
-  height: 46px;
-  margin-left: 8px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #5F0080;
-}
-main form .wrap li .btn_area .btn_phone {
-  width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  height: 46px;
-  margin-left: 8px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #ddd;
-}
-main form .wrap li .btn_search {
+main .join form .wrap li .sub_area .btn_search {
   height: 44px;
   border: 1px solid #5F0080;
   border-radius: 4px;
@@ -212,62 +211,62 @@ main form .wrap li .btn_search {
   font-size: 1rem;
   font-weight: 500;
 }
-main form .wrap li .btn_search img {
+main .join form .wrap li .sub_area .btn_search img {
   width: 20px;
 }
-main form .wrap li .btn_search + span {
+main .join form .wrap li .sub_area .btn_search + span {
   display: inline-block;
   margin-top: 10px;
   font-size: 0.875rem;
 }
-main form .terms {
+main .join form .terms {
   padding: 10px 0px 10px 20px;
   border-top: 1px solid #333;
 }
-main form .terms li {
+main .join form .terms li {
   padding: 10px 0px 10px 0;
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
 }
-main form .terms li .title {
-  padding: 6px 20px 10px 16px;
+main .join form .terms li .title {
+  padding: 6px 20px 10px 0px;
   width: 22%;
 }
-main form .terms li .title p, main form .terms li .title em {
+main .join form .terms li .title p, main .join form .terms li .title em {
   font-weight: 500;
   font-size: 1rem;
 }
-main form .terms li .title em {
+main .join form .terms li .title em {
   color: #f03f40;
 }
-main form .terms li .agree_area {
+main .join form .terms li .agree_area {
   width: 75%;
 }
-main form .terms li .agree_area label[class=agree_all] {
+main .join form .terms li .agree_area label[class=agree_all] {
   font-size: 1.188rem;
   font-weight: 500;
 }
-main form .terms li .agree_area .agree_all + p {
+main .join form .terms li .agree_area .agree_all + p {
   margin: 10px 0;
   font-size: 0.875rem;
 }
-main form .terms li .agree_area .receive label {
+main .join form .terms li .agree_area .receive label {
   margin-right: 10px;
 }
-main form .terms li .agree_area .receive p {
+main .join form .terms li .agree_area .receive p {
   font-size: 0.875rem;
   margin: 10px 0 10px 40px;
 }
-main form .terms li .agree_area label {
+main .join form .terms li .agree_area label {
   font-size: 0.875rem;
 }
-main form .terms li .agree_area label em {
+main .join form .terms li .agree_area label em {
   font-size: 0.875rem;
   color: #999;
   font-weight: 500;
 }
-main form .terms li .agree_area label input {
+main .join form .terms li .agree_area label input {
   background-image: url("../images/sub/icon_check1.png");
   background-size: cover;
   width: 22px;
@@ -280,7 +279,7 @@ main form .terms li .agree_area label input {
   margin-right: 10px;
   transform: translateY(5px);
 }
-main form .terms li .agree_area label input:checked {
+main .join form .terms li .agree_area label input:checked {
   background-image: url("../images/sub/icon_check4.png");
   background-size: cover;
   width: 22px;
@@ -293,22 +292,22 @@ main form .terms li .agree_area label input:checked {
   margin-right: 10px;
   transform: translateY(5px);
 }
-main form .terms li .agree_area span {
+main .join form .terms li .agree_area span {
   margin: 10px 0 10px 30px;
   display: inline-block;
   font-size: 0.875rem;
 }
-main form .terms li .agree_area div[class*=agree] {
+main .join form .terms li .agree_area div[class*=agree] {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
 }
-main form .terms li .agree_area div[class*=agree] span {
+main .join form .terms li .agree_area div[class*=agree] span {
   font-size: 1rem;
 }
-main form .terms li .agree_area div[class*=agree] strong::after {
+main .join form .terms li .agree_area div[class*=agree] strong::after {
   background-image: url("../images/main/icon/icon_arrow_right.svg");
   display: inline-block;
   background-position: center;
@@ -319,25 +318,37 @@ main form .terms li .agree_area div[class*=agree] strong::after {
   content: "";
   margin-left: 2px;
 }
-main form .terms li .agree_area div[class*=agree] strong {
+main .join form .terms li .agree_area div[class*=agree] strong {
   font-size: 1rem;
   color: #5F0080;
-}
-main form .terms li .agree_area .receive .choice {
-  margin: 10px 0 0px 30px;
-}
-main form .terms li .agree_area .receive .choice label {
   cursor: pointer;
 }
-main form .terms li .agree_area .receive span {
+main .join form .terms li .agree_area .receive .choice {
+  margin: 10px 0 0px 30px;
+}
+main .join form .terms li .agree_area .receive .choice label {
+  cursor: pointer;
+}
+main .join form .terms li .agree_area .receive span {
   margin-left: 60px;
   margin-bottom: 10px;
   color: #5F0080;
   font-weight: 500;
   letter-spacing: -0.02rem;
 }
-main form .terms li .agree_area .receive span img {
+main .join form .terms li .agree_area .receive span img {
   transform: translateY(3px);
+}
+main .join #btn_join {
+  width: 76%;
+  float: right;
+  height: 56px;
+  text-align: center;
+  display: block;
+  background-color: #5F0080;
+  border-radius: 4px;
+  color: #fff;
+  margin: 40px auto;
 }
 main .tab_terms1, main .tab_terms2, main .tab_terms3 {
   position: fixed;
@@ -345,7 +356,7 @@ main .tab_terms1, main .tab_terms2, main .tab_terms3 {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -484,12 +495,12 @@ main .tab_terms2 .tab_box .btn_ok, main .tab_terms3 .tab_box .btn_ok {
   font-weight: 500;
 }
 
-@media screen and (max-width: 540px) {
-  main .join {
-    max-width: 100%;
+@media screen and (max-width: 480px) {
+  main .join h1 {
+    font-size: 1.625rem;
   }
   main .join form .wrap {
-    padding: 20px 16px 0;
+    padding: 30px 16px 0;
   }
   main .join form .wrap li {
     padding: 10px 0px;
@@ -505,79 +516,76 @@ main .tab_terms2 .tab_box .btn_ok, main .tab_terms3 .tab_box .btn_ok {
     font-weight: 500;
     font-size: 0.813rem;
   }
-  main .join form .wrap li .input_area.date {
+  main .join form .wrap li .sub_area .input_area.date {
     padding: 0;
   }
-  main .join form .wrap li .input_area.date input {
+  main .join form .wrap li .sub_area .input_area.date input {
     width: 30%;
   }
-  main .join form .wrap li .input_area {
-    width: 58%;
-  }
-  main .join form .wrap li .input_area input::-moz-placeholder {
+  main .join form .wrap li .sub_area .input_area input::-moz-placeholder {
     font-size: 0.813rem;
   }
-  main .join form .wrap li .input_area input::placeholder {
+  main .join form .wrap li .sub_area .input_area input::placeholder {
     font-size: 0.813rem;
   }
-  main .join form .wrap li .input_area .gender_male, main .join form .wrap li .input_area .gender_female, main .join form .wrap li .input_area .gender_none {
+  main .join form .wrap li .sub_area .input_area .gender_male, main .join form .wrap li .sub_area .input_area .gender_female, main .join form .wrap li .sub_area .input_area .gender_none {
     font-size: 0.813rem;
     width: 33.3333333333%;
     height: 16px;
   }
-  main .join form .wrap li .input_area .gender label[class*=event]:checked, main .join form .wrap li .input_area .event label[class*=event]:checked {
+  main .join form .wrap li .sub_area .input_area .gender label[class*=event]:checked, main .join form .wrap li .sub_area .input_area .event label[class*=event]:checked {
     width: 33.3333333333%;
   }
-  main .join form .wrap li .input_area .gender label[class*=gender], main .join form .wrap li .input_area .event label[class*=gender] {
+  main .join form .wrap li .sub_area .input_area .gender label[class*=gender], main .join form .wrap li .sub_area .input_area .event label[class*=gender] {
     width: 33.3333333333%;
     font-size: 0.813rem;
   }
-  main .join form .wrap li .input_area .gender input[type=radio], main .join form .wrap li .input_area .event input[type=radio] {
+  main .join form .wrap li .sub_area .input_area .gender input[type=radio], main .join form .wrap li .sub_area .input_area .event input[type=radio] {
     height: 16px;
     font-size: 0.813rem;
   }
-  main .join form .wrap li .input_area .gender input[type=radio]:checked, main .join form .wrap li .input_area .event input[type=radio]:checked {
+  main .join form .wrap li .sub_area .input_area .gender input[type=radio]:checked, main .join form .wrap li .sub_area .input_area .event input[type=radio]:checked {
     height: 16px;
   }
-  main .join form .wrap li .input_area input {
+  main .join form .wrap li .sub_area .input_area input {
     padding: 0px 15px;
   }
-  main .join form .wrap li .input_area .error_m {
+  main .join form .wrap li .sub_area .input_area .error_m {
     font-size: 0.813rem;
   }
-  main .join form .wrap li .input_area .btn_search {
-    height: 36px;
+  main .join form .wrap li .sub_area .input_area .btn_search + span {
+    font-size: 0.75rem;
+  }
+  main .join form .wrap li .sub_area .input_area .btn_search {
+    height: 46px;
     font-size: 0.813rem;
   }
-  main .join form .wrap li .btn_area {
-    width: 18%;
-  }
-  main .join form .wrap li .btn_area .btn_id_chk {
+  main .join form .wrap li .sub_area .btn_area .btn_id_chk {
     height: 46px;
   }
-  main .join form .wrap li .btn_area button {
-    height: 46px;
-    margin-left: 6px;
-    font-size: 0.813rem;
-  }
-  main .join form .wrap li .btn_area .btn_phone {
+  main .join form .wrap li .sub_area .btn_area button {
     height: 46px;
     margin-left: 6px;
-    font-size: 0.813rem;
+    font-size: 0.75rem;
+  }
+  main .join form .wrap li .sub_area .btn_area .btn_phone {
+    height: 46px;
+    margin-left: 6px;
+    font-size: 0.75rem;
     white-space: pre-line;
   }
-  main .join form .wrap li .event label[class*=event] {
+  main .join form .wrap li .sub_area .event label[class*=event] {
     font-size: 0.813rem;
   }
-  main .join form .wrap li .event label[class*=gender]:checked {
+  main .join form .wrap li .sub_area .event label[class*=gender]:checked {
     width: 16px;
     height: 16px;
   }
-  main .join form .wrap li .hiden_tab1 span {
-    font-size: 0.813rem;
+  main .join form .wrap li .sub_area .hiden_tab1 span {
+    font-size: 0.75rem;
   }
   main .join form .terms {
-    padding: 10px 0px 10px 0;
+    padding: 10px 0px 10px 16px;
   }
   main .join form .terms li .title p {
     font-size: 0.813rem;
@@ -589,8 +597,15 @@ main .tab_terms2 .tab_box .btn_ok, main .tab_terms3 .tab_box .btn_ok {
     width: 75%;
   }
   main .join form .terms li .agree_area label[class=agree_all] {
-    font-size: 1.188rem;
+    font-size: 1rem;
     font-weight: 500;
+  }
+  main .join form .terms li .agree_area label {
+    font-size: 0.813rem;
+    white-space: normal;
+  }
+  main .join form .terms li .agree_area label em {
+    font-size: 0.75rem;
   }
   main .join form .terms li .agree_area p {
     line-height: 1.2rem;
@@ -618,4 +633,75 @@ main .tab_terms2 .tab_box .btn_ok, main .tab_terms3 .tab_box .btn_ok {
     margin: 20px auto 60px;
     margin-right: 16px;
   }
+}
+@media screen and (max-width: 430px) {
+  main {
+    width: 100%;
+    margin-top: 20px;
+  }
+  main .join h1 {
+    font-size: 1.625rem;
+    display: none;
+  }
+  main .join .box_wrap_info {
+    display: none;
+  }
+  main .join form .wrap li {
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  main .join form .wrap li .title {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  main .join form .wrap li .sub_area {
+    width: 100%;
+  }
+  main .join form .wrap li .sub_area .input_area {
+    width: 100%;
+  }
+  main .join form .wrap li .sub_area .input_area span {
+    font-size: 0.688rem;
+  }
+  main .join form .wrap li .sub_area .btn_area {
+    width: 40%;
+    padding-right: 8px;
+  }
+  main .join form .wrap li .sub_area .btn_area button {
+    font-size: 0.813rem;
+  }
+  main .join form .wrap li .sub_area .btn_area .btn_phone {
+    font-size: 0.813rem;
+  }
+  main .join form .wrap li .sub_area .event label[class*=event] {
+    font-size: 0.813rem;
+  }
+  main .join form .terms {
+    border-top: 4px solid #eeeeee;
+  }
+  main .join form .terms li {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  main .join form .terms li .title {
+    width: 100%;
+  }
+  main .join form .terms li .agree_area {
+    width: 100%;
+    padding-right: 16px;
+  }
+  main .join #btn_join {
+    width: 91% !important;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.display_none {
+  display: none !important;
 }/*# sourceMappingURL=join.css.map */

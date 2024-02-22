@@ -27,6 +27,295 @@ main {
                 color:$error;
             }
         }
+        form {
+            .wrap {
+                padding-top:30px;
+                li {
+                    padding: 10px 20px;
+                    @include flex-row-st;
+                    .title {
+                        padding-top: 15px;
+                        width:22%;
+                        p,em {
+                            font-weight: 500;
+                            font-size: $px14;
+                        }
+                        em {
+                            color:$error;
+                        }
+                    }
+                    .sub_area {
+                        width:78%;
+                        @include flex-row-st;
+                        .input_area {
+                            width: 78%;
+                            input {
+                                @include bo_dd4;
+                                width:100%;
+                                padding: 0px 15px;
+                                height: 46px;
+                            }
+                            .gender_male, .gender_female, .gender_none {
+                                display: flex; 
+                                flex-flow: row nowrap;
+                                align-items: center;
+                                width: calc((100% / 3) - 4px);
+                                display: inline-block;
+                            }
+                            .error_m {
+                                display: inline-block;
+                                color:$error;
+                                font-size: $px12;
+                                margin: 10px 0;
+                            }
+                        }
+                        .btn_area {
+                            width:22%;
+                            button {
+                                width: 100%;
+                                @include bo_pp3;
+                                height: 46px;
+                                margin-left: 8px;
+                                font-size: $px12;
+                                font-weight: 500;
+                                color:$purple;
+                                padding: 0 6px;
+                            }
+                            .btn_phone {
+                                width: 100%;
+                                @include bo_dd4;
+                                height: 46px;
+                                margin-left: 8px;
+                                font-size: $px12;
+                                font-weight: 500;
+                                color:#ddd;
+                            }
+                        }
+                        .event {
+                            @include flex-row-btw-ct;
+                            height: 48px;
+                            position: relative;
+                            label[class*=event] {
+                                display: flex;
+                                flex-flow: row nowrap;
+                                align-items: center;
+                                cursor: pointer; 
+                                font-size: $px14;
+                            }
+                            input[type=radio] {
+                                background-image: url('../images/sub/icon_circle_off.svg');
+                                background-repeat: no-repeat;
+                                width:24px;
+                                height:24px;
+                                display: inline-block;
+                                border:none;
+                                appearance: none;
+                                cursor: pointer; 
+                            }
+                            input[type=radio]:checked {
+                                cursor: pointer; 
+                                display: inline-block;
+                                width:24px;
+                                height:24px;
+                                background-image: url('../images/sub/icon_circle_on.svg');
+                            }
+                        }
+                        .hiden_tab1 {
+                            span {
+                                font-size: $px12;
+                                margin-top: 12px;
+                            }
+                            .btn_area {
+                                width: 150px;
+                                height: 44px;
+                            }
+                        }
+                        .hiden_tab2 {
+                            display: none;
+                            span:first-child {
+                                margin-top: 10px;
+                            }
+                            span {
+                                font-size: $px12;
+                                display: inline-block;
+                            }
+                        }
+                        .gender {
+                            @include flex-row-btw-ct;
+                            height: 48px;
+                            label[class*=gender] {
+                                display: flex; 
+                                flex-flow: row nowrap;
+                                align-items: center;
+                                width: calc((100% / 3) - 4px);
+                                cursor: pointer; 
+                            }
+                            input[type=radio] {
+                                background-image: url('../images/sub/icon_circle_off.svg');
+                                background-repeat: no-repeat;
+                                width:24px;
+                                height:24px;
+                                display: inline-block;
+                                border:none;
+                                appearance: none;
+                                cursor: pointer; 
+                            }
+                            input[type=radio]:checked {
+                                cursor: pointer; 
+                                display: inline-block;
+                                width:24px;
+                                height:24px;
+                                background-image: url('../images/sub/icon_circle_on.svg');
+                            }
+                        }
+                        .date {
+                            @include bo_dd4;
+                            input {
+                                border: 0;
+                                text-align: center;
+                                display: flex; 
+                                flex-flow: row nowrap;
+                                align-items: center;
+                                width: calc((100% / 3) - 10px);
+                                display: inline-block;
+                            }
+                        }
+                        .btn_search {
+                            height: 44px;
+                            @include bo_pp4;
+                            @include flex-row-ct-ct;
+                            width: 100%;
+                            color:$purple;
+                            font-size: $px14;
+                            font-weight: 500;
+                            img {
+                                width:20px;
+                            }
+                        }
+                        .btn_search + span {
+                            display: inline-block;
+                            margin-top: 10px;
+                            font-size: $px12;
+                        }
+                    }
+                }
+            }
+            .terms {
+                padding:10px 0px 10px 20px ;
+                border-top: 1px solid #333;
+                li {
+                    padding: 10px 0px 10px 0;
+                    @include flex-row-st;
+                    .title {
+                        padding: 6px 20px 10px 0px;
+                        width:22%;
+                        p,em {
+                            font-weight: 500;
+                            font-size: $px14;
+                        }
+                        em {
+                            color:$error;
+                        }
+                    }
+                    .agree_area {
+                        width: 75%;
+                        label[class=agree_all] {
+                            font-size: $px17;
+                            font-weight: 500;
+                        }
+                        .agree_all + p {
+                            margin: 10px 0 ;
+                            font-size: $px12;
+                        }
+                        .receive {
+                            label {
+                                margin-right: 10px;
+                            }
+                            p {
+                                font-size: $px12;
+                                margin:10px 0 10px 40px ;
+                            }
+                        }
+                        label {
+                            font-size: $px12;
+                            em {   
+                                font-size: $px12;
+                                color: $c-153;
+                                font-weight: 500;
+                            }
+                            input {
+                                background-image: url('../images/sub/icon_check1.png');
+                                background-size: cover;
+                                width:22px;
+                                height:22px;
+                                display: inline-block;
+                                appearance: none;
+                                cursor: pointer; 
+                                margin-right: 10px;
+                                transform: translateY(5px);
+                            }
+                            input:checked {
+                                background-image: url('../images/sub/icon_check4.png');
+                                background-size: cover;
+                                width:22px;
+                                height:22px;
+                                display: inline-block;
+                                appearance: none;
+                                cursor: pointer; 
+                                margin-right: 10px;
+                                transform: translateY(5px);
+                            }
+                        }
+                        span {
+                            margin: 10px 0 10px 30px;
+                            display: inline-block;
+                            font-size: $px12;
+                        }
+                        div[class*=agree] {
+                            @include flex-row-btw-ct;
+                            margin-bottom: 16px;
+                            span {
+                                font-size: $px14;
+                            }
+                            strong::after {
+                                background-image: url('../images/main/icon/icon_arrow_right.svg');
+                                display: inline-block;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                width: 10px;
+                                height: 10px;
+                                content: '';
+                                margin-left: 2px;
+                            }
+                            strong {
+                                font-size: $px14;
+                                color:$purple;
+                                cursor: pointer;
+                            }
+                        }
+                        .receive {
+                            .choice {
+                                margin: 10px 0 0px 30px;
+                                label {
+                                    cursor: pointer;
+                                }
+                            }
+                            span {
+                                margin-left: 60px;
+                                margin-bottom: 10px;
+                                color:$purple;
+                                font-weight: 500;
+                                letter-spacing: -0.02rem;
+                                img {
+                                    transform: translateY(3px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         #btn_join {
             // width: 240px;
             width:76%;
@@ -38,295 +327,13 @@ main {
             margin: 40px auto;
         }
     }
-    form {
-        .wrap {
-            li {
-                padding: 10px 20px;
-                @include flex-row-st;
-                .title {
-                    padding-top: 15px;
-                    width:22%;
-                    p,em {
-                        font-weight: 500;
-                        font-size: $px14;
-                    }
-                    em {
-                        color:$error;
-                    }
-                }
-                .input_area {
-                    width:58%;
-                    input {
-                        @include bo_dd4;
-                        width:100%;
-                        padding: 0px 15px;
-                        height: 46px;
-                    }
-                    .gender_male, .gender_female, .gender_none {
-                        display: flex; 
-                        flex-flow: row nowrap;
-                        align-items: center;
-                        width: calc((100% / 3) - 4px);
-                        display: inline-block;
-                    }
-                    .error_m {
-                        display: inline-block;
-                        color:$error;
-                        font-size: $px13;
-                        margin: 10px 0;
-                    }
-                }
-                .event {
-                    @include flex-row-btw-ct;
-                    height: 48px;
-                    position: relative;
-                    label[class*=event] {
-                        display: flex;
-                        flex-flow: row nowrap;
-                        align-items: center;
-                        cursor: pointer; 
-                        font-size: $px14;
-                    }
-                    input[type=radio] {
-                        background-image: url('../images/sub/icon_circle_off.svg');
-                        background-repeat: no-repeat;
-                        width:24px;
-                        height:24px;
-                        display: inline-block;
-                        border:none;
-                        appearance: none;
-                        cursor: pointer; 
-                    }
-                    input[type=radio]:checked {
-                        cursor: pointer; 
-                        display: inline-block;
-                        width:24px;
-                        height:24px;
-                        background-image: url('../images/sub/icon_circle_on.svg');
-                    }
-                }
-                .hiden_tab1 {
-                    span {
-                        font-size: $px12;
-                        margin-top: 12px;
-                    }
-                    .btn_area {
-                        width: 150px;
-                        height: 44px;
-                    }
-                }
-                .hiden_tab2 {
-                    display: none;
-                    span:first-child {
-                        margin-top: 10px;
-                    }
-                    span {
-                        font-size: $px12;
-                        display: inline-block;
-                    }
-                }
-                .gender {
-                    @include flex-row-btw-ct;
-                    height: 48px;
-                    label[class*=gender] {
-                        display: flex; 
-                        flex-flow: row nowrap;
-                        align-items: center;
-                        width: calc((100% / 3) - 4px);
-                        cursor: pointer; 
-                    }
-                    input[type=radio] {
-                        background-image: url('../images/sub/icon_circle_off.svg');
-                        background-repeat: no-repeat;
-                        width:24px;
-                        height:24px;
-                        display: inline-block;
-                        border:none;
-                        appearance: none;
-                        cursor: pointer; 
-                    }
-                    input[type=radio]:checked {
-                        cursor: pointer; 
-                        display: inline-block;
-                        width:24px;
-                        height:24px;
-                        background-image: url('../images/sub/icon_circle_on.svg');
-                    }
-                }
-                .date {
-                    @include bo_dd4;
-                    input {
-                        border: 0;
-                        text-align: center;
-                        display: flex; 
-                        flex-flow: row nowrap;
-                        align-items: center;
-                        width: calc((100% / 3) - 10px);
-                        display: inline-block;
-                    }
-                }
-                .btn_area {
-                    width:20%;
-                    button {
-                        width: 100%;
-                        @include bo_pp3;
-                        height: 46px;
-                        margin-left: 8px;
-                        font-size: $px14;
-                        font-weight: 500;
-                        color:$purple;
-                    }
-                    .btn_phone {
-                        width: 100%;
-                        @include bo_dd4;
-                        height: 46px;
-                        margin-left: 8px;
-                        font-size: $px14;
-                        font-weight: 500;
-                        color:#ddd;
-                    }
-                }
-                .btn_search {
-                    height: 44px;
-                    @include bo_pp4;
-                    @include flex-row-ct-ct;
-                    width: 100%;
-                    color:$purple;
-                    font-size: $px14;
-                    font-weight: 500;
-                    img {
-                        width:20px;
-                    }
-                }
-                .btn_search + span {
-                    display: inline-block;
-                    margin-top: 10px;
-                    font-size: $px12;
-                }
-            }
-        }
-        .terms {
-            padding:10px 0px 10px 20px ;
-            border-top: 1px solid #333;
-            li {
-                padding: 10px 0px 10px 0;
-                @include flex-row-st;
-                .title {
-                    padding: 6px 20px 10px 16px;
-                    width:22%;
-                    p,em {
-                        font-weight: 500;
-                        font-size: $px14;
-                    }
-                    em {
-                        color:$error;
-                    }
-                }
-                .agree_area {
-                    width: 75%;
-                    label[class=agree_all] {
-                        font-size: $px17;
-                        font-weight: 500;
-                    }
-                    .agree_all + p {
-                        margin: 10px 0 ;
-                        font-size: $px12;
-                    }
-                    .receive {
-                        label {
-                            margin-right: 10px;
-                        }
-                        p {
-                            font-size: $px12;
-                            margin:10px 0 10px 40px ;
-                        }
-                    }
-                    label {
-                        font-size: $px12;
-                        em {   
-                            font-size: $px12;
-                            color: $c-153;
-                            font-weight: 500;
-                        }
-                        input {
-                            background-image: url('../images/sub/icon_check1.png');
-                            background-size: cover;
-                            width:22px;
-                            height:22px;
-                            display: inline-block;
-                            appearance: none;
-                            cursor: pointer; 
-                            margin-right: 10px;
-                            transform: translateY(5px);
-                        }
-                        input:checked {
-                            background-image: url('../images/sub/icon_check4.png');
-                            background-size: cover;
-                            width:22px;
-                            height:22px;
-                            display: inline-block;
-                            appearance: none;
-                            cursor: pointer; 
-                            margin-right: 10px;
-                            transform: translateY(5px);
-                        }
-                    }
-                    span {
-                        margin: 10px 0 10px 30px;
-                        display: inline-block;
-                        font-size: $px12;
-                    }
-                    div[class*=agree] {
-                        @include flex-row-btw-ct;
-                        margin-bottom: 16px;
-                        span {
-                            font-size: $px14;
-                        }
-                        strong::after {
-                            background-image: url('../images/main/icon/icon_arrow_right.svg');
-                            display: inline-block;
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            width: 10px;
-                            height: 10px;
-                            content: '';
-                            margin-left: 2px;
-                        }
-                        strong {
-                            font-size: $px14;
-                            color:$purple;
-                        }
-                    }
-                    .receive {
-                        .choice {
-                            margin: 10px 0 0px 30px;
-                            label {
-                                cursor: pointer;
-                            }
-                        }
-                        span {
-                            margin-left: 60px;
-                            margin-bottom: 10px;
-                            color:$purple;
-                            font-weight: 500;
-                            letter-spacing: -0.02rem;
-                            img {
-                                transform: translateY(3px);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
     .tab_terms1, .tab_terms2, .tab_terms3 { 
         // display: none;
         position: fixed;
         top:0; left: 0;
         background-color: rgba(0,0,0,0.5);
         width: 100%;
-        height: 100vh;
+        height: 100%;
         @include flex-row-ct-ct;
         .tab_box {
             background-color: #fff;
@@ -464,13 +471,15 @@ main {
         }
     }
 }
-@media screen and (max-width:540px) {
+@media screen and (max-width:480px){
     main {
         .join {
-            max-width: 100%;
+            h1 {
+                font-size: $px24;
+            }
             form {
                 .wrap {
-                    padding: 20px 16px 0;
+                    padding: 30px 16px 0;
                     li {
                         padding: 10px 0px;
                         @include flex-row-st;
@@ -482,82 +491,85 @@ main {
                                 font-size: $px11;
                             }
                         }
-                        .input_area.date {
-                            padding: 0;
-                            input {
-                                width: 30%;
-                            }
-                        }
-                        .input_area {
-                            width:58%;
-                            input::placeholder {
-                                font-size: $px11;
-                            }
-                            .gender_male, .gender_female, .gender_none {
-                                font-size: $px11;
-                                width: calc(100% / 3);
-                                height: 16px;
-                            }
-                            .gender , .event {
-                                label[class*=event]:checked {
-                                    width: calc(100% / 3);
+                        .sub_area {
+                            .input_area.date {
+                                padding: 0;
+                                input {
+                                    width: 30%;
                                 }
-                                label[class*=gender] {
-                                    width: calc(100% / 3);
+                            }
+                            .input_area {
+                                input::placeholder {
                                     font-size: $px11;
                                 }
-                                input[type=radio] {
-                                    height:16px;
+                                .gender_male, .gender_female, .gender_none {
+                                    font-size: $px11;
+                                    width: calc(100% / 3);
+                                    height: 16px;
+                                }
+                                .gender , .event {
+                                    label[class*=event]:checked {
+                                        width: calc(100% / 3);
+                                    }
+                                    label[class*=gender] {
+                                        width: calc(100% / 3);
+                                        font-size: $px11;
+                                    }
+                                    input[type=radio] {
+                                        height:16px;
+                                        font-size: $px11;
+                                    }
+                                    input[type=radio]:checked {
+                                        height:16px;
+                                    }
+                                }
+                                input {
+                                    padding: 0px 15px;
+                                }
+                                .error_m {
                                     font-size: $px11;
                                 }
-                                input[type=radio]:checked {
+                                .btn_search + span {
+                                    font-size: $px10;
+                                }
+                                .btn_search {
+                                    height: 46px;
+                                    font-size: $px11;
+                                }
+                            }
+                            .btn_area {
+                                .btn_id_chk {
+                                    height: 46px;
+                                }
+                                button {
+                                    height: 46px;
+                                    margin-left: 6px;
+                                    font-size: $px10;
+                                }
+                                .btn_phone {
+                                    height: 46px;
+                                    margin-left: 6px;
+                                    font-size: $px10;
+                                    white-space: pre-line;
+                                }
+                            }
+                            .event {
+                                label[class*=event] {
+                                    font-size: $px11;
+                                }
+                                label[class*=gender]:checked {
+                                    width:16px;
                                     height:16px;
                                 }
                             }
-                            input {
-                                padding: 0px 15px;
+                            .hiden_tab1 {
+                                span {font-size: $px10;}
                             }
-                            .error_m {
-                                font-size: $px11;
-                            }
-                            .btn_search {
-                                height: 36px;
-                                font-size: $px11;
-                            }
-                        }
-                        .btn_area {
-                            width:18%;
-                            .btn_id_chk {
-                                height: 46px;
-                            }
-                            button {
-                                height: 46px;
-                                margin-left: 6px;
-                                font-size: $px11;
-                            }
-                            .btn_phone {
-                                height: 46px;
-                                margin-left: 6px;
-                                font-size: $px11;
-                                white-space: pre-line;
-                            }
-                        }
-                        .event {
-                            label[class*=event] {
-                                font-size: $px11;
-                            }
-                            label[class*=gender]:checked {
-                                width:16px;
-                                height:16px;
-                            }
-                        }
-                        .hiden_tab1 {
-                            span {font-size: $px11;}
                         }
                     }
                 }
                 .terms {
-                    padding:10px 0px 10px 0 ;
+                    padding:10px 0px 10px 16px;
                     li {
                         .title {
                             p {font-size: $px11; em {font-size: $px11;}}
@@ -565,8 +577,13 @@ main {
                         .agree_area {
                             width: 75%;
                             label[class=agree_all] {
-                                font-size: $px17;
+                                font-size: $px14;
                                 font-weight: 500;
+                            }
+                            label {
+                                font-size: $px11;
+                                white-space: normal;
+                                em {font-size: $px10;}
                             }
                             p {
                                 line-height: 1.2rem;
@@ -604,4 +621,71 @@ main {
             }
         }
     }
+}
+@media screen and (max-width:430px){
+    main {
+        width: 100%;
+        margin-top: 20px;
+        .join {
+            h1 {
+                font-size: $px24;
+                display: none;
+            }
+            .box_wrap_info {
+                display: none;
+            }
+            form {
+                .wrap {
+                    li {
+                        padding: 0;
+                        display: flex;
+                        flex-flow: column nowrap ;
+                        .title {
+                            width:100%;
+                            @include flex-row-st;
+                            margin-bottom: 10px;
+                        }
+                        .sub_area {
+                            width: 100%;
+                            .input_area {
+                                width: 100%;
+                                span {font-size: $px9;}
+                            }
+                            .btn_area { 
+                                width: calc(100% - 60%);
+                                padding-right: 8px;
+                                button {font-size: $px11;}
+                                .btn_phone {font-size: $px11;}
+                            }
+                            .event {
+                                label[class*=event] {
+                                    font-size: $px11;
+                                }
+                            }
+                        }
+                    }
+                }
+                .terms {
+                    border-top: 4px solid $c-238;
+                    li {
+                        display: flex;
+                        flex-flow: column nowrap;
+                        .title { width: 100%;}
+                        .agree_area {
+                            width: 100% ;
+                            padding-right: 16px;
+                        }
+                    }
+                }
+            }
+            #btn_join {
+                width: 91% !important;
+                @include flex-row-ct-ct;
+            }
+        }
+    }
+}
+// js용 추가 클래스
+.display_none {
+    display: none !important;
 }
