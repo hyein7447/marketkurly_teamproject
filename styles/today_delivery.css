@@ -35,4 +35,10 @@ main .area6, main .area7 {
 main .area6 img, main .area7 img {
   max-width: 1050px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 820px) {
+  main {
+    width: 100%;
+  }
 }/*# sourceMappingURL=today_delivery.css.map */

@@ -1,0 +1,1 @@
+const user_id = document.querySelector('#user_id')

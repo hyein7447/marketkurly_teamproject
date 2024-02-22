@@ -121,3 +121,8 @@ main {
 @media screen and (max-width:820px) {}
 @media screen and (max-width:430px) {}
 @media screen and (max-width:320px) {}
+
+// js용 추가 클래스
+.display_none {
+    display: none !important;
+}

@@ -506,7 +506,7 @@ let price = 11800;
 pop_plus.addEventListener('click',()=>{
     if(p_num < 20){
         p_num++ ;
-        pop_num.innerText = p_num
+        pop_num.innerHTML = p_num
         pop_total =  p_num*price
         p_tab_price.innerHTML = `${pop_total.toLocaleString('ko-kr')}<em>원</em>`
     }else{
@@ -517,12 +517,12 @@ pop_plus.addEventListener('click',()=>{
 pop_minus.addEventListener('click',()=>{
     if(0< p_num){
         p_num--;
-        pop_num.innerText = p_num
+        pop_num.innerHTML = p_num
         pop_total =  p_num*price
         p_tab_price.innerHTML = `${pop_total.toLocaleString('ko-kr')}<em>원</em>`
     }else if(p_num == 0){
         p_tab_price.innerHTML = `0<em>원</em>`;
-        pop_num.innerText = `0`;
+        pop_num.innerHTML = `0`;
         // pop_minus.children.setAttribute('fill-opacity', '0.4');
     }
 })
@@ -572,7 +572,7 @@ let m_price = 11800;
 slide_plus.addEventListener('click',()=>{
     if(m_num < 20){
         m_num++ ;
-        slide_num.innerText = m_num
+        slide_num.innerHTML = m_num
         slide_total =  m_num*m_price
         slide_total_btn.innerHTML = `<span>${slide_total.toLocaleString('ko-kr')}원 장바구니 담기</span>`
     }else{
@@ -583,12 +583,12 @@ slide_plus.addEventListener('click',()=>{
 slide_minus.addEventListener('click',()=>{
     if(1<= m_num){
         m_num--;
-        slide_num.innerText = m_num
+        slide_num.innerHTML = m_num
         slide_total =  m_num*m_price
         p_tab_price.innerHTML = `<span>${slide_total.toLocaleString('ko-kr')}원 장바구니 담기</span>`
     }else if(m_num === 0){
         slide_total_btn.innerHTML = `장바구니 담기`;
-        slide_num.innerText = `0`;
+        slide_num.innerHTML = `0`;
     }
 })
 // ---------------------- 구분선 --------------------------       
