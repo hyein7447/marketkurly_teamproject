@@ -37,9 +37,10 @@
     }
 }
 // 챗봇 영역
-.sub1 {position: relative;}
+.sub1 {position: relative; /* display: none; */}
 .chatbot_sub {
-    display: none;
+    position: relative;
+    // display: none;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;

@@ -35,11 +35,11 @@
 }
 
 .sub1 {
-  position: relative;
+  position: relative; /* display: none; */
 }
 
 .chatbot_sub {
-  display: none;
+  position: relative;
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
