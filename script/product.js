@@ -399,7 +399,7 @@ window.addEventListener('resize', () => {
         })
         m_nav_a[2].addEventListener('click',()=>{
             m_section_hide();
-            review.style.display = 'none'
+            review.style.display = 'block'
         })
         m_nav_a[3].addEventListener('click',()=>{
             m_section_hide();
