@@ -13,6 +13,14 @@ const more_btn = document.querySelector('#more_btn')
 const more_btn_icon = document.querySelector('#more_btn > img')
 const kakaopay_info = document.querySelector('.kakaopay_info')
 const payco_info = document.querySelector('.payco_info')
+const select_card = document.querySelector('#select_card')
+const select_card_span = document.querySelector('#select_card > span')
+const select_card_list = document.querySelector('.select_card_list')
+const select_card_list_opt = document.querySelectorAll('.select_card_list > a')
+const installment = document.querySelector('#installment')
+const installment_span = document.querySelector('#installment > span')
+const select_installment_list = document.querySelector('.select_installment_list')
+const select_installment_list_opt = document.querySelectorAll('.select_installment_list > a')
 
 // ---------- 주문 목록 펼치기 접기
 order_item.style.display = 'block'
@@ -103,18 +111,51 @@ more_btn.addEventListener('click',()=>{
 })
 
 // -------- 신용카드 결제 시 카드/할부 선택
-const select_card = document.querySelector('#select_card')
-const installment = document.querySelector('#installment')
-const select_card_list = document.querySelector('.select_card_list')
-const select_installment_list = document.querySelector('.select_installment_list')
 
 select_card.addEventListener('click',()=>{
     select_card_list.style.display = 'flex'
 })
-select_card_list.addEventListener('click',()=>{
+installment.addEventListener('click',()=>{
     select_installment_list.style.display = 'flex'
 })
 
+const installment_style = () => {
+    installment_span.style.color = '#333';
+    installment.style.backgroundColor = '#fff';
+}
+
+for(let a of select_card_list_opt){
+    a.addEventListener('click',()=>{
+        installment_span.innerHTML = '할부를 선택해주세요';
+        select_card_list.style.display = 'none';
+        select_card_span.innerHTML = a.innerHTML
+        installment_style();
+        let imgTag = installment.querySelector('img')
+        imgTag.src = './images/main/icon/icon_down_16x10.png'
+        imgTag.style.width = '10px'
+    })
+}
+for(let a of select_installment_list_opt){
+    a.addEventListener('click',()=>{
+        select_installment_list.style.display = 'none';
+        installment_span.innerHTML = a.innerHTML
+        installment_style();
+    })
+    
+}
+
+
+// ------- 결제 금액 박스가 상단에 고정되어 따라오게 하기 fixed
+const btm_right = document.querySelector('.btm_right');
+const btm_right_offset_Top = btm_right.offsetTop;
+
+/* window.addEventListener('scroll',()=>{
+    if(window.scrollY > btm_right_offset_Top){
+        btm_right.style.position = 'fixed';
+    }else{
+        btm_right.style.position = 'static';
+    }
+}) */
 
 //  ------- 링크 설정되지 않은 a 태그 클릭시 상단으로 올라가는 것 막기
 document.querySelectorAll('a').forEach(link => {

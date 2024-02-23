@@ -198,6 +198,8 @@ main{
             }
             .order_btm{
                 display: flex;
+                position: relative;
+                width: 100%;
                 .left{
                     width: 160px;
                     line-height: 44px;
@@ -387,7 +389,6 @@ main{
                                         border-radius: 9px;
                                     }
                                     .kakaopay_btn_active{
-                                        border: 0;
                                         background-color: #f6e500;
                                     }
                                     #kakaopay_btn{
@@ -610,35 +611,37 @@ main{
                                     .select_card_list{
                                         display: flex;
                                         flex-flow: column nowrap;
-                                        padding: 20px;
                                         border: 1px solid $c-221;
                                         background-color: #fff;
                                         width: 276px;
                                         position: absolute;
                                         top: 43px;
-
                                         display: none;
                                         a{
-                                            padding-bottom: 12px;
+                                            padding: 12px 20px;
                                             color: #555;
-                                            &:last-child{padding: 0;}
+                                            &:hover{
+                                                background-color: #f4f4f4;
+                                                color: $purple;
+                                            }
                                         }
                                     }
                                     .select_installment_list{
                                         display: flex;
                                         flex-flow: column nowrap;
-                                        padding: 20px;
                                         border: 1px solid $c-221;
                                         background-color: #fff;
                                         width: 276px;
                                         position: absolute;
                                         top: 96px;
-    
                                         display: none;
                                         a{
-                                            padding-bottom: 12px;
+                                            padding: 12px 20px;
                                             color: #555;
-                                            &:last-child{padding: 0;}
+                                            &:hover{
+                                                background-color: #f4f4f4;
+                                                color: $purple;
+                                            }
                                         }
                                     }
                                 }
@@ -801,9 +804,10 @@ main{
                     }
                 }
                 .btm_right{
+                    // position: fixed;
+                    top: 0;
+                    right: 0;
                     width: 27%;
-                    position: relative;
-                    top: 15px;
                     margin-left: 37.5px;
                     h2{
                         margin-top: 0;

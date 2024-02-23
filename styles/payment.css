@@ -194,6 +194,8 @@ main form fieldset .order_top .purplebox img {
 }
 main form fieldset .order_btm {
   display: flex;
+  position: relative;
+  width: 100%;
 }
 main form fieldset .order_btm .left {
   width: 160px;
@@ -377,7 +379,6 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .me
   border-radius: 9px;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .method_type_btn .kakaopay_btn_active {
-  border: 0;
   background-color: #f6e500;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .method_type_btn #kakaopay_btn {
@@ -592,7 +593,6 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .me
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card .select_card_list {
   display: flex;
   flex-flow: column nowrap;
-  padding: 20px;
   border: 1px solid #ddd;
   background-color: #fff;
   width: 276px;
@@ -601,16 +601,16 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .me
   display: none;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card .select_card_list a {
-  padding-bottom: 12px;
+  padding: 12px 20px;
   color: #555;
 }
-main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card .select_card_list a:last-child {
-  padding: 0;
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card .select_card_list a:hover {
+  background-color: #f4f4f4;
+  color: #5F0080;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card .select_installment_list {
   display: flex;
   flex-flow: column nowrap;
-  padding: 20px;
   border: 1px solid #ddd;
   background-color: #fff;
   width: 276px;
@@ -619,11 +619,12 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .me
   display: none;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card .select_installment_list a {
-  padding-bottom: 12px;
+  padding: 12px 20px;
   color: #555;
 }
-main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card .select_installment_list a:last-child {
-  padding: 0;
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card .select_installment_list a:hover {
+  background-color: #f4f4f4;
+  color: #5F0080;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .simple_payment {
   position: relative;
@@ -778,9 +779,9 @@ main form fieldset .order_btm .btm_left .payment_btn_wrap #payment_btn {
   border-radius: 3px;
 }
 main form fieldset .order_btm .btm_right {
+  top: 0;
+  right: 0;
   width: 27%;
-  position: relative;
-  top: 15px;
   margin-left: 37.5px;
 }
 main form fieldset .order_btm .btm_right h2 {

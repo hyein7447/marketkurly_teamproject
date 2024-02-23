@@ -53,11 +53,6 @@ for (let i of select_opt) {
 
         selectedItems.add(itemName);
 
-        // console.log(itemName);
-        // console.log(i.lastChild.innerHTML);
-        // console.log(i.firstElementChild.innerHTML);
-        // console.log(i.lastChild.innerHTML);
-
         let create_select = document.createElement('div');
         create_select.classList.add('select');
         create_select.classList.add('add_select');
