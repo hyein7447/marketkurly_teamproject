@@ -563,7 +563,7 @@ const slide_minus = document.querySelector('.bg_wh .info .cart_box .price_num .n
 const slide_plus = document.querySelector('.bg_wh .info .cart_box .price_num .num .plus')
 const slide_total_btn = slide_btn_cart_r.querySelector('span')
 console.log(slide_total_btn,slide_minus)
-/* ---------------------- 구분선 -------------------------- */ ★★★★★★★★★★★★★ 작업중
+/* ---------------------- 구분선 -------------------------- */
 // 모바일 슬라이드 탭 카트 담기 팝업 안에 + - 수량 증가 감소, 가격변경
 let m_num = 0;
 let slide_total = 0;
@@ -863,4 +863,17 @@ for(let j of product_m){
         })
     }
 }
-/* ---------------------- 구분선 -------------------------- */    
+/* ---------------------- 구분선 -------------------------- */      
+// 링크 설정되지 않은 a 태그 클릭시 상단으로 올라가는 것 막기
+document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', (event) => {
+        // 링크의 href 속성을 가져옴
+        const href = link.getAttribute('href');
+        
+        // href가 #인 경우에만 preventDefault() 호출
+        if (href === '#') {
+            event.preventDefault();
+        }
+    });
+});
+/* ---------------------- 구분선 -------------------------- */  

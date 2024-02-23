@@ -20,21 +20,33 @@ main .best .top h1 {
     text-align: center;
     font-weight: 500;
 }
-main .best .top .cate_list {
-    width: 100%;
+main .best .top .cate_fruit {
     display: flex; flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 100%;
     border: 1px solid #ddd;
-    padding:30px 40px;
-    margin-top: 28px;
+    padding:30px 60px;
+    margin-top: 50px;
+    text-align: left;
+}
+main .best .top .cate_fruit a {
+    width: 120px;
+}
+main .best .top .cate_best {
+    display: flex; flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding:30px 20px;
+    margin-top: 50px;
 }
 main .best .top .cate_list a:hover {
     font-weight: 700; color:#5f0080;
 }
 main .best .top .cate_list a {
     line-height: 20px;
-    letter-spacing: -0.01rem;
-    width: 230px; margin-right: 60px; margin-bottom: 16px;
-    padding: 10px 30px 10px 60px;
+    letter-spacing: -0.02rem;
+    padding: 20px 60px;
     white-space: nowrap;
 }
 /* 왼쪽컨테이너 --- 어사이드 영역 */
