@@ -2,6 +2,7 @@
 
 // 버튼영역 (up, 챗봇)
 .main_btn {
+    height: 200vh;
     #btn_up:hover {
         background-image: url('../images/main/icon/footer/arrow_top_hover.png');
         transition: 0.5s ease;
@@ -13,9 +14,11 @@
         width: 58px;
         height: 58px;
         position: fixed;
-        right: 31px; bottom: 30px;
+        right: 50px; bottom: 60px;
         cursor: pointer;
         z-index: 999;
+        // transition: opacity 0.3s ease-in-out;
+        // opacity: 0;
     }
     #btn_chatbot:hover {
         background-image: url('../images/main/icon/footer/icon_chatbot_hover.png');
@@ -28,17 +31,24 @@
         width: 58px;
         height: 58px;
         position: fixed;
-        right: 31px; bottom: 93px;
+        right: 50px; bottom: 124px;
         cursor: pointer;
         z-index: 999;
     }
 }
 // 챗봇 영역
+.sub1 {position: relative;}
 .chatbot_sub {
     display: none;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    max-height: 650px ;
+    height: 70%;
+    // animation: slide_up 1s ease-in-out;
     position: fixed;
-    right: 34px;
-    bottom: 150px;
+    right: 44px;
+    bottom: 192px;
     width:358px;
     border-radius: 20px;
     background-color: #333;
@@ -46,29 +56,32 @@
     z-index: 900;
     box-shadow: -4px 15px 15px 0px rgba(0,0,0,0.2);
     .home {
-        overflow-y: auto;
         width: 100%;
         display: none;
         .top {
             @include flex-row-st-ct;
-            padding:0 10px 20px;
+            padding:0 10px 20px 0px;
             img {
-                width:60px;
+                width:40px;
                 margin-right: 10px;
                 border-radius: 22px;
             }
             span {
                 font-weight: 600;
-                font-size: $px20;
+                font-size: $px15;
                 color:#fff;
             }
         }
+        .contact::-webkit-scrollbar {
+            display: none; 
+        }
         .contact {
-            height: auto;
             padding-bottom: 60px;
-            max-height: 500px;
+            max-height: 460px;
             overflow-y: scroll;
-            display: none;
+            // display: none;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
             .list1 {
                 padding: 15px;
                 background-color: #f4f4f4;
@@ -84,19 +97,19 @@
                         span {
                             span:first-child {
                                 display: block;
-                                font-weight: 600;
+                                font-weight: 800;
                                 font-size: $px12;
                                 margin-bottom: 4px;
                             }
                             span:nth-child(2) {
-                                font-size: $px14;
+                                font-size: $px12;
                                 font-weight: 500;
-                                letter-spacing: -0.02rem;
+                                letter-spacing: -0.04rem;
                             }
                         }
                     }
                 }
-                > a {
+                .btn_inquire {
                     display: block;
                     width:100%;
                     text-align: center;
@@ -108,14 +121,15 @@
                     margin: 20px 0 7px;
                     span {
                         color:#fff;
-                        font-size: $px14;
+                        font-size: $px13;
                         margin-right: 5px;
+                        font-weight: 600;
                     }
                 }
                 p {
                     text-align: center;
-                    font-size: $px11;
-                    font-weight: 600;
+                    font-size: $px10;
+                    font-weight: 500;
                 }
             }
             .list2 {
@@ -125,7 +139,7 @@
                 border-radius: 20px;
                 margin-top: 15px;
                 p {
-                    font-size: $px14;
+                    font-size: $px13;
                     font-weight: 500;
                 }
                 .chat_icon {
@@ -164,7 +178,7 @@
         .wrap {
             .null {
                 height: 100%;
-                padding: 60px 0;
+                padding: 80px 0 60px;
                 @include flex-col-ct-ct;
                 [class$=dots] {
                     font-size: 60px;
@@ -177,7 +191,7 @@
             }
             .button {
                 @include flex-row-ct-ct;
-                margin-bottom: 10px;
+                margin-bottom: 40px;
                 .btn_new_q {
                     display: inline-block;
                     color: #fff;
@@ -189,7 +203,8 @@
         }
     }
     .setting {
-        // display: none;
+        height: 480px;
+        display: none;
         .top {
             p {
                 font-weight: 600;
@@ -198,36 +213,51 @@
             }
         }
         .user_info {
+            padding-top: 0px;
+            max-height: 480px;
             @include flex-col-ct-ct;
+            overflow-y: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
             .user_top {
-                text-align: center;
+                @include flex-row-st-ct;
+                text-align: left;
                 color:#fff;
                 width: 100%;
-                padding: 0 0 25px;
-                [class$=user] {
-                    font-size: 26px;
-                    border: 2px solid #666;
-                    border-radius: 20px;
-                    padding: 15px;
-                    margin:30px 0 15px;
-                }
-                p:nth-child(2) {
-                    color:#fff;
-                }
-                p:nth-child(3) {
-                    color:#fff;
-                    margin:5px 0 20px;
-                    font-size: $px13;
-                }
-                a {
-                    background-color: rgba(0,0,0,0.2);
-                    color:#fff;
-                    padding: 4px 10px;
-                    border-radius: 4px;
-                    font-size: $px12;
-                    i[class$=square] {
+                .pro_img {
+                    transform: translateY(-8px);
+                    margin-right: 20px;
+                    [class$=user] {
+                        font-size: 35px;
+                        border: 2px solid #666;
+                        border-radius: 20px;
+                        padding: 15px;
+                        margin:30px 0 15px;
                         color:#fff;
-                        margin-right: 5px;
+                    }
+                }
+                .pro_info {
+                    @include flex-col-st;
+                    p:nth-child(1) {
+                        color:#fff;
+                        font-size: $px10;
+                        margin-left: 2px;
+                    }
+                    p:nth-child(2) {
+                        color:#fff;
+                        margin:5px 0 5px 2px;
+                        font-size: $px10;
+                    }
+                    a {
+                        background-color: rgba(0,0,0,0.2);
+                        color:#fff;
+                        padding: 4px 4px;
+                        border-radius: 4px;
+                        font-size: $px10;
+                        i[class$=square] {
+                            color:#fff;
+                            margin-right: 5px;
+                        }
                     }
                 }
             }
@@ -236,9 +266,12 @@
                 padding: 10px 0;
                 color: #fff;
                 width: 100%;
+                li:nth-child(1), li:nth-child(5) {
+                    margin:2px 0 10px;
+                }
                 li {
                     @include flex-row-btw-ct;
-                    margin-bottom: 14px;
+                    margin-bottom: 2px;
                     padding: 5px 6px;
                     span {
                         color:#999;
@@ -272,6 +305,7 @@
                         }
                     }
                     .toggle_active {
+                        cursor: pointer;
                         background-color: $purple;
                         width:38px;
                         height: 26px;
@@ -286,6 +320,7 @@
                         }
                     }
                     .toggle_none {
+                        cursor: pointer;
                         background-color: #666;
                         width:38px;
                         height: 26px;
@@ -310,9 +345,15 @@
         }
     }
     .navigation {
+        position: absolute;
+        bottom: 0px;
         width: 100%;
         @include flex-row-btw-ct;
-        padding: 15px 0 7px;
+        padding: 15px 0 20px;
+        width:341px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        background-color: #333;
         a:hover {
             color:#fff;
             transition: 0.5s ease;
@@ -329,6 +370,7 @@
     }
 }
 .sub2 {
+    display: none;
     .title {
         position: sticky;
         top: 0px;
@@ -385,13 +427,15 @@
         }
     }
     .chat_qa {
-        overflow-y: auto;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        // padding-bottom: 0px;
         .kurly_logo {
-            display: none !important;
             @include flex-col-ct-ct;
             padding: 30px 0;
             img {
-                width:80px;
+                width:60px;
                 margin-bottom: 10px;
             }
             span {
@@ -935,3 +979,44 @@ footer {
     }
 }
 @media screen and (max-width:320px) {}
+// js용 추가 클래스
+// transition: opacity 0.3s ease-in-out;
+// opacity: 0;
+.btn_up_active {
+    opacity: 1;
+}
+.toggle_active {
+    cursor: pointer;
+    background-color: $purple;
+    width:38px;
+    height: 26px;
+    border-radius: 18px;
+    border: 1px solid #444;
+    .circle {
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        border-radius: 50%;
+        transform: translate(16px , 4px);
+    }
+}
+.toggle_none {
+    cursor: pointer;
+    background-color: #666;
+    width:38px;
+    height: 26px;
+    border-radius: 18px;
+    .circle {
+        width: 16px;
+        height: 16px;
+        background-color: #b5b5b5;
+        border-radius: 50%;
+        transform: translate(4px , 5px);
+    }
+}
+// 슬라이드용 애니메이션
+// animation: slide_up 0.6s ease-in-out;
+@keyframes slide_up {
+    0% {opacity: 0; transform: translateX(100%);}
+    100% {opacity: 1; transform: translateX(0);}
+}
