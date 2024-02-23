@@ -2,7 +2,7 @@
 
 main{
     max-width: 1280px;
-    padding: 62.5px 0 60px; //
+    padding: 62.5px 20px 60px; //
     margin: 0 auto;
     form{
         fieldset{
@@ -31,7 +31,7 @@ main{
             }
             .order_top{
                 .left{
-                    width: 160px;
+                    width: 16%;
                 }
                 .left, .right{
                     line-height: 37.5px;//
@@ -43,15 +43,14 @@ main{
                 .product_ordered{
                     h2{margin-top: 0;}
                     .order_item{
-                        // order_list 펼쳤을 때 display none
-                        // display: none;
                         padding: 32px 0; //
                         line-height: 37.5px; //
                         font-weight: 500;
                         text-align: center;
                         border-bottom: 1px solid $c-244;
-                        
+                        font-size: $px16;                        
                         span{
+                            font-size: $px16;                        
                             line-height: 37.5px;
                             font-weight: 500;
                         }
@@ -64,11 +63,12 @@ main{
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
+                            width: 100%;
 
                             .order_list_left{
                                 @include flex-row-btw-ct;
                                 .order_img{
-                                    img{width: 60px;}
+                                    img{width: 75px;}
                                 }
                                 .order_item_name{
                                     color: #000;
@@ -83,14 +83,13 @@ main{
                                 }
                             }
                             .order_list_right{
+                                width: 20%;
                                 @include flex-row-btw-ct;
                                 .order_item_num{
                                     font-size: $px14;
-                                    width: 100px;
                                 }
                                 .order_item_price{
                                     font-weight: 700;
-                                    width: 126px;
                                     text-align: right;
                                 }
                             }
@@ -187,6 +186,14 @@ main{
                             top: 6px;
                         }
                     }
+                    input[type="radio"]:checked + label::before {
+                        background-image: url(../images/sub/icon_circle_on.svg);
+                    }
+                }
+                .purplebox{
+                    display: none;
+                    padding: 40px 0 60px;
+                    img{width: 100%;}
                 }
             }
             .order_btm{
@@ -200,6 +207,7 @@ main{
                     letter-spacing: -0.32px;    
                 }
                 .btm_left{
+                    width: 70%;
                     .coupon{
                         display: flex;
                         
@@ -272,6 +280,9 @@ main{
                                             position: relative;
                                             top: 6px;
                                         }
+                                    }
+                                    input[type="checkbox"]:checked + label::before {
+                                        background-image: url(../images/sub/icon_check4.png);
                                     }
 
                                 }
@@ -375,13 +386,18 @@ main{
                                         height: 17px;
                                         border-radius: 9px;
                                     }
+                                    .kakaopay_btn_active{
+                                        border: 0;
+                                        background-color: #f6e500;
+                                    }
                                     #kakaopay_btn{
                                         width: 100%;
                                         height: 48px;
-                                        background-color: #f6e500;
+                                        border: 1px solid rgb(226, 226, 226);
                                         border-radius: 3px;
                                         img{margin-top: 7px;}
                                     }
+                                    
                                     &:first-child{margin-bottom: 12px;}
                                     #kurly_pay_btn{
                                         width: 100%;
@@ -393,6 +409,10 @@ main{
                                             margin-top: 10px;
                                             width: 82px;
                                         }
+                                    }
+                                    .kurly_pay_btn_active{
+                                        border: 0;
+                                        background-color: $purple;
                                     }
                                 }
                                 .kurly_pay_wrap{
@@ -503,6 +523,11 @@ main{
                                 .payment_method_detail{
                                     display: flex;
                                     margin-top: 12px;
+                                    
+                                    .method_active{
+                                        color: #fff;
+                                        background-color: $purple;
+                                    }
                                     a{
                                         text-align: center;
                                         display: flex;
@@ -547,7 +572,8 @@ main{
                                 }
                                 .credit_card{
                                     position: relative;
-                                    margin: 20px 0;
+                                    margin-top: 12px;
+                                    // display: none;
                                     #select_card{
                                         width: 276px;
                                         height: 44px;
@@ -616,11 +642,44 @@ main{
                                         }
                                     }
                                 }
+                                .simple_payment{
+                                    position: relative;
+                                    margin-top: 14px;
+                                    input{display: none;}
+                                    .simple_payment_btm{
+                                        margin-top: 12px;
+                                        margin-bottom: 8px;
+                                    }
+                                    label{
+                                        margin-right: 80px;
+                                        font-size: $px14;
+                                        span{
+                                            font-size: $px13;
+                                            color: #fa622f;
+                                            margin:0 0 6px 6px;
+                                        }
+                                        &::before{
+                                            content: '';
+                                            display: inline-block;
+                                            width: 24px;
+                                            height: 24px;
+                                            background-image: url(../images/sub/icon_circle_off.svg);
+                                            background-size: 100%;
+                                            margin-right: 20px;
+                                            position: relative;
+                                            top: 6px;
+                                        }
+                                    }
+                                    input[type="radio"]:checked + label::before {
+                                        background-image: url(../images/sub/icon_circle_on.svg);
+                                    }
+                                }
                                 .guide_benefit{
                                     background-color: $c-250;
                                     width: 414px;
                                     padding: 20px 20px;
                                     border-radius: 6px;
+                                    margin-top: 12px;
                                     margin-bottom: 20px;
 
                                     .top{
@@ -651,6 +710,7 @@ main{
 
                                             #more_btn{
                                                 display: flex;
+                                                width: 100%;
                                                 justify-content: center;
                                                 align-items: center;
                                                 margin: 0 auto;
@@ -741,7 +801,7 @@ main{
                     }
                 }
                 .btm_right{
-                    width: 284px;
+                    width: 27%;
                     position: relative;
                     top: 15px;
                     margin-left: 37.5px;
@@ -805,7 +865,7 @@ main{
                         }
                     }
                     a{
-                        img{width: 284px;}
+                        img{width: 100%;}
                     }
                 }
             }

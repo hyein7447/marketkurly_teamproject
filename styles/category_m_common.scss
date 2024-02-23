@@ -406,6 +406,7 @@
                     }
                 }
                 .area {
+                    animation: slide_up 0.6s ease-in-out;
                     background-color: #fff;
                     background-position-y: 100%;
                     border-top-left-radius: 20px;
@@ -815,7 +816,7 @@
     main {
         .best_mobile {
             .sub_header {
-                .cate_title {
+                .cate_title_col {
                     a {
                         width:65px;
                         margin-right: 0;
@@ -827,6 +828,12 @@
                         span {
                             font-size: $px10;
                         }
+                    }
+                }
+                .cate_title_row {
+                    a {
+                        img {}
+                        span {font-size: $px10;}
                     }
                 }
                 .filter {

@@ -21,7 +21,7 @@
     </div>
     <!-- 챗봇 채팅 영역 -->
     <div class="chatbot_sub sub1">
-        <div class="home"><!--홈버튼 클릭 시 보이는 영역-->
+        <div class="chat_list home"><!--홈버튼 클릭 시 보이는 영역-->
             <div class="top">
                 <img src="./images/main/icon/footer/icon_chatbot_profile.jpg" alt="">
                 <span>마켓컬리</span>
@@ -44,7 +44,7 @@
                             </span>
                         </a>
                     </div>
-                    <a href="#"><span>문의하기</span><i class="fa-solid fa-paper-plane"></i></a>
+                    <button type="button" class="btn_inquire"><span>문의하기</span><i class="fa-solid fa-paper-plane"></i></button>
                     <p>몇 분 내 답변 받으실 수 있어요</p>
                 </div>
                 <div class="list2">
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-        <div class="chat"><!--대화 클릭 시 보이는 영역-->
+        <div class="chat_list chat"><!--대화 클릭 시 보이는 영역-->
             <div class="top">
                 <p>대화</p>
             </div>
@@ -75,16 +75,20 @@
                 </div>
             </div>
         </div>
-        <div class="setting"><!--설정 클릭 시 보이는 영역-->
+        <div class="chat_list setting"><!--설정 클릭 시 보이는 영역-->
             <div class="top">
                 <p>설정</p>
             </div>
             <div class="user_info">
                 <div class="user_top">
-                    <i class="fa-regular fa-user"></i>
-                    <p>이름</p>
-                    <p>연락처 정보</p>
-                    <a href="#"><i class="fa-solid fa-pen-to-square"></i>정보 수정하기</a>
+                    <div class="pro_img">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="pro_info">
+                        <p>이름</p>
+                        <p>연락처 정보</p>
+                        <a href="#"><i class="fa-solid fa-pen-to-square"></i>정보 수정하기</a>
+                    </div>
                 </div>
                 <ul class="environment">
                     <li><span>상담 환경</span></li>
@@ -161,7 +165,7 @@
             <p>내일 아침 문 앞에서 만나요!</p>
         </div>
         <div class="chat_qa">
-            <div class="kulry_logo">
+            <div class="kurly_logo">
                 <img src="./images/main/icon/footer/icon_chatbot_hover.png" alt="">
                 <span>마켓컬리에 문의하기</span>
             </div>
@@ -297,7 +301,7 @@
                 </div>
                 <div class="choice_consultant_list"><!--상담원 연결 입력창-->
                     <div class="message_input">
-                        <input type="text" placeholder="메세지를 입력해주세요." class="text_area">
+                        <input type="text" placeholder="메세지를 입력해주세요." id="text_area">
                         <a href="#"><i class="fa-regular fa-face-smile"></i></a>
                         <a href="#"><i class="fa-solid fa-paperclip"></i></a>
                     </div>
@@ -427,5 +431,6 @@
             </div>
         </address>
     </footer>
+    <script src="./script/footer.js"></script>
 </body>
 </html>   

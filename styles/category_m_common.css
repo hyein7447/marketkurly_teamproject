@@ -408,6 +408,7 @@
     border-radius: 16px;
   }
   main .best_mobile .tab_slide .area {
+    animation: slide_up 0.6s ease-in-out;
     background-color: #fff;
     background-position-y: 100%;
     border-top-left-radius: 20px;
@@ -822,16 +823,19 @@
   }
 }
 @media screen and (max-width: 430px) {
-  main .best_mobile .sub_header .cate_title a {
+  main .best_mobile .sub_header .cate_title_col a {
     width: 65px;
     margin-right: 0;
   }
-  main .best_mobile .sub_header .cate_title a img {
+  main .best_mobile .sub_header .cate_title_col a img {
     padding: 0;
     width: 56px;
     height: 56px;
   }
-  main .best_mobile .sub_header .cate_title a span {
+  main .best_mobile .sub_header .cate_title_col a span {
+    font-size: 0.75rem;
+  }
+  main .best_mobile .sub_header .cate_title_row a span {
     font-size: 0.75rem;
   }
   main .best_mobile .sub_header .filter .left .num_total span {

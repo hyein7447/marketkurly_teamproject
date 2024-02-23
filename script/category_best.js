@@ -70,18 +70,18 @@ console.log('----------------- 데스크탑 버전 -----------------')
 */
 // 베스트 카테고리 상단 top의 메뉴(a) 클릭 시 컬러 변경
 // 초기 값 -> TOP300 글씨 보라색으로 활성화
-cate_top_a[0].classList.add('top_active')
+cate_top_a[0].classList.add('top_active');
 // 아래 forEach에서 클릭 시 보라색으로 글씨 활성화되는 classList 제거 함수 호출용
 const top_a_hide = ()=>{
     for(let a of cate_top_a){
-        a.classList.remove('top_active')
+        a.classList.remove('top_active');
     }
 }
 // a 클릭 시 초기값 제거 -> 클릭 대상만 보라색으로 글씨 활성화
 cate_top_a.forEach((o,i)=>{
     o.addEventListener('click',()=>{
-        top_a_hide()
-        cate_top_a[i].classList.add('top_active')
+        top_a_hide();
+        o[i].classList.add('top_active');
     })
 })
 /* ---------------------- 구분선 -------------------------- */
@@ -597,9 +597,8 @@ slide_minus.addEventListener('click',()=>{
 // const cate_title_test = document.querySelector('.cate_title_col');
 let cate_title_parent = document.querySelector('.best_mobile > .sub_header > .cate_title')
 let cate_title_area = document.querySelector('.best_mobile > .sub_header')
-// let title_row_reset = ()=>{for(let b of cate_title_parent){b.classList.remove('cate_row_active')}}
 cate_title[0].classList.add('cate_active') //초기값 -> 탑 0일때
-// 스크롤 이벤트 감지
+// 스크롤 이벤트 
 window.addEventListener('scroll',()=>{
     // 현재 스크롤 위치
     const scrollTop = window.pageYOffset;
@@ -620,37 +619,63 @@ window.addEventListener('scroll',()=>{
         cate_title[0].classList.remove('cate_row_active') //row용 활성화 제거
     }
 });
+
 /* ---------------------- 구분선 -------------------------- */
-// 모바일 베스트 카테고리 상단에 이미지와 같이있는 타이틀리스트                 ★★★★★★★★★★★★ 나중에 확인할 위치
+// 모바일 베스트 카테고리 상단에 이미지와 같이있는 타이틀리스트           ★★★★★★★★★★★★ 나중에 확인할 위치
 // 클릭 -> 보라색으로 활성화
 let title_reset = ()=>{for(let a of cate_title){a.classList.remove('cate_active')}}
 let top_zero = ()=>{
     for(let i of cate_title){
         i.addEventListener('click',()=>{
-            title_row_reset()
-            title_reset()
-            i.preventDefault
-            i.classList.add('cate_active')
+            title_row_reset();
+            title_reset();
+            i.classList.add('cate_active');
         })
     }
 }
+
 top_zero() //다른곳에서도 호출해야 돼서 매개변수로 처리
 let title_row_reset = ()=>{for(let v of cate_title){v.classList.remove('cate_row_active')}}
+cate_title[0].classList.add('cate_row_active') // -> 0번 활성화 안되어있는데 나중에 확인하기 ★★★
 let top_offset30 = ()=>{
+    for(let t of cate_title){
+        t.addEventListener('click',()=>{
+            title_reset() //col용 a의 active 비활성화
+            title_row_reset(); //row용 a의 active 비활성화
+            t.classList.add('cate_row_active');
+        })
+    }
+}
+
+/* let top_offset30 = ()=>{
+    cate_title[0].classList.add('cate_row_active')
+    for (let t of cate_title) {
+        t.addEventListener('click', () => {
+            if (t == cate_title[0]) {
+                t.classList.remove('cate_row_active') 
+            } else {
+                title_reset() //col용 a의 active 비활성화
+                title_row_reset(); //row용 a의 active 비활성화
+                t.classList.add('cate_row_active');
+            }
+        });
+    }
+}
+ */
+/* let top_offset30 = ()=>{
+    cate_title[0].classList.add('cate_row_active')        
     for(let s of cate_title){
-        cate_title[0].classList.add('cate_row_active')        
         s.addEventListener('click',()=>{
             if (s === cate_title[0]){
                 cate_title[0].classList.remove('cate_row_active') 
             }else {
                 title_reset()
                 title_row_reset()
-                s.preventDefault
                 s.classList.add('cate_row_active')
             }
         })
     }
-}
+} */
 /* ---------------------- 구분선 -------------------------- */
 // 초기값 -> 추천순 클릭시 sub메뉴 보이기 + arrow 반전 -> sub메뉴 클릭시 해당 a classList 활성화
 let title_a_status = false;
