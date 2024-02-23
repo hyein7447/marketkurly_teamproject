@@ -16,18 +16,20 @@ const nav_home = document.querySelector('i[class*=house]')
 const nav_chat = document.querySelector('i[class*=dots]')
 const nav_setting = document.querySelector('i[class*=gear]')
 // 공통영역 
-const chat_list = document.querySelectorAll('.sub1 > .chat_list') 
+const chat_list = document.querySelectorAll('.sub1 > .chat_list') //nav 채팅창 공통 클래스
 const chat_nav = document.querySelectorAll('.navigation a')
 console.log(btn_chatbot)
 /* ---------------------- 구분선 -------------------------- */
 // 챗봇영역
 // 챗봇 버튼 클릭 시 챗봇화면 활성화 -> 다시 클릭 시 비활성화
 // 챗봇 토글 함수
-/* let chatbot_toggle = () => {
-    chat_home.style.display = chat_home.style.display === 'block' ? 'none' : 'block';
+let chatbot_toggle = () => {
+    chatbot_sub.forEach((t)=>{
+        t.style.display = t.style.display === 'block' ? 'none' : 'block';
+    })
 };
-btn_chatbot.addEventListener('click', chatbot_toggle); */
-let sub_show = false;
+btn_chatbot.addEventListener('click', chatbot_toggle);
+/* let sub_show = false;
 let chatbot_toggle = () => {
     if(!sub_show){
         chatbot_sub[0].style.display = 'block';
@@ -38,31 +40,15 @@ let chatbot_toggle = () => {
         }
     }
 };
-btn_chatbot.addEventListener('click', chatbot_toggle);
+btn_chatbot.addEventListener('click', chatbot_toggle); */
+
 /* btn_chatbot.addEventListener('click', chatbot_toggle);
 let chatbot_toggle = () => {
-    chatbot_sub.forEach((sub) => {
-        sub.classList.toggle('hidden');
+    chatbot_sub.forEach((t) => {
+        t.classList.toggle('hidden');
     });
 };
 btn_chatbot.addEventListener('click', chatbot_toggle); */
-
-// 홈 - 문의하기 버튼 클릭시 대화로 창 이동
-btn_inquire.addEventListener('click',()=>{
-    chat_chat.style.display = 'block';
-})
-// 홈 - 맨위 채팅창 버튼 클릭시 채팅으로 창 이동
-list_box.addEventListener('click',()=>{
-    chatbot_sub[1].style.display = 'block';
-})
-// 채팅 - 새 문의하기 버튼 클릭시 대화로 창 이동
-btn_new_q.addEventListener('click',()=>{
-    chatbot_sub[1].style.display = 'block';
-})
-// 채팅 - btn_back버튼 클릭 시 채팅창 none처리
-btn_back.addEventListener('click',()=>{
-    chat_home.style.display = 'block';
-})
 /* ---------------------- 구분선 -------------------------- */
 
 // const setting_toggle = document.querySelectorAll('ul > li > div[class*=toggle]')
@@ -77,12 +63,59 @@ setting_toggle.forEach((t)=>{
 // 하단 네비게이션 클릭시 해당 페이지 활성화
 // 호출용
 let chat_nav_hide = ()=>{for(let a of chat_list){a.style.display = 'none'}}
+let nav_active_remove = ()=>{for(let e of chat_nav){e.classList.remove('nav_active')}}
+// 네비게이션 클릭시 해당 페이지 전환
 chat_nav.forEach((t,i)=>{
     t.addEventListener('click',()=>{
-        chat_nav_hide()
+        chat_nav_hide() //나머지 none 호출
         chat_list[i].style.display = 'block';
+        nav_active_remove()
+        t.classList.add('nav_active')
+    })
+    // 홈 - 문의하기 버튼 클릭시 대화로 창 이동
+    btn_inquire.addEventListener('click',()=>{
+        chat_chat.style.display = 'block';
+    })
+    // 홈 - 맨위 채팅창 버튼 클릭시 채팅으로 창 이동
+    list_box.addEventListener('click',()=>{
+        chatbot_sub[1].style.display = 'block';
+        chatbot_sub[0].style.display = 'none';
+    })
+    // 채팅 - 새 문의하기 버튼 클릭시 대화로 창 이동
+    btn_new_q.addEventListener('click',()=>{
+        chatbot_sub[1].style.display = 'block';
+        chatbot_sub[0].style.display = 'none';
     })
 })
+// chatbot_sub none처리 호출용 함수 선언
+let sub_hide = ()=>{for(let v of chatbot_sub){v.style.display = 'none'}}
+console.log(sub_hide())
+// 채팅 - btn_back버튼 클릭 시 채팅창 none처리
+btn_back.addEventListener('click',()=>{
+    sub_hide()
+    /* if (chatbot_sub[0].style.display == 'block') {
+        chatbot_sub[1].style.display = 'none';
+        chatbot_sub[0].style.display = 'block';
+    } else if (chatbot_sub[0].style.display == 'none') {
+        chatbot_sub[0].style.display = 'block';
+    }
+    // btn_chatbot 클릭 시 chatbot_sub[0] 표시
+    let sub_show = false;
+    btn_chatbot.addEventListener('click',()=>{
+        if(chatbot_sub[0].style.display == 'none' && chatbot_sub[1].style.display == 'none'){ 
+            chatbot_sub[0].style.display = 'block';
+            sub_show = !sub_show;
+        }else if(chatbot_sub[0].style.display == 'block' && chatbot_sub[1].style.display == 'block'){
+            sub_hide()
+            sub_show = !sub_show;
+        }
+    }) */
+});
+/* if (chatbot_sub[0].style.display === 'block' && chatbot_sub[1].style.display === 'block') {
+    btn_chatbot.addEventListener('click',()=>{sub_hide()})
+} else if (chatbot_sub[0].style.display == 'none' && chatbot_sub[1].style.display == 'none'){
+    btn_chatbot.addEventListener('click',()=>{chatbot_sub[0].style.display = 'block';})
+} */
 /* ---------------------- 구분선 -------------------------- */
 
 // up버튼 클릭 시 window의 제일 상단으로 이동 상단기준 400px 밑으로 내려오면 버튼 사라지게 설정

@@ -1,0 +1,59 @@
+@import 'common';
+
+main {
+    .bnr {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        display: inline-block;
+        .benefit {
+            max-width: 1280px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8px;
+            img {
+                cursor: pointer;
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width:840px){
+    main {
+        .bnr {
+            padding: 0 16px;
+            .benefit:nth-child(1) {img{content: url(../images/benefit/mobile/bnr_001.png)}}
+            .benefit:nth-child(2) {img{content: url(../images/benefit/mobile/bnr_002.jpg)}}
+            .benefit:nth-child(3) {img{content: url(../images/benefit/mobile/bnr_003.jpg)}}
+            .benefit:nth-child(4) {img{content: url(../images/benefit/mobile/bnr_004.jpg)}}
+            .benefit:nth-child(5) {img{content: url(../images/benefit/mobile/bnr_005.jpg)}}
+            .benefit:nth-child(6) {img{content: url(../images/benefit/mobile/bnr_006.jpg)}}
+            .benefit:nth-child(7) {img{content: url(../images/benefit/mobile/bnr_007.jpg)}}
+            .benefit:nth-child(8) {img{content: url(../images/benefit/mobile/bnr_008.jpg)}}
+            .benefit:nth-child(9) {img{content: url(../images/benefit/mobile/bnr_009.jpg)}}
+            .benefit:nth-child(10) {img{content: url(../images/benefit/mobile/bnr_010.jpg)}}
+            .benefit:nth-child(11) {img{content: url(../images/benefit/mobile/bnr_001.png)}}
+            .benefit:nth-child(12) {img{content: url(../images/benefit/mobile/bnr_002.jpg)}}
+            .benefit:nth-child(13) {img{content: url(../images/benefit/mobile/bnr_003.jpg)}}
+            .benefit:nth-child(14) {img{content: url(../images/benefit/mobile/bnr_004.jpg)}}
+            .benefit:nth-child(15) {img{content: url(../images/benefit/mobile/bnr_005.jpg)}}
+            .benefit:nth-child(16) {img{content: url(../images/benefit/mobile/bnr_006.jpg)}}
+            .benefit:nth-child(17) {img{content: url(../images/benefit/mobile/bnr_007.jpg)}}
+            .benefit:nth-child(18) {img{content: url(../images/benefit/mobile/bnr_008.jpg)}}
+            .benefit:nth-child(19) {img{content: url(../images/benefit/mobile/bnr_009.jpg)}}
+            .benefit:nth-child(20) {img{content: url(../images/benefit/mobile/bnr_010.jpg)}}
+            .benefit:nth-child(10) {img{content: url(../images/benefit/mobile/bnr_010.jpg)}}
+            .benefit:nth-child(21) {img{content: url(../images/benefit/mobile/bnr_001.png)}}
+            .benefit:nth-child(22) {img{content: url(../images/benefit/mobile/bnr_002.jpg)}}
+            .benefit:nth-child(23) {img{content: url(../images/benefit/mobile/bnr_003.jpg)}}
+            .benefit:nth-child(24) {img{content: url(../images/benefit/mobile/bnr_004.jpg)}}
+            .benefit:nth-child(25) {img{content: url(../images/benefit/mobile/bnr_005.jpg)}}
+            .benefit:nth-child(26) {img{content: url(../images/benefit/mobile/bnr_006.jpg)}}
+            .benefit:nth-child(27) {img{content: url(../images/benefit/mobile/bnr_007.jpg)}}
+            .benefit:nth-child(28) {img{content: url(../images/benefit/mobile/bnr_008.jpg)}}
+            .benefit:nth-child(29) {img{content: url(../images/benefit/mobile/bnr_009.jpg)}}
+            .benefit:nth-child(30) {img{content: url(../images/benefit/mobile/bnr_010.jpg)}}
+        }
+    }
+}
