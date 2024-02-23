@@ -584,8 +584,10 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .me
   padding: 0 15px;
   border: 1px solid #ddd;
   font-size: 1rem;
-  color: #cccccc;
   background-color: #fafafa;
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card #installment span {
+  color: #CCC;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card #installment img {
   display: block;
