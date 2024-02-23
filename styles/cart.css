@@ -322,4 +322,8 @@ main .container .content .order .notice ul li::before {
   position: absolute;
   left: -7px;
   top: 12px;
+}
+
+.open_toggle {
+  display: none !important;
 }/*# sourceMappingURL=cart.css.map */

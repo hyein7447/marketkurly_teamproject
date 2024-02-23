@@ -707,7 +707,43 @@
                         }
                 }
             }
-            // .review{display: none;}
+            .review{
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                h2{display: none;}
+                .review_photo_list {
+                    padding: 0;
+                    padding-bottom: 10px;
+                    border-bottom: 8px solid #f4f4f4;
+                    
+                    a:nth-of-type(n + 2):nth-of-type(-n + 5) {
+                        display: none;
+                    }
+                    a{width: calc(100% / 4);}
+                }
+                .review_photo_more{
+                    .photo_more_container{
+                        width: 80%;
+                        padding: 20px;
+
+                        .photo_more_top{
+                            margin-bottom: 20px;
+                            padding-bottom: 5px;
+                            h3{font-size: $px20;} 
+                            p{
+                                #photo_more_btn{width: 30px;}
+                            }
+                        }
+                    }
+                }
+                .review_sorting{
+                    margin: 10px 0;
+                }
+                .review_container{
+                    .page_btn_wrap{display: none;}
+                }
+            }
             .inquiry{
                 width: 100%;
                 .inquiry_top_wrap{
@@ -726,8 +762,20 @@
                 .inquiry_list{
                     .inquiry_list_wrap{display: none;}
                     ul{
-                        margin-top: 20px;
+                        li{
+                            padding: 20px 5px;
+                            height: max-content;
+                            p{width: max-content;}
+                            .writer{
+                                width: max-content;
+                                p{
+                                    width: max-content;
+                                    padding-left: 15px;
+                                }
+                            }
+                        }
                     }
+                    .page_btn_wrap{display: none;}
                 }
             }
         }

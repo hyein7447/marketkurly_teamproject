@@ -720,7 +720,7 @@ main .instagram .more a {font-weight: 500;}
 
 .position {
     position: fixed;
-    top: -300px;
+    top: -285px;
     right: 0;
     z-index: 999;
 }
