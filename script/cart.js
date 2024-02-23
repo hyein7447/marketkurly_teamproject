@@ -118,40 +118,70 @@ const minus = document.querySelectorAll('.minus')
 const plus = document.querySelectorAll('.plus')
 const a_num = document.querySelectorAll('.product .num')
 const item_num = document.querySelectorAll('.item_num')
-console.log(minus,plus,item_num,a_num)
+const d_price = document.querySelectorAll('.price span')
+const o_price = document.querySelectorAll('.price del')
+const order_p = document.querySelector('.order_p')
+const order_dis_p = document.querySelector('.order_dis_p')
+const delivery_p = document.querySelector('.delivery_p')
+const total_p = document.querySelector('.total_p')
+console.log(minus,plus,item_num,a_num,order_p,order_dis_p,delivery_p,total_p)
 
-let num = 1
-item_num[0].innerHTML = num
-item_num[1].innerHTML = num
-item_num[2].innerHTML = num
+let nums = [1, 1, 1];
+let dis_price = [17900, 8451, 10710]
+let origin_price = [19990, 9900, 15200]
+let total_price = 0
 
-plus[0].addEventListener('click',()=>{
-    num++
-    item_num[0].innerHTML = num
-})
-minus[0].addEventListener('click',()=>{
-    if(num > 1){
-        num--
-        item_num[0].innerHTML = num
-    }
-})
-plus[1].addEventListener('click',()=>{
-    num++
-    item_num[1].innerHTML = num
-})
-minus[1].addEventListener('click',()=>{
-    if(num > 1){
-        num--
-        item_num[1].innerHTML = num
-    }
-})
-plus[2].addEventListener('click',()=>{
-    num++
-    item_num[2].innerHTML = num
-})
-minus[2].addEventListener('click',()=>{
-    if(num > 1){
-        num--
-        item_num[2].innerHTML = num
-    }
+// 초기 수량 설정
+item_num.forEach((item, index) => {
+    item.innerHTML = nums[index];
+});
+
+// 플러스, 마이너스 버튼 클릭 시 수량변경, 가격변경
+plus.forEach((t, i) => {
+    t.addEventListener('click', () => {
+        nums[i]++;
+        item_num[i].innerHTML = nums[i];
+
+        let d_total = dis_price[i]*item_num[i].innerHTML;
+        let o_total = origin_price[i]*item_num[i].innerHTML;
+
+        d_price[i].innerHTML = d_total.toLocaleString('ko-kr')+'원'
+        o_price[i].innerHTML = o_total.toLocaleString('ko-kr')+'원'
+
+        if (check_icon[i].checked) {
+            total_price += origin_price[i];
+        }
+        order_p.innerHTML = total_price.toLocaleString('ko-kr') + '원';
+    });
+});
+
+minus.forEach((t, i) => {
+    t.addEventListener('click', () => {
+        if (nums[i] > 1) {
+            nums[i]--
+            item_num[i].innerHTML = nums[i];
+
+            let d_total = dis_price[i]*item_num[i].innerHTML;
+            let o_total = origin_price[i]*item_num[i].innerHTML;
+
+            d_price[i].innerHTML = d_total.toLocaleString('ko-kr')+'원'
+            o_price[i].innerHTML = o_total.toLocaleString('ko-kr')+'원'
+
+            if (check_icon[i].checked) {
+                total_price -= origin_price[i];
+            }
+            order_p.innerHTML = total_price.toLocaleString('ko-kr') + '원';
+        }
+    });
+});
+
+check_icon.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        if(check_icon[i].checked){
+        total_price += origin_price[i] * nums[i];
+        }else {
+            total_price -= origin_price[i] * nums[i];
+        }
+        order_p.innerHTML = total_price.toLocaleString('ko-kr') + '원';
+    })
 })
