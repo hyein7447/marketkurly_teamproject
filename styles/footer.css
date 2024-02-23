@@ -34,12 +34,9 @@
   z-index: 999;
 }
 
-.sub1 {
-  position: relative; /* display: none; */
-}
-
 .chatbot_sub {
   position: relative;
+  display: none;
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -56,8 +53,8 @@
   box-shadow: -4px 15px 15px 0px rgba(0, 0, 0, 0.2);
 }
 .chatbot_sub .home {
-  width: 100%;
   display: none;
+  width: 100%;
 }
 .chatbot_sub .home .top {
   display: flex;
@@ -206,8 +203,8 @@
   padding: 10px 20px;
 }
 .chatbot_sub .setting {
-  height: 480px;
   display: none;
+  height: 480px;
 }
 .chatbot_sub .setting .top p {
   font-weight: 600;
@@ -394,6 +391,7 @@
 }
 
 .sub2 {
+  padding: 20px 25px;
   display: none;
 }
 .sub2 .title {
@@ -503,13 +501,14 @@
 .sub2 .chat_qa .qa_list .qa_brand .comment_wrap .comment_box .brand_ment {
   display: inline-block;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.938rem;
   font-weight: 300;
   margin-bottom: 4px;
   background-color: #444;
   border-radius: 20px;
   padding: 15px;
-  line-height: 1.1rem;
+  line-height: 1.2rem;
+  letter-spacing: -0.04rem;
 }
 .sub2 .chat_qa .qa_list .qa_brand .comment_wrap .comment_box .brand_ment span {
   margin: 10px 0;
@@ -616,7 +615,7 @@
   padding: 10px;
   border-radius: 10px;
 }
-.sub2 .chat_qa .qa_list .choice_consultant_list .message_input .text_area {
+.sub2 .chat_qa .qa_list .choice_consultant_list .message_input #text_area {
   width: 80%;
   color: #999;
 }
