@@ -12,7 +12,7 @@ main .title p {font-size: 1.125rem;}
 main .main_bnr {}
 main .main_bnr #main_bnr_slide {
     width: 100%; margin: 0 auto 40px; position: relative;
-    overflow-x: hidden; 
+    overflow: hidden; 
 }
 main .main_bnr #main_bnr_slide #main_bnr_slide_wrap {}
 /* 메인 배너 slide 공통 */
@@ -83,7 +83,7 @@ main .ranking .title a img {position: relative; top: 2px;}
 main .ranking .title p {color: #999; text-align: center;}
 main .ranking .container {}
 main .ranking .container #ranking_slide {
-    max-width: 1280px; overflow-x: hidden;
+    max-width: 1280px; overflow: hidden;
     
 }
 main .ranking .container #ranking_slide #ranking_slide_wrap {
@@ -283,7 +283,7 @@ main .md .tag li a {
 }
 main .md .container {max-width: 1280px; margin: 0 auto; }
 main .md .container #md_slide {
-    display: flex; overflow-x: hidden; max-width: 1280px;
+    display: flex; overflow: hidden; max-width: 1280px;
     margin: 20px 0 27px;
 
 }
@@ -353,7 +353,7 @@ main .kurly_original .title p {
 }
 main .kurly_original .container {}
 main .kurly_original .container #original_slide {
-    padding-bottom: 40px; margin: 0 auto; overflow-x: hidden;
+    padding-bottom: 40px; margin: 0 auto; overflow: hidden;
 }
 main .kurly_original .container #original_slide #original_slide_wrap {
     display: flex; width: max-content;
@@ -425,7 +425,7 @@ main .present .title a {display: flex; justify-content: center; padding: 8px 0 1
 main .present .title a img {position: relative; top: 2px;}
 main .present .title p {color: #999; text-align: center;}
 main .present .container {}
-main .present .container #present_slide {max-width: 1280px; overflow-x: hidden;}
+main .present .container #present_slide {max-width: 1280px; overflow: hidden;}
 main .present .container #present_slide #present_slide_wrap {width: max-content; display: flex;}
 main .present .container #present_slide #present_slide_wrap .item {
     display: flex; flex-flow: column nowrap;

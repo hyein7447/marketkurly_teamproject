@@ -292,13 +292,16 @@ main .container .content .order .order_btn_bg {
 main .container .content .order .order_btn_bg #order_btn {
   display: block;
   width: 100%;
+  border-radius: 3px;
+  height: 56px;
+  background-color: #ddd;
+}
+main .container .content .order .order_btn_bg #order_btn .btn_txt {
+  font-weight: 500;
   padding: 0 10px;
   text-align: center;
   color: #fff;
-  background-color: #5F0080;
-  border-radius: 3px;
-  height: 56px;
-  font-weight: 500;
+  font-size: 1.125rem;
 }
 main .container .content .order .notice ul li {
   font-size: 0.875rem;
@@ -326,4 +329,12 @@ main .container .content .order .notice ul li::before {
 
 .open_toggle {
   display: none !important;
+}
+
+.bg_active {
+  background-color: #5F0080 !important;
+}
+
+.color_w {
+  color: #fff;
 }/*# sourceMappingURL=cart.css.map */
