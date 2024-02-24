@@ -2,7 +2,7 @@ const img_box = document.querySelectorAll('.delivery_area')
 console.log(img_box)
 /* ---------------------- 구분선 -------------------------- */
 window.addEventListener('resize', () => {
-    if (window.innerWidth <= 850) {
+    if (window.innerWidth <= 840) {
         img_box[0].children[0].src = './images/delivery/mobile/main_001.jpg';
         img_box[1].children[0].src = './images/delivery/mobile/main_002.jpg';
         img_box[2].children[0].src = './images/delivery/mobile/main_003.jpg';

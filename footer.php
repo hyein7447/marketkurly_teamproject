@@ -21,7 +21,7 @@
     </div>
     <!-- 챗봇 채팅 영역 -->
     <div class="chatbot_sub sub1">
-        <div class="home"><!--홈버튼 클릭 시 보이는 영역-->
+        <div class="chat_list home"><!--홈버튼 클릭 시 보이는 영역-->
             <div class="top">
                 <img src="./images/main/icon/footer/icon_chatbot_profile.jpg" alt="">
                 <span>마켓컬리</span>
@@ -44,7 +44,7 @@
                             </span>
                         </a>
                     </div>
-                    <a href="#"><span>문의하기</span><i class="fa-solid fa-paper-plane"></i></a>
+                    <button type="button" class="btn_inquire"><span>문의하기</span><i class="fa-solid fa-paper-plane"></i></button>
                     <p>몇 분 내 답변 받으실 수 있어요</p>
                 </div>
                 <div class="list2">
@@ -52,7 +52,7 @@
                     <div class="chat_icon">
                         <a href="#"><img src="./images/main/icon/footer/icon_chat_kakao.png" alt=""></a>
                         <a href="#"><img src="./images/main/icon/footer/icon_chat_line.png" alt=""></a>
-                        <a href="#"><img src="./images/main/icon/footer/icon_chat_call.png" alt=""></a>
+                        <a href="#"><img src="./images/main/icon/footer/icon_chat_call_bk.png" alt=""></a>
                     </div>
                 </div>
                 <div class="list3">
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-        <div class="chat"><!--대화 클릭 시 보이는 영역-->
+        <div class="chat_list chat"><!--대화 클릭 시 보이는 영역-->
             <div class="top">
                 <p>대화</p>
             </div>
@@ -75,16 +75,20 @@
                 </div>
             </div>
         </div>
-        <div class="setting"><!--설정 클릭 시 보이는 영역-->
+        <div class="chat_list setting"><!--설정 클릭 시 보이는 영역-->
             <div class="top">
                 <p>설정</p>
             </div>
             <div class="user_info">
                 <div class="user_top">
-                    <i class="fa-regular fa-user"></i>
-                    <p>이름</p>
-                    <p>연락처 정보</p>
-                    <a href="#"><i class="fa-solid fa-pen-to-square"></i>정보 수정하기</a>
+                    <div class="pro_img">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="pro_info">
+                        <p>이름</p>
+                        <p>연락처 정보</p>
+                        <a href="#"><i class="fa-solid fa-pen-to-square"></i>정보 수정하기</a>
+                    </div>
                 </div>
                 <ul class="environment">
                     <li><span>상담 환경</span></li>
@@ -161,7 +165,7 @@
             <p>내일 아침 문 앞에서 만나요!</p>
         </div>
         <div class="chat_qa">
-            <div class="kulry_logo">
+            <div class="kurly_logo">
                 <img src="./images/main/icon/footer/icon_chatbot_hover.png" alt="">
                 <span>마켓컬리에 문의하기</span>
             </div>
@@ -194,10 +198,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="choice_order_be"><!-- *질문.1* 주문 전-->
+                <div class="choice_order_be usr_choice display_none"><!-- *질문.1* 주문 전-->
                     <p class="user_ment_active">주문 전 이신가요?😄</p><!--질문 선택 후(고객)-->
                 </div>
-                <div class="qa_brand band_order_be"><!--질문 선택 후(브랜드)-->
+                <div class="qa_brand band_order_be display_none"><!--질문 선택 후(브랜드)-->
                     <p>
                         <img src="./images/main/logo/logo_marketkulry.svg" alt="컬리 프로필">
                         <span>마켓컬리</span>
@@ -205,13 +209,13 @@
                     <div class="comment_wrap">
                         <div class="comment_box">
                             <p class="brand_ment">
-                                예약 전 궁금한 사항을 빠르게 안내드리겠습니다!🙏🏻<br><br>
+                                예약 전 궁금한 사항을 빠르게<br>안내드리겠습니다!🙏🏻<br><br>
                                 어떤 부분이 궁금하신가요?
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="choice_order_be_list"><!--주문 전 - 질문 선택 후 리스트-->
+                <div class="choice_order_be_list choice_list display_none"><!--주문 전 - 질문 선택 후 리스트-->
                     <div class="be_list">
                         <a href="#">자주 묻는 질문 보기 (FAQ)</a>
                         <a href="#">서비스 이용</a>
@@ -223,10 +227,10 @@
                         <a href="#">상담원 연결</a>
                     </div>
                 </div>
-                <div class="choice_order_be"><!-- *질문.2* 주문 후-->
+                <div class="choice_order_be usr_choice display_none"><!-- *질문.2* 주문 후-->
                     <p class="user_ment_active">주문 후 문의 🛒</p><!--질문 선택 후(고객)-->
                 </div>
-                <div class="qa_brand band_order"><!--질문 선택 후(브랜드)-->
+                <div class="qa_brand band_order display_none"><!--질문 선택 후(브랜드)-->
                     <p>
                         <img src="./images/main/logo/logo_marketkulry.svg" alt="컬리 프로필">
                         <span>마켓컬리</span>
@@ -241,7 +245,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="choice_order_list"><!--주문 후 - 질문 선택 후 리스트-->
+                <div class="choice_order_list choice_list display_none"><!--주문 후 - 질문 선택 후 리스트-->
                     <div class="be_list">
                         <a href="#">날짜/시간 변경</a>
                         <a href="#">배송 주소 변경</a>
@@ -252,10 +256,10 @@
                         <a href="#">상담원 연결</a>
                     </div>
                 </div>
-                <div class="choice_delivery"><!-- *질문.3* 배송문의-->
+                <div class="choice_delivery usr_choice display_none"><!-- *질문.3* 배송문의-->
                     <p class="user_ment_active">자주 묻는 질문 💬</p><!--질문 선택 후(고객)-->
                 </div>
-                <div class="qa_brand band_delivery"><!--질문 선택 후(브랜드)-->
+                <div class="qa_brand band_delivery display_none"><!--질문 선택 후(브랜드)-->
                     <p>
                         <img src="./images/main/logo/logo_marketkulry.svg" alt="컬리 프로필">
                         <span>마켓컬리</span>
@@ -271,16 +275,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="choice_deilvery_list"><!--주문 후 - 질문 선택 후 리스트-->
+                <div class="choice_deilvery_list choice_list display_none"><!--주문 후 - 질문 선택 후 리스트-->
                     <div class="be_list">
                         <a href="#">이전단계</a>
                         <a href="#">상담원 연결</a>
                     </div>
                 </div>
-                <div class="choice_consultant"><!-- *질문.3* 자주 묻는 질문-->
+                <div class="choice_consultant usr_choice display_none"><!-- *질문.4* 자주 묻는 질문-->
                     <p class="user_ment_active">상담원 연결 👩🏻‍💻</p><!--질문 선택 후(고객)-->
                 </div>
-                <div class="qa_brand band_consultant"><!--질문 선택 후(브랜드)-->
+                <div class="qa_brand band_consultant display_none"><!--질문 선택 후(브랜드)-->
                     <p>
                         <img src="./images/main/logo/logo_marketkulry.svg" alt="컬리 프로필">
                         <span>마켓컬리</span>
@@ -292,12 +296,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="user_message">
-                    <p>js용 </p>
+                <div class="user_message choice_list display_none">
+                    <p>js용</p>
                 </div>
                 <div class="choice_consultant_list"><!--상담원 연결 입력창-->
                     <div class="message_input">
-                        <input type="text" placeholder="메세지를 입력해주세요." class="text_area">
+                        <input type="text" placeholder="메세지를 입력해주세요." id="text_area" autocomplete="off">
                         <a href="#"><i class="fa-regular fa-face-smile"></i></a>
                         <a href="#"><i class="fa-solid fa-paperclip"></i></a>
                     </div>
@@ -355,7 +359,7 @@
                 </div>
             </div>
             <div class="right">
-                <div class="kulry_f_info">
+                <div class="kurly_f_info">
                     <a href="#">컬리소개</a>
                     <a href="#">컬리소개영상</a>
                     <a href="#">투자정보</a>
@@ -427,5 +431,6 @@
             </div>
         </address>
     </footer>
+    <script src="./script/footer.js"></script>
 </body>
 </html>   
