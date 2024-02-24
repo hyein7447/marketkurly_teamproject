@@ -113,7 +113,6 @@ tag.forEach((t,i)=>{
 const aside_bg = document.querySelector('.aside_bg')
 
 window.addEventListener('scroll',()=>{
-    console.log(window.pageYOffset)
 
     if(window.scrollY > 500){
         aside_bg.classList.add('position')
@@ -141,3 +140,22 @@ function handleResize() {
     }
 }
 window.addEventListener('resize', handleResize);
+
+// 장바구니 담기 팝업 출력
+
+const cart_btn = document.querySelectorAll('.cart_btn')
+const cart_pop = document.querySelector('.cart_pop_bg')
+const btn_cancel = document.querySelector('.btn_cancel')
+console.log(cart_btn,cart_pop)
+
+cart_pop.style.display = 'none'
+
+cart_btn.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        cart_pop.style.display = 'flex'
+    })
+})
+
+btn_cancel.addEventListener('click',()=>{
+    cart_pop.style.display = 'none'
+})

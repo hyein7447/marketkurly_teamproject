@@ -142,7 +142,10 @@ const m_gnb_bg = document.querySelector('.m_nav .gnb_bg')
 const m_gnb_li = document.querySelectorAll('.m_nav .gnb > li')
 const help_icon = document.querySelector('.search_bg > a')
 const keyword_open = document.querySelector('.keyword_open')
+const logo = document.querySelector('.logo')
+
 console.log(btm_menu,m_nav,user_search,lnb_bg,gnb_bg,m_gnb_li,help_icon)
+console.log(logo.href)
 
 // 초기 메뉴 가리기
 user_search.style.display = 'none'

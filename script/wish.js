@@ -308,3 +308,24 @@ content6_item.forEach((t,i)=>{
         event.preventDefault();
     })
 })
+
+// 장바구니 담기 팝업 출력
+
+const cart_btn = document.querySelectorAll('.wish_list .cart_btn')
+const cart_pop = document.querySelectorAll('.cart_pop_bg')
+const btn_cancel = document.querySelectorAll ('.btn_cancel')
+
+for(let p of cart_pop){p.style.display = 'none'}
+
+cart_btn.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        for(let p of cart_pop){p.style.display = 'none'}
+        cart_pop[i].style.display = 'flex'
+    })
+})
+
+btn_cancel.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        cart_pop[i].style.display = 'none'
+    })
+})

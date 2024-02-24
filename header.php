@@ -557,7 +557,7 @@
                     <li><a href="frugal.html">알뜰쇼핑</a></li>
                     <li><a href="#">특가/혜택</a></li>
                 </ul>
-                <a href="#" class="delivery">
+                <a href="./today_delivery.html" class="delivery">
                     <span><em>샛별·하루</em> 배송안내</span>
                 </a>
             </nav>
@@ -575,7 +575,8 @@
                     <div class="map"> <!-- icon bg 삽입 -->
                         <input type="button" onclick="exec_daum_postcode()" value=" " class="map_search_btn">
                     </div>
-                    <a href="#" class="cart"><img src="./images/main/icon/icon_cart_w.png" alt="장바구니 바로가기"></a>
+                    <a href="./cart.html" class="cart"><img src="./images/main/icon/icon_cart_w.png" alt="장바구니 바로가기"></a>
+                    <a href="./wish.html" class="wish"><img src="./images/main/icon/icon_wish_w.png" alt="위시리스트 바로가기"></a>
                 </div>
             </div>
             <div class="menu">
@@ -583,7 +584,9 @@
                 <a href="./new.html">신상품</a>
                 <a href="./best.html">베스트</a>
                 <a href="./frugal.html">알뜰쇼핑</a>
-                <a href="#">특가/혜택</a>
+                <a href="./today_delivery.html" class="delivery">
+                    <span><em>샛별·하루</em> 배송안내</span>
+                </a>
             </div>
             <div class="btm_menu">
                 <a href="./index.html"><img src="./images/main/icon/icon_home.svg" alt="홈으로가기"></a>
@@ -600,7 +603,8 @@
                                 <div class="map"> <!-- icon bg 삽입 -->
                                     <input type="button" onclick="exec_daum_postcode()" value="" class="map_search_btn">
                                 </div>
-                                <a href="#" class="cart"><img src="./images/main/icon/icon_cart_w.png" alt="장바구니 바로가기"></a>
+                                <a href="./cart.html" class="cart"><img src="./images/main/icon/icon_cart_w.png" alt="장바구니 바로가기"></a>
+                                <a href="./wish.html" class="wish"><img src="./images/main/icon/icon_wish_w.png" alt="위시리스트 바로가기"></a>
                             </div>
                         </div>
                         <ul class="gnb">
@@ -1321,7 +1325,8 @@
                         <div class="map"> <!-- icon bg 삽입 -->
                             <input type="button" onclick="exec_daum_postcode()" value="" class="map_search_btn">
                         </div>
-                        <a href="#" class="cart"><img src="./images/main/icon/icon_cart_w.png" alt="장바구니 바로가기"></a>
+                        <a href="./cart.html" class="cart"><img src="./images/main/icon/icon_cart_w.png" alt="장바구니 바로가기"></a>
+                        <a href="./wish.html" class="wish"><img src="./images/main/icon/icon_wish_w.png" alt="위시리스트 바로가기"></a>
                     </div>
                 </div>
                 <div class="search_bg">

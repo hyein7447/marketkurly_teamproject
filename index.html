@@ -16,7 +16,7 @@
     <!-- font-family -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!--swipe 플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -325,7 +325,7 @@
             </div>
         </section>
         <section class="sub_bnr sub_bnr1 ">
-            <a href="#"></a> <!-- img bg로 삽입 -->
+            <a href="#"><img src="./images/main/bnr/sub_bnr_001.jpg" alt=""></a>
         </section>
         <section class="special_p">
             <div class="left">
@@ -638,7 +638,9 @@
             </div>
         </section>
         <section class="sub_bnr sub_bnr2">
-            <a href="#"></a> <!-- img bg로 삽입 -->
+            <a href="#">
+                <img src="./images/main/bnr/sub_bnr_002.jpg" alt="">
+            </a> <!-- img bg로 삽입 -->
         </section>
         <section class="kurly_original">
             <div class="title">
@@ -1065,7 +1067,9 @@
             </div>
         </section>
         <section class="sub_bnr sub_bnr3">
-            <a href="#"></a> <!-- img bg로 삽입 -->
+            <a href="#">
+                <img src="./images/main/bnr/sub_bnr_003.png" alt="">
+            </a>
         </section>
         <section class="instagram">
             <div class="title">
@@ -1233,6 +1237,43 @@
                 </div>
             </div>
         </div>
+        <div class="cart_pop_bg">
+            <div class="cart_pop"><!--js로 처리 / DB 영역-->
+                <div class="thumb_name">
+                    <div class="thumb"></div>
+                    <h2 class="p_tab_title">[삼진어묵] 김치 우동 어묵 전골 (리뉴얼)</h2>
+                </div>
+                <div class="info">
+                    <!-- 여러개의 옵션은 이부분 복사 -->
+                    <div class="cart_box">
+                        <p class="p_tab_title">[삼진어묵] 김치 우동 어묵 전골 (리뉴얼)</p>
+                        <div class="price_num">
+                            <p class="p_tab_price">8,268원<span><del>10,600원</del></span> </p>
+                            <div class="num">
+                                <button type="button" class="minus"><img src="./images/main/icon/icon_btn_minus.svg" alt="수량 감소 버튼"></button>
+                                <span class="p_tab_num">1</span>
+                                <button type="button" class="plus"><img src="./images/main/icon/icon_btn_plus.svg" alt="수량 추가 버튼"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 여기까지 -->
+                </div>
+                <div class="total">
+                    <div class="total_result">
+                        <p>합계</p>
+                        <p class="p_tab_price">8,268<em>원</em></p>
+                    </div>
+                    <div class="explain">
+                        <span class="icon_save">적립</span>
+                        <span>로그인 후, 적립 혜택 제공</span>
+                    </div>
+                </div>
+                <div class="btn_cart">
+                    <button type="button" class="btn_cancel"><span>취소</span></button>
+                    <button type="button" class="btn_cart_r"><span>장바구니 담기</span></button>
+                </div>
+            </div>
+        </div>
     </main>
     <?php include("footer.php"); ?>
     <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
@@ -1269,21 +1310,21 @@
                     centeredSlides : false,  
                 },
                 // 윈도우 화면 너비가 840 이상일 때
-                840: {
-                    slidesPerView: 4,
+                820: {
+                    slidesPerView: 3,
                     spaceBetween: 20,
                     centeredSlides : false,  
                 },
                 // 윈도우 화면 너비가 430 이상일 때
                 430: {
                     slidesPerView: 2,
-                    spaceBetween: 20,
+                    spaceBetween: 15,
                     centeredSlides : false,  
                 },
                 // 윈도우 화면 너비가 320 이상일 때
                 320: {
                     slidesPerView: 2,
-                    spaceBetween: 20,
+                    spaceBetween: 15,
                     centeredSlides : false,  
                 }
             }
@@ -1342,21 +1383,21 @@
                     centeredSlides : false,  
                 },
                 // 윈도우 화면 너비가 840 이상일 때
-                840: {
-                    slidesPerView: 4,
+                820: {
+                    slidesPerView: 3,
                     spaceBetween: 20,
                     centeredSlides : false,  
                 },
                 // 윈도우 화면 너비가 430 이상일 때
                 430: {
                     slidesPerView: 2,
-                    spaceBetween: 20,
+                    spaceBetween: 15,
                     centeredSlides : false,  
                 },
                 // 윈도우 화면 너비가 320 이상일 때
                 320: {
                     slidesPerView: 2,
-                    spaceBetween: 20,
+                    spaceBetween: 15,
                     centeredSlides : false,  
                 }
             }
@@ -1408,7 +1449,7 @@
                     centeredSlides : false,  
                 },
                 // 윈도우 화면 너비가 840 이상일 때
-                840: {
+                820: {
                     slidesPerView: 2,
                     spaceBetween: 20,
                     centeredSlides : false,  
@@ -1481,21 +1522,21 @@
                     centeredSlides : false,  
                 },
                 // 윈도우 화면 너비가 840 이상일 때
-                840: {
-                    slidesPerView: 4,
+                820: {
+                    slidesPerView: 3,
                     spaceBetween: 20,
                     centeredSlides : false,  
                 },
                 // 윈도우 화면 너비가 430 이상일 때
                 430: {
                     slidesPerView: 2,
-                    spaceBetween: 20,
+                    spaceBetween: 15,
                     centeredSlides : false,  
                 },
                 // 윈도우 화면 너비가 320 이상일 때
                 320: {
                     slidesPerView: 2,
-                    spaceBetween: 20,
+                    spaceBetween: 15,
                     centeredSlides : false,  
                 }
             }
@@ -1541,7 +1582,7 @@
         // recipe 슬라이드
         const recipe_swiper = new Swiper('#recipe_slide',{
             slidesPerView: 3,
-            spaceBetween: 25,
+            spaceBetween: 10,
             navigation:{
                 prevEl: "#recipe_prev_btn",
                 nextEl: "#recipe_next_btn",
@@ -1554,7 +1595,7 @@
                     centeredSlides : false,  
                 },
                 // 윈도우 화면 너비가 840 이상일 때
-                840: {
+                820: {
                     slidesPerView: 3,
                     spaceBetween: 20,
                     centeredSlides : false,  
@@ -1619,22 +1660,38 @@
                     centeredSlides : false,  
                 },
                 // 윈도우 화면 너비가 840 이상일 때
-                840: {
+/*                 1000: {
+                    slidesPerView: 5,
+                    spaceBetween: 10,
+                    centeredSlides : false,  
+                }, */
+                // 윈도우 화면 너비가 840 이상일 때
+                820: {
                     slidesPerView: 4,
                     spaceBetween: 20,
                     centeredSlides : false,  
                 },
+                // 윈도우 화면 너비가 800 이상일 때
+/*                 800: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                    centeredSlides : false,  
+                },
+                760: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                }, */
                 // 윈도우 화면 너비가 430 이상일 때
                 430: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
+                    slidesPerView: 2,
+                    spaceBetween: 10,
                     centeredSlides : false,  
                 },
                 // 윈도우 화면 너비가 320 이상일 때
-                320: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                    centeredSlides : false,  
+                390: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,  
                 }
             },
         })

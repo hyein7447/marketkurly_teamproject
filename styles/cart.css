@@ -326,7 +326,234 @@ main .container .content .order .notice ul li::before {
   left: -7px;
   top: 12px;
 }
+main .del_box {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+main .del_box .del_popup {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background-color: #fff;
+  max-width: 360px;
+  width: 360px;
+}
+main .del_box .del_popup .del_message {
+  padding: 40px 30px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  letter-spacing: -0.5px;
+  font-weight: 500;
+  color: #333;
+  line-height: 21px;
+}
+main .del_box .del_popup .btn {
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main .del_box .del_popup .btn #reset_btn {
+  width: 50%;
+  height: 55px;
+  color: #5F0080;
+  font-weight: 500;
+}
+main .del_box .del_popup .btn #submit_btn {
+  width: 50%;
+  height: 55px;
+  color: #5F0080;
+  font-weight: 500;
+}
 
+@media screen and (max-width: 1280px) {
+  main .container {
+    padding: 0 20px 80px;
+  }
+}
+@media screen and (max-width: 820px) {
+  main .container .title h2 {
+    font-size: 1.625rem;
+  }
+  main .container .content .product_list .check input[id*=check] + label::before {
+    font-size: 1.375rem;
+  }
+  main .container .content .product_list .check input[id*=check]:checked + label::before {
+    font-size: 1.375rem;
+  }
+  main .container .content .product_list .check .fa span {
+    font-size: 1rem;
+  }
+  main .container .content .product_list .check a {
+    font-size: 1rem;
+  }
+  main .container .content .product_list .product_wrap .item .title {
+    padding: 10px 5px 10px 0px;
+  }
+  main .container .content .product_list .product_wrap .item .title .left p {
+    font-size: 1rem;
+  }
+  main .container .content .product_list .product_wrap .item .product {
+    padding: 10px 0 25px;
+  }
+  main .container .content .product_list .product_wrap .item .product .chk_btn {
+    padding-bottom: 20px;
+  }
+  main .container .content .product_list .product_wrap .item .product .chk_btn input[name*=chk] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  main .container .content .product_list .product_wrap .item .product .chk_btn input[name*=chk] + label::before {
+    font-size: 1.375rem;
+  }
+  main .container .content .product_list .product_wrap .item .product .chk_btn input[name*=chk]:checked + label::before {
+    font-size: 1.375rem;
+  }
+  main .container .content .product_list .product_wrap .item .product .product_img {
+    margin-left: 5px;
+    margin-right: 15px;
+  }
+  main .container .content .product_list .product_wrap .item .product .product_name {
+    font-size: 1rem;
+  }
+  main .container .content .product_list .product_wrap .item .product .num {
+    margin-right: 10px;
+  }
+  main .container .content .product_list .product_wrap .item .product .num span {
+    font-size: 0.875rem;
+  }
+  main .container .content .product_list .product_wrap .item .product .price {
+    width: 100px;
+  }
+  main .container .content .product_list .product_wrap .item .product .price span {
+    font-size: 0.875rem;
+    line-height: 10px;
+  }
+  main .container .content .product_list .product_wrap .item .product .price del {
+    font-size: 0.875rem;
+    display: block;
+  }
+  main .container .content .order {
+    margin-left: 25px;
+  }
+  main .container .content .order .delivery .top span {
+    font-size: 0.875rem;
+  }
+  main .container .content .order .delivery .address {
+    font-size: 0.875rem;
+    line-height: 20px;
+  }
+  main .container .content .order .delivery p span {
+    font-size: 0.875rem;
+  }
+  main .container .content .order .price_info dl {
+    padding-top: 5px;
+  }
+  main .container .content .order .price_info dl dt {
+    font-size: 0.875rem;
+  }
+  main .container .content .order .price_info dl dd {
+    font-size: 0.875rem;
+  }
+  main .container .content .order .order_btn_bg #order_btn .btn_txt {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  main .container .content .order .notice ul li {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  main .container {
+    padding: 0 16px;
+  }
+  main .container .content {
+    display: block;
+  }
+  main .container .content .product_list {
+    width: 100%;
+  }
+  main .container .content .product_list .check {
+    justify-content: space-between;
+  }
+  main .container .content .product_list .check input[id*=check] {
+    display: none;
+  }
+  main .container .content .product_list .check input[id*=check] + label::before {
+    font-size: 1.125rem;
+  }
+  main .container .content .product_list .check input[id*=check]:checked + label::before {
+    font-size: 1.125rem;
+  }
+  main .container .content .product_list .check a::before {
+    display: none;
+  }
+  main .container .content .product_list .check:last-child {
+    display: none;
+  }
+  main .container .content .product_list .product_wrap .item .product .chk_btn input[name*=chk] + label::before {
+    font-size: 1.125rem;
+  }
+  main .container .content .product_list .product_wrap .item .product .chk_btn input[name*=chk]:checked + label::before {
+    font-size: 1.125rem;
+  }
+  main .container .content .product_list .product_wrap .item .product .product_img {
+    width: 60px;
+    height: 78px;
+  }
+  main .container .content .product_list .product_wrap .item .product .product_img img {
+    width: 60px;
+    height: 78px;
+  }
+  main .container .content .product_list .product_wrap .item .product .product_name {
+    font-size: 0.75rem;
+    line-height: 16px;
+    margin-right: 15px;
+  }
+  main .container .content .product_list .product_wrap .item .product .num {
+    margin-right: 15px;
+  }
+  main .container .content .product_list .product_wrap .item .product .num .minus {
+    width: 20px;
+    height: 20px;
+  }
+  main .container .content .product_list .product_wrap .item .product .num .minus img {
+    width: 100%;
+    height: 100%;
+  }
+  main .container .content .product_list .product_wrap .item .product .num span {
+    font-size: 0.75rem;
+  }
+  main .container .content .product_list .product_wrap .item .product .num .plus {
+    width: 20px;
+    height: 20px;
+  }
+  main .container .content .product_list .product_wrap .item .product .num .plus img {
+    width: 100%;
+    height: 100%;
+  }
+  main .container .content .product_list .product_wrap .item .product .price span {
+    white-space: nowrap;
+    font-size: 0.75rem;
+  }
+  main .container .content .product_list .product_wrap .item .product .price del {
+    font-size: 0.75rem;
+  }
+  main .container .content .order {
+    padding-top: 40px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .open_toggle {
   display: none !important;
 }

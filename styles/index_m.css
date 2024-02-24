@@ -47,10 +47,6 @@
   }
 }
 @media screen and (max-width: 820px) {
-  main .swiper-button-next,
-  main .swiper-button-prve {
-    display: none;
-  }
   main #ranking_next_btn,
   main #ranking_prev_btn,
   main #original_next_btn,
@@ -59,6 +55,10 @@
   main #present_prev_btn,
   main #instagram_next_btn,
   main #instagram_prev_btn,
+  main #recipe_prev_btn,
+  main #recipe_next_btn,
+  main #md_prev_btn,
+  main #md_next_btn,
   main #main_prev_btn,
   main #main_next_btn {
     display: none !important;
@@ -100,20 +100,14 @@
     width: 100%;
     background-size: cover;
   }
-  main .sub_bnr1 {
-    background-size: cover;
+  main .sub_bnr1 a img {
+    content: url("../images/main/bnr_m/sub_bnr_01.jpg");
   }
-  main .sub_bnr1 a {
-    background: url(../images/main/bnr_m/sub_bnr_01.jpg) no-repeat;
-    background-size: cover;
+  main .sub_bnr2 a img {
+    content: url("../images/main/bnr_m/sub_bnr_02.jpg");
   }
-  main .sub_bnr2 a {
-    background: url(../images/main/bnr_m/sub_bnr_02.jpg) no-repeat;
-    background-size: cover;
-  }
-  main .sub_bnr a {
-    background: url(../images/main/bnr_m/sub_bnr_03.jpg) no-repeat;
-    background-size: cover;
+  main .sub_bnr a img {
+    content: url("../images/main/bnr_m/sub_bnr_03.jpg");
   }
   main .special_p {
     display: flex;
@@ -146,10 +140,7 @@
   main .special_p .right .item {
     margin-right: 30px;
   }
-  main .special_p .right .item:last-child {
-    display: none;
-  }
-  main .special_p .right .item:nth-child(2) {
+  main .special_p .right .item:nth-child(3) {
     margin: 0;
   }
   main .md .all_btn a {
@@ -159,37 +150,160 @@
     width: 380px;
   }
   main .kurly_original .container #original_slide #original_slide_wrap .item a .info {
-    height: 80px;
+    height: 50px;
     padding: 0 13px;
-    bottom: 49px;
+    bottom: 5%;
   }
   main .kurly_original .container #original_slide #original_slide_wrap .item a .info h2 {
-    font-size: 1.375rem;
-    padding-top: 20px;
+    font-size: 1.25rem;
   }
   main .kurly_original .container #original_slide #original_slide_wrap .item a .info p {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
   main .recipe .container #recipe_slide #recipe_slide_wrap .item {
     width: 450px;
   }
-  main .instagram #instagram_slide #instagram_slide_wrap .item a .img {
-    width: 126px;
-    height: 126px;
+}
+@media screen and (max-width: 760px) {
+  main .special_p .right .item:last-child {
+    display: none;
   }
-  main .instagram #instagram_slide #instagram_slide_wrap .item a .img img {
-    width: 100%;
-    height: 100%;
+  main .special_p .right .item:nth-child(2) {
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 430px) {
+  main .swiper-button-next,
+  main .swiper-button-prve {
+    background-size: 45px 45px !important;
+  }
+  main #ranking_next_btn,
+  main #ranking_prev_btn,
+  main #original_next_btn,
+  main #original_prev_btn,
+  main #present_next_btn,
+  main #present_prev_btn,
+  main #instagram_next_btn,
+  main #instagram_prev_btn,
+  main #md_prev_btn,
+  main #md_next_btn,
+  main #main_prev_btn,
+  main #main_next_btn {
+    background-size: 45px 45px !important;
+  }
+  main #md_next_btn {
+    top: 29% !important;
+    right: -3.8% !important;
+  }
+  main section .title h2 {
+    font-size: 1.625rem;
+  }
+  main section .title p {
+    font-size: 1rem;
+  }
+  main section .title a {
+    font-size: 1.625rem;
+    margin: 0;
+  }
+  main section .container .swiper-container .swiper-wrapper .item .info h3 {
+    font-size: 1rem;
+  }
+  main section .container .swiper-container .swiper-wrapper .item .info .price p {
+    font-size: 0.875rem;
+  }
+  main section .container .swiper-container .swiper-wrapper .item .info .price .discount span {
+    font-size: 0.875rem;
+  }
+  main section .container .swiper-container .swiper-wrapper .item .info .price .review span {
+    font-size: 0.875rem;
+  }
   main .main_bnr #main_bnr_slide {
     padding: 0;
   }
   main .main_bnr #main_bnr_slide #main_bnr_slide_wrap .slide {
     background-size: 100%;
   }
-  main .ranking #ranking_slide #ranking_slide_wrap .item {
-    width: 175px !important;
+  main .ranking {
+    padding: 40px 16px;
+  }
+  main .ranking .title a {
+    font-size: 1.625rem;
+    margin: 0;
+  }
+  main .ranking .title p {
+    font-size: 1rem;
+  }
+  main .sub_bnr {
+    padding: 20px 16px;
+  }
+  main .special_p {
+    padding: 40px 16px;
+  }
+  main .special_p .left .title h2 {
+    text-align: center;
+  }
+  main .special_p .left .title p {
+    font-size: 1rem;
+  }
+  main .special_p .right .item {
+    margin-right: 15px;
+  }
+  main .special_p .right .item .info .desc {
+    font-size: 0.875rem;
+  }
+  main .special_p .right .item .info h3 {
+    font-size: 1rem;
+  }
+  main .special_p .right .item .info .price p {
+    font-size: 0.875rem;
+  }
+  main .special_p .right .item .info .price .discount span {
+    font-size: 0.875rem;
+  }
+  main .special_p .right .item .info .price .review span {
+    font-size: 0.875rem;
+  }
+  main .md {
+    padding: 40px 16px;
+  }
+  main .md .tag li a {
+    font-size: 0.875rem;
+    padding: 5px 15px;
+    margin: 0 5px 15px;
+    height: 34px;
+    line-height: 22px;
+  }
+  main .md .all_btn a {
+    font-size: 1rem;
+  }
+  main .kurly_original {
+    padding: 20px 16px 0;
+    padding-bottom: 0;
+  }
+  main .kurly_original .title a {
+    margin-bottom: 8px;
+  }
+  main .kurly_original .container #original_slide #original_slide_wrap .item a .info {
+    padding: 0 13px;
+    bottom: 5%;
+  }
+  main .kurly_original .container #original_slide #original_slide_wrap .item a .info h2 {
+    font-size: 1.125rem;
+  }
+  main .kurly_original .container #original_slide #original_slide_wrap .item a .info p {
+    font-size: 1rem;
+  }
+  main .recipe .container #recipe_slide #recipe_slide_wrap .item a .text p {
+    font-size: 1rem;
+  }
+  main .instagram #instagram_slide {
+    width: 190px !important;
+    margin: 0 auto;
+  }
+  main .instagram #instagram_slide #instagram_slide_wrap .item {
+    display: none !important;
+  }
+  main .instagram #instagram_slide #instagram_slide_wrap .item1 {
+    display: block !important;
   }
 }/*# sourceMappingURL=index_m.css.map */
