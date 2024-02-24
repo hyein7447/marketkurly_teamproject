@@ -17,9 +17,6 @@ main .bnr .benefit img {
 }
 
 @media screen and (max-width: 840px) {
-  main .bnr {
-    padding: 0 16px;
-  }
   main .bnr .benefit:nth-child(1) img {
     content: url(../images/benefit/mobile/bnr_001.png);
   }
