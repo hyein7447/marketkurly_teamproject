@@ -277,8 +277,8 @@ main .best .container .right .lnb {
     padding-bottom: 30px;
 }
 /* ◇ --- js 부분(총 몇건) --- ◇ */
-main .best .container .right .lnb .total {}
-main .best .container .right .lnb .total span {
+main .best .container .right .lnb .num_total {}
+main .best .container .right .lnb .num_total span {
     font-weight: 600;
 }
 /* ◇ --- js 부분(총 몇건) //끝// --- ◇ */
@@ -313,6 +313,7 @@ main .best .container .right .lnb .array a [class$=question] {
     transform: translateY(-2px);
 }
 main .best .container .right .lnb .array .quest_box {
+    display: none;
     position: absolute;
     background-color: #fff;
     border-radius: 3px;
@@ -475,6 +476,13 @@ main .best .container .right .arrow_num a {
 ---------------------★팝업 영역★---------------------//
 */
 /* 어사이드 --- 팝업(공통영역) */
+main .best .popup ,
+main .best .popup .cate_pop,
+main .best .popup .brand_pop,
+main .best .popup .cart_pop,
+main .best .popup .cart_result_pop {
+    display: none;
+}
 main .best .popup {
     position: fixed;
     z-index: 999;

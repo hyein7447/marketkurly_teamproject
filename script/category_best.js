@@ -26,7 +26,6 @@ const ul_li_img4 = ul_4.querySelectorAll('li > .btn_chk > img')
 const ul_5 = document.querySelector('.list5 > ul')
 const ul_li_a5 = ul_5.querySelectorAll('li > .btn_chk')
 const ul_li_img5 = ul_5.querySelectorAll('li > .btn_chk > img')
-const chk_reset = document.querySelector('.container > .left > .title > p')
 const ul = document.querySelectorAll('.best > .container > .left > .list > ul')
 const li = document.querySelectorAll('.best > .container > .left > .list > ul > li')
 const btn_chk_a = document.querySelector('.btn_chk')
@@ -62,8 +61,75 @@ const pop_minus = cart_pop.querySelector('.price_num .num .minus')
 const pop_num = cart_pop.querySelector('.price_num .num .p_tab_num')
 const pop_plus = cart_pop.querySelector('.price_num .num .plus')
 const p_tab_price = document.querySelector('.cart_pop .total .total_result .p_tab_price')
-console.log(pop_minus,pop_plus,pop_num,p_tab_price)
+// 어사이드 클릭 시 오른쪽 컨테이너에 출력되는 변수
+const name_result = document.querySelector('.name_result') //오른쪽 상단 추가되는 컨테이너박스
+const result_list = document.querySelector('.name_result > span') //미리 준비해둔 태그 span
+const list_text = document.createElement('span') //만든 span
+const list_close = document.querySelector('.name_result > span > img') //x버튼
+const aside_li = document.querySelectorAll('.best > .container > .left > .list > ul > li') //어사이드 li
+const btn_reset = document.querySelector('.container > .left > .title > p') //초기화 버튼
+console.log(name_result, result_list, list_close, aside_li)
 console.log('----------------- 데스크탑 버전 -----------------')
+/* ---------------------- 구분선 -------------------------- */
+// 어사이드 메뉴 클릭 시 오른쪽 컨테이너 박스안에 이름이 이미지와 같이 출력
+// 초기화 버튼 클릭 시 어사이드 체크박스 all해제, 오른쪽 컨테이너 none
+// 어사이드 메뉴 (li) 클릭했을 떄
+aside_li.forEach((t)=>{ //
+    t.addEventListener('click',()=>{
+        //◆◆--오른쪽 박스 보이기--◆◆
+        name_result.classList.remove('display_none')
+        // 초기화 버튼 활성화s
+        btn_reset.classList.add('reset_active')
+
+        // ◆◆--오른쪽 컨테이너에 클릭 대상이 쌓이게 하기--◆◆
+        name_result.appendChild(list_text)
+
+        // aside_li의 이름그대로 출력되고 x버튼 추가
+        let li_text = t.children[0].children[1].textContent; // li의 이름 잡기
+        //복합대입으로 리스트 쌓기
+        list_text.innerHTML += `${li_text}`+`<img src="./images/main/icon/icon_cancle.svg" alt="취소">`         
+
+        // ◆◆--오른쪽 컨테이너 위에 총 ? 건--◆◆
+        const title_container = document.querySelectorAll('.num_total') //총 ? 건 div
+        const total_span = document.querySelector('.right > .lnb > .num_total > span') // 총 ? 건 적을 span
+
+        // aside_li의 숫자를 더해서 div에 출력하기
+        let listNum = Number(t.children[0].children[2].textContent); //li의 숫자 잡기
+        let allTotal = 0;
+        allTotal += listNum; //복합대입(클릭할 때 마다 숫자 더하기)
+        //div에 span에 innerHTML추가   
+        total_span.innerHTML = `총 ${allTotal}건`   
+
+        console.log(title_container,total_span,listNum,'----',allTotal)  /* ★★★ 문제 ★★★ */
+
+        //◆◆--초기화 버튼 눌렀을 때--◆◆
+        btn_reset.addEventListener('click',()=>{ 
+            //오른쪽 박스 숨기기
+            name_result.classList.add('display_none')
+
+            // 카테고리 어사이드 메뉴 클릭시 체크이미지 회색으로 변경
+            t.children[0].children[0].src = './images/sub/icon_check_off.svg';
+
+            // 초기화 버튼 비활성화
+            btn_reset.classList.remove('reset_active')
+
+            // 오른쪽 컨테이너 초기화
+            list_text.innerHTML = '';
+            // name_result.remove(list_text)
+
+            // 총?건 -> 기본값인 총 300건으로 변경
+            total_span.innerHTML = `총 300건` 
+        });
+        // ◆◆-- x버튼 클릭 했을 때 선택 항목 삭제--◆◆
+        list_text.children[0].addEventListener('click', () => {
+            console.log('.') //첫번째만 잡힘    ★★★ 문제 ★★★
+        });
+    })
+})
+// 문제 1. 어사이드 클릭했을 때 같은걸 클릭해도 그대로 노출
+// 문제 2. 닫기버튼 클릭했을 때 첫번째 대상만 잡힘 
+// 문제 3. 총?건 복합대입으로 가격이 더해지지 않음
+
 /* ---------------------- 구분선 -------------------------- */
 /* 
     ******** 상단 영역 js
@@ -119,7 +185,7 @@ for (let a of atoz_btn_a){
     })
 }
 /* ---------------------- 구분선 -------------------------- */
-// 브랜드 atoz_btn 클릭시 서브탭 활성화 ------------------   
+// 브랜드 atoz_btn 클릭시 서브탭 활성화   
 // 호출용 함수
 let box_basic_hide = ()=>{brand_tab_box_ul[0].style.display = 'none';}
 let box_hide = ()=>{for(let a of brand_tab_box_ul){a.style.display = 'none';}}
@@ -598,6 +664,7 @@ slide_minus.addEventListener('click',()=>{
 let cate_title_parent = document.querySelector('.best_mobile > .sub_header > .cate_title')
 let cate_title_area = document.querySelector('.best_mobile > .sub_header')
 cate_title[0].classList.add('cate_active') //초기값 -> 탑 0일때
+cate_title_parent.classList.remove('cate_title_row');
 // 스크롤 이벤트 
 window.addEventListener('scroll',()=>{
     // 현재 스크롤 위치

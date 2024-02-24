@@ -119,7 +119,7 @@
   background-color: #5F0080;
   color: #fff;
   border-radius: 18px;
-  padding: 14px 0;
+  padding: 12px 0;
   font-size: 1rem;
   margin: 20px 0 7px;
 }
@@ -139,10 +139,10 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px;
+  padding: 8px 15px;
   background-color: #f4f4f4;
   border-radius: 20px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .chatbot_sub .home .contact .list2 p {
   font-size: 0.938rem;
@@ -379,7 +379,7 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0 20px;
+  padding: 12px 0 18px;
   width: 341px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -396,20 +396,20 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  font-size: 1.063rem;
+  font-size: 0.938rem;
 }
 .chatbot_sub .navigation a [class*=fa] {
   margin-bottom: 5px;
 }
 
 .sub2 {
-  padding: 20px 25px;
+  padding: 0px 25px 20px;
   z-index: 700;
 }
 .sub2 .title {
-  padding: 20px 0 0;
+  padding: 20px 0 10px;
   position: sticky;
-  top: -20px;
+  top: 0px;
   right: 0px;
   left: 0px;
   z-index: 999;
@@ -446,7 +446,7 @@
   background-color: #444;
   border-radius: 4px;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .sub2 .notice_bnr [class$=low] {
   color: #999;
@@ -474,7 +474,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-end;
-  overflow-y: scroll;
+  overflow-y: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -603,14 +603,14 @@
   width: 100%;
   display: flex;
   justify-content: right;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 .sub2 .chat_qa .qa_list .choice_order_be_list .be_list, .sub2 .chat_qa .qa_list .choice_order_list .be_list, .sub2 .chat_qa .qa_list .choice_deilvery_list .be_list {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
   max-width: 86%;
-  gap: 0px 6px;
+  gap: 0px 4px;
 }
 .sub2 .chat_qa .qa_list .choice_order_be_list .be_list a:hover, .sub2 .chat_qa .qa_list .choice_order_list .be_list a:hover, .sub2 .chat_qa .qa_list .choice_deilvery_list .be_list a:hover {
   background-color: #5F0080;
@@ -646,10 +646,14 @@
   font-weight: 300;
 }
 .sub2 .chat_qa .qa_list .choice_consultant_list {
-  position: sticky;
-  bottom: 0;
+  position: fixed;
+  right: 16px;
+  bottom: 130px;
+  width: 338px;
   background-color: #333;
-  padding: 15px 0 0;
+  padding: 10px 16px 15px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .sub2 .chat_qa .qa_list .choice_consultant_list .message_input {
   background-color: #444;
@@ -936,9 +940,137 @@ footer address .box p:nth-child(3) {
   }
   .chatbot_sub {
     width: 338px;
+    height: 75%;
+    right: 16px;
+    bottom: 130px;
+  }
+  .chatbot_sub .home .top span {
+    font-size: 0.938rem;
+  }
+  .chatbot_sub .home .contact .list1 .basic_chat .profile span {
+    font-size: 0.813rem;
+  }
+  .chatbot_sub .home .contact .list1 .btn_inquire {
+    margin: 14px 0px 7px;
+    font-size: 0.875rem;
+  }
+  .chatbot_sub .home .contact .list1 .btn_inquire span {
+    font-size: 0.813rem;
+  }
+  .chatbot_sub .home .contact .list2 {
+    padding: 4px 15px;
+    border-radius: 16px;
+  }
+  .chatbot_sub .home .contact .list2 p {
+    font-size: 0.813rem;
+  }
+  .chatbot_sub .home .contact .list3 [class$=dot] {
+    font-size: 0.813rem;
+  }
+  .chatbot_sub .home .contact .list3 p {
+    font-size: 0.75rem;
+  }
+  .chatbot_sub .chat .wrap .button .btn_new_q {
+    font-size: 0.813rem;
+    margin-right: 10px;
+  }
+  .chatbot_sub .setting .user_info .user_top .pro_img [class$=user] {
+    font-size: 28px;
+  }
+  .chatbot_sub .setting .user_info .user_top .pro_info p:nth-child(1) {
+    font-size: 0.75rem;
+  }
+  .chatbot_sub .setting .user_info .user_top .pro_info p:nth-child(2) {
+    font-size: 0.75rem;
+  }
+  .chatbot_sub .setting .user_info .user_top .pro_info a {
+    font-size: 0.75rem;
+  }
+  .chatbot_sub .setting .user_info .environment li, .chatbot_sub .setting .user_info .set_alarm li {
+    margin-bottom: 2px;
+    padding: 3px 6px;
+  }
+  .chatbot_sub .setting .user_info .environment li span, .chatbot_sub .setting .user_info .set_alarm li span {
+    font-size: 0.875rem;
+  }
+  .chatbot_sub .setting .user_info .environment li .t_icon, .chatbot_sub .setting .user_info .set_alarm li .t_icon {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+  }
+  .chatbot_sub .setting .user_info .environment li .t_icon [class*=fa], .chatbot_sub .setting .user_info .set_alarm li .t_icon [class*=fa] {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+  .chatbot_sub .setting .user_info .environment li .t_icon p, .chatbot_sub .setting .user_info .set_alarm li .t_icon p {
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+  .chatbot_sub .setting .user_info .environment li .lang p, .chatbot_sub .setting .user_info .set_alarm li .lang p {
+    font-size: 0.875rem;
+  }
+  .chatbot_sub .setting .user_info .environment li .toggle_active, .chatbot_sub .setting .user_info .set_alarm li .toggle_active {
+    cursor: pointer;
+  }
+  .chatbot_sub .setting .user_info .environment li .toggle_none, .chatbot_sub .setting .user_info .set_alarm li .toggle_none {
+    cursor: pointer;
+    background-color: #666;
+    width: 38px;
+    height: 24px;
+    border-radius: 18px;
+  }
+  .chatbot_sub .navigation {
+    width: 318px;
+  }
+  .sub2 .chat_qa .kurly_logo {
+    padding: 75px 0 0px;
+  }
+  .sub2 .chat_qa .kurly_logo img {
+    display: none;
+  }
+  .sub2 .chat_qa .kurly_logo span {
+    display: none;
+  }
+  .sub2 .chat_qa .qa_list {
+    padding: 0px 0 40px;
+  }
+  .sub2 .chat_qa .qa_list .qa_brand .comment_wrap .brand_ment {
+    font-size: 0.813rem;
+  }
+  .sub2 .chat_qa .qa_list .qa_brand .comment_wrap .brand_ment span a {
+    font-size: 0.75rem;
+  }
+  .sub2 .chat_qa .qa_list .qa_user .user_choice .basic button:hover {
+    ont-size: 0.875rem;
+  }
+  .sub2 .chat_qa .qa_list .qa_user .user_choice .basic button {
+    font-size: 0.875rem;
+  }
+  .sub2 .chat_qa .qa_list .choice_order_be .user_ment_active, .sub2 .chat_qa .qa_list .choice_delivery .user_ment_active, .sub2 .chat_qa .qa_list .choice_consultant .user_ment_active {
+    font-size: 0.875rem;
+  }
+  .sub2 .chat_qa .qa_list .choice_order_be_list .be_list, .sub2 .chat_qa .qa_list .choice_order_list .be_list, .sub2 .chat_qa .qa_list .choice_deilvery_list .be_list {
+    gap: 0px 6px;
+  }
+  .sub2 .chat_qa .qa_list .choice_order_be_list .be_list a:hover, .sub2 .chat_qa .qa_list .choice_order_list .be_list a:hover, .sub2 .chat_qa .qa_list .choice_deilvery_list .be_list a:hover {
+    font-size: 0.875rem;
+  }
+  .sub2 .chat_qa .qa_list .choice_order_be_list .be_list a, .sub2 .chat_qa .qa_list .choice_order_list .be_list a, .sub2 .chat_qa .qa_list .choice_deilvery_list .be_list a {
+    font-size: 0.875rem;
+  }
+  .sub2 .chat_qa .qa_list .user_message p {
+    font-size: 0.875rem;
+  }
+  .sub2 .chat_qa .qa_list .choice_consultant_list .message_input #text_area {
+    width: 77%;
+    color: #999;
   }
   footer {
     background-color: #f7f7f7;
+    padding-bottom: 40px;
   }
   footer .f_container {
     display: flex;
@@ -981,6 +1113,7 @@ footer address .box p:nth-child(3) {
   }
   footer .f_container .right .f_address {
     margin-bottom: 16px;
+    pointer-events: none;
   }
   footer .f_container .right .kurly_f_info {
     padding: 0px 0px 20px;

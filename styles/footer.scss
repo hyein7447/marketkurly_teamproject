@@ -123,7 +123,7 @@
                     background-color: $purple;
                     color:#fff;
                     border-radius: 18px;
-                    padding: 14px 0;
+                    padding: 12px 0;
                     font-size: $px14;
                     margin: 20px 0 7px;
                     span {
@@ -141,10 +141,10 @@
             }
             .list2 {
                 @include flex-row-btw-ct;
-                padding: 10px 15px;
+                padding: 8px 15px;
                 background-color: #f4f4f4;
                 border-radius: 20px;
-                margin-top: 15px;
+                margin-top: 10px;
                 p {
                     font-size: $px13;
                     font-weight: 500;
@@ -362,7 +362,7 @@
         bottom: 0px;
         width: 100%;
         @include flex-row-btw-ct;
-        padding: 15px 0 20px;
+        padding: 12px 0 18px;
         width:341px;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
@@ -375,7 +375,7 @@
             color:#999;
             padding: 0 30px;
             @include flex-col-ct-ct;
-            font-size: $px15;
+            font-size: $px13;
             [class*=fa] {
                 margin-bottom:5px;
             }
@@ -383,13 +383,13 @@
     }
 }
 .sub2 {
-    padding: 20px 25px;
+    padding: 0px 25px 20px;
     // display: none;
     z-index: 700;
     .title {
-        padding: 20px 0 0;
+        padding: 20px 0 10px;
         position: sticky;
-        top: -20px;
+        top: 0px;
         right: 0px;
         left: 0px;
         z-index: 999;
@@ -425,7 +425,7 @@
         background-color: #444;
         border-radius: 4px;
         padding: 10px;
-        margin-top: 20px;
+        margin-top: 10px;
         [class$=low] {
             color:#999;
             margin-right: 5px;
@@ -449,7 +449,7 @@
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: flex-end;
-        overflow-y: scroll;
+        overflow-y: auto;
         -ms-overflow-style: none;
         scrollbar-width: none;
         // padding-bottom: 0px;
@@ -567,13 +567,13 @@
                 width:100%;
                 display: flex;
                 justify-content: right;
-                padding: 15px 0;
+                padding: 10px 0;
                 .be_list {
                     display: flex;
                     flex-flow: row wrap;
                     justify-content: flex-end;
                     max-width: 86%;
-                    gap:0px 6px;
+                    gap:0px 4px;
                     a:hover {
                         background-color: $purple;
                         border: 2px solid $purple;
@@ -607,10 +607,14 @@
                 }
             }
             .choice_consultant_list{
-                position: sticky;
-                bottom: 0;
+                position: fixed;
+                right: 16px;
+                bottom: 130px;
+                width: 338px;
                 background-color: #333;
-                padding: 15px 0 0;
+                padding: 10px 16px 15px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
                 .message_input {
                     background-color: #444;
                     padding: 10px;
@@ -965,9 +969,177 @@ footer {
     }
     .chatbot_sub {
         width:338px;
+        // max-height: 650px ;
+        height: 75%;
+        right: 16px;
+        bottom: 130px;
+        .home {
+            .top {
+                span {font-size: $px13;}
+            }
+            .contact {
+                .list1 {
+                    .basic_chat{
+                        .profile {
+                            span {
+                                font-size: $px11;
+                            }
+                        }
+                    }
+                    .btn_inquire {
+                        margin: 14px 0px 7px;
+                        font-size: $px12;
+                        span {font-size: $px11;}
+                    }
+                }
+                .list2 {
+                    padding: 4px 15px;
+                    border-radius: 16px;
+                    p {font-size: $px11;}
+                }
+                .list3 {
+                    [class$=dot]{
+                        font-size: $px11;
+                    }
+                    p {
+                        font-size: $px10;
+                    }
+                }
+            }
+        }
+        .chat {
+            .wrap {
+                .button {
+                    .btn_new_q {font-size: $px11; margin-right: 10px;}
+                }
+            }
+        }
+        .setting {
+            .user_info {
+                .user_top {
+                    .pro_img {
+                        [class$=user] {
+                            font-size: 28px;
+                        }
+                    }
+                    .pro_info {
+                        p:nth-child(1) {
+                            font-size: $px10;
+                        }
+                        p:nth-child(2) {
+                            font-size: $px10;
+                        }
+                        a {
+                            font-size: $px10;
+                            i[class$=square] {
+                            }
+                        }
+                    }
+                }
+                .environment, .set_alarm {
+                    li:nth-child(1), li:nth-child(5) {}
+                    li {
+                        margin-bottom: 2px;
+                        padding: 3px 6px;
+                        span {
+                            font-size: $px12;
+                        }
+                        .t_icon {
+                            @include flex-row-st-ct;
+                            color:#fff;
+                            [class*=fa] {
+                                margin-right: 8px;
+                                font-size: 14px;
+                            }
+                            p {
+                                color:#fff;
+                                font-size: $px12;
+                                font-weight: 400;
+                            }
+                        }
+                        .lang {
+                            [class$=right] {
+                            }
+                            p {
+                                font-size: $px12;
+                            }
+                        }
+                        .toggle_active {
+                            cursor: pointer;
+                            .circle {}
+                        }
+                        .toggle_none {
+                            cursor: pointer;
+                            background-color: #666;
+                            width:38px;
+                            height: 24px;
+                            border-radius: 18px;
+                            .circle {}
+                        }
+                    }
+                    .ver {}
+                }
+            }
+        }
+        .navigation {
+            width:318px;
+        }
+    }
+    .sub2{
+        .title {}
+        .chat_qa {
+            .kurly_logo {
+                padding: 75px 0 0px;
+                img {display: none;}
+                span {display: none;}
+            }
+            .qa_list {
+                padding: 0px 0 40px;
+                .qa_brand{
+                    .comment_wrap {
+                        .brand_ment {
+                            font-size: $px11;
+                            span {
+                                a{font-size: $px10;}
+                            }
+                        }
+                    }
+                }
+                .qa_user{
+                    .user_choice {
+                        .basic {
+                            button:hover {ont-size: $px12;}
+                            button {
+                                font-size: $px12;
+                            }
+                        }
+                    }
+                }
+                .choice_order_be, .choice_delivery, .choice_consultant {
+                    .user_ment_active { font-size: $px12;}
+                }
+                .choice_order_be_list, .choice_order_list, .choice_deilvery_list {
+                    .be_list {
+                        gap:0px 6px;
+                        a:hover {font-size: $px12;}
+                        a {font-size: $px12;}
+                    }
+                }
+                .user_message{ p {font-size: $px12;}}
+                .choice_consultant_list{
+                    .message_input {
+                        #text_area {
+                            width:77%;
+                            color:#999;
+                        }
+                    }
+                }
+            }
+        }
     }
     footer{
         background-color: #f7f7f7;
+        padding-bottom: 40px;
         .f_container {
             @include flex-col-st;
             padding: 40px 16px 20px;
@@ -1008,7 +1180,8 @@ footer {
             .right {
                 padding-top: 8px;
                 .f_address {
-                    margin-bottom: 16px;
+                    margin-bottom: 16px; 
+                    pointer-events: none;
                 }
                 .kurly_f_info {
                     padding: 0px 0px 20px;

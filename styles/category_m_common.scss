@@ -1,7 +1,37 @@
 @import 'common';
+body, html {scroll-behavior: smooth;}
+main {
+    .best {
+        .container {
+            .right {
+                .name_result {
+                    border: 1px solid $c-221;
+                    padding: 20px;
+                    display: flex;
+                    flex-flow: row wrap;
+                    margin-bottom: 30px;
+                    span.result_list {
+                        @include flex-row-st-ct;
+                        color:$badge;
+                        font-size: $px13;
+                        img {width: 20px; opacity: 0.5; cursor: pointer;}
+                    }
+                    span{
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color:$badge;
+                        font-size: $px13;
+                        img {width: 25px; opacity: 0.5; cursor: pointer; padding-right: 6px;}
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width:1280px) {
-    body, html {scroll-behavior: smooth;}
     main {
         padding: 0 20px;
         .best {
@@ -966,6 +996,15 @@
     color: #5f0080 !important;
     background-color: #f7f7f7 !important;
 }
+.reset_active {
+    [class$=right] {
+        color:#333 !important;
+    }
+    span {
+        color:#333 !important;
+        font-weight: 700;
+    }
+}
 .cate_active {
     img {
         border: 2px solid #8d4cc4;
@@ -981,7 +1020,7 @@
     border: 2px solid #8d4cc4 !important;
     span {
         color:#8d4cc4 !important;
-        font-weight: 500 !important;
+        font-weight: 600 !important;
     }  
 }
 .display_none {
