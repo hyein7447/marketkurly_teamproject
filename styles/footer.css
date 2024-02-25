@@ -643,7 +643,8 @@
   padding: 8px 14px;
   font-size: 1rem;
   margin-bottom: 8px;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 1.4rem;
 }
 .sub2 .chat_qa .qa_list .choice_consultant_list {
   position: fixed;
@@ -1150,6 +1151,35 @@ footer address .box p:nth-child(3) {
   }
 }
 @media screen and (max-width: 430px) {
+  footer .f_container .left .con1 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  footer .f_container .left .con1 p:nth-child(1) {
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding-bottom: 0px;
+    margin-right: 8px;
+  }
+  footer .f_container .left .con1 p:nth-child(2) {
+    padding-bottom: 0px;
+  }
+  footer .f_container .left .con1 p:nth-child(2) span:nth-child(2) {
+    display: none;
+    margin-top: 0px;
+  }
+  footer .f_container .left .con1 p:nth-child(2) .tel {
+    font-size: 1rem;
+  }
+  footer .f_container .left .con1 p:nth-child(2) span {
+    font-size: 0.75rem;
+  }
+  footer .f_container .left .con2 .kakao button, footer .f_container .left .con2 .question button, footer .f_container .left .con2 .bulk_order button {
+    margin: 2px 16px 8px 0;
+  }
   footer .f_container .left .mail_send {
     display: none;
   }
@@ -1178,6 +1208,7 @@ footer address .box p:nth-child(3) {
   }
   footer .f_container .right .kurly_f_info a {
     font-size: 0.75rem;
+    white-space: nowrap;
   }
   footer .f_list {
     display: flex;

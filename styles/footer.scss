@@ -606,7 +606,8 @@
                     padding: 8px 14px;
                     font-size: $px14;
                     margin-bottom: 8px;
-                    font-weight: 300;
+                    font-weight: 400;
+                    line-height: 1.4rem;
                 }
             }
             .choice_consultant_list{
@@ -1229,6 +1230,36 @@ footer {
     footer {
         .f_container {
             .left {
+                .con1 {
+                    @include flex-row-st-ct;
+                    padding-bottom: 20px;
+                    p:nth-child(1) {
+                        font-size: $px12;
+                        font-weight: 500;
+                        padding-bottom: 0px;
+                        margin-right: 8px;
+                    }
+                    p:nth-child(2) {
+                        padding-bottom: 0px;
+                        span:nth-child(2) {
+                            display: none;
+                            margin-top: 0px;
+                        }
+                        .tel {
+                            font-size: $px14;
+                        }
+                        span {
+                            font-size: $px10;
+                        }
+                    }
+                }
+                .con2 {
+                    .kakao, .question , .bulk_order {
+                        button {
+                            margin: 2px 16px 8px 0;
+                        }
+                    }
+                }
                 .mail_send {
                     display: none;
                     p, a {}
@@ -1252,6 +1283,7 @@ footer {
                     padding: 4px 0 8px;
                     a {
                         font-size: $px10;
+                        white-space: nowrap;
                     }
                 }
             }
