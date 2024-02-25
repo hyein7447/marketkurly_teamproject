@@ -81,14 +81,14 @@ user_pw.addEventListener('input', () => {
     }
 });
 // 이메일 입력 이벤트 처리
-const result_mail = mail_regular(user_mail.value);
-user_mail.addEventListener('input', () => {
-    if (result_mail) {
-        error_messages[4].innerHTML = '';
-    } else {
-        error_messages[4].innerHTML = '이메일 형식으로 입력해 주세요.';
-    }
-});
+// const result_mail = mail_regular(user_mail.value);
+// user_mail.addEventListener('input', () => {
+//     if (result_mail) {
+//         error_messages[4].innerHTML = '';
+//     } else {
+//         error_messages[4].innerHTML = '이메일 형식으로 입력해 주세요.';
+//     }
+// });
 // 생년월일 입력 이벤트 처리
 for (let i = 0; i < user_date.length; i++) {
     const date = user_date[i];

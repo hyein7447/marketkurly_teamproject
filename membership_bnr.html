@@ -11,9 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- styles link -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/membership_bnr.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" ></script>
 </head>
 <body>
     <?php include("header.php"); ?>
@@ -23,12 +27,12 @@
                 <img src="./images/membership/main_01.jpg" alt="월 1,900원으로 누리는 풍성한 혜택">
             </div>
             <div class="tab_area">
-                <a href="#" class="scroll_tab1">즉시 혜택</a>
-                <a href="#" class="scroll_tab2">쿠폰 혜택</a>
-                <a href="#" class="scroll_tab3">적립 혜택</a>
+                <a href="#" class="scroll_tab1">적립 혜택</a>
+                <a href="#" class="scroll_tab2">즉시 혜택</a>
+                <a href="#" class="scroll_tab3">쿠폰 혜택</a>
                 <a href="#" class="scroll_tab4">특가 혜택</a>
             </div>
-            <div class="mebr benefit_mon">
+            <div class="mebr benefit_mon tab_box">
                 <img src="./images/membership/main_03.png" alt="적립금 2,000원, 할인쿠폰팩 최대 24,000원, 구매적립 최대 7%">
             </div>
             <div class="notice_row">
@@ -42,7 +46,7 @@
                     </ul>
                 </div>                
             </div>
-            <div class="mebr benefit_now">
+            <div class="mebr benefit_now tab_box">
                 <img src="./images/membership/main_04.png" alt="적립금 2,000원, 할인쿠폰팩 최대 24,000원, 구매적립 최대 7%">
             </div>
             <div class="notice_row bg_2">
@@ -56,7 +60,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="mebr coupon">
+            <div class="mebr coupon tab_box">
                 <img src="./images/membership/main_05.png" alt="매달 재충전되는 할인 쿠폰이 최대 24,000원">
             </div>
             <div class="mebr coupon_notice">
@@ -94,136 +98,138 @@
                     </ul>
                 </div>
             </div>
-            <div class="mebr only">
+            <div class="mebr only tab_box">
                 <div class="title_img">
                     <img src="./images/membership/main_07.png" alt="컬리멤버스만을 위한 단독 특가">
                 </div>
             </div>
-            <div class="swiper_box">
-                <div class="swiper_innerbox">
-                    <div class="product_wrap">
-                        <div class="product">
-                            <div class="thumb">
-                                <img src="./images/membership/thumb_001.jpg" alt="">
+            <div class="swiper_area">
+                <div class="swiper_box">
+                    <div class="swiper-contatainer swiper_innerbox" id="mainSlide">
+                        <div class="swiper-wrapper product_wrap">
+                            <div class="swiper-slide slide slide1 product">
+                                <div class="thumb">
+                                    <img src="./images/membership/thumb_001.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
+                                    <p class="item_price">30,400원</p>
+                                </div>
                             </div>
-                            <div class="info">
-                                <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
-                                <p class="item_price">30,400원</p>
+                            <div class="swiper-slide slide slide2 product">
+                                <div class="thumb">
+                                    <img src="./images/membership/thumb_002.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
+                                    <p class="item_price">30,400원</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="product">
-                            <div class="thumb">
-                                <img src="./images/membership/thumb_002.jpg" alt="">
+                            <div class="swiper-slide slide slide3 product">
+                                <div class="thumb">
+                                    <img src="./images/membership/thumb_003.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
+                                    <p class="item_price">30,400원</p>
+                                </div>
                             </div>
-                            <div class="info">
-                                <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
-                                <p class="item_price">30,400원</p>
+                            <div class="swiper-slide slide slide4 product">
+                                <div class="thumb">
+                                    <img src="./images/membership/thumb_004.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
+                                    <p class="item_price">30,400원</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="product">
-                            <div class="thumb">
-                                <img src="./images/membership/thumb_003.jpg" alt="">
+                            <div class="swiper-slide slide slide5 product">
+                                <div class="thumb">
+                                    <img src="./images/membership/thumb_005.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
+                                    <p class="item_price">30,400원</p>
+                                </div>
                             </div>
-                            <div class="info">
-                                <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
-                                <p class="item_price">30,400원</p>
+                            <div class="swiper-slide slide slide6 product">
+                                <div class="thumb">
+                                    <img src="./images/membership/thumb_006.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
+                                    <p class="item_price">30,400원</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="product">
-                            <div class="thumb">
-                                <img src="./images/membership/thumb_004.jpg" alt="">
+                            <div class="swiper-slide slide slide7 product">
+                                <div class="thumb">
+                                    <img src="./images/membership/thumb_007.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
+                                    <p class="item_price">30,400원</p>
+                                </div>
                             </div>
-                            <div class="info">
-                                <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
-                                <p class="item_price">30,400원</p>
+                            <div class="swiper-slide slide slide8 product">
+                                <div class="thumb">
+                                    <img src="./images/membership/thumb_008.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
+                                    <p class="item_price">30,400원</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="product">
-                            <div class="thumb">
-                                <img src="./images/membership/thumb_005.jpg" alt="">
+                            <div class="swiper-slide slide slide9 product">
+                                <div class="thumb">
+                                    <img src="./images/membership/thumb_009.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
+                                    <p class="item_price">30,400원</p>
+                                </div>
                             </div>
-                            <div class="info">
-                                <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
-                                <p class="item_price">30,400원</p>
+                            <div class="swiper-slide slide slide10 product">
+                                <div class="thumb">
+                                    <img src="./images/membership/thumb_010.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
+                                    <p class="item_price">30,400원</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="product">
-                            <div class="thumb">
-                                <img src="./images/membership/thumb_006.jpg" alt="">
+                            <div class="swiper-slide slide slide11 product">
+                                <div class="thumb">
+                                    <img src="./images/membership/thumb_011.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
+                                    <p class="item_price">30,400원</p>
+                                </div>
                             </div>
-                            <div class="info">
-                                <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
-                                <p class="item_price">30,400원</p>
+                            <div class="swiper-slide slide slide12 product">
+                                <div class="thumb">
+                                    <img src="./images/membership/thumb_012.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
+                                    <p class="item_price">30,400원</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="product">
-                            <div class="thumb">
-                                <img src="./images/membership/thumb_007.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
-                                <p class="item_price">30,400원</p>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="thumb">
-                                <img src="./images/membership/thumb_008.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
-                                <p class="item_price">30,400원</p>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="thumb">
-                                <img src="./images/membership/thumb_009.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
-                                <p class="item_price">30,400원</p>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="thumb">
-                                <img src="./images/membership/thumb_010.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
-                                <p class="item_price">30,400원</p>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="thumb">
-                                <img src="./images/membership/thumb_011.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
-                                <p class="item_price">30,400원</p>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="thumb">
-                                <img src="./images/membership/thumb_012.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
-                                <p class="item_price">30,400원</p>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="thumb">
-                                <img src="./images/membership/thumb_013.jpg" alt="">
-                            </div>
-                            <div class="info">
-                                <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
-                                <p class="item_price">30,400원</p>
+                            <div class="swiper-slide slide slide13 product">
+                                <div class="thumb">
+                                    <img src="./images/membership/thumb_013.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <p class="item_name">[투에이엔] 아이섀도우 팔레트 2종 (택1)</p>
+                                    <p class="item_price">30,400원</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="arrow_prev">
+                    <div class="swiper-button-prev arrow_prev">
                         <i class="fa-solid fa-chevron-left"></i>
                     </div>
-                    <div class="arrow_next">
+                    <div class="swiper-scrollbar arrow_next">
                         <i class="fa-solid fa-chevron-right"></i>
                     </div>
                 </div>
@@ -280,7 +286,28 @@
         <div class="btn_kulry_start">
             <button type="button" class="btn_start">컬리멤버스 시작하기</button>
         </div>
+        <div class="popup display_none">
+            <div class="box">
+                <p>인증 번호를 입력해 주세요.</p>
+                <div class="btn">
+                    <button type="button" id="btn_ok">확인</button>
+                </div>
+            </div>
+        </div>
     </main>
     <?php include("footer.php"); ?>
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script/membership.js"></script>
+    <script>
+        const mySwiper = new Swiper('mainSlide',{
+            // 속성:값, 속성:값,
+            autoplay:{dispay:100,}, //자동 재생 (기본값 false)
+            loop:true, //반복 (기본값 false)
+            // direction:'vertical',//방향(기본값 horizontal) //vertical 설정할땐 부모에 높이값도 같이 설정해야한다.
+            // effect:'fade', //제자리 효과(direction과 같이 사용할 수 없음)
+        }) 
+    </script>
 </body>
 </html>

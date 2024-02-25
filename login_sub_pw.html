@@ -10,7 +10,6 @@
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/login_sub.css">
 </head>
 <body>
@@ -21,35 +20,35 @@
                 <h1>비밀번호 찾기</h1>
             </div>
             <div class="tab">
-                <a href="#" class="pp_active">휴대폰 인증</a>
+                <a href="#">휴대폰 인증</a>
                 <a href="#">이메일 인증</a>
             </div>
             <div class="tab_contents">
                 <div class="phone">
                     <span>이름</span>
-                    <label for="ph_user_name">
-                        <input type="text" id="ph_user_name" placeholder="이름을 입력해 주세요">
+                    <label for="ph_user_name" class="ph_user_name">
+                        <input type="text" id="ph_user_name" placeholder="이름을 입력해 주세요" autocomplete="off">
                         <img src="./images/login/icon_cancle.svg" alt="입력 지우기">
                     </label>
                     <span class="error_m"><!-- js / 가입 시 등록한 이름을 입력해 주세요. --></span>
                     <span>휴대폰 번호</span>
-                    <label for="user_phone">
-                        <input type="text" maxlength="11" id="user_phone" placeholder="휴대폰 번호를 입력해 주세요">
+                    <label for="user_phone" class="user_phone">
+                        <input type="text" maxlength="11" id="user_phone" placeholder="휴대폰 번호를 입력해 주세요" autocomplete="off">
                         <img src="./images/login/icon_cancle.svg" alt="입력 지우기">
                     </label>
                     <span class="error_m"><!-- js / 휴대폰 번호를 정확히 입력해 주세요. --></span>
                     <button type="button" id="get_num">인증번호 받기</button>
                 </div>
-                <div class="email">
+                <div class="email display_none">
                     <span>이름</span>
-                    <label for="e_user_name">
-                        <input type="text" id="e_user_name" placeholder="이름을 입력해 주세요">
+                    <label for="e_user_name" class="e_user_name">
+                        <input type="text" id="e_user_name" placeholder="이름을 입력해 주세요" autocomplete="off">
                         <img src="./images/login/icon_cancle.svg" alt="입력 지우기">
                     </label>
                     <span class="error_m"><!-- js / 가입 시 등록한 이름을 입력해 주세요. --></span>
                     <span>이메일</span>
-                    <label for="user_email">
-                        <input type="text" id="user_email" placeholder="이메일을 입력해 주세요">
+                    <label for="user_email" class="user_email">
+                        <input type="text" id="user_email" placeholder="이메일을 입력해 주세요" autocomplete="off">
                         <img src="./images/login/icon_cancle.svg" alt="입력 지우기">
                     </label>
                     <span class="error_m"><!-- js / 가입 시 등록한 이름을 입력해 주세요. --></span>
@@ -59,5 +58,6 @@
         </div>
     </main>
     <?php include("footer.php"); ?>
+    <script src="/script/login_sub.js"></script>
 </body>
 </html>

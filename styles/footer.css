@@ -647,9 +647,9 @@
 }
 .sub2 .chat_qa .qa_list .choice_consultant_list {
   position: fixed;
-  right: 16px;
-  bottom: 130px;
-  width: 338px;
+  right: 44px;
+  bottom: 192px;
+  width: 357px;
   background-color: #333;
   padding: 10px 16px 15px;
   border-bottom-left-radius: 20px;
@@ -1063,6 +1063,11 @@ footer address .box p:nth-child(3) {
   }
   .sub2 .chat_qa .qa_list .user_message p {
     font-size: 0.875rem;
+  }
+  .sub2 .chat_qa .qa_list .choice_consultant_list {
+    right: 16px;
+    bottom: 130px;
+    width: 338px;
   }
   .sub2 .chat_qa .qa_list .choice_consultant_list .message_input #text_area {
     width: 77%;

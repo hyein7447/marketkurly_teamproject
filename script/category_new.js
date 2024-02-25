@@ -62,8 +62,87 @@ const pop_minus = cart_pop.querySelector('.price_num .num .minus')
 const pop_num = cart_pop.querySelector('.price_num .num .p_tab_num')
 const pop_plus = cart_pop.querySelector('.price_num .num .plus')
 const p_tab_price = document.querySelector('.cart_pop .total .total_result .p_tab_price')
-console.log(pop_minus,pop_plus,pop_num,p_tab_price)
+// 어사이드 클릭 시 오른쪽 컨테이너에 출력되는 변수
+const name_result = document.querySelector('.name_result') //오른쪽 상단 추가되는 컨테이너박스
+const result_list = document.querySelector('.name_result > span') //미리 준비해둔 태그 span
+const list_close = document.querySelector('.name_result > span > img') //x버튼
+const aside_li = document.querySelectorAll('.best > .container > .left > .list > ul > li:not(.more_btn)') //어사이드 li
+const btn_reset = document.querySelector('.container > .left > .title > p') //초기화 버튼
+console.log(name_result, result_list, aside_li)
 console.log('----------------- 데스크탑 버전 -----------------')
+/* ---------------------- 구분선 -------------------------- */
+const title_container = document.querySelectorAll('.num_total') //총 ? 건 div
+const total_span = document.querySelector('.right > .lnb > .num_total > span') // 총 ? 건 적을 span
+// 어사이드 메뉴 클릭 시 오른쪽 컨테이너 박스안에 이름이 이미지와 같이 출력
+// 초기화 버튼 클릭 시 어사이드 체크박스 all해제, 오른쪽 컨테이너 none
+// 어사이드 메뉴 (li) 클릭했을 때
+
+let allTotal = 0;
+
+aside_li.forEach((t)=>{ //
+    t.addEventListener('click',()=>{
+        const list_text = document.createElement('span') //만든 span //클릭될때마다 생성돼야 
+        list_text.classList.add('add_list') //생성한 span을 아래에서 잡을 수 있게 classList추가
+
+        //◆◆--오른쪽 박스 보이기--◆◆
+        name_result.classList.remove('display_none')
+        btn_reset.classList.add('reset_active') // 초기화 버튼 활성화s
+
+        // ◆◆--오른쪽 컨테이너에 클릭 대상이 쌓이게 하기--◆◆
+        name_result.appendChild(list_text)
+
+        // aside_li의 이름그대로 출력되고 x버튼 추가
+        let li_text = t.children[0].children[1].textContent; // li의 이름 잡기
+        //복합대입으로 리스트 쌓기
+        list_text.innerHTML += `${li_text}`+`<img src="./images/main/icon/icon_cancle.svg" alt="취소">`         
+
+        // ◆◆--오른쪽 컨테이너 위에 총 ? 건--◆◆  
+        // aside_li의 숫자를 더해서 div에 출력하기
+        let listNum = Number(t.children[0].children[2].textContent); //li의 숫자 잡기
+        allTotal += listNum; //복합대입(클릭할 때 마다 숫자 더하기) 
+        /* 문제해결 => 클릭 이벤트 안에서 변수를 적으면 클릭할때마다 0이 되는거니 밖에다가 변수 지정해주기 */
+        //div에 span에 innerHTML추가   
+        total_span.innerHTML = `총 ${allTotal}건`     
+        console.log(total_span,listNum,'--',allTotal)  
+
+        //◆◆--초기화 버튼 눌렀을 때--◆◆
+        btn_reset.addEventListener('click',()=>{ 
+            //오른쪽 박스 숨기기
+            name_result.classList.add('display_none')
+
+            // 카테고리 어사이드 메뉴 클릭시 체크이미지 회색으로 변경
+            t.children[0].children[0].src = './images/sub/icon_check_off.svg';
+
+            // 초기화 버튼 비활성화
+            btn_reset.classList.remove('reset_active')
+
+            // 오른쪽 컨테이너 초기화
+            list_text.innerHTML = '';
+            // name_result.remove(list_text)
+
+            // 총?건 -> 기본값인 총 268건으로 변경
+            total_span.innerHTML = `총 268건`     
+            
+            //클릭해서 대입한 어사이드 값 리셋
+            allTotal = 0;
+        });
+        // ◆◆-- x버튼 클릭 했을 때 선택 항목 삭제--◆◆
+        //첫번째만 잡힘문제해결 -> createElement에 classList 추가해서 잡기
+        let add_list = document.querySelectorAll('.add_list')
+        for(let a of add_list){
+            a.children[0].addEventListener('click', function(){
+                this.parentElement.remove()
+                // 카테고리 어사이드 메뉴 클릭시 체크이미지 회색으로 변경                
+                /* if (btn_chk_a.children[1].textContent == li_text){
+                    btn_chk_a.children[0].src = './images/sub/icon_check_off.svg';
+                } */
+            });
+        }
+    })
+})
+// 문제 1. 오른쪽 컨테이너 x클릭 시 어사이드 이미지 회색으로 변경 안됨
+// 문제 2.  x클릭시 add_list가 0이 됐을때 컨테이너 사라지기 안됨
+
 /* ---------------------- 구분선 -------------------------- */
 /* 
     ******** 상단 영역 js
