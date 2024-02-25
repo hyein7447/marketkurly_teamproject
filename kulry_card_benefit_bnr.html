@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="./styles/kulry_card_benefit_bnr.css">
     <!-- font-family -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!--swipe 플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--swipe 플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <?php include("header.php"); ?>
@@ -56,9 +63,7 @@
                         <span>모닝스타</span>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div> <!-- 페이지번호표시용 -->
-                <div class="swiper-button-prev"></div> <!-- 이전버튼 -->
-                <div class="swiper-button-next"></div> <!-- 다음버튼 -->
+                <div class="pagination" id="card_pagination"></div> <!-- 페이지번호표시용 -->
             </div>
             <div class="notice">
                 <p class="left">유의사항</p>
@@ -185,5 +190,18 @@
         </div>
     </main>
     <?php include("footer.php"); ?>
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+        const card_swiper = new Swiper('#card_slide',{
+            slidesPerView: 5,
+            spaceBetween: 0,
+            centeredSlides: true,
+            pagination: {
+            el: "#card_slide #card_pagination",
+            // clickable: true,
+            },
+        })
+    </script>
 </body>
 </html>

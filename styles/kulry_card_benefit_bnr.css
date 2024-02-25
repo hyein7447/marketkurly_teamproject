@@ -13,6 +13,9 @@ main .bnr_main {
   background: #d2c1b1;
   width: 100%;
 }
+main .bnr_main img {
+  width: 100%;
+}
 main .menu_tab {
   width: 100%;
   background-color: #5F0080;
@@ -59,29 +62,29 @@ main .bnr_event {
   align-items: center;
   width: 100%;
   background: linear-gradient(to left, #211528, #311f3c);
-  /* .img_bg {
-      width: 100%;
+  /*         .img_bg {
+              width: 100%;
 
-      &::before{
-          content: '';
-          display: block;
-          background-color: #311f3c;
-          position: sticky;
-          width: 50%;
-          height: 100%;
-      }
-      &::after {
-          content: '';
-          display: block;
-          background-color: #211528;
-          background-position: 50%;
-          position: sticky;
-          width: 50%;
-          height: 100%;
-      } 
-      img {
-      }
-  }*/
+              &::before{
+                  content: '';
+                  display: block;
+                  background-color: #311f3c;
+                  position: sticky;
+                  width: 50%;
+                  height: 100%;
+              }
+              &::after {
+                  content: '';
+                  display: block;
+                  background-color: #211528;
+                  background-position: 50%;
+                  position: sticky;
+                  width: 50%;
+                  height: 100%;
+              }  */
+}
+main .bnr_event img {
+  width: 100%;
 }
 main .kurly_card {
   background-color: #f4efea;
@@ -96,12 +99,19 @@ main .kurly_card .title {
   flex-flow: column;
   align-items: center;
 }
+main .kurly_card #card_slide {
+  overflow: hidden;
+  width: 1280px;
+  position: relative;
+  padding: 55px 20px;
+  text-align: center;
+}
 main .kurly_card #card_slide .swiper-wrapper {
   display: flex;
 }
 main .kurly_card #card_slide .swiper-wrapper .slide {
   text-align: center;
-  width: 230px;
+  width: 230px !important;
   margin: 10px 30px;
 }
 main .kurly_card #card_slide .swiper-wrapper .slide img {
@@ -113,6 +123,28 @@ main .kurly_card #card_slide .swiper-wrapper .slide span {
   color: #262626;
   opacity: 0.7;
 }
+main .kurly_card #card_slide .swiper-wrapper .swiper-slide-active {
+  width: 251px !important;
+}
+main .kurly_card #card_slide .swiper-wrapper .swiper-slide-active img {
+  margin: -20px 0 30px;
+  height: 398px;
+}
+main .kurly_card #card_slide #card_pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  text-align: start;
+}
+main .kurly_card #card_slide #card_pagination .swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+}
+main .kurly_card #card_slide #card_pagination .swiper-pagination-bullet-active {
+  background-color: #5F0080;
+  width: 11px;
+  height: 11px;
+}
 main .kurly_card .notice {
   width: 840px;
   display: flex;
@@ -122,13 +154,13 @@ main .kurly_card .notice {
   padding-top: 30px;
 }
 main .kurly_card .notice .left {
-  width: 160px;
+  width: 10%;
   line-height: 27px;
   font-weight: 500;
   font-size: 1.063rem;
 }
 main .kurly_card .notice .right {
-  width: calc(100% - 160px);
+  width: 90%;
 }
 main .kurly_card .notice .right li {
   line-height: 27px;
@@ -169,13 +201,13 @@ main .bnr_benefit1 .notice {
   margin-bottom: 50px;
 }
 main .bnr_benefit1 .notice .left {
-  width: 160px;
+  width: 10%;
   line-height: 27px;
   font-weight: 500;
   font-size: 1.063rem;
 }
 main .bnr_benefit1 .notice ul {
-  width: calc(100% - 160px);
+  width: 90%;
 }
 main .bnr_benefit1 .notice ul li {
   line-height: 27px;
@@ -456,4 +488,210 @@ main .all_notice .link #link_btn::before {
   top: 70px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media screen and (max-width: 820px) {
+  main .menu_tab a {
+    font-size: 1.125rem;
+  }
+  main .kurly_card .notice {
+    width: 700px;
+  }
+  main .kurly_card .notice .left {
+    width: 20%;
+  }
+  main .kurly_card .notice .right {
+    width: 80%;
+  }
+  main .bnr_benefit1 .notice {
+    width: 700px;
+  }
+  main .bnr_benefit1 .notice .left {
+    width: 20%;
+  }
+  main .bnr_benefit1 .notice ul {
+    width: 80%;
+  }
+  main .bnr_benefit2 .img img {
+    width: 100%;
+  }
+  main .bnr_benefit2 .notice {
+    width: 700px;
+  }
+  main .bnr_benefit2 .notice .left {
+    width: 20%;
+  }
+  main .bnr_benefit2 .notice ul {
+    width: 80%;
+  }
+  main .bnr_benefit3 .notice {
+    width: 700px;
+  }
+  main .bnr_benefit3 .notice .left {
+    width: 20%;
+  }
+  main .bnr_benefit3 .notice .right {
+    width: 80%;
+  }
+  main .all_notice .event_notice {
+    width: 700px;
+  }
+  main .all_notice .event_notice p {
+    width: 20%;
+  }
+  main .all_notice .event_notice ul {
+    width: 80%;
+  }
+  main .all_notice .must_notice {
+    width: 700px;
+  }
+  main .all_notice .must_notice p {
+    width: 20%;
+  }
+  main .all_notice .must_notice ul {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 430px) {
+  main .menu_tab a {
+    font-size: 0.875rem;
+  }
+  main .menu_tab a:nth-child(2)::before {
+    height: 15px;
+    top: 21px;
+  }
+  main .menu_tab a:nth-child(2)::after {
+    height: 15px;
+    top: 21px;
+  }
+  main .kurly_card #card_slide .swiper-wrapper .slide {
+    width: 210px !important;
+    margin: 10px 25px;
+  }
+  main .kurly_card #card_slide .swiper-wrapper .swiper-slide-active {
+    width: 230px !important;
+  }
+  main .kurly_card #card_slide .swiper-wrapper .swiper-slide-active img {
+    height: 100%;
+  }
+  main .kurly_card #card_slide #card_pagination {
+    left: 47%;
+  }
+  main .kurly_card .notice {
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 400px;
+    padding: 20px 20px 0 20px;
+  }
+  main .kurly_card .notice .left {
+    padding-bottom: 12px;
+  }
+  main .kurly_card .notice .right {
+    width: 100%;
+  }
+  main .kurly_card .notice .right li {
+    font-size: 0.875rem;
+  }
+  main .bnr_benefit1 .notice {
+    flex-flow: column;
+    width: 400px;
+    padding: 20px 20px 0 20px;
+  }
+  main .bnr_benefit1 .notice .left {
+    padding-bottom: 12px;
+    width: 100%;
+  }
+  main .bnr_benefit1 .notice ul {
+    width: 100%;
+  }
+  main .bnr_benefit1 .notice ul li {
+    font-size: 0.875rem;
+  }
+  main .bnr_benefit2 .img img {
+    width: 100%;
+  }
+  main .bnr_benefit2 .notice {
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 400px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  main .bnr_benefit2 .notice .left {
+    padding-bottom: 12px;
+    width: 100%;
+  }
+  main .bnr_benefit2 .notice ul {
+    width: 100%;
+  }
+  main .bnr_benefit2 .notice ul li {
+    font-size: 0.875rem;
+  }
+  main .bnr_benefit3 .img img {
+    width: 100%;
+  }
+  main .bnr_benefit3 .notice {
+    width: 400px;
+    flex-flow: column;
+    padding: 0 20px;
+    padding-top: 20px;
+  }
+  main .bnr_benefit3 .notice .left {
+    width: 100%;
+    padding-bottom: 12px;
+  }
+  main .bnr_benefit3 .notice .right {
+    width: 100%;
+  }
+  main .bnr_benefit3 .notice .right dl {
+    margin-bottom: 10px;
+  }
+  main .bnr_benefit3 .notice .right dl dt {
+    padding: 0;
+    padding-bottom: 8px;
+  }
+  main .bnr_benefit3 .notice .right dl dd {
+    font-size: 0.875rem;
+  }
+  main .all_notice .event_notice {
+    flex-flow: column;
+    width: 400px;
+    padding: 20px 20px 0;
+  }
+  main .all_notice .event_notice p {
+    width: 100%;
+    padding-bottom: 12px;
+  }
+  main .all_notice .event_notice ul {
+    width: 100%;
+  }
+  main .all_notice .event_notice ul li {
+    font-size: 0.875rem;
+  }
+  main .all_notice .must_notice {
+    flex-flow: column;
+    width: 400px;
+    padding: 20px 20px 0;
+  }
+  main .all_notice .must_notice p {
+    width: 100%;
+    padding-bottom: 12px;
+  }
+  main .all_notice .must_notice ul {
+    width: 100%;
+  }
+  main .all_notice .must_notice ul li {
+    font-size: 0.875rem;
+  }
+  main .all_notice .must_notice ul li em {
+    font-size: 0.875rem;
+  }
+  main .all_notice .link #link_btn {
+    width: 400px;
+  }
+  main .all_notice .link #link_btn::before {
+    width: 400px;
+    top: 64px;
+  }
 }/*# sourceMappingURL=kulry_card_benefit_bnr.css.map */
