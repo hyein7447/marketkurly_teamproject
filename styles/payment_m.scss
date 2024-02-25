@@ -4,12 +4,273 @@
     main{
         width: 100%;
         padding: 0 16px;
-        fieldset{
-            h1{
-                font-size: $px16;
-            }
-            h2{
-                span{display: inline;}
+        form{
+            fieldset{
+                h1{
+                    font-size: 14px;
+                    margin: 0;
+                }
+                .order_top{
+                    .product_ordered{display: none;}
+                    .product_ordered_m{
+                        display: block;
+                        border-bottom: 8px solid $c-244;
+                        h2{
+                            margin-top: 0;
+                            font-size: $px14;
+                            border-bottom: 0;
+                            padding: 18px 20px;
+                            .h2_right{
+                                display: flex;
+                                align-items: center;
+
+                                span{
+                                    display: inline;
+                                    margin-right: 8px;
+                                    font-size: $px13;
+                                }
+                                a{
+                                    img{width: 25px;}
+                                }
+                            }
+                        }
+                        .order_list{
+                            padding: 0 20px 16px;
+                            li{
+                                display: flex;
+                                border-bottom: 1px solid $c-244;
+                                &:first-child{
+                                    padding-bottom: 10px;
+                                }
+                                &:last-child{
+                                    padding-top: 16px;
+                                }
+                                .order_img{
+                                    margin-right: 16px;
+                                    img{width: 50px;}
+                                }
+                                .order_list_right{
+                                    .order_item_name{
+                                        font-size: $px12;
+                                        line-height: 19px;
+                                    }
+                                    .sub_item_name{
+                                        font-size: $px10;
+                                        color: #999;
+                                        margin-bottom: 6px;
+                                    }
+                                    .order_item_price_num{
+                                        font-size: $px12;
+                                        em{
+                                            font-size: $px12;
+                                            color: #666;
+                                            &::before{
+                                                content: '';
+                                                display: inline-block;
+                                                width: 1px;
+                                                height: 12px;
+                                                color: #ddd;
+                                                padding: 0 8px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .customer_info{
+                        border-bottom: 8px solid $c-244;
+                        margin: 0;
+                        padding: 0 20px;
+                        h2{
+                            margin-top: 0;
+                            font-size: $px14;
+                            border-bottom: 0;
+                            padding: 18px 0;
+                        }
+                        ul{
+                            padding: 12px 0 20px;
+                            li{
+                                padding: 0;
+                                display: flex;
+                                .left{
+                                    width: 100px;
+                                    color: #666;
+                                    margin: 0;
+                                }
+                                p{line-height: 32px;}
+                                .email{
+                                    span{display: none;}
+                                }
+                            }
+                            .change_info{
+                                display: block;
+                                font-size: $px10;
+                                color: $c-153;
+                                margin-top: 12px;
+                            }
+                        }
+                    }
+                    .shipping_info{
+                        h2{display: none;}
+                        ul{
+                            li{
+                                border-bottom: 8px solid $c-244;
+                                display: block;
+                                &:first-child{
+                                    border-bottom: 8px solid $c-244;
+                                    padding: 20px 0;
+                                }
+                                padding: 20px 0;
+                                .destination{
+                                    position: relative;
+                                    .modify_btn_wrap{
+                                        position: absolute;
+                                        right: 0;
+                                        bottom: 0;
+                                    }
+                                }
+                                .shipping_request{
+                                    position: relative;
+                                    .modify_btn_wrap{
+                                        position: absolute;
+                                        right: 0;
+                                        bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .packaging_wrap{
+                        border-bottom: 8px solid $c-244;
+                        padding-bottom: 20px;
+                        h2{
+                            margin: 0;
+                            font-size: $px14;
+                            border: 0;
+                            padding: 18px 0;
+                        }
+                        .packaging{
+                            padding: 0;
+                            margin: 0;
+                            display: flex;
+                            flex-flow: column nowrap;
+                            label{line-height: 30px}
+                        }
+                        .purplebox{
+                            padding: 0;
+                            border-top: 8px solid $c-244;
+                        }
+                    }
+                }
+                .order_btm{
+                    display: block;
+                    .btm_left{
+                        width: 100%;
+                        .coupon_wrap{
+                            padding: 18px 0;
+                            h2{
+                                border: 0;
+                                margin: 0;
+                                padding: 0;
+                                font-size: $px14;
+                            }
+                            .coupon{
+                                .left{display: none;}
+                                .coupon_wrap{
+                                    border-bottom: 8px solid $c-244;
+                                    padding: 0;
+                                    .coupon_wrap_top{
+                                        margin: 0;
+                                        padding: 0;
+                                        .coupon_list_wrap{margin: 0;}
+                                        a{display: none;}
+                                        .coupon_unavailable{
+                                            font-size: $px10;
+                                            color: #999;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .kurlycard_wrap{
+                            padding-bottom: 18px;
+                            border-bottom: 8px solid $c-244;
+                            h2{
+                                margin: 0 0 10px;
+                                padding: 0;
+                                font-size: $px14;
+                                border: 0;
+                            }
+                            .kurlycard{
+                                padding: 0;
+                                .left{display: none;}
+                                .kurlycard_benefit{
+                                    width: 100%;
+                                    align-items: center;
+                                    .benefit{
+                                        p{margin: 0;}
+                                    }
+                                    .issuance{
+                                        #card_issuance_btn{width: 50%;}
+                                    }
+                                }
+                            }
+                        }
+                        .kurly_cash_wrap{
+                            padding: 18px 0;
+                            h2{
+                                margin: 0;
+                                padding: 0;
+                                font-size: $px14;
+                                border: 0;
+                                justify-content: left;
+                            }
+                            .kurly_cash{
+                                border-bottom: 8px solid $c-244;
+                                padding: 0 0 18px;
+                                .left{display: none;}
+                                .discount{
+                                    width: 100%;
+                                    .total{
+                                        width: 100%;
+                                        #num{width: 80%;}
+                                        #use_all_btn{width: 10%;}
+                                    }
+                                    p{}
+                                }
+                            }
+                        }
+                        .payment_method_wrap{
+                            h2{
+                                margin: 0 0 10px;
+                                padding: 0;
+                                font-size: $px14;
+                                border: 0;
+                            }
+                            .payment_method{
+                                .left{display: none;}
+                                .method_type{
+                                    width: 100%;
+                                    .kurly_pay_wrap{
+                                        width: 100%;
+                                        .kurly_pay_bg{
+                                            width: 100%;
+                                            .kurly_pay_benefit{
+                                                width: 50%;
+                                            }
+                                        }
+                                    }
+                                    .payment_method_detail{
+                                        width: 100%;
+                                        a{width: 100%/ 3 ;}
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                }
             }
         }
     }

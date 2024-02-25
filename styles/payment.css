@@ -866,4 +866,12 @@ main form fieldset .order_btm .btm_right .payment_amount .kurlycard_save {
 }
 main form fieldset .order_btm .btm_right a img {
   width: 100%;
+}
+
+.product_ordered_m {
+  display: none;
+}
+
+.change_info {
+  display: none;
 }/*# sourceMappingURL=payment.css.map */
