@@ -1,0 +1,12 @@
+@media screen and (max-width: 820px) {
+  main {
+    width: 100%;
+    padding: 0 16px;
+  }
+  main fieldset h1 {
+    font-size: 1.125rem;
+  }
+  main fieldset h2 span {
+    display: inline;
+  }
+}/*# sourceMappingURL=payment_m.css.map */

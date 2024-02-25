@@ -128,6 +128,7 @@ for(let a of select_card_list_opt){
     a.addEventListener('click',()=>{
         installment_span.innerHTML = '할부를 선택해주세요';
         select_card_list.style.display = 'none';
+        installment.style.pointerEvents = 'auto';
         select_card_span.innerHTML = a.innerHTML
         installment_style();
         let imgTag = installment.querySelector('img')

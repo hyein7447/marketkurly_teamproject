@@ -25,6 +25,7 @@ main{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                span{display: none;}
                 a{
                     img{width: 17px;}
                 }
@@ -118,6 +119,7 @@ main{
                 .shipping_info{
                     ul{
                         li{
+                            width: 100%;
                             display: flex;
                             padding-top: 20px;
                             &:first-child{
@@ -151,11 +153,12 @@ main{
                                 line-height: 37.5px;
                             }
                             .modify_btn_wrap{
+                                width: 60px;
                                 margin-top: 20px;
                                 .modify_btn{
                                     padding: 0 10px;
                                     text-align: center;
-                                    width: 60px;
+                                    width: 100%;
                                     background-color: #fff;
                                     border: 1px solid $c-221;
                                     border-radius: 3px;
@@ -201,7 +204,7 @@ main{
                 position: relative;
                 width: 100%;
                 .left{
-                    width: 160px;
+                    width: 18.5%;
                     line-height: 44px;
                     margin-right: 37.5px;
                     font-weight: 500;
@@ -221,6 +224,7 @@ main{
                                     margin-bottom: 10px;
                                     
                                     #coupon_list{
+                                        pointer-events: none;
                                         width: 100%;
                                         height: 44px;
                                         font-size: $px14;
@@ -249,7 +253,7 @@ main{
                             a{
                                 color: $purple;
                                 font-size: $px12;
-                                img{width: 552px;}
+                                img{width: 100%;}
                             }
                         }
                     }
@@ -258,7 +262,7 @@ main{
                             padding-top: 20px;
                             display: flex;
                             .kurlycard_benefit{
-                                width: 552px;
+                                width: 64%;
                                 display: flex;
                                 justify-content: space-between;
                                 
@@ -288,15 +292,18 @@ main{
                                     }
 
                                 }
+                                .issuance{
+                                    width: 20%;
+                                }
                                 #card_issuance_btn{
                                     padding: 0 10px;
+                                    width: 100%;
                                     background-color: $purple;
-                                    width: 100px;
                                     color: #fff;
                                     border-radius: 3px;
                                     height: 44px;
                                     margin-top: -5px;
-                                    font-size: $px14;
+                                    font-size: $px12;
                                 }
                             }
                         }
@@ -314,6 +321,7 @@ main{
                             padding-top: 20px;
                             display: flex;
                             .discount{
+                                width: 48%;
                                 ul{
                                     padding: 13px 0 8px;
                                     li{
@@ -341,14 +349,14 @@ main{
                                         line-height: 42px;
                                         padding: 0 11px 0 15px;
                                         border-radius: 3px;
-                                        width: 306px;
+                                        width: 73%;
                                         font-size: $px14;
                                     }
                                     #use_all_btn{
                                         border: 1px solid $c-221;
                                         color: $c-221;
                                         font-size: $px14;
-                                        width: 100px;
+                                        width: 23%;
                                         border-radius: 3px;
                                         height: 44px;
                                         margin-left: 5px;
@@ -373,7 +381,7 @@ main{
                                 padding-top: 20px;
 
                                 .method_type_btn{
-                                    width: 414px;
+                                    width: 100%;
                                     position: relative;
                                     .benefit_icon{
                                         position: absolute;
@@ -421,7 +429,7 @@ main{
                                     border-top: 0;
                                     border-top-left-radius: 3px;
                                     border-top-right-radius: 3px;
-                                    width: 414px;
+                                    width: 100%;
                                     padding: 37.5px 0; 
                                     text-align: center;
 
@@ -430,6 +438,7 @@ main{
                                         position: relative;
                                         overflow: hidden;
                                         .kurly_pay{
+                                            width: 105%;
                                             position: absolute;
                                             display: flex;
                                             justify-content: center;
@@ -458,7 +467,7 @@ main{
                                                 }
                                                 a{
                                                     display: block;
-                                                    width: 103px;
+                                                    width: 50%;
                                                     background: linear-gradient(/* to bottom right */-40deg, #BD5DED, #E783F2, #E148CF, #BD5DED);
                                                     background-size: 400%;
                                                     padding: 10px 0;
@@ -489,14 +498,15 @@ main{
                                                 }
                                             }
                                             .add_account{
+                                                width: 206px;
                                                 a{
+                                                    width: 100%;
                                                     border-radius: 6px;
                                                     display: flex;
                                                     flex-flow: column nowrap;
                                                     justify-content: center;
                                                     align-items: center;
                                                     height: 100%;
-                                                    width: 206px;
                                                     background-color: $c-245;
                                                     color: $c-153;
                                                     font-size: $px12;
@@ -601,6 +611,7 @@ main{
                                         border: 1px solid $c-221;
                                         font-size: $px14;
                                         background-color: $c-250;
+                                        pointer-events: none;
                                         span{color: #CCC;}
                                         
                                         img{
