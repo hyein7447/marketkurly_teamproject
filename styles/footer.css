@@ -631,9 +631,9 @@
 }
 .sub2 .chat_qa .qa_list .user_message {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
 }
 .sub2 .chat_qa .qa_list .user_message p {
   background-color: #5F0080;

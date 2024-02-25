@@ -594,7 +594,10 @@
                 }
             }
             .user_message{
-                @include flex-row-end-ct;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: stretch;
                 p {
                     background-color: $purple;
                     border: 2px solid $purple;

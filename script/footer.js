@@ -27,7 +27,7 @@ const choice_list = document.querySelectorAll('.choice_list')
 const text_area = document.querySelector('#text_area')
 const message_input = document.querySelector('div.message_input')
 const band_consultant = document.querySelector('.band_consultant')
-const user_message = document.querySelector('.user_message')
+const be_list = document.querySelectorAll('.be_list a')
 /* ---------------------- 구분선 -------------------------- */
 // 챗봇영역 - 서브2탭의 채팅창 클릭부분
 // 궁금한 사항 클릭시 클릭한 대상의 리스트가 표시됨
@@ -261,18 +261,22 @@ const user_input = document.querySelector('#user_input input')
 const chat_btn = document.querySelector('#chat_btn')
 const robot_btn = document.querySelector('#robot')
 const apiEndpoint = 'https://api.openai.com/v1/chat/completions'
-const apiKey = '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';
+// const apiKey = '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';
+const apiKey = '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';
+const band_message = document.querySelector('.band_message')
 const user_message_p = document.createElement('p')
+const user_message = document.querySelector('.user_message')
+const btn_send = document.querySelector('[class*=paperclip]')
 
-// enter event - 엔터 쳤을때 전송
-/* text_area.addEventListener('keydown',(e)=>{ //이벤트 정보가 담기는 곳 => () 매개변수 위치
+/* // enter event - 엔터 쳤을때 전송
+text_area.addEventListener('keydown',(e)=>{ //이벤트 정보가 담기는 곳 => () 매개변수 위치
     if(e.keyCode === 13){
-        btn_chatbot.click(); //버튼 강제 클릭
+        btn_send.click(); //버튼 강제 클릭
     }
-}) */
+})
 
 // API ai 연결
-/* async function fetchAIResponse(prompt) {
+async function fetchAIResponse(prompt) {
     const requestOptions = {
         method: 'POST',
         headers: {
@@ -302,13 +306,14 @@ const user_message_p = document.createElement('p')
 		console.error('OpenAI API 호출 중 오류 발생:', error);
         return 'OpenAI API 호출 중 오류 발생';
     }
-} */
+}
 
 // 질문 입력 후 전송 버튼 클릭 하면 자바스크립트
 // 인풋 텍스트에 내가 값을 입력 -> 입력값이 챗 메세지의 마지막 자식으로 
-/* btn_chatbot.addEventListener('click', async()=>{ //전송버튼을 클릭했을 때 async()에 쓴 값(쳇GPT)을 사용하겠다.
+btn_send.addEventListener('click', async()=>{ //전송버튼을 클릭했을 때 async()에 쓴 값(쳇GPT)을 사용하겠다.
+    user_message.classList.remove('display_none')
     let message = text_area.value //value값을 변수로 담았다.
-    addMessage('user',message) //아래 함수 호출 값으로 사용
+    addMessage('user', message) //아래 함수 호출 값으로 사용
     text_area.value = '' //빈칸으로 만들기
     //ai
     let aiMessage = await fetchAIResponse(message); //value값을 ai서버로 보내서 값을 받아라(디코더해라)
@@ -317,8 +322,8 @@ const user_message_p = document.createElement('p')
 
 // value 값으로 받은 메세지가 처리되는 함수
 function addMessage(target, contents){ //매개변수로 해야함-> (누가대답할지, 내용)
-    const messageElement = document.createElement('div')
-    messageElement.classList.add('message')
-    messageElement.innerHTML = `${target} : ${contents}` //(누가대답할지, 내용)을 출력되게 innerHTML로 적용
-    chat_messages.appendChild(messageElement) //div의 마지막 자식으로 메세지를 출력하라
+    const messageElement = document.createElement('p')
+    // messageElement.classList.add('message')
+    messageElement.innerHTML = `${target} :  ${contents}` //(누가대답할지, 내용)을 출력되게 innerHTML로 적용
+    user_message.appendChild(messageElement) //div의 마지막 자식으로 메세지를 출력하라
 } */
