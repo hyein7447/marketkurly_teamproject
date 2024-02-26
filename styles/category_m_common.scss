@@ -275,28 +275,43 @@ main {
                     }
                 }
             }
-            .product_box {
+            #m_product_box {
                 padding: 0 16px;
                 display: flex; 
                 flex-flow: row wrap;
                 justify-content: space-between;
+                align-items: flex-start;
                 .product {
                     margin-bottom: 30px;
-                    position: relative;
+                    // position: relative;
                     width:calc((100% / 2) - 4px);
+                    display: inline-block;
+                    border-radius: 4px;
                     .thumb:hover {
-                        background-size: 110%;
-                        transition: 0.7s ease;
+                        // transition: 0.7s ease;
+                        // width:102%;
                     }
                     .thumb {
-                        background-image: url(../images/main/product/main_p_01.jpg);
-                        background-size: 108%;
-                        background-position: center;
-                        display: block;
-                        padding-top: calc(50% / 1 * 2.8);
-                        width: 100%;
+                        // background-image: url(../images/main/product/main_p_01.jpg);
+                        // background-size: 108%;
+                        // // background-position: center;
+                        // display: block;
+                        // // padding-top: calc(50% / 1 * 2.8);
+                        // width: 100%;
+                        // // border-radius: 4px;
+                        // cursor: pointer;
+                        display: inline-block;
+                        width:100%;
                         border-radius: 4px;
-                        cursor: pointer;
+                        .thumb_img {
+                            position: relative;
+                            border-radius: 4px;
+                            width:100%;
+                            img {
+                                width:100%;
+                            }
+                        }
+                        p.icon_cuppon:empty {display: none;}
                         p.icon_cuppon {
                             background-color: #bd76ff;
                             border-radius: 4px;
@@ -323,6 +338,10 @@ main {
                     .info {
                         padding: 8px 10px 0 0;
                         cursor: pointer;
+                        .p_brand:empty, .p_title:empty, .p_explain:empty ,.p_price_del:empty, 
+                        .p_price_del:empty, .p_price:empty , .p_review:empty, .p_icon_only:empty, .p_icon_ko:empty {
+                            display: none;
+                        }
                         .p_brand {
                             font-size: $px12;
                             color:#999;
@@ -341,6 +360,7 @@ main {
                         }
                         .p_price_del {
                             padding-top: 4px;
+                            del:empty {display: none;}
                             del {
                                 font-size: $px12;
                                 color:#b5b5b5;
@@ -351,6 +371,7 @@ main {
                             font-weight: 800;
                             padding-top: 2px;
                             font-size: $px14;
+                            em:empty {display: none;}
                             em {
                                 color:#fa622f;
                                 font-weight: 700;

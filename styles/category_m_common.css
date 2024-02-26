@@ -273,32 +273,36 @@ main .best .container .right .name_result span img {
     margin-left: 4px;
     color: #999;
   }
-  main .best_mobile .product_box {
+  main .best_mobile #m_product_box {
     padding: 0 16px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: flex-start;
   }
-  main .best_mobile .product_box .product {
+  main .best_mobile #m_product_box .product {
     margin-bottom: 30px;
-    position: relative;
     width: calc(50% - 4px);
+    display: inline-block;
+    border-radius: 4px;
   }
-  main .best_mobile .product_box .product .thumb:hover {
-    background-size: 110%;
-    transition: 0.7s ease;
-  }
-  main .best_mobile .product_box .product .thumb {
-    background-image: url(../images/main/product/main_p_01.jpg);
-    background-size: 108%;
-    background-position: center;
-    display: block;
-    padding-top: 140%;
+  main .best_mobile #m_product_box .product .thumb {
+    display: inline-block;
     width: 100%;
     border-radius: 4px;
-    cursor: pointer;
   }
-  main .best_mobile .product_box .product .thumb p.icon_cuppon {
+  main .best_mobile #m_product_box .product .thumb .thumb_img {
+    position: relative;
+    border-radius: 4px;
+    width: 100%;
+  }
+  main .best_mobile #m_product_box .product .thumb .thumb_img img {
+    width: 100%;
+  }
+  main .best_mobile #m_product_box .product .thumb p.icon_cuppon:empty {
+    display: none;
+  }
+  main .best_mobile #m_product_box .product .thumb p.icon_cuppon {
     background-color: #bd76ff;
     border-radius: 4px;
     opacity: 0.9;
@@ -308,7 +312,7 @@ main .best .container .right .name_result span img {
     padding: 4px 8px;
     color: #fff;
   }
-  main .best_mobile .product_box .product .btn_cart .btn_c {
+  main .best_mobile #m_product_box .product .btn_cart .btn_c {
     width: 100%;
     height: 36px;
     display: flex;
@@ -319,58 +323,68 @@ main .best .container .right .name_result span img {
     border: 1px solid #ddd;
     border-radius: 4px;
   }
-  main .best_mobile .product_box .product .btn_cart .btn_c img {
+  main .best_mobile #m_product_box .product .btn_cart .btn_c img {
     width: 22px;
     margin-right: 4px;
   }
-  main .best_mobile .product_box .product .info {
+  main .best_mobile #m_product_box .product .info {
     padding: 8px 10px 0 0;
     cursor: pointer;
   }
-  main .best_mobile .product_box .product .info .p_brand {
+  main .best_mobile #m_product_box .product .info .p_brand:empty, main .best_mobile #m_product_box .product .info .p_title:empty, main .best_mobile #m_product_box .product .info .p_explain:empty, main .best_mobile #m_product_box .product .info .p_price_del:empty,
+  main .best_mobile #m_product_box .product .info .p_price_del:empty, main .best_mobile #m_product_box .product .info .p_price:empty, main .best_mobile #m_product_box .product .info .p_review:empty, main .best_mobile #m_product_box .product .info .p_icon_only:empty, main .best_mobile #m_product_box .product .info .p_icon_ko:empty {
+    display: none;
+  }
+  main .best_mobile #m_product_box .product .info .p_brand {
     font-size: 0.875rem;
     color: #999;
     padding-top: 5px;
   }
-  main .best_mobile .product_box .product .info .p_title {
+  main .best_mobile #m_product_box .product .info .p_title {
     line-height: 1.5rem;
     color: #111;
     padding-top: 4px;
     font-size: 1rem;
   }
-  main .best_mobile .product_box .product .info .p_explain {
+  main .best_mobile #m_product_box .product .info .p_explain {
     font-size: 0.875rem;
     padding-top: 4px;
     color: #999;
   }
-  main .best_mobile .product_box .product .info .p_price_del {
+  main .best_mobile #m_product_box .product .info .p_price_del {
     padding-top: 4px;
   }
-  main .best_mobile .product_box .product .info .p_price_del del {
+  main .best_mobile #m_product_box .product .info .p_price_del del:empty {
+    display: none;
+  }
+  main .best_mobile #m_product_box .product .info .p_price_del del {
     font-size: 0.875rem;
     color: #b5b5b5;
   }
-  main .best_mobile .product_box .product .info .p_price {
+  main .best_mobile #m_product_box .product .info .p_price {
     letter-spacing: -0.05rem;
     font-weight: 800;
     padding-top: 2px;
     font-size: 1rem;
   }
-  main .best_mobile .product_box .product .info .p_price em {
+  main .best_mobile #m_product_box .product .info .p_price em:empty {
+    display: none;
+  }
+  main .best_mobile #m_product_box .product .info .p_price em {
     color: #fa622f;
     font-weight: 700;
     padding-right: 7px;
     font-size: 1rem;
   }
-  main .best_mobile .product_box .product .info .p_review {
+  main .best_mobile #m_product_box .product .info .p_review {
     padding-top: 8px;
     font-size: 0.75rem;
   }
-  main .best_mobile .product_box .product .info .p_review [class$=dots] {
+  main .best_mobile #m_product_box .product .info .p_review [class$=dots] {
     font-size: 12px;
     margin-right: 3px;
   }
-  main .best_mobile .product_box .product .info .p_icon_only {
+  main .best_mobile #m_product_box .product .info .p_icon_only {
     padding: 2px 8px 4px;
     margin: 12px 2px 0px 0px;
     font-size: 0.813rem;
@@ -383,7 +397,7 @@ main .best .container .right .name_result span img {
     letter-spacing: -0.01rem;
     cursor: default;
   }
-  main .best_mobile .product_box .product .info .p_icon_ko {
+  main .best_mobile #m_product_box .product .info .p_icon_ko {
     padding: 2px 8px 4px;
     margin: 12px 2px 0px 0px;
     font-size: 0.813rem;

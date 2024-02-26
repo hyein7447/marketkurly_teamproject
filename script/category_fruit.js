@@ -149,7 +149,7 @@ aside_li.forEach((t)=>{ //
 */
 // 베스트 카테고리 상단 top의 메뉴(a) 클릭 시 컬러 변경
 // 초기 값 -> TOP300 글씨 보라색으로 활성화
-cate_top_a[0].classList.add('top_active')
+/* cate_top_a[0].classList.add('top_active')
 // 아래 forEach에서 클릭 시 보라색으로 글씨 활성화되는 classList 제거 함수 호출용
 const top_a_hide = ()=>{
     for(let a of cate_top_a){
@@ -162,7 +162,7 @@ cate_top_a.forEach((o,i)=>{
         top_a_hide()
         cate_top_a[i].classList.add('top_active')
     })
-})
+}) */
 /* ---------------------- 구분선 -------------------------- */
 /* 
     ******** 왼쪽 어사이드 영역 js
@@ -200,14 +200,14 @@ for (let a of atoz_btn_a){
 /* ---------------------- 구분선 -------------------------- */
 // 브랜드 atoz_btn 클릭시 서브탭 활성화 ------------------   
 // 호출용 함수
-/* let box_basic_hide = ()=>{brand_tab_box_ul[0].style.display = 'none';}
+let box_basic_hide = ()=>{brand_tab_box_ul[0].style.display = 'none';}
 let box_hide = ()=>{for(let a of brand_tab_box_ul){a.style.display = 'none';}}
 // 초기값 1번 ul 활성화
 brand_tab_box_ul[0].style.display = 'block';
 let box_ul_status = false;
 // atoz_btn_a 클릭시 초기값 숨기고 -> 해당 탭 보이기 -> 클릭시 이전 탭 숨기기
 brand_tab_box_ul.forEach(function(idx,arr){
-    atoz_btn_a[arr].addEventListener('click',function(){
+    /* atoz_btn_a[arr].addEventListener('click',function(){
         box_hide() //모슨 박스 숨기는 함수
         if(box_ul_status == false){
             idx.style.display = 'block';
@@ -218,11 +218,11 @@ brand_tab_box_ul.forEach(function(idx,arr){
             idx.style.display = 'block';
             box_ul_status = !box_ul_status;
         }
-    })
+    }) */
 })
 atoz_btn_a[0].addEventListener('click',()=>{
     brand_tab_box_ul[0].style.display = 'block';
-}) */
+})
 // 상품 많은순 클릭 시 atoz_btn_a 리스트 숨기기 -> 가나다순 클릭 시 리스트 보이기
 brand_a[1].addEventListener('click',()=>{
     ul_2_atoz.style.display = 'none';
@@ -246,10 +246,10 @@ brand_subtab_a.forEach((o,i)=>{
 })
 /* ---------------------- 구분선 -------------------------- */
 // 카테고리 ^ [chevron-up] 아이콘 클릭 시 탭 활성화 -> 비활성화 / 아이콘 상하 반전
- let aside_arrow1_status = false;
+/* let aside_arrow1_status = false;
 aside_arrow1.addEventListener('click',()=>{
     if (aside_arrow1_status == false) {
-        ul_1.style.display = 'none'
+        // ul_1.style.display = 'none'
         aside_arrow1.style.transform = 'rotate(180deg)'
         aside_arrow1.style.transition = '0.4s ease'
         aside_arrow1_status = !aside_arrow1_status;
@@ -259,7 +259,7 @@ aside_arrow1.addEventListener('click',()=>{
         aside_arrow1.style.transition = '0.4s ease'
         aside_arrow1_status = !aside_arrow1_status;
     }
-})
+}) */
 let aside_arrow2_status = false;
 aside_arrow2.addEventListener('click',()=>{
     if (aside_arrow2_status == false) {
@@ -557,14 +557,14 @@ for(let i of product){
         })
     })
 }
-product_cart_btn.addEventListener('click',()=>{
+/* product_cart_btn.addEventListener('click',()=>{
     popup.style.display = 'flex';
     cart_pop.style.display = 'block';
     btn_cancel.addEventListener('click',()=>{
         popup.style.display = 'none';
         cart_pop.style.display = 'none';
     })
-})
+}) */
 /* ---------------------- 구분선 -------------------------- */
 // right 컨테이너 하단 버튼 클릭시 컬러 활성화 -> classList 추가하기
 // 초기값 -> 1 활성화

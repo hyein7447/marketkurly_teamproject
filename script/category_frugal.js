@@ -558,14 +558,14 @@ for(let i of product){
         })
     })
 }
-product_cart_btn.addEventListener('click',()=>{
+/* product_cart_btn.addEventListener('click',()=>{
     popup.style.display = 'flex';
     cart_pop.style.display = 'block';
     btn_cancel.addEventListener('click',()=>{
         popup.style.display = 'none';
         cart_pop.style.display = 'none';
     })
-})
+}) */
 /* ---------------------- 구분선 -------------------------- */
 // right 컨테이너 하단 버튼 클릭시 컬러 활성화 -> classList 추가하기
 // 초기값 -> 1 활성화

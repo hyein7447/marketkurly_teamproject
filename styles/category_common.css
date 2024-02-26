@@ -333,31 +333,43 @@ main .best .container .right .lnb .array .quest_box p {
 main .best .container .right .name_result {}
 /* ◇ --- js 부분 (브랜드 이름 위치) //끝// --- ◇ */
 /* 상품리스트 */
-main .best .container .right .product_box {
+main .best .container .right #product_box {
     display: flex; 
     flex-flow: row wrap;
+    align-items: flex-start;
     justify-content: space-between;
 }
-main .best .container .right .product_box .product {
-    width:calc((100% / 3) - 8px);
+main .best .container .right #product_box .product {
     margin-bottom: 40px;
+    display: inline-block;
+    width:calc((100% / 3) - 10px);
+}
+main .best .container .right #product_box .product .thumb {
+    /* background-image: url(../images/main/product/main_p_02.jpg); */
+    /* padding-top: calc(33% / 1 * 4); */
+    /* background-size: 102%; */
+    /* background-position: center; */
+    /* width: calc(33% / 1 * 4); */
+    display: inline-block;
+    width:100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+main .best .container .right #product_box .product .thumb .thumb_img:hover {
+    /* transition: 0.4s ease; 
+    width:102%; */
+}
+main .best .container .right #product_box .product .thumb .thumb_img {
+    /* cursor: pointer; */
     position: relative;
-}
-main .best .container .right .product_box .product .thumb:hover {
-    background-size: 103%;
-    transition: 0.4s ease; 
-}
-main .best .container .right .product_box .product .thumb {
-    background-image: url(../images/main/product/main_p_02.jpg);
-    padding-top: calc(33% / 1 * 4);
-    background-size: 102%;
-    background-position: center;
-    display: block;
-    width: 100%;
     border-radius: 4px;
-    cursor: pointer;
+    width:100%;
 }
-main .best .container .right .product_box .product .thumb .icon_cuppon {
+main .best .container .right #product_box .product .thumb .thumb_img img {width:100%;}
+main .best .container .right #product_box .product .thumb .icon_cuppon:empty {
+    display: none;
+}
+main .best .container .right #product_box .product .thumb .icon_cuppon {
     background-color: #bd76ff;
     border-radius: 4px;
     opacity: 0.9;
@@ -365,10 +377,8 @@ main .best .container .right .product_box .product .thumb .icon_cuppon {
     padding: 4px 8px;
     color:#fff;
 }
-main .best .container .right .product_box .product .btn_cart {
-    
-}
-main .best .container .right .product_box .product .btn_cart .btn_c {
+main .best .container .right #product_box .product .btn_cart {}
+main .best .container .right #product_box .product .btn_cart .btn_c {
     width: 100%; height: 36px;
     display: flex; align-items: center;
     justify-content: center;
@@ -376,51 +386,60 @@ main .best .container .right .product_box .product .btn_cart .btn_c {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
-main .best .container .right .product_box .product .btn_cart .btn_c img {
+main .best .container .right #product_box .product .btn_cart .btn_c img {
     width: 22px; margin-right: 4px;
 }
-main .best .container .right .product_box .product .btn_cart .btn_c span {}
+main .best .container .right #product_box .product .btn_cart .btn_c span {}
 /* ◇ --- js 부분 (상품 리스트 DB로 처리) --- ◇ */
-main .best .container .right .product_box .product .info {
+main .best .container .right #product_box .product .info {
     padding: 8px 10px 0 0;
     cursor: pointer;
 }
-main .best .container .right .product_box .product .info a .p_brand {
+main .best .container .right #product_box .product .info a .p_brand:empty {display: none;}
+main .best .container .right #product_box .product .info a .p_brand {
     color:#999;
 }
-main .best .container .right .product_box .product .info a .p_title {
+main .best .container .right #product_box .product .info a .p_title:empty {display: none;}
+main .best .container .right #product_box .product .info a .p_title {
     line-height: 1.5rem; color: #111;
     padding-top: 4px;
 }
-main .best .container .right .product_box .product .info a .p_explain {
+main .best .container .right #product_box .product .info a .p_explain:empty {display: none;}
+main .best .container .right #product_box .product .info a .p_explain {
     font-size: 0.875rem; padding-top: 4px;
     color:#999;
 }
-main .best .container .right .product_box .product .info a .p_price_del {
+main .best .container .right #product_box .product .info a .p_price_del:empty {display: none;}
+main .best .container .right #product_box .product .info a .p_price_del {
     padding-top: 8px;
 }
-main .best .container .right .product_box .product .info a .p_price_del del {
+main .best .container .right #product_box .product .info a .p_price_del del:empty {display: none;}
+main .best .container .right #product_box .product .info a .p_price_del del {
     color:#b5b5b5;
 }
-main .best .container .right .product_box .product .info a .p_price {
+main .best .container .right #product_box .product .info a .p_price:empty {display: none;}
+main .best .container .right #product_box .product .info a .p_price {
     letter-spacing: -0.05rem;
     font-weight: 800;
     padding-top: 2px;
 }
-main .best .container .right .product_box .product .info a .p_price em {
+main .best .container .right #product_box .product .info a .p_price em:empty {display: none;}
+main .best .container .right #product_box .product .info a .p_price em {
     color:#fa622f;
     font-weight: 700;
     margin-right: 7px;
 }
-main .best .container .right .product_box .product .info .p_review {
+main .best .container .right #product_box .product .info .p_review:empty {display: none;}
+main .best .container .right #product_box .product .info .p_review {
     padding-top: 8px;
     font-size: 0.938rem;
 }
-main .best .container .right .product_box .product .p_review [class$=dots] {
+main .best .container .right #product_box .product .p_review [class$=dots] {
     font-size: 14px; 
     margin-right:3px;
 }
-main .best .container .right .product_box .product .p_icon_only {
+main .best .container .right #product_box .product .p_icon_only:empty {display: none;}
+main .best .container .right #product_box .product .p_icon_only {
     padding: 2px 8px 4px; 
     margin: 12px 2px 0px 0px;
     font-size: 0.875rem;
@@ -433,7 +452,8 @@ main .best .container .right .product_box .product .p_icon_only {
     letter-spacing: -0.01rem;
     cursor: default;
 }
-main .best .container .right .product_box .product .p_icon_ko {
+main .best .container .right #product_box .product .p_icon_ko:empty {display: none;}
+main .best .container .right #product_box .product .p_icon_ko {
     padding: 2px 8px 4px; 
     margin: 12px 2px 0px 0px;
     font-size: 0.875rem;

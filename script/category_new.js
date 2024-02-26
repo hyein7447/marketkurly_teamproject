@@ -68,7 +68,7 @@ const result_list = document.querySelector('.name_result > span') //미리 준�
 const list_close = document.querySelector('.name_result > span > img') //x버튼
 const aside_li = document.querySelectorAll('.best > .container > .left > .list > ul > li:not(.more_btn)') //어사이드 li
 const btn_reset = document.querySelector('.container > .left > .title > p') //초기화 버튼
-console.log(name_result, result_list, aside_li)
+console.log(brand_tab_box_ul,atoz_btn_a)
 console.log('----------------- 데스크탑 버전 -----------------')
 /* ---------------------- 구분선 -------------------------- */
 const title_container = document.querySelectorAll('.num_total') //총 ? 건 div
@@ -200,29 +200,29 @@ for (let a of atoz_btn_a){
 /* ---------------------- 구분선 -------------------------- */
 // 브랜드 atoz_btn 클릭시 서브탭 활성화 ------------------   
 // 호출용 함수
-/* let box_basic_hide = ()=>{brand_tab_box_ul[0].style.display = 'none';}
+let box_basic_hide = ()=>{brand_tab_box_ul[0].style.display = 'none';}
 let box_hide = ()=>{for(let a of brand_tab_box_ul){a.style.display = 'none';}}
 // 초기값 1번 ul 활성화
 brand_tab_box_ul[0].style.display = 'block';
 let box_ul_status = false;
 // atoz_btn_a 클릭시 초기값 숨기고 -> 해당 탭 보이기 -> 클릭시 이전 탭 숨기기
 brand_tab_box_ul.forEach(function(idx,arr){
-    atoz_btn_a[arr].addEventListener('click',function(){
-        box_hide() //모슨 박스 숨기는 함수
-        if(box_ul_status == false){
-            idx.style.display = 'block';
-            box_basic_hide() //초기박스 숨기는 함수 
-            box_ul_status = !box_ul_status;
-        }else{
-            box_hide() //모슨 박스 숨기는 함수
-            idx.style.display = 'block';
-            box_ul_status = !box_ul_status;
-        }
-    })
+    // atoz_btn_a[arr].addEventListener('click',function(){
+    //     box_hide() //모슨 박스 숨기는 함수
+    //     if(box_ul_status == false){
+    //         idx.style.display = 'block';
+    //         box_basic_hide() //초기박스 숨기는 함수 
+    //         box_ul_status = !box_ul_status;
+    //     }else{
+    //         box_hide() //모슨 박스 숨기는 함수
+    //         idx.style.display = 'block';
+    //         box_ul_status = !box_ul_status;
+    //     }
+    // })
 })
 atoz_btn_a[0].addEventListener('click',()=>{
     brand_tab_box_ul[0].style.display = 'block';
-}) */
+})
 // 상품 많은순 클릭 시 atoz_btn_a 리스트 숨기기 -> 가나다순 클릭 시 리스트 보이기
 brand_a[1].addEventListener('click',()=>{
     ul_2_atoz.style.display = 'none';
@@ -557,14 +557,14 @@ for(let i of product){
         })
     })
 }
-product_cart_btn.addEventListener('click',()=>{
-    popup.style.display = 'flex';
-    cart_pop.style.display = 'block';
-    btn_cancel.addEventListener('click',()=>{
-        popup.style.display = 'none';
-        cart_pop.style.display = 'none';
-    })
-})
+// product_cart_btn.addEventListener('click',()=>{
+//     popup.style.display = 'flex';
+//     cart_pop.style.display = 'block';
+//     btn_cancel.addEventListener('click',()=>{
+//         popup.style.display = 'none';
+//         cart_pop.style.display = 'none';
+//     })
+// })
 /* ---------------------- 구분선 -------------------------- */
 // right 컨테이너 하단 버튼 클릭시 컬러 활성화 -> classList 추가하기
 // 초기값 -> 1 활성화
@@ -706,7 +706,7 @@ window.addEventListener('scroll',()=>{
     }
 }); */
 /* ---------------------- 구분선 -------------------------- */
-// 모바일 베스트 카테고리 상단에 이미지와 같이있는 타이틀리스트                 ★★★★★★★★★★★★ 나중에 확인할 위치
+// 모바일 베스트 카테고리 상단에 이미지와 같이있는 타이틀리스트                
 // 클릭 -> 보라색으로 활성화
 /* let title_reset = ()=>{for(let a of cate_title){a.classList.remove('cate_active')}}
 let top_zero = ()=>{

@@ -51,7 +51,7 @@ const brand_more_x_btn = brand_pop.querySelector('.wrap_top > .wrap > a ')
 const btn_cancel = cart_pop.querySelector('.btn_cancel')
 const btn_cart_r = cart_pop.querySelector('.btn_cart_r')
 // rigth 영역 변수
-const product_cart_btn = document.querySelector('.btn_c') //담기버튼
+// const product_cart_btn = document.querySelectorAll('.btn_c') //담기버튼
 const product = document.querySelectorAll('.product')
 const pc_array_a = document.querySelectorAll('.right > .lnb > .array > a')
 const pc_array_q = document.querySelector('.right > .lnb > .array > a > [class$=question]')
@@ -67,7 +67,7 @@ const result_list = document.querySelector('.name_result > span') //미리 준�
 const list_close = document.querySelector('.name_result > span > img') //x버튼
 const aside_li = document.querySelectorAll('.best > .container > .left > .list > ul > li:not(.more_btn)') //어사이드 li
 const btn_reset = document.querySelector('.container > .left > .title > p') //초기화 버튼
-console.log(name_result, result_list, aside_li)
+
 console.log('----------------- 데스크탑 버전 -----------------')
 /* ---------------------- 구분선 -------------------------- */
 const title_container = document.querySelectorAll('.num_total') //총 ? 건 div
@@ -536,8 +536,9 @@ cart_pop.style.display = 'none';
 brand_pop.style.display = 'none';
 cart_result_pop.style.display = 'none';
 // 담기 버튼 클릭 시 팝업 활성화
-for(let i of product){
-    i.children[1].children[0].addEventListener('click',()=>{
+/* const product_cart_btn = document.querySelectorAll('.btn_c')
+for(let i of productList){
+    i.addEventListener('click',()=>{
         popup.style.display = 'flex';
         cart_pop.style.display = 'block';
         btn_cancel.addEventListener('click',()=>{
@@ -545,17 +546,18 @@ for(let i of product){
             cart_pop.style.display = 'none';
         })
         btn_cart_r.addEventListener('click',()=>{ //팝업에 장바구니 담기 버튼
-            const result = confirm('장바구니에 담겼습니다. 이동하시겠습니까?');
-            if (result) {
-                window.location.href = './cart.html';
-            } else {
-                // 팝업 닫기
-                popup.style.display = 'none';
-                cart_pop.style.display = 'none';
-            }
+            // const result = confirm('장바구니에 담겼습니다. 이동하시겠습니까?');
+            // if (result) {
+            //     window.location.href = './cart.html';
+            // } else {
+            //     // 팝업 닫기
+            //     popup.style.display = 'none';
+            //     cart_pop.style.display = 'none';
+            // }
         })
     })
-}
+} */
+// console.log(productList)
 /* product_cart_btn.addEventListener('click',()=>{ //담기.. 주석★
     popup.style.display = 'flex';
     cart_pop.style.display = 'block';
@@ -564,6 +566,7 @@ for(let i of product){
         cart_pop.style.display = 'none';
     })
 }) */
+
 /* ---------------------- 구분선 -------------------------- */
 // right 컨테이너 하단 버튼 클릭시 컬러 활성화 -> classList 추가하기
 // 초기값 -> 1 활성화
@@ -638,7 +641,8 @@ const slide_brand_atoz = document.querySelectorAll('.tab_slide > .area > .list >
 const slide_brand_list = document.querySelectorAll('.tab_slide > .area > .list > .list_box > .box1 > ul')
 const slide_brand_list_all = document.querySelector('.tab_slide > .area > .list > .list_box > .box2 > ul')
 const slide_btn_view = document.querySelector('.tab_slide > .area > .btn_wrap > .btn_view') 
-const product_m = document.querySelectorAll('.best_mobile > .product_box > .product')
+const product_m = document.querySelectorAll('.best_mobile > #product_box > .product')
+const product_box = document.querySelector('#product_box > .product')
 const slide_cart = document.querySelector('.tab_cart')
 const slide_cart_bg = document.querySelector('.tab_cart > .bg_bk')
 const slide_btn_cart_r = document.querySelector('.tab_cart > .bg_wh > .btn_cart > .btn_cart_r')
@@ -646,7 +650,7 @@ const slide_num = document.querySelector('.bg_wh .info .cart_box .price_num .num
 const slide_minus = document.querySelector('.bg_wh .info .cart_box .price_num .num .minus')
 const slide_plus = document.querySelector('.bg_wh .info .cart_box .price_num .num .plus')
 const slide_total_btn = slide_btn_cart_r.querySelector('span')
-console.log(slide_total_btn,slide_minus)
+console.log()
 /* ---------------------- 구분선 -------------------------- */ 
 // 모바일 슬라이드 탭 카트 담기 팝업 안에 + - 수량 증가 감소, 가격변경
 let m_num = 0;
@@ -988,4 +992,4 @@ document.querySelectorAll('a').forEach(link => {
 });
 /* ---------------------- 구분선 -------------------------- */ 
 
-            
+// 모바일에서 초기화 버튼 활성화
