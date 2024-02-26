@@ -7,6 +7,8 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
@@ -32,6 +34,12 @@
                     </div>
                     <button type="button" class="btn_login">로그인</button>
                     <button type="button" class="btn_join" onclick="location.href='./join.html'">회원가입</button>
+                    <div class="m_login">
+                        <div class="kakao_login">
+                            <p>카카오로<em> 간편하게 시작</em>하세요</p>
+                            <button type="button" id="btn_kakao_login"><i class="fa-solid fa-comment"></i>카카오로 시작하기</button>
+                        </div>
+                    </div>
                 </fieldset>
             </form>
         </div>
@@ -42,6 +50,9 @@
                     <button type="button" id="btn_ok">확인</button>
                 </div>
             </div>
+        </div>
+        <div class="button_cancle">
+            <button type="button" class="btn_login_cancle"><img src="./images/cart/icon_x.svg" alt="취소버튼"></button>
         </div>
     </main>
     <script src="./script/login.js"></script>
