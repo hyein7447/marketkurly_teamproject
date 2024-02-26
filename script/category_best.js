@@ -556,14 +556,14 @@ for(let i of product){
         })
     })
 }
-product_cart_btn.addEventListener('click',()=>{
+/* product_cart_btn.addEventListener('click',()=>{ //담기.. 주석★
     popup.style.display = 'flex';
     cart_pop.style.display = 'block';
     btn_cancel.addEventListener('click',()=>{
         popup.style.display = 'none';
         cart_pop.style.display = 'none';
     })
-})
+}) */
 /* ---------------------- 구분선 -------------------------- */
 // right 컨테이너 하단 버튼 클릭시 컬러 활성화 -> classList 추가하기
 // 초기값 -> 1 활성화
@@ -987,42 +987,5 @@ document.querySelectorAll('a').forEach(link => {
     });
 });
 /* ---------------------- 구분선 -------------------------- */ 
-const productList = document.getElementById('#product_box');
-fetch('data.json')
-    .then(response => response.json())// fetch 함수로 가져온 데이터를 JSON 형식으로 변환
-    .then(data => {
-        // 각 상품 정보를 product 리스트 아이템에 삽입
-        data.forEach(item=>{
-            const listItem = document.createElement('div');
-            listItem.classList.add('product')
-            listItem.innerHTML = `
-                <a href="./product.html" class="thumb">
-                    <div class="thumb_img">
-                        <img src="${item.images}" alt="">
-                        <p class="icon_cuppon">${item.cuppon}</p>
-                    </div>
-                </a>
-                <div class="btn_cart">
-                    <button type="button" class="btn_c">
-                        <img src="./images/main/icon/icon_cart_off.svg" alt="">
-                        <span>담기</span>
-                    </button>
-                </div>
-                <div class="info"><!-- js로 처리 / DB 영역-->
-                    <a href="./product.html">
-                        <h3 class="p_brand">${item.info}</h3>
-                        <h2 class="p_title">${item.name}</h2>
-                        <p class="p_explain">${item.description}</p>
-                        <p class="p_price_del"><del>${item.regularPrice}원</del></p>
-                        <p class="p_price"><em>${item.discount}</em>${item.price}원</p>
-                    </a>
-                    <p class="p_review"><i class="fa-regular fa-comment-dots"></i>${item.review}</p>
-                    <p class="p_icon_only">${item.project1}</p>
-                    <p class="p_icon_ko">${item.project2}</p>
-                </div>
-            `;
-            productList.appendChild(listItem);
-        })
-    })
-    .catch(error => console.error('Error fetching data:', error));
+
             
