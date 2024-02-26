@@ -7,20 +7,30 @@
     <link rel="shortcut icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/product.css">
-    <link rel="stylesheet" href="./styles/product_m.css">
     <!--swipe 플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/header_m.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <!--swipe 플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/product.css">
+    <link rel="stylesheet" href="./styles/product_m.css">
+    <!--swipe 플러그인 필수 css cdn 연결-->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <!--swipe 플러그인 필수 JS cdn 연결-->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 </head>
 <body>
+    <?php include("header.php"); ?>
     <main>
-        <?php include("header.php"); ?>
         <!-- 하단 고정 옵션 선택창 -->
         <div class="bottom_option">
             <div class="bottom_wrap">
@@ -43,7 +53,7 @@
                         <p class="item_name"></p>
                         <div class="num_result">
                             <button type="button" class="minus"><!-- <img src="./images/main/icon/icon_btn_minus.svg" alt=""> --></button>
-                            <input type="text" class="num" readonly value="1">
+                            <input type="text" class="num" readonly value="1" id="num">
                             <button type="button" class="plus"><!-- <img src="./images/main/icon/icon_btn_plus.svg" alt=""> --></button>
                         </div>
                         <p class="each_price"></p>
@@ -767,35 +777,35 @@
                                         <ul>
                                             <li>
                                                 <input type="checkbox" name="opt_chk" id="opt_chk1">
-                                                <label for="opt_chk1">플레인 베이글<span><!-- 리뷰 수 --></span></label>
+                                                <label for="opt_chk1" class="opt_chk1">플레인 베이글<span><!-- 리뷰 수 --></span></label>
                                             </li>
                                             <li>
                                                 <input type="checkbox" name="opt_chk" id="opt_chk2">
-                                                <label for="opt_chk2">통밀 베이글<span><!-- 리뷰 수 --></span></label>
+                                                <label for="opt_chk2" class="opt_chk2">통밀 베이글<span><!-- 리뷰 수 --></span></label>
                                             </li>
                                             <li>
                                                 <input type="checkbox" name="opt_chk" id="opt_chk3">
-                                                <label for="opt_chk3">블루베리 베이글<span><!-- 리뷰 수 --></span></label>
+                                                <label for="opt_chk3" class="opt_chk3">블루베리 베이글<span><!-- 리뷰 수 --></span></label>
                                             </li>
                                             <li>
                                                 <input type="checkbox" name="opt_chk" id="opt_chk4">
-                                                <label for="opt_chk4">시나몬 앤 레이즌 베이글<span><!-- 리뷰 수 --></span></label>
+                                                <label for="opt_chk4" class="opt_chk4">시나몬 앤 레이즌 베이글<span><!-- 리뷰 수 --></span></label>
                                             </li>
                                             <li>
                                                 <input type="checkbox" name="opt_chk" id="opt_chk5">
-                                                <label for="opt_chk5">에브리띵 베이글<span>3<!-- 리뷰 수 --></span></label>
+                                                <label for="opt_chk5" class="opt_chk5">에브리띵 베이글<span>3<!-- 리뷰 수 --></span></label>
                                             </li>
                                             <li>
                                                 <input type="checkbox" name="opt_chk" id="opt_chk6">
-                                                <label for="opt_chk6">멀티 그레인 베이글<span><!-- 리뷰 수 --></span></label>
+                                                <label for="opt_chk6" class="opt_chk6">멀티 그레인 베이글<span><!-- 리뷰 수 --></span></label>
                                             </li>
                                             <li>
                                                 <input type="checkbox" name="opt_chk" id="opt_chk7">
-                                                <label for="opt_chk7">세서미 베이글<span><!-- 리뷰 수 --></span></label>
+                                                <label for="opt_chk7" class="opt_chk7">세서미 베이글<span><!-- 리뷰 수 --></span></label>
                                             </li>
                                             <li>
                                                 <input type="checkbox" name="opt_chk" id="opt_chk8">
-                                                <label for="opt_chk8">다크통밀 베이글<span><!-- 리뷰 수 --></span></label>
+                                                <label for="opt_chk8" class="opt_chk8">다크통밀 베이글<span><!-- 리뷰 수 --></span></label>
                                             </li>
                                         </ul>
                                         <div class="review_view_btn">
@@ -812,31 +822,31 @@
                                         <ul>
                                             <li>
                                                 <input type="checkbox" name="rating_chk" id="rating_chk1">
-                                                <label for="rating_chk1">더퍼플<span><!-- 리뷰 수 --></span></label>
+                                                <label for="rating_chk1" class="rating_chk1">더퍼플<span><!-- 리뷰 수 --></span></label>
                                             </li>
                                             <li>
                                                 <input type="checkbox" name="rating_chk" id="rating_chk2">
-                                                <label for="rating_chk2">퍼플<span><!-- 리뷰 수 --></span></label>
+                                                <label for="rating_chk2" class="rating_chk2">퍼플<span><!-- 리뷰 수 --></span></label>
                                             </li>
                                             <li>
                                                 <input type="checkbox" name="rating_chk" id="rating_chk3">
-                                                <label for="rating_chk3">라벤더<span><!-- 리뷰 수 --></span></label>
+                                                <label for="rating_chk3" class="rating_chk3">라벤더<span><!-- 리뷰 수 --></span></label>
                                             </li>
                                             <li>
                                                 <input type="checkbox" name="rating_chk" id="rating_chk4">
-                                                <label for="rating_chk4">화이트<span><!-- 리뷰 수 --></span></label>
+                                                <label for="rating_chk4" class="rating_chk4">화이트<span><!-- 리뷰 수 --></span></label>
                                             </li>
                                             <li>
                                                 <input type="checkbox" name="rating_chk" id="rating_chk5">
-                                                <label for="rating_chk5">프렌즈<span><!-- 리뷰 수 --></span></label>
+                                                <label for="rating_chk5" class="rating_chk5">프렌즈<span><!-- 리뷰 수 --></span></label>
                                             </li>
                                             <li>
                                                 <input type="checkbox" name="rating_chk" id="rating_chk6">
-                                                <label for="rating_chk6">일반<span><!-- 리뷰 수 --></span></label>
+                                                <label for="rating_chk6" class="rating_chk6">일반<span><!-- 리뷰 수 --></span></label>
                                             </li>
                                             <li>
                                                 <input type="checkbox" name="rating_chk" id="rating_chk7">
-                                                <label for="rating_chk7">멤버스<span>3<!-- 리뷰 수 --></span></label>
+                                                <label for="rating_chk7" class="rating_chk7">멤버스<span>3<!-- 리뷰 수 --></span></label>
                                             </li>
                                         </ul>
                                         <div class="review_view_btn">
@@ -1273,7 +1283,7 @@
         </div>
     </main>
     <?php include("footer.php"); ?>
-    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <!-- <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
             const detail_contents = new Swiper('#detail_swiper',{
@@ -1281,7 +1291,7 @@
             spaceBetween: 30,
             loop: false,
         })
-    </script>
+    </script> -->
 
     <script src="./script/product.js"></script>
 </body>

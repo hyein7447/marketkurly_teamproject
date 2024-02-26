@@ -3,8 +3,8 @@
 @media screen and (max-width:1280px){
     main {
         .ranking {
-            padding: 40px 20px;
             .container {
+                padding: 40px 20px;
                 #ranking_slide {
                     #ranking_slide_wrap 
                     {
@@ -12,6 +12,8 @@
                             width: 295px;
                         }
                     }
+                    #ranking_prev_btn {left: -13px;}
+                    #ranking_next_btn {right: -10px;}
                 }
             }
         }
@@ -30,6 +32,8 @@
                             width: 295px;
                         }
                     }
+                    #md_prev_btn {left: -13px;}
+                    #md_next_btn {right: -11px;}
                 }
             }
         }
@@ -42,6 +46,8 @@
                             width: 610px;
                         }
                     }
+                    #original_prev_btn {left: -13px;}
+                    #original_next_btn {right: -11px;}
                 }
             }
         }
@@ -54,6 +60,8 @@
                             width: 295px;
                         }
                     }
+                    #present_prev_btn {left: -13px;}
+                    #present_next_btn {right: -11px;}
                 }
             }
         }
@@ -66,6 +74,8 @@
                             width: 400px;
                         }
                     }
+                    #recipe_prev_btn {left: -13px;}
+                    #recipe_next_btn {right: -11px;}
                 }
             }
         }
@@ -85,6 +95,8 @@
                         }
                     }
                 }
+                #instagram_prev_btn {left: -13px;}
+                #instagram_next_btn {right: 0;}
             }
         }
     }
@@ -107,6 +119,38 @@
         #main_prev_btn,
         #main_next_btn {display: none !important;}
 
+        .info {
+            h3 {
+                font-size: $px14;
+                line-height: 1.5rem;
+                padding-top: 4px;
+                margin-bottom: 0;
+            }
+            .price {
+                p {
+                    del {font-size: $px12;}
+                }
+                .discount {
+                    .rate {font-size: $px14;}
+                    .discount_price {
+                        font-size: $px14;
+                        margin: 0;
+                    }
+                }
+                .review {
+                    .review_num {
+                        font-size: $px10;
+                    }
+                }
+            }
+            .desc {
+                font-size: $px12;
+            }
+        }
+        .cart_btn {
+            font-size: $px10;
+            img {width: 16px;}
+        }
         .main_bnr {
             #main_bnr_slide {
                 #main_bnr_slide_wrap {
@@ -148,7 +192,43 @@
                 }
             }
         }
-        .ranking {}
+        .ranking {
+/*             .container {
+                #ranking_slide {
+                    #ranking_slide_wrap {
+                        div {
+                            .item {
+                                .cart_add {
+                                    .cart_btn {
+                                        img {}
+                                    }
+                                }
+                                .info {
+                                    h3 {
+                                        font-size: $px14;
+                                        line-height: 1.5rem;
+                                    }
+                                    .price {
+                                        p {
+                                            del {font-size: $px12;}
+                                        }
+                                        .discount {
+                                            .rate {font-size: $px14;}
+                                            .discount_price {
+                                                font-size: $px14;
+                                            }
+                                        }
+                                        .review {
+                                            .review_num {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            } */
+        }
         .sub_bnr1 {
             a {
                 img {}
@@ -206,17 +286,24 @@
             .right {
                 width: 100%;
                 .item {
+                    div {
+                        a {
+                            &:first-child {
+                                // height: 483px ;
+                            }
+                        }
+                        .info {
+                            .desc {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
                     margin-right: 30px;
                     &:last-child {
                         // display: none;
                     }
                     &:nth-child(3) {
                         margin: 0;
-                    }
-                    a {
-                        &:first-child {
-                            // height: 483px ;
-                        }
                     }
                 }
             }
@@ -300,6 +387,34 @@
 
 @media screen and (max-width:430px){
     main {
+        .info {
+            h3 {
+                font-size: $px12;
+                line-height: 1.2rem;
+                padding-top: 4px;
+                margin-bottom: 0;
+            }
+            .price {
+                p {
+                    del {font-size: $px9;}
+                }
+                .discount {
+                    .rate {font-size: $px11;}
+                    .discount_price {
+                        font-size: $px11;
+                        margin: 0;
+                    }
+                }
+                .review {
+                    .review_num {
+                        font-size: $px10;
+                    }
+                }
+            }
+            .desc {
+                font-size: $px10;
+            }
+        }
         .swiper-button-next,
         .swiper-button-prve {
             background-size: 45px 45px !important;
@@ -343,15 +458,14 @@
                         .item {
                             .info {
                                 h3 {
-                                    font-size: $px14;
                                 }
                                 .price {
-                                    p {font-size: $px12;}
+                                    p {}
                                     .discount {
-                                        span {font-size: $px12;}
+                                        span {}
                                     }
                                     .review {
-                                        span {font-size: $px12;}
+                                        span {}
                                     }
                                 }
                             }
@@ -372,6 +486,7 @@
         }
         .ranking {
             padding: 40px 16px;
+            .container {padding: 0;}
             .title {
                 a {
                     font-size: $px24;
@@ -405,15 +520,15 @@
                 .item {
                     margin-right: 15px;
                     .info {
-                        .desc {font-size: $px12;}
-                        h3 {font-size: $px14;}
+                        .desc {}
+                        h3 {}
                         .price {
-                            p {font-size: $px12;}
+                            p {}
                             .discount {
-                                span {font-size: $px12;}
+                                span {}
                             }
                             .review {
-                                span {font-size: $px12;}
+                                span {}
                             }
                         }
                     }
@@ -427,6 +542,9 @@
             }
             .tag {
                 li {
+                    &:nth-child(odd) {
+                        display: none;
+                    }
                     a {
                         font-size: $px12;
                         padding: 5px 15px;
@@ -462,16 +580,22 @@
                                         font-size: $px16;
                                     }
                                     p {
-                                        font-size: $px14;
                                     }
                                 }
+                            }
+                            &:last-child {
+                                padding: 100px 0;
                             }
                         }
                     }
                 }
             }
         }
+        .present {
+            padding: 20px 16px;
+        }
         .recipe {
+            padding: 20px 16px;
             .container {
                 #recipe_slide {
                     #recipe_slide_wrap {
@@ -489,6 +613,7 @@
             }
         }
         .instagram {
+            padding: 20px 16px;
             #instagram_slide {
                 width: 190px !important;
                 margin: 0 auto;
@@ -496,9 +621,56 @@
                     .item {display: none !important;}
                     .item1 {
                         display: block !important;
-                        // padding-left: 80px ;
                     }
                     
+                }
+            }
+        }
+        .cart_pop_bg {
+            .cart_pop {
+                width: 380px;
+                .thumb_name {
+                    .thumb {}
+                    .p_tab_title {
+                        font-size: $px12;
+                    }
+                }
+                .info {
+                    .cart_box {
+                        .p_tab_title {
+                            font-size: $px12;
+                            .price_num {
+                                .p_tab_price {
+                                    del {}
+                                }
+                                .num {
+                                    .minus {
+                                        img {}
+                                    }
+                                }
+                                .p_tab_num {}
+                                .plus {
+                                    img {}
+                                }
+                            }
+                        }
+                    }
+                }
+                .total {
+                    .total_result {
+                        p {}
+                        .p_tab_price {
+                            font-size: $px20;
+                        }
+                    }
+                    .explain {
+                        .icon_save {}
+                        span {}
+                    }
+                }
+                .btn_cart {
+                    .btn_cancel {}
+                    .btn_cart_r {}
                 }
             }
         }

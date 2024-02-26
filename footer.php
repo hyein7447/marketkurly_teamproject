@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마켓컬리 | 뷰티컬리</title>
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
-    <link rel="icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
-    <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-</head>
-<body>
-    <div class="main_btn">
+<div class="main_btn">
         <button type="button" id="btn_up"></button>
         <button type="button" id="btn_chatbot"></button>
     </div>
@@ -297,13 +280,16 @@
                     </div>
                 </div>
                 <div class="user_message choice_list display_none">
-                    <p>js용</p>
+                    <!-- <p>안녕하세요 질문 있습니다.</p> -->
+                </div>
+                <div class="qa_brand band_message display_none"><!--질문 선택 후(브랜드)-->
+                    <p></p>
                 </div>
                 <div class="choice_consultant_list"><!--상담원 연결 입력창-->
                     <div class="message_input">
                         <input type="text" placeholder="메세지를 입력해주세요." id="text_area" autocomplete="off">
                         <a href="#"><i class="fa-regular fa-face-smile"></i></a>
-                        <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+                        <a href="#"><!-- <i class="fa-solid fa-paperclip"></i> --><i class="fa-regular fa-circle-up"></i></a>
                     </div>
                 </div>
             </div>
@@ -432,5 +418,3 @@
         </address>
     </footer>
     <script src="./script/footer.js"></script>
-</body>
-</html>   
