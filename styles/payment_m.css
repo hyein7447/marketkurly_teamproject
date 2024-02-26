@@ -1,4 +1,7 @@
 @media screen and (max-width: 820px) {
+  .btm_right {
+    display: none;
+  }
   main {
     width: 100%;
     padding: 0 16px;
@@ -271,12 +274,34 @@
     width: 100%;
   }
   main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg .kurly_pay_benefit {
-    width: 50%;
+    height: 36vh;
   }
   main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .payment_method_detail {
     width: 100%;
+    gap: 10px;
   }
   main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .payment_method_detail a {
-    width: 100%/3;
+    width: 95%;
+  }
+  main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .payment_method_detail a:nth-child(2) {
+    border: 1px solid #e2e2e2;
+  }
+  main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card {
+    width: 100%;
+  }
+  main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card p #select_card {
+    width: 100%;
+  }
+  main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card p #installment {
+    width: 100%;
+  }
+  main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card .select_card_list {
+    width: 100%;
+  }
+  main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card .select_installment_list {
+    width: 100%;
+  }
+  main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .guide_benefit {
+    width: 100%;
   }
 }/*# sourceMappingURL=payment_m.css.map */

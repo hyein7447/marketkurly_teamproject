@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/product.css">
     <link rel="stylesheet" href="./styles/product_m.css">
+    <!--swipe 플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--swipe 플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <?php include("header.php"); ?>
@@ -60,9 +67,9 @@
         <!-- 모바일 상단 고정 nav -->
         <div class="m_product_page_nav">
             <div class="nav_top">
-                <p><button type="button" id="previous_btn"><img src="./images/main/icon/icon_arrow_left.svg" alt=""></button></p>
+                <a href="./index.html" id="previous_btn"><img src="./images/main/icon/icon_arrow_left.svg" alt=""></a>
                 <h1>[픽어베이글] 베이글 8종 (택1)</h1>
-                <p><button type="button" id="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt=""></button></p>
+                <a href="./cart.html" id="cart_btn"><img src="./images/main/icon/icon_cart_off.svg" alt=""></a>
             </div>
             <ul class="nav_wrap">
                 <li><a href="#">상품설명</a></li>
@@ -310,7 +317,7 @@
                         <li>
                             <p class="option">02. 통밀 베이글</p>
                             <p class="weight">・<span class="option_detail">중량</span> : 1개(113g)</p>
-                            <p class="feature">・<span class="option_detail">특징</span> : 촉촉하고 쫀득한 픽어베이글 베이글의 ・<span class="option_detail">특징</span>에 통밀의 씹는 맛까지 더해진 베이글이에요. 은은하고 고소한 곡물 향을 느낄 수 있습니다. </p>
+                            <p class="feature">・<span class="option_detail">특징</span> : 촉촉하고 쫀득한 픽어베이글 베이글의 특징에 통밀의 씹는 맛까지 더해진 베이글이에요. 은은하고 고소한 곡물 향을 느낄 수 있습니다. </p>
                         </li>
                         <li>
                             <p class="option">03. 플레인 베이글</p>
@@ -384,7 +391,7 @@
             <section class="detail">
                 <p class="pc_detail_img"><img src="images/main/product/p_description_011.jpg" alt=""></p>
                 <p class="m_detail_img"><img src="images/main/product/m_detail/m_p_description_002.jpg" alt="" class="m_img"></p>
-                <div class="detail_contents1">
+                <div class="detail_contents1" id="detail_swiper">
                     <h3>상품고시정보</h3>
                     <ul>
                         <li><a href="#" class="detail_opt_active">[픽어베이글] 플레인 베이글</a></li>
@@ -1088,17 +1095,17 @@
             <section class="m_detail">
                 <p class="touch">아래 이미지를 터치하면 확대해서 볼 수 있습니다.<img src="./images/sub/icon_touch.png" alt=""></p>
                 <p class="m_detail_img"><img src="images/main/product/m_detail/m_p_description_002.jpg" alt=""></p>
-                <div class="detail_contents1">
+                <div class="swiper-container detail_contents1">
                     <h3>상품고시정보</h3>
-                    <ul>
-                        <li>[픽어베이글] 플레인 베이글</li>
-                        <li>[픽어베이글] 통밀 베이글</li>
-                        <li>[픽어베이글] 블루베리 베이글</li>
-                        <li>[픽어베이글] 시나몬 앤 레이즌 베이글</li>
-                        <li>[픽어베이글] 에브리띵 베이글</li>
-                        <li>[픽어베이글] 멀티 그레인 베이글</li>
-                        <li>[픽어베이글] 세서미 베이글</li>
-                        <li>[픽어베이글] 다크통밀 베이글</li>
+                    <ul class="swiper-wrapper ">
+                        <li class="swiper-slide"><a href="#">[픽어베이글] 플레인 베이글</a></li>
+                        <li class="swiper-slide"><a href="#">[픽어베이글] 통밀 베이글</a></li>
+                        <li class="swiper-slide"><a href="#">[픽어베이글] 블루베리 베이글</a></li>
+                        <li class="swiper-slide"><a href="#">[픽어베이글] 시나몬 앤 레이즌 베이글</a></li>
+                        <li class="swiper-slide"><a href="#">[픽어베이글] 에브리띵 베이글</a></li>
+                        <li class="swiper-slide"><a href="#">[픽어베이글] 멀티 그레인 베이글</a></li>
+                        <li class="swiper-slide"><a href="#">[픽어베이글] 세서미 베이글</a></li>
+                        <li class="swiper-slide"><a href="#">[픽어베이글] 다크통밀 베이글</a></li>
                     </ul>
                     <div class="detail_box">
                         <dl>
@@ -1266,6 +1273,19 @@
         </div>
     </main>
     <?php include("footer.php"); ?>
+<<<<<<< HEAD
+=======
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+            const detail_contents = new Swiper('#detail_swiper',{
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: false,
+        })
+    </script>
+
+>>>>>>> 19ebb85692b027b5c4110ede3b1114989cec2ef2
     <script src="./script/product.js"></script>
 </body>
 </html>
