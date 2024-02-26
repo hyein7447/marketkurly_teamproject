@@ -429,26 +429,29 @@ main{
                                     border-top: 0;
                                     border-top-left-radius: 3px;
                                     border-top-right-radius: 3px;
-                                    width: 100%;
+                                    // width: 100%;
                                     padding: 37.5px 0; 
                                     text-align: center;
 
                                     .kurly_pay_bg{
                                         height: 130px;
+                                        height: max-content;
                                         position: relative;
                                         overflow: hidden;
                                         .kurly_pay{
-                                            width: 105%;
+                                            // width: 105%;
                                             position: absolute;
                                             display: flex;
                                             justify-content: center;
-                                            left: 25%;
+                                            left: 50%;
+                                            height: max-content;
     
                                             .kurly_pay_benefit{
                                                 margin-right: 20px;
                                                 text-align: center;
-                                                width: 206px;
-                                                height: 130px;
+                                                // width: 206px;
+                                                // height: 130px;
+                                                height: 20vh;
                                                 background-color: #faf0ff;
                                                 border: 1px solid rgb(234, 214, 245);
                                                 border-radius: 6px;
@@ -498,9 +501,9 @@ main{
                                                 }
                                             }
                                             .add_account{
-                                                width: 206px;
+                                                // width: 206px;
                                                 a{
-                                                    width: 100%;
+                                                    // width: 100%;
                                                     border-radius: 6px;
                                                     display: flex;
                                                     flex-flow: column nowrap;
