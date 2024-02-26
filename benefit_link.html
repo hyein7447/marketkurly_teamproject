@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>특가혜택 | 마켓컬리</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/bnr/logo/logo_favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/bnr/logo/logo_favicon.png" type="image/x-icon">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/benefit_link.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/header_m.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body>
+    <?php include("header.php"); ?>
+    <main>
+        <div href="./benefit_link.html" class="bnr">
+            <a href="#" class="benefit">
+                <img src="./images/benefit/page/kurlylog_01.png" alt="">
+            </a>
+            <a href="#" class="benefit">
+                <img src="./images/benefit/page/kurlylog_02.png" alt="">
+            </a>
+            <a href="#" class="benefit">
+                <img src="./images/benefit/page/kurlylog_03.png" alt="">
+            </a>
+            <a href="#" class="benefit">
+                <img src="./images/benefit/page/kurlylog_04.png" alt="">
+            </a>
+            <a href="#" class="benefit">
+                <img src="./images/benefit/page/kurlylog_05.png" alt="">
+            </a>
+            <a href="#" class="benefit">
+                <img src="./images/benefit/page/kurlylog_06.png" alt="">
+            </a>
+            <a href="#" class="benefit">
+                <img src="./images/benefit/page/kurlylog_07.png" alt="">
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0G74al-Cdg0MOUX7PBla0zdUVlIax_LT1ett_bHDak0kBpg/viewform" class="benefit">
+                <img src="./images/benefit/page/kurlylog_08.png" alt="">
+            </a>
+            <a href="#" class="benefit">
+                <img src="./images/benefit/page/kurlylog_09.png" alt="">
+            </a>
+        </div>
+    </main>
+    <?php include("footer.php"); ?>
+    <script>
+        // 링크 설정되지 않은 a 태그 클릭시 상단으로 올라가는 것 막기
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', (event) => {
+                // 링크의 href 속성을 가져옴
+                const href = link.getAttribute('href');
+                
+                // href가 #인 경우에만 preventDefault() 호출
+                if (href === '#') {
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
