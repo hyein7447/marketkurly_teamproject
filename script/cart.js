@@ -287,3 +287,11 @@ reset_btn.addEventListener('click',()=>{
 submit_btn.addEventListener('click',()=>{
     product.remove()
 })
+
+// 주문하기 버튼 활성화 시 a태그 링크 삽입
+
+order_btn.addEventListener('click',()=>{
+    if(order_btn.classList.contains('bg_active')){
+        order_btn.href = './payment.html'
+    }
+})

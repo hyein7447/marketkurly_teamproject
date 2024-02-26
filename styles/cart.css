@@ -293,8 +293,9 @@ main .container .content .order .order_btn_bg #order_btn {
   display: block;
   width: 100%;
   border-radius: 3px;
-  height: 56px;
+  padding: 20px 0;
   background-color: #ddd;
+  text-align: center;
 }
 main .container .content .order .order_btn_bg #order_btn .btn_txt {
   font-weight: 500;
