@@ -295,6 +295,15 @@
             </div>
         </div>
     </div>
+    <div class="popup_f">
+        <div class="box">
+            <p>365고객센터 - 오전 7시 ~ 오후 7시</p>
+            <p>* 1:1문의 게시판은 24시간 접수가능, 고객센터 운영시간에 순차적으로 답변해드리겠습니다.</p>
+            <div class="btn">
+                <button type="button" id="btn_ok_foot">확인</button>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="f_container">
             <div class="left">
@@ -306,7 +315,7 @@
                     </p>
                 </div>
                 <div class="con2">
-                    <div class="kakao">
+                    <a href="#" class="kakao">
                         <button type="button" class="btn_kakao">카카오톡 문의</button>
                         <div class="info">
                             <p>
@@ -318,15 +327,15 @@
                                 <span>오전 7시 - 오후 1시</span>
                             </p>
                         </div>
-                    </div>
-                    <div class="question">
+                    </a>
+                    <a href="./login.html" class="question">
                         <button type="button" class="btn_kakao">1:1 문의</button>
                         <p>
                             <span>365일</span>
                             <span>고객센터 운영시간에 순차적으로 답변드리겠습니다.</span>
                         </p>
-                    </div>
-                    <div class="bulk_order">
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScWcjRuN6eWJK-G8x3NwBfE8IyKZIOq7jhD3fUXuKSWwPqzJw/viewform" class="bulk_order">
                         <button type="button" class="btn_kakao">대량주문 문의</button>
                         <div class="info">
                             <p>
@@ -338,7 +347,7 @@
                                 <span>낮 12시 - 오후 1시</span>
                             </p>
                         </div>
-                    </div>
+                    </a>
                     <div class="mail_send">
                         <p>비회원 문의:</p><a href="mailto:help@kurlycorp.com">help@kurlycorp.com</a>
                     </div>
@@ -346,13 +355,13 @@
             </div>
             <div class="right">
                 <div class="kurly_f_info">
-                    <a href="#">컬리소개</a>
-                    <a href="#">컬리소개영상</a>
-                    <a href="#">투자정보</a>
-                    <a href="#">인재채용</a>
-                    <a href="#">이용약관</a>
-                    <a href="#">개인정보처리방침</a>
-                    <a href="#">이용안내</a>
+                    <a href="./kulry_card_benefit_bnr.html">컬리소개</a>
+                    <a href="https://www.youtube.com/embed/WEep7BcboMQ?rel=0&showinfo=0&wmode=opaque&enablejsapi=1">컬리소개영상</a>
+                    <a href="https://ir.kurly.com/">투자정보</a>
+                    <a href="https://ir.kurly.com/">인재채용</a>
+                    <a href="./notice.html">이용약관</a>
+                    <a href="./notice.html">개인정보처리방침</a>
+                    <a href="./notice.html">이용안내</a>
                 </div>
                 <div class="f_address">
                     <p>
@@ -369,11 +378,11 @@
                     <p>팩스: 070 - 7500 - 6098</p>
                 </div>
                 <div class="f_icon">
-                    <a href="#"><img src="./images/main/icon/footer/icon_instagram.png" alt=""></a>
-                    <a href="#"><img src="./images/main/icon/footer/icon_fb.png" alt=""></a>
-                    <a href="#"><img src="./images/main/icon/footer/icon_blog.png" alt=""></a>
-                    <a href="#"><img src="./images/main/icon/footer/icon_naverpost.png" alt=""></a>
-                    <a href="#"><img src="./images/main/icon/footer/icon_youtube.png" alt=""></a>
+                    <a href="https://www.instagram.com/marketkurly"><img src="./images/main/icon/footer/icon_instagram.png" alt=""></a>
+                    <a href="https://www.facebook.com/Marketkurly/"><img src="./images/main/icon/footer/icon_fb.png" alt=""></a>
+                    <a href="https://blog.naver.com/marketkurly"><img src="./images/main/icon/footer/icon_blog.png" alt=""></a>
+                    <a href="https://m.post.naver.com/marketkurly"><img src="./images/main/icon/footer/icon_naverpost.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg"><img src="./images/main/icon/footer/icon_youtube.png" alt=""></a>
                 </div>
             </div>
         </div>

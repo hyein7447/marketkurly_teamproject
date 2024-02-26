@@ -404,7 +404,7 @@
 
 .sub2 {
   padding: 0px 25px 40px;
-  z-index: 700;
+  z-index: 999;
 }
 .sub2 .title {
   padding: 20px 0 10px;
@@ -668,6 +668,52 @@
 .sub2 .chat_qa .qa_list .choice_consultant_list .message_input a {
   color: #999;
   margin-left: 10px;
+}
+
+.popup_f {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+}
+.popup_f .box {
+  max-width: 350px;
+  min-width: 330px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 50px 30px 10px;
+}
+.popup_f .box p:nth-child(1) {
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  letter-spacing: -0.05rem;
+  margin-bottom: 20px;
+}
+.popup_f .box p:nth-child(2) {
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  letter-spacing: -0.05rem;
+  margin-bottom: 30px;
+  line-height: 1.4rem;
+}
+.popup_f .box #btn_ok_foot {
+  width: 100%;
+  height: 56px;
+  border-top: 1px solid #f7f7f7;
+  color: #5F0080;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-weight: 500;
 }
 
 footer {

@@ -6,7 +6,7 @@ const chatbot_sub = document.querySelectorAll('.chatbot_sub')
 const btn_inquire = document.querySelector('.btn_inquire') //홈 -> 문의하기 버튼
 const btn_new_q = document.querySelector('.btn_new_q') //대화 -> 새 문의하기 버튼
 const btn_back = document.querySelector('i[class*=angle-left]') //채팅창 -> 뒤로가기 버튼
-const list_box = document.querySelector('.list1') // 홈 -> 채팅박스
+const list_box_f = document.querySelector('.list1') // 홈 -> 채팅박스
 const setting_toggle = document.querySelectorAll('ul > li > div[class*=toggle]')
 // 개별영역
 const chat_home = document.querySelector('.home')
@@ -19,7 +19,7 @@ const nav_setting = document.querySelector('i[class*=gear]')
 const chat_list = document.querySelectorAll('.sub1 > .chat_list') //nav 채팅창 공통 클래스
 const chat_nav = document.querySelectorAll('.navigation a')
 // 챗봇의 내부 채팅창부분
-const basic = document.querySelectorAll('.basic button') //1번 basic 전체 버튼
+const basic = document.querySelectorAll('.basic > button') //1번 basic 전체 버튼
 const qa_brand = document.querySelectorAll('.qa_brand:not(:first-of-type)') //컬리가 하는 멘트
 const user_choice = document.querySelectorAll('.usr_choice') // 질문 1 ~ 질문4 타이틀선택
 const user_choice_all = document.querySelectorAll('[class*=choice_]')
@@ -28,11 +28,15 @@ const text_area = document.querySelector('#text_area')
 const message_input = document.querySelector('div.message_input')
 const band_consultant = document.querySelector('.band_consultant')
 const be_list = document.querySelectorAll('.be_list a')
+// 팝업
+const btn_ok_foot = document.querySelector('#btn_ok_foot')
+const popup_box_foot = document.querySelector('.popup_f')
+const btn_kakao = document.querySelector('.btn_kakao')
 /* ---------------------- 구분선 -------------------------- */
 // 챗봇영역 - 서브2탭의 채팅창 클릭부분
 // 궁금한 사항 클릭시 클릭한 대상의 리스트가 표시됨
 // 브랜드 제거용 함수 호출
-let remove_basic = ()=>{for(let b of basic){a.classList.add('display_none')}}
+// let remove_basic = ()=>{for(let b of basic){a.classList.add('display_none')}}
 let remove_qa_brand = ()=>{for(let a of qa_brand){a.classList.add('display_none')}}
 let remove_user_choice = ()=>{for(let c of user_choice){c.classList.add('display_none')}}
 
@@ -180,7 +184,7 @@ chat_nav.forEach((t,i)=>{
         chat_chat.style.display = 'block';
     })
     // 홈 - 맨위 채팅창 버튼 클릭시 채팅으로 창 이동
-    list_box.addEventListener('click',()=>{
+    list_box_f.addEventListener('click',()=>{
         chatbot_sub[1].style.display = 'block';
         chatbot_sub[0].style.display = 'none';
     })
@@ -218,6 +222,15 @@ btn_back.addEventListener('click',()=>{
 } else if (chatbot_sub[0].style.display == 'none' && chatbot_sub[1].style.display == 'none'){
     btn_chatbot.addEventListener('click',()=>{chatbot_sub[0].style.display = 'block';})
 } */
+/* ---------------------- 구분선 -------------------------- */
+// 카카오톡 문의 버튼 클릭했을 때
+popup_box_foot.style.display = 'none';
+btn_kakao.addEventListener('click',()=>{
+    popup_box_foot.style.display = 'flex';
+})
+btn_ok_foot.addEventListener('click',()=>{
+    popup_box_foot.style.display = 'none';
+})
 /* ---------------------- 구분선 -------------------------- */
 
 // up버튼 클릭 시 window의 제일 상단으로 이동 상단기준 400px 밑으로 내려오면 버튼 사라지게 설정
