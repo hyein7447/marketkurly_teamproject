@@ -22,6 +22,41 @@ board_list_a.forEach((t, i)=>{
     })
 })
 
+// useParams URL
+
+window.onload = ()=>{
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlNotice = urlParams.get('notice');
+    
+    if(urlNotice === 'notice'){
+        notice_start();
+    }else if(urlNotice === 'faq'){
+        faq_start();
+    }else if(urlNotice === 'inquiry'){
+        inquiry_start();
+    }
+}
+
+const notice_start = ()=>{
+    hide()
+    title_hide()
+    sections[0].style.display = 'block'
+    board_list_a[0].classList.add('active')
+}
+const faq_start = ()=>{
+    hide()
+    title_hide()
+    sections[1].style.display = 'block'
+    board_list_a[1].classList.add('active')
+}
+const inquiry_start = ()=>{
+    hide()
+    title_hide()
+    sections[2].style.display = 'block'
+    board_list_a[2].classList.add('active')
+}
+
+
 // -------- mouseover 시 활성화
 for (let t of board_list_a) {
     let imgTag = t.querySelector('img'); 
@@ -45,4 +80,3 @@ for (let t of board_list_a) {
         }
     });
 }
-
