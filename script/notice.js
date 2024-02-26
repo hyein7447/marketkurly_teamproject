@@ -64,19 +64,6 @@ window.onload = ()=>{
         inquiry_start()
         console.log(urlInquiry)
     }
-    
-    /* if(urlNotice === true){
-        notice_start()
-        console.log(urlNotice)
-    }
-    if(urlFaq === true){
-        faq_start()
-        console.log(urlFaq)
-    }
-    if(urlInquiry === true){
-        inquiry_start()
-        console.log(urlInquiry)
-    } */
 }
 
 // -------- mouseover 시 활성화

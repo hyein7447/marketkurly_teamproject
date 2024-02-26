@@ -21,7 +21,7 @@
     margin-top: 0;
     font-size: 1rem;
     border-bottom: 0;
-    padding: 18px 20px;
+    padding: 18px 0;
   }
   main form fieldset .order_top .product_ordered_m h2 .h2_right {
     display: flex;
@@ -36,7 +36,7 @@
     width: 25px;
   }
   main form fieldset .order_top .product_ordered_m .order_list {
-    padding: 0 20px 16px;
+    padding: 0 0 16px;
   }
   main form fieldset .order_top .product_ordered_m .order_list li {
     display: flex;
@@ -81,7 +81,7 @@
   main form fieldset .order_top .customer_info {
     border-bottom: 8px solid #f4f4f4;
     margin: 0;
-    padding: 0 20px;
+    padding: 0;
   }
   main form fieldset .order_top .customer_info h2 {
     margin-top: 0;
@@ -303,5 +303,181 @@
   }
   main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .guide_benefit {
     width: 100%;
+  }
+}
+@media screen and (max-width: 430px) {
+  main form fieldset .order_btm .btm_left .kurlycard_wrap .kurlycard .kurlycard_benefit .issuance #card_issuance_btn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 430px) {
+  main form fieldset .order_top .product_ordered_m h2 {
+    padding: 5px 0;
+    font-size: 0.875rem;
+  }
+  main form fieldset .order_top .product_ordered_m h2 .h2_right span {
+    font-size: 0.813rem;
+  }
+  main form fieldset .order_top .customer_info {
+    padding: 5px 0;
+  }
+  main form fieldset .order_top .customer_info h2 {
+    padding: 0;
+    font-size: 0.875rem;
+  }
+  main form fieldset .order_top .customer_info ul {
+    padding: 0;
+  }
+  main form fieldset .order_top .customer_info ul li p {
+    font-size: 0.875rem;
+  }
+  main form fieldset .order_top .customer_info ul .change_info {
+    font-size: 0.625rem;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  main form fieldset .order_top .shipping_info ul li:first-child {
+    padding: 0;
+  }
+  main form fieldset .order_top .shipping_info ul li:last-child {
+    padding: 0;
+  }
+  main form fieldset .order_top .shipping_info ul li .left {
+    width: 100%;
+    font-size: 0.875rem;
+  }
+  main form fieldset .order_top .shipping_info ul li .destination .left {
+    font-size: 0.875rem;
+  }
+  main form fieldset .order_top .shipping_info ul li .destination .default {
+    font-size: 0.75rem;
+  }
+  main form fieldset .order_top .shipping_info ul li .destination .right {
+    font-size: 0.75rem;
+  }
+  main form fieldset .order_top .shipping_info ul li .destination .modify_btn_wrap .modify_btn {
+    font-size: 0.75rem;
+    height: 25px;
+    padding: 0;
+    width: 50px;
+    margin-bottom: 7px;
+  }
+  main form fieldset .order_top .shipping_info ul li .shipping_request .left {
+    font-size: 0.875rem;
+  }
+  main form fieldset .order_top .shipping_info ul li .shipping_request .right {
+    font-size: 0.75rem;
+  }
+  main form fieldset .order_top .shipping_info ul li .shipping_request .customer {
+    font-size: 0.75rem;
+    margin: 0;
+  }
+  main form fieldset .order_top .shipping_info ul li .shipping_request .modify_btn_wrap .modify_btn {
+    font-size: 0.75rem;
+    height: 25px;
+    padding: 0;
+    width: 50px;
+    margin-bottom: 7px;
+  }
+  main form fieldset .order_top .packaging_wrap {
+    padding: 0;
+  }
+  main form fieldset .order_top .packaging_wrap h2 {
+    padding: 0;
+    font-size: 0.875rem;
+  }
+  main form fieldset .order_top .packaging_wrap .packaging {
+    padding-bottom: 5px;
+  }
+  main form fieldset .order_top .packaging_wrap .packaging label {
+    font-size: 0.75rem;
+  }
+  main form fieldset .order_top .packaging_wrap .packaging label::before {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+  }
+  main form fieldset .order_btm .btm_left .coupon_wrap {
+    padding: 0;
+  }
+  main form fieldset .order_btm .btm_left .coupon_wrap h2 {
+    font-size: 0.875rem;
+  }
+  main form fieldset .order_btm .btm_left .coupon_wrap .coupon .coupon_wrap .coupon_wrap_top .coupon_list_wrap #coupon_list {
+    height: 30px;
+    font-size: 0.75rem;
+  }
+  main form fieldset .order_btm .btm_left .coupon_wrap .coupon .coupon_wrap .coupon_wrap_top .coupon_unavailable {
+    margin: 0;
+  }
+  main form fieldset .order_btm .btm_left .kurlycard_wrap {
+    padding-bottom: 10px;
+  }
+  main form fieldset .order_btm .btm_left .kurlycard_wrap h2 {
+    font-size: 0.875rem;
+    margin: 0;
+  }
+  main form fieldset .order_btm .btm_left .kurlycard_wrap .kurlycard .kurlycard_benefit .benefit p {
+    font-size: 0.75rem;
+  }
+  main form fieldset .order_btm .btm_left .kurlycard_wrap .kurlycard .kurlycard_benefit .benefit div label {
+    font-size: 0.75rem;
+  }
+  main form fieldset .order_btm .btm_left .kurlycard_wrap .kurlycard .kurlycard_benefit .benefit div label::before {
+    height: 20px;
+    width: 20px;
+  }
+  main form fieldset .order_btm .btm_left .kurlycard_wrap .kurlycard .kurlycard_benefit .issuance #card_issuance_btn {
+    font-size: 0.75rem;
+    width: 61px;
+    height: 35px;
+  }
+  main form fieldset .order_btm .btm_left .kurly_cash_wrap {
+    padding: 0;
+  }
+  main form fieldset .order_btm .btm_left .kurly_cash_wrap h2 {
+    font-size: 0.875rem;
+  }
+  main form fieldset .order_btm .btm_left .kurly_cash_wrap h2 a img {
+    width: 14px;
+  }
+  main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash {
+    padding-bottom: 5px;
+  }
+  main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount ul {
+    padding: 0;
+  }
+  main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount ul li {
+    font-size: 0.75rem;
+  }
+  main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount ul li .available {
+    font-size: 0.813rem;
+  }
+  main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount ul li span {
+    font-size: 0.75rem;
+  }
+  main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount .total {
+    margin-bottom: 5px;
+  }
+  main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount .total #num {
+    font-size: 0.875rem;
+    line-height: 35px;
+    width: 75%;
+  }
+  main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount .total #use_all_btn {
+    width: 20%;
+    font-size: 0.75rem;
+    height: 39px;
+  }
+  main form fieldset .order_btm .btm_left .kurly_cash_wrap .kurly_cash .discount p {
+    font-size: 0.75rem;
+    padding: 0;
+  }
+  main form fieldset .order_btm .btm_left .payment_method_wrap h2 {
+    font-size: 0.875rem;
+    margin: 0;
+  }
+  main form fieldset .order_btm .btm_left .payment_method_wrap .method_type {
+    padding: 0;
   }
 }/*# sourceMappingURL=payment_m.css.map */

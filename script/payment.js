@@ -38,6 +38,20 @@ order_btn.addEventListener('click', function() {
     }
 });
 
+// ---------- 모바일 주문 목록 펼치기 접기
+const m_order = document.querySelector('.product_ordered_m > h2')
+const m_order_list = document.querySelector('.product_ordered_m > .order_list')
+
+m_order_list.style.display = 'none'
+
+m_order.addEventListener('click',()=>{
+    if (m_order_list.style.display !== 'block') {
+        m_order_list.style.display = 'block';
+    } else {
+        m_order_list.style.display = 'none';
+    }
+})
+
 // ----------- 포장방법 퍼플박스 선택 시 안내 이미지
 packaging_btn[0].addEventListener('click',()=>{
     purplebox.style.display = 'block';
@@ -157,6 +171,13 @@ const btm_right_offset_Top = btm_right.offsetTop;
         btm_right.style.position = 'static';
     }
 }) */
+
+// 배송지 변경 버튼
+const address_btn = document.querySelector('#address_btn')
+
+address_btn.addEventListener('click',()=>{
+    window.open('wish_address_popup.html','popup','width=530,height=569')
+})
 
 //  ------- 링크 설정되지 않은 a 태그 클릭시 상단으로 올라가는 것 막기
 document.querySelectorAll('a').forEach(link => {

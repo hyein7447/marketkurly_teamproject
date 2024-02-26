@@ -20,7 +20,7 @@
                             margin-top: 0;
                             font-size: $px14;
                             border-bottom: 0;
-                            padding: 18px 20px;
+                            padding: 18px 0;
                             .h2_right{
                                 display: flex;
                                 align-items: center;
@@ -36,7 +36,7 @@
                             }
                         }
                         .order_list{
-                            padding: 0 20px 16px;
+                            padding: 0 0 16px;
                             li{
                                 display: flex;
                                 border-bottom: 1px solid $c-244;
@@ -82,7 +82,7 @@
                     .customer_info{
                         border-bottom: 8px solid $c-244;
                         margin: 0;
-                        padding: 0 20px;
+                        padding: 0;
                         h2{
                             margin-top: 0;
                             font-size: $px14;
@@ -292,4 +292,227 @@
             }
         }
     }
+}
+
+@media screen and (max-width:430px) {
+    main{        
+        form{
+            fieldset{ 
+                .order_btm{ 
+                    .btm_left{ 
+                        .kurlycard_wrap{ 
+                            .kurlycard{ 
+                                .kurlycard_benefit{ 
+                                    .issuance{ 
+                                        #card_issuance_btn {width: 100%;}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width:430px){
+    main{
+        form{
+            fieldset{
+                .order_top{
+                    .product_ordered_m{
+                        h2{
+                            padding: 5px 0;
+                            font-size: $px12;
+                            .h2_right{
+                                span{font-size: $px11;}
+                            }
+                        }
+                    }
+                    .customer_info{
+                        padding: 5px 0;
+                        h2{
+                            padding: 0;
+                            font-size: $px12;
+                        }
+                        ul{
+                            padding: 0;
+                            li{
+                                p{font-size: $px12;}
+                            }
+                            .change_info{
+                                font-size: 0.625rem;
+                                margin: 0;
+                                padding-bottom: 5px;
+                            }
+                        }
+                    }
+                    .shipping_info{
+                        ul{
+                            li{
+                                &:first-child{padding: 0;}
+                                &:last-child{padding: 0;}
+                                .left{
+                                    width: 100%;
+                                    font-size: $px12;
+                                }
+
+                                .destination{
+                                    .left{font-size: $px12;}
+                                    .default{font-size: $px10;}
+                                    .right{font-size: $px10;}
+                                    .modify_btn_wrap{
+                                        .modify_btn{
+                                            font-size: $px10;
+                                            height: 25px;
+                                            padding: 0;
+                                            width: 50px;
+                                            margin-bottom: 7px;
+                                        }
+                                    }
+                                }
+                                .shipping_request{
+                                    .left{font-size: $px12;}
+                                    .right{font-size: $px10;}
+                                    .customer{
+                                        font-size: $px10;
+                                        margin: 0;
+                                    }
+                                    .modify_btn_wrap{
+                                        .modify_btn{
+                                            font-size: $px10;
+                                            height: 25px;
+                                            padding: 0;
+                                            width: 50px;
+                                            margin-bottom: 7px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .packaging_wrap{
+                        padding: 0;
+                        h2{
+                            padding: 0;
+                            font-size: $px12;
+                        }
+                        .packaging{
+                            padding-bottom: 5px;
+                            label{
+                                font-size: $px10;
+                                &::before{
+                                    margin-right: 5px;
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        } 
+                    }
+                }
+                .order_btm{
+                    .btm_left{
+                        .coupon_wrap{
+                            padding: 0;
+                            h2{font-size: $px12;}
+                            .coupon{
+                                .coupon_wrap{
+                                    .coupon_wrap_top{
+                                        .coupon_list_wrap{
+                                            #coupon_list{
+                                                height: 30px;
+                                                font-size: $px10;
+                                            }
+                                        }
+                                        .coupon_unavailable{
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .kurlycard_wrap{
+                            padding-bottom: 10px;
+                            h2{
+                                font-size: $px12;
+                                margin: 0;
+                            }
+                            .kurlycard{
+                                .kurlycard_benefit{
+                                    .benefit{
+                                        p{font-size: $px10;}
+                                        div{
+                                            label{
+                                                font-size: $px10;
+                                                &::before{
+                                                    height: 20px;
+                                                    width: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .issuance{
+                                        #card_issuance_btn{
+                                            font-size: $px10;
+                                            width: 61px;
+                                            height: 35px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .kurly_cash_wrap{
+                            padding: 0;
+                            h2{
+                                font-size: $px12;
+                                a{
+                                    img{width: 14px;}
+                                }
+                            }
+                            .kurly_cash{
+                                padding-bottom: 5px;
+                                .discount{
+                                    ul{
+                                        padding: 0;
+                                        li{
+                                            font-size: $px10;
+                                            .available{font-size: $px11;}
+                                            span{font-size: $px10;}
+                                        }
+                                    }
+                                    .total{
+                                        margin-bottom: 5px;
+                                        #num{
+                                            font-size: $px12;
+                                            line-height: 35px;
+                                            width: 75%;
+                                        }
+                                        #use_all_btn{
+                                            width: 20%;
+                                            font-size: $px10;
+                                            height: 39px;
+                                        }
+                                    }
+                                    p{
+                                        font-size: $px10;
+                                        padding: 0;
+                                    }
+                                }
+                            }
+                        }
+                        .payment_method_wrap{
+                            h2{
+                                font-size: $px12;
+                                margin: 0;
+                            }
+                            .method_type{
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
 }
