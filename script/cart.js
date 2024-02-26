@@ -8,6 +8,7 @@ const all_check = document.querySelector('#all_check')
 const btm_all_check = document.querySelector('#btm_all_check')
 const order_btn = document.querySelector('#order_btn')
 const btn_txt = document.querySelector('.btn_txt')
+const change_btn = document.querySelector('#change_btn')
 console.log(title, product, product_wrap.childNodes.length,check_icon)
 
 // 냉동/냉장/상온 title 클릭시 하단 아이템 출력/숨김
@@ -294,4 +295,8 @@ order_btn.addEventListener('click',()=>{
     if(order_btn.classList.contains('bg_active')){
         order_btn.href = './payment.html'
     }
+})
+
+change_btn.addEventListener('click',()=>{
+    window.open('wish_address_popup.html','popup','width=530,height=569')
 })

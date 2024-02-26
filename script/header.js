@@ -172,3 +172,13 @@ help_icon.addEventListener('click',(e)=>{
     keyword_open.classList.toggle('open_toggle2')
     event.preventDefault();
 })
+
+const link_faq = document.querySelector('.faq')
+const link_qna = document.querySelector('.qna')
+
+link_faq.addEventListener('click',()=>{
+    window.location.href = 'notice.html?faq=true'
+})
+link_qna.addEventListener('click',()=>{
+    window.location.href = 'notice.html?inquiry=true'
+})

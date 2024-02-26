@@ -226,7 +226,7 @@ main .container .content .order .delivery p span {
 main .container .content .order .delivery .address_change #change_btn {
   width: 100%;
   display: block;
-  height: 36px;
+  padding: 15px 0;
   border: 1px solid #5F0080;
   border-radius: 3px;
   text-align: center;
@@ -294,8 +294,8 @@ main .container .content .order .order_btn_bg #order_btn {
   width: 100%;
   border-radius: 3px;
   padding: 20px 0;
-  background-color: #ddd;
   text-align: center;
+  background-color: #ddd;
 }
 main .container .content .order .order_btn_bg #order_btn .btn_txt {
   font-weight: 500;

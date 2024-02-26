@@ -22,28 +22,18 @@ board_list_a.forEach((t, i)=>{
     })
 })
 
-// useParams URL
-
 window.onload = ()=>{
     const urlParams = new URLSearchParams(window.location.search);
-    const urlNotice = urlParams.get('notice');
-    
-    if(urlNotice === 'notice'){
-        notice_start();
-    }else if(urlNotice === 'faq'){
-        faq_start();
-    }else if(urlNotice === 'inquiry'){
-        inquiry_start();
+    const urlNotice = urlParams.get('faq') ? 'faq' : 'inquiry'
+    console.log(urlNotice)
+    if(urlNotice == 'faq'){ 
+        faq_start() 
+    }else{
+        inquiry_start()
     }
 }
 
-const notice_start = ()=>{
-    hide()
-    title_hide()
-    sections[0].style.display = 'block'
-    board_list_a[0].classList.add('active')
-}
-const faq_start = ()=>{
+const faq_start =()=>{
     hide()
     title_hide()
     sections[1].style.display = 'block'

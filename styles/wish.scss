@@ -1683,6 +1683,43 @@
         }
     }
 }
+.submit_bg {
+
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.5);
+    @include flex-row-ct-ct;
+
+    .submit_pop{
+        border: 1px solid #eee;
+        border-radius: 12px;
+        background-color: #fff;
+        max-width: 360px;
+        width: 360px;
+        .submit_message {
+            padding: 40px 30px;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+            letter-spacing: -0.5px;
+            font-weight: 500;
+            color: $c-51;
+            line-height: 21px;
+        }
+        .btn {
+            text-align: center;
+            @include flex-row-btw-ct;
+            #ok {
+                width: 100%;
+                height: 55px;
+                color: $purple;
+                font-weight: 500;
+            }
+        }
+    }
+}
 .cart_pop_bg {
     background-color: rgba(0,0,0, 0.5);
     width: 100%;
@@ -1886,4 +1923,9 @@
 .gender_active {
     border-color: $purple !important;
     color: $purple;
+}
+
+.btn_active {
+    background-color: $purple !important;
+    color: #fff !important;
 }

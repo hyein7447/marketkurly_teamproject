@@ -6,8 +6,12 @@ const date_open = document.querySelector('.order_list .date_open')
 const date_arrow = document.querySelector('.order_list .date_arrow')
 const order_list_date_open = document.querySelectorAll('.order_list .date_open > a')
 const order_list_content_bg = document.querySelectorAll('.order_list .content_bg')
+const agree = document.querySelector('#agree')
+const completion_btn = document.querySelector('#completion_btn')
+const submit_bg = document.querySelector('.submit_bg')
+const ok = document.querySelector('#ok')
 let date_top_a = document.querySelector('.date_top > a')
-console.log(my_kurly_menu,my_kurly_menu_c)
+console.log(agree,completion_btn)
 
 
 // 마이컬리 탭 클릭시 내용 출력
@@ -328,4 +332,20 @@ btn_cancel.forEach((t,i)=>{
     t.addEventListener('click',()=>{
         cart_pop[i].style.display = 'none'
     })
+})
+
+agree.addEventListener('click',()=>{
+    if(agree.checked){
+        completion_btn.classList.add('btn_active')
+    }
+})
+
+submit_bg.style.display = 'none'
+
+completion_btn.addEventListener('click',()=>{
+    submit_bg.style.display = 'flex'
+})
+
+ok.addEventListener('click',()=>{
+    submit_bg.style.display = 'none'
 })
