@@ -569,9 +569,12 @@
             }
             .m_nav {
                 .gnb_bg {
-                    position: absolute;
+                    position: fixed;
+                    overflow: scroll;
                     top: 0;
                     background-color: #fff;
+                    z-index: 999;
+                    padding-bottom: 12px;
                     .gnb_wrap {
                         .gnb_header {
                             min-height: 44px;
@@ -619,6 +622,7 @@
                         .gnb {
                             height: calc(100vh - 100px);
                             border-top: 10px solid $c-244;
+                            background-color: #fff;
                             li {
                                 a {
                                     @include flex-row-btw-ct;
@@ -703,10 +707,13 @@
                 }
             }
             .user_search {
-                position: absolute;
+                position: fixed;
+                overflow: hidden;
                 top: 0;
+                z-index: 999;
                 background-color: #fff;
                 width: 100%;
+                height: calc(100vh - 45px);
                 .search_header {
                     min-height: 44px;
                     background-color: $purple;
@@ -847,7 +854,7 @@
                         display: flex;
                         flex-flow: wrap;
                         padding-top: 11px;
-                        background-color: fff;
+                        background-color: #fff;
                         li {
                             width: 100%;
                             height: 48px;
