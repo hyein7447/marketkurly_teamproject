@@ -32,7 +32,7 @@ const total = document.querySelector('.total > em') // 총액
 const filter_box_opt = document.querySelectorAll('.filter_box_contents > ul > li > input[name="opt_chk"]') // 옵션 필터 input
 const rating_chk_opt = document.querySelectorAll('.filter_box_contents > ul > li > input[name="rating_chk"]') // 등급 필터 input
 const reset_btn = document.querySelectorAll('.reset_btn') // 초기화 버튼
-
+console.log(wish)
 
 // --------------- 상단 상품선택 option 선택 시 선택한 옵션 나타나기
 
@@ -136,16 +136,16 @@ for (let i of select_opt) {
 
 // -------------- wish btn 클릭 시 활성화
 
-function on_off(name, status){
-    return `./images/main/icon/icon_${name}_${status}.svg`
-}
+// function on_off(name, status){
+//     return `./images/main/icon/icon_${name}_${status}.svg`
+// }
 
-wish[1].addEventListener('click',function(){
-    const current_src = this.children[0].src;
-    const off_src = on_off('wish', 'off');
-    const off = current_src.includes('icon_wish_off.svg');
-    this.children[0].src = off ? on_off('wish', 'on2') : off_src;
-})
+// wish[1].addEventListener('click',function(){
+//     const current_src = this.children[0].src;
+//     const off_src = on_off('wish', 'off');
+//     const off = current_src.includes('icon_wish_off.svg');
+//     this.children[0].src = off ? on_off('wish', 'on2') : off_src;
+// })
 
 // -------- nav 클릭 시 해당 영역으로 이동
 
