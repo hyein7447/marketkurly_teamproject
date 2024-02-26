@@ -173,9 +173,13 @@ help_icon.addEventListener('click',(e)=>{
     event.preventDefault();
 })
 
-const link_notice = document.querySelector('.notice')
+const link_notice = document.querySelector('.header_notice')
 const link_faq = document.querySelector('.faq')
-const link_qna = document.querySelector('.qna')
+const link_inquiry = document.querySelector('.inquiry')
+
+console.log(link_notice)
+console.log(link_faq)
+console.log(link_inquiry)
 
 link_notice.addEventListener('click',()=>{
     window.location.href = 'notice.html?notice=true'
@@ -183,6 +187,6 @@ link_notice.addEventListener('click',()=>{
 link_faq.addEventListener('click',()=>{
     window.location.href = 'notice.html?faq=true'
 })
-link_qna.addEventListener('click',()=>{
+link_inquiry.addEventListener('click',()=>{
     window.location.href = 'notice.html?inquiry=true'
 })

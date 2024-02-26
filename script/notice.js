@@ -34,6 +34,7 @@ const faq_start =()=>{
     sections[1].style.display = 'block'
     board_list_a[1].classList.add('active')
 }
+console.log(sections[1])
 const inquiry_start = ()=>{
     hide()
     title_hide()
@@ -46,11 +47,24 @@ window.onload = ()=>{
     const urlNotice = urlParams.get('notice')
     const urlFaq = urlParams.get('faq')
     const urlInquiry = urlParams.get('inquiry')
+
     console.log(urlNotice)
-    if(urlNotice == 'notice'){faq_start()}
-    if(urlFaq == 'faq'){faq_start()}
-    if(urlInquiry == 'inquiry'){inquiry_start()}
-}  
+    console.log(urlFaq)
+    console.log(urlInquiry)
+
+    if(urlNotice == true){
+        notice_start()
+        console.log(urlNotice)
+    }
+    if(urlFaq == true){
+        faq_start()
+        console.log(urlFaq)
+    }
+    if(urlInquiry == true){
+        inquiry_start()
+        console.log(urlInquiry)
+    }
+}
 
 // -------- mouseover 시 활성화
 for (let t of board_list_a) {
