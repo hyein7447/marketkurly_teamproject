@@ -1,8 +1,10 @@
-main .bnr {
+main {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+}
+main .bnr {
   display: inline-block;
 }
 main .bnr .benefit {
