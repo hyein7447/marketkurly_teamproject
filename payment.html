@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="./styles/payment.css">
     <link rel="stylesheet" href="./styles/payment_m.css">
     <link rel="stylesheet" href="./styles/payment_animation.css">
+    <!--swipe 플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--swipe 플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <main>
@@ -195,14 +202,14 @@
                                     </div>
                                     <div class="method_type_btn"><button type="button" id="kurly_pay_btn"><img src="./images/main/logo/logo_pay_purple.svg" alt=""></button><span class="benefit_icon">혜택</span></div>
                                     <div class="kurly_pay_wrap">
-                                        <div class="kurly_pay_bg">
-                                            <div class="kurly_pay">
-                                                <div class="kurly_pay_benefit">
+                                        <div class="swiper-container kurly_pay_bg" id="kurly_pay_swiper">
+                                            <div class="swiper-wrapper kurly_pay">
+                                                <div class="swiper-slide kurly_pay_benefit">
                                                     <p>컬리카드로 결제하고<br><span>최대 5%</span> 적립 받으세요</p>
                                                     <!-- <a href="#"><em>카드 신청하기</em><span></span></a> -->
                                                     <a href="#">카드 신청하기</a>
                                                 </div>
-                                                <div class="add_account">
+                                                <div class="swiper-slide add_account">
                                                     <a href="#">
                                                         <img src="./images/main/icon/icon_add_btn.svg" alt="">
                                                         <!-- 이미지 만들어오기 -->
@@ -211,6 +218,8 @@
                                                     </a>
                                                 </div>
                                             </div>
+                                            <div class="swiper-button-prev" id="aside_prev_btn"></div> <!-- 이전버튼 -->   
+                                            <div class="swiper-button-next" id="aside_next_btn"></div> <!-- 다음버튼 -->
                                         </div>
                                         <p class="kurlycard_active">컬리카드 결제 시 최대 <em>740원</em> 추가 적립</p>
                                     </div>
@@ -345,6 +354,19 @@
         </form>
     </main>
     <?php include("footer.php"); ?>
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+            const kurly_pay_bg = new Swiper('#kurly_pay_swiper',{
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: false,
+            navigation:{
+                nextEl: "#aside_prev_btn",
+                prevEl: "#aside_next_btn",
+            }
+        })
+    </script>
 
     <script src="./script/payment.js"></script>
 </body>
