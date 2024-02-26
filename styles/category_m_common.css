@@ -436,7 +436,7 @@ main .best .container .right .name_result span img {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 900;
+    z-index: 999;
     width: 100%;
   }
   main .best_mobile .tab_slide .bar_line {
