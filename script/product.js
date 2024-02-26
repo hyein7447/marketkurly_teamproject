@@ -32,6 +32,7 @@ const total = document.querySelector('.total > em') // 총액
 const filter_box_opt = document.querySelectorAll('.filter_box_contents > ul > li > input[name="opt_chk"]') // 옵션 필터 input
 const rating_chk_opt = document.querySelectorAll('.filter_box_contents > ul > li > input[name="rating_chk"]') // 등급 필터 input
 const reset_btn = document.querySelectorAll('.reset_btn') // 초기화 버튼
+const view_btn = document.querySelectorAll('.view_btn') // 후기 보기 버튼
 console.log(wish_btn)
 
 // --------------- 상단 상품선택 option 선택 시 선택한 옵션 나타나기
@@ -263,6 +264,14 @@ reset_btn[1].addEventListener('click',()=>{
         checkbox.checked = false;
     })
 })
+
+// 후기 보기 버튼 클릭 시 옵션창 사라지기
+const filter_box = document.querySelectorAll('.filter_box')
+view_btn.forEach((t, i) => {
+    t.addEventListener('click', function(){
+        filter_box[i].style.display = 'none'
+    });
+});
 
 // ---------- 리뷰 도움돼요 버튼 클릭 시 이벤트
 for (let t of helpful_btn) {
