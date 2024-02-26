@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마켓컬리 | 뷰티컬리</title>
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
-    <link rel="icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
-    <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-</head>
-<body>
-    <div class="main_btn">
+<div class="main_btn">
         <button type="button" id="btn_up"></button>
         <button type="button" id="btn_chatbot"></button>
     </div>
@@ -432,5 +415,3 @@
         </address>
     </footer>
     <script src="./script/footer.js"></script>
-</body>
-</html>   

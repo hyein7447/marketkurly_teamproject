@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마켓컬리 | 뷰티컬리</title>
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
-    <link rel="icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
-    <!-- styles -->
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/header_m.css">
-    <!-- font-family -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
+<header>
         <div class="user_page">
             <a href="#" class="join">회원가입</a>
             <a href="#" class="login">로그인</a>
@@ -1428,5 +1411,3 @@
             }).open();
         }
     </script>
-</body>
-</html> 

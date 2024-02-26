@@ -4,7 +4,7 @@
     main {
         .ranking {
             .container {
-                // padding: 40px 20px;
+                padding: 40px 20px;
                 #ranking_slide {
                     #ranking_slide_wrap 
                     {
@@ -486,6 +486,7 @@
         }
         .ranking {
             padding: 40px 16px;
+            .container {padding: 0;}
             .title {
                 a {
                     font-size: $px24;
@@ -622,6 +623,54 @@
                         display: block !important;
                     }
                     
+                }
+            }
+        }
+        .cart_pop_bg {
+            .cart_pop {
+                width: 380px;
+                .thumb_name {
+                    .thumb {}
+                    .p_tab_title {
+                        font-size: $px12;
+                    }
+                }
+                .info {
+                    .cart_box {
+                        .p_tab_title {
+                            font-size: $px12;
+                            .price_num {
+                                .p_tab_price {
+                                    del {}
+                                }
+                                .num {
+                                    .minus {
+                                        img {}
+                                    }
+                                }
+                                .p_tab_num {}
+                                .plus {
+                                    img {}
+                                }
+                            }
+                        }
+                    }
+                }
+                .total {
+                    .total_result {
+                        p {}
+                        .p_tab_price {
+                            font-size: $px20;
+                        }
+                    }
+                    .explain {
+                        .icon_save {}
+                        span {}
+                    }
+                }
+                .btn_cart {
+                    .btn_cancel {}
+                    .btn_cart_r {}
                 }
             }
         }
