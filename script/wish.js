@@ -349,3 +349,56 @@ completion_btn.addEventListener('click',()=>{
 ok.addEventListener('click',()=>{
     submit_bg.style.display = 'none'
 })
+
+// user_info 적립금, 쿠폰, 컬리스타일 링크 이동
+
+const user_cash = document.querySelector('.user_cash')
+const user_coupon = document.querySelector('.user_coupon')
+const user_style = document.querySelector('.user_style')
+
+
+user_cash.addEventListener('click',()=>{
+    window.location.href = 'whish.html?kurly_cash=true'
+})
+user_coupon.addEventListener('click',()=>{
+    window.location.href = 'whish.html?coupon_list=true'
+})
+user_style.addEventListener('click',()=>{
+    window.location.href = 'whish.html?kurly_style=true'
+})
+
+
+window.onload = ()=>{
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlkurly_cash = urlParams.get('kurly_cash')
+    const urlcoupon_list = urlParams.get('coupon_list')
+    const urlkurly_style = urlParams.get('kurly_style')
+
+    if(urlkurly_cash == 'kurly_cash'){ 
+        kurly_cash_start() 
+    }
+    if(urlcoupon_list == 'coupon_list'){ 
+        coupon_list_start() 
+    }
+    if(urlkurly_style == 'kurly_style'){ 
+        kurly_style_start() 
+    }
+}
+
+const kurly_cash_start =()=>{
+    for(let m of menu_c){m.style.display='none'}
+    menu_c[8].stlye.display='block'
+    my_kurly_menu_c[8].classList.add('menu_tab')
+}
+
+const coupon_list_start = ()=>{
+    for(let m of menu_c){m.style.display='none'}
+    menu_c[9].stlye.display='block'
+    my_kurly_menu_c[9].classList.add('menu_tab')
+}
+
+const kurly_style_start = ()=>{
+    for(let m of menu_c){m.style.display='none'}
+    menu_c[10].stlye.display='block'
+    my_kurly_menu_c[10].classList.add('menu_tab')
+}
