@@ -173,9 +173,13 @@ help_icon.addEventListener('click',(e)=>{
     event.preventDefault();
 })
 
+const link_notice = document.querySelector('.notice')
 const link_faq = document.querySelector('.faq')
 const link_qna = document.querySelector('.qna')
 
+link_notice.addEventListener('click',()=>{
+    window.location.href = 'notice.html?notice=true'
+})
 link_faq.addEventListener('click',()=>{
     window.location.href = 'notice.html?faq=true'
 })

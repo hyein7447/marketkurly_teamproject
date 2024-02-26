@@ -5,7 +5,7 @@
             <div class="cs_bg">
                 <a href="#" class="cs">고객센터<img src="./images/main/icon/icon_down_16x10.png" alt="고객센터오픈"></a>
                 <div class="cs_open"> <!-- 마우스오버 js -->
-                    <a href="./notice.html">공지사항</a>
+                    <a href="#" class=notice>공지사항</a>
                     <a href="#" class="faq">자주하는 질문</a>
                     <a href="#" class="qna">1:1 문의</a>
                     <a href="#" class="order_qna">대량주문 문의</a>
