@@ -14,6 +14,9 @@ main {
         }
         form {
             fieldset {
+                .m_login {
+                    display: none;
+                }
                 width: 100%;
                 margin: 0px auto;
                 letter-spacing: -0.6px;
@@ -116,9 +119,91 @@ main {
             }
         }
     }
+    .button_cancle {
+        display: none;
+    }
 }    
 @media screen and (max-width:1280px) {}
-@media screen and (max-width:820px) {}
+@media screen and (max-width:820px) {
+    main {
+        .container {
+            margin: 0 auto;
+            max-width: 450px;
+            padding:90px 26px 90px;
+            h1 {
+                font-size: $px20;
+            }
+            form {
+                fieldset {
+                    #user_id {
+                        height: 50px;
+                        margin: 30px 0 0px;
+                        @include bo_dd4;
+                    }
+                    #user_pw {
+                        height: 50px;
+                        margin-bottom: 26px;
+                        @include bo_dd4;
+                    }
+                    .m_login {
+                        display: block;
+                        text-align: center;
+                        margin: 50px 0px 30px ;
+                        .kakao_login {
+                            border-top: 1px solid $c-238;
+                            padding-top: 20px;
+                            p {
+                                margin-top: 24px;
+                                margin-bottom: 25px;
+                                font-size: $px13;
+                                em {
+                                    font-weight: 600;
+                                    color: $purple;
+                                    font-size: $px13;
+                                }
+                            }
+                            #btn_kakao_login {
+                                background-color: rgb(254, 229, 0);
+                                border: 1px solid rgb(254, 229, 0);
+                                height: 50px;
+                                color: rgb(25, 25, 25);
+                                border-radius: 6px;
+                                padding: 0px 10px;
+                                width: 100%;
+                                font-weight: 500;
+                                i[class$=comment] {
+                                    color: rgb(25, 25, 25);
+                                    font-weight: 600;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }.btn_login {
+                    width: 100%;
+                    @include pull_pp3;
+                    height: 50px;
+                    margin-top: 28px;
+                }
+                .btn_join {
+                    width: 100%;
+                    @include bo_pp3;
+                    height: 50px;
+                    color: $purple;
+                    font-weight: 500;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .button_cancle {
+            display: block;
+            position: absolute;
+            top:20px;
+            left: 20px;
+            width: 36px;
+        }
+    }
+}
 @media screen and (max-width:430px) {}
 @media screen and (max-width:320px) {}
 

@@ -6,6 +6,7 @@ const pop_btn_ok = document.querySelector('#btn_ok')
 const btn_login = document.querySelector('.btn_login')
 const user_id = document.querySelector('#user_id')
 const user_pw = document.querySelector('#user_pw')
+const btn_login_cancle = document.querySelector('.btn_login_cancle')
 const user_db = [{ id:"kurly", pw:"1234", number: 8610 }]
 
 /* ---------------------- 구분선 -------------------------- */
@@ -36,6 +37,10 @@ btn_login.addEventListener('click',()=>{
 })
 pop_btn_ok.addEventListener('click',()=>{
     popup_box.style.display = 'none';
+})
+/* ---------------------- 구분선 -------------------------- */      
+btn_login_cancle.addEventListener('click',()=>{
+    window.location.href = "index.html";
 })
 /* ---------------------- 구분선 -------------------------- */      
 // 링크 설정되지 않은 a 태그 클릭시 상단으로 올라가는 것 막기
