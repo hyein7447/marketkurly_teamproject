@@ -417,9 +417,15 @@ for(let i of product){
     i.children[1].children[0].addEventListener('click',()=>{
         popup.style.display = 'flex';
         cart_pop.style.display = 'block';
-        btn_cancel.addEventListener('click',()=>{
-            popup.style.display = 'none';
-            cart_pop.style.display = 'none';
+        btn_cart_r.addEventListener('click',()=>{ //팝업에 장바구니 담기 버튼
+            const result = confirm('장바구니에 담겼습니다. 이동하시겠습니까?');
+            if (result) {
+                window.location.href = './cart.html';
+            } else {
+                // 팝업 닫기
+                popup.style.display = 'none';
+                cart_pop.style.display = 'none';
+            }
         })
     })
 }

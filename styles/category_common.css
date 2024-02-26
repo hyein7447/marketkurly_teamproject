@@ -476,6 +476,9 @@ main .best .container .right .arrow_num a {
 ---------------------★팝업 영역★---------------------//
 */
 /* 어사이드 --- 팝업(공통영역) */
+main .best .popup .cart_result_pop {
+    /* display: block !important; */
+}
 main .best .popup ,
 main .best .popup .cate_pop,
 main .best .popup .brand_pop,

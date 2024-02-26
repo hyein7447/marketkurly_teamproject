@@ -51,7 +51,7 @@ const brand_more_x_btn = brand_pop.querySelector('.wrap_top > .wrap > a ')
 const btn_cancel = cart_pop.querySelector('.btn_cancel')
 const btn_cart_r = cart_pop.querySelector('.btn_cart_r')
 // rigth 영역 변수
-const product_cart_btn = document.querySelector('.btn_c')
+const product_cart_btn = document.querySelector('.btn_c') //담기버튼
 const product = document.querySelectorAll('.product')
 const pc_array_a = document.querySelectorAll('.right > .lnb > .array > a')
 const pc_array_q = document.querySelector('.right > .lnb > .array > a > [class$=question]')
@@ -544,9 +544,15 @@ for(let i of product){
             popup.style.display = 'none';
             cart_pop.style.display = 'none';
         })
-        btn_cart_r.addEventListener('click',()=>{
-            popup.style.display = 'none';
-            cart_pop.style.display = 'none';
+        btn_cart_r.addEventListener('click',()=>{ //팝업에 장바구니 담기 버튼
+            const result = confirm('장바구니에 담겼습니다. 이동하시겠습니까?');
+            if (result) {
+                window.location.href = './cart.html';
+            } else {
+                // 팝업 닫기
+                popup.style.display = 'none';
+                cart_pop.style.display = 'none';
+            }
         })
     })
 }
@@ -980,3 +986,43 @@ document.querySelectorAll('a').forEach(link => {
         }
     });
 });
+/* ---------------------- 구분선 -------------------------- */ 
+const productList = document.getElementById('#product_box');
+fetch('data.json')
+    .then(response => response.json())// fetch 함수로 가져온 데이터를 JSON 형식으로 변환
+    .then(data => {
+        // 각 상품 정보를 product 리스트 아이템에 삽입
+        data.forEach(item=>{
+            const listItem = document.createElement('div');
+            listItem.classList.add('product')
+            listItem.innerHTML = `
+                <a href="./product.html" class="thumb">
+                    <div class="thumb_img">
+                        <img src="${item.images}" alt="">
+                        <p class="icon_cuppon">${item.cuppon}</p>
+                    </div>
+                </a>
+                <div class="btn_cart">
+                    <button type="button" class="btn_c">
+                        <img src="./images/main/icon/icon_cart_off.svg" alt="">
+                        <span>담기</span>
+                    </button>
+                </div>
+                <div class="info"><!-- js로 처리 / DB 영역-->
+                    <a href="./product.html">
+                        <h3 class="p_brand">${item.info}</h3>
+                        <h2 class="p_title">${item.name}</h2>
+                        <p class="p_explain">${item.description}</p>
+                        <p class="p_price_del"><del>${item.regularPrice}원</del></p>
+                        <p class="p_price"><em>${item.discount}</em>${item.price}원</p>
+                    </a>
+                    <p class="p_review"><i class="fa-regular fa-comment-dots"></i>${item.review}</p>
+                    <p class="p_icon_only">${item.project1}</p>
+                    <p class="p_icon_ko">${item.project2}</p>
+                </div>
+            `;
+            productList.appendChild(listItem);
+        })
+    })
+    .catch(error => console.error('Error fetching data:', error));
+            

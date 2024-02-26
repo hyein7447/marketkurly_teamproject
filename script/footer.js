@@ -224,8 +224,10 @@ btn_back.addEventListener('click',()=>{
 window.addEventListener('scroll', () => {
     if (body.scrollTop > 400) {
         btn_up.style.display = 'block';
+        btn_chatbot.style.display = 'block';
     } else {
         btn_up.style.display = 'none';
+        btn_chatbot.style.display = 'none';
     }
 });
 // 클릭했을 때
