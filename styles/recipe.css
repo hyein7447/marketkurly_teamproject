@@ -1,0 +1,375 @@
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+main .title {
+  padding-left: 100px;
+  padding-top: 26px;
+}
+main .title h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+main .container {
+  padding: 30px 29px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+main .container .item {
+  margin-bottom: 30px;
+  margin-right: 15px;
+  border: 1px solid #f4f4f4;
+}
+main .container .item .img {
+  width: 480px;
+}
+main .container .item .img img {
+  width: 100%;
+  height: 100%;
+}
+main .container .item .txt {
+  font-size: 1.375rem;
+  padding: 25px 0 25px 30px;
+}
+main .page_nation {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .page_nation .first_btn {
+  display: block;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #ddd;
+}
+main .page_nation .first_btn img {
+  position: relative;
+  top: -2px;
+}
+main .page_nation .prev_btn {
+  display: block;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #ddd;
+  border-left: 0;
+}
+main .page_nation .prev_btn img {
+  position: relative;
+  top: -2px;
+}
+main .page_nation .page {
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: block;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #ddd;
+  border-left: 0;
+}
+main .page_nation .next_btn {
+  display: block;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #ddd;
+  border-left: 0;
+}
+main .page_nation .next_btn img {
+  position: relative;
+  top: -2px;
+}
+main .page_nation .last_btn {
+  display: block;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #ddd;
+  border-left: 0;
+}
+main .page_nation .last_btn img {
+  position: relative;
+  top: -2px;
+}
+
+@media screen and (max-width: 1080px) {
+  main {
+    max-width: 1080;
+    margin: 0 auto;
+  }
+  main .title {
+    padding-left: 50px;
+    padding-top: 26px;
+  }
+  main .title h2 {
+    font-size: 1.625rem;
+    font-weight: 500;
+  }
+  main .container {
+    padding: 30px 29px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  main .container .item {
+    margin-bottom: 30px;
+    margin-right: 15px;
+    border: 1px solid #f4f4f4;
+  }
+  main .container .item .img {
+    width: 380px;
+  }
+  main .container .item .img img {
+    width: 100%;
+    height: 100%;
+  }
+  main .container .item .txt {
+    font-size: 1.25rem;
+    padding: 25px 0 25px 30px;
+  }
+  main .page_nation {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .page_nation .first_btn {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+  }
+  main .page_nation .first_btn img {
+    position: relative;
+    top: -2px;
+  }
+  main .page_nation .prev_btn {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-left: 0;
+  }
+  main .page_nation .prev_btn img {
+    position: relative;
+    top: -2px;
+  }
+  main .page_nation .page {
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-left: 0;
+  }
+  main .page_nation .next_btn {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-left: 0;
+  }
+  main .page_nation .next_btn img {
+    position: relative;
+    top: -2px;
+  }
+  main .page_nation .last_btn {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-left: 0;
+  }
+  main .page_nation .last_btn img {
+    position: relative;
+    top: -2px;
+  }
+}
+@media screen and (max-width: 870px) {
+  main {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+  main .title {
+    padding-left: 30px;
+    padding-top: 26px;
+  }
+  main .title h2 {
+    font-size: 1.625rem;
+    font-weight: 500;
+  }
+  main .container {
+    padding: 30px 29px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  main .container .item {
+    margin-bottom: 30px;
+    margin-right: 15px;
+    border: 1px solid #f4f4f4;
+  }
+  main .container .item .img {
+    width: 280px;
+  }
+  main .container .item .img img {
+    width: 100%;
+    height: 100%;
+  }
+  main .container .item .txt {
+    font-size: 1.25rem;
+    padding: 25px 0 25px 30px;
+  }
+  main .page_nation {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .page_nation .first_btn {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+  }
+  main .page_nation .first_btn img {
+    position: relative;
+    top: -2px;
+  }
+  main .page_nation .prev_btn {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-left: 0;
+  }
+  main .page_nation .prev_btn img {
+    position: relative;
+    top: -2px;
+  }
+  main .page_nation .page {
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-left: 0;
+  }
+  main .page_nation .next_btn {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-left: 0;
+  }
+  main .page_nation .next_btn img {
+    position: relative;
+    top: -2px;
+  }
+  main .page_nation .last_btn {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-left: 0;
+  }
+  main .page_nation .last_btn img {
+    position: relative;
+    top: -2px;
+  }
+}
+@media screen and (max-width: 670px) {
+  main {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+  main .title {
+    padding-left: 30px;
+    padding-top: 26px;
+  }
+  main .title h2 {
+    font-size: 1.625rem;
+    font-weight: 500;
+  }
+  main .container {
+    padding: 30px 29px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  main .container .item {
+    margin-bottom: 30px;
+    margin-right: 15px;
+    border: 1px solid #f4f4f4;
+  }
+  main .container .item .img {
+    width: 230px;
+  }
+  main .container .item .img img {
+    width: 100%;
+    height: 100%;
+  }
+  main .container .item .txt {
+    font-size: 1rem;
+    padding: 25px 0 25px 18px;
+  }
+  main .page_nation {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .page_nation .first_btn {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+  }
+  main .page_nation .first_btn img {
+    position: relative;
+    top: -2px;
+  }
+  main .page_nation .prev_btn {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-left: 0;
+  }
+  main .page_nation .prev_btn img {
+    position: relative;
+    top: -2px;
+  }
+  main .page_nation .page {
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-left: 0;
+  }
+  main .page_nation .next_btn {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-left: 0;
+  }
+  main .page_nation .next_btn img {
+    position: relative;
+    top: -2px;
+  }
+  main .page_nation .last_btn {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+    border-left: 0;
+  }
+  main .page_nation .last_btn img {
+    position: relative;
+    top: -2px;
+  }
+}/*# sourceMappingURL=recipe.css.map */

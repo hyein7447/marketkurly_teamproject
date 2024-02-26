@@ -11,20 +11,21 @@ const completion_btn = document.querySelector('#completion_btn')
 const submit_bg = document.querySelector('.submit_bg')
 const ok = document.querySelector('#ok')
 let date_top_a = document.querySelector('.date_top > a')
-console.log(agree,completion_btn)
+console.log(agree,completion_btn,menu_c)
 
 
 // 마이컬리 탭 클릭시 내용 출력
 
 // 위시리스트 클릭 시 초기 값 설정
-for(let m of menu_c){m.style.display='none'}
+const hide = ()=>{for(let m of menu_c){m.style.display='none'}}
+hide()
 menu_c[3].style.display = 'block'
 my_kurly_menu_c[3].classList.add('menu_tab')
 
 // 메뉴탭 클릭시 내용출력, active 적용
 my_kurly_menu.forEach((t,i)=>{
     t.addEventListener('click',(e)=>{
-        for(let m of menu_c){m.style.display='none'}
+        hide()
         menu_c[i].style.display = 'block'
         
         // 메뉴탭 클릭시 active
@@ -355,17 +356,39 @@ ok.addEventListener('click',()=>{
 const user_cash = document.querySelector('.user_cash')
 const user_coupon = document.querySelector('.user_coupon')
 const user_style = document.querySelector('.user_style')
+console.log(user_cash,user_coupon,user_style)
 
 
 user_cash.addEventListener('click',()=>{
-    window.location.href = 'whish.html?kurly_cash=true'
+    window.location.href = 'wish.html?kurly_cash=true'
 })
 user_coupon.addEventListener('click',()=>{
-    window.location.href = 'whish.html?coupon_list=true'
+    window.location.href = 'wish.html?coupon_list=true'
 })
 user_style.addEventListener('click',()=>{
-    window.location.href = 'whish.html?kurly_style=true'
+    window.location.href = 'wish.html?kurly_style=true'
 })
+
+const kurly_cash_start =()=>{
+    hide()
+    menu_c[8].style.display='block'
+    my_kurly_menu_c[3].classList.remove('menu_tab')
+    my_kurly_menu_c[8].classList.add('menu_tab')
+}
+
+const coupon_list_start = ()=>{
+    hide()
+    menu_c[9].style.display='block'
+    my_kurly_menu_c[3].classList.remove('menu_tab')
+    my_kurly_menu_c[9].classList.add('menu_tab')
+}
+
+const kurly_style_start = ()=>{
+    hide()
+    menu_c[10].style.display='block'
+    my_kurly_menu_c[3].classList.remove('menu_tab')
+    my_kurly_menu_c[10].classList.add('menu_tab')
+}
 
 
 window.onload = ()=>{
@@ -374,31 +397,13 @@ window.onload = ()=>{
     const urlcoupon_list = urlParams.get('coupon_list')
     const urlkurly_style = urlParams.get('kurly_style')
 
-    if(urlkurly_cash == 'kurly_cash'){ 
-        kurly_cash_start() 
+    if(urlkurly_cash){ 
+        kurly_cash_start()
     }
-    if(urlcoupon_list == 'coupon_list'){ 
+    if(urlcoupon_list){ 
         coupon_list_start() 
     }
-    if(urlkurly_style == 'kurly_style'){ 
+    if(urlkurly_style){ 
         kurly_style_start() 
     }
-}
-
-const kurly_cash_start =()=>{
-    for(let m of menu_c){m.style.display='none'}
-    menu_c[8].stlye.display='block'
-    my_kurly_menu_c[8].classList.add('menu_tab')
-}
-
-const coupon_list_start = ()=>{
-    for(let m of menu_c){m.style.display='none'}
-    menu_c[9].stlye.display='block'
-    my_kurly_menu_c[9].classList.add('menu_tab')
-}
-
-const kurly_style_start = ()=>{
-    for(let m of menu_c){m.style.display='none'}
-    menu_c[10].stlye.display='block'
-    my_kurly_menu_c[10].classList.add('menu_tab')
 }
