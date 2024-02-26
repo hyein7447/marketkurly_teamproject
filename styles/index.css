@@ -634,7 +634,7 @@ main .instagram .more a {font-weight: 500;}
 /* 사이드 메뉴 샛별배송 & 최근 본 상품  */
 .aside_bg {}
 .aside_bg .aside {
-    width: 80px; position: absolute; top: 500px; right: 40px; 
+    width: 80px; position: absolute; top: 500px; right: 40px; z-index: 999;
 }
 .aside_bg .aside .delivery {
     margin-bottom: 7px;
