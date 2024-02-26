@@ -297,13 +297,16 @@
                     </div>
                 </div>
                 <div class="user_message choice_list display_none">
-                    <p>js용</p>
+                    <!-- <p>안녕하세요 질문 있습니다.</p> -->
+                </div>
+                <div class="qa_brand band_message display_none"><!--질문 선택 후(브랜드)-->
+                    <p></p>
                 </div>
                 <div class="choice_consultant_list"><!--상담원 연결 입력창-->
                     <div class="message_input">
                         <input type="text" placeholder="메세지를 입력해주세요." id="text_area" autocomplete="off">
                         <a href="#"><i class="fa-regular fa-face-smile"></i></a>
-                        <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+                        <a href="#"><!-- <i class="fa-solid fa-paperclip"></i> --><i class="fa-regular fa-circle-up"></i></a>
                     </div>
                 </div>
             </div>

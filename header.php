@@ -17,12 +17,12 @@
 <body>
     <header>
         <div class="user_page">
-            <a href="#" class="join">회원가입</a>
-            <a href="#" class="login">로그인</a>
+            <a href="./join.html" class="join">회원가입</a>
+            <a href="./login.html" class="login">로그인</a>
             <div class="cs_bg">
                 <a href="#" class="cs">고객센터<img src="./images/main/icon/icon_down_16x10.png" alt="고객센터오픈"></a>
                 <div class="cs_open"> <!-- 마우스오버 js -->
-                    <a href="#">공지사항</a>
+                    <a href="./notice.html">공지사항</a>
                     <a href="#">자주하는 질문</a>
                     <a href="#">1:1 문의</a>
                     <a href="#">대량주문 문의</a>
@@ -592,7 +592,7 @@
                 <a href="./index.html"><img src="./images/main/icon/icon_home.svg" alt="홈으로가기"></a>
                 <a href="#" class="cate"><img src="./images/main/icon/icon_menu.svg" alt="카테고리 열기"></a>
                 <a href="#"><img src="./images/main/icon/icon_search.svg" alt="검색하기"></a>
-                <a href="#"><img src="./images/main/icon/icon_user.svg" alt="마이페이지"></a>
+                <a href="./login.html"><img src="./images/main/icon/icon_user.svg" alt="마이페이지"></a>
             </div>
             <div class="m_nav">
                 <div class="gnb_bg"> <!-- 마우스 오버시 출력 JS -->
