@@ -162,13 +162,13 @@ main .bottom_option .bottom_wrap .bottom_purchase .wish_notify_cart_btn {
   margin: 20px 0 60px;
   gap: 8px;
 }
-main .bottom_option .bottom_wrap .bottom_purchase .wish_notify_cart_btn .wish, main .bottom_option .bottom_wrap .bottom_purchase .wish_notify_cart_btn .alarm {
+main .bottom_option .bottom_wrap .bottom_purchase .wish_notify_cart_btn .wish_btn, main .bottom_option .bottom_wrap .bottom_purchase .wish_notify_cart_btn .alarm {
   width: 56px;
   padding: 12px 0 7px;
   border: 1px solid #ddd;
   border-radius: 3px;
 }
-main .bottom_option .bottom_wrap .bottom_purchase .wish_notify_cart_btn .wish img, main .bottom_option .bottom_wrap .bottom_purchase .wish_notify_cart_btn .alarm img {
+main .bottom_option .bottom_wrap .bottom_purchase .wish_notify_cart_btn .wish_btn img, main .bottom_option .bottom_wrap .bottom_purchase .wish_notify_cart_btn .alarm img {
   width: 32px;
 }
 main .bottom_option .bottom_wrap .bottom_purchase .wish_notify_cart_btn .cart {
@@ -458,13 +458,13 @@ main .product_container .img_information .information .purchase .wish_notify_car
   margin: 25px 0 75px;
   gap: 10px;
 }
-main .product_container .img_information .information .purchase .wish_notify_cart_btn .wish, main .product_container .img_information .information .purchase .wish_notify_cart_btn .alarm {
+main .product_container .img_information .information .purchase .wish_notify_cart_btn .wish_btn, main .product_container .img_information .information .purchase .wish_notify_cart_btn .alarm {
   width: 10%;
   padding: 15px 0 8.75px;
   border: 1px solid #ddd;
   border-radius: 3px;
 }
-main .product_container .img_information .information .purchase .wish_notify_cart_btn .wish img, main .product_container .img_information .information .purchase .wish_notify_cart_btn .alarm img {
+main .product_container .img_information .information .purchase .wish_notify_cart_btn .wish_btn img, main .product_container .img_information .information .purchase .wish_notify_cart_btn .alarm img {
   width: 48%;
 }
 main .product_container .img_information .information .purchase .wish_notify_cart_btn .cart {
