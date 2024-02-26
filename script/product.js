@@ -137,11 +137,14 @@ for (let i of select_opt) {
 // -------------- wish btn 클릭 시 활성화
 
 function onOff_v2(target, name, status){
-    return target.children[0].src = `./images/${name}_${status}.png`
+    return target.children[0].src = `./images/main/icon/icon_${name}_${status}.svg`
 }
 
-wish_btn[1].addEventListener('click',()=>{
-
+wish_btn[1].addEventListener('click',function(){
+    let currentSrc = this.children[0].src;
+    let status = currentSrc.includes('_on2.svg') ? 'off' : 'on2';
+    let name = 'wish';
+    this.children[0].src = `./images/main/icon/icon_${name}_${status}.svg`;
 })
 
 // -------- nav 클릭 시 해당 영역으로 이동
