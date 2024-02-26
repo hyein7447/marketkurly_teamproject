@@ -4,7 +4,7 @@ const option_btn = purchase.querySelector('.option_btn'); // 옵션 선택 버�
 const option = purchase.querySelector('.option'); // 옵션 선택 영역
 const select_opt = option.querySelectorAll('.select_opt'); // 옵션
 const select_wrap = document.querySelector('.select_wrap'); // 선택한 아이템 담는 부모
-const wish = document.querySelectorAll('.wish') // 위시 버튼
+const wish_btn = document.querySelectorAll('.wish_btn') // 위시 버튼
 const product_page_nav_a = document.querySelectorAll('.product_page_nav > li > a') // nav
 const section = document.querySelectorAll('.product_container > section') // 클릭 시 이동하는 영역
 const nav = document.querySelector('.product_page_nav'); // nav 부모
@@ -32,7 +32,7 @@ const total = document.querySelector('.total > em') // 총액
 const filter_box_opt = document.querySelectorAll('.filter_box_contents > ul > li > input[name="opt_chk"]') // 옵션 필터 input
 const rating_chk_opt = document.querySelectorAll('.filter_box_contents > ul > li > input[name="rating_chk"]') // 등급 필터 input
 const reset_btn = document.querySelectorAll('.reset_btn') // 초기화 버튼
-
+console.log(wish_btn)
 
 // --------------- 상단 상품선택 option 선택 시 선택한 옵션 나타나기
 
@@ -136,15 +136,15 @@ for (let i of select_opt) {
 
 // -------------- wish btn 클릭 시 활성화
 
-function on_off(name, status){
-    return `./images/main/icon/icon_${name}_${status}.svg`
+function onOff_v2(target, name, status){
+    return target.children[0].src = `./images/main/icon/icon_${name}_${status}.svg`
 }
 
-wish[1].addEventListener('click',function(){
-    const current_src = this.children[0].src;
-    const off_src = on_off('wish', 'off');
-    const off = current_src.includes('icon_wish_off.svg');
-    this.children[0].src = off ? on_off('wish', 'on2') : off_src;
+wish_btn[1].addEventListener('click',function(){
+    let currentSrc = this.children[0].src;
+    let status = currentSrc.includes('_on2.svg') ? 'off' : 'on2';
+    let name = 'wish';
+    this.children[0].src = `./images/main/icon/icon_${name}_${status}.svg`;
 })
 
 // -------- nav 클릭 시 해당 영역으로 이동
