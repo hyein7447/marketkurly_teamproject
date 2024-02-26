@@ -31,7 +31,7 @@
                         <p><em>배송지를 등록</em>하고<br>
                         구매 가능한 상품을 확인하세요!</p>
                         <div class="map_btn">
-                            <button type="button" id="map_login_btn">로그인</button>
+                            <a href="./login.html" id="map_login_btn">로그인</a>
                             <div class="address_btn">
                                 <input type="button" onclick="exec_daum_postcode()" value="      주소검색" class="map_search_btn">
                                 <img src="./images/main/icon/map_search_btn.png" alt="주소찾기">
