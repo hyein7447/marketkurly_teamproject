@@ -22,17 +22,12 @@ board_list_a.forEach((t, i)=>{
     })
 })
 
-window.onload = ()=>{
-    const urlParams = new URLSearchParams(window.location.search);
-    const urlNotice = urlParams.get('faq') ? 'faq' : 'inquiry'
-    console.log(urlNotice)
-    if(urlNotice == 'faq'){ 
-        faq_start() 
-    }else{
-        inquiry_start()
-    }
+const notice_start =()=>{
+    hide()
+    title_hide()
+    sections[0].style.display = 'block'
+    board_list_a[0].classList.add('active')
 }
-
 const faq_start =()=>{
     hide()
     title_hide()
@@ -46,6 +41,16 @@ const inquiry_start = ()=>{
     board_list_a[2].classList.add('active')
 }
 
+window.onload = ()=>{
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlNotice = urlParams.get('notice')
+    const urlFaq = urlParams.get('faq')
+    const urlInquiry = urlParams.get('inquiry')
+    console.log(urlNotice)
+    if(urlNotice == 'notice'){faq_start()}
+    if(urlFaq == 'faq'){faq_start()}
+    if(urlInquiry == 'inquiry'){inquiry_start()}
+}  
 
 // -------- mouseover 시 활성화
 for (let t of board_list_a) {
