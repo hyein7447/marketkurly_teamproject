@@ -150,18 +150,18 @@ const rightOffsetTop = skicky_base_line.offsetTop;
 
 // 어사이드 sticky offsetTop
 
-// cate_skicky.style.top = `0px`;
+cate_skicky.style.top = '0px';
 window.addEventListener('scroll',()=>{
     const scrollTop = window.pageYOffset;
     // right 요소의 상단 좌표가 window 상단 좌표보다 높으면
     if (scrollTop < rightOffsetTop) {
         // left 요소에 sticky 스타일 제거
-        cate_skicky.classList.remove('sticky');
         cate_skicky.style.top = `0px`;
+        cate_skicky.classList.remove('sticky');
         // cate_skicky.style.position = 'sticky';
-    }else if (scrollTop < 100) {
-        cate_skicky.classList.remove('sticky');
+    }else if (scrollTop < 400) {
         cate_skicky.style.top = `0px`;
+        cate_skicky.classList.remove('sticky');
     } 
     else {
         // left 요소에 sticky 스타일 적용

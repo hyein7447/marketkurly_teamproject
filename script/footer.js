@@ -341,3 +341,12 @@ function addMessage(target, contents){ //매개변수로 해야함-> (누가대�
     messageElement.innerHTML = `${target} :  ${contents}` //(누가대답할지, 내용)을 출력되게 innerHTML로 적용
     user_message.appendChild(messageElement) //div의 마지막 자식으로 메세지를 출력하라
 }
+
+// 대량주문 링크 클릭 시 이동
+
+const link_great_deal = document.querySelector('.great_deal')
+const btn_bulk_order = document.querySelector('.bulk_order')
+
+btn_bulk_order.addEventListener('click',()=>{
+    window.location.href = 'notice.html?great_deal=true'
+})

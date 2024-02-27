@@ -769,6 +769,15 @@ footer .f_container .left .con2 .kakao button, footer .f_container .left .con2 .
   margin: 2px 16px 16px 0;
   font-size: 1rem;
 }
+footer .f_container .left .con2 .kakao .btn_kakao, footer .f_container .left .con2 .question .btn_kakao, footer .f_container .left .con2 .bulk_order .btn_kakao {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  margin: 2px 16px 16px 0;
+  font-size: 1rem;
+}
 footer .f_container .left .con2 .kakao span, footer .f_container .left .con2 .question span, footer .f_container .left .con2 .bulk_order span {
   padding-top: 5px;
   display: block;

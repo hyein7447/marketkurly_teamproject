@@ -50,12 +50,19 @@ const inquiry_start = ()=>{
     sections[2].style.display = 'block'
     board_list_a[2].classList.add('active')
 }
+const great_deal_start = ()=>{
+    hide()
+    title_hide()
+    sections[3].style.display = 'block'
+    board_list_a[3].classList.add('active')
+}
 
 window.onload = ()=>{
     const urlParams = new URLSearchParams(window.location.search);
     const urlNotice = urlParams.get('notice')
     const urlFaq = urlParams.get('faq')
     const urlInquiry = urlParams.get('inquiry')
+    const urlGreatDeal = urlParams.get('great_deal')
 
     if(urlNotice === 'true'){
         notice_start()
@@ -65,6 +72,9 @@ window.onload = ()=>{
     }
     if(urlInquiry === 'true'){
         inquiry_start()
+    }
+    if(urlGreatDeal === 'true'){
+        great_deal_start()
     }
 }
 
