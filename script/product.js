@@ -476,3 +476,21 @@ inquiry_link.addEventListener('click',()=>{
 inquiry_btn.addEventListener('click',()=>{
     window.location.href = 'notice.html?inquiry=true'
 })
+
+// 공유 클릭 시 팝업
+
+const pc_icon_share = document.querySelector('.pc_icon_share')
+const share_container = document.querySelector('.share_container')
+
+// 토글 버튼 클릭 이벤트 처리
+pc_icon_share.addEventListener('click', function() {
+    // 토글할 요소의 현재 display 상태 확인
+    const share_container_status = share_container.style.display;
+
+    // display 상태에 따라 표시/숨김 토글
+    if (share_container_status === 'none') {
+        share_container.style.display = 'block';
+    } else {
+        share_container.style.display = 'none';
+    }
+});
