@@ -209,9 +209,54 @@ main .product_container .img_information .information .title_share {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 main .product_container .img_information .information .title_share h1 {
   font-size: 1.625rem;
+  font-weight: 500;
+}
+main .product_container .img_information .information .title_share .share_container {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 40%;
+  right: 0;
+  top: 55px;
+  padding: 20px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.15);
+}
+main .product_container .img_information .information .title_share .share_container .share_top {
+  display: flex;
+  flex-flow: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+main .product_container .img_information .information .title_share .share_container .share_top a {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+main .product_container .img_information .information .title_share .share_container .share_top a img {
+  width: 30px;
+  margin-right: 10px;
+}
+main .product_container .img_information .information .title_share .share_container .share_btm {
+  display: flex;
+}
+main .product_container .img_information .information .title_share .share_container .share_btm span {
+  width: 65%;
+  overflow-x: hidden;
+  font-size: 0.75rem;
+  padding: 5px;
+  background-color: #f1f1f1;
+}
+main .product_container .img_information .information .title_share .share_container .share_btm a {
+  text-align: center;
+  width: 35%;
+  border: 1px solid #5F0080;
+  font-size: 0.75rem;
+  color: #5F0080;
+  padding: 5px 10px;
   font-weight: 500;
 }
 main .product_container .img_information .information .additional {
@@ -482,6 +527,8 @@ main .product_container .product_page_nav {
   max-width: 1190px;
   width: 96%;
   z-index: 1000;
+  position: sticky;
+  top: 53px;
 }
 main .product_container .product_page_nav li {
   width: 25%;
@@ -1172,6 +1219,129 @@ main .product_container .review .review_photo_more .photo_more_container .photo_
 }
 main .product_container .review .review_photo_more .photo_more_container .photo_more_btm img {
   width: 16%;
+}
+main .product_container .review .photo_review {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: none;
+}
+main .product_container .review .photo_review .photo_reviewcontainer {
+  position: relative;
+  top: 10%;
+  margin: 0 auto;
+  width: 62.5%;
+  width: 45%;
+  background-color: #fff;
+  padding: 37.5px;
+  border-radius: 12px;
+  height: -moz-max-content;
+  height: max-content;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(244, 244, 244);
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_top h3 {
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 37.5px;
+  letter-spacing: -0.5px;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_top p #photo_review_btn {
+  width: 40px;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_top p #photo_review_btn img {
+  width: 100%;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_btm {
+  display: flex;
+  text-align: left;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_btm .left_img {
+  text-align: left;
+  margin-right: 20px;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_btm .left_img .big_img img {
+  width: 100%;
+  border-radius: 5px;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_btm .left_img .small_img img {
+  width: 15%;
+  border-radius: 3px;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_btm .right_review .user {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_btm .right_review .user .best_icon, main .product_container .review .photo_review .photo_reviewcontainer .photo_review_btm .right_review .user .rating_icon_m {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 3.75px 6.25px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 12.5px;
+  color: #fff;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_btm .right_review .user .best_icon {
+  background-color: #a864d8;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_btm .right_review .user .rating_icon_m {
+  background-color: #4dbed7;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_btm .right_review p {
+  font-size: 0.875rem;
+  line-height: 18px;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_btm .right_review .selected_option {
+  color: #999;
+  font-size: 0.75rem;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_btm .right_review .date_helpfull_btn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23.75px 25px 0 0;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_btm .right_review .date_helpfull_btn p .helpful_btn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  color: #999;
+  padding: 0 13px;
+  line-height: 25px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  height: 30px;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_btm .right_review .date_helpfull_btn p .helpful_btn img {
+  width: 15px;
+  margin-right: 5px;
+}
+main .product_container .review .photo_review .photo_reviewcontainer .photo_review_btm .right_review .date_helpfull_btn .review_date {
+  color: #999;
+  margin-bottom: 0;
+  line-height: 23.75px;
 }
 main .product_container .review .review_sorting {
   display: flex;

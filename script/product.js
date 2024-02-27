@@ -157,9 +157,9 @@ product_page_nav_a.forEach((t,i) => {
     })
 })
 
-// ------- nav 상단 고정 fixed
+// ------- nav 상단 고정 fixed -> 삭제
 
-window.addEventListener('scroll', () => {
+/* window.addEventListener('scroll', () => {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
     // 스크롤 위치가 navi의 원래 위치를 넘어서면 navi를 fixed로 설정
@@ -170,7 +170,7 @@ window.addEventListener('scroll', () => {
         // 아니면 처음 위치에 고정
         nav.style.position = 'static';
     }
-});
+}); */
 
 // ---------- 상품고시정보 선택한 옵션 클릭 시 활성화
 
@@ -224,6 +224,27 @@ review_photo_more_btn.addEventListener('click', (e) => {
 });
 photo_more_close.addEventListener('click',()=>{
     review_photo_more.style.display = 'none'
+})
+
+// ---------- 사진 리뷰 클릭 시 리뷰 창 나오기
+const review_photo_list_a = document.querySelectorAll('.review_photos')
+const photo_review = document.querySelector('.photo_review')
+const photo_review_close = document.querySelector('#photo_review_btn')
+const review_img_wrap_a = document.querySelectorAll('.review_img_wrap > a')
+
+
+for(let a of review_photo_list_a){
+    a.addEventListener('click',()=>{
+        photo_review.style.display = 'block'
+    })
+}
+for(let a of review_img_wrap_a){
+    a.addEventListener('click',()=>{
+        photo_review.style.display = 'block'
+    })
+}
+photo_review_close.addEventListener('click',()=>{
+    photo_review.style.display = 'none'
 })
 
 // -------- 리뷰 옵션 클릭 시 보이기
@@ -440,3 +461,36 @@ max820.addListener((mediaQueryList) => {
 if(max1280.matches){
     img_information.style.display = 'flex'
 }
+
+// 1:1 문의 클릭 시 이동
+
+const inquiry_link = document.querySelector('.inquiry_link')
+const inquiry_btn = document.querySelector('#inquiry_btn')
+
+console.log(inquiry_link)
+console.log(inquiry_btn)
+
+inquiry_link.addEventListener('click',()=>{
+    window.location.href = 'notice.html?inquiry=true'
+})
+inquiry_btn.addEventListener('click',()=>{
+    window.location.href = 'notice.html?inquiry=true'
+})
+
+// 공유 클릭 시 팝업
+
+const pc_icon_share = document.querySelector('.pc_icon_share')
+const share_container = document.querySelector('.share_container')
+
+// 토글 버튼 클릭 이벤트 처리
+pc_icon_share.addEventListener('click', function() {
+    // 토글할 요소의 현재 display 상태 확인
+    const share_container_status = share_container.style.display;
+
+    // display 상태에 따라 표시/숨김 토글
+    if (share_container_status === 'none') {
+        share_container.style.display = 'block';
+    } else {
+        share_container.style.display = 'none';
+    }
+});

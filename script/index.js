@@ -175,6 +175,8 @@ let p_num = 0;
 let pop_total = 0;
 let total
 let price = 8268;
+
+
 // 증가
 plus_btn.addEventListener('click',()=>{
     if(p_num < 20){
