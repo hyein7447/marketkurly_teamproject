@@ -85,7 +85,7 @@
             // display: none;
             -ms-overflow-style: none;
             scrollbar-width: none;
-            .list1 {
+            .list_1 {
                 padding: 15px;
                 background-color: #f4f4f4;
                 border-radius: 20px;
@@ -139,7 +139,7 @@
                     font-weight: 500;
                 }
             }
-            .list2 {
+            .list_2 {
                 @include flex-row-btw-ct;
                 padding: 8px 15px;
                 background-color: #f4f4f4;
@@ -158,7 +158,7 @@
                     }
                 }
             }
-            .list3 {
+            .list_3 {
                 text-align: center;
                 padding: 15px 0;
                 color:#fff;
@@ -1023,7 +1023,7 @@ footer {
                 span {font-size: $px13;}
             }
             .contact {
-                .list1 {
+                .list_1 {
                     .basic_chat{
                         .profile {
                             span {
@@ -1037,12 +1037,12 @@ footer {
                         span {font-size: $px11;}
                     }
                 }
-                .list2 {
+                .list_2 {
                     padding: 4px 15px;
                     border-radius: 16px;
                     p {font-size: $px11;}
                 }
-                .list3 {
+                .list_3 {
                     [class$=dot]{
                         font-size: $px11;
                     }
@@ -1245,8 +1245,8 @@ footer {
             padding: 10px 16px 10px;
             display: grid;
             grid-template-areas: 
-                'list1 list2'
-                'list3 list4'
+                'list_1 list_2'
+                'list_3 list_4'
             ;
             justify-content: start;
             .isms , .eprivacy , .payments, .wooribank  {

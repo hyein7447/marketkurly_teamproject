@@ -638,6 +638,7 @@ const slide_brand_atoz_box = document.querySelector('.tab_slide > .area > .list 
 const slide_brand_atoz = document.querySelectorAll('.tab_slide > .area > .list > .atoz_btn > a')
 const slide_brand_list = document.querySelectorAll('.tab_slide > .area > .list > .list_box > .box1 > ul')
 const slide_brand_list_all = document.querySelector('.tab_slide > .area > .list > .list_box > .box2 > ul')
+const slide_li_chk_brand = document.querySelectorAll('.area > .list > .list_box > .box_tab > .contents > li > .btn_chk')//브랜드
 const slide_btn_view = document.querySelector('.tab_slide > .area > .btn_wrap > .btn_view') 
 const product_m = document.querySelectorAll('.best_mobile > .product_box > .product')
 const slide_cart = document.querySelector('.tab_cart')
@@ -843,7 +844,7 @@ for (let i of slide_li_chk_brand) {
 }
 /* ---------------------- 구분선 -------------------------- */         
 // 슬라이드의 카테고리 클릭시 하단 탭 변경 + 카테고리 글씨 보라색으로 활성화
-let list_hide = ()=>{for(let a of slide_tab_list){a.style.display = 'none';}}
+let list_hide = ()=>{for(let a of slide_tab_list){a.style.display = 'none'}}
 slide_tab_list_t[0].classList.add('list_title_active')
 slide_tab_list[0].style.display = 'block';
 
@@ -972,4 +973,81 @@ document.querySelectorAll('a').forEach(link => {
         }
     });
 });
-/* ---------------------- 구분선 -------------------------- */  
+/* ---------------------- 구분선 -------------------------- */ 
+// const cate_pop_btn_reset = cate_pop.querySelector('.btn_wrap > .btn_reset ')//pc카테
+const brand_pop_btn_reset = brand_pop.querySelector('.btn_wrap > .btn_reset ') //pc브랜드
+const slide_btn_reset = tab_slide.querySelector('.btn_wrap > .btn_reset ') //모바일
+//  ★★  초기화 버튼 활성화 리스트 ★★
+// 데스크탑 - 카테고리 팝업
+cate_pop_a.forEach((t)=>{ //
+    t.addEventListener('click',()=>{
+        cate_pop_btn_reset.classList.add('reset_active')
+        cate_pop_btn_reset.addEventListener('click',()=>{ 
+            //오른쪽 박스 숨기기
+            cate_pop_btn_reset.classList.remove('reset_active')
+            // 카테고리 어사이드 메뉴 클릭시 체크이미지 회색으로 변경
+            t.children[0].src = './images/sub/icon_check_off.svg';
+        });
+    })
+})
+
+// 데스크탑 - 브랜드 팝업
+console.log(brand_pop_a,brand_pop_btn_reset)
+brand_pop_a.forEach((t)=>{ //가나다순
+    t.addEventListener('click',()=>{
+        brand_pop_btn_reset.classList.add('reset_active')
+        brand_pop_btn_reset.addEventListener('click',()=>{ 
+            //오른쪽 박스 숨기기
+            brand_pop_btn_reset.classList.remove('reset_active')
+            // 카테고리 어사이드 메뉴 클릭시 체크이미지 회색으로 변경
+            t.children[0].src = './images/sub/icon_check_off.svg';
+        });
+    })
+})
+
+brand_pop_all_a.forEach((t)=>{ //상품많은순
+    t.addEventListener('click',()=>{
+        brand_pop_btn_reset.classList.add('reset_active')
+        brand_pop_btn_reset.addEventListener('click',()=>{ 
+            //오른쪽 박스 숨기기
+            brand_pop_btn_reset.classList.remove('reset_active')
+            // 카테고리 어사이드 메뉴 클릭시 체크이미지 회색으로 변경
+            t.children[0].src = './images/sub/icon_check_off.svg';
+        });
+    })
+})
+
+// 모바일
+slide_li_chk.forEach((t)=>{ //체크박스 chk
+    t.addEventListener('click',()=>{
+        slide_btn_reset.classList.add('reset_active')
+        slide_btn_reset.addEventListener('click',()=>{ 
+            //오른쪽 박스 숨기기
+            slide_btn_reset.classList.remove('reset_active')
+            // 카테고리 어사이드 메뉴 클릭시 체크이미지 회색으로 변경
+            t.children[0].src = './images/sub/icon_check_off.svg';
+        });
+    })
+})
+slide_li_cir.forEach((t)=>{ //서클 cir
+    t.addEventListener('click',()=>{
+        slide_btn_reset.classList.add('reset_active')
+        slide_btn_reset.addEventListener('click',()=>{ 
+            //오른쪽 박스 숨기기
+            slide_btn_reset.classList.remove('reset_active')
+            // 카테고리 어사이드 메뉴 클릭시 체크이미지 회색으로 변경
+            t.children[0].src = './images/sub/icon_check_off.svg';
+        });
+    })
+})
+slide_li_chk_brand.forEach((t)=>{ //브랜드 
+    t.addEventListener('click',()=>{
+        slide_btn_reset.classList.add('reset_active')
+        slide_btn_reset.addEventListener('click',()=>{ 
+            //오른쪽 박스 숨기기
+            slide_btn_reset.classList.remove('reset_active')
+            // 카테고리 어사이드 메뉴 클릭시 체크이미지 회색으로 변경
+            t.children[0].src = './images/sub/icon_check_off.svg';
+        });
+    })
+})

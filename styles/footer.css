@@ -82,37 +82,37 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.chatbot_sub .home .contact .list1 {
+.chatbot_sub .home .contact .list_1 {
   padding: 15px;
   background-color: #f4f4f4;
   border-radius: 20px;
 }
-.chatbot_sub .home .contact .list1 .basic_chat .profile {
+.chatbot_sub .home .contact .list_1 .basic_chat .profile {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
 }
-.chatbot_sub .home .contact .list1 .basic_chat .profile img {
+.chatbot_sub .home .contact .list_1 .basic_chat .profile img {
   width: 34px;
   border-radius: 50%;
   margin-right: 8px;
 }
-.chatbot_sub .home .contact .list1 .basic_chat .profile span span:first-child {
+.chatbot_sub .home .contact .list_1 .basic_chat .profile span span:first-child {
   display: block;
   font-weight: 800;
   font-size: 0.875rem;
   margin-bottom: 4px;
 }
-.chatbot_sub .home .contact .list1 .basic_chat .profile span span:nth-child(2) {
+.chatbot_sub .home .contact .list_1 .basic_chat .profile span span:nth-child(2) {
   font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: -0.04rem;
 }
-.chatbot_sub .home .contact .list1 .btn_inquire:hover {
+.chatbot_sub .home .contact .list_1 .btn_inquire:hover {
   background-color: rgba(52, 0, 59, 0.97);
   transition: 0.4s ease;
 }
-.chatbot_sub .home .contact .list1 .btn_inquire {
+.chatbot_sub .home .contact .list_1 .btn_inquire {
   display: block;
   width: 100%;
   text-align: center;
@@ -123,18 +123,18 @@
   font-size: 1rem;
   margin: 20px 0 7px;
 }
-.chatbot_sub .home .contact .list1 .btn_inquire span {
+.chatbot_sub .home .contact .list_1 .btn_inquire span {
   color: #fff;
   font-size: 0.938rem;
   margin-right: 5px;
   font-weight: 600;
 }
-.chatbot_sub .home .contact .list1 p {
+.chatbot_sub .home .contact .list_1 p {
   text-align: center;
   font-size: 0.75rem;
   font-weight: 500;
 }
-.chatbot_sub .home .contact .list2 {
+.chatbot_sub .home .contact .list_2 {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -144,23 +144,23 @@
   border-radius: 20px;
   margin-top: 10px;
 }
-.chatbot_sub .home .contact .list2 p {
+.chatbot_sub .home .contact .list_2 p {
   font-size: 0.938rem;
   font-weight: 500;
 }
-.chatbot_sub .home .contact .list2 .chat_icon a img {
+.chatbot_sub .home .contact .list_2 .chat_icon a img {
   width: 30px;
   border-radius: 10px;
 }
-.chatbot_sub .home .contact .list3 {
+.chatbot_sub .home .contact .list_3 {
   text-align: center;
   padding: 15px 0;
   color: #fff;
 }
-.chatbot_sub .home .contact .list3 [class$=dots] {
+.chatbot_sub .home .contact .list_3 [class$=dots] {
   font-size: 0.938rem;
 }
-.chatbot_sub .home .contact .list3 p {
+.chatbot_sub .home .contact .list_3 p {
   color: #fff;
   display: inline-block;
   font-size: 0.875rem;
@@ -994,27 +994,27 @@ footer address .box p:nth-child(3) {
   .chatbot_sub .home .top span {
     font-size: 0.938rem;
   }
-  .chatbot_sub .home .contact .list1 .basic_chat .profile span {
+  .chatbot_sub .home .contact .list_1 .basic_chat .profile span {
     font-size: 0.813rem;
   }
-  .chatbot_sub .home .contact .list1 .btn_inquire {
+  .chatbot_sub .home .contact .list_1 .btn_inquire {
     margin: 14px 0px 7px;
     font-size: 0.875rem;
   }
-  .chatbot_sub .home .contact .list1 .btn_inquire span {
+  .chatbot_sub .home .contact .list_1 .btn_inquire span {
     font-size: 0.813rem;
   }
-  .chatbot_sub .home .contact .list2 {
+  .chatbot_sub .home .contact .list_2 {
     padding: 4px 15px;
     border-radius: 16px;
   }
-  .chatbot_sub .home .contact .list2 p {
+  .chatbot_sub .home .contact .list_2 p {
     font-size: 0.813rem;
   }
-  .chatbot_sub .home .contact .list3 [class$=dot] {
+  .chatbot_sub .home .contact .list_3 [class$=dot] {
     font-size: 0.813rem;
   }
-  .chatbot_sub .home .contact .list3 p {
+  .chatbot_sub .home .contact .list_3 p {
     font-size: 0.75rem;
   }
   .chatbot_sub .chat .wrap .button .btn_new_q {
@@ -1177,7 +1177,7 @@ footer address .box p:nth-child(3) {
   footer .f_list {
     padding: 10px 16px 10px;
     display: grid;
-    grid-template-areas: "list1 list2" "list3 list4";
+    grid-template-areas: "list_1 list_2" "list_3 list_4";
     justify-content: start;
   }
   footer .f_list .isms, footer .f_list .eprivacy, footer .f_list .payments, footer .f_list .wooribank {

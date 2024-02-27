@@ -6,7 +6,7 @@ const chatbot_sub = document.querySelectorAll('.chatbot_sub')
 const btn_inquire = document.querySelector('.btn_inquire') //홈 -> 문의하기 버튼
 const btn_new_q = document.querySelector('.btn_new_q') //대화 -> 새 문의하기 버튼
 const btn_back = document.querySelector('i[class*=angle-left]') //채팅창 -> 뒤로가기 버튼
-const list_box_f = document.querySelector('.list1') // 홈 -> 채팅박스
+const list_box_f = document.querySelector('.list_1') // 홈 -> 채팅박스
 const setting_toggle = document.querySelectorAll('ul > li > div[class*=toggle]')
 // 개별영역
 const chat_home = document.querySelector('.home')

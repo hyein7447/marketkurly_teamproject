@@ -118,7 +118,6 @@ main .best .container .right .name_result span img {
   main .best_mobile .sub_header {
     width: 100%;
     position: sticky;
-    top: 0;
     z-index: 700;
     background-color: #fff;
     padding: 5px 5px;

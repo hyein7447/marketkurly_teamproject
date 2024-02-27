@@ -350,8 +350,9 @@ main {
         height: 100%;
         @include flex-row-ct-ct;
         .tab_box {
+            max-width:440px;
             background-color: #fff;
-            width:100%;
+            // width:100%;
             border-radius: 10px;
             margin: 0 30px;
             h2 {
@@ -367,6 +368,7 @@ main {
                     max-height: 464px;
                     padding: 0px 30px;
                     overflow-y: auto;
+                    scrollbar-width: thin;
                     strong {
                         font-weight: 500;
                         padding-top: 16px;
@@ -405,6 +407,7 @@ main {
                 text-align: left;
                 max-height: 464px;
                 overflow-y: auto;
+                scrollbar-width: thin;
                 padding: 0 30px 20px;
                 width:100%;
                 table {
@@ -416,11 +419,10 @@ main {
                         width:100%;
                         tr {
                             th:nth-child(1) {
-                                width:170px;
+                                width:180px;
                             }
-                            th:nth-child(2), th:nth-child(3) {
-                                width:86px;
-                            }
+                            th:nth-child(2){width:92px; }
+                            th:nth-child(3) { width:90px;}
                             th {
                                 font-weight: 600;
                                 font-size: $px14;
@@ -439,7 +441,7 @@ main {
                                 width:180px;
                             }
                             td:nth-child(2), td:nth-child(3) {
-                                width:90px;
+                                width:91px;
                             }
                             td {
                                 padding: 5px;

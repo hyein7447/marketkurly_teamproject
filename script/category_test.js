@@ -43,6 +43,7 @@ const cate_pop_li = cate_pop.querySelectorAll('.list_wrap > ul > li')
 const cate_pop_a = cate_pop.querySelectorAll('.list_wrap > ul > li > a')
 const cate_more_btn = ul_1.querySelector('.more_btn > a ')
 const brand_more_btn = ul_2_ul.querySelector('.more_btn > a ')
+const cate_pop_btn_reset = cate_pop.querySelector('.btn_wrap > .btn_reset ')
 const cate_pop_btn_ok = cate_pop.querySelector('.btn_wrap > .btn_ok')
 const brand_pop_btn_ok = brand_pop.querySelector('.btn_wrap > .btn_ok')
 const cate_more_x_btn = cate_pop.querySelector('.wrap_top > a')
@@ -64,7 +65,8 @@ const p_tab_price = document.querySelector('.cart_pop .total .total_result .p_ta
 const name_result = document.querySelector('.name_result') //오른쪽 상단 추가되는 컨테이너박스
 const result_list = document.querySelector('.name_result > span') //미리 준비해둔 태그 span
 const list_close = document.querySelector('.name_result > span > img') //x버튼
-const aside_li = document.querySelectorAll('.best > .container > .left > .list > ul > li:not(.more_btn)') //어사이드 li
+const aside_li = document.querySelectorAll('main > .best > .container > .left > .list1 > ul > li:not(.more_btn)') //어사이드 li
+console.log(aside_li,'=======')
 const btn_reset = document.querySelector('.container > .left > .title > p') //초기화 버튼
 
 console.log('----------------- 데스크탑 버전 -----------------')
@@ -140,38 +142,6 @@ aside_li.forEach((t)=>{ //
 })
 // 문제 1. 오른쪽 컨테이너 x클릭 시 어사이드 이미지 회색으로 변경 안됨
 // 문제 2.  x클릭시 add_list가 0이 됐을때 컨테이너 사라지기 안됨
-
-/* ---------------------- 구분선 -------------------------- */
-const cate_skicky = document.querySelector('.container > .left > .title ')
-const skicky_base_line = document.querySelector('.container > .right > #product_box ')
-
-const navHeight = 50;
-const rightOffsetTop = skicky_base_line.offsetTop;
-
-// 어사이드 sticky offsetTop
-
-// cate_skicky.style.top = `0px`;
-window.addEventListener('scroll',()=>{
-    const scrollTop = window.pageYOffset;
-    // right 요소의 상단 좌표가 window 상단 좌표보다 높으면
-    if (scrollTop < rightOffsetTop) {
-        // left 요소에 sticky 스타일 제거
-        cate_skicky.classList.remove('sticky');
-        cate_skicky.style.top = `0px`;
-        // cate_skicky.style.position = 'sticky';
-    }else if (scrollTop < 100) {
-        cate_skicky.classList.remove('sticky');
-        cate_skicky.style.top = `0px`;
-    } 
-    else {
-        // left 요소에 sticky 스타일 적용
-        cate_skicky.classList.add('sticky');
-        // cate_skicky.style.position = 'none';
-
-        // left 요소의 top 위치를 right 요소의 상단 좌표와 nav 높이 만큼 떨어뜨림
-        cate_skicky.style.top = `${rightOffsetTop}px`;
-    }
-})
 
 /* ---------------------- 구분선 -------------------------- */
 /* 
@@ -1033,80 +1003,5 @@ document.querySelectorAll('a').forEach(link => {
     });
 });
 /* ---------------------- 구분선 -------------------------- */ 
-const cate_pop_btn_reset = cate_pop.querySelector('.btn_wrap > .btn_reset ')//pc카테
-const brand_pop_btn_reset = brand_pop.querySelector('.btn_wrap > .btn_reset ') //pc브랜드
-const slide_btn_reset = tab_slide.querySelector('.btn_wrap > .btn_reset ') //모바일
-//  ★★  초기화 버튼 활성화 리스트 ★★
-// 데스크탑 - 카테고리 팝업
-cate_pop_a.forEach((t)=>{ //
-    t.addEventListener('click',()=>{
-        cate_pop_btn_reset.classList.add('reset_active')
-        cate_pop_btn_reset.addEventListener('click',()=>{ 
-            //오른쪽 박스 숨기기
-            cate_pop_btn_reset.classList.remove('reset_active')
-            // 카테고리 어사이드 메뉴 클릭시 체크이미지 회색으로 변경
-            t.children[0].src = './images/sub/icon_check_off.svg';
-        });
-    })
-})
 
-// 데스크탑 - 브랜드 팝업
-console.log(brand_pop_a,brand_pop_btn_reset)
-brand_pop_a.forEach((t)=>{ //가나다순
-    t.addEventListener('click',()=>{
-        brand_pop_btn_reset.classList.add('reset_active')
-        brand_pop_btn_reset.addEventListener('click',()=>{ 
-            //오른쪽 박스 숨기기
-            brand_pop_btn_reset.classList.remove('reset_active')
-            // 카테고리 어사이드 메뉴 클릭시 체크이미지 회색으로 변경
-            t.children[0].src = './images/sub/icon_check_off.svg';
-        });
-    })
-})
-
-brand_pop_all_a.forEach((t)=>{ //상품많은순
-    t.addEventListener('click',()=>{
-        brand_pop_btn_reset.classList.add('reset_active')
-        brand_pop_btn_reset.addEventListener('click',()=>{ 
-            //오른쪽 박스 숨기기
-            brand_pop_btn_reset.classList.remove('reset_active')
-            // 카테고리 어사이드 메뉴 클릭시 체크이미지 회색으로 변경
-            t.children[0].src = './images/sub/icon_check_off.svg';
-        });
-    })
-})
-
-// 모바일
-slide_li_chk.forEach((t)=>{ //체크박스 chk
-    t.addEventListener('click',()=>{
-        slide_btn_reset.classList.add('reset_active')
-        slide_btn_reset.addEventListener('click',()=>{ 
-            //오른쪽 박스 숨기기
-            slide_btn_reset.classList.remove('reset_active')
-            // 카테고리 어사이드 메뉴 클릭시 체크이미지 회색으로 변경
-            t.children[0].src = './images/sub/icon_check_off.svg';
-        });
-    })
-})
-slide_li_cir.forEach((t)=>{ //서클 cir
-    t.addEventListener('click',()=>{
-        slide_btn_reset.classList.add('reset_active')
-        slide_btn_reset.addEventListener('click',()=>{ 
-            //오른쪽 박스 숨기기
-            slide_btn_reset.classList.remove('reset_active')
-            // 카테고리 어사이드 메뉴 클릭시 체크이미지 회색으로 변경
-            t.children[0].src = './images/sub/icon_check_off.svg';
-        });
-    })
-})
-slide_li_chk_brand.forEach((t)=>{ //브랜드 
-    t.addEventListener('click',()=>{
-        slide_btn_reset.classList.add('reset_active')
-        slide_btn_reset.addEventListener('click',()=>{ 
-            //오른쪽 박스 숨기기
-            slide_btn_reset.classList.remove('reset_active')
-            // 카테고리 어사이드 메뉴 클릭시 체크이미지 회색으로 변경
-            t.children[0].src = './images/sub/icon_check_off.svg';
-        });
-    })
-})
+// 모바일에서 초기화 버튼 활성화

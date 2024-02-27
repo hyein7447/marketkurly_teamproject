@@ -131,7 +131,7 @@ header .header_top .user_info .cart img {}
 /* header bottom */
 header .header_btm {background-color: #fff;}
 header .header_btm nav {
-    max-width: 1280px; height: 56px; display: flex; margin: 0 auto; justify-content: space-between;
+    max-width: 1280px; /* height: 56px; */ display: flex; margin: 0 auto; justify-content: space-between;
     align-items: center; position: relative;
 }
 header .header_btm nav .category_bg {padding: 20px 0;}

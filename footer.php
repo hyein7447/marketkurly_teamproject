@@ -1,4 +1,4 @@
-<div class="main_btn">
+    <div class="main_btn">
         <button type="button" id="btn_up"></button>
         <button type="button" id="btn_chatbot"></button>
     </div>
@@ -10,7 +10,7 @@
                 <span>마켓컬리</span>
             </div>
             <div class="contact">
-                <div class="list1">
+                <div class="list_1">
                     <div class="basic_chat">
                         <a href="#" class="profile">
                             <img src="./images/main/logo/logo_profile_pp.png" alt="">
@@ -30,7 +30,7 @@
                     <button type="button" class="btn_inquire"><span>문의하기</span><i class="fa-solid fa-paper-plane"></i></button>
                     <p>몇 분 내 답변 받으실 수 있어요</p>
                 </div>
-                <div class="list2">
+                <div class="list_2">
                     <p>다른 방법으로 문의</p>
                     <div class="chat_icon">
                         <a href="#"><img src="./images/main/icon/footer/icon_chat_kakao.png" alt=""></a>
@@ -38,7 +38,7 @@
                         <a href="#"><img src="./images/main/icon/footer/icon_chat_call_bk.png" alt=""></a>
                     </div>
                 </div>
-                <div class="list3">
+                <div class="list_3">
                     <i class="fa-regular fa-comment-dots"></i>
                     <p>채널톡 이용중</p>
                 </div>
@@ -426,4 +426,4 @@
             </div>
         </address>
     </footer>
-    <script src="./script/footer.js"></script>
+    <script src="./script/footer.js"></script> 

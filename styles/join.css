@@ -390,8 +390,8 @@ main .tab_terms1, main .tab_terms2, main .tab_terms3 {
   align-items: center;
 }
 main .tab_terms1 .tab_box, main .tab_terms2 .tab_box, main .tab_terms3 .tab_box {
+  max-width: 440px;
   background-color: #fff;
-  width: 100%;
   border-radius: 10px;
   margin: 0 30px;
 }
@@ -411,6 +411,7 @@ main .tab_terms1 .tab_box .contents #object_first, main .tab_terms2 .tab_box .co
   max-height: 464px;
   padding: 0px 30px;
   overflow-y: auto;
+  scrollbar-width: thin;
 }
 main .tab_terms1 .tab_box .contents #object_first strong, main .tab_terms2 .tab_box .contents #object_first strong, main .tab_terms3 .tab_box .contents #object_first strong {
   font-weight: 500;
@@ -446,6 +447,7 @@ main .tab_terms2 .tab_box .contents, main .tab_terms3 .tab_box .contents {
   text-align: left;
   max-height: 464px;
   overflow-y: auto;
+  scrollbar-width: thin;
   padding: 0 30px 20px;
   width: 100%;
 }
@@ -461,10 +463,13 @@ main .tab_terms2 .tab_box .contents table thead, main .tab_terms3 .tab_box .cont
   width: 100%;
 }
 main .tab_terms2 .tab_box .contents table thead tr th:nth-child(1), main .tab_terms3 .tab_box .contents table thead tr th:nth-child(1) {
-  width: 170px;
+  width: 180px;
 }
-main .tab_terms2 .tab_box .contents table thead tr th:nth-child(2), main .tab_terms2 .tab_box .contents table thead tr th:nth-child(3), main .tab_terms3 .tab_box .contents table thead tr th:nth-child(2), main .tab_terms3 .tab_box .contents table thead tr th:nth-child(3) {
-  width: 86px;
+main .tab_terms2 .tab_box .contents table thead tr th:nth-child(2), main .tab_terms3 .tab_box .contents table thead tr th:nth-child(2) {
+  width: 92px;
+}
+main .tab_terms2 .tab_box .contents table thead tr th:nth-child(3), main .tab_terms3 .tab_box .contents table thead tr th:nth-child(3) {
+  width: 90px;
 }
 main .tab_terms2 .tab_box .contents table thead tr th, main .tab_terms3 .tab_box .contents table thead tr th {
   font-weight: 600;
@@ -482,7 +487,7 @@ main .tab_terms2 .tab_box .contents table tbody tr td:nth-child(1), main .tab_te
   width: 180px;
 }
 main .tab_terms2 .tab_box .contents table tbody tr td:nth-child(2), main .tab_terms2 .tab_box .contents table tbody tr td:nth-child(3), main .tab_terms3 .tab_box .contents table tbody tr td:nth-child(2), main .tab_terms3 .tab_box .contents table tbody tr td:nth-child(3) {
-  width: 90px;
+  width: 91px;
 }
 main .tab_terms2 .tab_box .contents table tbody tr td, main .tab_terms3 .tab_box .contents table tbody tr td {
   padding: 5px;

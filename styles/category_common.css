@@ -74,7 +74,7 @@ main .best .container .left .title {
     justify-content: space-between;
     border-bottom: 1px solid #eee;
     padding-bottom: 50px;
-    position: sticky; top: 0;
+    position: sticky; top: 80px;
     z-index: 300;
     background-color: #fff;
     height: 60px;
@@ -147,6 +147,12 @@ main .best .container .left .list2 .box .more_btn {
 }
 main .best .container .left .list1 ul .more_btn a,
 main .best .container .left .list2 .box .more_btn a {}
+main .best .container .left .list1 ul .more_btn a p:nth-child(1):hover,
+main .best .container .left .list2 .box .more_btn a p:nth-child(1):hover {
+    color:#5f0080;
+    font-weight: 500;
+    transition: 0.3s linear;
+}
 main .best .container .left .list1 ul .more_btn a p,
 main .best .container .left .list2 .box .more_btn a p {
     font-size: 0.875rem; font-weight: 600;
@@ -554,6 +560,7 @@ main .best .popup .brand_pop .btn_wrap {
     display: flex; justify-content: center;
     background-color: #fff;
     padding-bottom: 24px;
+    padding-top: 15px;
 }
 main .best .popup .cate_pop .btn_wrap .btn_reset ,
 main .best .popup .brand_pop .btn_wrap .btn_reset {
@@ -899,3 +906,7 @@ main .best .popup .cart_pop .btn_cart .btn_cart_r span {
     color: #fff; font-weight: 500;
 }
 /* ◇ --- js 부분 (상품 리스트 DB로 처리) (장바구니 담기 팝업) //끝// --- ◇ */
+/* js */
+.sticky {
+    position: sticky;
+}
