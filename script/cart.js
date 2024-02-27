@@ -14,7 +14,7 @@ console.log(title, product, product_wrap.childNodes.length,check_icon)
 // 냉동/냉장/상온 title 클릭시 하단 아이템 출력/숨김
 title.forEach((t, i)=>{
     t.addEventListener('click',()=>{
-        product[i].classList.toggle('open_toggle')
+        product[i].classList.toggle('item_open_toggle')
     })
 })
 
