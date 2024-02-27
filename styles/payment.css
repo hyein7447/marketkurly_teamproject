@@ -444,6 +444,7 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .me
   height: max-content;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg .kurly_pay .kurly_pay_benefit {
+  width: 230px;
   margin-right: 20px;
   text-align: center;
   height: 20vh;
