@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배송 요청사항 | 마켓컬리</title>
+    <link rel="shortcut icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/main/logo/logo_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+</head>
+<body>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend class="skip"></legend>
+                <h1>
+                    배송 요청사항
+                    <input type="checkbox" name="user" id="user">
+                    <label for="user">주문자 정보와 동일</label>
+                </h1>
+                <div class="user_info">
+                    <span class="title">받으실 분<em>*</em></span>
+                    <input type="text" class="user_info_text" placeholder="이름을 입력해 주세요">
+                    <span class="title">휴대폰<em>*</em></span>
+                    <input type="number" class="user_info_text" placeholder="숫자만 입력해 주세요">
+                </div>
+                <div class="place">
+                    <span class="title">받으실 장소<em>*</em></span>
+                    <span>
+                        <input type="checkbox" name="door" id="door">
+                        <label for="door">문 앞</label>
+                        <input type="checkbox" name="other_p" id="other_p">
+                        <label for="door">기타 장소</label>
+                    </span>
+                    <span class="place_notice">
+                        경비실과 무인택배함 배송이 종료되었어요.
+                    </span>
+                </div>
+                <div class="entry_exit">
+                    <span class="title">공동현관 출입방법<em>*</em></span>
+                    <input type="checkbox" name="pw" id="pw">
+                    <label for="pw">공동현관 비밀번호</label>
+                    <input type="checkbox" name="free" id="free">
+                    <label for="pw">자유 출입 가능</label>
+                    <input type="checkbox" name="security" id="security">
+                    <label for="pw">경비실 호출</label>
+                    <input type="checkbox" name="other" id="other">
+                    <label for="pw">기타</label>
+                    <span class="entry_exit_info">
+                        <strong>확인해주세요!</strong>
+                        자유출입이 불가능한 경우, 부득이하게 1층 공동현관 앞에 배송될 수 있습니다.
+                    </span>
+                </div>
+                <div class="message">
+                    <span class="title">배송 완료 메시지 전송<em>*</em></span>
+                    <span>
+                        <input type="checkbox" name="immediatly" id="immediatly">
+                        <label for="immediatly">배송 직후</label>
+                        <input type="checkbox" name="am7" id="am7">
+                        <label for="immediatly">오전 7시</label>
+                    </span>
+                </div>
+                <div class="btn_wrap">
+                    <button type="button" class="btn cancle_btn">취소</button>
+                    <button type="button" class="btn save_btn">저장</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
