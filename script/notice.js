@@ -1,5 +1,6 @@
 const board_list_a = document.querySelectorAll('.board_list > a')
 const sections = document.querySelectorAll('section')
+const help_wrap = document.querySelector('.help_wrap')
 
 // -------- 메뉴 클릭 시 탭
 
@@ -8,7 +9,6 @@ hide()
 sections[0].style.display = 'block'
 
 const title_hide = () => {for(let s of board_list_a){
-    console.log(s)
     s.classList.remove('active')
 }}
 board_list_a[0].classList.add('active')
@@ -22,6 +22,16 @@ board_list_a.forEach((t, i)=>{
     })
 })
 
+help_wrap.addEventListener('click',()=>{
+    console.log('.')
+    hide()
+    title_hide()
+    sections[2].style.display = 'block'
+    board_list_a[2].classList.add('active')
+})
+
+// ---------------------
+
 const notice_start =()=>{
     hide()
     title_hide()
@@ -34,7 +44,6 @@ const faq_start =()=>{
     sections[1].style.display = 'block'
     board_list_a[1].classList.add('active')
 }
-console.log(sections[1])
 const inquiry_start = ()=>{
     hide()
     title_hide()
@@ -48,21 +57,14 @@ window.onload = ()=>{
     const urlFaq = urlParams.get('faq')
     const urlInquiry = urlParams.get('inquiry')
 
-    console.log(urlNotice)
-    console.log(urlFaq)
-    console.log(urlInquiry)
-
     if(urlNotice === 'true'){
         notice_start()
-        console.log(urlNotice)
     }
     if(urlFaq === 'true'){
         faq_start()
-        console.log(urlFaq)
     }
     if(urlInquiry === 'true'){
         inquiry_start()
-        console.log(urlInquiry)
     }
 }
 

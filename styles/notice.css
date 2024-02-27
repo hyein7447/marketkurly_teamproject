@@ -244,11 +244,63 @@ main .container .inquiry .notice_container {
 main .container .inquiry p {
   text-align: right;
 }
-main .container .inquiry #inquiry_btn {
+main .container .inquiry .inquiry_btn {
+  background-color: #5F0080;
+  padding: 0 12.5px;
+  width: 12%;
+  height: 44px;
+  color: #fff;
+  white-space: nowrap;
+  border-radius: 3px;
+}
+main .container .great_deal {
+  width: 100%;
+}
+main .container .great_deal h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  margin-bottom: 27px;
+}
+main .container .great_deal .title {
+  width: 59%;
+}
+main .container .great_deal .date, main .container .great_deal .writer {
+  width: 10%;
+}
+main .container .great_deal .notice_wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #333;
+  padding-left: 20px;
+}
+main .container .great_deal .notice_wrap p {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 20px;
+}
+main .container .great_deal .notice_container {
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+  line-height: 200px;
+}
+main .container .great_deal p {
+  text-align: right;
+}
+main .container .great_deal .inquiry_btn {
   background-color: #5F0080;
   padding: 0 12.5px;
   width: 12%;
   height: 44px;
   color: #fff;
   border-radius: 3px;
+  white-space: nowrap;
 }/*# sourceMappingURL=notice.css.map */
