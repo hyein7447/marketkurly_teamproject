@@ -633,13 +633,14 @@ const filter_title_arr = document.querySelector('.filter >.right > a > [class$=d
 let filter_title_span = document.querySelector('.filter >.right > a > span')
 const slide_tab_list = document.querySelectorAll('.area > .list')
 const slide_tab_list_t = document.querySelectorAll('.area > .list_title > p')
-const slide_li_chk = document.querySelectorAll('.area > ul > li > .btn_chk')
-const slide_li_cir = document.querySelectorAll('.area > ul > li > .btn_circle')
+const slide_li_chk = document.querySelectorAll('.area > .list > li > .btn_chk')
+const slide_li_cir = document.querySelectorAll('.area > .list > li > .btn_circle')
 const slide_brand_title_a = document.querySelectorAll('.tab_slide > .area > .list > .brand > a')
 const slide_brand_atoz_box = document.querySelector('.tab_slide > .area > .list > .atoz_btn')
 const slide_brand_atoz = document.querySelectorAll('.tab_slide > .area > .list > .atoz_btn > a')
 const slide_brand_list = document.querySelectorAll('.tab_slide > .area > .list > .list_box > .box1 > ul')
 const slide_brand_list_all = document.querySelector('.tab_slide > .area > .list > .list_box > .box2 > ul')
+const slide_li_chk_brand = document.querySelectorAll('.area > .list > .list_box > .box_tab > .contents > li > .btn_chk')//브랜드
 const slide_btn_view = document.querySelector('.tab_slide > .area > .btn_wrap > .btn_view') 
 const product_m = document.querySelectorAll('.best_mobile > #product_box > .product')
 const product_box = document.querySelector('#product_box > .product')
@@ -710,7 +711,7 @@ window.addEventListener('scroll',()=>{
 });
 
 /* ---------------------- 구분선 -------------------------- */
-// 모바일 베스트 카테고리 상단에 이미지와 같이있는 타이틀리스트           ★★★★★★★★★★★★ 나중에 확인할 위치
+// 모바일 베스트 카테고리 상단에 이미지와 같이있는 타이틀리스트           
 // 클릭 -> 보라색으로 활성화
 let title_reset = ()=>{for(let a of cate_title){a.classList.remove('cate_active')}}
 let top_zero = ()=>{
@@ -857,6 +858,16 @@ for (let i of slide_li_cir) {
             i.children[0].src = './images/sub/icon_circle_off.svg';
         } else {
             i.children[0].src = './images/sub/icon_circle_on.svg';
+        }
+    });
+}
+for (let i of slide_li_chk_brand) {
+    i.addEventListener('click', () => {
+        // 현재 이미지 경로가 './images/sub/icon_check_on.svg'인지 확인
+        if (i.children[0].src.includes('icon_check_on')) {
+            i.children[0].src = './images/sub/icon_check_off.svg';
+        } else {
+            i.children[0].src = './images/sub/icon_check_on.svg';
         }
     });
 }

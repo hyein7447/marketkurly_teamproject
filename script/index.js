@@ -159,3 +159,43 @@ cart_btn.forEach((t,i)=>{
 btn_cancel.addEventListener('click',()=>{
     cart_pop.style.display = 'none'
 })
+
+
+// 장바구니 담기 팝업 수량 증감
+
+const minus_btn = document.querySelector('.cart_pop_bg .info .cart_box .minus')
+const plus_btn = document.querySelector('.cart_pop_bg .info .cart_box .plus')
+const p_tab_num = document.querySelector('.p_tab_num')
+const p_tab_price = document.querySelector('.cart_pop .total .total_result .p_tab_price')
+
+console.log(minus_btn,plus_btn, '....')
+
+// 카트 담기 팝업 안에 + - 수량 증가 감소, 가격변경
+let p_num = 0;
+let pop_total = 0;
+let total
+let price = 8268;
+// 증가
+plus_btn.addEventListener('click',()=>{
+    if(p_num < 20){
+        p_num++ ;
+        p_tab_num.innerHTML = p_num
+        pop_total =  p_num*price
+        p_tab_price.innerHTML = `${pop_total.toLocaleString('ko-kr')}<em>원</em>`
+    }else{
+        alert('최대 구매 수량입니다.') //이부분 추후에 디자인 수정예정
+    }
+})
+// 감소
+minus_btn.addEventListener('click',()=>{
+    if(0< p_num){
+        p_num--;
+        p_tab_num.innerHTML = p_num
+        pop_total =  p_num*price
+        p_tab_price.innerHTML = `${pop_total.toLocaleString('ko-kr')}<em>원</em>`
+    }else if(p_num == 0){
+        p_tab_price.innerHTML = `0<em>원</em>`;
+        p_tab_num.innerHTML = `0`;
+        // pop_minus.children.setAttribute('fill-opacity', '0.4');
+    }
+})

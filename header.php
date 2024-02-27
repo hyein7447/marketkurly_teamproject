@@ -88,7 +88,7 @@
                                     </div>
                                 </li>
                                 <li class="gnb_cate">
-                                    <a href="./category_fruit.html" class="gnb_icon"><img src="./images/main/icon/category/cate_2_off.png" alt="채소"><span>채소</span></a>
+                                    <a href="./category_bread.html" class="gnb_icon"><img src="./images/main/icon/category/cate_2_off.png" alt="채소"><span>채소</span></a>
                                     <div class="lnb_bg">
                                         <div class="lnb_wrap">
                                             <div class="lnb">
@@ -122,7 +122,7 @@
                                     </div>
                                 </li>
                                 <li class="gnb_cate">
-                                    <a href="./category_fruit.html" class="gnb_icon"><img src="./images/main/icon/category/cate_4_off.png" alt="수산·해산·건어물"><span>수산·해산·건어물</span></a>
+                                    <a href="./category_bread.html" class="gnb_icon"><img src="./images/main/icon/category/cate_4_off.png" alt="수산·해산·건어물"><span>수산·해산·건어물</span></a>
                                     <div class="lnb_bg">
                                         <div class="lnb_wrap">
                                             <div class="lnb">
@@ -165,7 +165,7 @@
                                     </div>
                                 </li>
                                 <li class="gnb_cate">
-                                    <a href="./category_fruit.html" class="gnb_icon"><img src="./images/main/icon/category/cate_6_off.png" alt="국·반찬·메인요리"><span>국·반찬·메인요리</span></a>
+                                    <a href="./category_bread.html" class="gnb_icon"><img src="./images/main/icon/category/cate_6_off.png" alt="국·반찬·메인요리"><span>국·반찬·메인요리</span></a>
                                     <div class="lnb_bg">
                                         <div class="lnb_wrap">
                                             <div class="lnb">
@@ -195,7 +195,7 @@
                                     </div>
                                 </li>
                                 <li class="gnb_cate">
-                                    <a href="./category_fruit.html" class="gnb_icon"><img src="./images/main/icon/category/cate_8_off.png" alt="면·양념·오일"><span>면·양념·오일</span></a>
+                                    <a href="./category_bread.html" class="gnb_icon"><img src="./images/main/icon/category/cate_8_off.png" alt="면·양념·오일"><span>면·양념·오일</span></a>
                                     <div class="lnb_bg">
                                         <div class="lnb_wrap">
                                             <div class="lnb">
@@ -228,7 +228,7 @@
                                     </div>
                                 </li>
                                 <li class="gnb_cate">
-                                    <a href="./category_fruit.html" class="gnb_icon"><img src="./images/main/icon/category/cate_10_off.png" alt="간식·과자·떡"><span>간식·과자·떡</span></a>
+                                    <a href="./category_bread.html" class="gnb_icon"><img src="./images/main/icon/category/cate_10_off.png" alt="간식·과자·떡"><span>간식·과자·떡</span></a>
                                     <div class="lnb_bg">
                                         <div class="lnb_wrap">
                                             <div class="lnb">
@@ -257,7 +257,7 @@
                                     </div>
                                 </li>
                                 <li class="gnb_cate">
-                                    <a href="./category_fruit.html" class="gnb_icon"><img src="./images/main/icon/category/cate_12_off.png" alt="유제품"><span>유제품</span></a>
+                                    <a href="./category_bread.html" class="gnb_icon"><img src="./images/main/icon/category/cate_12_off.png" alt="유제품"><span>유제품</span></a>
                                     <div class="lnb_bg">
                                         <div class="lnb_wrap">
                                             <div class="lnb">
@@ -290,7 +290,7 @@
                                     </div>
                                 </li>
                                 <li class="gnb_cate">
-                                    <a href="./category_fruit.html" class="gnb_icon"><img src="./images/main/icon/category/cate_14_off.png" alt="와인·위스키"><span>와인·위스키</span></a>
+                                    <a href="./category_bread.html" class="gnb_icon"><img src="./images/main/icon/category/cate_14_off.png" alt="와인·위스키"><span>와인·위스키</span></a>
                                     <div class="lnb_bg">
                                         <div class="lnb_wrap">
                                             <div class="lnb">
@@ -322,7 +322,7 @@
                                     </div>
                                 </li>
                                 <li class="gnb_cate">
-                                    <a href="./category_fruit.html" class="gnb_icon"><img src="./images/main/icon/category/cate_16_off.png" alt="주방용품"><span>주방용품</span></a>
+                                    <a href="./category_bread.html" class="gnb_icon"><img src="./images/main/icon/category/cate_16_off.png" alt="주방용품"><span>주방용품</span></a>
                                     <div class="lnb_bg">
                                         <div class="lnb_wrap">
                                             <div class="lnb">
@@ -358,7 +358,7 @@
                                     </div>
                                 </li>
                                 <li class="gnb_cate">
-                                    <a href="./category_fruit.html" class="gnb_icon"><img src="./images/main/icon/category/cate_18_off.png" alt="가전제품"><span>가전제품</span></a>
+                                    <a href="./category_bread.html" class="gnb_icon"><img src="./images/main/icon/category/cate_18_off.png" alt="가전제품"><span>가전제품</span></a>
                                     <div class="lnb_bg">
                                         <div class="lnb_wrap">
                                             <div class="lnb">
@@ -392,7 +392,7 @@
                                     </div>
                                 </li>
                                 <li class="gnb_cate">
-                                    <a href="./category_fruit.html" class="gnb_icon"><img src="./images/main/icon/category/cate_20_off.png" alt="유아동"><span>유아동</span></a>
+                                    <a href="./category_bread.html" class="gnb_icon"><img src="./images/main/icon/category/cate_20_off.png" alt="유아동"><span>유아동</span></a>
                                     <div class="lnb_bg">
                                         <div class="lnb_wrap">
                                             <div class="lnb">
@@ -426,7 +426,7 @@
                                     </div>
                                 </li>
                                 <li class="gnb_cate">
-                                    <a href="./category_fruit.html" class="gnb_icon"><img src="./images/main/icon/category/cate_22_off.png" alt="반려동물"><span>반려동물</span></a>
+                                    <a href="./category_bread.html" class="gnb_icon"><img src="./images/main/icon/category/cate_22_off.png" alt="반려동물"><span>반려동물</span></a>
                                     <div class="lnb_bg">
                                         <div class="lnb_wrap">
                                             <div class="lnb">
@@ -459,7 +459,7 @@
                                     </div>
                                 </li>
                                 <li class="gnb_cate">
-                                    <a href="./category_fruit.html" class="gnb_icon"><img src="./images/main/icon/category/cate_24_off.png" alt="스킨케어·메이크업"><span>스킨케어·메이크업</span></a>
+                                    <a href="./category_bread.html" class="gnb_icon"><img src="./images/main/icon/category/cate_24_off.png" alt="스킨케어·메이크업"><span>스킨케어·메이크업</span></a>
                                     <div class="lnb_bg">
                                         <div class="lnb_wrap">
                                             <div class="lnb">
@@ -497,7 +497,7 @@
                                     </div>
                                 </li>
                                 <li class="gnb_cate">
-                                    <a href="./category_fruit.html" class="gnb_icon"><img src="./images/main/icon/category/cate_26_off.png" alt="컬리상품권"><span>컬리상품권</span></a>
+                                    <a href="./category_bread.html" class="gnb_icon"><img src="./images/main/icon/category/cate_26_off.png" alt="컬리상품권"><span>컬리상품권</span></a>
                                     <div class="lnb_bg">
                                         <div class="lnb_wrap">
                                             <div class="lnb">

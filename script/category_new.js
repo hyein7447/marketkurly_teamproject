@@ -831,6 +831,16 @@ for (let i of slide_li_cir) {
         }
     });
 }
+for (let i of slide_li_chk_brand) {
+    i.addEventListener('click', () => {
+        // 현재 이미지 경로가 './images/sub/icon_check_on.svg'인지 확인
+        if (i.children[0].src.includes('icon_check_on')) {
+            i.children[0].src = './images/sub/icon_check_off.svg';
+        } else {
+            i.children[0].src = './images/sub/icon_check_on.svg';
+        }
+    });
+}
 /* ---------------------- 구분선 -------------------------- */         
 // 슬라이드의 카테고리 클릭시 하단 탭 변경 + 카테고리 글씨 보라색으로 활성화
 let list_hide = ()=>{for(let a of slide_tab_list){a.style.display = 'none';}}
