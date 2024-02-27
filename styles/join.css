@@ -177,8 +177,12 @@ main .join form .wrap li .sub_area .date input {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  width: calc(33.3333333333% - 10px);
+  width: calc(33.3333333333% - 6px);
   display: inline-block;
+}
+main .join form .wrap li .sub_area .date input span {
+  display: block;
+  text-align: center;
 }
 main .join form .wrap li .sub_area .btn_search {
   height: 44px;
@@ -552,13 +556,15 @@ main .tab_terms2 .tab_box .btn_ok, main .tab_terms3 .tab_box .btn_ok {
   main .join form .wrap li .sub_area .input_area.date {
     height: 50px;
   }
-  main .join form .wrap li .sub_area .input_area.date input {
+  main .join form .wrap li .sub_area .input_area.date block input {
     width: 30%;
+    align-items: center;
   }
   main .join form .wrap li .sub_area .input_area.date .error_m {
     display: block;
     text-align: center;
     padding-bottom: 5px;
+    padding-left: 50px;
   }
   main .join form .wrap li .sub_area .input_area input::-moz-placeholder {
     font-size: 0.813rem;

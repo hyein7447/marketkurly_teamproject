@@ -910,3 +910,6 @@ main .best .popup .cart_pop .btn_cart .btn_cart_r span {
 .sticky {
     position: sticky;
 }
+.display_none {
+    display: none !important;
+}

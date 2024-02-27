@@ -1006,7 +1006,7 @@ m_array_a.forEach((t,i)=>{
 })
 /* ---------------------- 구분선 -------------------------- */    
 // 담기버튼 클릭시 팝업 활성화 -> 기본 슬라이드에서 플랙스때문에 none처리가 안돼 classList로 처리
-for(let j of product_m){
+/* for(let j of product_m){
     for(let a of j.children[1].children){ //썸네일의 담기 버튼
         a.addEventListener('click',()=>{
             slide_cart.classList.remove('display_none');
@@ -1018,7 +1018,7 @@ for(let j of product_m){
             slide_cart.classList.add('display_none');
         })
     }
-}
+} */
 /* ---------------------- 구분선 -------------------------- */    
 // 링크 설정되지 않은 a 태그 클릭시 상단으로 올라가는 것 막기
 document.querySelectorAll('a').forEach(link => {
