@@ -1,5 +1,11 @@
 @media screen and (max-width: 1280px) {
-  header {
+  header .user_page {
+    padding: 0 20px;
+  }
+  header .header_top {
+    padding: 0 20px;
+  }
+  header .header_btm {
     padding: 0 20px;
   }
 }

@@ -4,7 +4,7 @@ header .m_header {display: none;}
 /* 데스크탑 header 가리기 */
 header .user_page,
 header .header_top,
-header .header_btm {}
+header .header_btm {background-color: #fff;}
 
 html,body{}
 header { 
@@ -105,8 +105,8 @@ header .header_top .user_info .map .map_open .map_btn {
 }
 header .header_top .user_info .map .map_open .map_btn #map_login_btn {
     font-size: 0.875rem; font-weight: 500; padding: 0 10px; text-align: center;
-    width: 80px; height: 36px; border-radius: 3px; color: #5F0080; border: 1px solid #5F0080;
-    background: #fff;
+    width: 80px;  border-radius: 3px; color: #5F0080; border: 1px solid #5F0080;
+    background: #fff; padding: 9px 0;
 }
 header .header_top .user_info .map .map_open .map_btn .address_btn {
     display: flex; justify-content: center; align-items: center;
