@@ -310,7 +310,7 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 320px) {
   main form fieldset .order_top .product_ordered_m h2 {
     padding: 5px 0;
     font-size: 0.875rem;

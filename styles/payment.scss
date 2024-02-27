@@ -429,30 +429,29 @@ main{
                                     border-top: 0;
                                     border-top-left-radius: 3px;
                                     border-top-right-radius: 3px;
-                                    // width: 100%;
                                     padding: 37.5px 0; 
                                     text-align: center;
+                                    height: 235px;
+                                    width: 100%;
 
                                     .kurly_pay_bg{
                                         height: 130px;
                                         height: max-content;
                                         position: relative;
                                         overflow: hidden;
+                                        height: 75%;
                                         .kurly_pay{
-                                            // width: 105%;
                                             position: absolute;
                                             display: flex;
                                             justify-content: center;
-                                            left: 50%;
-                                            height: max-content;
-    
+                                            height: 100%;
+                                            top: 0;
+                                            left: 5%;
                                             .kurly_pay_benefit{
                                                 width: 230px;
                                                 margin-right: 20px;
                                                 text-align: center;
-                                                // width: 206px;
-                                                // height: 130px;
-                                                height: 20vh;
+                                                height: 100%;
                                                 background-color: #faf0ff;
                                                 border: 1px solid rgb(234, 214, 245);
                                                 border-radius: 6px;
@@ -460,6 +459,7 @@ main{
                                                 flex-flow: column nowrap;
                                                 justify-content: center;
                                                 align-items: center;
+                                                width: 50% !important;
                                                 p{
                                                     font-size: $px14;
                                                     line-height: 20px;
@@ -502,7 +502,7 @@ main{
                                                 }
                                             }
                                             .add_account{
-                                                // width: 206px;
+                                                width: 50% !important;
                                                 a{
                                                     // width: 100%;
                                                     border-radius: 6px;
@@ -894,3 +894,10 @@ main{
 
 .product_ordered_m{display: none;}
 .change_info{display: none;}
+.swiper-button-prev{
+    &::after{display: none;}
+}
+.swiper-button-next{
+    &::after{display: none;}
+    img{transform: rotate(180deg);}
+}

@@ -222,8 +222,8 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="swiper-button-prev" id="aside_prev_btn"></div>
-                                            <div class="swiper-button-next" id="aside_next_btn"></div>
+                                            <div class="swiper-button-prev" id="aside_prev_btn"><img src="./images/main/icon/slide_arrow_off.svg" alt=""></div>
+                                            <div class="swiper-button-next" id="aside_next_btn"><img src="./images/main/icon/slide_arrow_off.svg" alt=""></div>
                                         </div>
                                         <p class="kurlycard_active">컬리카드 결제 시 최대 <em>740원</em> 추가 적립</p>
                                     </div>
@@ -362,9 +362,15 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
             const kurly_pay_bg = new Swiper('#kurly_pay_swiper',{
+<<<<<<< HEAD
             slidesPerView: 5,
             spaceBetween: 30,
+=======
+            slidesPerView: 2,
+            spaceBetween: 25,
+>>>>>>> 702e7bda1ad143fa5efa1ad34dfb0c387e1d84d3
             loop: false,
+            centeredSlides: true,
             navigation:{
                 nextEl: "#aside_next_btn",
                 prevEl: "#aside_prev_btn",
