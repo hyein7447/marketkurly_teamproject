@@ -831,11 +831,15 @@ main{
                         color: $c-51;
                         line-height: 36.25px;
                         border: 0;
+                        position: sticky;
+                        top: 0;
                     }
                     .payment_amount{
                         padding: 17px 20px 18px 18px;
                         background-color: $c-250;
                         border: 1px solid #f2f2f2;
+                        position: sticky;
+                        top: 76.25px;
                         ul{
                             margin-bottom: 20px;
                             padding-bottom: 20px;
@@ -883,6 +887,8 @@ main{
                         }
                     }
                     a{
+                        position: sticky;
+                        top: 560.39px;
                         img{width: 100%;}
                     }
                 }
