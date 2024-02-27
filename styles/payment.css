@@ -427,6 +427,8 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .me
   border-top-right-radius: 3px;
   padding: 37.5px 0;
   text-align: center;
+  height: 235px;
+  width: 100%;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg {
   height: 130px;
@@ -434,19 +436,20 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .me
   height: max-content;
   position: relative;
   overflow: hidden;
+  height: 75%;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg .kurly_pay {
   position: absolute;
   display: flex;
   justify-content: center;
-  left: 50%;
-  height: -moz-max-content;
-  height: max-content;
+  height: 100%;
+  top: 0;
+  left: 5%;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg .kurly_pay .kurly_pay_benefit {
   margin-right: 20px;
   text-align: center;
-  height: 20vh;
+  height: 100%;
   background-color: #faf0ff;
   border: 1px solid rgb(234, 214, 245);
   border-radius: 6px;
@@ -454,6 +457,7 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .me
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  width: 50% !important;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg .kurly_pay .kurly_pay_benefit p {
   font-size: 1rem;
@@ -494,6 +498,9 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .me
       background: linear-gradient(-40deg, rgba(255, 255, 255, 0), #E684F2, rgba(255, 255, 255, 0));
       background-size: 400%;
   } */
+}
+main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg .kurly_pay .add_account {
+  width: 50% !important;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .kurly_pay_wrap .kurly_pay_bg .kurly_pay .add_account a {
   border-radius: 6px;
@@ -871,4 +878,15 @@ main form fieldset .order_btm .btm_right a img {
 
 .change_info {
   display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+.swiper-button-next img {
+  transform: rotate(180deg);
 }/*# sourceMappingURL=payment.css.map */
