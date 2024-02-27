@@ -1692,6 +1692,7 @@
     left: 0;
     background-color: rgba(0,0,0, 0.5);
     @include flex-row-ct-ct;
+    z-index: 700;
 
     .submit_pop{
         border: 1px solid #eee;

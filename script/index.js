@@ -122,7 +122,7 @@ window.addEventListener('scroll',()=>{
 })
 
 // max-width 820일 때 aside_bg 숨김
-function applyFunction() {
+/* function applyFunction() {
     aside_bg.style.display = 'none';
 }
 function applyFunction2() {
@@ -133,13 +133,14 @@ function handleResize() {
     const windowWidth = window.innerWidth;
 
     // 조건 확인
+
     if (windowWidth <= 1582) {
         applyFunction(); // 조건이 만족하면 함수 호출
     }else {
         applyFunction2()
     }
 }
-window.addEventListener('resize', handleResize);
+window.addEventListener('resize', handleResize); */
 
 // 장바구니 담기 팝업 출력
 
@@ -175,7 +176,6 @@ let p_num = 0;
 let pop_total = 0;
 let total
 let price = 8268;
-
 
 // 증가
 plus_btn.addEventListener('click',()=>{

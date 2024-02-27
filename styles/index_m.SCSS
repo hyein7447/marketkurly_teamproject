@@ -1,5 +1,18 @@
 @import 'common';
 
+
+@media screen and (max-width:1580px) {
+    main {
+        .aside_bg {
+            display: none !important;
+            .aside {
+                display: none !important;
+
+            }
+        }
+    }
+}
+
 @media screen and (max-width:1280px){
     main {
         .ranking {

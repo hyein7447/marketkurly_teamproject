@@ -1,3 +1,11 @@
+@media screen and (max-width: 1580px) {
+  main .aside_bg {
+    display: none !important;
+  }
+  main .aside_bg .aside {
+    display: none !important;
+  }
+}
 @media screen and (max-width: 1280px) {
   main .ranking .container {
     padding: 40px 20px;
