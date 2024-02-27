@@ -160,23 +160,8 @@ btn_cancel.addEventListener('click',()=>{
     cart_pop.style.display = 'none'
 })
 
+
 // 장바구니 담기 팝업 수량 증감
-
-
-//자바스크립트
-
-/* const popup = document.querySelector('.popup')
-const product_cart_btn = document.querySelector('.btn_c')
-const product = document.querySelectorAll('.product')
-const product_m = document.querySelectorAll('.best_mobile > .product_box > .product')
-const btn_cart_r = cart_pop.querySelector('.btn_cart_r')
-const slide_cart = document.querySelector('.tab_cart')
-const slide_cart_bg = document.querySelector('.tab_cart > .bg_bk')
-const slide_btn_cart_r = document.querySelector('.tab_cart > .bg_wh > .btn_cart > .btn_cart_r')
-const slide_num = document.querySelector('.bg_wh .info .cart_box .price_num .num .p_tab_num')
-const slide_minus = document.querySelector('.bg_wh .info .cart_box .price_num .num .minus')
-const slide_plus = document.querySelector('.bg_wh .info .cart_box .price_num .num .plus')
-const slide_total_btn = slide_btn_cart_r.querySelector('span') */
 
 const minus_btn = document.querySelector('.cart_pop_bg .info .cart_box .minus')
 const plus_btn = document.querySelector('.cart_pop_bg .info .cart_box .plus')
