@@ -555,7 +555,7 @@ main .del_box .del_popup .btn #submit_btn {
     margin: 0 auto;
   }
 }
-.open_toggle {
+.item_open_toggle {
   display: none !important;
 }
 
@@ -565,4 +565,8 @@ main .del_box .del_popup .btn #submit_btn {
 
 .color_w {
   color: #fff;
+}
+
+.img_toggle {
+  transform: scaleY(1) !important;
 }/*# sourceMappingURL=cart.css.map */

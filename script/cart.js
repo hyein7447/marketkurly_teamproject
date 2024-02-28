@@ -1,5 +1,5 @@
-const title = document.querySelectorAll('.product_wrap .title a')
-const product = document.querySelectorAll('.product')
+const title = document.querySelectorAll('.product_wrap .item .title a')
+const product = document.querySelectorAll('.item .product')
 const product_wrap = document.querySelector('.product_wrap')
 const all_num = document.querySelector('.all_num')
 const sele_num = document.querySelector('.sele_num')
@@ -9,14 +9,21 @@ const btm_all_check = document.querySelector('#btm_all_check')
 const order_btn = document.querySelector('#order_btn')
 const btn_txt = document.querySelector('.btn_txt')
 const change_btn = document.querySelector('#change_btn')
-console.log(title, product, product_wrap.childNodes.length,check_icon)
+const img_arrow = document.querySelectorAll('.product_wrap .item .title a img')
+console.log(title, product, product_wrap.childNodes.length,check_icon,img_arrow)
 
 // 냉동/냉장/상온 title 클릭시 하단 아이템 출력/숨김
 title.forEach((t, i)=>{
     t.addEventListener('click',()=>{
         product[i].classList.toggle('item_open_toggle')
+        console.log(product[i])
+
+        img_arrow[i].classList.toggle('img_toggle')
+        console.log(img_arrow[i])
     })
 })
+
+
 
 //전체아이템 개수 출력
 all_num.innerHTML = `/ ${product_wrap.children.length}`
