@@ -113,6 +113,21 @@ main{
         .m_hyundai_card{display: block;}
         .m_installment{display: block;}
 
+        .month_card_btn_wrap{
+    
+            .month_card_btn{
+                width: 80%;
+            }
+        }
+        .kurly_card_btn_wrap{
+            #kurly_card_benefit{
+                width: 80%;
+            }
+        }
+        .precautions{
+            padding: 0 10px;
+        }
+
         .intro{display: none;}
         .month_card{display: none;}
         .kurly_card{display: none;}
