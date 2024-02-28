@@ -190,3 +190,11 @@ link_faq.addEventListener('click',()=>{
 link_inquiry.addEventListener('click',()=>{
     window.location.href = 'notice.html?inquiry=true'
 })
+
+
+/* menu.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
+        menu[i].classList.toggle('color_active')
+        menu[0].style.color = '#999'
+    })
+}) */
