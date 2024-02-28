@@ -478,6 +478,41 @@ main {
                     white-space: nowrap;
                 }
             }
+            .swiper_area {
+                .swiper_box {
+                    #mainSlide  {
+                        .product_wrap {
+                            .product {
+                                padding: 50px 10px;
+                                max-width: 180px;
+                                .thumb {
+                                    width: 170px;
+                                    img {
+                                    width: 100%;
+                                    }
+                                }
+                            }
+                        }
+    /*.arrow_prev::after {display: none;}
+                        .arrow_next::after {display: none;}
+                        .arrow_prev , .arrow_next {
+                    margin: 0 auto;
+                    position: absolute;
+                    z-index: 900;
+                        [class*=chevron] {
+                            color:#56b7df;
+                            font-size: 30px;
+                        }
+                        }
+                        .arrow_prev {
+                            left: -40px; top: 200px;
+                        }
+                        .arrow_next {
+                            right: -40px; top: 200px;
+                        } */
+                    }
+                }
+            }
         }
     }
 }

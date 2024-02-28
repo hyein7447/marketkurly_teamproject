@@ -502,6 +502,35 @@ main .popup .box #btn_ok {
     width: 70px;
     white-space: nowrap;
   }
+  main .membership .swiper_area .swiper_box #mainSlide {
+    /*.arrow_prev::after {display: none;}
+                        .arrow_next::after {display: none;}
+                        .arrow_prev , .arrow_next {
+                    margin: 0 auto;
+                    position: absolute;
+                    z-index: 900;
+                        [class*=chevron] {
+                            color:#56b7df;
+                            font-size: 30px;
+                        }
+                        }
+                        .arrow_prev {
+                            left: -40px; top: 200px;
+                        }
+                        .arrow_next {
+                            right: -40px; top: 200px;
+                        } */
+  }
+  main .membership .swiper_area .swiper_box #mainSlide .product_wrap .product {
+    padding: 50px 10px;
+    max-width: 180px;
+  }
+  main .membership .swiper_area .swiper_box #mainSlide .product_wrap .product .thumb {
+    width: 170px;
+  }
+  main .membership .swiper_area .swiper_box #mainSlide .product_wrap .product .thumb img {
+    width: 100%;
+  }
 }
 .display_none {
   display: none !important;
