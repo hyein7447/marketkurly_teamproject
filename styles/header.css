@@ -139,7 +139,7 @@ header .header_btm nav .category {font-weight: 500; white-space: nowrap; font-si
 header .header_btm nav .category img {width: 16px; height: 14px; margin-right: 10px;}
 /* 카테고리 마우스 오버 시 출력되는 카데고리 */
 header .header_btm nav .gnb_bg {
-    position: absolute; top: 46px; left: 0;
+    position: absolute; top: 59px; left: 0;
     overflow-y: hidden; overflow-x: hidden;
     min-height: 200px; display: flex;
     z-index: 999;

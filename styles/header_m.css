@@ -670,7 +670,6 @@
   header .m_header .m_nav .gnb_bg .gnb_wrap .gnb {
     height: calc(100vh - 100px);
     border-top: 10px solid #f4f4f4;
-    background-color: #fff;
   }
   header .m_header .m_nav .gnb_bg .gnb_wrap .gnb li a {
     display: flex;

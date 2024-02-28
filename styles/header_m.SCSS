@@ -639,7 +639,6 @@
                         .gnb {
                             height: calc(100vh - 100px);
                             border-top: 10px solid $c-244;
-                            background-color: #fff;
                             li {
                                 a {
                                     @include flex-row-btw-ct;
