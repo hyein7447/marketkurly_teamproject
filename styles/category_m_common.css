@@ -106,8 +106,10 @@ main .best .container .right .name_result span img {
   }
   main .best_mobile {
     margin: 0 auto;
-    display: block !important;
+    display: block;
     position: relative;
+    height: -moz-max-content;
+    height: max-content;
   }
   main .best_mobile .bnr a {
     width: 100%;
@@ -118,6 +120,7 @@ main .best .container .right .name_result span img {
   main .best_mobile .sub_header {
     width: 100%;
     position: sticky;
+    top: 0;
     z-index: 700;
     background-color: #fff;
     padding: 5px 5px;
@@ -126,6 +129,8 @@ main .best .container .right .name_result span img {
     display: none; /* Chrome, Safari, Opera*/
   }
   main .best_mobile .sub_header .cate_title {
+    height: -moz-max-content;
+    height: max-content;
     overflow: auto;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */

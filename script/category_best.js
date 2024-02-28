@@ -1110,3 +1110,8 @@ slide_li_chk_brand.forEach((t)=>{ //브랜드
         });
     })
 })
+// 
+const sub_header = document.querySelector('.sub_header')
+console.log('sub_header',sub_header)
+// sub_header.style.position = 'sticky'
+console.log('----------------- 끝 -----------------')

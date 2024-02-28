@@ -130,13 +130,20 @@ text_area.addEventListener('click', () => {
 // 챗봇영역
 // 챗봇 버튼 클릭 시 챗봇화면 활성화 -> 다시 클릭 시 비활성화
 // 챗봇 토글 함수
-let chatbot_toggle = () => {
-    chatbot_sub.forEach((t)=>{
-        t.style.display = t.style.display === 'block' ? 'none' : 'block';
-    })
-};
-btn_chatbot.addEventListener('click', chatbot_toggle);
-/* let sub_show = false;
+
+// let chatbot_toggle = () => {
+//     chatbot_sub.forEach((t)=>{
+//         t.style.display = t.style.display === 'block' ? 'none' : 'block';
+//     })
+// };
+// btn_chatbot.addEventListener('click', chatbot_toggle);
+
+// 초기값 sub2 가리기
+
+// chatbot_sub[0].style.display = 'block';
+// chatbot_sub[1].style.display = 'none';
+
+let sub_show = false;
 let chatbot_toggle = () => {
     if(!sub_show){
         chatbot_sub[0].style.display = 'block';
@@ -147,7 +154,7 @@ let chatbot_toggle = () => {
         }
     }
 };
-btn_chatbot.addEventListener('click', chatbot_toggle); */
+btn_chatbot.addEventListener('click', chatbot_toggle);
 
 /* btn_chatbot.addEventListener('click', chatbot_toggle);
 let chatbot_toggle = () => {

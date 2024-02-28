@@ -91,10 +91,10 @@ main {
         position: relative;
         .best {display: none;}
         .best_mobile {
-            // width:100%;
             margin: 0 auto;
-            display: block !important;
+            display: block;
             position: relative;
+            height: max-content;
             .bnr {
                 a {
                     width:100%;
@@ -104,6 +104,7 @@ main {
             .sub_header {
                 width: 100%;
                 position: sticky;
+                top:0;
                 z-index: 700;
                 background-color: #fff;
                 padding: 5px 5px;
@@ -111,6 +112,7 @@ main {
                     display: none; /* Chrome, Safari, Opera*/
                 }
                 .cate_title {
+                    height: max-content;
                     overflow: auto;
                     -ms-overflow-style: none; /* IE and Edge */
                     scrollbar-width: none; /* Firefox */

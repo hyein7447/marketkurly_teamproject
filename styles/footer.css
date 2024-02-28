@@ -404,6 +404,7 @@
 
 .sub2 {
   padding: 0px 25px 40px;
+  display: none;
   z-index: 999;
 }
 .sub2 .title {

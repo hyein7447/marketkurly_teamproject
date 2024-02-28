@@ -177,7 +177,7 @@ main .join form .wrap li .sub_area .date input {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  width: calc(33.3333333333% - 6px);
+  width: calc(33.3333333333% - 8px);
   display: inline-block;
 }
 main .join form .wrap li .sub_area .date input span {

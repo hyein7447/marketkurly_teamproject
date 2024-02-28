@@ -335,7 +335,7 @@
                             <span>고객센터 운영시간에 순차적으로 답변드리겠습니다.</span>
                         </p>
                     </a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScWcjRuN6eWJK-G8x3NwBfE8IyKZIOq7jhD3fUXuKSWwPqzJw/viewform" class="bulk_order">
+                    <a href="#" class="bulk_order">
                         <button type="button" class="btn_kakao">대량주문 문의</button>
                         <div class="info">
                             <p>
@@ -426,4 +426,4 @@
             </div>
         </address>
     </footer>
-    <script src="./script/footer.js"></script> 
+    <script src="./script/footer.js"></script>  
