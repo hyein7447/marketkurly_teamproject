@@ -74,7 +74,7 @@ main .best .container .left .title {
     justify-content: space-between;
     border-bottom: 1px solid #eee;
     padding-bottom: 50px;
-    position: sticky; top: 80px;
+    position: sticky; top: 0px;
     z-index: 300;
     background-color: #fff;
     height: 60px;
@@ -909,6 +909,7 @@ main .best .popup .cart_pop .btn_cart .btn_cart_r span {
 /* js */
 .sticky {
     position: sticky;
+    top:80px;
 }
 .display_none {
     display: none !important;
