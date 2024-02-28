@@ -136,7 +136,7 @@ main .membership .tab_area {
   align-items: center;
   width: 100%;
   position: sticky;
-  top: 0;
+  top: 70px;
   z-index: 800;
 }
 main .membership .tab_area a:nth-child(2)::before {

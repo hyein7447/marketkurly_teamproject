@@ -526,9 +526,9 @@ main .product_container .product_page_nav {
   align-items: center;
   max-width: 1190px;
   width: 96%;
-  z-index: 1000;
+  z-index: 800;
   position: sticky;
-  top: 70px;
+  top: 69px;
 }
 main .product_container .product_page_nav li {
   width: 25%;
