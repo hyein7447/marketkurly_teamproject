@@ -11,6 +11,7 @@ header {
     width: 100%; margin: 0 auto;
     position: sticky; top: -95px; z-index: 999;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.07);
+    background-color: #fff;
 }
 header .pop_up p {}
 header .pop_up p em {}
