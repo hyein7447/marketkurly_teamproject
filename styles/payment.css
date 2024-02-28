@@ -817,14 +817,14 @@ main form fieldset .order_btm .btm_right h2 {
   line-height: 36.25px;
   border: 0;
   position: sticky;
-  top: 0;
+  top: 70px;
 }
 main form fieldset .order_btm .btm_right .payment_amount {
   padding: 17px 20px 18px 18px;
   background-color: #fafafa;
   border: 1px solid #f2f2f2;
   position: sticky;
-  top: 76.25px;
+  top: 146.25px;
 }
 main form fieldset .order_btm .btm_right .payment_amount ul {
   margin-bottom: 20px;
@@ -875,7 +875,7 @@ main form fieldset .order_btm .btm_right .payment_amount .kurlycard_save {
 }
 main form fieldset .order_btm .btm_right a {
   position: sticky;
-  top: 560.39px;
+  top: 630.39px;
 }
 main form fieldset .order_btm .btm_right a img {
   width: 100%;
