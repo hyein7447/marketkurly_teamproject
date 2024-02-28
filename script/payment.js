@@ -179,6 +179,13 @@ address_btn.addEventListener('click',()=>{
     window.open('wish_address_popup.html','popup','width=530,height=569')
 })
 
+// 배송요청사항 수정 버튼
+const delivery_request_btn = document.querySelector('#delivery_request_btn')
+
+delivery_request_btn.addEventListener('click',()=>{
+    window.open('delivery_request.html','popup','width=530,height=569')
+})
+
 //  ------- 링크 설정되지 않은 a 태그 클릭시 상단으로 올라가는 것 막기
 document.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', (event) => {

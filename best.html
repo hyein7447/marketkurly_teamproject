@@ -5067,22 +5067,23 @@
                     const slide_cart = document.querySelector('.best_mobile > .tab_cart')
                     for(let i of m_cart_btn){
                         i.addEventListener('click',()=>{
-                            console.log('---')
-                            slide_cart.classList.remove('dispaly_none');
-                            for(let j of product_m){
-                                for(let a of j.children[1].children){ //썸네일의 담기 버튼
-                                    a.addEventListener('click',()=>{
-                                        slide_cart.classList.remove('display_none');
-                                        slide_cart_bg.addEventListener('click',()=>{
-                                            slide_cart.classList.add('display_none');
-                                        })
-                                    })
-                                    slide_btn_cart_r.addEventListener('click',()=>{ //슬라이드의 담기 버튼
-                                        slide_cart.classList.add('display_none');
-                                    })
-                                }
-                            }
-                            /* btn_cart_r.forEach((button) => {
+                            console.log('---', m_cart_btn)
+                            slide_cart.classList.remove('display_none');
+                            slide_cart.display = 'flex';
+                            // for(let j of product_m){
+                            //     for(let a of j.children[1].children){ //썸네일의 담기 버튼
+                            //         a.addEventListener('click',()=>{
+                            //             slide_cart.classList.remove('display_none');
+                            //             slide_cart_bg.addEventListener('click',()=>{
+                            //                 slide_cart.classList.add('display_none');
+                            //             })
+                            //         })
+                            //         slide_btn_cart_r.addEventListener('click',()=>{ //슬라이드의 담기 버튼
+                            //             slide_cart.classList.add('display_none');
+                            //         })
+                            //     }
+                            // }
+                            btn_cart_r.forEach((button) => {
                                 button.addEventListener('click', () => {
                                     window.location.href = './cart.html';
                                     // const result = confirm('장바구니에 담겼습니다. 이동하시겠습니까?');
@@ -5094,15 +5095,18 @@
                                     //     cart_pop.style.display = 'none';
                                     // }
                                 });
-                            }); */
+                            });
                             btn_cancel.addEventListener('click',()=>{
                                 slide_cart.classList.add('dispaly_none');
                             })
                         })
                     }
+                    // 
                     })
                 })
             .catch(error => console.error('Error fetching data:', error));
+            
+                    
     </script>
     <!-- ${item.images && item.images.map(image => `<img src="${image}" alt="">`).join('')} -->
     <!-- listItem.children[0].children[0].style.backgroundImage = `url(${item.images})`; // background-image 속성 변경 -->
