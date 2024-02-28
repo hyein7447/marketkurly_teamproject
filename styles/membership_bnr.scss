@@ -157,17 +157,15 @@ main {
             width:100%;
             background-color: rgb(199, 228, 236);
             .swiper_box {
-                // margin: 0 auto;
-                .swiper_innerbox  {
-                    max-width: 1000px;
-                    // position: relative;
-                    // width: 1000px;
-                    // margin: 0 auto;
+                #mainSlide  {
+                    margin: 0 auto;
+                    max-width: 1280px;
+                    overflow: hidden;
                     .product_wrap {
-                    // max-width: 1000px;
-                    // @include flex-row-st-ct;
-                    // overflow: hidden;
-                    // margin: 0 auto;
+                        display: flex;
+                        justify-content: center;
+                        width: max-content;
+                        align-items: center;
                         .product {
                             padding: 50px 10px;
                             max-width: 250px;
@@ -194,6 +192,8 @@ main {
                             }
                         }
                     }
+/*                     .arrow_prev::after {display: none;}
+                    .arrow_next::after {display: none;}
                     .arrow_prev , .arrow_next {
                 margin: 0 auto;
                 position: absolute;
@@ -208,7 +208,7 @@ main {
                     }
                     .arrow_next {
                         right: -40px; top: 200px;
-                    }
+                    } */
                 }
             }
         }

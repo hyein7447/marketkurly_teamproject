@@ -229,12 +229,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-prev arrow_prev"><!-- 이전버튼 -->
-                        <!-- <i class="fa-solid fa-chevron-left"></i> -->
-                    </div>
-                    <div class="swiper-scrollbar arrow_next"><!-- 다음버튼 -->
-                        <!-- <i class="fa-solid fa-chevron-right"></i> -->
-                    </div>
                 </div>
             </div>
             <div class="btn_bottom">
@@ -304,13 +298,36 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./script/membership.js"></script>
     <script>
-        const mySwiper = new Swiper('mainSlide',{
-            // 속성:값, 속성:값,
-            autoplay:{dispay:100,}, //자동 재생 (기본값 false)
-            loop:true, //반복 (기본값 false)
-            // direction:'vertical',//방향(기본값 horizontal) //vertical 설정할땐 부모에 높이값도 같이 설정해야한다.
-            // effect:'fade', //제자리 효과(direction과 같이 사용할 수 없음)
-        }) 
+        const mainSlide = new Swiper('#mainSlide',{
+            slidesPerView: 5,
+            spaceBetween: 20,
+/*             breakpoints: {
+                // 윈도우 화면 너비가 1280 이상일 때(min-width 기준)
+                1280: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 840 이상일 때
+                820: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 430 이상일 때
+                430: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                    centeredSlides : false,  
+                },
+                // 윈도우 화면 너비가 320 이상일 때
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                    centeredSlides : false,  
+                }
+            } */
+        })
     </script>
 </body>
 </html>

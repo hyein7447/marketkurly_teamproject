@@ -178,50 +178,59 @@ main .membership .swiper_area {
   width: 100%;
   background-color: rgb(199, 228, 236);
 }
-main .membership .swiper_area .swiper_box .swiper_innerbox {
-  max-width: 1000px;
+main .membership .swiper_area .swiper_box #mainSlide {
+  margin: 0 auto;
+  max-width: 1280px;
+  overflow: hidden;
+  /*                     .arrow_prev::after {display: none;}
+                      .arrow_next::after {display: none;}
+                      .arrow_prev , .arrow_next {
+                  margin: 0 auto;
+                  position: absolute;
+                  z-index: 900;
+                      [class*=chevron] {
+                          color:#56b7df;
+                          font-size: 30px;
+                      }
+                      }
+                      .arrow_prev {
+                          left: -40px; top: 200px;
+                      }
+                      .arrow_next {
+                          right: -40px; top: 200px;
+                      } */
 }
-main .membership .swiper_area .swiper_box .swiper_innerbox .product_wrap .product {
+main .membership .swiper_area .swiper_box #mainSlide .product_wrap {
+  display: flex;
+  justify-content: center;
+  width: -moz-max-content;
+  width: max-content;
+  align-items: center;
+}
+main .membership .swiper_area .swiper_box #mainSlide .product_wrap .product {
   padding: 50px 10px;
   max-width: 250px;
 }
-main .membership .swiper_area .swiper_box .swiper_innerbox .product_wrap .product .thumb {
+main .membership .swiper_area .swiper_box #mainSlide .product_wrap .product .thumb {
   width: 230px;
   height: 296px;
   border-radius: 4px;
 }
-main .membership .swiper_area .swiper_box .swiper_innerbox .product_wrap .product .thumb img {
+main .membership .swiper_area .swiper_box #mainSlide .product_wrap .product .thumb img {
   width: 100%;
   border-radius: 4px;
 }
-main .membership .swiper_area .swiper_box .swiper_innerbox .product_wrap .product .info {
+main .membership .swiper_area .swiper_box #mainSlide .product_wrap .product .info {
   padding: 14px 0;
 }
-main .membership .swiper_area .swiper_box .swiper_innerbox .product_wrap .product .info .item_name {
+main .membership .swiper_area .swiper_box #mainSlide .product_wrap .product .info .item_name {
   margin-bottom: 8px;
   font-weight: 500;
   line-height: 1.4rem;
 }
-main .membership .swiper_area .swiper_box .swiper_innerbox .product_wrap .product .info .item_price {
+main .membership .swiper_area .swiper_box #mainSlide .product_wrap .product .info .item_price {
   font-weight: 700;
   letter-spacing: -0.03rem;
-}
-main .membership .swiper_area .swiper_box .swiper_innerbox .arrow_prev, main .membership .swiper_area .swiper_box .swiper_innerbox .arrow_next {
-  margin: 0 auto;
-  position: absolute;
-  z-index: 900;
-}
-main .membership .swiper_area .swiper_box .swiper_innerbox .arrow_prev [class*=chevron], main .membership .swiper_area .swiper_box .swiper_innerbox .arrow_next [class*=chevron] {
-  color: #56b7df;
-  font-size: 30px;
-}
-main .membership .swiper_area .swiper_box .swiper_innerbox .arrow_prev {
-  left: -40px;
-  top: 200px;
-}
-main .membership .swiper_area .swiper_box .swiper_innerbox .arrow_next {
-  right: -40px;
-  top: 200px;
 }
 main .membership .btn_bottom {
   background-color: rgb(199, 228, 236);

@@ -592,7 +592,7 @@
                         </div>
                         <ul class="gnb">
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_1_off.png" alt="2024 설 선물세트">
                                         <span>2024 설 선물세트</span>
@@ -635,7 +635,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_2_off.png" alt="채소">
                                         <span>채소</span>
@@ -661,7 +661,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_3_off.png" alt="과일·견과·쌀">
                                         <span>과일·견과·쌀</span>
@@ -687,7 +687,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_4_off.png" alt="수산·해산·건어물">
                                         <span>수산·해산·건어물</span>
@@ -720,7 +720,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_5_off.png" alt="정육·가공육·계란">
                                         <span>정육·가공육·계란</span>
@@ -748,7 +748,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_6_off.png" alt="국·반찬·메인요리">
                                         <span>국·반찬·메인요리</span>
@@ -771,7 +771,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_7_off.png" alt="간편식·밀키트·샐러드">
                                         <span>간편식·밀키트·샐러드</span>
@@ -796,7 +796,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_8_off.png" alt="면·양념·오일">
                                         <span>면·양념·오일</span>
@@ -823,7 +823,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_9_off.png" alt="생수·음료·커피">
                                         <span>생수·음료·커피</span>
@@ -847,7 +847,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_10_off.png" alt="간식·과자·떡">
                                         <span>간식·과자·떡</span>
@@ -869,7 +869,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_11_off.png" alt="베이커리">
                                         <span>베이커리</span>
@@ -893,7 +893,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_12_off.png" alt="유제품">
                                         <span>유제품</span>
@@ -917,7 +917,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_13_off.png" alt="건강식품">
                                         <span>건강식품</span>
@@ -944,7 +944,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_14_off.png" alt="와인·위스키">
                                         <span>와인·위스키</span>
@@ -972,7 +972,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_15_off.png" alt="전통주">
                                         <span>전통주</span>
@@ -994,7 +994,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_16_off.png" alt="주방용품">
                                         <span>주방용품</span>
@@ -1020,7 +1020,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_17_off.png" alt="생활용품·리빙">
                                         <span>생활용품·리빙</span>
@@ -1048,7 +1048,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_18_off.png" alt="가전제품">
                                         <span>가전제품</span>
@@ -1071,7 +1071,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_19_off.png" alt="가구·인테리어">
                                         <span>가구·인테리어</span>
@@ -1100,7 +1100,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_20_off.png" alt="유아동">
                                         <span>유아동</span>
@@ -1128,7 +1128,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_21_off.png" alt="스포츠·레져·캠핑">
                                         <span>스포츠·레져·캠핑</span>
@@ -1152,7 +1152,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_22_off.png" alt="반려동물">
                                         <span>반려동물</span>
@@ -1180,7 +1180,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_23_off.png" alt="럭셔리뷰티">
                                         <span>럭셔리뷰티</span>
@@ -1203,7 +1203,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_24_off.png" alt="스킨케어·메이크업">
                                         <span>스킨케어·메이크업</span>
@@ -1232,7 +1232,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_25_off.png" alt="헤어·바디·구강">
                                         <span>헤어·바디·구강</span>
@@ -1259,7 +1259,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="./category_fruit.html">
+                                <a href="#">
                                     <div class="left">
                                         <img src="./images/main/icon/category/cate_26_off.png" alt="컬리상품권">
                                         <span>컬리상품권</span>
