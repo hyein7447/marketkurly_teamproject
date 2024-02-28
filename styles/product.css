@@ -528,7 +528,7 @@ main .product_container .product_page_nav {
   width: 96%;
   z-index: 1000;
   position: sticky;
-  top: 53px;
+  top: 70px;
 }
 main .product_container .product_page_nav li {
   width: 25%;

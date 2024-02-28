@@ -1,0 +1,168 @@
+main {
+  padding: 30px;
+}
+main input[type=checkbox] {
+  display: none;
+}
+main input[type=radio] {
+  display: none;
+}
+main input[type=text] {
+  font-size: 0.875rem;
+  border-radius: 3px;
+  height: 44px;
+  padding: 0 11px 1px 15px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+main input[type=number] {
+  font-size: 0.875rem;
+  border-radius: 3px;
+  height: 44px;
+  padding: 0 11px 1px 15px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+main input[type=checkbox]:checked + label::before {
+  background-image: url(../images/sub/icon_check4.png);
+}
+main input[type=radio]:checked + label::before {
+  background-image: url(../images/sub/icon_circle_on.svg);
+}
+main .title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: block;
+  padding-bottom: 8px;
+  display: block;
+}
+main .title em {
+  color: rgb(250, 98, 47);
+}
+main div {
+  padding-bottom: 25px;
+}
+main .place_notice {
+  margin-top: 3px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background-color: #fafafa;
+  font-size: 0.813rem;
+  line-height: 18px;
+  display: block;
+}
+main .entry_exit_info {
+  display: block;
+  margin: 12px 0;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: rgba(95, 0, 128, 0.04);
+  color: #5F0080;
+  font-size: 0.75rem;
+}
+main .entry_exit_info strong {
+  display: block;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #5F0080;
+}
+main form fieldset h1 {
+  font-size: 1.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  line-height: 36px;
+}
+main form fieldset h1 input {
+  display: none;
+}
+main form fieldset h1 label {
+  font-size: 0.875rem;
+  padding: 6px 0;
+  margin-bottom: 9px;
+}
+main form fieldset h1 label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/sub/icon_circle_off.svg);
+  background-size: 100%;
+  margin-right: 10px;
+  position: relative;
+  top: 6px;
+}
+main form fieldset h1 label {
+  font-size: 0.875rem;
+}
+main form fieldset .place label {
+  margin-right: 80px;
+  font-size: 0.875rem;
+  padding-bottom: 9px;
+}
+main form fieldset .place label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/sub/icon_circle_off.svg);
+  background-size: 100%;
+  margin-right: 10px;
+  position: relative;
+  top: 6px;
+}
+main form fieldset .entry_exit label {
+  display: block;
+  font-size: 0.875rem;
+  padding-bottom: 9px;
+}
+main form fieldset .entry_exit label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/sub/icon_circle_off.svg);
+  background-size: 100%;
+  margin-right: 10px;
+  position: relative;
+  top: 6px;
+}
+main form fieldset .message label {
+  margin-right: 80px;
+  font-size: 0.875rem;
+  padding-bottom: 9px;
+}
+main form fieldset .message label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/sub/icon_circle_off.svg);
+  background-size: 100%;
+  margin-right: 10px;
+  position: relative;
+  top: 6px;
+}
+main form fieldset .btn_wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main form fieldset .btn_wrap button {
+  padding: 0 10px;
+  height: 56px;
+  border-radius: 3px;
+  width: 100%;
+}
+main form fieldset .btn_wrap .cancle_btn {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(221, 221, 221);
+}
+main form fieldset .btn_wrap .save_btn {
+  background-color: #5F0080;
+  color: #fff;
+  margin-left: 10px;
+}/*# sourceMappingURL=delivery_request.css.map */
