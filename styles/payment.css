@@ -623,6 +623,7 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .me
   position: absolute;
   top: 43px;
   display: none;
+  z-index: 2;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card .select_card_list a {
   padding: 12px 20px;
@@ -641,6 +642,7 @@ main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .me
   position: absolute;
   top: 96px;
   display: none;
+  z-index: 2;
 }
 main form fieldset .order_btm .btm_left .payment_method_wrap .payment_method .method_type .credit_card .select_installment_list a {
   padding: 12px 20px;

@@ -150,7 +150,32 @@
   main .container .inquiry .notice_container {
     padding: 0 10px;
   }
-  main .container .inquiry #inquiry_btn {
+  main .container .inquiry .inquiry_btn {
+    background-color: #5F0080;
+    padding: 0 12.5px;
+    width: -moz-max-content;
+    width: max-content;
+    height: 30px;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 0.75rem;
+  }
+  main .container .great_deal h2 {
+    display: none;
+  }
+  main .container .great_deal .notice_wrap {
+    padding: 10px;
+  }
+  main .container .great_deal .notice_wrap p {
+    font-size: 0.75rem;
+  }
+  main .container .great_deal .notice_wrap .date, main .container .great_deal .notice_wrap .writer {
+    width: 15%;
+  }
+  main .container .great_deal .notice_container {
+    padding: 0 10px;
+  }
+  main .container .great_deal .inquiry_btn {
     background-color: #5F0080;
     padding: 0 12.5px;
     width: -moz-max-content;

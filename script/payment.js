@@ -198,3 +198,32 @@ document.querySelectorAll('a').forEach(link => {
         }
     });
 });
+
+// ---- payment_btn 클릭 시 결제 완료
+
+const payment_btn = document.querySelector('#payment_btn')
+
+payment_btn.addEventListener('click',()=>{
+    window.alert('주문이 완료되었습니다 🎁')
+})
+
+// 
+
+const kakao_link = document.querySelector('.kakao_link')
+
+kakao_link.addEventListener('click',()=>{
+    window.alert('카카오톡으로 이동하시겠습니까?')
+})
+
+// 
+
+const card_application = document.querySelector('.card_application')
+
+card_application.addEventListener('click',()=>{
+    window.alert('카드신청 페이지로 이동하시겠습니까?')
+})
+const add_account_btn = document.querySelector('.add_account_btn')
+
+add_account_btn.addEventListener('click',()=>{
+    window.alert('결제수단 추가 페이지로 이동하시겠습니까?')
+})

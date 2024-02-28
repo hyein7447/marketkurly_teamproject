@@ -113,7 +113,27 @@
                     .date, .writer{width: 15%;}
                 }
                 .notice_container{padding: 0 10px;}
-                #inquiry_btn{
+                .inquiry_btn{
+                    background-color: $purple;
+                    padding: 0 12.5px;
+                    width: max-content;
+                    height: 30px;
+                    color: #fff;
+                    border-radius: 3px;
+                    font-size: 0.75rem;
+                }
+            }
+            .great_deal{
+                h2{display: none;}
+                .notice_wrap{
+                    padding: 10px;
+                    p{
+                        font-size: 0.75rem;
+                    }
+                    .date, .writer{width: 15%;}
+                }
+                .notice_container{padding: 0 10px;}
+                .inquiry_btn{
                     background-color: $purple;
                     padding: 0 12.5px;
                     width: max-content;
