@@ -1,7 +1,5 @@
 main {
   padding: 30px;
-<<<<<<< HEAD
-=======
 }
 main input[type=checkbox] {
   display: none;
@@ -167,5 +165,4 @@ main form fieldset .btn_wrap .save_btn {
   background-color: #5F0080;
   color: #fff;
   margin-left: 10px;
->>>>>>> e608f78054bdecc839d37a11120902abb0149d75
 }/*# sourceMappingURL=delivery_request.css.map */
