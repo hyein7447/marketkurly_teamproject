@@ -43,10 +43,10 @@ main .main_bnr #main_bnr_slide .pagination {
     left: 70%;
     z-index: 99;
 }
-main .main_bnr #main_bnr_slide .pagination .swiper-pagination-current {
+main .main_bnr #main_bnr_slide .pagination .page .swiper-pagination-current {
     color: #fff; margin-right: 6px;
 }
-main .main_bnr #main_bnr_slide .pagination .swiper-pagination-total {
+main .main_bnr #main_bnr_slide .pagination .page .swiper-pagination-total {
     color: #fff; margin-left: 6px;
 }
 /* 이전, 다음 버튼 공통 묶음 */
