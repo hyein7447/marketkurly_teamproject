@@ -6,6 +6,7 @@ const select_opt = option.querySelectorAll('.select_opt'); // 옵션
 const select_wrap = document.querySelector('.select_wrap'); // 선택한 아이템 담는 부모
 const wish_btn = document.querySelectorAll('.wish_btn') // 위시 버튼
 const product_page_nav_a = document.querySelectorAll('.product_page_nav > li > a') // nav
+const product_page_nav_li = document.querySelectorAll('.product_page_nav > li') // nav
 const section = document.querySelectorAll('.product_container > section') // 클릭 시 이동하는 영역
 const nav = document.querySelector('.product_page_nav'); // nav 부모
 const navOffsetTop = nav.offsetTop; // 기존 nav 위치
@@ -157,20 +158,31 @@ product_page_nav_a.forEach((t,i) => {
     })
 })
 
-// ------- nav 상단 고정 fixed -> 삭제
+// 해당 영역에서 nav에 active
+function highlightNavLink(index) {
+    product_page_nav_li.forEach(li => {
+        li.classList.remove('navActive');
+    });
+    product_page_nav_li[index-1].classList.add('navActive');
+}
 
-/* window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+product_page_nav_a.forEach((link, index) => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.scrollTo(0, section[index + 1].offsetTop);
+    });
+});
 
-    // 스크롤 위치가 navi의 원래 위치를 넘어서면 navi를 fixed로 설정
-    if (scrollTop >= navOffsetTop + 30) {
-        nav.style.position = 'fixed';
-        nav.style.top = '0';
-    } else {
-        // 아니면 처음 위치에 고정
-        nav.style.position = 'static';
-    }
-}); */
+window.addEventListener('scroll', () => {
+    section.forEach((sec, index) => {
+        const secTop = sec.offsetTop;
+        const secBottom = secTop + sec.offsetHeight;
+        const windowTop = window.scrollY;
+        if (windowTop >= secTop && windowTop < secBottom) {
+            highlightNavLink(index);
+        }
+    });
+});
 
 // ---------- 상품고시정보 선택한 옵션 클릭 시 활성화
 
@@ -350,7 +362,7 @@ function view_notice(i) {
 
 review_notice_btn.forEach((t, i) => {
     t.addEventListener('click', function(){
-        view_notice(i);
+        review_notice_contents[i].classList.toggle('reviewShow')
     });
 });
 
@@ -484,13 +496,14 @@ const share_container = document.querySelector('.share_container')
 
 // 토글 버튼 클릭 이벤트 처리
 pc_icon_share.addEventListener('click', function() {
+    share_container.classList.toggle('shareShow')
     // 토글할 요소의 현재 display 상태 확인
-    const share_container_status = share_container.style.display;
+    // const share_container_status = share_container.style.display;
 
     // display 상태에 따라 표시/숨김 토글
-    if (share_container_status === 'none') {
+    /* if (share_container_status === 'none') {
         share_container.style.display = 'block';
     } else {
         share_container.style.display = 'none';
-    }
+    } */
 });

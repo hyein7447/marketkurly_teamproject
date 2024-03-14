@@ -221,6 +221,7 @@ main{
                         font-weight: 500;
                     }
                     .share_container{
+                        &.shareShow{display: block;}
                         display: none;
                         position: absolute;
                         background-color: #fff;
@@ -527,6 +528,14 @@ main{
             position: sticky;
             top: 69px;
             li{
+                &.navActive{
+                    background-color: #fff;
+                    border-bottom: 1px solid #fff;
+                    a{
+                        color: $purple;
+                        span{color: $purple;}
+                    }
+                }
                 width: 25%;
                 background-color: #fafafa;
                 border: 1px solid #eee;
@@ -1615,6 +1624,7 @@ main{
                         }
                         // 공지 내용
                         .review_notice_contents{
+                            &.reviewShow{display: block;}
                             padding: 31.25px 25px 25px;
                             border-bottom: 1px solid #eee;
                             background-color: #fafafa;
