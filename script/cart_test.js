@@ -41,12 +41,7 @@ for(let c of check_icon){
             }else {
                 count--;
             }
-            if(check_icon[1].checked == true){
-                count++;
-            }else {
-                count--
-            }
-            
+        
             sele_num.innerHTML = count
 
             if(check_icon[0].checked == true || check_icon[1].checked == true || check_icon[2].checked == true){
