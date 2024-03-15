@@ -1,6 +1,5 @@
 @import 'common';
 
-
 main {
     .container {
         max-width: 1280px;
@@ -275,14 +274,14 @@ main {
                     }
                     .free {
                         text-align: right;
-                        font-size: $px12;
+                        font-size: $px10;
                         color: $purple;
                         line-height: 18px;
                         display: block;
                         padding-top: 2px;
                         em {
                             font-weight: 600;
-                            font-size: $px12;
+                            font-size: $px10;
                             color: $purple;
                             line-height: 18px;
                         }
@@ -511,11 +510,7 @@ main {
                             }
                             dd {font-size: $px12;}
                             
-                            .delivery_p {
-                                font-size: $px10;
-                                color: $purple;
-
-                            }
+                            .delivery_p {}
                         }
                     }
                     .order_btn_bg {

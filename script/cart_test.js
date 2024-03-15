@@ -63,12 +63,15 @@ for(let c of check_icon){
                 order_btn.classList.remove('bg_active')
                 btn_txt.classList.remove('color_w')
                 btn_txt.innerText = '상품을 선택해주세요'
+                
                 delivery_p.innerHTML = '0원' 
+                free.innerHTML = ''
             }
-
+            
             //전체선택 비활성화
             all_check.checked = false
             btm_all_check.checked = false
+            
         }
     })
 }
@@ -111,6 +114,9 @@ all_check.addEventListener('change',(e)=>{
         order_p.innerHTML = '0원';
         order_dis_p.innerHTML = '0원';
         total_p.innerHTML = '0원';
+
+        delivery_p.innerHTML = '0원' 
+        free.innerHTML = ''
         
         for(let a of check_icon){
             //개별icon, 하단전체 선택 비활성화
@@ -208,7 +214,7 @@ const total = () => {
         check_icon.forEach((t,i)=>{
             if(check_icon[i].checked){
                 if(totalDiscountedPrice < free_p){
-                    delivery_p.innerHTML = '+3000원'
+                    delivery_p.innerHTML = '+3,000원'
                     free.innerHTML = `${(free_p-totalDiscountedPrice).toLocaleString('ko-kr')}원 추가주문시, <em>무료배송`
                 }else {
                     delivery_p.innerHTML = '0원'

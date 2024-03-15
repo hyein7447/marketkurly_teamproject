@@ -274,7 +274,7 @@ main .container .content .order .price_info dl .total em {
 }
 main .container .content .order .price_info .free {
   text-align: right;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #5F0080;
   line-height: 18px;
   display: block;
@@ -282,7 +282,7 @@ main .container .content .order .price_info .free {
 }
 main .container .content .order .price_info .free em {
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #5F0080;
   line-height: 18px;
 }
@@ -464,10 +464,6 @@ main .del_box .del_popup .btn #submit_btn {
   }
   main .container .content .order .price_info dl dd {
     font-size: 0.875rem;
-  }
-  main .container .content .order .price_info dl .delivery_p {
-    font-size: 0.75rem;
-    color: #5F0080;
   }
   main .container .content .order .order_btn_bg #order_btn .btn_txt {
     font-size: 1rem;
