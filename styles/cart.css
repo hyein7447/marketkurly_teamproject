@@ -465,6 +465,10 @@ main .del_box .del_popup .btn #submit_btn {
   main .container .content .order .price_info dl dd {
     font-size: 0.875rem;
   }
+  main .container .content .order .price_info dl .delivery_p {
+    font-size: 0.75rem;
+    color: #5F0080;
+  }
   main .container .content .order .order_btn_bg #order_btn .btn_txt {
     font-size: 1rem;
     letter-spacing: 1px;

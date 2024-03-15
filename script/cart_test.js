@@ -34,14 +34,9 @@ sele_num.innerHTML = count
 for(let c of check_icon){
     c.addEventListener('change',(e)=>{
         if(e.target.checked){
-            // 
-            if(check_icon[0].checked == true){
-                console.log('.')
-                count++;
-            }else {
-                count--;
+            if(count < 3){
+                count++
             }
-        
             sele_num.innerHTML = count
 
             if(check_icon[0].checked == true || check_icon[1].checked == true || check_icon[2].checked == true){
@@ -50,8 +45,13 @@ for(let c of check_icon){
                 order_btn.classList.add('bg_active')
                 btn_txt.classList.add('color_w')
                 btn_txt.innerText = '주문하기'
-                delivery_p.innerHTML = '3,000원'
+
             }
+            if (check_icon[0].checked == true && check_icon[1].checked == true && check_icon[2].checked == true){
+                //전체선택 활성화
+                all_check.checked = true
+                btm_all_check.checked = true
+            }            
 
         }else{
             count--
@@ -65,6 +65,10 @@ for(let c of check_icon){
                 btn_txt.innerText = '상품을 선택해주세요'
                 delivery_p.innerHTML = '0원' 
             }
+
+            //전체선택 비활성화
+            all_check.checked = false
+            btm_all_check.checked = false
         }
     })
 }
@@ -155,6 +159,7 @@ btm_all_check.addEventListener('change',(e)=>{
     }
 })
 
+
 // 수량 증감
 const minus = document.querySelectorAll('.minus')
 const plus = document.querySelectorAll('.plus')
@@ -175,9 +180,9 @@ let dis_price = [17900, 8451, 10710]
 let origin_price = [19990, 9900, 15200]
 let total_price = 0
 
-const origin_p = 45090
-const dis_p = 8029
-const all_price = 37061
+let origin_p = origin_price[0]+origin_price[1]+origin_price[2]
+let dis_p = (dis_price[0]-origin_price[0])+(dis_price[1]-origin_price[1])+(dis_price[2]-origin_price[2])
+let all_price = dis_price[0]+dis_price[1]+dis_price[2]
 
 // 초기 orderlist 값
 order_p.innerHTML = origin_p.toLocaleString('ko-kr') + '원';
@@ -192,15 +197,30 @@ const total = () => {
     check_icon.forEach((t, i) => {
         if (check_icon[i].checked) {
             totalDiscountedPrice += dis_price[i] * nums[i];
+            console.log(totalDiscountedPrice)
         }
     });
     total_p.innerHTML = totalDiscountedPrice.toLocaleString('ko-kr') + '원';
 
-    // 체크된 상태에서 total_p에서 order_p를 뺀 결과를 order_dis_p에 표시
-    let deliveryResult = totalDiscountedPrice - total_price;
-    order_dis_p.innerHTML = deliveryResult.toLocaleString('ko-kr') + '원';
+    let free_p = 40000;
+    const delivery = (total)=>{
+        let free_total = total;
+        check_icon.forEach((t,i)=>{
+            if(check_icon[i].checked){
+                if(totalDiscountedPrice < free_p){
+                    delivery_p.innerHTML = '+3000원'
+                    free.innerHTML = `${(free_p-totalDiscountedPrice).toLocaleString('ko-kr')}원 추가주문시, <em>무료배송`
+                }else {
+                    delivery_p.innerHTML = '0원'
+                    free.innerHTML = ''
+                }
+            }
+        })
+    }
+    delivery()
 };
 
+total()
 
 // order 리스트 상품금액 출력
 const origin_total = ()=>{
@@ -208,9 +228,10 @@ const origin_total = ()=>{
     check_icon.forEach((t, i)=>{
         if(check_icon[i].checked){
             originTotal += origin_price[i] * nums[i];
+            console.log(originTotal)
         }
     })
-    order_p.innerHTML = originTotal
+    order_p.innerHTML = originTotal.toLocaleString('ko-kr') + '원';
 }
 
 // order 리스트 상품할인금액 출력
@@ -221,8 +242,10 @@ const dis_total = ()=>{
             disTotal += (origin_price[i] * nums[i]) - (dis_price[i] * nums[i])
         }
     })
-    order_dis_p.innerHTML = `-${disTotal}`
+    order_dis_p.innerHTML = `-${disTotal.toLocaleString('ko-kr')}원`
 }
+
+
 
 // 초기 수량 설정
 item_num.forEach((item, index) => {
@@ -239,8 +262,8 @@ plus.forEach((t, i) => {
         let d_total = dis_price[i]*nums[i]
         let o_total = origin_price[i]*nums[i]
 
-        d_price[i].innerHTML = d_total
-        o_price[i].innerHTML = o_total
+        d_price[i].innerHTML = d_total.toLocaleString('ko-kr') + '원';
+        o_price[i].innerHTML = o_total.toLocaleString('ko-kr') + '원';
 
         // order리스트 가격출력 함수
         total()
@@ -259,8 +282,8 @@ minus.forEach((t, i) => {
             let d_total = dis_price[i]*nums[i];
             let o_total = origin_price[i]*nums[i];
             
-            d_price[i].innerHTML = d_total
-            o_price[i].innerHTML = o_total
+            d_price[i].innerHTML = d_total.toLocaleString('ko-kr') + '원';
+            o_price[i].innerHTML = o_total.toLocaleString('ko-kr') + '원';
             
             // order리스트 가격출력 함수
             total()
@@ -270,27 +293,28 @@ minus.forEach((t, i) => {
     });
 });
 
-
+// item 체크아이콘 클릭 이벤트
 check_icon.forEach((t,i)=>{
     t.addEventListener('click',()=>{
         if(check_icon[i].checked){
-        total_price += origin_price[i] * nums[i];
-
+            total_price += origin_price[i] * nums[i];
+            
         }else {
             total_price -= origin_price[i] * nums[i];
         }
         order_p.innerHTML = total_price.toLocaleString('ko-kr') + '원';
+        
+        // order리스트 가격출력 함수
         total()
+        origin_total()
+        dis_total()
     })
 })
-
-
 
 all_check.addEventListener('change', (e) => {
     check_icon.forEach((checkbox) => {
         checkbox.checked = e.target.checked;
     });
-    // updateUI();
 });
 
 // 하단 전체선택 icon 클릭시 개별 icon 활성화 , 선택 아이템 개수 출력
@@ -298,11 +322,9 @@ btm_all_check.addEventListener('change', (e) => {
     check_icon.forEach((checkbox) => {
         checkbox.checked = e.target.checked;
     });
-    // updateUI();
 });
 
 // x 버튼 클릭시 팝업 출력
-
 
 const del_box = document.querySelector('.del_box')
 const delete_btn = document.querySelectorAll('.delete_btn')
