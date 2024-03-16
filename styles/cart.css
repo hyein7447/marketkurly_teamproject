@@ -264,6 +264,11 @@ main .container .content .order .price_info dl dt {
 }
 main .container .content .order .price_info dl dd {
   letter-spacing: -0.5px;
+  font-size: 1.125rem;
+}
+main .container .content .order .price_info dl .total_p {
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 main .container .content .order .price_info dl .total {
   font-size: 1.375rem;
@@ -279,9 +284,10 @@ main .container .content .order .price_info .free {
   line-height: 18px;
   display: block;
   padding-top: 2px;
+  font-weight: 500;
 }
 main .container .content .order .price_info .free em {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.75rem;
   color: #5F0080;
   line-height: 18px;

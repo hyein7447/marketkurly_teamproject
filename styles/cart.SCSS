@@ -263,6 +263,11 @@ main {
                         }
                         dd {
                             letter-spacing: -0.5px;
+                            font-size: $px16;
+                        }
+                        .total_p {
+                            font-size: $px18;
+                            font-weight: 700;
                         }
                         .total {
                             font-size: $px20;
@@ -279,8 +284,9 @@ main {
                         line-height: 18px;
                         display: block;
                         padding-top: 2px;
+                        font-weight: 500;
                         em {
-                            font-weight: 600;
+                            font-weight: 700;
                             font-size: $px10;
                             color: $purple;
                             line-height: 18px;
