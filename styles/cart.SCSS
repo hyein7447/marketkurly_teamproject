@@ -260,10 +260,12 @@ main {
                             white-space: nowrap;
                             width: 100px;
                             letter-spacing: -0.5px;
+                            white-space: nowrap;
                         }
                         dd {
                             letter-spacing: -0.5px;
                             font-size: $px16;
+                            white-space: nowrap;
                         }
                         .total_p {
                             font-size: $px18;
@@ -477,10 +479,12 @@ main {
                                     span {
                                         font-size: $px12;
                                         line-height: 10px;
+                                        white-space: nowrap;
                                     }
                                     del {
                                         font-size: $px12;
                                         display: block;
+                                        white-space: nowrap;
                                     }
                                 }
                             }
@@ -513,8 +517,12 @@ main {
                         dl {padding-top: 5px;
                             dt {
                                 font-size: $px12;
+                                white-space: nowrap;
                             }
-                            dd {font-size: $px12;}
+                            dd {
+                                font-size: $px12;
+                                white-space: nowrap;
+                            }
                             
                             .delivery_p {}
                         }

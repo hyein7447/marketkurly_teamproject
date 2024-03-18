@@ -261,10 +261,12 @@ main .container .content .order .price_info dl dt {
   white-space: nowrap;
   width: 100px;
   letter-spacing: -0.5px;
+  white-space: nowrap;
 }
 main .container .content .order .price_info dl dd {
   letter-spacing: -0.5px;
   font-size: 1.125rem;
+  white-space: nowrap;
 }
 main .container .content .order .price_info dl .total_p {
   font-size: 1.25rem;
@@ -444,10 +446,12 @@ main .del_box .del_popup .btn #submit_btn {
   main .container .content .product_list .product_wrap .item .product .price span {
     font-size: 0.875rem;
     line-height: 10px;
+    white-space: nowrap;
   }
   main .container .content .product_list .product_wrap .item .product .price del {
     font-size: 0.875rem;
     display: block;
+    white-space: nowrap;
   }
   main .container .content .order {
     margin-left: 25px;
@@ -467,9 +471,11 @@ main .del_box .del_popup .btn #submit_btn {
   }
   main .container .content .order .price_info dl dt {
     font-size: 0.875rem;
+    white-space: nowrap;
   }
   main .container .content .order .price_info dl dd {
     font-size: 0.875rem;
+    white-space: nowrap;
   }
   main .container .content .order .order_btn_bg #order_btn .btn_txt {
     font-size: 1rem;
